@@ -179,6 +179,7 @@ class Ektsfe(object):
         """
         # self.specan.write('FREQ {}'.format(frequency))
         self.specan.write('FREQ:CW {}'.format(frequency))
+        logging.info('FREQ:CW {}'.format(frequency))
 
     def set_frequency_frequency_offset(self, frequency):
         """
@@ -191,8 +192,8 @@ class Ektsfe(object):
             FREQ:OFFS 500kHz
         :return:
         """
-        # self.specan.write('FREQ {}'.format(frequency))
         self.specan.write('FREQ:OFFS {}'.format(frequency))
+        logging.info('FREQ:OFFS {}'.format(frequency))
 
     def set_frequency_frequency_channel(self, channel):
         """
@@ -201,6 +202,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('FREQ:CHAN {}'.format(channel))
+        logging.info('FREQ:CHAN {}'.format(channel))
 
     def set_frequency_sweep_start(self, frequency):
         """
@@ -213,6 +215,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('SWE:STARt {}'.format(frequency))
+        logging.info('SWE:STARt {}'.format(frequency))
 
     def set_frequency_sweep_stop(self, frequency):
         """
@@ -224,6 +227,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('SWE:STOP {}'.format(frequency))
+        logging.info('SWE:STOP {}'.format(frequency))
 
     def set_frequency_sweep_center(self, frequency):
         """
@@ -236,6 +240,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('SWE:CENT {}'.format(frequency))
+        logging.info('SWE:CENT {}'.format(frequency))
 
     def set_frequency_sweep_span(self, frequency):
         """
@@ -248,6 +253,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('SWE:SPAN {}'.format(frequency))
+        logging.info('SWE:SPAN {}'.format(frequency))
 
     def set_frequency_sweep_spacing(self, span_type):
         """
@@ -257,6 +263,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('SWE:SPAC {}'.format(span_type))
+        logging.info('SWE:SPAC {}'.format(span_type))
 
     def set_frequency_sweep_step(self, step_frequency):
         """
@@ -268,6 +275,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('SWE:STEP {}'.format(step_frequency))
+        logging.info('SWE:STEP {}'.format(step_frequency))
 
     def set_frequency_sweep_dwell(self, dewll_time):
         """
@@ -280,6 +288,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('SWE:DWEL {}'.format(dewll_time))
+        logging.info('SWE:DWEL {}'.format(dewll_time))
 
     def set_frequency_sweep_mode(self, mode_type):
         """
@@ -293,6 +302,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('SWE:MODE AUTO'.format(mode_type))
+        logging.info('SWE:MODE AUTO'.format(mode_type))
         # self.specan.write('SWE:MODE STEP')
 
     def set_frequency_sweep_state(self, state_type):
@@ -305,6 +315,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('FREQ:MODE {}'.format(state_type))
+        logging.info('FREQ:MODE {}'.format(state_type))
 
     def set_frequency_sweep_reset(self):
         """
@@ -313,6 +324,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write(':SWE:RES')
+        logging.info(':SWE:RES')
 
 
     def set_level_level_level(self, level_unit,level_num):
@@ -328,6 +340,8 @@ class Ektsfe(object):
         """
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
         self.specan.write('POW {}'.format(level_num))
+        logging.info('UNIT:VOLT {}'.format(level_unit))
+        logging.info('POW {}'.format(level_num))
 
     def set_level_level_rf(self, rf_type):
         """
@@ -340,6 +354,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('OUTP {}'.format(rf_type))
+        logging.info('OUTP {}'.format(rf_type))
 
     def set_level_level_offset(self, offset):
         """
@@ -352,6 +367,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('POW:OFFS {}'.format(offset))
+        logging.info('POW:OFFS {}'.format(offset))
 
     def set_level_level_userlimit(self, limit_level):
         """
@@ -364,6 +380,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('POW:LIM {}'.format(limit_level))
+        logging.info('POW:LIM {}'.format(limit_level))
 
     def set_level_level_mode(self, level_mode):
         """
@@ -378,6 +395,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('OUTP:AMOD {}'.format(level_mode))
+        logging.info('OUTP:AMOD {}'.format(level_mode))
 
     def set_level_alc_state(self, state_type):
         """
@@ -390,6 +408,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('POW:ALC {}'.format(state_type))
+        logging.info('POW:ALC {}'.format(state_type))
 
     def set_level_settings_unit(self, level_unit):
         """
@@ -404,6 +423,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
+        logging.info('UNIT:VOLT {}'.format(level_unit))
 
     def set_modulation_modulation_modulation(self, modulation_type):
         """
@@ -415,6 +435,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('MOD {}'.format(modulation_type))
+        logging.info('MOD {}'.format(modulation_type))
 
     def set_modulation_modulation_source(self, source_type):
         """
@@ -432,6 +453,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('DM:SOUR {}'.format(source_type))
+        logging.info('DM:SOUR {}'.format(source_type))
 
     def set_modulation_modulation_standard_atv(self, standard_type):
         """
@@ -456,6 +478,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('DM:ATV {}'.format(standard_type))
+        logging.info('DM:ATV {}'.format(standard_type))
 
 
 

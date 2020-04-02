@@ -76,6 +76,7 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('FREQ:STEP:MODE {}'.format(state_type))
+        logging.info('FREQ:STEP:MODE {}'.format(state_type))
 
     def set_frequency_settings_increment(self, frequency):
         """
