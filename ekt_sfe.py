@@ -1,0 +1,351 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import visa
+import pyvisa
+import logging
+import time
+
+# import VISAresourceExtentions
+
+logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
+                    filename='sfe.log',
+                    filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志
+                    # a是追加模式，默认如果不写的话，就是追加模式
+                    format=
+                    '%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
+                    # 日志格式
+                    )
+
+
+class Ektsfe(object):
+    """
+
+    """
+
+    def __init__(self, net):
+        rm = pyvisa.ResourceManager()
+        specan = rm.open_resource('TCPIP::{}::INSTR'.format(net))
+        self.specan = specan
+
+    def query_instrument(self):
+        """
+         Query the Identification string
+        :return:
+        """
+        print self.specan.query('*IDN?')
+
+    def query_bit_er_rate(self):
+        """
+         Sets the channel of the RF output frequency
+        :return:
+        """
+        res = self.specan.write('READ:BER?')
+        print res
+        return res
+
+    def set_frequency_frequency_frequency(self, frequency):
+        """
+         Setting the channel.
+         example : Remote control command:
+            FREQ 100 MHz
+            FREQ:CW 100 MHz
+            FREQ:ACT 100 MHz
+        :return:
+        """
+        # self.specan.write('FREQ {}'.format(frequency))
+        self.specan.write('FREQ:CW {}'.format(frequency))
+        logging.info('FREQ:CW {}'.format(frequency))
+
+    def set_frequency_frequency_channel(self, channel):
+        """
+         Setting the channel.  Channels can be selected in the range of  1 ... 100
+         example : FREQ:CHAN 5
+        :return:
+        """
+        self.specan.write('FREQ:CHAN {}'.format(channel))
+        logging.info('FREQ:CHAN {}'.format(channel))
+
+    def set_frequency_settings_knobstepstate(self, state_type):
+        """
+         Activates a user-defined step size for varying the frequency value with the rotary knob.
+         Not debugging through
+
+          INCREMENT
+          DECIMAL
+         example : FREQ:STEP:MODE DEC|INCR
+        :return:
+        """
+        self.specan.write('FREQ:STEP:MODE {}'.format(state_type))
+
+    def set_frequency_settings_increment(self, frequency):
+        """
+         Activates a user-defined step size for varying the frequency value with the rotary knob.
+         Not debugging through
+
+          INCREMENT
+          DECIMAL
+         example : FREQ:STEP 50 kHz
+        :return:
+        """
+        # self.specan.write('FREQ:STEP {}'.format(frequency))
+        self.specan.write('FREQ:STEP 50 kHz')
+        logging.info('FREQ:STEP 50 kHz')
+
+
+    def set_frequency_settings_channel(self, channel_num, frequency):
+        """
+         Sets the frequency of a channel.
+        example : FREQ:CHAN:TAB:FREQ 5, 474 MHz
+        :return:
+        """
+        self.specan.write('FREQ:CHAN:TABL:FREQ {}, {} MHz'.format(channel_num, frequency))
+        logging.info('FREQ:CHAN:TABL:FREQ {}, {} MHz'.format(channel_num, frequency))
+
+    def set_level_level_level(self, level):
+        """
+         Sets the RF level of the RF output jack.
+        example :POW -30 dBm
+            POW:LEV -30 dBm
+            POW:AMPL -30 dBm
+            POW:IMM -30 dBm
+        :return:
+        """
+        self.specan.write('POW:LEV {}'.format(level))
+        logging.info('POW:LEV {}'.format(level))
+
+    def set_level_level_rf(self, rf_type):
+        """
+         Switches the RF output on and off.
+            OFF
+            ON
+        example :
+            OUTP ON|OFF
+            OUTP:STAT ON|OFF
+        :return:
+        """
+        self.specan.write('OUTP {}'.format(rf_type))
+        logging.info('OUTP {}'.format(rf_type))
+
+    def set_level_level_userlimit(self, limit_level):
+        """
+         Sets a user limit for the level.
+        example :
+            POW:LIM 30 dBm
+            POW:LIM:AMPL 30 dBm
+        :return:
+        """
+        self.specan.write('POW:LIM {}'.format(limit_level))
+        logging.info('POW:LIM {}'.format(limit_level))
+
+    def set_level_level_mode(self, level_mode):
+        """
+         ATTENUATOR MODE is used to determine the mode of the attenuator. In the basic configuration of the R&S SFE,
+         there are two possible choices: AUTO and FIXED.
+             AUTO
+             FIXED
+        example :
+            OUTP:AMOD AUTO|FIX
+        :return:
+        """
+        self.specan.write('OUTP:AMOD {}'.format(level_mode))
+        logging.info('OUTP:AMOD {}'.format(level_mode))
+
+    def set_level_settings_unit(self, level_unit):
+        """
+         The units dBm, dBuV, dBmV and mV can be used as level
+
+        example :
+            UNIT:VOLT DBM|DBUV|DBMV|MV
+        :return:
+        """
+        self.specan.write('UNIT:VOLT {}'.format(level_unit))
+        logging.info('UNIT:VOLT {}'.format(level_unit))
+
+    def set_modulation_modulation_modulation(self, modulation_type):
+        """
+        ON  With modulation ON, all of the settings that concern the modulation (modulation menu, coding and noise) are accepted.
+        When modulation is switched OFF, these settings are retained and they are restored when modulation is set back to ON.
+        OFF With modulation OFF, a continuous wave (CW) carrier is output with the set frequency and level, and MOD OFF is displayed.
+
+        example :
+            MOD ON|OFF
+            MOD:STAT ON|OFF
+        :return:
+        """
+        self.specan.write('MOD {}'.format(modulation_type))
+        logging.info('MOD {}'.format(modulation_type))
+
+    def set_modulation_modulation_source(self, source_type):
+        """
+        not complete
+        example :
+            MOD ON|OFF
+            MOD:STAT ON|OFF
+        :return:
+        """
+        self.specan.write('SOURCE '.format(source_type))
+        logging.info('SOURCE '.format(source_type))
+
+    def set_modulation_modulation_standard(self, standard_type):
+        """
+        Only the activated standards can be selected under this menu item. Standards that are not activated are displayed but you cannot select them.
+        example :
+            You can select from the following DIGITAL TV standards provided they are activated:
+            DM:TRAN DVBC|DVBS|DVBT|VSB|J83B|ISDB|DTMB|DVS2|DIR|TDMB|MEDiaflo
+
+            You can select from the following ANALOG TV standards provided they are activated:
+            DM:ATV[:STANdard][?] BGRE|DKRE|IRE|MNRE|LRE
+        :return:
+        """
+        self.specan.write('DM:TRAN {}'.format(standard_type))
+        logging.info('DM:TRAN {}'.format(standard_type))
+
+    def set_modulation_modulation_spectrum(self, standard_type):
+        """
+        Using INVERTED, you can invert the output signal, i.e. the I and Q signals are exchanged.
+        example :
+            DM:POL INV|NORM
+        :return:
+        """
+        self.specan.write('DM:POL {}'.format(standard_type))
+        logging.info('DM:POL {}'.format(standard_type))
+
+    def set_digitaltv_input_source(self, source_type):
+        """
+        Selection SOURCE
+        EXTERNAL
+        TS PLAYER (option)
+        TEST SIGNAL
+        example :
+            DVBS:SOUR EXT|TSPL|TEST
+        :return:
+        """
+        self.specan.write('DVBS:SOUR {}'.format(source_type))
+        logging.info('DVBS:SOUR {}'.format(source_type))
+
+    def set_digitaltv_input_stuffing(self, source_type):
+        """
+        If EXTERNAL is selected as the SOURCE, you can enable stuffing.
+        example :
+            DVBS:STUF ON|OFF
+        :return:
+        """
+        self.specan.write('DVBS:STUF {}'.format(source_type))
+        logging.info('DVBS:STUF {}'.format(source_type))
+
+    def set_digitaltv_coding_symbolrate(self, symbol_rate):
+        """
+        The symbol rate is between 0.1 MS/s and 45 MS/s with a resolution of 1 Hz. In the transmission spectrum, the symbol rate represents the 3 dB bandwidth.
+        example :
+            DVBS:SYMB 0.100000e6 ... 45.000000e6
+        :return:
+        """
+        self.specan.write('DVBS:SYMB {}'.format(symbol_rate))
+        logging.info('DVBS:SYMB {}'.format(symbol_rate))
+
+    def set_digitaltv_coding_constellation(self, constellation_type):
+        """
+        You can select QPSK, 8 PSK or 16 QAM as the constellation.
+        example :
+            DVBS:CONS S4|S8|S16
+        :return:
+        """
+        self.specan.write('DVBS:CONS {}'.format(constellation_type))
+        logging.info('DVBS:CONS {}'.format(constellation_type))
+
+    def set_digitaltv_coding_rolloff(self, rolloff_num):
+        """
+        The output signals are shaped as pulses by a FIR filter, yielding a root raised cosine characteristic. You can select 0.25 or 0.35 as the roll-off alpha factor.
+        example :
+            DVBS:ROLL 0.25|0.35
+        :return:
+        """
+        self.specan.write('DVBS:ROLL {}'.format(rolloff_num))
+        logging.info('DVBS:ROLL {}'.format(rolloff_num))
+
+    def set_digitaltv_coding_coderate(self, code_rate):
+        """
+        The constellation type determines the available code rates.
+
+        Constellation     Available code rate
+        QPSK              1/2, 2/3, 3/4, 5/6, 7/8
+        8 PSK             2/3, 5/6, 8/9
+        16 QAM            3/4, 7/8
+
+        example :
+            DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
+        :return:
+        """
+        self.specan.write('DVBS:RATE {}'.format(code_rate))
+        logging.info('DVBS:RATE {}'.format(code_rate))
+
+    def set_digitaltv_input_load(self, file_path):
+        """
+        Clicking this menu item opens a file dialog box in which you can select the desired player file.
+        Files with the following extensions are accepted as player files: *.GTS, *.TRP, *.T10, *.MPG, *.TS, *.BIN,
+         *.DAB, *.DAB_C, *.FLO, *.FLO_C, *.DABP_C  and *.ISDBT_C
+        example :
+            TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+        :return:
+        """
+        self.specan.write(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
+        logging.info(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
+
+    def set_cmd(self):
+        """
+        The constellation type determines the available code rates.
+
+        Constellation     Available code rate
+        QPSK              1/2, 2/3, 3/4, 5/6, 7/8
+        8 PSK             2/3, 5/6, 8/9
+        16 QAM            3/4, 7/8
+
+        example :
+            DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
+        :return:
+        """
+        self.specan.write(':SFE:CLOSE')
+
+    def __del__(self):
+        del self.specan
+
+
+def _test_code():
+    net = "192.168.1.47"
+    # net = "192.168.1.50"
+    # host = '127.0.0.1'
+    # port = 8900
+    specan = Ektsfe(net)
+    # specan.set_channel_output_frequency("3", "555")
+    # specan.set_current_channel("3")
+
+    # specan.set_coder_output_symbol_rate("31.711e6")
+    # specan.set_dvbs2_modulation_mode("S8")
+    # specan.set_fec_frame_type("NORM")
+    # specan.set_switch_output_symbol("OFF")
+    # specan.set_coder_output_sysbol_filter("0.25")
+    # specan.set_code_rate("R2_3")
+    # specan.set_frequency_frequency("101 MHz")
+    # specan.set_frequency_frequency_channel("4")
+    # specan.set_frequency_settings_knobstepstate("DEC")
+    # specan.set_frequency_settings_increment("50 kHz")
+    # specan.set_frequency_settings_channel("5", "474")
+    # specan.set_level_level_level("-31 dBm")
+    # specan.set_level_level_rf("OFF")
+    # specan.set_level_level_userlimit("20 dBm")
+    # specan.set_level_level_mode("AUTO")
+    # specan.set_level_settings_unit("DBUV")
+    # specan.set_modulation_modulation_modulation("ON")
+    # specan.set_modulation_modulation_spectrum("NORM")
+    # specan.set_digitaltv_input_source("EXT")
+    # specan.set_digitaltv_input_stuffing("ON")
+    # specan.set_digitaltv_coding_symbolrate("0.100000e6")
+    # specan.set_digitaltv_coding_constellation("S8")
+    # specan.set_digitaltv_coding_rolloff("0.25")
+    # specan.set_digitaltv_coding_coderate("R8_9")
+    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\FACT_4M.GTS")
+    # specan.set_cmd()
+
+
+if __name__ == '__main__':
+    _test_code()
