@@ -1,1 +1,26 @@
 2020-04-02 11:40:18,068 - E:\ivan_code\front_end_code\ekt_sfe.py[line:292] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\FACT_4M.GTS"
+2020-04-03 09:47:11,664 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:506] - INFO: DM:TRAN DVT2
+2020-04-03 09:47:29,512 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:506] - INFO: DM:TRAN DVS2
+2020-04-03 09:47:52,528 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:506] - INFO: DM:TRAN DVS2
+2020-04-03 09:51:42,964 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:506] - INFO: DM:TRAN DVB-T2
+2020-04-03 09:51:57,118 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:506] - INFO: DM:TRAN DVB-T2
+2020-04-03 09:52:04,089 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:506] - INFO: DM:TRAN DVB-S2
+2020-04-03 09:52:16,269 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:506] - INFO: DM:TRAN DVB-T2
+2020-04-03 10:21:04,966 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:523] - INFO: DVBS2:SOUR TEST
+2020-04-03 10:21:22,493 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:523] - INFO: DVBS2:SOUR TSPL
+2020-04-03 10:26:00,217 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:523] - INFO: DVBS2:SOUR 31.711e6
+2020-04-03 10:26:23,203 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:535] - INFO: DVBS2:SYMB 31.711e6
+2020-04-03 10:31:39,335 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:549] - INFO: DVBS2:CONS QPSK
+2020-04-03 10:32:19,101 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:549] - INFO: DVBS2:CONS S4
+2020-04-03 10:39:56,786 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:561] - INFO: DVBS2:FECF NORM
+2020-04-03 11:03:55,161 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:587] - INFO: DVBS2:ROLL 0.25
+2020-04-03 11:08:09,950 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:610] - INFO: DVBS2:RATE R8_9
+2020-04-03 11:11:50,461 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:622] - INFO: DVBS2:SETT ON
+2020-04-03 11:22:21,220 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:634] - INFO: DVBS2:PHAS ON
+2020-04-03 11:25:38,888 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:647] - INFO: DVBS2:PHAS:SHAP SHA3
+2020-04-03 11:29:39,694 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:660] - INFO: DVBS2:PHAS:MAGN 3
+2020-04-03 11:45:28,413 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:674] - INFO: DVBS2:TSP S187
+2020-04-03 11:49:48,040 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:686] - INFO: DVBS2:PIDT VAR
+2020-04-03 12:01:35,273 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:698] - INFO: #H1ABC
+2020-04-03 12:01:43,256 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:698] - INFO: #H1ABC
+2020-04-03 12:01:54,407 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:698] - INFO: #H0001

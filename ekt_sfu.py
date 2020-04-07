@@ -480,6 +480,241 @@ class Ektsfe(object):
         self.specan.write('DM:ATV {}'.format(standard_type))
         logging.info('DM:ATV {}'.format(standard_type))
 
+    def set_modulation_modulation_standard_dvt(self, standard_type):
+        """
+        Sets the analog transmission standard or queries its setting
+        The multi ATV predefined option
+            Available DTV standards
+            DTV standard  Required option  For details see
+            DVB-T/H         R&S SFU-K1          "DVB-T/H"
+            DVB-C           R&S SFU-K2          "DVB-C"
+            DVB-S           R&S SFU-K3          "DVB-S"
+            8VSB            R&S SFU-K4          "8VSB"
+            J.83/B          R&S SFU-K5          "J.83/B"
+            ISDB-T          R&S SFU-K6          "ISDB-T"
+            DMB-T           R&S SFU-K7          "DMB-T"
+            DVB-S2          R&S SFU-K8          "DVB-S2"
+            DIRECTV         R&S SFU-K9          "DIRECTV"
+            MEDIAFLO        R&S SFU-K10          "MediaFLO"
+            T-DMB/DAB       R&S SFU-K11          "T-DMB/DAB"
+            DTMB            R&S SFU-K12          "DTMB"
+            CMMB            R&S SFU-K15          "CMMB"
+            DVB-T2          R&S SFU-K16          "DVB-T2"
+            DVB-C2          R&S SFU-K17          "DVB-C2"
+            ATSC-M/H        R&S SFU-K18          "ATSC-M/H"
+        example :
+            DM:TRAN DIR
+        :return:
+        """
+        self.specan.write('DM:TRAN {}'.format(standard_type))
+        logging.info('DM:TRAN {}'.format(standard_type))
+
+    def set_digitaltv_input_source(self, source_type):
+        """
+        Selects the transport stream source for the DVB-S2 coder.
+        EXTERNAL
+        TS PLAYER (option)
+        TEST SIGNAL
+        example :
+            DVBS2:SOUR EXT|TSPL|TEST
+        :return:
+        """
+        self.specan.write('DVBS2:SOUR {}'.format(source_type))
+        logging.info('DVBS2:SOUR {}'.format(source_type))
+
+    def set_digitaltv_coding_symbolrate(self, symbol_rate):
+        """
+        Sets the coder output symbol rate
+            *RST:       20.000e6 S/s
+            Default unit:       S/s
+        example :
+            DVBS2:SYMB 31.711e6
+        :return:
+        """
+        self.specan.write('DVBS2:SYMB {}'.format(symbol_rate))
+        logging.info('DVBS2:SYMB {}'.format(symbol_rate))
+
+    def set_digitaltv_coding_constellation(self, constellation_type):
+        """
+        Sets the modulation mode (constellation) of the DVB-S2 signal.
+            S4      QPSK
+            S8      8PSK
+            A16     16APSK
+            A32     32APSK
+        example :
+            DVBS2:CONS S8
+        :return:
+        """
+        self.specan.write('DVBS2:CONS {}'.format(constellation_type))
+        logging.info('DVBS2:CONS {}'.format(constellation_type))
+
+    def set_digitaltv_coding_fecframe(self, fecframe_type):
+        """
+        Sets the length of the FEC frames
+            "NORMAL"        64800 bit
+            "SHORT"         16200 bit
+        example :
+            DVBS2:FECF NORM
+        :return:
+        """
+        self.specan.write('DVBS2:FECF {}'.format(fecframe_type))
+        logging.info('DVBS2:FECF {}'.format(fecframe_type))
+
+    def set_digitaltv_coding_pilots(self, fecframe_type):
+        """
+        Switches pilot generation in the output symbols of the coder on or off.
+            ON
+            OFF
+        example :
+            DVBS2:PIL OFF
+        :return:
+        """
+        self.specan.write('DVBS2:PIL {}'.format(fecframe_type))
+        logging.info('DVBS2:PIL {}'.format(fecframe_type))
+
+    def set_digitaltv_coding_rolloff(self, rolloff_num):
+        """
+       Determines the pulse shaping of the coder output symbol filter
+            0.15
+            0.20
+            0.25
+            0.35
+        example :
+            DVBS2:ROLL 0.25
+        :return:
+        """
+        self.specan.write('DVBS2:ROLL {}'.format(rolloff_num))
+        logging.info('DVBS2:ROLL {}'.format(rolloff_num))
+
+    def set_digitaltv_coding_coderate(self, code_rate):
+        """
+        Selects the puncturing (code rate) of the inner error protection block
+            R1_4
+            R1_3
+            R2_5
+            R1_2
+            R3_5
+            R2_3
+            R3_4
+            R4_5
+            R5_6
+            R6_7
+            R7_8
+            R8_9
+            R9_10
+        example :
+            DVBS2:RATE R8_9
+        :return:
+        """
+        self.specan.write('DVBS2:RATE {}'.format(code_rate))
+        logging.info('DVBS2:RATE {}'.format(code_rate))
+
+    def set_digitaltv_special_settings(self, setting_type):
+        """
+        Enables the special settings.
+            ON
+            OFF
+        example :
+            DVBS2:SETT ON
+        :return:
+        """
+        self.specan.write('DVBS2:SETT {}'.format(setting_type))
+        logging.info('DVBS2:SETT {}'.format(setting_type))
+
+    def set_digitaltv_phasenoise_phasenoise(self, phasenoise_type):
+        """
+        Activates the phase noise.
+            ON
+            OFF
+        example :
+            DVBS2:PHAS ON
+        :return:
+        """
+        self.specan.write('DVBS2:PHAS {}'.format(phasenoise_type))
+        logging.info('DVBS2:PHAS {}'.format(phasenoise_type))
+
+    def set_digitaltv_phasenoise_shape(self, shape_type):
+        """
+        Selects the shape of the phase noise.
+            SHA1
+            SHA2
+            SHA3
+        example :
+            DVBS2:PHAS:SHAP SHA3
+        :return:
+        """
+        self.specan.write('DVBS2:PHAS:SHAP {}'.format(shape_type))
+        logging.info('DVBS2:PHAS:SHAP {}'.format(shape_type))
+
+    def set_digitaltv_phasenoise_magnitude(self, magnitude):
+        """
+        Selects the phase noise amplitude.
+            Range:      0  to  255
+            Increment:  1
+            *RST:       0
+        example :
+            DVBS2:PHAS:MAGN 3
+        :return:
+        """
+        self.specan.write('DVBS2:PHAS:MAGN {}'.format(magnitude))
+        logging.info('DVBS2:PHAS:MAGN {}'.format(magnitude))
+
+    def set_digitaltv_settings_tspacket(self, tspacket_type):
+        """
+        Selects the frame structure of the test TS packet.
+            H184    Head / 184 payload
+            S187    Sync / 187 payload
+            H127    With AMC = DIRECTV
+            P130    With AMC = DIRECTV
+        example :
+            DVBS2:TSP S187
+        :return:
+        """
+        self.specan.write('DVBS2:TSP {}'.format(tspacket_type))
+        logging.info('DVBS2:TSP {}'.format(tspacket_type))
+
+    def set_digitaltv_settings_pidpacket(self, pidpacket_type):
+        """
+        Selects the "packet identifiers" of the test TS packet.
+            NULL
+            VARiable
+        example :
+            DVBS2:PIDT VAR
+        :return:
+        """
+        self.specan.write('DVBS2:PIDT {}'.format(pidpacket_type))
+        logging.info('DVBS2:PIDT {}'.format(pidpacket_type))
+
+    def set_digitaltv_settings_pid(self, pid):
+        """
+        Queries the PID of the test TS packet or sets the PID for PIDtestpack = VAR.
+            Range:
+            #H0000  to  #H1FFF
+        example :
+            #H1ABC
+        :return:
+        """
+        self.specan.write('#H{}'.format(pid))
+        logging.info('#H{}'.format(pid))
+
+
+
+
+    def set_cmd(self):
+        """
+        The constellation type determines the available code rates.
+
+        Constellation     Available code rate
+        QPSK              1/2, 2/3, 3/4, 5/6, 7/8
+        8 PSK             2/3, 5/6, 8/9
+        16 QAM            3/4, 7/8
+
+        example :
+            DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
+        :return:
+        """
+        self.specan.write('#H1ABC')
+
 
 
 def __del__(self):
@@ -523,6 +758,20 @@ def _test_code():
     # specan.set_modulation_modulation_modulation("ON")
     # specan.set_modulation_modulation_source("ATV")
     # specan.set_modulation_modulation_standard_atv("LPR")
+    # specan.set_modulation_modulation_standard_dvt("DVB-T2")
+    # specan.set_digitaltv_input_source("TSPL")
+    # specan.set_digitaltv_coding_symbolrate("31.711e6")
+    # specan.set_digitaltv_coding_constellation("S4")
+    # specan.set_digitaltv_coding_fecframe("NORM")
+    # specan.set_digitaltv_coding_rolloff("0.25")
+    # specan.set_digitaltv_coding_coderate("R8_9")
+    # specan.set_digitaltv_special_settings("ON")
+    # specan.set_digitaltv_phasenoise_phasenoise("ON")
+    # specan.set_digitaltv_phasenoise_shape("SHA3")
+    # specan.set_digitaltv_phasenoise_magnitude("3")
+    # specan.set_digitaltv_settings_packet("S187")
+    # specan.set_digitaltv_settings_pidpacket("VAR")
+    # specan.set_digitaltv_settings_pid("0001")
     specan.set_cmd()
 
 
