@@ -24,3 +24,46 @@
 2020-04-03 12:01:35,273 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:698] - INFO: #H1ABC
 2020-04-03 12:01:43,256 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:698] - INFO: #H1ABC
 2020-04-03 12:01:54,407 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:698] - INFO: #H0001
+2020-04-08 15:14:22,674 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:713] - INFO: DVBS2:PAYL HFF
+2020-04-08 15:21:47,440 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:725] - INFO: DVBS2:PRBS P15_1
+2020-04-08 16:11:12,802 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:740] - INFO: DM:ISRC DIGital
+2020-04-08 16:12:17,121 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:740] - INFO: DM:ISRC OFF
+2020-04-08 16:17:40,398 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:754] - INFO: NOIS OFF
+2020-04-08 16:21:26,388 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:766] - INFO: NOIS:AWG OFF
+2020-04-08 16:21:45,720 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:766] - INFO: NOIS:AWG OFF
+2020-04-08 16:23:06,984 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:766] - INFO: NOIS:AWG ON
+2020-04-08 16:23:20,348 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:766] - INFO: NOIS:AWG ON
+2020-04-08 18:24:01,661 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:783] - INFO: NOIS:CN 45
+2020-04-10 11:26:16,444 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:303] - INFO: SYST:PRES
+2020-04-10 11:26:22,334 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:303] - INFO: SYST:PRES
+2020-04-10 11:51:29,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:255] - INFO: DVBS:CONS S4
+2020-04-10 11:51:29,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:281] - INFO: DVBS:RATE R1_2
+2020-04-10 11:51:29,150 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:245] - INFO: DVBS:SYMB 5.000000e6
+2020-04-10 11:54:04,418 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:258] - INFO: DVBS:CONS S4
+2020-04-10 11:54:04,523 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:285] - INFO: DVBS:RATE R1_2
+2020-04-10 11:54:04,627 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:247] - INFO: DVBS:SYMB 5.000000e6
+2020-04-10 11:54:04,730 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:57] - INFO: FREQ:CW 950 MHz
+2020-04-10 11:54:04,835 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:116] - INFO: POW:LEV -87 dBm
+2020-04-10 15:04:10,591 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:272] - INFO: DVBS:CONS S4
+2020-04-10 15:04:10,694 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:300] - INFO: DVBS:RATE R1_2
+2020-04-10 15:04:10,796 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 5.000000e6
+2020-04-10 15:04:11,825 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:57] - INFO: FREQ:CW 950 MHz
+2020-04-10 15:04:11,930 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -87 dBm
+2020-04-10 15:04:12,036 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -87 dBm
+2020-04-10 15:04:17,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -96 dBm
+2020-04-10 15:04:22,244 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -84 dBm
+2020-04-10 15:04:45,201 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:272] - INFO: DVBS:CONS S4
+2020-04-10 15:04:45,305 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:300] - INFO: DVBS:RATE R1_2
+2020-04-10 15:04:45,407 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 5.000000e6
+2020-04-10 15:04:45,512 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:57] - INFO: FREQ:CW 950 MHz
+2020-04-10 15:04:45,615 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -87 dBm
+2020-04-10 15:04:50,720 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -87 dBm
+2020-04-10 15:05:00,825 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -96 dBm
+2020-04-10 15:05:10,930 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -84 dBm
+2020-04-10 15:05:34,530 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -87 dBm
+2020-04-10 15:05:44,635 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -96 dBm
+2020-04-10 15:05:54,740 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -84 dBm
+2020-04-10 15:20:41,095 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:324] - INFO: SYST:PRES
+2020-04-10 15:20:49,329 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:324] - INFO: SYST:PRES
+2020-04-10 15:21:18,315 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:324] - INFO: SYST:PRES
+2020-04-10 15:21:29,319 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:324] - INFO: SYST:PRES

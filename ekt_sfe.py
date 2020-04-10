@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
 
 class Ektsfe(object):
     """
-
+        SFE接口
     """
 
     def __init__(self, net):
@@ -55,6 +55,7 @@ class Ektsfe(object):
         # self.specan.write('FREQ {}'.format(frequency))
         self.specan.write('FREQ:CW {}'.format(frequency))
         logging.info('FREQ:CW {}'.format(frequency))
+        time.sleep(0.1)
 
     def set_frequency_frequency_channel(self, channel):
         """
@@ -64,6 +65,7 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:CHAN {}'.format(channel))
         logging.info('FREQ:CHAN {}'.format(channel))
+        time.sleep(0.1)
 
     def set_frequency_settings_knobstepstate(self, state_type):
         """
@@ -77,6 +79,7 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:STEP:MODE {}'.format(state_type))
         logging.info('FREQ:STEP:MODE {}'.format(state_type))
+        time.sleep(0.1)
 
     def set_frequency_settings_increment(self, frequency):
         """
@@ -91,6 +94,7 @@ class Ektsfe(object):
         # self.specan.write('FREQ:STEP {}'.format(frequency))
         self.specan.write('FREQ:STEP 50 kHz')
         logging.info('FREQ:STEP 50 kHz')
+        time.sleep(0.1)
 
 
     def set_frequency_settings_channel(self, channel_num, frequency):
@@ -101,6 +105,7 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:CHAN:TABL:FREQ {}, {} MHz'.format(channel_num, frequency))
         logging.info('FREQ:CHAN:TABL:FREQ {}, {} MHz'.format(channel_num, frequency))
+        time.sleep(0.1)
 
     def set_level_level_level(self, level):
         """
@@ -113,6 +118,7 @@ class Ektsfe(object):
         """
         self.specan.write('POW:LEV {}'.format(level))
         logging.info('POW:LEV {}'.format(level))
+        time.sleep(0.1)
 
     def set_level_level_rf(self, rf_type):
         """
@@ -126,6 +132,7 @@ class Ektsfe(object):
         """
         self.specan.write('OUTP {}'.format(rf_type))
         logging.info('OUTP {}'.format(rf_type))
+        time.sleep(0.1)
 
     def set_level_level_userlimit(self, limit_level):
         """
@@ -137,6 +144,7 @@ class Ektsfe(object):
         """
         self.specan.write('POW:LIM {}'.format(limit_level))
         logging.info('POW:LIM {}'.format(limit_level))
+        time.sleep(0.1)
 
     def set_level_level_mode(self, level_mode):
         """
@@ -150,6 +158,7 @@ class Ektsfe(object):
         """
         self.specan.write('OUTP:AMOD {}'.format(level_mode))
         logging.info('OUTP:AMOD {}'.format(level_mode))
+        time.sleep(0.1)
 
     def set_level_settings_unit(self, level_unit):
         """
@@ -161,6 +170,7 @@ class Ektsfe(object):
         """
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
         logging.info('UNIT:VOLT {}'.format(level_unit))
+        time.sleep(0.1)
 
     def set_modulation_modulation_modulation(self, modulation_type):
         """
@@ -175,6 +185,7 @@ class Ektsfe(object):
         """
         self.specan.write('MOD {}'.format(modulation_type))
         logging.info('MOD {}'.format(modulation_type))
+        time.sleep(0.1)
 
     def set_modulation_modulation_source(self, source_type):
         """
@@ -186,6 +197,7 @@ class Ektsfe(object):
         """
         self.specan.write('SOURCE '.format(source_type))
         logging.info('SOURCE '.format(source_type))
+        time.sleep(0.1)
 
     def set_modulation_modulation_standard(self, standard_type):
         """
@@ -200,6 +212,7 @@ class Ektsfe(object):
         """
         self.specan.write('DM:TRAN {}'.format(standard_type))
         logging.info('DM:TRAN {}'.format(standard_type))
+        time.sleep(0.1)
 
     def set_modulation_modulation_spectrum(self, standard_type):
         """
@@ -210,6 +223,7 @@ class Ektsfe(object):
         """
         self.specan.write('DM:POL {}'.format(standard_type))
         logging.info('DM:POL {}'.format(standard_type))
+        time.sleep(0.1)
 
     def set_digitaltv_input_source(self, source_type):
         """
@@ -223,6 +237,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:SOUR {}'.format(source_type))
         logging.info('DVBS:SOUR {}'.format(source_type))
+        time.sleep(0.1)
 
     def set_digitaltv_input_stuffing(self, source_type):
         """
@@ -233,6 +248,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:STUF {}'.format(source_type))
         logging.info('DVBS:STUF {}'.format(source_type))
+        time.sleep(0.1)
 
     def set_digitaltv_coding_symbolrate(self, symbol_rate):
         """
@@ -243,6 +259,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:SYMB {}'.format(symbol_rate))
         logging.info('DVBS:SYMB {}'.format(symbol_rate))
+        time.sleep(0.1)
 
     def set_digitaltv_coding_constellation(self, constellation_type):
         """
@@ -253,6 +270,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:CONS {}'.format(constellation_type))
         logging.info('DVBS:CONS {}'.format(constellation_type))
+        time.sleep(0.1)
 
     def set_digitaltv_coding_rolloff(self, rolloff_num):
         """
@@ -263,6 +281,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:ROLL {}'.format(rolloff_num))
         logging.info('DVBS:ROLL {}'.format(rolloff_num))
+        time.sleep(0.1)
 
     def set_digitaltv_coding_coderate(self, code_rate):
         """
@@ -279,6 +298,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:RATE {}'.format(code_rate))
         logging.info('DVBS:RATE {}'.format(code_rate))
+        time.sleep(0.1)
 
     def set_digitaltv_input_load(self, file_path):
         """
@@ -291,6 +311,18 @@ class Ektsfe(object):
         """
         self.specan.write(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
         logging.info(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
+        time.sleep(0.1)
+
+    def preset_instrument(self):
+        """
+        Triggers a reset. The command has the same effect as pressing the PRESET key on the front panel
+        example :
+            SYST:PRES
+        :return:
+        """
+        self.specan.write('SYST:PRES')
+        logging.info(r'SYST:PRES')
+        time.sleep(1)
 
     def set_cmd(self):
         """
@@ -305,7 +337,7 @@ class Ektsfe(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write(':SFE:CLOSE')
+        self.specan.write('SYST:PRES')
 
     def __del__(self):
         del self.specan
@@ -344,7 +376,8 @@ def _test_code():
     # specan.set_digitaltv_coding_constellation("S8")
     # specan.set_digitaltv_coding_rolloff("0.25")
     # specan.set_digitaltv_coding_coderate("R8_9")
-    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\FACT_4M.GTS")
+    # specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\FACT_4M.GTS")
+    specan.preset_instrument()
     # specan.set_cmd()
 
 
