@@ -5,17 +5,16 @@ import pyvisa
 import logging
 import time
 
-
 # import VISAresourceExtentions
 
 logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
-                    filename='sfe.log',
+                    filename='sfu.log',
                     filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志
                     # a是追加模式，默认如果不写的话，就是追加模式
-                    format=
-                    '%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
                     # 日志格式
                     )
+
 
 class Ektsfe(object):
     """
@@ -26,144 +25,6 @@ class Ektsfe(object):
         rm = pyvisa.ResourceManager()
         specan = rm.open_resource('TCPIP::{}::INSTR'.format(net))
         self.specan = specan
-
-    def query_instrument(self):
-        """
-         Query the Identification string
-        :return:
-        """
-        print self.specan.query('*IDN?')
-
-    def set_channel_output_frequency(self, channel_num, frequency):
-        """
-         Sets the frequency of a channel.
-        :return:
-        """
-        self.specan.write('FREQ:CHAN:TABL:FREQ {}, {} MHz'.format(channel_num, frequency))
-
-    def set_current_channel(self, channel_num):
-        """
-         Sets the channel of the RF output frequency
-        :return:
-        """
-        self.specan.write('FREQ:CHAN {}'.format(channel_num))
-
-    def query_bit_er_rate(self):
-        """
-         Sets the channel of the RF output frequency
-        :return:
-        """
-        res = self.specan.write('READ:BER?')
-        print res
-        return res
-
-    def query_power(self):
-        """
-         Sets the channel of the RF output frequency
-        :return:
-        """
-        res = self.specan.write('READ?')
-        print res
-        return res
-
-    def set_attenuation_signal(self):
-        """
-         Sets the channel of the RF output frequency
-        :return:
-        """
-        self.specan.write('DM:IATT 44 dB')
-
-    def set_absolute_level(self):
-        """
-         Sets the channel of the RF output frequency
-        :return:
-        """
-        self.specan.write('DM:ILEV -10')
-
-    def set_frequency_offset(self):
-        """
-         Sets the frequency offset of any add-on unit
-        :return:
-        """
-        self.specan.write('FREQ:OFFS 000kHz')
-
-    def set_coder_output_symbol_rate(self, symbol_rate):
-        """
-         Sets the coder output symbol rate
-         Example:
-         DVBS2:SYMB 31.711e6
-         Sets the symbol rate to 31.711 MS/s.
-        :return:
-        """
-        self.specan.write('DVBS2:SYMB {}'.format(symbol_rate))
-
-    def set_dvbs2_modulation_mode(self, modulation_mode):
-        """
-         Sets the modulation mode (constellation) of the DVB-S2 signal.
-         S4 : QPSK
-         S8 : 8PSK
-         A16 : 16APSK
-         A32 : 32APSK
-         example : DVBS2:CONS S8
-        :return:
-        """
-        self.specan.write('DVBS2:CONS {}'.format(modulation_mode))
-
-    def set_fec_frame_type(self, tyoe_fec):
-        """
-         Selects the type of FEC frame.
-         "NORMAL"
-            64800 bit
-         "SHORT"
-            16200 bit
-         example : DVBS2:FECF NORM
-        :return:
-        """
-        self.specan.write('DVBS2:FECF {}'.format(tyoe_fec))
-
-    def set_switch_output_symbol(self, switch_pilot):
-        """
-         Switches pilot generation in the output symbols of the coder on or off.
-         ON
-         OFF
-         example : DVBS2:PIL OFF
-        :return:
-        """
-        self.specan.write('DVBS2:PIL {}'.format(switch_pilot))
-
-    def set_coder_output_sysbol_filter(self, symbol_filter):
-        """
-         Determines the pulse shaping of the coder output symbol filter.
-            0.15
-            0.20
-            0.25
-            0.35
-         example : DVBS2:ROLL 0.25
-        :return:
-        """
-        self.specan.write('DVBS2:ROLL {}'.format(symbol_filter))
-
-    def set_code_rate(self, code_rate):
-        """
-         Selects the puncturing (code rate) of the inner error protection block.
-            R1_4
-            R1_3
-            R2_5
-            R1_2
-            R3_5
-            R2_3
-            R3_4
-            R4_5
-            R5_6
-            R6_7
-            R7_8
-            R8_9
-            R9_10
-         example : DVBS2:RATE R8_9
-        :return:
-        """
-        self.specan.write('DVBS2:RATE {}'.format(code_rate))
-        time.sleep(0.1)
 
     def set_frequency_frequency_frequency(self, frequency):
         """
@@ -340,8 +201,7 @@ class Ektsfe(object):
         logging.info(':SWE:RES')
         time.sleep(0.1)
 
-
-    def set_level_level_level(self, level_unit,level_num):
+    def set_level_level_level(self, level_unit, level_num):
         """
          Sets the RF output level in CW mode.
             Increment: 0.01 dB
@@ -535,7 +395,7 @@ class Ektsfe(object):
         logging.info('DM:TRAN {}'.format(standard_type))
         time.sleep(0.1)
 
-    def set_digitaltv_input_source(self, source_type):
+    def set_digitaltv_input_source_dvbs2(self, source_type):
         """
         Selects the transport stream source for the DVB-S2 coder.
         EXTERNAL
@@ -549,7 +409,7 @@ class Ektsfe(object):
         logging.info('DVBS2:SOUR {}'.format(source_type))
         time.sleep(0.1)
 
-    def set_digitaltv_coding_symbolrate(self, symbol_rate):
+    def set_digitaltv_coding_symbolrate_dvbs2(self, symbol_rate):
         """
         Sets the coder output symbol rate
             *RST:       20.000e6 S/s
@@ -562,7 +422,7 @@ class Ektsfe(object):
         logging.info('DVBS2:SYMB {}'.format(symbol_rate))
         time.sleep(0.1)
 
-    def set_digitaltv_coding_constellation(self, constellation_type):
+    def set_digitaltv_coding_constellation_dvbs2(self, constellation_type):
         """
         Sets the modulation mode (constellation) of the DVB-S2 signal.
             S4      QPSK
@@ -577,7 +437,7 @@ class Ektsfe(object):
         logging.info('DVBS2:CONS {}'.format(constellation_type))
         time.sleep(0.1)
 
-    def set_digitaltv_coding_fecframe(self, fecframe_type):
+    def set_digitaltv_coding_fecframe_dvbs2(self, fecframe_type):
         """
         Sets the length of the FEC frames
             "NORMAL"        64800 bit
@@ -590,7 +450,7 @@ class Ektsfe(object):
         logging.info('DVBS2:FECF {}'.format(fecframe_type))
         time.sleep(0.1)
 
-    def set_digitaltv_coding_pilots(self, fecframe_type):
+    def set_digitaltv_coding_pilots_dvbs2(self, fecframe_type):
         """
         Switches pilot generation in the output symbols of the coder on or off.
             ON
@@ -603,7 +463,7 @@ class Ektsfe(object):
         logging.info('DVBS2:PIL {}'.format(fecframe_type))
         time.sleep(0.1)
 
-    def set_digitaltv_coding_rolloff(self, rolloff_num):
+    def set_digitaltv_coding_rolloff_dvbs2(self, rolloff_num):
         """
        Determines the pulse shaping of the coder output symbol filter
             0.15
@@ -618,7 +478,7 @@ class Ektsfe(object):
         logging.info('DVBS2:ROLL {}'.format(rolloff_num))
         time.sleep(0.1)
 
-    def set_digitaltv_coding_coderate(self, code_rate):
+    def set_digitaltv_coding_coderate_dvbs2(self, code_rate):
         """
         Selects the puncturing (code rate) of the inner error protection block
             R1_4
@@ -642,7 +502,7 @@ class Ektsfe(object):
         logging.info('DVBS2:RATE {}'.format(code_rate))
         time.sleep(0.1)
 
-    def set_digitaltv_special_settings(self, setting_type):
+    def set_digitaltv_special_settings_dvbs2(self, setting_type):
         """
         Enables the special settings.
             ON
@@ -655,7 +515,7 @@ class Ektsfe(object):
         logging.info('DVBS2:SETT {}'.format(setting_type))
         time.sleep(0.1)
 
-    def set_digitaltv_phasenoise_phasenoise(self, phasenoise_type):
+    def set_digitaltv_phasenoise_phasenoise_dvbs2(self, phasenoise_type):
         """
         Activates the phase noise.
             ON
@@ -668,7 +528,7 @@ class Ektsfe(object):
         logging.info('DVBS2:PHAS {}'.format(phasenoise_type))
         time.sleep(0.1)
 
-    def set_digitaltv_phasenoise_shape(self, shape_type):
+    def set_digitaltv_phasenoise_shape_dvbs2(self, shape_type):
         """
         Selects the shape of the phase noise.
             SHA1
@@ -682,7 +542,7 @@ class Ektsfe(object):
         logging.info('DVBS2:PHAS:SHAP {}'.format(shape_type))
         time.sleep(0.1)
 
-    def set_digitaltv_phasenoise_magnitude(self, magnitude):
+    def set_digitaltv_phasenoise_magnitude_dvbs2(self, magnitude):
         """
         Selects the phase noise amplitude.
             Range:      0  to  255
@@ -696,7 +556,7 @@ class Ektsfe(object):
         logging.info('DVBS2:PHAS:MAGN {}'.format(magnitude))
         time.sleep(0.1)
 
-    def set_digitaltv_settings_tspacket(self, tspacket_type):
+    def set_digitaltv_settings_tspacket_dvbs2(self, tspacket_type):
         """
         Selects the frame structure of the test TS packet.
             H184    Head / 184 payload
@@ -711,7 +571,7 @@ class Ektsfe(object):
         logging.info('DVBS2:TSP {}'.format(tspacket_type))
         time.sleep(0.1)
 
-    def set_digitaltv_settings_pidpacket(self, pidpacket_type):
+    def set_digitaltv_settings_pidpacket_dvbs2(self, pidpacket_type):
         """
         Selects the "packet identifiers" of the test TS packet.
             NULL
@@ -724,7 +584,7 @@ class Ektsfe(object):
         logging.info('DVBS2:PIDT {}'.format(pidpacket_type))
         time.sleep(0.1)
 
-    def set_digitaltv_settings_pid(self, pid):
+    def set_digitaltv_settings_pid_dvbs2(self, pid):
         """
         Queries the PID of the test TS packet or sets the PID for PIDtestpack = VAR.
             Range:
@@ -737,7 +597,7 @@ class Ektsfe(object):
         logging.info('#H{}'.format(pid))
         time.sleep(0.1)
 
-    def set_digitaltv_settings_payloadtest(self, payloadtest_type):
+    def set_digitaltv_settings_payloadtest_dvbs2(self, payloadtest_type):
         """
         Selects the payload in the test TS packets or in the null packets with stuffing = ON.
             PRBS
@@ -753,7 +613,7 @@ class Ektsfe(object):
         logging.info('DVBS2:PAYL {}'.format(payloadtest_type))
         time.sleep(0.1)
 
-    def set_digitaltv_settings_prbs(self, prbs_type):
+    def set_digitaltv_settings_prbs_dvbs2(self, prbs_type):
         """
         Selects the type of PRBS in the payload range of the test TS packets if [SOURce][:IQCoder]:DVBS2:PAYLoad[?] = PRBS.
             P23_1        2^23 - 1 (ITU-T O.151)
@@ -781,7 +641,6 @@ class Ektsfe(object):
         self.specan.write('DM:ISRC {}'.format(interferer_type))
         logging.info('DM:ISRC {}'.format(interferer_type))
         time.sleep(0.1)
-
 
     def set_noise_noise_noise(self, noise_type):
         """
@@ -839,6 +698,1512 @@ class Ektsfe(object):
         logging.info('NOIS:EN {}'.format(ebno))
         time.sleep(0.1)
 
+    def set_noise_impulsive_ci(self, ci_noise):
+        """
+        Sets the carrier/impulsive noise ratio (C/I).
+            Range: -35.0  to  60.0 dB
+            Increment: 0.1 dB
+            *RST:20 dB
+            Default unit: dB
+        example :
+            NOIS:IMP:CI 45
+        :return:
+        """
+        self.specan.write('NOIS:IMP:CI {}'.format(ci_noise))
+        logging.info('NOIS:IMP:CI {}'.format(ci_noise))
+        time.sleep(0.1)
+
+    def set_noise_impulsive_frameduration(self, frameduration_type):
+        """
+        Sets the frame duration of the impulsive noise generator.
+        Parameters:<num>
+            0.010 s
+            0.100 s
+            1.000 s
+            *RST:0.010 s
+        example :
+            NOIS:IMP:FRAM 0.1
+            Sets frame duration of 100 ms.
+        :return:
+        """
+        self.specan.write('NOIS:IMP:FRAM {}'.format(frameduration_type))
+        logging.info('NOIS:IMP:FRAM {}'.format(frameduration_type))
+        time.sleep(0.1)
+
+    def set_noise_settings_bandwith(self, switch_type):
+        """
+        Switches the bandwidth coupling on or off.
+            Parameters:<bool>
+            ON
+            OFF
+        example :
+            NOIS:COUP ON
+            Switches on bandwidth coupling.
+        :return:
+        """
+        self.specan.write('NOIS:COUP {}'.format(switch_type))
+        logging.info('NOIS:COUP {}'.format(switch_type))
+        time.sleep(0.1)
+
+    def set_noise_settings_receiver(self, bandwidth):
+        """
+        Sets the equivalent receiver noise bandwidth for calculating the C/N ratio.
+        Sets the (receiver) noise bandwidth.
+            Range: 1e6  to  80e6 Hz
+            Increment: 1 Hz
+            *RST:10e6 Hz
+            Default unit: Hz
+        example :
+            NOIS:BAND 7.5e6
+        :return:
+        """
+        self.specan.write('NOIS:BAND {}'.format(bandwidth))
+        logging.info('NOIS:BAND {}'.format(bandwidth))
+        time.sleep(0.1)
+
+    def set_fading_fading_state(self, state_type):
+        """
+        Activates fading simulation.
+        Requires the R&S SFU-B30 and R&S SFU-K30 options.
+        FSIMulator2 requires the R&S SFU-B31 option.
+            ON
+            OFF
+        example :
+            FSIM ON
+        :return:
+        """
+        self.specan.write('FSIM {}'.format(state_type))
+        logging.info('FSIM {}'.format(state_type))
+        time.sleep(0.1)
+
+    def set_fading_profile_parameterset(self, parameterset_type):
+        """
+        Selects a predefined fading simulator setting which complies with the test specifications found in the common broadcast standards.
+        Requires the R&S SFU-B30 and R&S SFU-K30 options.
+        FSIMulator2 requires the R&S SFU-B31 option.
+            <parameter>
+            EASY3
+            ECHO
+            FX_echo
+            PT_echo
+            SFN_echo
+            TU6
+            TU6_
+            RA4
+            RA6
+            RA6_
+            RC6_anx_b
+            RL6_anx_b
+            RED_ht100
+            ET50
+            VALidate100
+            RC12_anx_b
+            RL12_anx_b
+            TU3_12path
+            TU50_12path
+            HT100_12path
+            RC20_anx_b
+            RL20_anx_b
+            HIC
+            HNIC
+            HPT
+            HNPT
+            AA_Static
+            AB_Static
+            AC_Static
+            AD_Static
+            AE_Static
+            AF_Static
+            AG_Static
+            B_ECho
+            C1_Random
+            C2_Random
+            C3_Random
+            MBRai
+            A_BRazil
+            B_BRazil
+            C_BRazil
+            CS_Brazil
+            CM_Brazil
+            D_BRazil
+            DM_Brazil
+            E_BRazil
+            D1CRc_dyn
+            D2CRc_dyn
+            D3CRc_dyn
+            D4CRc_dyn
+            AACats
+            CHP1
+            CHP2
+            CHP3
+            CHP4
+            CHP5
+            CHP6
+            CHP7
+            TU12
+            IECP_62002
+            PI
+            PO
+            VU
+            MR
+            DAB_
+        example :
+            FSIM:STAN TU6
+            Selects settings in conformity with typical urban 6 (with 6 fading paths).
+        :return:
+        """
+        self.specan.write('FSIM:STAN {}'.format(parameterset_type))
+        logging.info('FSIM:STAN {}'.format(parameterset_type))
+        time.sleep(0.1)
+
+    def set_fading_profile_configuration(self, configuration_type):
+        """
+        Sets the fading configuration.
+        The allowed entries depend on the installed options.
+        FSIMulator2 requires the R&S SFU-B31 option.
+            BIRThdeath
+            DELay
+            D30Fine
+            D50Fine
+            MDELay
+            P2DYn
+        example :
+            FSIM:CONF DEL
+        :return:
+        """
+        self.specan.write('FSIM:CONF {}'.format(configuration_type))
+        logging.info('FSIM:CONF {}'.format(configuration_type))
+        time.sleep(0.1)
+
+    def set_fading_profile_state(self, group, path, state_type):
+        """
+        Activate or deactivate the selected path for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
+            ON
+            OFF
+            Suffix:
+            {1:2}       Fader A or B for fading split
+            {1:8}       Path group; 1 to 8 for max. path, otherwise 1 to 4.
+            {1:n}       Path 1 to n
+        example :
+            FSIM:DEL:GRO:PATH2:STAT ON
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:STAT {}'.format(group, path, state_type))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:STAT {}'.format(group, path, state_type))
+        time.sleep(0.1)
+
+    def set_fading_profile_profile(self, group, path, state_type):
+        """
+        Activate or deactivate the selected path for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
+            PDOPpler
+            SPATh
+            RAYLeigh
+            RICE
+            CPHase
+            GAU1
+            GAU2
+            GAUD
+            GDOP
+            G01
+            G008
+        Suffix:
+        {1:2}       Fader A or B for fading split
+        {1:8}       Path group; 1 to 8 for max. path, otherwise 1 to 4.
+        {1:n}       Path 1 to n
+        example :
+            FSIM:DEL:GRO:PATH2:PROF RICE
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:PROF {}'.format(group, path, state_type))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:PROF {}'.format(group, path, state_type))
+        time.sleep(0.1)
+
+    def set_fading_profile_pathloss(self, group, path, pathloss):
+        """
+        Set the loss of the paths for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
+        Parameters:
+            Range: 0.0  to  50.0 dB
+            Increment: 0.1 dB
+            *RST:0 dB
+            Default unit: dB
+
+        example :
+            FSIM:DEL:GRO:PATH2:LOSS 2 dB
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOSS {}'.format(group, path, pathloss))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:LOSS {}'.format(group, path, pathloss))
+        time.sleep(0.1)
+
+    def set_fading_profile_basicdelay(self, group, basicdelay):
+        """
+        Determine the group delay (basic delay) for the standard delay and fine delay 30 MHz / 50 MHz fading
+        configurations. Within a group, all of the paths are jointly delayed by this value. The resulting delay of a
+        path is obtained by adding the basic delay and the additional delay. The basic delay of group 1 and 5
+        is always equal to 0.
+        Parameters:
+            Range: 0.0  to  5.24287e-3 s
+            Increment: 10 ns
+            *RST:0.0 ns
+            Default unit: s
+        example :
+            FSIM:DEL:GRO2:BDEL 1E-3
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:BDEL {}'.format(group, basicdelay))
+        logging.info('FSIM:DEL:GRO{}:BDEL {}'.format(group, basicdelay))
+        time.sleep(0.1)
+
+    def set_fading_profile_additdelay(self,  group, path, additdelay):
+        """
+        Determine the path-specific delay (additional delay) of the selected path for the standard delay and fine
+        delay 30 MHz / 50 MHz fading configurations.
+        Parameters:
+            Range: 0.0  to  40.9e-6 s
+            Increment: Standard delay: 10 ns, fine delay 50 MHz: 10 ps, fine delay 30 MHz: 10 ps
+            *RST:0
+            Default unit: s
+        example :
+            FSIM:DEL:GRO:PATH2:ADEL 10E-6
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:ADEL {}'.format(group, path, additdelay))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:ADEL {}'.format(group, path, additdelay))
+        time.sleep(0.1)
+
+    def set_fading_profile_resuldelay(self,  group, path, resuldelay):
+        """
+        Query the resulting delay of the paths for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
+        not complte
+        example :
+            FSIM:DEL:GRO2:PATH2:RDEL 0.00021
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:RDEL {}'.format(group, path, resuldelay))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:RDEL {}'.format(group, path, resuldelay))
+        time.sleep(0.1)
+
+    def set_fading_profile_power(self,  group, path, power):
+        """
+        Query the resulting delay of the paths for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
+        need profile is RICE
+            Range: -30.0  to  +30.0 dB
+            Increment: 0.1 dB
+            *RST:0 dB
+            Default unit: dB
+        example :
+            FSIM:DEL:GRO:PATH2:PRAT -15
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:PRAT {}'.format(group, path, power))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:PRAT {}'.format(group, path, power))
+        time.sleep(0.1)
+
+    def set_fading_profile_constphase(self,  group, path, constphase):
+        """
+        Determine the phase for constant phase and pure Doppler fading for the standard delay and fine delay
+        30 MHz / 50 MHz fading configurations
+        need profile is RICE
+            Range: 0.0  to  359.9 deg
+            Increment: 0.1 deg
+            *RST:0 deg
+            Default unit: deg
+        example :
+            FSIM:DEL:GRO2:PATH:CPH 5DEG
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:CPH {}'.format(group, path, constphase))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:CPH {}'.format(group, path, constphase))
+        time.sleep(0.1)
+
+    def set_fading_profile_speed(self,  group, path, speed):
+        """
+        Set the speed v of the moving receiver for the standard delay and fine delay 30 MHz / 50 MHz fading configurations
+            Range: 0.0  to  4796680.0 m/s
+            Increment: 0.1 m/s
+            *RST:0 m/s
+            Default unit: m/s
+        example :
+            FSIM:DEL:GRO:PATH2:SPE 2
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:SPE {}'.format(group, path, speed))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:SPE {}'.format(group, path, speed))
+        time.sleep(0.1)
+
+    def set_fading_profile_freqratio(self,  group, path, freq):
+        """
+        Set the ratio of the actual Doppler frequency to the set Doppler frequency for the standard delay and fine delay
+        30 MHz / 50 MHz fading configurations for Rice and pure Doppler fading.
+            Range: -1.0  to  +1.0
+            Increment:0.05
+            *RST:1
+        example :
+            FSIM:DEL:GRO:PATH2:FRAT -0.71
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:FRAT {}'.format(group, path, freq))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:FRAT {}'.format(group, path, freq))
+        time.sleep(0.1)
+
+    def set_fading_profile_doppler(self,  group, path, doppler):
+        """
+        Set or query the Doppler frequency for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.\
+        not complte
+            Range: 0.0  to  1600.0
+            Default unit: Hz
+        example :
+            FSIM:DEL:GRO:PATH:FDOP 556
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:FDOP {}'.format(group, path, doppler))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:FDOP {}'.format(group, path, doppler))
+        time.sleep(0.1)
+
+    def set_fading_profile_correlation(self,  group, path, correlation_type):
+        """
+        witch on correlation of the paths of the first fader to the corresponding paths of the second fader for the
+        standard delay and fine delay 30 MHz / 50 MHz fading configurations.
+            ON
+            OFF
+        example :
+            FSIM:DEL:GRO2:PATH:CORR:STAT ON
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:STAT {}'.format(group, path, correlation_type))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:STAT {}'.format(group, path, correlation_type))
+        time.sleep(0.1)
+
+    def set_fading_profile_coefficient(self,  group, path, coefficient):
+        """
+        Determine the magnitude of the complex correlation coefficient for the standard delay and fine delay
+        30 MHz / 50 MHz fading configurations
+            Range: 0.0  to  100.0%
+            Increment: 5%
+            *RST:100%
+            Default unit: %
+        example :
+            FSIM:DEL:GRO2:PATH:CORR:COEF 95
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:COEF {}'.format(group, path, coefficient))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:COEF {}'.format(group, path, coefficient))
+        time.sleep(0.1)
+
+    def set_fading_profile_phase(self,  group, path, phase):
+        """
+        Determine the phase of the complex correlation coefficient for the standard delay and fine delay 30 MHz / 50 MHz
+        fading configurations.
+            Range: 0.0  to  359.9 deg
+            Increment: 0.1 deg
+            *RST:0 deg
+            Default unit: deg
+        example :
+            FSIM:DEL:GRO2:PATH:CORR:PHAS 5
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:PHAS {}'.format(group, path, phase))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:PHAS {}'.format(group, path, phase))
+        time.sleep(0.1)
+
+    def set_fading_profile_lognormal(self,  group, path, state_type):
+        """
+        Switch lognormal fading on or off for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
+            ON
+            OFF
+        example :
+            FSIM:DEL:GRO:PATH2:LOGN:STAT ON
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:STAT {}'.format(group, path, state_type))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:STAT {}'.format(group, path, state_type))
+        time.sleep(0.1)
+
+    def set_fading_profile_localconstant(self,  group, path, local_constant):
+        """
+        Switch lognormal fading on or off for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
+        not complet
+            Range: 0.0  to  200.0 m
+            Increment: 0.1 m
+            *RST:100 m
+            Default unit: m
+        example :
+            FSIM:DEL:GRO:PATH2:LOGN:LCON 100
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:LCON {}'.format(group, path, local_constant))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:LCON {}'.format(group, path, local_constant))
+        time.sleep(0.1)
+
+    def set_fading_profile_standard(self,  group, path, standard):
+        """
+        Set the standard deviation for lognormal fading for the standard delay and fine delay 30 MHz / 50 MHz fading
+            Range: 0.0  to  12.0 dB
+            Increment: 1dB
+            *RST:0 dB
+            Default unit: dB
+        example :
+            FSIM:DEL:GRO:PATH2:LOGN:CSTD 2
+        :return:
+        """
+        self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:CSTD {}'.format(group, path, standard))
+        logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:CSTD {}'.format(group, path, standard))
+        time.sleep(0.1)
+
+    def set_fading_settings_speedunit(self,  speed_unit):
+        """
+        Set the standard deviation for lognormal fading for the standard delay and fine delay 30 MHz / 50 MHz fading
+            MPS
+            KMH
+            MPH
+        example :
+            FSIM:SPE:UNIT MPS
+        :return:
+        """
+        self.specan.write('FSIM:SPE:UNIT {}'.format(speed_unit))
+        logging.info('FSIM:SPE:UNIT {}'.format(speed_unit))
+        time.sleep(0.1)
+
+    def set_fading_settings_peference(self,  peference_type):
+        """
+        Set the constant in the formula for the Doppler frequency calculation
+        not complet
+            SPEed
+            FDOPpler
+        example :
+            FSIM:REF:SPE
+        :return:
+        """
+        self.specan.write('FSIM:REF:{}'.format(peference_type))
+        logging.info('FSIM:REF:{}'.format(peference_type))
+        time.sleep(0.1)
+
+    def set_fading_settings_common(self,  doppler_type):
+        """
+        Set the constant in the formula for the Doppler frequency calculation
+        not complet
+            ON
+            OFF
+        example :
+            FSIM:CSP ON
+        :return:
+        """
+        self.specan.write('FSIM:CSP:{}'.format(doppler_type))
+        logging.info('FSIM:CSP:{}'.format(doppler_type))
+        time.sleep(0.1)
+
+    def set_fading_settings_ignore(self,  ignore_type):
+        """
+        Determines whether frequency changes < 5% are ignored. This enables faster frequency hopping.
+            ON
+            OFF
+        example :
+            FSIM:IGN:RFCH ON
+        :return:
+        """
+        self.specan.write('FSIM:IGN:RFCH {}'.format(ignore_type))
+        logging.info('FSIM:IGN:RFCH {}'.format(ignore_type))
+        time.sleep(0.1)
+
+    def set_fading_settings_signal(self,  signal_type):
+        """
+        Determines whether frequency changes < 5% are ignored. This enables faster frequency hopping.
+            BB
+            RF
+            SFU
+            SFE
+            SMU
+        example :
+            FSIM:SDES RF
+        :return:
+        """
+        self.specan.write('FSIM:SDES {}'.format(signal_type))
+        logging.info('FSIM:SDES {}'.format(signal_type))
+        time.sleep(0.1)
+
+    def set_fading_settings_insertionmode(self,  mode_type):
+        """
+        Sets the insertion loss of the fading simulator.
+            NORMal
+            LACP
+            USER
+        example :
+            FSIM:ILOS:MODE USER
+        :return:
+        """
+        self.specan.write('FSIM:ILOS:MODE {}'.format(mode_type))
+        logging.info('FSIM:ILOS:MODE {}'.format(mode_type))
+        time.sleep(0.1)
+
+    def set_fading_settings_insertionloss(self,  insertion_loss):
+        """
+        Sets the user-defined insertion loss of the fading simulator if USER is selected.
+            Range: -3  to  +30.0 dB
+            Increment: 0.1 dB
+            *RST:0.0 dB
+            Default unit: dB
+        example :
+            FSIM:ILOS 4 dB
+        :return:
+        """
+        self.specan.write('FSIM:ILOS {}'.format(insertion_loss))
+        logging.info('FSIM:ILOS {}'.format(insertion_loss))
+        time.sleep(0.1)
+
+
+
+
+    def set_digitaltv_input_source_dvbc(self, source_type):
+        """
+        Selects the signal source for the DVB-C coder.
+            EXTernal
+            TSPLayer
+            TESTsignal
+        example :
+            DVBC:SOUR TEST
+        :return:
+        """
+        self.specan.write('DVBC:SOUR {}'.format(source_type))
+        logging.info('DVBC:SOUR {}'.format(source_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_symbolrate_dvbc(self, symbol_rate):
+        """
+        Sets the symbol rate.
+            Range: 100000  to  8000000 MS/s
+            *RST:6.900000e6
+            Default unit: S/s
+        example :
+            DVBC:SYMB 4.711e6
+        :return:
+        """
+        self.specan.write('DVBC:SYMB {}'.format(symbol_rate))
+        logging.info('DVBC:SYMB {}'.format(symbol_rate))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_constellation_dvbc(self, symbol_rate):
+        """
+        Selects the modulation (constellation) of the DVB-C signal.
+            C16          16QAM
+            C32          32QAM
+            C64          64QAM
+            C128        128QAM
+            C256        256QAM
+         Example:
+            DVBC:CONS C64
+        :return:
+        """
+        self.specan.write('DVBC:CONS {}'.format(symbol_rate))
+        logging.info('DVBC:CONS {}'.format(symbol_rate))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_rolloff_dvbc(self, roll_type):
+        """
+        Selects the roll off.
+            0.10
+            0.13
+            0.15
+            0.18
+            0.20
+         Example:
+            DVBC:ROLL 0.13
+        :return:
+        """
+        self.specan.write('DVBC:ROLL {}'.format(roll_type))
+        logging.info('DVBC:ROLL {}'.format(roll_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_special_special_dvbc(self, special_type):
+        """
+        Enables the special settings.
+            ON
+            OFF
+         Example:
+            DVBC:SETT ON
+        :return:
+        """
+        self.specan.write('DVBC:SETT {}'.format(special_type))
+        logging.info('DVBC:SETT {}'.format(special_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_testtspacket_dvbc(self, packet_type):
+        """
+        Selects the mode of the test TS packet.
+            H184        Head / 184 payload
+            S187        Sync / 187 payload
+         Example:
+            DVBC:TSP S187
+        :return:
+        """
+        self.specan.write('DVBC:TSP {}'.format(packet_type))
+        logging.info('DVBC:TSP {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_pidtestpacket_dvbc(self, packet_type):
+        """
+        Selects the PID test packet.
+            NULL
+            VARiable
+         Example:
+            DVBC:PIDT VAR
+        :return:
+        """
+        self.specan.write('DVBC:PIDT {}'.format(packet_type))
+        logging.info('DVBC:PIDT {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_payloadtest_dvbc(self, stuff_type):
+        """
+        Selects the payload in the TS packets of the DVB-C signal.
+            PRBS
+            H00     Hex 00
+            HFF     Hex FF
+         Example:
+            DVBC:PAYL HFF
+        :return:
+        """
+        self.specan.write('DVBC:PAYL {}'.format(stuff_type))
+        logging.info('DVBC:PAYL {}'.format(stuff_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_prbs_dvbc(self, prbs_type):
+        """
+        Selects the mode of the PRBS.
+            P23_1       2^23 - 1 (ITU-T O.151)
+            P15_1       2^15 - 1 (ITU-T O.151)
+         Example:
+            DVBC:PRBS P15_1
+        :return:
+        """
+        self.specan.write('DVBC:PRBS {}'.format(prbs_type))
+        logging.info('DVBC:PRBS {}'.format(prbs_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_input_source_dvbt(self, source_type):
+        """
+        Selects the signal source for the DVB-T coder for high priority in hierarchic and nonhierarchical coding.
+            EXTernal
+            TSPLayer
+            TESTsignal
+        example :
+            DVBT:SOUR TEST
+        :return:
+        """
+        self.specan.write('DVBT:SOUR {}'.format(source_type))
+        logging.info('DVBT:SOUR {}'.format(source_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_input_stuffing_dvbt(self, source_type):
+        """
+        Sets the stuffing for the high priority branch in hierarchic or nonhierarchical coding.
+            OFF         Stuffing off.
+            ON          Stuffing on.
+            ONEXtclk    Stuffing with an external clock signal
+        example :
+            DVBT:STUF OFF
+        :return:
+        """
+        self.specan.write('DVBT:STUF {}'.format(source_type))
+        logging.info('DVBT:STUF {}'.format(source_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_channelbandwidth_dvbt(self, bandwidth_type):
+        """
+        Selects the channel bandwidth for the DVB-T signal.
+            BW_8        8 MHz
+            BW_7        7 MHz
+            BW_6        6 MHz
+            BW_5        5 MHz
+        example :
+            DVBT:CHAN BW_7
+        :return:
+        """
+        self.specan.write('DVBT:CHAN {}'.format(bandwidth_type))
+        logging.info('DVBT:CHAN {}'.format(bandwidth_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_fftmode_dvbt(self, mode_type):
+        """
+        Sets the FFT mode of the DVB-T signal.
+            M2K     2K
+            M4K     4K
+            M8K     8K
+        example :
+            DVBT:FFT:MODE M2K
+        :return:
+        """
+        self.specan.write('DVBT:FFT:MODE {}'.format(mode_type))
+        logging.info('DVBT:FFT:MODE {}'.format(mode_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_guard_dvbt(self, guard_type):
+        """
+        Sets the guard interval of the useful OFDM symbol duration Tu.
+            G1_4        1/4
+            G1_8        1/8
+            G1_16       1/16
+            G1_32       1/32
+        example :
+            DVBT:GUAR:INT G1_4
+        :return:
+        """
+        self.specan.write('DVBT:GUAR:INT {}'.format(guard_type))
+        logging.info('DVBT:GUAR:INT {}'.format(guard_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_dvbhstate_dvbt(self, state_type):
+        """
+        Switches the DVB-H modulation on or off.
+            ON
+            OFF
+        example :
+            DVBT:DVHS ON
+        :return:
+        """
+        self.specan.write('DVBT:DVHS {}'.format(state_type))
+        logging.info('DVBT:DVHS {}'.format(state_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_hierarchy_dvbt(self, state_type):
+        """
+        Sets the hierarchy of the DVB-T signal.
+            NONHier     none
+            A1          α = 1
+            A2          α = 2
+            A4          α = 4
+        example :
+            DVBT:HIER A4
+        :return:
+        """
+        self.specan.write('DVBT:HIER {}'.format(state_type))
+        logging.info('DVBT:HIER {}'.format(state_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_constellation_dvbt(self, constellation_type):
+        """
+        Selects the modulation (constellation) of the DVB-T signal.
+            T4      QPSK
+            T16     16QAM
+            T64     64QAM
+        example :
+            DVBT:CONS T64
+        :return:
+        """
+        self.specan.write('DVBT:CONS {}'.format(constellation_type))
+        logging.info('DVBT:CONS {}'.format(constellation_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_coderate_dvbt(self, code_rate):
+        """
+        Selects the code rate for high priority in hierarchic and nonhierarchical coding.
+            R1_2        1/2
+            R2_3        2/3
+            R3_4        3/4
+            R5_6        5/6
+            R7_8        7/8
+        example :
+            DVBT:RATE R7_8
+        :return:
+        """
+        self.specan.write('DVBT:RATE {}'.format(code_rate))
+        logging.info('DVBT:RATE {}'.format(code_rate))
+        time.sleep(0.1)
+
+    def set_digitaltv_special_special_dvbt(self, special_rate):
+        """
+        Enables the special settings.
+            ON
+            OFF
+        example :
+            DVBT:SETT ON
+        :return:
+        """
+        self.specan.write('DVBT:SETT {}'.format(special_rate))
+        logging.info('DVBT:SETT {}'.format(special_rate))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_testtspacket_dvbt(self, packet_type):
+        """
+        Selects the mode of the test TS packet.
+            H184        Head / 184 payload
+            S187        Sync / 187 payload
+        example :
+            DVBT:TSP S187
+        :return:
+        """
+        self.specan.write('DVBT:TSP {}'.format(packet_type))
+        logging.info('DVBT:TSP {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_pidtestpacket_dvbt(self, packet_type):
+        """
+        Selects the PID test packet.
+            NULL
+            VARiable
+        example :
+            DVBT:PIDT VAR
+        :return:
+        """
+        self.specan.write('DVBT:PIDT {}'.format(packet_type))
+        logging.info('DVBT:PIDT {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_payloadtest_dvbt(self, stuff_type):
+        """
+        Selects the payload in the TS packets of the DVB-T signal.
+            PRBS
+            H00     Hex 00
+            HFF     Hex FF
+        example :
+            DVBT:PAYL HFF
+        :return:
+        """
+        self.specan.write('DVBT:PAYL {}'.format(stuff_type))
+        logging.info('DVBT:PAYL {}'.format(stuff_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_prbs_dvbt(self, prbs_type):
+        """
+        Selects the mode of the PRBS.
+            P23_1       2^23 - 1 (ITU-T O.151)
+            P15_1       2^15 - 1 (ITU-T O.151)
+        example :
+            DVBT:PRBS P15_1
+        :return:
+        """
+        self.specan.write('DVBT:PRBS {}'.format(prbs_type))
+        logging.info('DVBT:PRBS {}'.format(prbs_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_tpscall_dvbt(self, hex_num):
+        """
+        Sets the cell ID.
+            Range:      #H0000  to  #HFFFF
+            Increment:  1
+            *RST:       #H0000
+        example :
+            DVBT:CELL:ID #H123A
+        :return:
+        """
+        self.specan.write('DVBT:CELL:ID {}'.format(hex_num))
+        logging.info('DVBT:CELL:ID {}'.format(hex_num))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_tpsreservedstate_dvbt(self, state_type):
+        """
+        Switches the TPS reserved state on or off.
+            ON
+            OFF
+        example :
+            DVBT:TPSR:STAT ON
+        :return:
+        """
+        self.specan.write('DVBT:TPSR:STAT {}'.format(state_type))
+        logging.info('DVBT:TPSR:STAT {}'.format(state_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_tpsreservedbits_dvbt(self, bits):
+        """
+        Sets the TPS reserved value.
+            Range:      #H0  to  #HF
+            *RST:       #H0
+        example :
+            DVBT:TPSR:VAL #H4
+        :return:
+        """
+        self.specan.write('DVBT:TPSR:VAL {}'.format(bits))
+        logging.info('DVBT:TPSR:VAL {}'.format(bits))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_timeslicing_dvbt(self, slicing_type):
+        """
+        Switches time slicing for the high priority branch on or off in hierarchic or nonhierarchical codin
+            ON
+            OFF
+        example :
+            DVBT:TIM OFF
+        :return:
+        """
+        self.specan.write('DVBT:TIM {}'.format(slicing_type))
+        logging.info('DVBT:TIM {}'.format(slicing_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_mpefec_dvbt(self, fec_type):
+        """
+        Switches MPE FEC for the high priority branch on or off in hierarchic or nonhierarchical coding.
+            ON
+            OFF
+        example :
+            DVBT:MPEF OFF
+        :return:
+        """
+        self.specan.write('DVBT:MPEF {}'.format(fec_type))
+        logging.info('DVBT:MPEF {}'.format(fec_type))
+        time.sleep(0.1)
+
+
+
+
+
+
+
+
+    def set_digitaltv_input_t2miinterface_dvbt2(self, interface_type):
+        """
+        Activates or deactivates the T2 modulator interface.
+            ON
+            OFF
+        example :
+            T2DV:INP:T2MI:INT ON
+        :return:
+        """
+        self.specan.write('T2DV:INP:T2MI:INT {}'.format(interface_type))
+        logging.info('T2DV:INP:T2MI:INT {}'.format(interface_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_input_t2misource_dvbt2(self, source_type):
+        """
+        Sets the T2 modulator interface.
+            INTernal
+            EXTernal
+        example :
+            T2DV:INP:T2MI INT
+        :return:
+        """
+        self.specan.write('T2DV:INP:T2MI {}'.format(source_type))
+        logging.info('T2DV:INP:T2MI {}'.format(source_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_input_number_dvbt2(self, number):
+        """
+        Sets the PLP number (NPLP = 1: single PLP).
+            INTernal
+            EXTernal
+        example :
+            T2DV:INP:NPLP 1
+        :return:
+        """
+        self.specan.write('T2DV:INP:NPLP {}'.format(number))
+        logging.info('T2DV:INP:NPLP {}'.format(number))
+        time.sleep(0.1)
+
+    def set_digitaltv_input_inputformat_dvbt2(self, format_type):
+        """
+        Sets the input format.
+            GFPS
+            GCS
+            GSE
+            TS
+        example :
+            T2DV:PLP1:INP:FORM TS
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:INP:FORM {}'.format(format_type))
+        logging.info('T2DV:PLP1:INP:FORM {}'.format(format_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_input_source_dvbt2(self, source_type):
+        """
+        Sets the input source.
+            EXTernal
+            TSPLayer
+            TESTsignal
+        example :
+            T2DV:PLP1:INP:SOUR TSPL
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:INP:SOUR {}'.format(source_type))
+        logging.info('T2DV:PLP1:INP:SOUR {}'.format(source_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_input_stuffing_dvbt2(self, stuffing_type):
+        """
+        Sets the stuffing state.
+            ON
+            OFF
+        example :
+            T2DV:PLP1:INP:STUF OFF
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
+        logging.info('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
+        time.sleep(0.1)
+
+
+
+
+    def set_digitaltv_framing_channelbandwidth_dvbt2(self, bandwidth_type):
+        """
+        Sets the channel bandwidth.
+            BW_10       10 MHz; short form is BW_1, used as return value.
+            BW_8        8 MHz
+            BW_7        7 MHz
+            BW_6        6 MHz
+            BW_5        5 MHz
+            BW_2        1.7 MHz
+        example :
+            T2DV:CHAN BW_8
+        :return:
+        """
+        self.specan.write('T2DV:CHAN {}'.format(bandwidth_type))
+        logging.info('T2DV:CHAN {}'.format(bandwidth_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_framing_bandwidth_dvbt2(self, bandwidth):
+        """
+        Sets the bandwidth variation.
+
+            Range:          -1000  to  +1000 ppm
+            *RST:           0 ppm
+            Default unit:   ppm
+        example :
+            T2DV:BAND:VAR 10
+        :return:
+        """
+        self.specan.write('T2DV:BAND:VAR {}'.format(bandwidth))
+        logging.info('T2DV:BAND:VAR {}'.format(bandwidth))
+        time.sleep(0.1)
+
+    def set_digitaltv_framing_fftsize_dvbt2(self, fft_type):
+        """
+        Sets the FFT size.
+            M1K
+            M2K
+            M4K
+            M8K
+            M16K
+            M32K
+            M8E
+            M16E
+            M32E
+        example :
+            T2DV:FFT:MODE M32E
+        :return:
+        """
+        self.specan.write('T2DV:FFT:MODE {}'.format(fft_type))
+        logging.info('T2DV:FFT:MODE {}'.format(fft_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_framing_guard_dvbt2(self, guard_type):
+        """
+        Sets the channel bandwidth.
+            G1_4        1/4
+            G1_8        1/8
+            G1_16       1/16; short form is G1_1, used as return value.
+            G1_32       1/32; short form is G1_3, used as return value.
+            G1128       1/128; short form is G112, used as return value.
+            G19128      19/128; short form is G191, used as return value.
+            G19256      19/256; short form is G192, used as return value.
+        example :
+            T2DV:GUAR:INT G1128
+        :return:
+        """
+        self.specan.write('T2DV:GUAR:INT {}'.format(guard_type))
+        logging.info('T2DV:GUAR:INT {}'.format(guard_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_framing_pilot_dvbt2(self, piloy_type):
+        """
+        Sets the pilot pattern.
+            PP1
+            PP2
+            PP3
+            PP4
+            PP5
+            PP6
+            PP7
+            PP8
+        example :
+            T2DV:PIL PP7
+        :return:
+        """
+        self.specan.write('T2DV:PIL {}'.format(piloy_type))
+        logging.info('T2DV:PIL {}'.format(piloy_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_framing_nt2_dvbt2(self, n_t2):
+        """
+        Sets the number of T2 frames per super frame. For limitations see the DVB-T2 specifications.
+        example :
+            T2DV:NT2F 2
+        :return:
+        """
+        self.specan.write('T2DV:NT2F {}'.format(n_t2))
+        logging.info('T2DV:NT2F {}'.format(n_t2))
+        time.sleep(0.1)
+
+    def set_digitaltv_framing_ldata_dvbt2(self, l_data):
+        """
+        Sets the data symbols per T2 frame (L_DATA).
+        example :
+            T2DV:LDAT 59
+        :return:
+        """
+        self.specan.write('T2DV:LDAT {}'.format(l_data))
+        logging.info('T2DV:LDAT {}'.format(l_data))
+        time.sleep(0.1)
+
+    def set_digitaltv_framing_nsub_dvbt2(self, n_sub):
+        """
+        Sets the number of subslices per T2 frame (N_SUB).
+        not complete
+        example :
+            T2DV:NSUB 1
+        :return:
+        """
+        self.specan.write('T2DV:NSUB {}'.format(n_sub))
+        logging.info('T2DV:NSUB {}'.format(n_sub))
+        time.sleep(0.1)
+
+
+
+
+
+
+
+
+    def set_digitaltv_bicm_fecframe_dvbt2(self, frame_type):
+        """
+        Sets the FEC frame.
+            NORMal
+            SHORt
+        example :
+            T2DV:PLP1:FECF NORM
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:FECF {}'.format(frame_type))
+        logging.info('T2DV:PLP1:FECF {}'.format(frame_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_bicm_coderate_dvbt2(self, code_rate):
+        """
+        Sets the code rate.
+            R1_2        1/2
+            R2_3        2/3
+            R3_4        3/4
+            R5_6        5/6
+            R3_5        3/5
+            R4_5        4/5
+            R1_3        1/3
+            R2_5        2/5
+        example :
+            T2DV:PLP1:RATE R3_5
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:RATE {}'.format(code_rate))
+        logging.info('T2DV:PLP1:RATE {}'.format(code_rate))
+        time.sleep(0.1)
+
+    def set_digitaltv_bicm_constellation_dvbt2(self, constellation_type):
+        """
+        Sets the constellation.
+            T4          "QPSK"
+            T16         "16QAM"
+            T64         "64QAM"
+            T256        "256QAM"
+        example :
+            T2DV:PLP1:CONS T256
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:CONS {}'.format(constellation_type))
+        logging.info('T2DV:PLP1:CONS {}'.format(constellation_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_bicm_constelrotation_dvbt2(self, constellation_type):
+        """
+        Sets the constellation rotation state.
+            ON
+            OFF
+        example :
+            T2DV:PLP1:CROT ON
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:CROT {}'.format(constellation_type))
+        logging.info('T2DV:PLP1:CROT {}'.format(constellation_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_bicm_timeinterljump_dvbt2(self, timeintel):
+        """
+        Sets the time interleaver type.
+            0
+            1
+        example :
+            T2DV:PLP1:TIL:TYPE 0
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:TIL:TYPE {}'.format(timeintel))
+        logging.info('T2DV:PLP1:TIL:TYPE {}'.format(timeintel))
+        time.sleep(0.1)
+
+    def set_digitaltv_bicm_frameint_dvbt2(self, frameint):
+        """
+        Sets the time interleaver frame interval (I jump). For limitations see the DVB-T2 specifications.
+            "1"
+            "2" to "255"
+        example :
+            T2DV:PLP1:TIL:FINT 1
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:TIL:FINT {}'.format(frameint))
+        logging.info('T2DV:PLP1:TIL:FINT {}'.format(frameint))
+        time.sleep(0.1)
+
+    def set_digitaltv_bicm_timeinterllength_dvbt2(self, frameint):
+        """
+        Sets the time interleaver length. For limitations see the DVB-T2 specifications.
+            "0" to "255"
+            If "0" is set and if "TIME INTERL. TYPE" = "0" ("TIME INTERL. TYPE") , the time interleaving is disabled.
+        example :
+            T2DV:PLP1:TIL:LENG 3
+        :return:
+        """
+        self.specan.write('T2DV:PLP1:TIL:LENG {}'.format(frameint))
+        logging.info('T2DV:PLP1:TIL:LENG {}'.format(frameint))
+        time.sleep(0.1)
+
+
+
+
+
+
+    def set_digitaltv_settings_testtspacket_dvbt2(self, packet_type):
+        """
+        Sets the payload length of the test TS packet.
+            H184        Head / 184 payload
+            S187        Sync / 187 payload
+        example :
+            T2DV:TSP S187
+        :return:
+        """
+        self.specan.write('T2DV:TSP {}'.format(packet_type))
+        logging.info('T2DV:TSP {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_pidtest_dvbt2(self, packet_type):
+        """
+        Sets the PID of test TS packet.
+            NULL
+            VARiable
+        example :
+            T2DV:PIDT NULL
+        :return:
+        """
+        self.specan.write('T2DV:PIDT {}'.format(packet_type))
+        logging.info('T2DV:PIDT {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_payload_dvbt2(self, packet_type):
+        """
+        Sets the payload of the test TS packets.
+            PRBS
+            H00     Hex 00
+            HFF     Hex FF
+        example :
+            T2DV:PAYL PRBS
+        :return:
+        """
+        self.specan.write('T2DV:PAYL {}'.format(packet_type))
+        logging.info('T2DV:PAYL {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_prbs_dvbt2(self, prbs_type):
+        """
+        Sets the PRBS of the test TS packet.
+            P23_1       2^23 - 1 (ITU-T O.151)
+            P15_1       2^15 - 1 (ITU-T O.151)
+        example :
+            T2DV:PRBS P15_1
+        :return:
+        """
+        self.specan.write('T2DV:PRBS {}'.format(prbs_type))
+        logging.info('T2DV:PRBS {}'.format(prbs_type))
+        time.sleep(0.1)
+
+
+
+    def set_digitaltv_input_source_j83b(self, source_type):
+        """
+        Selects the signal source for the J.83B coder.
+            EXTernal
+            TSPLayer
+            TESTsignal
+        example :
+            J83B:SOUR TEST
+        :return:
+        """
+        self.specan.write('J83B:SOUR {}'.format(source_type))
+        logging.info('J83B:SOUR {}'.format(source_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_symbolrate_j83b(self, symbol_rate):
+        """
+        Sets the symbol rate.
+        Parameters:
+        <num> (64QAM)
+            Range:          4.55124  to  5.56264 MS/s
+            *RST:           5.056941e6
+            Default unit:   S/s
+        <num> (256QAM)
+            Range:          4.82448  to  5.89659 MS/s
+            *RST:           5.056941e6
+            Default unit:   S/s
+        example :
+            J83B:SYMB 5.5e6
+        :return:
+        """
+        self.specan.write('J83B:SYMB {}'.format(symbol_rate))
+        logging.info('J83B:SYMB {}'.format(symbol_rate))
+        time.sleep(0.1)
+
+    def set_digitaltv_coding_interleavermode_j83b(self, mode_type):
+        """
+        Selects the interleaver mode.
+            0
+            1
+            2
+            3
+            4
+            5
+            6
+            7
+            8
+            9
+            10
+            12
+            14
+        example :
+            J83B:INT:MODE 0
+        :return:
+        """
+        self.specan.write('J83B:INT:MODE {}'.format(mode_type))
+        logging.info('J83B:INT:MODE {}'.format(mode_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_special_special_j83b(self, settings_type):
+        """
+        Enables the special settings.
+            ON
+            OFF
+        example :
+            J83B:SETT ON
+        :return:
+        """
+        self.specan.write('J83B:SETT {}'.format(settings_type))
+        logging.info('J83B:SETT {}'.format(settings_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_special_checksumgen_j83b(self, checksumgen_type):
+        """
+        Switches the checksum generator on or off.
+            ON
+            OFF
+        example :
+            J83B:CHEC OFF
+        :return:
+        """
+        self.specan.write('J83B:CHEC {}'.format(checksumgen_type))
+        logging.info('J83B:CHEC {}'.format(checksumgen_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_special_readsolomon_j83b(self, read_type):
+        """
+        Switches the Reed Solomon coder on or off.
+            ON
+            OFF
+        example :
+            J83B:REED OFF
+        :return:
+        """
+        self.specan.write('J83B:REED {}'.format(read_type))
+        logging.info('J83B:REED {}'.format(read_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_special_interleaver_j83b(self, interleaver_type):
+        """
+        Switches the interleaver on or off.
+        not complte
+            ON
+            OFF
+        example :
+            J83B:INT OFF
+        :return:
+        """
+        self.specan.write('J83B:INT {}'.format(interleaver_type))
+        logging.info('J83B:INT {}'.format(interleaver_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_special_randomizer_j83b(self, randomizer_type):
+        """
+        Switches the randomizer on or off.
+            ON
+            OFF
+        example :
+            J83B:RAND OFF
+        :return:
+        """
+        self.specan.write('J83B:RAND {}'.format(randomizer_type))
+        logging.info('J83B:RAND {}'.format(randomizer_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_testtspacket_j83b(self, packet_type):
+        """
+        Selects the mode of the test TS packet.
+            H184        Head / 184 payload
+            S187        Sync / 187 payload
+        example :
+            J83B:TSP S187
+        :return:
+        """
+        self.specan.write('J83B:TSP {}'.format(packet_type))
+        logging.info('J83B:TSP {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_pidtest_j83b(self, packet_type):
+        """
+        Selects the PID test packet.
+            NULL
+            VARiable
+        example :
+            J83B:PIDT VAR
+        :return:
+        """
+        self.specan.write('J83B:PIDT {}'.format(packet_type))
+        logging.info('J83B:PIDT {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_payloadtest_j83b(self, payload_type):
+        """
+        Selects the payload in the TS packets of the J.83B signal
+            PRBS
+            H00     Hex 00
+            HFF     Hex FF
+        example :
+            J83B:PAYL HFF
+        :return:
+        """
+        self.specan.write('J83B:PAYL {}'.format(payload_type))
+        logging.info('J83B:PAYL {}'.format(payload_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_prbs_j83b(self, prbs_type):
+        """
+        Selects the mode of the PRBS.
+            P23_1       2^23 - 1 (ITU-T O.151)
+            P15_1       2^15 - 1 (ITU-T O.151)
+        example :
+            J83B:PRBS P15_1
+        :return:
+        """
+        self.specan.write('J83B:PRBS {}'.format(prbs_type))
+        logging.info('J83B:PRBS {}'.format(prbs_type))
+        time.sleep(0.1)
+
+
+
+
+
+
+
 
 
 
@@ -861,8 +2226,7 @@ class Ektsfe(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write('NOIS:AWG ON')
-
+        self.specan.write('J83B:INT OFF')
 
     def set_player_timing_openfile(self, file_path):
         """
@@ -886,15 +2250,6 @@ def _test_code():
     # host = '127.0.0.1'
     # port = 8900
     specan = Ektsfe(net)
-    # specan.set_channel_output_frequency("3", "555")
-    # specan.set_current_channel("3")
-
-    # specan.set_coder_output_symbol_rate("31.711e6")
-    # specan.set_dvbs2_modulation_mode("S8")
-    # specan.set_fec_frame_type("NORM")
-    # specan.set_switch_output_symbol("OFF")
-    # specan.set_code_rate("R2_3")
-    # specan.set_coder_output_sysbol_filter("0.25")
     # specan.set_frequency_frequency_frequency("101 MHz")
     # specan.set_frequency_frequency_offset("500kHz")
     # specan.set_frequency_frequency_channel("4")
@@ -918,28 +2273,125 @@ def _test_code():
     # specan.set_modulation_modulation_source("ATV")
     # specan.set_modulation_modulation_standard_atv("LPR")
     # specan.set_modulation_modulation_standard_dvt("DVB-T2")
-    # specan.set_digitaltv_input_source("TSPL")
-    # specan.set_digitaltv_coding_symbolrate("31.711e6")
-    # specan.set_digitaltv_coding_constellation("S4")
-    # specan.set_digitaltv_coding_fecframe("NORM")
-    # specan.set_digitaltv_coding_rolloff("0.25")
-    # specan.set_digitaltv_coding_coderate("R8_9")
-    # specan.set_digitaltv_special_settings("ON")
-    # specan.set_digitaltv_phasenoise_phasenoise("ON")
-    # specan.set_digitaltv_phasenoise_shape("SHA3")
-    # specan.set_digitaltv_phasenoise_magnitude("3")
-    # specan.set_digitaltv_settings_packet("S187")
-    # specan.set_digitaltv_settings_pidpacket("VAR")
-    # specan.set_digitaltv_settings_pid("0001")
-    # specan.set_digitaltv_settings_payloadtest("HFF")
-    # specan.set_digitaltv_settings_prbs("P15_1")
+    specan.set_digitaltv_input_source_dvbs2("TSPL")
+    specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
+    specan.set_digitaltv_coding_constellation_dvbs2("S4")
+    specan.set_digitaltv_coding_fecframe_dvbs2("NORM")
+    specan.set_digitaltv_coding_pilots_dvbs2("OFF")
+    specan.set_digitaltv_coding_rolloff_dvbs2("0.25")
+    specan.set_digitaltv_coding_coderate_dvbs2("R8_9")
+    specan.set_digitaltv_special_settings_dvbs2("ON")
+    specan.set_digitaltv_phasenoise_phasenoise_dvbs2("ON")
+    specan.set_digitaltv_phasenoise_shape_dvbs2("SHA3")
+    specan.set_digitaltv_phasenoise_magnitude_dvbs2("3")
+    specan.set_digitaltv_settings_tspacket_dvbs2("S187")
+    specan.set_digitaltv_settings_pidpacket_dvbs2("VAR")
+    specan.set_digitaltv_settings_pid_dvbs2("0001")
+    specan.set_digitaltv_settings_payloadtest_dvbs2("HFF")
+    specan.set_digitaltv_settings_prbs_dvbs2("P15_1")
     # specan.set_interferer_source("OFF")
     # specan.set_noise_noise_noise("OFF")
     # specan.set_noise_noise_awgn("ON")
-    specan.set_noise_awgn_cn("45")
+    # specan.set_noise_awgn_cn("45")
+    # specan.set_noise_impulsive_ci("45")
+    # specan.set_noise_impulsive_frameduration("0.1")
+    # specan.set_noise_settings_bandwith("OFF")
+    # specan.set_noise_settings_receiver("7.5e6")
+    # specan.set_fading_fading_state("OFF")
+    # specan.set_fading_profile_parameterset("TU12")
+    # specan.set_fading_profile_configuration("D30Fine")
+    # specan.set_fading_profile_state("1", "1", "OFF")
+    # specan.set_fading_profile_profile("2", "2", "RICE")
+    # specan.set_fading_profile_pathloss("2", "2", "2 dB")
+    # specan.set_fading_profile_basicdelay("2", "1E-3")
+    # specan.set_fading_profile_additdelay("2", "2", "10E-6")
+    # specan.set_fading_profile_resuldelay("2", "2", "20E-6")
+    # specan.set_fading_profile_power("2", "2", "-15")
+    # specan.set_fading_profile_constphase("2", "2", "5DEG")
+    # specan.set_fading_profile_speed("2", "2", "2")
+    # specan.set_fading_profile_freqratio("2", "2", "-0.71")
+    # specan.set_fading_profile_doppler("2", "2", "2")
+    # specan.set_fading_profile_correlation("2", "2", "ON")
+    # specan.set_fading_profile_coefficient("2", "2", "95")
+    # specan.set_fading_profile_phase("2", "2", "5")
+    # specan.set_fading_profile_lognormal("2", "2", "ON")
+    # specan.set_fading_profile_localconstant("2", "2", "100")
+    # specan.set_fading_profile_standard("2", "2", "2")
+    # specan.set_fading_settings_peference("SPEED")
+    # specan.set_fading_settings_common("ON")
+    # specan.set_fading_settings_ignore("ON")
+    # specan.set_fading_settings_signal("BB")
+    # specan.set_fading_settings_insertionmode("USER")
+    # specan.set_fading_settings_insertionloss("5 dB")
+    # specan.set_coder_output_symbol_rate_dvbc("5.711e6")
+    # specan.set_digitaltv_coding_symbolrate_dvbc("C256")
+    # specan.set_digitaltv_coding_coderate_dvbt("R7_8")
+    # specan.set_digitaltv_coding_constellation_dvbt("T16")
+    # specan.set_digitaltv_coding_guard_dvbt("G1_32")
+    # specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_7")
+    # specan.set_digitaltv_coding_fftmode_dvbt("M8K")
+    # specan.set_digitaltv_coding_dvbhstate_dvbt("OFF")
+    # specan.set_digitaltv_coding_hierarchy_dvbt("NONHier")
+    # specan.set_digitaltv_framing_fftsize_dvbt2("M2K")
+    # specan.set_digitaltv_framing_channelbandwidth_dvbt2("BW_5")
+    # specan.set_digitaltv_framing_guard_dvbt2("G1128")
+    # specan.set_digitaltv_bicm_coderate_dvbt2("R3_4")
+    # specan.set_digitaltv_bicm_constellation_dvbt2("T64")
+    # specan.set_digitaltv_bicm_constelrotation_dvbt2("ON")
+    # specan.set_digitaltv_settings_pidtest_dvbt2("NULL")
+    # specan.set_digitaltv_input_source_j83b("TSPLayer")
+    # specan.set_digitaltv_coding_symbolrate_j83b("4.7e6")
+    # specan.set_digitaltv_coding_interleavermode_j83b("1")
+    # specan.set_digitaltv_special_special_j83b("OFF")
+    # specan.set_digitaltv_special_checksumgen_j83b("ON")
+    # specan.set_digitaltv_special_readsolomon_j83b("OFF")
+    # specan.set_digitaltv_special_interleaver_j83b("OFF")
+    # specan.set_digitaltv_special_randomizer_j83b("OFF")
+    # specan.set_digitaltv_settings_testtspacket_j83b("H184")
+    # specan.set_digitaltv_settings_pidtest_j83b("NULL")
+    # specan.set_digitaltv_settings_payloadtest_j83b("H00")
+    # specan.set_digitaltv_settings_prbs_j83b("P15_1")
+    # specan.set_digitaltv_settings_testtspacket_dvbt2("H184")
+    # specan.set_digitaltv_settings_payload_dvbt2("H00")
+    # specan.set_digitaltv_settings_prbs_dvbt2("P23_1")
+    # specan.set_digitaltv_bicm_fecframe_dvbt2("SHORt")
+    # specan.set_digitaltv_bicm_timeinterljump_dvbt2("0")
+    # specan.set_digitaltv_bicm_frameint_dvbt2("1")
+    # specan.set_digitaltv_bicm_timeinterllength_dvbt2("4")
+    # specan.set_digitaltv_framing_bandwidth_dvbt2("4")
+    # specan.set_digitaltv_framing_pilot_dvbt2("PP1")
+    # specan.set_digitaltv_framing_nt2_dvbt2("30")
+    # specan.set_digitaltv_framing_ldata_dvbt2("60")
+    # specan.set_digitaltv_framing_nsub_dvbt2("2")
+    # specan.set_digitaltv_input_t2miinterface_dvbt2("OFF")
+    # specan.set_digitaltv_input_t2misource_dvbt2("EXTernal")
+    # specan.set_digitaltv_input_number_dvbt2("2")
+    # specan.set_digitaltv_input_inputformat_dvbt2("GSE")
+    # specan.set_digitaltv_input_source_dvbt2("TSPLayer")
+    # specan.set_digitaltv_input_stuffing_dvbt2("OFF")
+    # specan.set_digitaltv_input_source_dvbt("TSPLayer")
+    # specan.set_digitaltv_input_stuffing_dvbt("ON")
+    # specan.set_digitaltv_special_special_dvbt("OFF")
+    # specan.set_digitaltv_settings_testtspacket_dvbt("S187")
+    # specan.set_digitaltv_settings_pidtestpacket_dvbt("VARiable")
+    # specan.set_digitaltv_settings_payloadtest_dvbt("H00")
+    # specan.set_digitaltv_settings_prbs_dvbt("P15_1")
+    # specan.set_digitaltv_settings_tpscall_dvbt("#H123A")
+    # specan.set_digitaltv_settings_tpsreservedstate_dvbt("OFF")
+    # specan.set_digitaltv_settings_tpsreservedbits_dvbt("#H7")
+    # specan.set_digitaltv_settings_timeslicing_dvbt("OFF")
+    # specan.set_digitaltv_settings_mpefec_dvbt("OFF")
+    # specan.set_digitaltv_input_source_dvbc("TSPLayer")
+    # specan.set_digitaltv_coding_rolloff_dvbc("0.18")
+    # specan.set_digitaltv_special_special_dvbc("OFF")
+    # specan.set_digitaltv_settings_testtspacket_dvbc("H184")
+    # specan.set_digitaltv_settings_pidtestpacket_dvbc("VARiable")
+    # specan.set_digitaltv_settings_payloadtest_dvbc("PRBS")
+    specan.set_digitaltv_settings_prbs_dvbc("P15_1")
     # specan.set_cmd()
 
 
 if __name__ == '__main__':
-    # _test_code()
-    pass
+    _test_code()
+    # pass
+1

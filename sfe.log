@@ -67,3 +67,119 @@
 2020-04-10 15:20:49,329 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:324] - INFO: SYST:PRES
 2020-04-10 15:21:18,315 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:324] - INFO: SYST:PRES
 2020-04-10 15:21:29,319 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:324] - INFO: SYST:PRES
+2020-04-10 17:49:18,424 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:324] - INFO: SYST:PRES
+2020-04-10 17:49:19,430 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:239] - INFO: DVBS:SOUR TSPL
+2020-04-10 17:49:19,542 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:313] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-04-10 17:49:19,648 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:272] - INFO: DVBS:CONS S4
+2020-04-10 17:49:19,750 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:300] - INFO: DVBS:RATE R3_4
+2020-04-10 17:49:19,855 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 5.000000e6
+2020-04-10 17:49:21,109 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:57] - INFO: FREQ:CW 1550 MHz
+2020-04-10 17:49:21,214 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:120] - INFO: POW:LEV -70 dBm
+2020-04-10 17:49:26,319 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 5.000000e6
+2020-04-10 17:49:31,423 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 6.000000e6
+2020-04-10 17:49:36,526 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 7.000000e6
+2020-04-10 17:49:41,631 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 8.000000e6
+2020-04-10 17:49:46,736 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 9.000000e6
+2020-04-10 17:49:51,845 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 10.000000e6
+2020-04-10 17:49:56,948 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 11.000000e6
+2020-04-10 17:50:02,053 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 12.000000e6
+2020-04-10 17:50:07,157 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 13.000000e6
+2020-04-10 17:50:12,263 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 14.000000e6
+2020-04-10 17:50:17,367 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 15.000000e6
+2020-04-10 17:50:22,471 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 16.000000e6
+2020-04-10 17:50:27,575 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 17.000000e6
+2020-04-10 17:50:32,680 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 18.000000e6
+2020-04-10 17:50:37,789 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 19.000000e6
+2020-04-10 17:50:42,894 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 20.000000e6
+2020-04-10 17:50:47,997 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 21.000000e6
+2020-04-10 17:50:53,102 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 22.000000e6
+2020-04-10 17:50:58,207 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 23.000000e6
+2020-04-10 17:51:03,312 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 24.000000e6
+2020-04-10 17:51:08,415 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 25.000000e6
+2020-04-10 17:51:13,520 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 26.000000e6
+2020-04-10 17:51:18,625 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 27.000000e6
+2020-04-10 17:51:23,729 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 28.000000e6
+2020-04-10 17:51:28,832 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 29.000000e6
+2020-04-10 17:51:33,937 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 30.000000e6
+2020-04-10 17:51:39,042 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 31.000000e6
+2020-04-10 17:51:44,148 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 32.000000e6
+2020-04-10 17:51:49,252 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 33.000000e6
+2020-04-10 17:51:54,355 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 34.000000e6
+2020-04-10 17:51:59,460 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 35.000000e6
+2020-04-10 17:52:04,565 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 36.000000e6
+2020-04-10 17:52:09,667 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 37.000000e6
+2020-04-10 17:52:14,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 38.000000e6
+2020-04-10 17:52:19,882 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 39.000000e6
+2020-04-10 17:52:24,986 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 40.000000e6
+2020-04-10 17:52:30,091 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 41.000000e6
+2020-04-10 17:52:35,196 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 42.000000e6
+2020-04-10 17:52:40,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 43.000000e6
+2020-04-10 17:52:45,404 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 44.000000e6
+2020-04-10 17:52:50,509 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: DVBS:SYMB 45.000000e6
+2020-04-13 14:11:26,477 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:854] - INFO: NOIS:IMP:CI 45
+2020-04-13 14:16:53,463 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:871] - INFO: NOIS:IMP:FRAM 100
+2020-04-13 14:17:09,943 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:871] - INFO: NOIS:IMP:FRAM 1000
+2020-04-13 14:17:17,459 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:871] - INFO: NOIS:IMP:FRAM 10
+2020-04-13 14:17:46,246 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:871] - INFO: NOIS:IMP:FRAM 100
+2020-04-13 14:17:57,806 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:871] - INFO: NOIS:IMP:FRAM 0.1
+2020-04-13 14:22:59,496 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:886] - INFO: NOIS:COUP OFF
+2020-04-13 14:27:44,805 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:902] - INFO: NOIS:BAND 7.5e6
+2020-04-13 14:33:53,493 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:917] - INFO: FSIM ON
+2020-04-13 14:34:03,960 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:917] - INFO: FSIM OFF
+2020-04-13 14:59:52,398 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:997] - INFO: FSIM:STAN TU12
+2020-04-13 15:04:51,164 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1016] - INFO: FSIM:CONF DEL
+2020-04-13 15:05:04,956 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1016] - INFO: FSIM:CONF D30Fine
+2020-04-13 15:11:44,479 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1029] - INFO: FSIM:DEL:STAT ON
+2020-04-13 15:11:57,167 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1029] - INFO: FSIM:DEL:STAT ON
+2020-04-13 15:12:07,302 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1029] - INFO: FSIM:DEL:STAT ON
+2020-04-13 15:12:11,505 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1029] - INFO: FSIM:DEL:STAT ON
+2020-04-13 15:12:54,138 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1029] - INFO: FSIM:DEL:STAT ON
+2020-04-13 15:24:35,122 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1031] - INFO: FSIM:DEL:GRO1:PATH1:STAT OFF
+2020-04-13 15:29:29,408 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1057] - INFO: FSIM:DEL:GRO2:PATH2:PROF RICE
+2020-04-13 15:34:13,236 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1074] - INFO: FSIM:DEL:GRO2:PATH2:LOSS 2 dB
+2020-04-13 15:38:30,801 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1093] - INFO: FSIM:DEL:GRO2:BDEL 1E-3
+2020-04-13 15:43:56,657 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1110] - INFO: FSIM:DEL:GRO2:PATH2:ADEL 10E-6
+2020-04-13 15:48:56,732 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1121] - INFO: FSIM:DEL:GRO2:PATH2:RDEL 0.00021
+2020-04-13 15:53:26,270 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1121] - INFO: FSIM:DEL:GRO2:PATH2:RDEL 20E-6
+2020-04-13 15:58:50,372 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1138] - INFO: FSIM:DEL:GRO2:PATH2:PRAT -15
+2020-04-13 16:03:52,805 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1155] - INFO: FSIM:DEL:GRO2:PATH2:CPH 5DEG
+2020-04-13 16:10:30,993 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1170] - INFO: FSIM:DEL:GRO2:PATH2:SPE 2
+2020-04-13 16:15:25,342 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1185] - INFO: FSIM:DEL:GRO2:PATH2:FRAT -0.71
+2020-04-13 16:20:23,308 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1198] - INFO: FSIM:DEL:GRO2:PATH2:FDOP 556
+2020-04-13 16:20:59,213 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1198] - INFO: FSIM:DEL:GRO2:PATH2:FDOP 456
+2020-04-13 16:26:12,710 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1214] - INFO: FSIM:DEL:GRO2:PATH2:CORR:STAT ON
+2020-04-13 16:26:44,226 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1199] - INFO: FSIM:DEL:GRO2:PATH2:FDOP 2
+2020-04-13 16:30:32,009 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1229] - INFO: FSIM:DEL:GRO2:PATH2:CORR:COEF 95
+2020-04-13 16:34:36,392 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1245] - INFO: FSIM:DEL:GRO2:PATH2:CORR:PHAS 5
+2020-04-13 16:40:07,852 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1258] - INFO: FSIM:DEL:GRO2:PATH2:LOGN:STAT ON
+2020-04-13 16:44:31,970 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1273] - INFO: FSIM:DEL:GRO2:PATH2:LOGN:LCON 100
+2020-04-13 16:56:01,846 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1289] - INFO: FSIM:DEL:GRO2:PATH2:LOGN:CSTD 2
+2020-04-13 16:59:42,723 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1303] - INFO: FSIM:SPE:UNIT MPS
+2020-04-13 17:00:06,387 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1303] - INFO: FSIM:SPE:UNIT KMH
+2020-04-13 17:00:36,542 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1303] - INFO: FSIM:SPE:UNIT MPH
+2020-04-13 17:06:46,967 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1316] - INFO: FSIM:REF:SPE
+2020-04-13 17:06:56,244 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1316] - INFO: FSIM:REF:SPE
+2020-04-13 17:07:26,930 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1316] - INFO: FSIM:REF:SPEed
+2020-04-13 17:07:37,384 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1316] - INFO: FSIM:REF:SPEed
+2020-04-13 17:08:56,052 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1316] - INFO: FSIM:REF:SPEED
+2020-04-13 17:09:02,927 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1316] - INFO: FSIM:REF:SPEED
+2020-04-13 17:10:13,986 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1316] - INFO: FSIM:REF:SPEED
+2020-04-13 17:13:13,161 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1330] - INFO: FSIM:CSP:ON
+2020-04-13 17:13:18,948 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1330] - INFO: FSIM:CSP:ON
+2020-04-13 17:14:06,417 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1330] - INFO: FSIM:CSP:ON
+2020-04-13 17:24:16,257 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1344] - INFO: FSIM:IGN:RFCH ON
+2020-04-13 17:38:14,868 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1360] - INFO: FSIM:SDES BB
+2020-04-13 17:38:27,165 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1360] - INFO: FSIM:SDES RF
+2020-04-13 17:38:33,173 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1360] - INFO: FSIM:SDES RF
+2020-04-13 17:38:43,206 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1360] - INFO: FSIM:SDES BB
+2020-04-13 17:43:12,051 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1374] - INFO: FSIM:ILOS:MODE USER
+2020-04-13 17:46:41,569 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1389] - INFO: FSIM:ILOS 4 dB
+2020-04-13 17:46:52,098 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1389] - INFO: FSIM:ILOS 5 dB
+2020-04-13 18:07:06,848 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:1405] - INFO: DVBC:CONS C256
+2020-04-15 15:55:31,888 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:295] - INFO: DVBS:SETT ON
+2020-04-15 15:55:45,694 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:295] - INFO: DVBS:SETT OFF
+2020-04-15 15:58:43,118 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:308] - INFO: DVBS:TSP S187
+2020-04-15 15:58:54,993 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:308] - INFO: DVBS:TSP H184
+2020-04-15 16:04:24,579 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:321] - INFO: DVBS:PRBS P15_1
+2020-04-15 16:04:32,970 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:321] - INFO: DVBS:PRBS P23_1
+2020-04-15 16:05:49,377 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:321] - INFO: DVBS:PRBS 111

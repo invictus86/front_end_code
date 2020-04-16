@@ -24,8 +24,12 @@ FREQUENCY_950M = "950 MHz"
 FREQUENCY_1550M = "1550 MHz"
 FREQUENCY_2147M = "2147 MHz"
 
+SYMBOL_TATE_LIST = [str(i) + ".000000e6" for i in range(5, 46)]
+FREQUENCY_LIST = [str(i) + " MHz" for i in range(950, 2150, 20)]
+FREQUENCY_LIST.append("2147 MHz")
 
-def test_dynamic_range_awng(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
+
+def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
     specan.set_digitaltv_coding_constellation(modulation)
     specan.set_digitaltv_coding_coderate(code_rate)
     specan.set_digitaltv_coding_symbolrate(symbol_rate)
@@ -49,9 +53,14 @@ if __name__ == '__main__':
     specan.preset_instrument()
     specan.set_digitaltv_input_source("TSPL")
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
-    test_dynamic_range_awng(specan, "R1_2", "S4", "5.000000e6", "950 MHz", "-87 dBm")
+    # set_dvbs_variable_parameter(specan, "R1_2", "S4", "5.000000e6", "950 MHz", "-87 dBm")
+    set_dvbs_variable_parameter(specan, "R3_4", "S4", "5.000000e6", "1550 MHz", "-70 dBm")
     time.sleep(5)
-    list_input_signal_level = ["-87 dBm", "-96 dBm", "-84 dBm"]
-    for level in list_input_signal_level:
-        specan.set_level_level_level(level)
-        time.sleep(10)
+    # list_input_signal_level = ["-87 dBm", "-96 dBm", "-84 dBm"]
+    # for level in list_input_signal_level:
+    #     specan.set_level_level_level(level)
+    #     time.sleep(10)
+
+    for symbol_rate in SYMBOL_TATE_LIST:
+        specan.set_digitaltv_coding_symbolrate(symbol_rate)
+        time.sleep(5)

@@ -27,22 +27,6 @@ class Ektsfe(object):
         specan = rm.open_resource('TCPIP::{}::INSTR'.format(net))
         self.specan = specan
 
-    def query_instrument(self):
-        """
-         Query the Identification string
-        :return:
-        """
-        print self.specan.query('*IDN?')
-
-    def query_bit_er_rate(self):
-        """
-         Sets the channel of the RF output frequency
-        :return:
-        """
-        res = self.specan.write('READ:BER?')
-        print res
-        return res
-
     def set_frequency_frequency_frequency(self, frequency):
         """
          Setting the channel.
@@ -189,29 +173,14 @@ class Ektsfe(object):
 
     def set_modulation_modulation_source(self, source_type):
         """
-        not complete
+        Selection of the signal source. The choices depend on the model and the available options.
         example :
-            MOD ON|OFF
-            MOD:STAT ON|OFF
+            DM:SOUR DIGital
+            DM:SOUR DTV
         :return:
         """
-        self.specan.write('SOURCE '.format(source_type))
-        logging.info('SOURCE '.format(source_type))
-        time.sleep(0.1)
-
-    def set_modulation_modulation_standard(self, standard_type):
-        """
-        Only the activated standards can be selected under this menu item. Standards that are not activated are displayed but you cannot select them.
-        example :
-            You can select from the following DIGITAL TV standards provided they are activated:
-            DM:TRAN DVBC|DVBS|DVBT|VSB|J83B|ISDB|DTMB|DVS2|DIR|TDMB|MEDiaflo
-
-            You can select from the following ANALOG TV standards provided they are activated:
-            DM:ATV[:STANdard][?] BGRE|DKRE|IRE|MNRE|LRE
-        :return:
-        """
-        self.specan.write('DM:TRAN {}'.format(standard_type))
-        logging.info('DM:TRAN {}'.format(standard_type))
+        self.specan.write('DM:SOUR {}'.format(source_type))
+        logging.info('DM:SOUR {}'.format(source_type))
         time.sleep(0.1)
 
     def set_modulation_modulation_spectrum(self, standard_type):
@@ -237,6 +206,19 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:SOUR {}'.format(source_type))
         logging.info('DVBS:SOUR {}'.format(source_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_input_load(self, file_path):
+        """
+        Clicking this menu item opens a file dialog box in which you can select the desired player file.
+        Files with the following extensions are accepted as player files: *.GTS, *.TRP, *.T10, *.MPG, *.TS, *.BIN,
+         *.DAB, *.DAB_C, *.FLO, *.FLO_C, *.DABP_C  and *.ISDBT_C
+        example :
+            TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+        :return:
+        """
+        self.specan.write(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
+        logging.info(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
         time.sleep(0.1)
 
     def set_digitaltv_input_stuffing(self, source_type):
@@ -300,18 +282,46 @@ class Ektsfe(object):
         logging.info('DVBS:RATE {}'.format(code_rate))
         time.sleep(0.1)
 
-    def set_digitaltv_input_load(self, file_path):
+    def set_digitaltv_special_special(self, special_type):
         """
-        Clicking this menu item opens a file dialog box in which you can select the desired player file.
-        Files with the following extensions are accepted as player files: *.GTS, *.TRP, *.T10, *.MPG, *.TS, *.BIN,
-         *.DAB, *.DAB_C, *.FLO, *.FLO_C, *.DABP_C  and *.ISDBT_C
+        ON/OFF toggle function.
+            ON
+            OFF
         example :
-            TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+            DVBS:SETT ON
         :return:
         """
-        self.specan.write(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
-        logging.info(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
+        self.specan.write('DVBS:SETT {}'.format(special_type))
+        logging.info('DVBS:SETT {}'.format(special_type))
         time.sleep(0.1)
+
+    def set_digitaltv_settings_testtspacket(self, packet_type):
+        """
+        Selects the mode of the test TS packet.
+            H184        Head / 184 payload
+            S187        Sync / 187 payload
+        example :
+            DVBS:TSP S187
+        :return:
+        """
+        self.specan.write('DVBS:TSP {}'.format(packet_type))
+        logging.info('DVBS:TSP {}'.format(packet_type))
+        time.sleep(0.1)
+
+    def set_digitaltv_settings_prbs(self, prbs_type):
+        """
+        Selects the mode of the PRBS.
+            P23_1       2^23 - 1 (ITU-T O.151)
+            P15_1       2^15 - 1 (ITU-T O.151)
+        example :
+            DVBS:PRBS P15_1
+        :return:
+        """
+        self.specan.write('DVBS:PRBS {}'.format(prbs_type))
+        logging.info('DVBS:PRBS {}'.format(prbs_type))
+        time.sleep(0.1)
+
+
 
     def preset_instrument(self):
         """
@@ -337,7 +347,7 @@ class Ektsfe(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write('SYST:PRES')
+        self.specan.write('DM:SOUR DIGital')
 
     def __del__(self):
         del self.specan
@@ -349,16 +359,7 @@ def _test_code():
     # host = '127.0.0.1'
     # port = 8900
     specan = Ektsfe(net)
-    # specan.set_channel_output_frequency("3", "555")
-    # specan.set_current_channel("3")
-
-    # specan.set_coder_output_symbol_rate("31.711e6")
-    # specan.set_dvbs2_modulation_mode("S8")
-    # specan.set_fec_frame_type("NORM")
-    # specan.set_switch_output_symbol("OFF")
-    # specan.set_coder_output_sysbol_filter("0.25")
-    # specan.set_code_rate("R2_3")
-    # specan.set_frequency_frequency("101 MHz")
+    # specan.set_frequency_frequency_frequency("101 MHz")
     # specan.set_frequency_frequency_channel("4")
     # specan.set_frequency_settings_knobstepstate("DEC")
     # specan.set_frequency_settings_increment("50 kHz")
@@ -369,6 +370,7 @@ def _test_code():
     # specan.set_level_level_mode("AUTO")
     # specan.set_level_settings_unit("DBUV")
     # specan.set_modulation_modulation_modulation("ON")
+    # specan.set_modulation_modulation_source("DTV")
     # specan.set_modulation_modulation_spectrum("NORM")
     # specan.set_digitaltv_input_source("EXT")
     # specan.set_digitaltv_input_stuffing("ON")
@@ -377,7 +379,11 @@ def _test_code():
     # specan.set_digitaltv_coding_rolloff("0.25")
     # specan.set_digitaltv_coding_coderate("R8_9")
     # specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\FACT_4M.GTS")
-    specan.preset_instrument()
+    # specan.preset_instrument()
+    # specan.set_digitaltv_special_special("OFF")
+    # specan.set_digitaltv_settings_testtspacket("H184")
+    # specan.set_digitaltv_settings_prbs("P23_1")
+
     # specan.set_cmd()
 
 
