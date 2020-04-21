@@ -28,11 +28,11 @@ class Ektsfe(object):
 
     def set_frequency_frequency_frequency(self, frequency):
         """
-
-        Range: 300 kHz  to  3 GHz
-        Increment: 0.01 Hz
-        *RST:1000 MHz
-        Default unit: Hz
+        Sets the RF output frequency
+            Range: 300 kHz  to  3 GHz
+            Increment: 0.01 Hz
+            *RST:1000 MHz
+            Default unit: Hz
         example : Remote control command:
             FREQ 100 MHz
             FREQ:CW 100 MHz
@@ -47,10 +47,10 @@ class Ektsfe(object):
     def set_frequency_frequency_offset(self, frequency):
         """
         Sets the frequency offset of any add-on unit
-        Range: -50 GHz  to  +50 GHz
-        Increment: 0.01 Hz
-        *RST:0 Hz
-        Default unit: Hz
+            Range: -50 GHz  to  +50 GHz
+            Increment: 0.01 Hz
+            *RST:0 Hz
+            Default unit: Hz
         example : Remote control command:
             FREQ:OFFS 500kHz
         :return:
@@ -62,7 +62,8 @@ class Ektsfe(object):
     def set_frequency_frequency_channel(self, channel):
         """
          Setting the channel.  Channels can be selected in the range of  1 ... 100
-         example : FREQ:CHAN 5
+         example :
+            FREQ:CHAN 5
         :return:
         """
         self.specan.write('FREQ:CHAN {}'.format(channel))
@@ -72,11 +73,12 @@ class Ektsfe(object):
     def set_frequency_sweep_start(self, frequency):
         """
         Sets the start frequency.
-        Range: 300 kHz  to  3 GHz
-        Increment: 0.01 Hz
-        *RST:100 MHz
-        Default unit: Hz
-         example : SWE:STARt 1 MHz
+            Range: 300 kHz  to  3 GHz
+            Increment: 0.01 Hz
+            *RST:100 MHz
+            Default unit: Hz
+         example :
+            SWE:STARt 1 MHz
         :return:
         """
         self.specan.write('SWE:STARt {}'.format(frequency))
@@ -86,10 +88,11 @@ class Ektsfe(object):
     def set_frequency_sweep_stop(self, frequency):
         """
         Sets the stop frequency for the sweep
-        Increment: 0.01 Hz
-        *RST:500 MHz
-        Default unit: Hz
-         example : SWE:STOP 2 GHz
+            Increment: 0.01 Hz
+            *RST:500 MHz
+            Default unit: Hz
+         example :
+            SWE:STOP 2 GHz
         :return:
         """
         self.specan.write('SWE:STOP {}'.format(frequency))
@@ -99,11 +102,12 @@ class Ektsfe(object):
     def set_frequency_sweep_center(self, frequency):
         """
         Sets the center frequency. The displayed values for the start and stop frequency will change accordingly.
-        Range: 300e3  to  3e9 Hz
-        Increment: 0.01 Hz
-        *RST:300e6 Hz
-        Default unit: Hz
-         example : SWE:CENT 400 MHz
+            Range: 300e3  to  3e9 Hz
+            Increment: 0.01 Hz
+            *RST:300e6 Hz
+            Default unit: Hz
+         example :
+            SWE:CENT 400 MHz
         :return:
         """
         self.specan.write('SWE:CENT {}'.format(frequency))
@@ -113,11 +117,12 @@ class Ektsfe(object):
     def set_frequency_sweep_span(self, frequency):
         """
         The displayed values for the start and stop frequency will change accordingly..
-        Range: 0  to  3 GHz
-        Increment: 0.01 Hz
-        *RST:400 MHz
-        Default unit: Hz
-         example : SWE:SPAN 200 MHz
+            Range: 0  to  3 GHz
+            Increment: 0.01 Hz
+            *RST:400 MHz
+            Default unit: Hz
+         example :
+            SWE:SPAN 200 MHz
         :return:
         """
         self.specan.write('SWE:SPAN {}'.format(frequency))
@@ -127,8 +132,10 @@ class Ektsfe(object):
     def set_frequency_sweep_spacing(self, span_type):
         """
         Sets the type of progressive step size during the sweep.
-        LINear     LOGarithmic
-         example : SWE:SPAC LIN
+            LINear
+            LOGarithmic
+         example :
+            SWE:SPAC LIN
         :return:
         """
         self.specan.write('SWE:SPAC {}'.format(span_type))
@@ -138,10 +145,11 @@ class Ektsfe(object):
     def set_frequency_sweep_step(self, step_frequency):
         """
         Sets the step for a linear sweep.
-        Increment: 0.1 Hz
-        *RST:1 MHz
-        Default unit: Hz
-         example : SWE:STEP 2 MHz
+            Increment: 0.1 Hz
+            *RST:1 MHz
+            Default unit: Hz
+         example :
+            SWE:STEP 2 MHz
         :return:
         """
         self.specan.write('SWE:STEP {}'.format(step_frequency))
@@ -151,11 +159,12 @@ class Ektsfe(object):
     def set_frequency_sweep_dwell(self, dewll_time):
         """
         Sets the dwell time per frequency step of the sweep.
-        Range: 10  to  10000 ms
-        Increment: 0.1 ms
-        *RST:25 ms
-        Default unit: s
-         example : SWE:DWEL 100 ms
+            Range: 10  to  10000 ms
+            Increment: 0.1 ms
+            *RST:25 ms
+            Default unit: s
+         example :
+            SWE:DWEL 100 ms
         :return:
         """
         self.specan.write('SWE:DWEL {}'.format(dewll_time))
@@ -167,10 +176,11 @@ class Ektsfe(object):
         not complate
 
         Sets the sweep mode
-        AUTO
-        MANual
-        STEP
-         example : SWE:MODE AUTO
+            AUTO
+            MANual
+            STEP
+         example :
+            SWE:MODE AUTO
         :return:
         """
         self.specan.write('SWE:MODE AUTO'.format(mode_type))
@@ -182,8 +192,8 @@ class Ektsfe(object):
         """
         Determines the mode of the R&S SFU and also by what commands the output frequency is determined.
 
-        CW|FIXed
-        SWEep
+            CW|FIXed
+            SWEep
          example : FREQ:MODE SWE
         :return:
         """
@@ -199,6 +209,22 @@ class Ektsfe(object):
         """
         self.specan.write(':SWE:RES')
         logging.info(':SWE:RES')
+        time.sleep(0.1)
+
+    def set_frequency_settings_channlfrequency(self, channel_name, channel_frequency):
+        """
+        Sets the frequency of a channel.
+            Selects the channel.
+                Range:      0  to  100
+            Frequency of the selected channel.
+                Range:      300 kHz  to  3 GHz
+                Default unit:       Hz
+         example :
+            FREQ:CHAN:TABL:FREQ 5, 400 MHz
+        :return:
+        """
+        self.specan.write('FREQ:CHAN:TABL:FREQ {}, {}'.format(channel_name, channel_frequency))
+        logging.info('FREQ:CHAN:TABL:FREQ {}, {}'.format(channel_name, channel_frequency))
         time.sleep(0.1)
 
     def set_level_level_level(self, level_unit, level_num):
@@ -393,6 +419,102 @@ class Ektsfe(object):
         """
         self.specan.write('DM:TRAN {}'.format(standard_type))
         logging.info('DM:TRAN {}'.format(standard_type))
+        time.sleep(0.1)
+
+    def set_modulation_modulation_spectrum(self, spectrum_type):
+        """
+        Selects the polarity of the spectrum or queries its setting. Inverting the spectrum corresponds to
+        swapping the I and Q signal.
+            NORMal
+            INVerted
+        example :
+            DM:POL INV
+        :return:
+        """
+        self.specan.write('DM:POL {}'.format(spectrum_type))
+        logging.info('DM:POL {}'.format(spectrum_type))
+        time.sleep(0.1)
+
+    def set_modulation_settings_level(self, level_type):
+        """
+        Sets the gain of the I/Q modulator in relation to the analog I/Q signal
+            AUTO
+            DBM3
+            DB0
+            DB3
+            DB6
+        example :
+            IQ:GAIN DB0
+        :return:
+        """
+        self.specan.write('IQ:GAIN {}'.format(level_type))
+        logging.info('IQ:GAIN {}'.format(level_type))
+        time.sleep(0.1)
+
+    def set_modulation_settings_factor(self, factor_type):
+        """
+        Sets the crest factor of the external analog signal.
+            Range:          0  to  30 dB
+            Increment:      0.01 dB
+            *RST:           6 dB
+            Default unit:   dB
+        example :
+            IQ:CRES 10
+        :return:
+        """
+        self.specan.write('IQ:CRES {}'.format(factor_type))
+        logging.info('IQ:CRES {}'.format(factor_type))
+        time.sleep(0.1)
+
+    def set_modulation_settings_filtering(self, filtering_type):
+        """
+        Activates the optimized settings for wideband modulation signals (> 10 MHz).
+            ON
+            OFF
+        example :
+            IQ:WBST ON
+        :return:
+        """
+        self.specan.write('IQ:WBST {}'.format(filtering_type))
+        logging.info('IQ:WBST {}'.format(filtering_type))
+        time.sleep(0.1)
+
+    def set_modulation_settings_mode(self, mode_type):
+        """
+        Selects the mode of the digital input.
+            WBNC        Wideband normal clock
+            WBEC        Wideband ext. clock
+            DIVN        Diversity / native
+            NRWN        Narrow normal
+            NWEC        Narrow ext. clock
+            AUTO
+        example :
+            IQ:DINM WBEC
+        :return:
+        """
+        self.specan.write('IQ:DINM {}'.format(mode_type))
+        logging.info('IQ:DINM {}'.format(mode_type))
+        time.sleep(0.1)
+
+    def set_modulation_settings_output(self, output_type):
+        """
+        This instruction selects the place in the signal path, which is made accessible over the DIG I/Q Out output.
+            OFF
+            AFC         AfterCoder
+            AFFA        AfterFading
+            AFN         AfterNoise
+            AFB         AfterBasebandImpair
+            ARB
+            DIGital     IqDigitalIn
+            ANALog      IqAnalogIn
+            AFFB        AfterFadingB
+            AUTO
+        example :
+            IQ:DOUTput AFFA
+        :return:
+        """
+        self.specan.write('IQ:DOUTput {}'.format(output_type))
+        logging.info('IQ:DOUTput {}'.format(output_type))
         time.sleep(0.1)
 
     def set_digitaltv_input_source_dvbs2(self, source_type):
@@ -670,6 +792,32 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:AWG {}'.format(awgn_type))
         logging.info('NOIS:AWG {}'.format(awgn_type))
+        time.sleep(0.1)
+
+    def set_noise_noise_impulsive(self, awgn_type):
+        """
+        Switches the impulsive noise generator on or off.
+            ON
+            OFF
+        example :
+            NOIS:IMP ON
+        :return:
+        """
+        self.specan.write('NOIS:IMP {}'.format(awgn_type))
+        logging.info('NOIS:IMP {}'.format(awgn_type))
+        time.sleep(0.1)
+
+    def set_noise_noise_phase(self, phase_type):
+        """
+        Switches the phase noise generator on or off.
+            ON
+            OFF
+        example :
+            NOIS:PHAS ON
+        :return:
+        """
+        self.specan.write('NOIS:PHAS {}'.format(phase_type))
+        logging.info('NOIS:PHAS {}'.format(phase_type))
         time.sleep(0.1)
 
     def set_noise_awgn_cn(self, cn):
@@ -954,7 +1102,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:BDEL {}'.format(group, basicdelay))
         time.sleep(0.1)
 
-    def set_fading_profile_additdelay(self,  group, path, additdelay):
+    def set_fading_profile_additdelay(self, group, path, additdelay):
         """
         Determine the path-specific delay (additional delay) of the selected path for the standard delay and fine
         delay 30 MHz / 50 MHz fading configurations.
@@ -971,7 +1119,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:ADEL {}'.format(group, path, additdelay))
         time.sleep(0.1)
 
-    def set_fading_profile_resuldelay(self,  group, path, resuldelay):
+    def set_fading_profile_resuldelay(self, group, path, resuldelay):
         """
         Query the resulting delay of the paths for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
         not complte
@@ -983,7 +1131,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:RDEL {}'.format(group, path, resuldelay))
         time.sleep(0.1)
 
-    def set_fading_profile_power(self,  group, path, power):
+    def set_fading_profile_power(self, group, path, power):
         """
         Query the resulting delay of the paths for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
         need profile is RICE
@@ -999,7 +1147,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:PRAT {}'.format(group, path, power))
         time.sleep(0.1)
 
-    def set_fading_profile_constphase(self,  group, path, constphase):
+    def set_fading_profile_constphase(self, group, path, constphase):
         """
         Determine the phase for constant phase and pure Doppler fading for the standard delay and fine delay
         30 MHz / 50 MHz fading configurations
@@ -1016,7 +1164,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:CPH {}'.format(group, path, constphase))
         time.sleep(0.1)
 
-    def set_fading_profile_speed(self,  group, path, speed):
+    def set_fading_profile_speed(self, group, path, speed):
         """
         Set the speed v of the moving receiver for the standard delay and fine delay 30 MHz / 50 MHz fading configurations
             Range: 0.0  to  4796680.0 m/s
@@ -1031,7 +1179,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:SPE {}'.format(group, path, speed))
         time.sleep(0.1)
 
-    def set_fading_profile_freqratio(self,  group, path, freq):
+    def set_fading_profile_freqratio(self, group, path, freq):
         """
         Set the ratio of the actual Doppler frequency to the set Doppler frequency for the standard delay and fine delay
         30 MHz / 50 MHz fading configurations for Rice and pure Doppler fading.
@@ -1046,7 +1194,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:FRAT {}'.format(group, path, freq))
         time.sleep(0.1)
 
-    def set_fading_profile_doppler(self,  group, path, doppler):
+    def set_fading_profile_doppler(self, group, path, doppler):
         """
         Set or query the Doppler frequency for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.\
         not complte
@@ -1060,7 +1208,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:FDOP {}'.format(group, path, doppler))
         time.sleep(0.1)
 
-    def set_fading_profile_correlation(self,  group, path, correlation_type):
+    def set_fading_profile_correlation(self, group, path, correlation_type):
         """
         witch on correlation of the paths of the first fader to the corresponding paths of the second fader for the
         standard delay and fine delay 30 MHz / 50 MHz fading configurations.
@@ -1074,7 +1222,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:STAT {}'.format(group, path, correlation_type))
         time.sleep(0.1)
 
-    def set_fading_profile_coefficient(self,  group, path, coefficient):
+    def set_fading_profile_coefficient(self, group, path, coefficient):
         """
         Determine the magnitude of the complex correlation coefficient for the standard delay and fine delay
         30 MHz / 50 MHz fading configurations
@@ -1090,7 +1238,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:COEF {}'.format(group, path, coefficient))
         time.sleep(0.1)
 
-    def set_fading_profile_phase(self,  group, path, phase):
+    def set_fading_profile_phase(self, group, path, phase):
         """
         Determine the phase of the complex correlation coefficient for the standard delay and fine delay 30 MHz / 50 MHz
         fading configurations.
@@ -1106,7 +1254,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:PHAS {}'.format(group, path, phase))
         time.sleep(0.1)
 
-    def set_fading_profile_lognormal(self,  group, path, state_type):
+    def set_fading_profile_lognormal(self, group, path, state_type):
         """
         Switch lognormal fading on or off for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
             ON
@@ -1119,7 +1267,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:STAT {}'.format(group, path, state_type))
         time.sleep(0.1)
 
-    def set_fading_profile_localconstant(self,  group, path, local_constant):
+    def set_fading_profile_localconstant(self, group, path, local_constant):
         """
         Switch lognormal fading on or off for the standard delay and fine delay 30 MHz / 50 MHz fading configurations.
         not complet
@@ -1135,7 +1283,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:LCON {}'.format(group, path, local_constant))
         time.sleep(0.1)
 
-    def set_fading_profile_standard(self,  group, path, standard):
+    def set_fading_profile_standard(self, group, path, standard):
         """
         Set the standard deviation for lognormal fading for the standard delay and fine delay 30 MHz / 50 MHz fading
             Range: 0.0  to  12.0 dB
@@ -1150,7 +1298,7 @@ class Ektsfe(object):
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:CSTD {}'.format(group, path, standard))
         time.sleep(0.1)
 
-    def set_fading_settings_speedunit(self,  speed_unit):
+    def set_fading_settings_speedunit(self, speed_unit):
         """
         Set the standard deviation for lognormal fading for the standard delay and fine delay 30 MHz / 50 MHz fading
             MPS
@@ -1164,7 +1312,7 @@ class Ektsfe(object):
         logging.info('FSIM:SPE:UNIT {}'.format(speed_unit))
         time.sleep(0.1)
 
-    def set_fading_settings_peference(self,  peference_type):
+    def set_fading_settings_peference(self, peference_type):
         """
         Set the constant in the formula for the Doppler frequency calculation
         not complet
@@ -1178,7 +1326,7 @@ class Ektsfe(object):
         logging.info('FSIM:REF:{}'.format(peference_type))
         time.sleep(0.1)
 
-    def set_fading_settings_common(self,  doppler_type):
+    def set_fading_settings_common(self, doppler_type):
         """
         Set the constant in the formula for the Doppler frequency calculation
         not complet
@@ -1192,7 +1340,7 @@ class Ektsfe(object):
         logging.info('FSIM:CSP:{}'.format(doppler_type))
         time.sleep(0.1)
 
-    def set_fading_settings_ignore(self,  ignore_type):
+    def set_fading_settings_ignore(self, ignore_type):
         """
         Determines whether frequency changes < 5% are ignored. This enables faster frequency hopping.
             ON
@@ -1205,7 +1353,7 @@ class Ektsfe(object):
         logging.info('FSIM:IGN:RFCH {}'.format(ignore_type))
         time.sleep(0.1)
 
-    def set_fading_settings_signal(self,  signal_type):
+    def set_fading_settings_signal(self, signal_type):
         """
         Determines whether frequency changes < 5% are ignored. This enables faster frequency hopping.
             BB
@@ -1221,7 +1369,7 @@ class Ektsfe(object):
         logging.info('FSIM:SDES {}'.format(signal_type))
         time.sleep(0.1)
 
-    def set_fading_settings_insertionmode(self,  mode_type):
+    def set_fading_settings_insertionmode(self, mode_type):
         """
         Sets the insertion loss of the fading simulator.
             NORMal
@@ -1235,7 +1383,7 @@ class Ektsfe(object):
         logging.info('FSIM:ILOS:MODE {}'.format(mode_type))
         time.sleep(0.1)
 
-    def set_fading_settings_insertionloss(self,  insertion_loss):
+    def set_fading_settings_insertionloss(self, insertion_loss):
         """
         Sets the user-defined insertion loss of the fading simulator if USER is selected.
             Range: -3  to  +30.0 dB
@@ -1249,9 +1397,6 @@ class Ektsfe(object):
         self.specan.write('FSIM:ILOS {}'.format(insertion_loss))
         logging.info('FSIM:ILOS {}'.format(insertion_loss))
         time.sleep(0.1)
-
-
-
 
     def set_digitaltv_input_source_dvbc(self, source_type):
         """
@@ -1641,13 +1786,6 @@ class Ektsfe(object):
         logging.info('DVBT:MPEF {}'.format(fec_type))
         time.sleep(0.1)
 
-
-
-
-
-
-
-
     def set_digitaltv_input_t2miinterface_dvbt2(self, interface_type):
         """
         Activates or deactivates the T2 modulator interface.
@@ -1728,9 +1866,6 @@ class Ektsfe(object):
         self.specan.write('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
         logging.info('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
         time.sleep(0.1)
-
-
-
 
     def set_digitaltv_framing_channelbandwidth_dvbt2(self, bandwidth_type):
         """
@@ -1855,13 +1990,6 @@ class Ektsfe(object):
         logging.info('T2DV:NSUB {}'.format(n_sub))
         time.sleep(0.1)
 
-
-
-
-
-
-
-
     def set_digitaltv_bicm_fecframe_dvbt2(self, frame_type):
         """
         Sets the FEC frame.
@@ -1961,11 +2089,6 @@ class Ektsfe(object):
         logging.info('T2DV:PLP1:TIL:LENG {}'.format(frameint))
         time.sleep(0.1)
 
-
-
-
-
-
     def set_digitaltv_settings_testtspacket_dvbt2(self, packet_type):
         """
         Sets the payload length of the test TS packet.
@@ -2018,8 +2141,6 @@ class Ektsfe(object):
         self.specan.write('T2DV:PRBS {}'.format(prbs_type))
         logging.info('T2DV:PRBS {}'.format(prbs_type))
         time.sleep(0.1)
-
-
 
     def set_digitaltv_input_source_j83b(self, source_type):
         """
@@ -2198,21 +2319,6 @@ class Ektsfe(object):
         logging.info('J83B:PRBS {}'.format(prbs_type))
         time.sleep(0.1)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def set_cmd(self):
         """
         The constellation type determines the available code rates.
@@ -2226,7 +2332,7 @@ class Ektsfe(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write('J83B:INT OFF')
+        self.specan.write('NOIS:PHAS ON')
 
     def set_player_timing_openfile(self, file_path):
         """
@@ -2261,7 +2367,7 @@ def _test_code():
     # specan.set_frequency_sweep_step("2 MHz")
     # specan.set_frequency_sweep_dwell("500 ms")
     # specan.set_frequency_sweep_mode("AUTO")
-    # specan.set_frequency_sweep_state("CW")
+    # specan.set_frequency_sweep_state("SWEep")
     # specan.set_frequency_sweep_reset()
     # specan.set_level_level_level("dBm", 15)
     # specan.set_level_level_rf("OFF")
@@ -2273,22 +2379,22 @@ def _test_code():
     # specan.set_modulation_modulation_source("ATV")
     # specan.set_modulation_modulation_standard_atv("LPR")
     # specan.set_modulation_modulation_standard_dvt("DVB-T2")
-    specan.set_digitaltv_input_source_dvbs2("TSPL")
-    specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
-    specan.set_digitaltv_coding_constellation_dvbs2("S4")
-    specan.set_digitaltv_coding_fecframe_dvbs2("NORM")
-    specan.set_digitaltv_coding_pilots_dvbs2("OFF")
-    specan.set_digitaltv_coding_rolloff_dvbs2("0.25")
-    specan.set_digitaltv_coding_coderate_dvbs2("R8_9")
-    specan.set_digitaltv_special_settings_dvbs2("ON")
-    specan.set_digitaltv_phasenoise_phasenoise_dvbs2("ON")
-    specan.set_digitaltv_phasenoise_shape_dvbs2("SHA3")
-    specan.set_digitaltv_phasenoise_magnitude_dvbs2("3")
-    specan.set_digitaltv_settings_tspacket_dvbs2("S187")
-    specan.set_digitaltv_settings_pidpacket_dvbs2("VAR")
-    specan.set_digitaltv_settings_pid_dvbs2("0001")
-    specan.set_digitaltv_settings_payloadtest_dvbs2("HFF")
-    specan.set_digitaltv_settings_prbs_dvbs2("P15_1")
+    # specan.set_digitaltv_input_source_dvbs2("TSPL")
+    # specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
+    # specan.set_digitaltv_coding_constellation_dvbs2("S4")
+    # specan.set_digitaltv_coding_fecframe_dvbs2("NORM")
+    # specan.set_digitaltv_coding_pilots_dvbs2("OFF")
+    # specan.set_digitaltv_coding_rolloff_dvbs2("0.25")
+    # specan.set_digitaltv_coding_coderate_dvbs2("R8_9")
+    # specan.set_digitaltv_special_settings_dvbs2("ON")
+    # specan.set_digitaltv_phasenoise_phasenoise_dvbs2("ON")
+    # specan.set_digitaltv_phasenoise_shape_dvbs2("SHA3")
+    # specan.set_digitaltv_phasenoise_magnitude_dvbs2("3")
+    # specan.set_digitaltv_settings_tspacket_dvbs2("S187")
+    # specan.set_digitaltv_settings_pidpacket_dvbs2("VAR")
+    # specan.set_digitaltv_settings_pid_dvbs2("0001")
+    # specan.set_digitaltv_settings_payloadtest_dvbs2("HFF")
+    # specan.set_digitaltv_settings_prbs_dvbs2("P15_1")
     # specan.set_interferer_source("OFF")
     # specan.set_noise_noise_noise("OFF")
     # specan.set_noise_noise_awgn("ON")
@@ -2387,11 +2493,21 @@ def _test_code():
     # specan.set_digitaltv_settings_testtspacket_dvbc("H184")
     # specan.set_digitaltv_settings_pidtestpacket_dvbc("VARiable")
     # specan.set_digitaltv_settings_payloadtest_dvbc("PRBS")
-    specan.set_digitaltv_settings_prbs_dvbc("P15_1")
+    # specan.set_digitaltv_settings_prbs_dvbc("P15_1")
+    # specan.set_noise_noise_awgn("ON")
+    # specan.set_noise_noise_impulsive("ON")
+    # specan.set_frequency_settings_channlfrequency("5", "400 MHz")
+    # specan.set_modulation_modulation_standard("J83B")
+    # specan.set_modulation_modulation_spectrum("NORMal")
+    # specan.set_modulation_settings_level("DBM3")
+    # specan.set_modulation_settings_factor("20")
+    # specan.set_modulation_settings_filtering("ON")
+    # specan.set_modulation_settings_mode("WBEC")
+    # specan.set_modulation_settings_output("AFC")
+    specan.set_noise_noise_phase("OFF")
     # specan.set_cmd()
 
 
 if __name__ == '__main__':
     _test_code()
     # pass
-1

@@ -183,3 +183,13 @@
 2020-04-15 16:04:24,579 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:321] - INFO: DVBS:PRBS P15_1
 2020-04-15 16:04:32,970 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:321] - INFO: DVBS:PRBS P23_1
 2020-04-15 16:05:49,377 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:321] - INFO: DVBS:PRBS 111
+2020-04-17 16:24:43,026 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:80] - INFO: FREQ:STEP 50 kHz
+2020-04-17 16:25:21,700 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:80] - INFO: FREQ:STEP 50 kHz
+2020-04-17 16:26:56,342 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:65] - INFO: FREQ:STEP:MODE DEC
+2020-04-17 16:26:59,530 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:65] - INFO: FREQ:STEP:MODE DEC
+2020-04-17 16:27:13,940 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:65] - INFO: FREQ:STEP:MODE INCR
+2020-04-17 16:27:23,780 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:65] - INFO: FREQ:STEP:MODE INCR
+2020-04-17 16:45:54,371 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:157] - INFO: POW:STEP:MODE INCR
+2020-04-17 16:46:06,592 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:157] - INFO: POW:STEP:MODE DEC
+2020-04-17 16:50:50,849 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:170] - INFO: POW:STEP 1.5
+2020-04-17 16:51:05,645 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:170] - INFO: POW:STEP 2.5

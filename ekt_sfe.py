@@ -80,7 +80,6 @@ class Ektsfe(object):
         logging.info('FREQ:STEP 50 kHz')
         time.sleep(0.1)
 
-
     def set_frequency_settings_channel(self, channel_num, frequency):
         """
          Sets the frequency of a channel.
@@ -144,6 +143,32 @@ class Ektsfe(object):
         logging.info('OUTP:AMOD {}'.format(level_mode))
         time.sleep(0.1)
 
+    def set_level_settings_state(self, state_type):
+        """
+         Activates a user-defined step size for varying the level with the rotary knob.
+            INCREMENT
+            DECIMAL
+        example :
+            POW:STEP:MODE DEC|INCR
+        :return:
+        """
+        self.specan.write('POW:STEP:MODE {}'.format(state_type))
+        logging.info('POW:STEP:MODE {}'.format(state_type))
+        time.sleep(0.1)
+
+    def set_level_settings_increment(self, state_type):
+        """
+         Sets a user-defined step size. This step size is used for entering the level with the rotary knob or the
+         CURSOR UP and CURSOR DOWN keys. To enable variation of the level with this step size,
+         it has to be activated with KNOB STEP STATE by switching to INCREMENT there.
+        example :
+            POW:STEP 1.5
+        :return:
+        """
+        self.specan.write('POW:STEP {}'.format(state_type))
+        logging.info('POW:STEP {}'.format(state_type))
+        time.sleep(0.1)
+
     def set_level_settings_unit(self, level_unit):
         """
          The units dBm, dBuV, dBmV and mV can be used as level
@@ -161,7 +186,6 @@ class Ektsfe(object):
         ON  With modulation ON, all of the settings that concern the modulation (modulation menu, coding and noise) are accepted.
         When modulation is switched OFF, these settings are retained and they are restored when modulation is set back to ON.
         OFF With modulation OFF, a continuous wave (CW) carrier is output with the set frequency and level, and MOD OFF is displayed.
-
         example :
             MOD ON|OFF
             MOD:STAT ON|OFF
@@ -211,8 +235,6 @@ class Ektsfe(object):
     def set_digitaltv_input_load(self, file_path):
         """
         Clicking this menu item opens a file dialog box in which you can select the desired player file.
-        Files with the following extensions are accepted as player files: *.GTS, *.TRP, *.T10, *.MPG, *.TS, *.BIN,
-         *.DAB, *.DAB_C, *.FLO, *.FLO_C, *.DABP_C  and *.ISDBT_C
         example :
             TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
         :return:
@@ -321,8 +343,6 @@ class Ektsfe(object):
         logging.info('DVBS:PRBS {}'.format(prbs_type))
         time.sleep(0.1)
 
-
-
     def preset_instrument(self):
         """
         Triggers a reset. The command has the same effect as pressing the PRESET key on the front panel
@@ -347,7 +367,7 @@ class Ektsfe(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write('DM:SOUR DIGital')
+        self.specan.write('PFREQ:STEP:DEC')
 
     def __del__(self):
         del self.specan
@@ -383,8 +403,9 @@ def _test_code():
     # specan.set_digitaltv_special_special("OFF")
     # specan.set_digitaltv_settings_testtspacket("H184")
     # specan.set_digitaltv_settings_prbs("P23_1")
-
-    # specan.set_cmd()
+    # specan.set_level_settings_state("DEC")
+    # specan.set_level_settings_increment("2.5")
+    specan.set_cmd()
 
 
 if __name__ == '__main__':
