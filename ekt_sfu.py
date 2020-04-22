@@ -42,7 +42,7 @@ class Ektsfe(object):
         # self.specan.write('FREQ {}'.format(frequency))
         self.specan.write('FREQ:CW {}'.format(frequency))
         logging.info('FREQ:CW {}'.format(frequency))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_frequency_offset(self, frequency):
         """
@@ -57,7 +57,7 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:OFFS {}'.format(frequency))
         logging.info('FREQ:OFFS {}'.format(frequency))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_frequency_channel(self, channel):
         """
@@ -68,7 +68,7 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:CHAN {}'.format(channel))
         logging.info('FREQ:CHAN {}'.format(channel))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_sweep_start(self, frequency):
         """
@@ -83,7 +83,7 @@ class Ektsfe(object):
         """
         self.specan.write('SWE:STARt {}'.format(frequency))
         logging.info('SWE:STARt {}'.format(frequency))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_sweep_stop(self, frequency):
         """
@@ -97,7 +97,7 @@ class Ektsfe(object):
         """
         self.specan.write('SWE:STOP {}'.format(frequency))
         logging.info('SWE:STOP {}'.format(frequency))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_sweep_center(self, frequency):
         """
@@ -112,7 +112,7 @@ class Ektsfe(object):
         """
         self.specan.write('SWE:CENT {}'.format(frequency))
         logging.info('SWE:CENT {}'.format(frequency))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_sweep_span(self, frequency):
         """
@@ -127,7 +127,7 @@ class Ektsfe(object):
         """
         self.specan.write('SWE:SPAN {}'.format(frequency))
         logging.info('SWE:SPAN {}'.format(frequency))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_sweep_spacing(self, span_type):
         """
@@ -140,7 +140,7 @@ class Ektsfe(object):
         """
         self.specan.write('SWE:SPAC {}'.format(span_type))
         logging.info('SWE:SPAC {}'.format(span_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_sweep_step(self, step_frequency):
         """
@@ -154,7 +154,7 @@ class Ektsfe(object):
         """
         self.specan.write('SWE:STEP {}'.format(step_frequency))
         logging.info('SWE:STEP {}'.format(step_frequency))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_sweep_dwell(self, dewll_time):
         """
@@ -169,7 +169,7 @@ class Ektsfe(object):
         """
         self.specan.write('SWE:DWEL {}'.format(dewll_time))
         logging.info('SWE:DWEL {}'.format(dewll_time))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_sweep_mode(self, mode_type):
         """
@@ -185,7 +185,7 @@ class Ektsfe(object):
         """
         self.specan.write('SWE:MODE AUTO'.format(mode_type))
         logging.info('SWE:MODE AUTO'.format(mode_type))
-        time.sleep(0.1)
+        time.sleep(1)
         # self.specan.write('SWE:MODE STEP')
 
     def set_frequency_sweep_state(self, state_type):
@@ -199,7 +199,7 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:MODE {}'.format(state_type))
         logging.info('FREQ:MODE {}'.format(state_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_frequency_sweep_reset(self):
         """
@@ -209,7 +209,36 @@ class Ektsfe(object):
         """
         self.specan.write(':SWE:RES')
         logging.info(':SWE:RES')
-        time.sleep(0.1)
+        time.sleep(1)
+
+    def set_frequency_settings_knobstepstate(self, state_type):
+        """
+         Activates a user-defined step size for varying the frequency value with the rotary knob.
+         Not debugging through
+
+          INCREMENT
+          DECIMAL
+         example : FREQ:STEP:MODE DEC|INCR
+        :return:
+        """
+        self.specan.write('FREQ:STEP:MODE {}'.format(state_type))
+        logging.info('FREQ:STEP:MODE {}'.format(state_type))
+        time.sleep(1)
+
+    def set_frequency_settings_increment(self, frequency):
+        """
+         Activates a user-defined step size for varying the frequency value with the rotary knob.
+         Not debugging through
+
+          INCREMENT
+          DECIMAL
+         example : FREQ:STEP 50 kHz
+        :return:
+        """
+        # self.specan.write('FREQ:STEP {}'.format(frequency))
+        self.specan.write('FREQ:STEP 50 kHz')
+        logging.info('FREQ:STEP 50 kHz')
+        time.sleep(1)
 
     def set_frequency_settings_channlfrequency(self, channel_name, channel_frequency):
         """
@@ -225,7 +254,7 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:CHAN:TABL:FREQ {}, {}'.format(channel_name, channel_frequency))
         logging.info('FREQ:CHAN:TABL:FREQ {}, {}'.format(channel_name, channel_frequency))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_level_level_level(self, level_unit, level_num):
         """
@@ -239,9 +268,9 @@ class Ektsfe(object):
         :return:
         """
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
-        time.sleep(0.1)
+        time.sleep(1)
         self.specan.write('POW {}'.format(level_num))
-        time.sleep(0.1)
+        time.sleep(1)
         logging.info('UNIT:VOLT {}'.format(level_unit))
         logging.info('POW {}'.format(level_num))
 
@@ -257,7 +286,7 @@ class Ektsfe(object):
         """
         self.specan.write('OUTP {}'.format(rf_type))
         logging.info('OUTP {}'.format(rf_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_level_level_offset(self, offset):
         """
@@ -271,7 +300,7 @@ class Ektsfe(object):
         """
         self.specan.write('POW:OFFS {}'.format(offset))
         logging.info('POW:OFFS {}'.format(offset))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_level_level_userlimit(self, limit_level):
         """
@@ -285,7 +314,7 @@ class Ektsfe(object):
         """
         self.specan.write('POW:LIM {}'.format(limit_level))
         logging.info('POW:LIM {}'.format(limit_level))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_level_level_mode(self, level_mode):
         """
@@ -301,7 +330,7 @@ class Ektsfe(object):
         """
         self.specan.write('OUTP:AMOD {}'.format(level_mode))
         logging.info('OUTP:AMOD {}'.format(level_mode))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_level_alc_state(self, state_type):
         """
@@ -315,7 +344,7 @@ class Ektsfe(object):
         """
         self.specan.write('POW:ALC {}'.format(state_type))
         logging.info('POW:ALC {}'.format(state_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_level_settings_unit(self, level_unit):
         """
@@ -331,7 +360,7 @@ class Ektsfe(object):
         """
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
         logging.info('UNIT:VOLT {}'.format(level_unit))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_modulation_modulation(self, modulation_type):
         """
@@ -344,7 +373,7 @@ class Ektsfe(object):
         """
         self.specan.write('MOD {}'.format(modulation_type))
         logging.info('MOD {}'.format(modulation_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_modulation_source(self, source_type):
         """
@@ -363,7 +392,7 @@ class Ektsfe(object):
         """
         self.specan.write('DM:SOUR {}'.format(source_type))
         logging.info('DM:SOUR {}'.format(source_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_modulation_standard_atv(self, standard_type):
         """
@@ -389,37 +418,36 @@ class Ektsfe(object):
         """
         self.specan.write('DM:ATV {}'.format(standard_type))
         logging.info('DM:ATV {}'.format(standard_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_modulation_standard_dvt(self, standard_type):
         """
         Sets the analog transmission standard or queries its setting
         The multi ATV predefined option
-            Available DTV standards
-            DTV standard  Required option  For details see
-            DVB-T/H         R&S SFU-K1          "DVB-T/H"
-            DVB-C           R&S SFU-K2          "DVB-C"
-            DVB-S           R&S SFU-K3          "DVB-S"
-            8VSB            R&S SFU-K4          "8VSB"
-            J.83/B          R&S SFU-K5          "J.83/B"
-            ISDB-T          R&S SFU-K6          "ISDB-T"
-            DMB-T           R&S SFU-K7          "DMB-T"
-            DVB-S2          R&S SFU-K8          "DVB-S2"
-            DIRECTV         R&S SFU-K9          "DIRECTV"
-            MEDIAFLO        R&S SFU-K10          "MediaFLO"
-            T-DMB/DAB       R&S SFU-K11          "T-DMB/DAB"
-            DTMB            R&S SFU-K12          "DTMB"
-            CMMB            R&S SFU-K15          "CMMB"
-            DVB-T2          R&S SFU-K16          "DVB-T2"
-            DVB-C2          R&S SFU-K17          "DVB-C2"
-            ATSC-M/H        R&S SFU-K18          "ATSC-M/H"
+            DVBC
+            DVBS
+            DVBT
+            VSB
+            J83B
+            ISDBt
+            DMBT
+            DMBH
+            DTMB
+            DVS2
+            DIRectv
+            TDMB
+            MEDiaflo
+            CMMB
+            T2DVb
+            ATSM
+            C2DVb
         example :
             DM:TRAN DIR
         :return:
         """
         self.specan.write('DM:TRAN {}'.format(standard_type))
         logging.info('DM:TRAN {}'.format(standard_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_modulation_spectrum(self, spectrum_type):
         """
@@ -433,7 +461,7 @@ class Ektsfe(object):
         """
         self.specan.write('DM:POL {}'.format(spectrum_type))
         logging.info('DM:POL {}'.format(spectrum_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_settings_level(self, level_type):
         """
@@ -449,7 +477,7 @@ class Ektsfe(object):
         """
         self.specan.write('IQ:GAIN {}'.format(level_type))
         logging.info('IQ:GAIN {}'.format(level_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_settings_factor(self, factor_type):
         """
@@ -464,7 +492,7 @@ class Ektsfe(object):
         """
         self.specan.write('IQ:CRES {}'.format(factor_type))
         logging.info('IQ:CRES {}'.format(factor_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_settings_filtering(self, filtering_type):
         """
@@ -477,7 +505,7 @@ class Ektsfe(object):
         """
         self.specan.write('IQ:WBST {}'.format(filtering_type))
         logging.info('IQ:WBST {}'.format(filtering_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_settings_mode(self, mode_type):
         """
@@ -494,7 +522,7 @@ class Ektsfe(object):
         """
         self.specan.write('IQ:DINM {}'.format(mode_type))
         logging.info('IQ:DINM {}'.format(mode_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_modulation_settings_output(self, output_type):
         """
@@ -515,7 +543,7 @@ class Ektsfe(object):
         """
         self.specan.write('IQ:DOUTput {}'.format(output_type))
         logging.info('IQ:DOUTput {}'.format(output_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_source_dvbs2(self, source_type):
         """
@@ -529,7 +557,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:SOUR {}'.format(source_type))
         logging.info('DVBS2:SOUR {}'.format(source_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_symbolrate_dvbs2(self, symbol_rate):
         """
@@ -542,7 +570,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:SYMB {}'.format(symbol_rate))
         logging.info('DVBS2:SYMB {}'.format(symbol_rate))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_constellation_dvbs2(self, constellation_type):
         """
@@ -557,7 +585,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:CONS {}'.format(constellation_type))
         logging.info('DVBS2:CONS {}'.format(constellation_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_fecframe_dvbs2(self, fecframe_type):
         """
@@ -570,7 +598,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:FECF {}'.format(fecframe_type))
         logging.info('DVBS2:FECF {}'.format(fecframe_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_pilots_dvbs2(self, fecframe_type):
         """
@@ -583,7 +611,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:PIL {}'.format(fecframe_type))
         logging.info('DVBS2:PIL {}'.format(fecframe_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_rolloff_dvbs2(self, rolloff_num):
         """
@@ -598,7 +626,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:ROLL {}'.format(rolloff_num))
         logging.info('DVBS2:ROLL {}'.format(rolloff_num))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_coderate_dvbs2(self, code_rate):
         """
@@ -622,7 +650,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:RATE {}'.format(code_rate))
         logging.info('DVBS2:RATE {}'.format(code_rate))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_special_settings_dvbs2(self, setting_type):
         """
@@ -635,7 +663,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:SETT {}'.format(setting_type))
         logging.info('DVBS2:SETT {}'.format(setting_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_phasenoise_phasenoise_dvbs2(self, phasenoise_type):
         """
@@ -648,7 +676,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:PHAS {}'.format(phasenoise_type))
         logging.info('DVBS2:PHAS {}'.format(phasenoise_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_phasenoise_shape_dvbs2(self, shape_type):
         """
@@ -662,7 +690,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:PHAS:SHAP {}'.format(shape_type))
         logging.info('DVBS2:PHAS:SHAP {}'.format(shape_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_phasenoise_magnitude_dvbs2(self, magnitude):
         """
@@ -676,7 +704,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:PHAS:MAGN {}'.format(magnitude))
         logging.info('DVBS2:PHAS:MAGN {}'.format(magnitude))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_tspacket_dvbs2(self, tspacket_type):
         """
@@ -691,7 +719,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:TSP {}'.format(tspacket_type))
         logging.info('DVBS2:TSP {}'.format(tspacket_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_pidpacket_dvbs2(self, pidpacket_type):
         """
@@ -704,7 +732,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:PIDT {}'.format(pidpacket_type))
         logging.info('DVBS2:PIDT {}'.format(pidpacket_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_pid_dvbs2(self, pid):
         """
@@ -717,7 +745,7 @@ class Ektsfe(object):
         """
         self.specan.write('#H{}'.format(pid))
         logging.info('#H{}'.format(pid))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_payloadtest_dvbs2(self, payloadtest_type):
         """
@@ -733,7 +761,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:PAYL {}'.format(payloadtest_type))
         logging.info('DVBS2:PAYL {}'.format(payloadtest_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_prbs_dvbs2(self, prbs_type):
         """
@@ -746,7 +774,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS2:PRBS {}'.format(prbs_type))
         logging.info('DVBS2:PRBS {}'.format(prbs_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_interferer_source(self, interferer_type):
         """
@@ -762,7 +790,7 @@ class Ektsfe(object):
         """
         self.specan.write('DM:ISRC {}'.format(interferer_type))
         logging.info('DM:ISRC {}'.format(interferer_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_noise_noise(self, noise_type):
         """
@@ -776,7 +804,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS {}'.format(noise_type))
         logging.info('NOIS {}'.format(noise_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_noise_awgn(self, awgn_type):
         """
@@ -792,7 +820,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:AWG {}'.format(awgn_type))
         logging.info('NOIS:AWG {}'.format(awgn_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_noise_impulsive(self, awgn_type):
         """
@@ -805,7 +833,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:IMP {}'.format(awgn_type))
         logging.info('NOIS:IMP {}'.format(awgn_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_noise_phase(self, phase_type):
         """
@@ -818,7 +846,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:PHAS {}'.format(phase_type))
         logging.info('NOIS:PHAS {}'.format(phase_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_awgn_cn(self, cn):
         """
@@ -833,7 +861,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:CN {}'.format(cn))
         logging.info('NOIS:CN {}'.format(cn))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_awgn_ebno(self, ebno):
         """
@@ -844,7 +872,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:EN {}'.format(ebno))
         logging.info('NOIS:EN {}'.format(ebno))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_impulsive_ci(self, ci_noise):
         """
@@ -859,7 +887,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:IMP:CI {}'.format(ci_noise))
         logging.info('NOIS:IMP:CI {}'.format(ci_noise))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_impulsive_frameduration(self, frameduration_type):
         """
@@ -876,7 +904,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:IMP:FRAM {}'.format(frameduration_type))
         logging.info('NOIS:IMP:FRAM {}'.format(frameduration_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_settings_bandwith(self, switch_type):
         """
@@ -891,7 +919,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:COUP {}'.format(switch_type))
         logging.info('NOIS:COUP {}'.format(switch_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_noise_settings_receiver(self, bandwidth):
         """
@@ -907,7 +935,7 @@ class Ektsfe(object):
         """
         self.specan.write('NOIS:BAND {}'.format(bandwidth))
         logging.info('NOIS:BAND {}'.format(bandwidth))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_fading_state(self, state_type):
         """
@@ -922,7 +950,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM {}'.format(state_type))
         logging.info('FSIM {}'.format(state_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_parameterset(self, parameterset_type):
         """
@@ -1002,7 +1030,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:STAN {}'.format(parameterset_type))
         logging.info('FSIM:STAN {}'.format(parameterset_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_configuration(self, configuration_type):
         """
@@ -1021,7 +1049,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:CONF {}'.format(configuration_type))
         logging.info('FSIM:CONF {}'.format(configuration_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_state(self, group, path, state_type):
         """
@@ -1038,7 +1066,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:STAT {}'.format(group, path, state_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:STAT {}'.format(group, path, state_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_profile(self, group, path, state_type):
         """
@@ -1064,7 +1092,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:PROF {}'.format(group, path, state_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:PROF {}'.format(group, path, state_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_pathloss(self, group, path, pathloss):
         """
@@ -1081,7 +1109,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOSS {}'.format(group, path, pathloss))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOSS {}'.format(group, path, pathloss))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_basicdelay(self, group, basicdelay):
         """
@@ -1100,7 +1128,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:BDEL {}'.format(group, basicdelay))
         logging.info('FSIM:DEL:GRO{}:BDEL {}'.format(group, basicdelay))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_additdelay(self, group, path, additdelay):
         """
@@ -1117,7 +1145,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:ADEL {}'.format(group, path, additdelay))
         logging.info('FSIM:DEL:GRO{}:PATH{}:ADEL {}'.format(group, path, additdelay))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_resuldelay(self, group, path, resuldelay):
         """
@@ -1129,7 +1157,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:RDEL {}'.format(group, path, resuldelay))
         logging.info('FSIM:DEL:GRO{}:PATH{}:RDEL {}'.format(group, path, resuldelay))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_power(self, group, path, power):
         """
@@ -1145,7 +1173,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:PRAT {}'.format(group, path, power))
         logging.info('FSIM:DEL:GRO{}:PATH{}:PRAT {}'.format(group, path, power))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_constphase(self, group, path, constphase):
         """
@@ -1162,7 +1190,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CPH {}'.format(group, path, constphase))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CPH {}'.format(group, path, constphase))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_speed(self, group, path, speed):
         """
@@ -1177,7 +1205,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:SPE {}'.format(group, path, speed))
         logging.info('FSIM:DEL:GRO{}:PATH{}:SPE {}'.format(group, path, speed))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_freqratio(self, group, path, freq):
         """
@@ -1192,7 +1220,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:FRAT {}'.format(group, path, freq))
         logging.info('FSIM:DEL:GRO{}:PATH{}:FRAT {}'.format(group, path, freq))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_doppler(self, group, path, doppler):
         """
@@ -1206,7 +1234,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:FDOP {}'.format(group, path, doppler))
         logging.info('FSIM:DEL:GRO{}:PATH{}:FDOP {}'.format(group, path, doppler))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_correlation(self, group, path, correlation_type):
         """
@@ -1220,7 +1248,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:STAT {}'.format(group, path, correlation_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:STAT {}'.format(group, path, correlation_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_coefficient(self, group, path, coefficient):
         """
@@ -1236,7 +1264,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:COEF {}'.format(group, path, coefficient))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:COEF {}'.format(group, path, coefficient))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_phase(self, group, path, phase):
         """
@@ -1252,7 +1280,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:PHAS {}'.format(group, path, phase))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:PHAS {}'.format(group, path, phase))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_lognormal(self, group, path, state_type):
         """
@@ -1265,7 +1293,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:STAT {}'.format(group, path, state_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:STAT {}'.format(group, path, state_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_localconstant(self, group, path, local_constant):
         """
@@ -1281,7 +1309,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:LCON {}'.format(group, path, local_constant))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:LCON {}'.format(group, path, local_constant))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_profile_standard(self, group, path, standard):
         """
@@ -1296,7 +1324,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:CSTD {}'.format(group, path, standard))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:CSTD {}'.format(group, path, standard))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_settings_speedunit(self, speed_unit):
         """
@@ -1310,7 +1338,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:SPE:UNIT {}'.format(speed_unit))
         logging.info('FSIM:SPE:UNIT {}'.format(speed_unit))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_settings_peference(self, peference_type):
         """
@@ -1324,7 +1352,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:REF:{}'.format(peference_type))
         logging.info('FSIM:REF:{}'.format(peference_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_settings_common(self, doppler_type):
         """
@@ -1338,7 +1366,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:CSP:{}'.format(doppler_type))
         logging.info('FSIM:CSP:{}'.format(doppler_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_settings_ignore(self, ignore_type):
         """
@@ -1351,7 +1379,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:IGN:RFCH {}'.format(ignore_type))
         logging.info('FSIM:IGN:RFCH {}'.format(ignore_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_settings_signal(self, signal_type):
         """
@@ -1367,7 +1395,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:SDES {}'.format(signal_type))
         logging.info('FSIM:SDES {}'.format(signal_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_settings_insertionmode(self, mode_type):
         """
@@ -1381,7 +1409,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:ILOS:MODE {}'.format(mode_type))
         logging.info('FSIM:ILOS:MODE {}'.format(mode_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_fading_settings_insertionloss(self, insertion_loss):
         """
@@ -1396,7 +1424,7 @@ class Ektsfe(object):
         """
         self.specan.write('FSIM:ILOS {}'.format(insertion_loss))
         logging.info('FSIM:ILOS {}'.format(insertion_loss))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_source_dvbc(self, source_type):
         """
@@ -1410,7 +1438,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBC:SOUR {}'.format(source_type))
         logging.info('DVBC:SOUR {}'.format(source_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_symbolrate_dvbc(self, symbol_rate):
         """
@@ -1424,7 +1452,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBC:SYMB {}'.format(symbol_rate))
         logging.info('DVBC:SYMB {}'.format(symbol_rate))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_constellation_dvbc(self, symbol_rate):
         """
@@ -1440,7 +1468,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBC:CONS {}'.format(symbol_rate))
         logging.info('DVBC:CONS {}'.format(symbol_rate))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_rolloff_dvbc(self, roll_type):
         """
@@ -1456,7 +1484,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBC:ROLL {}'.format(roll_type))
         logging.info('DVBC:ROLL {}'.format(roll_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_special_special_dvbc(self, special_type):
         """
@@ -1469,7 +1497,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBC:SETT {}'.format(special_type))
         logging.info('DVBC:SETT {}'.format(special_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_testtspacket_dvbc(self, packet_type):
         """
@@ -1482,7 +1510,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBC:TSP {}'.format(packet_type))
         logging.info('DVBC:TSP {}'.format(packet_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_pidtestpacket_dvbc(self, packet_type):
         """
@@ -1495,7 +1523,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBC:PIDT {}'.format(packet_type))
         logging.info('DVBC:PIDT {}'.format(packet_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_payloadtest_dvbc(self, stuff_type):
         """
@@ -1509,7 +1537,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBC:PAYL {}'.format(stuff_type))
         logging.info('DVBC:PAYL {}'.format(stuff_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_prbs_dvbc(self, prbs_type):
         """
@@ -1522,7 +1550,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBC:PRBS {}'.format(prbs_type))
         logging.info('DVBC:PRBS {}'.format(prbs_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_source_dvbt(self, source_type):
         """
@@ -1536,7 +1564,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:SOUR {}'.format(source_type))
         logging.info('DVBT:SOUR {}'.format(source_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_stuffing_dvbt(self, source_type):
         """
@@ -1550,7 +1578,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:STUF {}'.format(source_type))
         logging.info('DVBT:STUF {}'.format(source_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_channelbandwidth_dvbt(self, bandwidth_type):
         """
@@ -1565,7 +1593,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:CHAN {}'.format(bandwidth_type))
         logging.info('DVBT:CHAN {}'.format(bandwidth_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_fftmode_dvbt(self, mode_type):
         """
@@ -1579,7 +1607,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:FFT:MODE {}'.format(mode_type))
         logging.info('DVBT:FFT:MODE {}'.format(mode_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_guard_dvbt(self, guard_type):
         """
@@ -1594,7 +1622,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:GUAR:INT {}'.format(guard_type))
         logging.info('DVBT:GUAR:INT {}'.format(guard_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_dvbhstate_dvbt(self, state_type):
         """
@@ -1607,7 +1635,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:DVHS {}'.format(state_type))
         logging.info('DVBT:DVHS {}'.format(state_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_hierarchy_dvbt(self, state_type):
         """
@@ -1622,7 +1650,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:HIER {}'.format(state_type))
         logging.info('DVBT:HIER {}'.format(state_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_constellation_dvbt(self, constellation_type):
         """
@@ -1636,7 +1664,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:CONS {}'.format(constellation_type))
         logging.info('DVBT:CONS {}'.format(constellation_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_coderate_dvbt(self, code_rate):
         """
@@ -1652,7 +1680,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:RATE {}'.format(code_rate))
         logging.info('DVBT:RATE {}'.format(code_rate))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_special_special_dvbt(self, special_rate):
         """
@@ -1665,7 +1693,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:SETT {}'.format(special_rate))
         logging.info('DVBT:SETT {}'.format(special_rate))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_testtspacket_dvbt(self, packet_type):
         """
@@ -1678,7 +1706,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:TSP {}'.format(packet_type))
         logging.info('DVBT:TSP {}'.format(packet_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_pidtestpacket_dvbt(self, packet_type):
         """
@@ -1691,7 +1719,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:PIDT {}'.format(packet_type))
         logging.info('DVBT:PIDT {}'.format(packet_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_payloadtest_dvbt(self, stuff_type):
         """
@@ -1705,7 +1733,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:PAYL {}'.format(stuff_type))
         logging.info('DVBT:PAYL {}'.format(stuff_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_prbs_dvbt(self, prbs_type):
         """
@@ -1718,7 +1746,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:PRBS {}'.format(prbs_type))
         logging.info('DVBT:PRBS {}'.format(prbs_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_tpscall_dvbt(self, hex_num):
         """
@@ -1732,7 +1760,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:CELL:ID {}'.format(hex_num))
         logging.info('DVBT:CELL:ID {}'.format(hex_num))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_tpsreservedstate_dvbt(self, state_type):
         """
@@ -1745,7 +1773,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:TPSR:STAT {}'.format(state_type))
         logging.info('DVBT:TPSR:STAT {}'.format(state_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_tpsreservedbits_dvbt(self, bits):
         """
@@ -1758,7 +1786,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:TPSR:VAL {}'.format(bits))
         logging.info('DVBT:TPSR:VAL {}'.format(bits))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_timeslicing_dvbt(self, slicing_type):
         """
@@ -1771,7 +1799,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:TIM {}'.format(slicing_type))
         logging.info('DVBT:TIM {}'.format(slicing_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_mpefec_dvbt(self, fec_type):
         """
@@ -1784,7 +1812,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBT:MPEF {}'.format(fec_type))
         logging.info('DVBT:MPEF {}'.format(fec_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_t2miinterface_dvbt2(self, interface_type):
         """
@@ -1797,7 +1825,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:INP:T2MI:INT {}'.format(interface_type))
         logging.info('T2DV:INP:T2MI:INT {}'.format(interface_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_t2misource_dvbt2(self, source_type):
         """
@@ -1810,7 +1838,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:INP:T2MI {}'.format(source_type))
         logging.info('T2DV:INP:T2MI {}'.format(source_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_number_dvbt2(self, number):
         """
@@ -1823,7 +1851,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:INP:NPLP {}'.format(number))
         logging.info('T2DV:INP:NPLP {}'.format(number))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_inputformat_dvbt2(self, format_type):
         """
@@ -1838,7 +1866,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:INP:FORM {}'.format(format_type))
         logging.info('T2DV:PLP1:INP:FORM {}'.format(format_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_source_dvbt2(self, source_type):
         """
@@ -1852,7 +1880,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:INP:SOUR {}'.format(source_type))
         logging.info('T2DV:PLP1:INP:SOUR {}'.format(source_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_stuffing_dvbt2(self, stuffing_type):
         """
@@ -1865,7 +1893,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
         logging.info('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_framing_channelbandwidth_dvbt2(self, bandwidth_type):
         """
@@ -1882,7 +1910,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:CHAN {}'.format(bandwidth_type))
         logging.info('T2DV:CHAN {}'.format(bandwidth_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_framing_bandwidth_dvbt2(self, bandwidth):
         """
@@ -1897,7 +1925,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:BAND:VAR {}'.format(bandwidth))
         logging.info('T2DV:BAND:VAR {}'.format(bandwidth))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_framing_fftsize_dvbt2(self, fft_type):
         """
@@ -1917,7 +1945,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:FFT:MODE {}'.format(fft_type))
         logging.info('T2DV:FFT:MODE {}'.format(fft_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_framing_guard_dvbt2(self, guard_type):
         """
@@ -1935,7 +1963,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:GUAR:INT {}'.format(guard_type))
         logging.info('T2DV:GUAR:INT {}'.format(guard_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_framing_pilot_dvbt2(self, piloy_type):
         """
@@ -1954,7 +1982,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PIL {}'.format(piloy_type))
         logging.info('T2DV:PIL {}'.format(piloy_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_framing_nt2_dvbt2(self, n_t2):
         """
@@ -1965,7 +1993,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:NT2F {}'.format(n_t2))
         logging.info('T2DV:NT2F {}'.format(n_t2))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_framing_ldata_dvbt2(self, l_data):
         """
@@ -1976,7 +2004,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:LDAT {}'.format(l_data))
         logging.info('T2DV:LDAT {}'.format(l_data))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_framing_nsub_dvbt2(self, n_sub):
         """
@@ -1988,7 +2016,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:NSUB {}'.format(n_sub))
         logging.info('T2DV:NSUB {}'.format(n_sub))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_bicm_fecframe_dvbt2(self, frame_type):
         """
@@ -2001,7 +2029,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:FECF {}'.format(frame_type))
         logging.info('T2DV:PLP1:FECF {}'.format(frame_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_bicm_coderate_dvbt2(self, code_rate):
         """
@@ -2020,7 +2048,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:RATE {}'.format(code_rate))
         logging.info('T2DV:PLP1:RATE {}'.format(code_rate))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_bicm_constellation_dvbt2(self, constellation_type):
         """
@@ -2035,7 +2063,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:CONS {}'.format(constellation_type))
         logging.info('T2DV:PLP1:CONS {}'.format(constellation_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_bicm_constelrotation_dvbt2(self, constellation_type):
         """
@@ -2048,7 +2076,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:CROT {}'.format(constellation_type))
         logging.info('T2DV:PLP1:CROT {}'.format(constellation_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_bicm_timeinterljump_dvbt2(self, timeintel):
         """
@@ -2061,7 +2089,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:TIL:TYPE {}'.format(timeintel))
         logging.info('T2DV:PLP1:TIL:TYPE {}'.format(timeintel))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_bicm_frameint_dvbt2(self, frameint):
         """
@@ -2074,7 +2102,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:TIL:FINT {}'.format(frameint))
         logging.info('T2DV:PLP1:TIL:FINT {}'.format(frameint))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_bicm_timeinterllength_dvbt2(self, frameint):
         """
@@ -2087,7 +2115,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PLP1:TIL:LENG {}'.format(frameint))
         logging.info('T2DV:PLP1:TIL:LENG {}'.format(frameint))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_testtspacket_dvbt2(self, packet_type):
         """
@@ -2100,7 +2128,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:TSP {}'.format(packet_type))
         logging.info('T2DV:TSP {}'.format(packet_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_pidtest_dvbt2(self, packet_type):
         """
@@ -2113,7 +2141,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PIDT {}'.format(packet_type))
         logging.info('T2DV:PIDT {}'.format(packet_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_payload_dvbt2(self, packet_type):
         """
@@ -2127,7 +2155,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PAYL {}'.format(packet_type))
         logging.info('T2DV:PAYL {}'.format(packet_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_prbs_dvbt2(self, prbs_type):
         """
@@ -2140,7 +2168,7 @@ class Ektsfe(object):
         """
         self.specan.write('T2DV:PRBS {}'.format(prbs_type))
         logging.info('T2DV:PRBS {}'.format(prbs_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_input_source_j83b(self, source_type):
         """
@@ -2154,7 +2182,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:SOUR {}'.format(source_type))
         logging.info('J83B:SOUR {}'.format(source_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_symbolrate_j83b(self, symbol_rate):
         """
@@ -2174,7 +2202,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:SYMB {}'.format(symbol_rate))
         logging.info('J83B:SYMB {}'.format(symbol_rate))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_coding_interleavermode_j83b(self, mode_type):
         """
@@ -2198,7 +2226,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:INT:MODE {}'.format(mode_type))
         logging.info('J83B:INT:MODE {}'.format(mode_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_special_special_j83b(self, settings_type):
         """
@@ -2211,7 +2239,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:SETT {}'.format(settings_type))
         logging.info('J83B:SETT {}'.format(settings_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_special_checksumgen_j83b(self, checksumgen_type):
         """
@@ -2224,7 +2252,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:CHEC {}'.format(checksumgen_type))
         logging.info('J83B:CHEC {}'.format(checksumgen_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_special_readsolomon_j83b(self, read_type):
         """
@@ -2237,7 +2265,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:REED {}'.format(read_type))
         logging.info('J83B:REED {}'.format(read_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_special_interleaver_j83b(self, interleaver_type):
         """
@@ -2251,7 +2279,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:INT {}'.format(interleaver_type))
         logging.info('J83B:INT {}'.format(interleaver_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_special_randomizer_j83b(self, randomizer_type):
         """
@@ -2264,7 +2292,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:RAND {}'.format(randomizer_type))
         logging.info('J83B:RAND {}'.format(randomizer_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_testtspacket_j83b(self, packet_type):
         """
@@ -2277,7 +2305,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:TSP {}'.format(packet_type))
         logging.info('J83B:TSP {}'.format(packet_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_pidtest_j83b(self, packet_type):
         """
@@ -2290,7 +2318,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:PIDT {}'.format(packet_type))
         logging.info('J83B:PIDT {}'.format(packet_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_payloadtest_j83b(self, payload_type):
         """
@@ -2304,7 +2332,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:PAYL {}'.format(payload_type))
         logging.info('J83B:PAYL {}'.format(payload_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_digitaltv_settings_prbs_j83b(self, prbs_type):
         """
@@ -2317,7 +2345,7 @@ class Ektsfe(object):
         """
         self.specan.write('J83B:PRBS {}'.format(prbs_type))
         logging.info('J83B:PRBS {}'.format(prbs_type))
-        time.sleep(0.1)
+        time.sleep(1)
 
     def set_cmd(self):
         """
@@ -2332,7 +2360,7 @@ class Ektsfe(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write('NOIS:PHAS ON')
+        self.specan.write('DM:DVT DVB-C')
 
     def set_player_timing_openfile(self, file_path):
         """
@@ -2343,8 +2371,18 @@ class Ektsfe(object):
         """
         self.specan.write(r'TSG:CONF:PLAY "{}"'.format(file_path))
         logging.info(r'TSG:CONF:PLAY "{}"'.format(file_path))
-        time.sleep(0.1)
+        time.sleep(3)
 
+    def preset_instrument(self):
+        """
+        Triggers a reset. The command has the same effect as pressing the PRESET key on the front panel
+        example :
+            SYST:PRES
+        :return:
+        """
+        self.specan.write('SYST:PRES')
+        logging.info(r'SYST:PRES')
+        time.sleep(15)
 
 def __del__(self):
     del self.specan
@@ -2367,7 +2405,7 @@ def _test_code():
     # specan.set_frequency_sweep_step("2 MHz")
     # specan.set_frequency_sweep_dwell("500 ms")
     # specan.set_frequency_sweep_mode("AUTO")
-    # specan.set_frequency_sweep_state("SWEep")
+    # specan.set_frequency_sweep_state("CW")
     # specan.set_frequency_sweep_reset()
     # specan.set_level_level_level("dBm", 15)
     # specan.set_level_level_rf("OFF")
@@ -2376,9 +2414,9 @@ def _test_code():
     # specan.set_level_settings_unit("DBM")
     # specan.set_level_alc_state("ON")
     # specan.set_modulation_modulation_modulation("ON")
-    # specan.set_modulation_modulation_source("ATV")
+    # specan.set_modulation_modulation_source("DTV")
     # specan.set_modulation_modulation_standard_atv("LPR")
-    # specan.set_modulation_modulation_standard_dvt("DVB-T2")
+    # specan.set_modulation_modulation_standard_dvt("DVBC")
     # specan.set_digitaltv_input_source_dvbs2("TSPL")
     # specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
     # specan.set_digitaltv_coding_constellation_dvbs2("S4")
@@ -2504,8 +2542,19 @@ def _test_code():
     # specan.set_modulation_settings_filtering("ON")
     # specan.set_modulation_settings_mode("WBEC")
     # specan.set_modulation_settings_output("AFC")
-    specan.set_noise_noise_phase("OFF")
+    # specan.set_noise_noise_phase("OFF")
+    # specan.preset_instrument()
     # specan.set_cmd()
+
+    specan.set_frequency_frequency_frequency("1000 MHz")
+    specan.set_frequency_frequency_offset("0 Hz")
+    specan.set_frequency_frequency_channel("0")
+    specan.set_level_level_level("dBm", 0)
+    specan.set_level_level_rf("ON")
+    specan.set_level_level_offset("0")
+    specan.set_level_level_userlimit("20")
+    specan.set_level_level_mode("AUTO")
+    specan.set_level_alc_state("OFF")
 
 
 if __name__ == '__main__':
