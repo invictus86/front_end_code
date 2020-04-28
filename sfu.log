@@ -556,3 +556,197 @@
 2020-04-22 10:11:06,476 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:316] - INFO: POW:LIM 20
 2020-04-22 10:11:07,477 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:332] - INFO: OUTP:AMOD AUTO
 2020-04-22 10:11:08,479 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:346] - INFO: POW:ALC OFF
+2020-04-22 10:15:44,631 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:362] - INFO: UNIT:VOLT DBM
+2020-04-22 10:15:52,914 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:362] - INFO: UNIT:VOLT DBM
+2020-04-22 10:36:19,898 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:363] - INFO: UNIT:VOLT DBM
+2020-04-22 10:36:40,168 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:363] - INFO: UNIT:VOLT 22
+2020-04-22 10:37:05,084 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:363] - INFO: UNIT:VOLT 5
+2020-04-22 10:37:13,197 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:363] - INFO: UNIT:VOLT 999
+2020-04-22 10:37:37,677 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:363] - INFO: UNIT:VOLT 999
+2020-04-22 10:37:57,209 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:363] - INFO: UNIT:VOLT DBM
+2020-04-22 10:39:13,904 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:2385] - INFO: SYST:PRES
+2020-04-22 10:39:28,907 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:560] - INFO: DVBS2:SOUR TSPL
+2020-04-22 10:39:29,911 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:2374] - INFO: TSG:CONF:PLAY "E:\333\HEVC\1280x720p_hevc_aac.ts"
+2020-04-22 10:39:32,911 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:395] - INFO: DM:SOUR DTV
+2020-04-22 10:39:33,913 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:450] - INFO: DM:TRAN DVS2
+2020-04-22 10:39:34,914 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:44] - INFO: FREQ:CW 1000 MHz
+2020-04-22 10:39:40,917 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:59] - INFO: FREQ:OFFS 0 Hz
+2020-04-22 10:39:41,917 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:70] - INFO: FREQ:CHAN 0
+2020-04-22 10:39:42,920 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:85] - INFO: SWE:STARt 100 MHz
+2020-04-22 10:39:43,921 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:99] - INFO: SWE:STOP 200 MHz
+2020-04-22 10:39:44,923 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:114] - INFO: SWE:CENT 150 MHz
+2020-04-22 10:39:45,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:129] - INFO: SWE:SPAN 100 MHz
+2020-04-22 10:39:46,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:142] - INFO: SWE:SPAC LIN
+2020-04-22 10:39:47,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:156] - INFO: SWE:STEP 1 MHz
+2020-04-22 10:39:48,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:171] - INFO: SWE:DWEL 100 ms
+2020-04-22 10:39:49,928 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:187] - INFO: SWE:MODE AUTO
+2020-04-22 10:39:50,930 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:201] - INFO: FREQ:MODE CW
+2020-04-22 10:39:53,937 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:274] - INFO: UNIT:VOLT dBm
+2020-04-22 10:39:53,937 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:275] - INFO: POW 0
+2020-04-22 10:39:53,940 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:288] - INFO: OUTP ON
+2020-04-22 10:39:54,941 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:302] - INFO: POW:OFFS 0
+2020-04-22 10:39:55,944 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:316] - INFO: POW:LIM 20
+2020-04-22 10:39:56,946 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:332] - INFO: OUTP:AMOD AUTO
+2020-04-22 10:39:57,947 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:346] - INFO: POW:ALC OFF
+2020-04-22 10:39:58,948 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:363] - INFO: UNIT:VOLT DBM
+2020-04-22 10:39:59,953 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:376] - INFO: MOD ON
+2020-04-22 10:40:00,953 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:395] - INFO: DM:SOUR DTV
+2020-04-22 10:40:01,956 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:450] - INFO: DM:TRAN DVS2
+2020-04-22 10:40:02,957 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:464] - INFO: DM:POL NORMal
+2020-04-22 10:40:03,957 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:480] - INFO: IQ:GAIN AUTO
+2020-04-22 10:40:36,584 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:2385] - INFO: SYST:PRES
+2020-04-22 10:40:51,589 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:560] - INFO: DVBS2:SOUR TSPL
+2020-04-22 10:40:52,591 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:2374] - INFO: TSG:CONF:PLAY "E:\333\HEVC\1280x720p_hevc_aac.ts"
+2020-04-22 10:40:55,591 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:395] - INFO: DM:SOUR DTV
+2020-04-22 10:40:56,592 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:450] - INFO: DM:TRAN DVS2
+2020-04-22 10:40:57,592 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:44] - INFO: FREQ:CW 1000 MHz
+2020-04-22 10:41:03,595 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:59] - INFO: FREQ:OFFS 0 Hz
+2020-04-22 10:41:04,596 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:70] - INFO: FREQ:CHAN 0
+2020-04-22 10:41:05,596 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:85] - INFO: SWE:STARt 100 MHz
+2020-04-22 10:41:06,596 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:99] - INFO: SWE:STOP 200 MHz
+2020-04-22 10:41:07,596 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:114] - INFO: SWE:CENT 150 MHz
+2020-04-22 10:41:08,599 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:129] - INFO: SWE:SPAN 100 MHz
+2020-04-22 10:41:09,601 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:142] - INFO: SWE:SPAC LIN
+2020-04-22 10:41:10,601 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:156] - INFO: SWE:STEP 1 MHz
+2020-04-22 10:41:11,601 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:171] - INFO: SWE:DWEL 100 ms
+2020-04-22 10:41:12,604 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:187] - INFO: SWE:MODE AUTO
+2020-04-22 10:41:13,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:201] - INFO: FREQ:MODE CW
+2020-04-22 10:41:16,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:274] - INFO: UNIT:VOLT dBm
+2020-04-22 10:41:16,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:275] - INFO: POW 0
+2020-04-22 10:41:16,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:288] - INFO: OUTP ON
+2020-04-22 10:41:17,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:302] - INFO: POW:OFFS 0
+2020-04-22 10:41:18,608 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:316] - INFO: POW:LIM 20
+2020-04-22 10:41:19,642 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:332] - INFO: OUTP:AMOD AUTO
+2020-04-22 10:41:20,642 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:346] - INFO: POW:ALC OFF
+2020-04-22 10:41:21,644 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:363] - INFO: UNIT:VOLT DBM
+2020-04-22 10:41:22,644 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:376] - INFO: MOD ON
+2020-04-22 10:41:23,647 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:395] - INFO: DM:SOUR DTV
+2020-04-22 10:41:24,648 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:450] - INFO: DM:TRAN DVS2
+2020-04-22 10:41:25,648 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:464] - INFO: DM:POL NORMal
+2020-04-22 10:41:26,650 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:480] - INFO: IQ:GAIN AUTO
+2020-04-22 10:41:27,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:495] - INFO: IQ:CRES 6
+2020-04-22 10:41:28,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:508] - INFO: IQ:WBST OFF
+2020-04-22 10:41:29,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:525] - INFO: IQ:DINM NRWN
+2020-04-22 10:41:30,653 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:546] - INFO: IQ:DOUTput OFF
+2020-04-22 10:49:03,214 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:652] - INFO: DVBS2:RATE R8_9
+2020-04-22 10:49:12,230 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:652] - INFO: DVBS2:RATE R8_9
+2020-04-22 11:14:48,961 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:2384] - INFO: SYST:PRES
+2020-04-22 11:15:03,963 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:559] - INFO: DVBS2:SOUR TSPL
+2020-04-22 11:15:04,964 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:2373] - INFO: TSG:CONF:PLAY "E:\333\HEVC\1280x720p_hevc_aac.ts"
+2020-04-22 11:15:07,967 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:394] - INFO: DM:SOUR DTV
+2020-04-22 11:15:08,967 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:449] - INFO: DM:TRAN DVS2
+2020-04-22 11:15:09,969 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:44] - INFO: FREQ:CW 1000 MHz
+2020-04-22 11:15:15,969 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:59] - INFO: FREQ:OFFS 0 Hz
+2020-04-22 11:15:16,970 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:70] - INFO: FREQ:CHAN 0
+2020-04-22 11:15:17,973 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:85] - INFO: SWE:STARt 100 MHz
+2020-04-22 11:15:18,974 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:99] - INFO: SWE:STOP 200 MHz
+2020-04-22 11:15:19,976 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:114] - INFO: SWE:CENT 150 MHz
+2020-04-22 11:15:20,977 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:129] - INFO: SWE:SPAN 100 MHz
+2020-04-22 11:15:21,977 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:142] - INFO: SWE:SPAC LIN
+2020-04-22 11:15:22,979 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:156] - INFO: SWE:STEP 1 MHz
+2020-04-22 11:15:23,980 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:171] - INFO: SWE:DWEL 100 ms
+2020-04-22 11:15:24,980 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:187] - INFO: SWE:MODE AUTO
+2020-04-22 11:15:25,982 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:201] - INFO: FREQ:MODE CW
+2020-04-22 11:15:28,986 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:274] - INFO: UNIT:VOLT dBm
+2020-04-22 11:15:28,986 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:275] - INFO: POW 0
+2020-04-22 11:15:28,986 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:288] - INFO: OUTP ON
+2020-04-22 11:15:29,987 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:302] - INFO: POW:OFFS 0
+2020-04-22 11:15:30,987 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:316] - INFO: POW:LIM 20
+2020-04-22 11:15:31,990 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:332] - INFO: OUTP:AMOD AUTO
+2020-04-22 11:15:32,990 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:346] - INFO: POW:ALC OFF
+2020-04-22 11:15:33,992 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:362] - INFO: UNIT:VOLT DBM
+2020-04-22 11:15:34,994 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:375] - INFO: MOD ON
+2020-04-22 11:15:35,996 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:394] - INFO: DM:SOUR DTV
+2020-04-22 11:15:36,996 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:449] - INFO: DM:TRAN DVS2
+2020-04-22 11:15:37,999 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:463] - INFO: DM:POL NORMal
+2020-04-22 11:15:38,999 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:479] - INFO: IQ:GAIN AUTO
+2020-04-22 11:15:40,000 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:494] - INFO: IQ:CRES 6
+2020-04-22 11:15:41,000 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:507] - INFO: IQ:WBST OFF
+2020-04-22 11:15:42,002 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:524] - INFO: IQ:DINM NRWN
+2020-04-22 11:15:43,003 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:545] - INFO: IQ:DOUTput OFF
+2020-04-22 11:15:44,003 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:559] - INFO: DVBS2:SOUR TSPL
+2020-04-22 11:15:45,003 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:572] - INFO: DVBS2:SYMB 31.711e6
+2020-04-22 11:15:46,005 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:587] - INFO: DVBS2:CONS S8
+2020-04-22 11:15:47,006 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:628] - INFO: DVBS2:ROLL 0.15
+2020-04-22 11:15:48,009 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:652] - INFO: DVBS2:RATE R1_2
+2020-04-22 11:15:49,009 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:600] - INFO: DVBS2:FECF NORM
+2020-04-22 11:15:50,010 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:613] - INFO: DVBS2:PIL OFF
+2020-04-22 11:15:51,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:665] - INFO: DVBS2:SETT ON
+2020-04-22 11:15:52,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:678] - INFO: DVBS2:PHAS ON
+2020-04-22 11:15:53,016 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:692] - INFO: DVBS2:PHAS:SHAP SHA1
+2020-04-22 11:15:54,016 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:706] - INFO: DVBS2:PHAS:MAGN 32
+2020-04-22 11:15:55,017 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:721] - INFO: DVBS2:TSP H184
+2020-04-22 11:15:56,023 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:734] - INFO: DVBS2:PIDT NULL
+2020-04-22 11:15:57,023 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:763] - INFO: DVBS2:PAYL PRBS
+2020-04-22 11:19:55,867 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:792] - INFO: DM:ISRC ATVPr
+2020-04-22 11:20:17,619 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:792] - INFO: DM:ISRC ATVPr
+2020-04-22 11:20:22,611 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:792] - INFO: DM:ISRC ATVPr
+2020-04-22 11:20:29,963 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:792] - INFO: DM:ISRC ATVPr
+2020-04-22 11:42:26,539 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:805] - INFO: IQ:IMP ON
+2020-04-22 11:42:35,566 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:805] - INFO: IQ:IMP OFF
+2020-04-22 11:45:12,575 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:818] - INFO: BB:IMP ON
+2020-04-22 11:45:21,009 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:818] - INFO: BB:IMP OFF
+2020-04-22 11:49:24,655 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:831] - INFO: BB:IMP:OPT:STAT ON
+2020-04-22 11:49:33,706 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:831] - INFO: BB:IMP:OPT:STAT OFF
+2020-04-22 11:58:06,848 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:960] - INFO: NOIS:COUP OFF
+2020-04-22 11:58:07,849 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:976] - INFO: NOIS:BAND 7.5e6
+2020-04-22 11:58:24,194 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:960] - INFO: NOIS:COUP ON
+2020-04-22 11:58:25,194 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:976] - INFO: NOIS:BAND 7.5e6
+2020-04-22 12:00:15,114 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:2423] - INFO: SYST:PRES
+2020-04-22 12:00:30,117 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:559] - INFO: DVBS2:SOUR TSPL
+2020-04-22 12:00:31,118 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:2412] - INFO: TSG:CONF:PLAY "E:\333\HEVC\1280x720p_hevc_aac.ts"
+2020-04-22 12:00:34,121 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:394] - INFO: DM:SOUR DTV
+2020-04-22 12:00:35,121 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:449] - INFO: DM:TRAN DVS2
+2020-04-22 12:00:36,122 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:44] - INFO: FREQ:CW 1000 MHz
+2020-04-22 12:00:42,124 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:59] - INFO: FREQ:OFFS 0 Hz
+2020-04-22 12:00:43,127 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:70] - INFO: FREQ:CHAN 0
+2020-04-22 12:00:44,128 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:85] - INFO: SWE:STARt 100 MHz
+2020-04-22 12:00:45,128 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:99] - INFO: SWE:STOP 200 MHz
+2020-04-22 12:00:46,130 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:114] - INFO: SWE:CENT 150 MHz
+2020-04-22 12:00:47,131 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:129] - INFO: SWE:SPAN 100 MHz
+2020-04-22 12:00:48,132 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:142] - INFO: SWE:SPAC LIN
+2020-04-22 12:00:49,132 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:156] - INFO: SWE:STEP 1 MHz
+2020-04-22 12:00:50,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:171] - INFO: SWE:DWEL 100 ms
+2020-04-22 12:00:51,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:187] - INFO: SWE:MODE AUTO
+2020-04-22 12:00:52,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:201] - INFO: FREQ:MODE CW
+2020-04-22 12:00:55,138 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:274] - INFO: UNIT:VOLT dBm
+2020-04-22 12:00:55,138 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:275] - INFO: POW 0
+2020-04-22 12:00:55,138 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:288] - INFO: OUTP ON
+2020-04-22 12:00:56,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:302] - INFO: POW:OFFS 0
+2020-04-22 12:00:57,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:316] - INFO: POW:LIM 20
+2020-04-22 12:00:58,144 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:332] - INFO: OUTP:AMOD AUTO
+2020-04-22 12:00:59,145 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:346] - INFO: POW:ALC OFF
+2020-04-22 12:01:00,150 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:362] - INFO: UNIT:VOLT DBM
+2020-04-22 12:01:01,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:375] - INFO: MOD ON
+2020-04-22 12:01:02,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:394] - INFO: DM:SOUR DTV
+2020-04-22 12:01:03,153 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:449] - INFO: DM:TRAN DVS2
+2020-04-22 12:01:04,155 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:463] - INFO: DM:POL NORMal
+2020-04-22 12:01:05,155 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:479] - INFO: IQ:GAIN AUTO
+2020-04-22 12:01:06,157 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:494] - INFO: IQ:CRES 6
+2020-04-22 12:01:07,157 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:507] - INFO: IQ:WBST OFF
+2020-04-22 12:01:08,158 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:524] - INFO: IQ:DINM NRWN
+2020-04-22 12:01:09,161 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:545] - INFO: IQ:DOUTput OFF
+2020-04-22 12:01:10,163 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:559] - INFO: DVBS2:SOUR TSPL
+2020-04-22 12:01:11,164 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:572] - INFO: DVBS2:SYMB 31.711e6
+2020-04-22 12:01:12,164 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:587] - INFO: DVBS2:CONS S8
+2020-04-22 12:01:13,165 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:628] - INFO: DVBS2:ROLL 0.15
+2020-04-22 12:01:14,167 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:652] - INFO: DVBS2:RATE R1_2
+2020-04-22 12:01:15,167 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:600] - INFO: DVBS2:FECF NORM
+2020-04-22 12:01:16,167 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:613] - INFO: DVBS2:PIL OFF
+2020-04-22 12:01:17,170 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:665] - INFO: DVBS2:SETT ON
+2020-04-22 12:01:18,171 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:678] - INFO: DVBS2:PHAS ON
+2020-04-22 12:01:19,171 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:692] - INFO: DVBS2:PHAS:SHAP SHA1
+2020-04-22 12:01:20,173 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:706] - INFO: DVBS2:PHAS:MAGN 32
+2020-04-22 12:01:21,174 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:721] - INFO: DVBS2:TSP H184
+2020-04-22 12:01:22,174 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:734] - INFO: DVBS2:PIDT NULL
+2020-04-22 12:01:23,174 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:763] - INFO: DVBS2:PAYL PRBS
+2020-04-22 12:01:24,174 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:792] - INFO: DM:ISRC ATVPr
+2020-04-22 12:01:25,177 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:805] - INFO: IQ:IMP ON
+2020-04-22 12:01:26,177 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:818] - INFO: BB:IMP OFF
+2020-04-22 12:01:27,177 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:831] - INFO: BB:IMP:OPT:STAT ON
+2020-04-22 12:01:28,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:845] - INFO: NOIS ADD
+2020-04-22 12:01:29,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:861] - INFO: NOIS:AWG ON
+2020-04-22 12:01:30,183 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:902] - INFO: NOIS:CN 20
+2020-04-22 12:01:31,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:960] - INFO: NOIS:COUP ON
+2020-04-22 12:01:32,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfu.py[line:976] - INFO: NOIS:BAND 7.5e6
+2020-04-23 15:42:09,569 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfu.py[line:302] - INFO: POW:OFFS 10

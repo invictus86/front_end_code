@@ -9,6 +9,12 @@ start_time = time.time()
 
 
 def capture_image(num, ip):
+    """
+    capture stb image use stb_tester
+    :param num: Screenshot number
+    :param ip: stb_tester ip
+    :return: list_image: list of image ,Format for numpy
+    """
     list_image = []
     for i in range(num):
         result = requests.get("http://{}/api/v1/device/screenshot.png".format(ip))

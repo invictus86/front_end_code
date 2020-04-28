@@ -792,6 +792,45 @@ class Ektsfe(object):
         logging.info('DM:ISRC {}'.format(interferer_type))
         time.sleep(1)
 
+    def set_impairments_modulator(self, modulator_type):
+        """
+        Activates or deactivates the three impairment or correction values LEAKage, QUADrature and IQRatio for the analog signal in the I/Q modulator.
+            ON
+            OFF
+        example :
+            IQ:IMP OFF
+        :return:
+        """
+        self.specan.write('IQ:IMP {}'.format(modulator_type))
+        logging.info('IQ:IMP {}'.format(modulator_type))
+        time.sleep(1)
+
+    def set_impairments_baseband(self, baseband_type):
+        """
+        Activates (ON) or deactivates (OFF) the three impairment or correction values for the digital signal in the baseband:
+            ON
+            OFF
+        example :
+            BB:IMP OFF
+        :return:
+        """
+        self.specan.write('BB:IMP {}'.format(baseband_type))
+        logging.info('BB:IMP {}'.format(baseband_type))
+        time.sleep(1)
+
+    def set_impairments_optimize(self, optimize_type):
+        """
+       Activates or deactivates internal compensation of signal distortions by the I/Q modulator.
+            ON
+            OFF
+        example :
+            BB:IMP:OPT:STAT ON
+        :return:
+        """
+        self.specan.write('BB:IMP:OPT:STAT {}'.format(optimize_type))
+        logging.info('BB:IMP:OPT:STAT {}'.format(optimize_type))
+        time.sleep(1)
+
     def set_noise_noise_noise(self, noise_type):
         """
         Switches the noise generator on or off or selects a signal.
@@ -2360,7 +2399,7 @@ class Ektsfe(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write('DM:DVT DVB-C')
+        self.specan.write('DVBS2:ACMM OFF')
 
     def set_player_timing_openfile(self, file_path):
         """
@@ -2413,6 +2452,7 @@ def _test_code():
     # specan.set_level_level_mode("FIX")
     # specan.set_level_settings_unit("DBM")
     # specan.set_level_alc_state("ON")
+    # specan.set_level_settings_unit("DBM")
     # specan.set_modulation_modulation_modulation("ON")
     # specan.set_modulation_modulation_source("DTV")
     # specan.set_modulation_modulation_standard_atv("LPR")
@@ -2433,13 +2473,13 @@ def _test_code():
     # specan.set_digitaltv_settings_pid_dvbs2("0001")
     # specan.set_digitaltv_settings_payloadtest_dvbs2("HFF")
     # specan.set_digitaltv_settings_prbs_dvbs2("P15_1")
-    # specan.set_interferer_source("OFF")
+    # specan.set_interferer_source("ATVPr")
     # specan.set_noise_noise_noise("OFF")
     # specan.set_noise_noise_awgn("ON")
     # specan.set_noise_awgn_cn("45")
     # specan.set_noise_impulsive_ci("45")
     # specan.set_noise_impulsive_frameduration("0.1")
-    # specan.set_noise_settings_bandwith("OFF")
+    # specan.set_noise_settings_bandwith("ON")
     # specan.set_noise_settings_receiver("7.5e6")
     # specan.set_fading_fading_state("OFF")
     # specan.set_fading_profile_parameterset("TU12")
@@ -2544,17 +2584,11 @@ def _test_code():
     # specan.set_modulation_settings_output("AFC")
     # specan.set_noise_noise_phase("OFF")
     # specan.preset_instrument()
+    # specan.set_impairments_modulator("OFF")
+    # specan.set_impairments_baseband("OFF")
+    # specan.set_impairments_optimize("OFF")
+    specan.set_level_level_offset("10")
     # specan.set_cmd()
-
-    specan.set_frequency_frequency_frequency("1000 MHz")
-    specan.set_frequency_frequency_offset("0 Hz")
-    specan.set_frequency_frequency_channel("0")
-    specan.set_level_level_level("dBm", 0)
-    specan.set_level_level_rf("ON")
-    specan.set_level_level_offset("0")
-    specan.set_level_level_userlimit("20")
-    specan.set_level_level_mode("AUTO")
-    specan.set_level_alc_state("OFF")
 
 
 if __name__ == '__main__':
