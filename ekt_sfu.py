@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     )
 
 
-class Ektsfe(object):
+class Ektsfu(object):
     """
 
     """
@@ -2432,7 +2432,7 @@ def _test_code():
     net = "192.168.1.50"
     # host = '127.0.0.1'
     # port = 8900
-    specan = Ektsfe(net)
+    specan = Ektsfu(net)
     # specan.set_frequency_frequency_frequency("101 MHz")
     # specan.set_frequency_frequency_offset("500kHz")
     # specan.set_frequency_frequency_channel("4")

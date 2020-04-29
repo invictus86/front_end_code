@@ -14,24 +14,11 @@
 # json_data = json.dump(list_data)
 # print json_data
 
+start_data = -60.12
+end_data = -90.12
 
-import numpy as np
-from scipy.stats import chi2
-from scipy.stats import t
-from scipy.stats import f
-from scipy.stats import norm
+print round((start_data + end_data) / 2, 1)
 
-# chi square distribution
-percents = [0.995, 0.990, 0.975, 0.950, 0.900, 0.100, 0.050, 0.025, 0.010, 0.005]
-print np.array([chi2.isf(percents, df=i) for i in range(1, 47)])
-# t distribution
-percents = [0.100, 0.050, 0.025, 0.010, 0.005, 0.001, 0.0005]
-print np.array([t.isf(percents, df=i) for i in range(1, 46)])
-# F distribution
-alpha = 0.05
-print np.array([f.isf(alpha, df1, df2) for df1 in range(1, 11) for df2 in range(1, 46)]).reshape(10, -1).T
-# normal distribution
-print norm.ppf(np.arange(0, 0.99, 0.001).reshape(-1, 10))
 
 
 

@@ -384,7 +384,7 @@ def _test_code():
     # specan.set_frequency_settings_knobstepstate("DEC")
     # specan.set_frequency_settings_increment("50 kHz")
     # specan.set_frequency_settings_channel("5", "474")
-    # specan.set_level_level_level("-31 dBm")
+    specan.set_level_level_level("-31 dBm")
     # specan.set_level_level_rf("OFF")
     # specan.set_level_level_userlimit("20 dBm")
     # specan.set_level_level_mode("AUTO")
@@ -405,7 +405,7 @@ def _test_code():
     # specan.set_digitaltv_settings_prbs("P23_1")
     # specan.set_level_settings_state("DEC")
     # specan.set_level_settings_increment("2.5")
-    specan.set_cmd()
+    # specan.set_cmd()
 
 
 if __name__ == '__main__':

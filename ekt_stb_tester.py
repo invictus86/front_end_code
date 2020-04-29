@@ -31,7 +31,7 @@ def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
     print result
     while True:
         res = requests.get(job_url).json()
-        print res
+        # print res
         if res['status'] == "exited":
             fail_result = res.get("result_counts").get("fail")
             pass_result = res.get("result_counts").get("pass")
@@ -42,7 +42,7 @@ def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
 
 
 if __name__ == '__main__':
-    res = stb_tester_detect_motion("http://192.168.1.154", "7dbb2a3",
+    res = stb_tester_detect_motion("http://192.168.1.154", "5e9b253",
                                    ["tests/front_end_test/testcases.py::test_recored"],
                                    "auto_front_end_test", "DSD4614iALM")
     print res
