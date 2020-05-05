@@ -5,6 +5,7 @@ import json
 import time
 import cv2
 import numpy
+import ekt_cfg
 
 
 def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
@@ -29,9 +30,11 @@ def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
     result = res_status.json()  # dict
     job_url = result.get("job_url")
     print result
+
     while True:
         res = requests.get(job_url).json()
         # print res
+        # time.sleep(1)
         if res['status'] == "exited":
             fail_result = res.get("result_counts").get("fail")
             pass_result = res.get("result_counts").get("pass")
@@ -42,7 +45,7 @@ def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
 
 
 if __name__ == '__main__':
-    res = stb_tester_detect_motion("http://192.168.1.154", "5e9b253",
+    res = stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                    ["tests/front_end_test/testcases.py::test_recored"],
                                    "auto_front_end_test", "DSD4614iALM")
     print res

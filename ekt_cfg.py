@@ -1,0 +1,2 @@
+BANCH_ID = "a9ddb0e"
+STB_TESTER_URL = "http://192.168.1.154"

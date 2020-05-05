@@ -61,6 +61,8 @@ class RVTserver():
         image_app = self.read_image_file(self.app_image)
         image_lock_success = self.read_image_file(self.lock_success_image)
         image_lock_fail = self.read_image_file(self.lock_fail_image)
+        frequency = None
+        symbol_rate = None
         while True:
             conn, addr = server.accept()
             print "%s connected" % (conn)
@@ -68,21 +70,38 @@ class RVTserver():
                 try:
                     data = conn.recv(1024)
                     print type(data), "\n", data
+                    dict_data = json.loads(data)
+                    print dict_data
                     if not data:
                         # print "%s disconnected"%conn
                         break
-                    elif data == "app_image":
+                    elif dict_data.get("cmd") == "app_image":
                         result = conn.send(image_app)
                         print "result:", result, "send image app ok!"
-                    elif data == "lock_success_image":
+                    elif dict_data.get("cmd") == "lock_success_image":
                         result = conn.send(image_lock_success)
                         print "result:", result, "send image lock success ok!"
-                    elif data == "lock_fail_image":
+                    elif dict_data.get("cmd") == "lock_fail_image":
                         result = conn.send(image_lock_fail)
                         print "result:", result, "send image lock fail ok!"
-                    elif data == "read_json_data":
+                    elif dict_data.get("cmd") == "read_json_data":
                         result = conn.send(str(self.json_data))
-                        print "result:", result, "send test_times ok!"
+                        print "result:", result, "send read json data ok!"
+                    elif dict_data.get("cmd") == "set_frequency_data":
+                        print "*" * 50
+                        frequency = dict_data.get("frequency")
+                        result = conn.send("set frequency data : {} ok ".format(frequency))
+                        print "result:", result, "set frequency data : {} ok ".format(frequency)
+                    elif dict_data.get("cmd") == "get_frequency_data":
+                        result = conn.send(str(frequency))
+                        print "result:", result, "get frequency data : {} ok ".format(frequency)
+                    elif dict_data.get("cmd") == "set_symbol_rate_data":
+                        symbol_rate = dict_data.get("symbol_rate")
+                        result = conn.send("set symbol_rate data : {} ok ".format(symbol_rate))
+                        print "result:", result, "set symbol_rate data : {} ok ".format(symbol_rate)
+                    elif dict_data.get("cmd") == "get_symbol_rate_data":
+                        result = conn.send(str(symbol_rate))
+                        print "result:", result, "get symbol_rate data : {} ok ".format(symbol_rate)
                     else:
                         print data
                         print "unknown message"

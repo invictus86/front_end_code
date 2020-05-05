@@ -21,9 +21,9 @@ class Ektsfu(object):
 
     """
 
-    def __init__(self, net):
+    def __init__(self, sfu_ip):
         rm = pyvisa.ResourceManager()
-        specan = rm.open_resource('TCPIP::{}::INSTR'.format(net))
+        specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
         self.specan = specan
 
     def set_frequency_frequency_frequency(self, frequency):
@@ -43,6 +43,7 @@ class Ektsfu(object):
         self.specan.write('FREQ:CW {}'.format(frequency))
         logging.info('FREQ:CW {}'.format(frequency))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_frequency_offset(self, frequency):
         """
@@ -58,6 +59,7 @@ class Ektsfu(object):
         self.specan.write('FREQ:OFFS {}'.format(frequency))
         logging.info('FREQ:OFFS {}'.format(frequency))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_frequency_channel(self, channel):
         """
@@ -69,6 +71,7 @@ class Ektsfu(object):
         self.specan.write('FREQ:CHAN {}'.format(channel))
         logging.info('FREQ:CHAN {}'.format(channel))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_sweep_start(self, frequency):
         """
@@ -84,6 +87,7 @@ class Ektsfu(object):
         self.specan.write('SWE:STARt {}'.format(frequency))
         logging.info('SWE:STARt {}'.format(frequency))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_sweep_stop(self, frequency):
         """
@@ -98,6 +102,7 @@ class Ektsfu(object):
         self.specan.write('SWE:STOP {}'.format(frequency))
         logging.info('SWE:STOP {}'.format(frequency))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_sweep_center(self, frequency):
         """
@@ -113,6 +118,7 @@ class Ektsfu(object):
         self.specan.write('SWE:CENT {}'.format(frequency))
         logging.info('SWE:CENT {}'.format(frequency))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_sweep_span(self, frequency):
         """
@@ -128,6 +134,7 @@ class Ektsfu(object):
         self.specan.write('SWE:SPAN {}'.format(frequency))
         logging.info('SWE:SPAN {}'.format(frequency))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_sweep_spacing(self, span_type):
         """
@@ -141,6 +148,7 @@ class Ektsfu(object):
         self.specan.write('SWE:SPAC {}'.format(span_type))
         logging.info('SWE:SPAC {}'.format(span_type))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_sweep_step(self, step_frequency):
         """
@@ -155,6 +163,7 @@ class Ektsfu(object):
         self.specan.write('SWE:STEP {}'.format(step_frequency))
         logging.info('SWE:STEP {}'.format(step_frequency))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_sweep_dwell(self, dewll_time):
         """
@@ -170,6 +179,7 @@ class Ektsfu(object):
         self.specan.write('SWE:DWEL {}'.format(dewll_time))
         logging.info('SWE:DWEL {}'.format(dewll_time))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_sweep_mode(self, mode_type):
         """
@@ -186,6 +196,7 @@ class Ektsfu(object):
         self.specan.write('SWE:MODE AUTO'.format(mode_type))
         logging.info('SWE:MODE AUTO'.format(mode_type))
         time.sleep(1)
+        del self.specan
         # self.specan.write('SWE:MODE STEP')
 
     def set_frequency_sweep_state(self, state_type):
@@ -200,6 +211,7 @@ class Ektsfu(object):
         self.specan.write('FREQ:MODE {}'.format(state_type))
         logging.info('FREQ:MODE {}'.format(state_type))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_sweep_reset(self):
         """
@@ -210,6 +222,7 @@ class Ektsfu(object):
         self.specan.write(':SWE:RES')
         logging.info(':SWE:RES')
         time.sleep(1)
+        del self.specan
 
     def set_frequency_settings_knobstepstate(self, state_type):
         """
@@ -224,6 +237,7 @@ class Ektsfu(object):
         self.specan.write('FREQ:STEP:MODE {}'.format(state_type))
         logging.info('FREQ:STEP:MODE {}'.format(state_type))
         time.sleep(1)
+        del self.specan
 
     def set_frequency_settings_increment(self, frequency):
         """
@@ -239,6 +253,7 @@ class Ektsfu(object):
         self.specan.write('FREQ:STEP 50 kHz')
         logging.info('FREQ:STEP 50 kHz')
         time.sleep(1)
+        del self.specan
 
     def set_frequency_settings_channlfrequency(self, channel_name, channel_frequency):
         """
@@ -255,6 +270,7 @@ class Ektsfu(object):
         self.specan.write('FREQ:CHAN:TABL:FREQ {}, {}'.format(channel_name, channel_frequency))
         logging.info('FREQ:CHAN:TABL:FREQ {}, {}'.format(channel_name, channel_frequency))
         time.sleep(1)
+        del self.specan
 
     def set_level_level_level(self, level_unit, level_num):
         """
@@ -268,9 +284,10 @@ class Ektsfu(object):
         :return:
         """
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
-        time.sleep(1)
+        time.sleep(0.1)
         self.specan.write('POW {}'.format(level_num))
-        time.sleep(1)
+        time.sleep(0.1)
+        del self.specan
         logging.info('UNIT:VOLT {}'.format(level_unit))
         logging.info('POW {}'.format(level_num))
 
@@ -287,6 +304,7 @@ class Ektsfu(object):
         self.specan.write('OUTP {}'.format(rf_type))
         logging.info('OUTP {}'.format(rf_type))
         time.sleep(1)
+        del self.specan
 
     def set_level_level_offset(self, offset):
         """
@@ -301,6 +319,7 @@ class Ektsfu(object):
         self.specan.write('POW:OFFS {}'.format(offset))
         logging.info('POW:OFFS {}'.format(offset))
         time.sleep(1)
+        del self.specan
 
     def set_level_level_userlimit(self, limit_level):
         """
@@ -315,6 +334,7 @@ class Ektsfu(object):
         self.specan.write('POW:LIM {}'.format(limit_level))
         logging.info('POW:LIM {}'.format(limit_level))
         time.sleep(1)
+        del self.specan
 
     def set_level_level_mode(self, level_mode):
         """
@@ -331,6 +351,7 @@ class Ektsfu(object):
         self.specan.write('OUTP:AMOD {}'.format(level_mode))
         logging.info('OUTP:AMOD {}'.format(level_mode))
         time.sleep(1)
+        del self.specan
 
     def set_level_alc_state(self, state_type):
         """
@@ -345,6 +366,7 @@ class Ektsfu(object):
         self.specan.write('POW:ALC {}'.format(state_type))
         logging.info('POW:ALC {}'.format(state_type))
         time.sleep(1)
+        del self.specan
 
     def set_level_settings_unit(self, level_unit):
         """
@@ -361,6 +383,7 @@ class Ektsfu(object):
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
         logging.info('UNIT:VOLT {}'.format(level_unit))
         time.sleep(1)
+        del self.specan
 
     def set_modulation_modulation_modulation(self, modulation_type):
         """
@@ -374,6 +397,7 @@ class Ektsfu(object):
         self.specan.write('MOD {}'.format(modulation_type))
         logging.info('MOD {}'.format(modulation_type))
         time.sleep(1)
+        del self.specan
 
     def set_modulation_modulation_source(self, source_type):
         """
@@ -393,6 +417,7 @@ class Ektsfu(object):
         self.specan.write('DM:SOUR {}'.format(source_type))
         logging.info('DM:SOUR {}'.format(source_type))
         time.sleep(1)
+        del self.specan
 
     def set_modulation_modulation_standard_atv(self, standard_type):
         """
@@ -419,6 +444,7 @@ class Ektsfu(object):
         self.specan.write('DM:ATV {}'.format(standard_type))
         logging.info('DM:ATV {}'.format(standard_type))
         time.sleep(1)
+        del self.specan
 
     def set_modulation_modulation_standard_dvt(self, standard_type):
         """
@@ -447,7 +473,8 @@ class Ektsfu(object):
         """
         self.specan.write('DM:TRAN {}'.format(standard_type))
         logging.info('DM:TRAN {}'.format(standard_type))
-        time.sleep(1)
+        time.sleep(3)
+        del self.specan
 
     def set_modulation_modulation_spectrum(self, spectrum_type):
         """
@@ -462,6 +489,7 @@ class Ektsfu(object):
         self.specan.write('DM:POL {}'.format(spectrum_type))
         logging.info('DM:POL {}'.format(spectrum_type))
         time.sleep(1)
+        del self.specan
 
     def set_modulation_settings_level(self, level_type):
         """
@@ -478,6 +506,7 @@ class Ektsfu(object):
         self.specan.write('IQ:GAIN {}'.format(level_type))
         logging.info('IQ:GAIN {}'.format(level_type))
         time.sleep(1)
+        del self.specan
 
     def set_modulation_settings_factor(self, factor_type):
         """
@@ -493,6 +522,7 @@ class Ektsfu(object):
         self.specan.write('IQ:CRES {}'.format(factor_type))
         logging.info('IQ:CRES {}'.format(factor_type))
         time.sleep(1)
+        del self.specan
 
     def set_modulation_settings_filtering(self, filtering_type):
         """
@@ -506,6 +536,7 @@ class Ektsfu(object):
         self.specan.write('IQ:WBST {}'.format(filtering_type))
         logging.info('IQ:WBST {}'.format(filtering_type))
         time.sleep(1)
+        del self.specan
 
     def set_modulation_settings_mode(self, mode_type):
         """
@@ -523,6 +554,7 @@ class Ektsfu(object):
         self.specan.write('IQ:DINM {}'.format(mode_type))
         logging.info('IQ:DINM {}'.format(mode_type))
         time.sleep(1)
+        del self.specan
 
     def set_modulation_settings_output(self, output_type):
         """
@@ -544,6 +576,7 @@ class Ektsfu(object):
         self.specan.write('IQ:DOUTput {}'.format(output_type))
         logging.info('IQ:DOUTput {}'.format(output_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_source_dvbs2(self, source_type):
         """
@@ -558,6 +591,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:SOUR {}'.format(source_type))
         logging.info('DVBS2:SOUR {}'.format(source_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_symbolrate_dvbs2(self, symbol_rate):
         """
@@ -571,6 +605,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:SYMB {}'.format(symbol_rate))
         logging.info('DVBS2:SYMB {}'.format(symbol_rate))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_constellation_dvbs2(self, constellation_type):
         """
@@ -586,6 +621,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:CONS {}'.format(constellation_type))
         logging.info('DVBS2:CONS {}'.format(constellation_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_fecframe_dvbs2(self, fecframe_type):
         """
@@ -599,6 +635,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:FECF {}'.format(fecframe_type))
         logging.info('DVBS2:FECF {}'.format(fecframe_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_pilots_dvbs2(self, fecframe_type):
         """
@@ -612,6 +649,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:PIL {}'.format(fecframe_type))
         logging.info('DVBS2:PIL {}'.format(fecframe_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_rolloff_dvbs2(self, rolloff_num):
         """
@@ -627,6 +665,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:ROLL {}'.format(rolloff_num))
         logging.info('DVBS2:ROLL {}'.format(rolloff_num))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_coderate_dvbs2(self, code_rate):
         """
@@ -651,6 +690,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:RATE {}'.format(code_rate))
         logging.info('DVBS2:RATE {}'.format(code_rate))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_special_settings_dvbs2(self, setting_type):
         """
@@ -664,6 +704,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:SETT {}'.format(setting_type))
         logging.info('DVBS2:SETT {}'.format(setting_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_phasenoise_phasenoise_dvbs2(self, phasenoise_type):
         """
@@ -677,6 +718,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:PHAS {}'.format(phasenoise_type))
         logging.info('DVBS2:PHAS {}'.format(phasenoise_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_phasenoise_shape_dvbs2(self, shape_type):
         """
@@ -691,6 +733,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:PHAS:SHAP {}'.format(shape_type))
         logging.info('DVBS2:PHAS:SHAP {}'.format(shape_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_phasenoise_magnitude_dvbs2(self, magnitude):
         """
@@ -705,6 +748,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:PHAS:MAGN {}'.format(magnitude))
         logging.info('DVBS2:PHAS:MAGN {}'.format(magnitude))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_tspacket_dvbs2(self, tspacket_type):
         """
@@ -720,6 +764,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:TSP {}'.format(tspacket_type))
         logging.info('DVBS2:TSP {}'.format(tspacket_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_pidpacket_dvbs2(self, pidpacket_type):
         """
@@ -733,6 +778,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:PIDT {}'.format(pidpacket_type))
         logging.info('DVBS2:PIDT {}'.format(pidpacket_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_pid_dvbs2(self, pid):
         """
@@ -746,6 +792,7 @@ class Ektsfu(object):
         self.specan.write('#H{}'.format(pid))
         logging.info('#H{}'.format(pid))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_payloadtest_dvbs2(self, payloadtest_type):
         """
@@ -762,6 +809,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:PAYL {}'.format(payloadtest_type))
         logging.info('DVBS2:PAYL {}'.format(payloadtest_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_prbs_dvbs2(self, prbs_type):
         """
@@ -775,6 +823,7 @@ class Ektsfu(object):
         self.specan.write('DVBS2:PRBS {}'.format(prbs_type))
         logging.info('DVBS2:PRBS {}'.format(prbs_type))
         time.sleep(1)
+        del self.specan
 
     def set_interferer_source(self, interferer_type):
         """
@@ -791,6 +840,7 @@ class Ektsfu(object):
         self.specan.write('DM:ISRC {}'.format(interferer_type))
         logging.info('DM:ISRC {}'.format(interferer_type))
         time.sleep(1)
+        del self.specan
 
     def set_impairments_modulator(self, modulator_type):
         """
@@ -804,6 +854,7 @@ class Ektsfu(object):
         self.specan.write('IQ:IMP {}'.format(modulator_type))
         logging.info('IQ:IMP {}'.format(modulator_type))
         time.sleep(1)
+        del self.specan
 
     def set_impairments_baseband(self, baseband_type):
         """
@@ -817,6 +868,7 @@ class Ektsfu(object):
         self.specan.write('BB:IMP {}'.format(baseband_type))
         logging.info('BB:IMP {}'.format(baseband_type))
         time.sleep(1)
+        del self.specan
 
     def set_impairments_optimize(self, optimize_type):
         """
@@ -830,6 +882,7 @@ class Ektsfu(object):
         self.specan.write('BB:IMP:OPT:STAT {}'.format(optimize_type))
         logging.info('BB:IMP:OPT:STAT {}'.format(optimize_type))
         time.sleep(1)
+        del self.specan
 
     def set_noise_noise_noise(self, noise_type):
         """
@@ -844,6 +897,7 @@ class Ektsfu(object):
         self.specan.write('NOIS {}'.format(noise_type))
         logging.info('NOIS {}'.format(noise_type))
         time.sleep(1)
+        del self.specan
 
     def set_noise_noise_awgn(self, awgn_type):
         """
@@ -860,6 +914,7 @@ class Ektsfu(object):
         self.specan.write('NOIS:AWG {}'.format(awgn_type))
         logging.info('NOIS:AWG {}'.format(awgn_type))
         time.sleep(1)
+        del self.specan
 
     def set_noise_noise_impulsive(self, awgn_type):
         """
@@ -873,6 +928,7 @@ class Ektsfu(object):
         self.specan.write('NOIS:IMP {}'.format(awgn_type))
         logging.info('NOIS:IMP {}'.format(awgn_type))
         time.sleep(1)
+        del self.specan
 
     def set_noise_noise_phase(self, phase_type):
         """
@@ -886,6 +942,7 @@ class Ektsfu(object):
         self.specan.write('NOIS:PHAS {}'.format(phase_type))
         logging.info('NOIS:PHAS {}'.format(phase_type))
         time.sleep(1)
+        del self.specan
 
     def set_noise_awgn_cn(self, cn):
         """
@@ -901,6 +958,7 @@ class Ektsfu(object):
         self.specan.write('NOIS:CN {}'.format(cn))
         logging.info('NOIS:CN {}'.format(cn))
         time.sleep(1)
+        del self.specan
 
     def set_noise_awgn_ebno(self, ebno):
         """
@@ -912,6 +970,7 @@ class Ektsfu(object):
         self.specan.write('NOIS:EN {}'.format(ebno))
         logging.info('NOIS:EN {}'.format(ebno))
         time.sleep(1)
+        del self.specan
 
     def set_noise_impulsive_ci(self, ci_noise):
         """
@@ -927,6 +986,7 @@ class Ektsfu(object):
         self.specan.write('NOIS:IMP:CI {}'.format(ci_noise))
         logging.info('NOIS:IMP:CI {}'.format(ci_noise))
         time.sleep(1)
+        del self.specan
 
     def set_noise_impulsive_frameduration(self, frameduration_type):
         """
@@ -944,6 +1004,7 @@ class Ektsfu(object):
         self.specan.write('NOIS:IMP:FRAM {}'.format(frameduration_type))
         logging.info('NOIS:IMP:FRAM {}'.format(frameduration_type))
         time.sleep(1)
+        del self.specan
 
     def set_noise_settings_bandwith(self, switch_type):
         """
@@ -959,6 +1020,7 @@ class Ektsfu(object):
         self.specan.write('NOIS:COUP {}'.format(switch_type))
         logging.info('NOIS:COUP {}'.format(switch_type))
         time.sleep(1)
+        del self.specan
 
     def set_noise_settings_receiver(self, bandwidth):
         """
@@ -975,6 +1037,7 @@ class Ektsfu(object):
         self.specan.write('NOIS:BAND {}'.format(bandwidth))
         logging.info('NOIS:BAND {}'.format(bandwidth))
         time.sleep(1)
+        del self.specan
 
     def set_fading_fading_state(self, state_type):
         """
@@ -990,6 +1053,7 @@ class Ektsfu(object):
         self.specan.write('FSIM {}'.format(state_type))
         logging.info('FSIM {}'.format(state_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_parameterset(self, parameterset_type):
         """
@@ -1070,6 +1134,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:STAN {}'.format(parameterset_type))
         logging.info('FSIM:STAN {}'.format(parameterset_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_configuration(self, configuration_type):
         """
@@ -1089,6 +1154,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:CONF {}'.format(configuration_type))
         logging.info('FSIM:CONF {}'.format(configuration_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_state(self, group, path, state_type):
         """
@@ -1106,6 +1172,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:STAT {}'.format(group, path, state_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:STAT {}'.format(group, path, state_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_profile(self, group, path, state_type):
         """
@@ -1132,6 +1199,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:PROF {}'.format(group, path, state_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:PROF {}'.format(group, path, state_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_pathloss(self, group, path, pathloss):
         """
@@ -1149,6 +1217,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOSS {}'.format(group, path, pathloss))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOSS {}'.format(group, path, pathloss))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_basicdelay(self, group, basicdelay):
         """
@@ -1168,6 +1237,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:BDEL {}'.format(group, basicdelay))
         logging.info('FSIM:DEL:GRO{}:BDEL {}'.format(group, basicdelay))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_additdelay(self, group, path, additdelay):
         """
@@ -1185,6 +1255,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:ADEL {}'.format(group, path, additdelay))
         logging.info('FSIM:DEL:GRO{}:PATH{}:ADEL {}'.format(group, path, additdelay))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_resuldelay(self, group, path, resuldelay):
         """
@@ -1197,6 +1268,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:RDEL {}'.format(group, path, resuldelay))
         logging.info('FSIM:DEL:GRO{}:PATH{}:RDEL {}'.format(group, path, resuldelay))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_power(self, group, path, power):
         """
@@ -1213,6 +1285,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:PRAT {}'.format(group, path, power))
         logging.info('FSIM:DEL:GRO{}:PATH{}:PRAT {}'.format(group, path, power))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_constphase(self, group, path, constphase):
         """
@@ -1230,6 +1303,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CPH {}'.format(group, path, constphase))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CPH {}'.format(group, path, constphase))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_speed(self, group, path, speed):
         """
@@ -1245,6 +1319,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:SPE {}'.format(group, path, speed))
         logging.info('FSIM:DEL:GRO{}:PATH{}:SPE {}'.format(group, path, speed))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_freqratio(self, group, path, freq):
         """
@@ -1260,6 +1335,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:FRAT {}'.format(group, path, freq))
         logging.info('FSIM:DEL:GRO{}:PATH{}:FRAT {}'.format(group, path, freq))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_doppler(self, group, path, doppler):
         """
@@ -1274,6 +1350,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:FDOP {}'.format(group, path, doppler))
         logging.info('FSIM:DEL:GRO{}:PATH{}:FDOP {}'.format(group, path, doppler))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_correlation(self, group, path, correlation_type):
         """
@@ -1288,6 +1365,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:STAT {}'.format(group, path, correlation_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:STAT {}'.format(group, path, correlation_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_coefficient(self, group, path, coefficient):
         """
@@ -1304,6 +1382,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:COEF {}'.format(group, path, coefficient))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:COEF {}'.format(group, path, coefficient))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_phase(self, group, path, phase):
         """
@@ -1320,6 +1399,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:PHAS {}'.format(group, path, phase))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:PHAS {}'.format(group, path, phase))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_lognormal(self, group, path, state_type):
         """
@@ -1333,6 +1413,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:STAT {}'.format(group, path, state_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:STAT {}'.format(group, path, state_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_localconstant(self, group, path, local_constant):
         """
@@ -1349,6 +1430,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:LCON {}'.format(group, path, local_constant))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:LCON {}'.format(group, path, local_constant))
         time.sleep(1)
+        del self.specan
 
     def set_fading_profile_standard(self, group, path, standard):
         """
@@ -1364,6 +1446,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:CSTD {}'.format(group, path, standard))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:CSTD {}'.format(group, path, standard))
         time.sleep(1)
+        del self.specan
 
     def set_fading_settings_speedunit(self, speed_unit):
         """
@@ -1378,6 +1461,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:SPE:UNIT {}'.format(speed_unit))
         logging.info('FSIM:SPE:UNIT {}'.format(speed_unit))
         time.sleep(1)
+        del self.specan
 
     def set_fading_settings_peference(self, peference_type):
         """
@@ -1392,6 +1476,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:REF:{}'.format(peference_type))
         logging.info('FSIM:REF:{}'.format(peference_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_settings_common(self, doppler_type):
         """
@@ -1406,6 +1491,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:CSP:{}'.format(doppler_type))
         logging.info('FSIM:CSP:{}'.format(doppler_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_settings_ignore(self, ignore_type):
         """
@@ -1419,6 +1505,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:IGN:RFCH {}'.format(ignore_type))
         logging.info('FSIM:IGN:RFCH {}'.format(ignore_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_settings_signal(self, signal_type):
         """
@@ -1435,6 +1522,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:SDES {}'.format(signal_type))
         logging.info('FSIM:SDES {}'.format(signal_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_settings_insertionmode(self, mode_type):
         """
@@ -1449,6 +1537,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:ILOS:MODE {}'.format(mode_type))
         logging.info('FSIM:ILOS:MODE {}'.format(mode_type))
         time.sleep(1)
+        del self.specan
 
     def set_fading_settings_insertionloss(self, insertion_loss):
         """
@@ -1464,6 +1553,7 @@ class Ektsfu(object):
         self.specan.write('FSIM:ILOS {}'.format(insertion_loss))
         logging.info('FSIM:ILOS {}'.format(insertion_loss))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_source_dvbc(self, source_type):
         """
@@ -1478,6 +1568,7 @@ class Ektsfu(object):
         self.specan.write('DVBC:SOUR {}'.format(source_type))
         logging.info('DVBC:SOUR {}'.format(source_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_symbolrate_dvbc(self, symbol_rate):
         """
@@ -1492,6 +1583,7 @@ class Ektsfu(object):
         self.specan.write('DVBC:SYMB {}'.format(symbol_rate))
         logging.info('DVBC:SYMB {}'.format(symbol_rate))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_constellation_dvbc(self, symbol_rate):
         """
@@ -1508,6 +1600,7 @@ class Ektsfu(object):
         self.specan.write('DVBC:CONS {}'.format(symbol_rate))
         logging.info('DVBC:CONS {}'.format(symbol_rate))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_rolloff_dvbc(self, roll_type):
         """
@@ -1524,6 +1617,7 @@ class Ektsfu(object):
         self.specan.write('DVBC:ROLL {}'.format(roll_type))
         logging.info('DVBC:ROLL {}'.format(roll_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_special_special_dvbc(self, special_type):
         """
@@ -1537,6 +1631,7 @@ class Ektsfu(object):
         self.specan.write('DVBC:SETT {}'.format(special_type))
         logging.info('DVBC:SETT {}'.format(special_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_testtspacket_dvbc(self, packet_type):
         """
@@ -1550,6 +1645,7 @@ class Ektsfu(object):
         self.specan.write('DVBC:TSP {}'.format(packet_type))
         logging.info('DVBC:TSP {}'.format(packet_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_pidtestpacket_dvbc(self, packet_type):
         """
@@ -1563,6 +1659,7 @@ class Ektsfu(object):
         self.specan.write('DVBC:PIDT {}'.format(packet_type))
         logging.info('DVBC:PIDT {}'.format(packet_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_payloadtest_dvbc(self, stuff_type):
         """
@@ -1577,6 +1674,7 @@ class Ektsfu(object):
         self.specan.write('DVBC:PAYL {}'.format(stuff_type))
         logging.info('DVBC:PAYL {}'.format(stuff_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_prbs_dvbc(self, prbs_type):
         """
@@ -1590,6 +1688,7 @@ class Ektsfu(object):
         self.specan.write('DVBC:PRBS {}'.format(prbs_type))
         logging.info('DVBC:PRBS {}'.format(prbs_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_source_dvbt(self, source_type):
         """
@@ -1604,6 +1703,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:SOUR {}'.format(source_type))
         logging.info('DVBT:SOUR {}'.format(source_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_stuffing_dvbt(self, source_type):
         """
@@ -1618,6 +1718,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:STUF {}'.format(source_type))
         logging.info('DVBT:STUF {}'.format(source_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_channelbandwidth_dvbt(self, bandwidth_type):
         """
@@ -1633,6 +1734,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:CHAN {}'.format(bandwidth_type))
         logging.info('DVBT:CHAN {}'.format(bandwidth_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_fftmode_dvbt(self, mode_type):
         """
@@ -1647,6 +1749,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:FFT:MODE {}'.format(mode_type))
         logging.info('DVBT:FFT:MODE {}'.format(mode_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_guard_dvbt(self, guard_type):
         """
@@ -1662,6 +1765,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:GUAR:INT {}'.format(guard_type))
         logging.info('DVBT:GUAR:INT {}'.format(guard_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_dvbhstate_dvbt(self, state_type):
         """
@@ -1675,6 +1779,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:DVHS {}'.format(state_type))
         logging.info('DVBT:DVHS {}'.format(state_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_hierarchy_dvbt(self, state_type):
         """
@@ -1690,6 +1795,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:HIER {}'.format(state_type))
         logging.info('DVBT:HIER {}'.format(state_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_constellation_dvbt(self, constellation_type):
         """
@@ -1704,6 +1810,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:CONS {}'.format(constellation_type))
         logging.info('DVBT:CONS {}'.format(constellation_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_coderate_dvbt(self, code_rate):
         """
@@ -1720,6 +1827,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:RATE {}'.format(code_rate))
         logging.info('DVBT:RATE {}'.format(code_rate))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_special_special_dvbt(self, special_rate):
         """
@@ -1733,6 +1841,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:SETT {}'.format(special_rate))
         logging.info('DVBT:SETT {}'.format(special_rate))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_testtspacket_dvbt(self, packet_type):
         """
@@ -1746,6 +1855,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:TSP {}'.format(packet_type))
         logging.info('DVBT:TSP {}'.format(packet_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_pidtestpacket_dvbt(self, packet_type):
         """
@@ -1759,6 +1869,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:PIDT {}'.format(packet_type))
         logging.info('DVBT:PIDT {}'.format(packet_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_payloadtest_dvbt(self, stuff_type):
         """
@@ -1773,6 +1884,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:PAYL {}'.format(stuff_type))
         logging.info('DVBT:PAYL {}'.format(stuff_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_prbs_dvbt(self, prbs_type):
         """
@@ -1786,6 +1898,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:PRBS {}'.format(prbs_type))
         logging.info('DVBT:PRBS {}'.format(prbs_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_tpscall_dvbt(self, hex_num):
         """
@@ -1800,6 +1913,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:CELL:ID {}'.format(hex_num))
         logging.info('DVBT:CELL:ID {}'.format(hex_num))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_tpsreservedstate_dvbt(self, state_type):
         """
@@ -1813,6 +1927,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:TPSR:STAT {}'.format(state_type))
         logging.info('DVBT:TPSR:STAT {}'.format(state_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_tpsreservedbits_dvbt(self, bits):
         """
@@ -1826,6 +1941,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:TPSR:VAL {}'.format(bits))
         logging.info('DVBT:TPSR:VAL {}'.format(bits))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_timeslicing_dvbt(self, slicing_type):
         """
@@ -1839,6 +1955,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:TIM {}'.format(slicing_type))
         logging.info('DVBT:TIM {}'.format(slicing_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_mpefec_dvbt(self, fec_type):
         """
@@ -1852,6 +1969,7 @@ class Ektsfu(object):
         self.specan.write('DVBT:MPEF {}'.format(fec_type))
         logging.info('DVBT:MPEF {}'.format(fec_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_t2miinterface_dvbt2(self, interface_type):
         """
@@ -1865,6 +1983,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:INP:T2MI:INT {}'.format(interface_type))
         logging.info('T2DV:INP:T2MI:INT {}'.format(interface_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_t2misource_dvbt2(self, source_type):
         """
@@ -1878,6 +1997,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:INP:T2MI {}'.format(source_type))
         logging.info('T2DV:INP:T2MI {}'.format(source_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_number_dvbt2(self, number):
         """
@@ -1891,6 +2011,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:INP:NPLP {}'.format(number))
         logging.info('T2DV:INP:NPLP {}'.format(number))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_inputformat_dvbt2(self, format_type):
         """
@@ -1906,6 +2027,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:INP:FORM {}'.format(format_type))
         logging.info('T2DV:PLP1:INP:FORM {}'.format(format_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_source_dvbt2(self, source_type):
         """
@@ -1920,6 +2042,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:INP:SOUR {}'.format(source_type))
         logging.info('T2DV:PLP1:INP:SOUR {}'.format(source_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_stuffing_dvbt2(self, stuffing_type):
         """
@@ -1933,6 +2056,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
         logging.info('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_framing_channelbandwidth_dvbt2(self, bandwidth_type):
         """
@@ -1950,6 +2074,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:CHAN {}'.format(bandwidth_type))
         logging.info('T2DV:CHAN {}'.format(bandwidth_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_framing_bandwidth_dvbt2(self, bandwidth):
         """
@@ -1965,6 +2090,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:BAND:VAR {}'.format(bandwidth))
         logging.info('T2DV:BAND:VAR {}'.format(bandwidth))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_framing_fftsize_dvbt2(self, fft_type):
         """
@@ -1985,6 +2111,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:FFT:MODE {}'.format(fft_type))
         logging.info('T2DV:FFT:MODE {}'.format(fft_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_framing_guard_dvbt2(self, guard_type):
         """
@@ -2003,6 +2130,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:GUAR:INT {}'.format(guard_type))
         logging.info('T2DV:GUAR:INT {}'.format(guard_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_framing_pilot_dvbt2(self, piloy_type):
         """
@@ -2022,6 +2150,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PIL {}'.format(piloy_type))
         logging.info('T2DV:PIL {}'.format(piloy_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_framing_nt2_dvbt2(self, n_t2):
         """
@@ -2033,6 +2162,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:NT2F {}'.format(n_t2))
         logging.info('T2DV:NT2F {}'.format(n_t2))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_framing_ldata_dvbt2(self, l_data):
         """
@@ -2044,6 +2174,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:LDAT {}'.format(l_data))
         logging.info('T2DV:LDAT {}'.format(l_data))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_framing_nsub_dvbt2(self, n_sub):
         """
@@ -2056,6 +2187,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:NSUB {}'.format(n_sub))
         logging.info('T2DV:NSUB {}'.format(n_sub))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_bicm_fecframe_dvbt2(self, frame_type):
         """
@@ -2069,6 +2201,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:FECF {}'.format(frame_type))
         logging.info('T2DV:PLP1:FECF {}'.format(frame_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_bicm_coderate_dvbt2(self, code_rate):
         """
@@ -2088,6 +2221,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:RATE {}'.format(code_rate))
         logging.info('T2DV:PLP1:RATE {}'.format(code_rate))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_bicm_constellation_dvbt2(self, constellation_type):
         """
@@ -2103,6 +2237,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:CONS {}'.format(constellation_type))
         logging.info('T2DV:PLP1:CONS {}'.format(constellation_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_bicm_constelrotation_dvbt2(self, constellation_type):
         """
@@ -2116,6 +2251,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:CROT {}'.format(constellation_type))
         logging.info('T2DV:PLP1:CROT {}'.format(constellation_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_bicm_timeinterljump_dvbt2(self, timeintel):
         """
@@ -2129,6 +2265,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:TIL:TYPE {}'.format(timeintel))
         logging.info('T2DV:PLP1:TIL:TYPE {}'.format(timeintel))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_bicm_frameint_dvbt2(self, frameint):
         """
@@ -2142,6 +2279,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:TIL:FINT {}'.format(frameint))
         logging.info('T2DV:PLP1:TIL:FINT {}'.format(frameint))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_bicm_timeinterllength_dvbt2(self, frameint):
         """
@@ -2155,6 +2293,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:TIL:LENG {}'.format(frameint))
         logging.info('T2DV:PLP1:TIL:LENG {}'.format(frameint))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_testtspacket_dvbt2(self, packet_type):
         """
@@ -2168,6 +2307,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:TSP {}'.format(packet_type))
         logging.info('T2DV:TSP {}'.format(packet_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_pidtest_dvbt2(self, packet_type):
         """
@@ -2181,6 +2321,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PIDT {}'.format(packet_type))
         logging.info('T2DV:PIDT {}'.format(packet_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_payload_dvbt2(self, packet_type):
         """
@@ -2195,6 +2336,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PAYL {}'.format(packet_type))
         logging.info('T2DV:PAYL {}'.format(packet_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_prbs_dvbt2(self, prbs_type):
         """
@@ -2208,6 +2350,7 @@ class Ektsfu(object):
         self.specan.write('T2DV:PRBS {}'.format(prbs_type))
         logging.info('T2DV:PRBS {}'.format(prbs_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_input_source_j83b(self, source_type):
         """
@@ -2222,6 +2365,7 @@ class Ektsfu(object):
         self.specan.write('J83B:SOUR {}'.format(source_type))
         logging.info('J83B:SOUR {}'.format(source_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_symbolrate_j83b(self, symbol_rate):
         """
@@ -2242,6 +2386,7 @@ class Ektsfu(object):
         self.specan.write('J83B:SYMB {}'.format(symbol_rate))
         logging.info('J83B:SYMB {}'.format(symbol_rate))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_coding_interleavermode_j83b(self, mode_type):
         """
@@ -2266,6 +2411,7 @@ class Ektsfu(object):
         self.specan.write('J83B:INT:MODE {}'.format(mode_type))
         logging.info('J83B:INT:MODE {}'.format(mode_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_special_special_j83b(self, settings_type):
         """
@@ -2279,6 +2425,7 @@ class Ektsfu(object):
         self.specan.write('J83B:SETT {}'.format(settings_type))
         logging.info('J83B:SETT {}'.format(settings_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_special_checksumgen_j83b(self, checksumgen_type):
         """
@@ -2292,6 +2439,7 @@ class Ektsfu(object):
         self.specan.write('J83B:CHEC {}'.format(checksumgen_type))
         logging.info('J83B:CHEC {}'.format(checksumgen_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_special_readsolomon_j83b(self, read_type):
         """
@@ -2305,6 +2453,7 @@ class Ektsfu(object):
         self.specan.write('J83B:REED {}'.format(read_type))
         logging.info('J83B:REED {}'.format(read_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_special_interleaver_j83b(self, interleaver_type):
         """
@@ -2319,6 +2468,7 @@ class Ektsfu(object):
         self.specan.write('J83B:INT {}'.format(interleaver_type))
         logging.info('J83B:INT {}'.format(interleaver_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_special_randomizer_j83b(self, randomizer_type):
         """
@@ -2332,6 +2482,7 @@ class Ektsfu(object):
         self.specan.write('J83B:RAND {}'.format(randomizer_type))
         logging.info('J83B:RAND {}'.format(randomizer_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_testtspacket_j83b(self, packet_type):
         """
@@ -2345,6 +2496,7 @@ class Ektsfu(object):
         self.specan.write('J83B:TSP {}'.format(packet_type))
         logging.info('J83B:TSP {}'.format(packet_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_pidtest_j83b(self, packet_type):
         """
@@ -2358,6 +2510,7 @@ class Ektsfu(object):
         self.specan.write('J83B:PIDT {}'.format(packet_type))
         logging.info('J83B:PIDT {}'.format(packet_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_payloadtest_j83b(self, payload_type):
         """
@@ -2372,6 +2525,7 @@ class Ektsfu(object):
         self.specan.write('J83B:PAYL {}'.format(payload_type))
         logging.info('J83B:PAYL {}'.format(payload_type))
         time.sleep(1)
+        del self.specan
 
     def set_digitaltv_settings_prbs_j83b(self, prbs_type):
         """
@@ -2385,6 +2539,7 @@ class Ektsfu(object):
         self.specan.write('J83B:PRBS {}'.format(prbs_type))
         logging.info('J83B:PRBS {}'.format(prbs_type))
         time.sleep(1)
+        del self.specan
 
     def set_cmd(self):
         """
@@ -2411,6 +2566,7 @@ class Ektsfu(object):
         self.specan.write(r'TSG:CONF:PLAY "{}"'.format(file_path))
         logging.info(r'TSG:CONF:PLAY "{}"'.format(file_path))
         time.sleep(3)
+        del self.specan
 
     def preset_instrument(self):
         """
@@ -2421,7 +2577,8 @@ class Ektsfu(object):
         """
         self.specan.write('SYST:PRES')
         logging.info(r'SYST:PRES')
-        time.sleep(15)
+        time.sleep(17)
+        del self.specan
 
 def __del__(self):
     del self.specan
@@ -2429,10 +2586,10 @@ def __del__(self):
 
 def _test_code():
     # net = "192.168.1.47"
-    net = "192.168.1.50"
+    sfu_ip = "192.168.1.50"
     # host = '127.0.0.1'
     # port = 8900
-    specan = Ektsfu(net)
+    specan = Ektsfu(sfu_ip)
     # specan.set_frequency_frequency_frequency("101 MHz")
     # specan.set_frequency_frequency_offset("500kHz")
     # specan.set_frequency_frequency_channel("4")
@@ -2456,7 +2613,7 @@ def _test_code():
     # specan.set_modulation_modulation_modulation("ON")
     # specan.set_modulation_modulation_source("DTV")
     # specan.set_modulation_modulation_standard_atv("LPR")
-    # specan.set_modulation_modulation_standard_dvt("DVBC")
+    specan.set_modulation_modulation_standard_dvt("DVBC")
     # specan.set_digitaltv_input_source_dvbs2("TSPL")
     # specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
     # specan.set_digitaltv_coding_constellation_dvbs2("S4")
@@ -2587,8 +2744,20 @@ def _test_code():
     # specan.set_impairments_modulator("OFF")
     # specan.set_impairments_baseband("OFF")
     # specan.set_impairments_optimize("OFF")
-    specan.set_level_level_offset("10")
+    # specan.set_level_level_offset("10")
+    # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
     # specan.set_cmd()
+
+    # sfu_ip = "192.168.1.50"
+    # specan = Ektsfu(sfu_ip)
+    # specan.preset_instrument()
+    # specan = Ektsfu(sfu_ip)
+    # specan.set_modulation_modulation_source("DTV")
+    # specan = Ektsfu(sfu_ip)
+    # specan.set_modulation_modulation_standard_dvt("DVS2")
+    # specan = Ektsfu(sfu_ip)
+    # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
+
 
 
 if __name__ == '__main__':
