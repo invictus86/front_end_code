@@ -8,6 +8,7 @@ from ekt_sfu import Ektsfu
 import time
 import logging
 import ekt_cfg
+import json
 
 logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     filename='front_end_test.log',
@@ -85,15 +86,17 @@ def iterate_to_find_threshold(sfu_ip, start_num, end_num):
     if start_data_result.get("detect_mosic_result") is False and end_data_result.get("detect_mosic_result") is True:
         pass
     else:
-        return {"threshold_algorithm_result": False,
-                "msg": "初始值处于马赛克阈值外"}
+        return json.dumps({"threshold_algorithm_result": False,
+                           "msg": "初始值处于马赛克阈值外"})
     while True:
-        if start_num - end_num >= 0.3:
+        # if start_num - end_num >= 0.3:
+        if start_num - end_num >= 10:
             print "start_num:{},  end_num:{}".format(start_num, end_num)
             dict_threshold_algorithm_result = threshold_algorithm(sfu_ip, start_num, end_num)
             [start_num, end_num] = dict_threshold_algorithm_result.get("step_range")
         # elif start_num - end_num - 0.1 < 0.000001:
-        elif start_num - end_num - 0.3 < 0.000001:
+        # elif start_num - end_num - 0.3 < 0.000001:
+        elif start_num - end_num - 10 < 0.000001:
             print "阈值为: {}".format(start_num)
             return "阈值为: {}".format(start_num)
             # print "*" * 50
@@ -126,4 +129,3 @@ if __name__ == '__main__':
     # specan = Ektsfu(net)
     # mosaic_algorithm(specan, "-77 dBm")
     iterate_to_find_threshold(sfu_ip, -60, -80)
-

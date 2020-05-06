@@ -42,7 +42,7 @@ class Ektsfu(object):
         # self.specan.write('FREQ {}'.format(frequency))
         self.specan.write('FREQ:CW {}'.format(frequency))
         logging.info('FREQ:CW {}'.format(frequency))
-        time.sleep(1)
+        time.sleep(2)
         del self.specan
 
     def set_frequency_frequency_offset(self, frequency):
@@ -908,11 +908,11 @@ class Ektsfu(object):
             ON
             OFF
         example :
-            NOIS:AWG ON
+            NOIS:AWGN OFF
         :return:
         """
-        self.specan.write('NOIS:AWG {}'.format(awgn_type))
-        logging.info('NOIS:AWG {}'.format(awgn_type))
+        self.specan.write('NOIS:AWGN {}'.format(awgn_type))
+        logging.info('NOIS:AWGN {}'.format(awgn_type))
         time.sleep(1)
         del self.specan
 
@@ -2554,7 +2554,7 @@ class Ektsfu(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write('DVBS2:ACMM OFF')
+        self.specan.write('NOIS:AWGN OFF')
 
     def set_player_timing_openfile(self, file_path):
         """
@@ -2590,7 +2590,7 @@ def _test_code():
     # host = '127.0.0.1'
     # port = 8900
     specan = Ektsfu(sfu_ip)
-    # specan.set_frequency_frequency_frequency("101 MHz")
+    # specan.set_frequency_frequency_frequency("990 MHz")
     # specan.set_frequency_frequency_offset("500kHz")
     # specan.set_frequency_frequency_channel("4")
     # specan.set_frequency_sweep_start("1 MHz")
@@ -2613,7 +2613,7 @@ def _test_code():
     # specan.set_modulation_modulation_modulation("ON")
     # specan.set_modulation_modulation_source("DTV")
     # specan.set_modulation_modulation_standard_atv("LPR")
-    specan.set_modulation_modulation_standard_dvt("DVBC")
+    # specan.set_modulation_modulation_standard_dvt("DVBC")
     # specan.set_digitaltv_input_source_dvbs2("TSPL")
     # specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
     # specan.set_digitaltv_coding_constellation_dvbs2("S4")
@@ -2631,9 +2631,10 @@ def _test_code():
     # specan.set_digitaltv_settings_payloadtest_dvbs2("HFF")
     # specan.set_digitaltv_settings_prbs_dvbs2("P15_1")
     # specan.set_interferer_source("ATVPr")
-    # specan.set_noise_noise_noise("OFF")
-    # specan.set_noise_noise_awgn("ON")
-    # specan.set_noise_awgn_cn("45")
+    # specan.set_noise_noise_noise("ADD")
+    # specan = Ektsfu(sfu_ip)
+    # specan.set_noise_noise_awgn("OFF")
+    specan.set_noise_awgn_cn("45")
     # specan.set_noise_impulsive_ci("45")
     # specan.set_noise_impulsive_frameduration("0.1")
     # specan.set_noise_settings_bandwith("ON")
@@ -2744,19 +2745,17 @@ def _test_code():
     # specan.set_impairments_modulator("OFF")
     # specan.set_impairments_baseband("OFF")
     # specan.set_impairments_optimize("OFF")
-    # specan.set_level_level_offset("10")
+    # specan.set_level_level_offset(str(4.6))
     # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
     # specan.set_cmd()
 
     # sfu_ip = "192.168.1.50"
+
+
     # specan = Ektsfu(sfu_ip)
-    # specan.preset_instrument()
+    # specan.set_level_level_offset(str(4.6))
     # specan = Ektsfu(sfu_ip)
-    # specan.set_modulation_modulation_source("DTV")
-    # specan = Ektsfu(sfu_ip)
-    # specan.set_modulation_modulation_standard_dvt("DVS2")
-    # specan = Ektsfu(sfu_ip)
-    # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
+    # specan.set_level_level_level("dBm", "-30")
 
 
 

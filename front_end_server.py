@@ -63,6 +63,7 @@ class RVTserver():
         image_lock_fail = self.read_image_file(self.lock_fail_image)
         frequency = None
         symbol_rate = None
+        lock_state = None
         while True:
             conn, addr = server.accept()
             print "%s connected" % (conn)
@@ -71,7 +72,6 @@ class RVTserver():
                     data = conn.recv(1024)
                     print type(data), "\n", data
                     dict_data = json.loads(data)
-                    print dict_data
                     if not data:
                         # print "%s disconnected"%conn
                         break
@@ -102,6 +102,13 @@ class RVTserver():
                     elif dict_data.get("cmd") == "get_symbol_rate_data":
                         result = conn.send(str(symbol_rate))
                         print "result:", result, "get symbol_rate data : {} ok ".format(symbol_rate)
+                    elif dict_data.get("cmd") == "set_lock_state":
+                        lock_state = dict_data.get("lock_state")
+                        result = conn.send("set lock_state data : {} ok ".format(lock_state))
+                        print "result:", result, "set lock_state data : {} ok ".format(lock_state)
+                    elif dict_data.get("cmd") == "get_lock_state":
+                        result = conn.send(lock_state)
+                        print "result:", result, "get symbol_rate data : {} ok ".format(lock_state)
                     else:
                         print data
                         print "unknown message"
