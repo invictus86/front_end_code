@@ -2628,3 +2628,1152 @@
 2020-04-30 18:26:14,444 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:108] - INFO: POW:LEV -62.5 dBm
 2020-04-30 18:26:15,447 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm.py[line:27] - INFO: 设置set_level_level_level:-62.5 dBm
 2020-04-30 18:26:28,355 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm.py[line:39] - INFO: level:-62.5, 马赛克结果:true
+2020-05-07 18:49:22,691 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:379] - INFO: SYST:PRES
+2020-05-07 19:01:19,332 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:381] - INFO: SYST:PRES
+2020-05-07 19:01:21,739 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:381] - INFO: SYST:PRES
+2020-05-07 19:01:24,131 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:249] - INFO: DVBS:SOUR TSPL
+2020-05-07 19:01:26,532 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-07 19:01:29,272 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:327] - INFO: DVBS:RATE R1_2
+2020-05-07 19:01:31,663 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:285] - INFO: DVBS:SYMB 10.000000e6
+2020-05-07 19:01:33,881 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 950MHz
+2020-05-07 19:01:36,023 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:02:37,632 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:02:38,637 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:02:53,993 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:03:02,578 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:03:02,822 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80 dBm
+2020-05-07 19:03:03,828 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80 dBm
+2020-05-07 19:03:15,628 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-80, 马赛克结果:true
+2020-05-07 19:03:15,868 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:03:18,071 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-07 19:03:19,075 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-70.0 dBm
+2020-05-07 19:03:33,463 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:03:37,795 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-70.0, 马赛克结果:False
+2020-05-07 19:03:38,025 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:03:39,029 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:03:50,792 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-75.0, 马赛克结果:true
+2020-05-07 19:03:51,040 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-07 19:03:53,430 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 970MHz
+2020-05-07 19:03:55,743 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:04:52,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:381] - INFO: SYST:PRES
+2020-05-07 19:04:54,588 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:381] - INFO: SYST:PRES
+2020-05-07 19:04:56,996 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:249] - INFO: DVBS:SOUR TSPL
+2020-05-07 19:04:59,394 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-07 19:05:02,089 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:327] - INFO: DVBS:RATE R1_2
+2020-05-07 19:05:04,338 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:285] - INFO: DVBS:SYMB 10.000000e6
+2020-05-07 19:05:06,714 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 950MHz
+2020-05-07 19:05:09,105 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:06:02,561 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:06:03,565 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:06:18,122 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:06:22,150 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:06:22,296 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80 dBm
+2020-05-07 19:06:23,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80 dBm
+2020-05-07 19:06:35,161 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-80, 马赛克结果:true
+2020-05-07 19:06:35,309 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:06:37,622 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-07 19:06:38,628 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-70.0 dBm
+2020-05-07 19:06:53,404 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:06:57,247 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-70.0, 马赛克结果:False
+2020-05-07 19:06:57,497 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:06:58,502 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:07:10,256 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-75.0, 马赛克结果:true
+2020-05-07 19:07:10,497 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-07 19:07:12,717 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 970MHz
+2020-05-07 19:07:15,030 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:08:13,500 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:08:14,506 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:08:28,969 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:08:32,772 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:08:33,000 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80 dBm
+2020-05-07 19:08:34,006 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80 dBm
+2020-05-07 19:08:48,500 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:08:52,196 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80, 马赛克结果:False
+2020-05-07 19:08:52,437 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 990MHz
+2020-05-07 19:08:54,813 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:09:53,565 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:09:54,569 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:10:09,081 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:10:13,289 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:10:13,519 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80 dBm
+2020-05-07 19:10:14,523 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80 dBm
+2020-05-07 19:10:28,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:10:32,782 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80, 马赛克结果:False
+2020-05-07 19:10:33,019 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1010MHz
+2020-05-07 19:10:35,332 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:11:40,269 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:11:41,275 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:11:56,020 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:12:00,210 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:12:00,457 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80 dBm
+2020-05-07 19:12:01,463 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80 dBm
+2020-05-07 19:12:16,068 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:12:59,348 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:381] - INFO: SYST:PRES
+2020-05-07 19:13:01,755 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:381] - INFO: SYST:PRES
+2020-05-07 19:13:03,960 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:249] - INFO: DVBS:SOUR TSPL
+2020-05-07 19:13:06,173 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-07 19:13:08,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:327] - INFO: DVBS:RATE R1_2
+2020-05-07 19:13:11,163 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:285] - INFO: DVBS:SYMB 10.000000e6
+2020-05-07 19:13:13,365 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 950MHz
+2020-05-07 19:13:15,680 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:14:09,476 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:14:10,480 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:14:25,305 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:14:32,619 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:14:32,851 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90 dBm
+2020-05-07 19:14:33,861 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90 dBm
+2020-05-07 19:14:45,730 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90, 马赛克结果:true
+2020-05-07 19:14:45,961 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:14:48,336 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:14:49,341 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:15:01,224 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-75.0, 马赛克结果:true
+2020-05-07 19:15:01,463 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:15:03,681 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -67.5 dBm
+2020-05-07 19:15:04,686 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-67.5 dBm
+2020-05-07 19:15:19,634 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:15:23,513 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-67.5, 马赛克结果:False
+2020-05-07 19:15:23,759 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 970MHz
+2020-05-07 19:15:26,165 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:16:27,683 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:16:28,687 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:16:43,526 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:16:47,637 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:16:47,871 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90 dBm
+2020-05-07 19:16:48,875 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90 dBm
+2020-05-07 19:17:00,752 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90, 马赛克结果:true
+2020-05-07 19:17:00,980 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:17:03,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:17:04,377 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:17:18,950 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:17:22,875 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-75.0, 马赛克结果:False
+2020-05-07 19:17:23,091 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -82.5 dBm
+2020-05-07 19:17:24,095 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-82.5 dBm
+2020-05-07 19:17:38,839 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:17:42,918 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-82.5, 马赛克结果:False
+2020-05-07 19:17:43,168 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 990MHz
+2020-05-07 19:17:45,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:18:45,904 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:18:46,908 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:19:01,515 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:19:05,747 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:19:05,983 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90 dBm
+2020-05-07 19:19:06,989 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90 dBm
+2020-05-07 19:19:18,808 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90, 马赛克结果:true
+2020-05-07 19:19:18,969 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:19:21,358 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:19:22,364 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:19:36,984 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:19:40,898 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-75.0, 马赛克结果:False
+2020-05-07 19:19:41,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -82.5 dBm
+2020-05-07 19:19:42,145 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-82.5 dBm
+2020-05-07 19:19:57,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:20:01,230 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-82.5, 马赛克结果:False
+2020-05-07 19:20:01,469 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1010MHz
+2020-05-07 19:20:03,859 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:21:04,220 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:21:05,230 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:21:20,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:21:24,263 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:21:24,502 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90 dBm
+2020-05-07 19:21:25,506 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90 dBm
+2020-05-07 19:21:37,302 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90, 马赛克结果:true
+2020-05-07 19:21:37,549 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:21:39,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:21:40,928 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:21:55,706 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:21:59,408 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-75.0, 马赛克结果:False
+2020-05-07 19:21:59,565 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -82.5 dBm
+2020-05-07 19:22:00,569 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-82.5 dBm
+2020-05-07 19:22:15,362 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:22:19,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-82.5, 马赛克结果:False
+2020-05-07 19:22:19,581 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1030MHz
+2020-05-07 19:22:21,894 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:23:22,677 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:23:23,683 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:23:38,395 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:23:42,500 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:23:42,739 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90 dBm
+2020-05-07 19:23:43,744 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90 dBm
+2020-05-07 19:23:55,608 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90, 马赛克结果:true
+2020-05-07 19:23:55,848 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:23:58,240 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:23:59,243 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:24:13,974 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:24:17,733 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-75.0, 马赛克结果:False
+2020-05-07 19:24:17,959 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -82.5 dBm
+2020-05-07 19:24:18,963 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-82.5 dBm
+2020-05-07 19:24:33,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:24:37,667 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-82.5, 马赛克结果:False
+2020-05-07 19:24:37,895 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1050MHz
+2020-05-07 19:24:40,272 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:25:40,835 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:25:41,841 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:25:56,664 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:26:00,624 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:26:00,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90 dBm
+2020-05-07 19:26:01,779 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90 dBm
+2020-05-07 19:26:13,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90, 马赛克结果:true
+2020-05-07 19:26:13,868 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:26:16,257 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:26:17,266 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:26:31,915 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:26:35,688 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-75.0, 马赛克结果:False
+2020-05-07 19:26:35,930 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -82.5 dBm
+2020-05-07 19:26:36,936 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-82.5 dBm
+2020-05-07 19:26:51,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:26:55,582 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-82.5, 马赛克结果:False
+2020-05-07 19:26:55,822 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1070MHz
+2020-05-07 19:26:58,211 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:27:58,838 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:27:59,844 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:28:14,901 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:28:19,059 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:28:19,292 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90 dBm
+2020-05-07 19:28:20,301 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90 dBm
+2020-05-07 19:28:32,122 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90, 马赛克结果:true
+2020-05-07 19:28:32,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:28:34,589 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:28:35,595 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:28:50,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:28:54,115 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-75.0, 马赛克结果:False
+2020-05-07 19:28:54,262 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -82.5 dBm
+2020-05-07 19:28:55,266 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-82.5 dBm
+2020-05-07 19:29:10,292 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:29:14,404 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-82.5, 马赛克结果:False
+2020-05-07 19:29:14,653 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1090MHz
+2020-05-07 19:29:17,045 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:30:32,513 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:381] - INFO: SYST:PRES
+2020-05-07 19:30:34,934 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:381] - INFO: SYST:PRES
+2020-05-07 19:30:37,140 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:249] - INFO: DVBS:SOUR TSPL
+2020-05-07 19:30:39,444 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:261] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-07 19:30:42,201 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:327] - INFO: DVBS:RATE R1_2
+2020-05-07 19:30:44,436 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:285] - INFO: DVBS:SYMB 10.000000e6
+2020-05-07 19:30:46,749 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 950MHz
+2020-05-07 19:30:49,138 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:31:42,734 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:31:43,740 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:31:58,546 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:32:02,654 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:32:02,907 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:32:03,911 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:32:15,688 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:32:15,937 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:32:18,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:32:19,359 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:32:31,390 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-80.0, 马赛克结果:true
+2020-05-07 19:32:31,549 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:32:33,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-07 19:32:34,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-70.0 dBm
+2020-05-07 19:32:49,766 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:32:53,825 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-70.0, 马赛克结果:False
+2020-05-07 19:32:54,065 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 19:32:55,069 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 19:33:06,887 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-75.0, 马赛克结果:true
+2020-05-07 19:33:07,127 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-07 19:33:09,267 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 970MHz
+2020-05-07 19:33:11,486 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:34:16,006 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:34:17,010 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:34:31,831 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:34:35,921 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:34:36,127 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:34:37,131 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:34:48,969 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:34:49,127 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:34:51,315 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:34:52,319 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:35:07,142 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:35:11,244 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 19:35:11,440 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 19:35:12,446 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 19:35:24,224 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 19:35:24,394 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:35:26,690 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 19:35:27,694 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 19:35:39,551 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-85.0, 马赛克结果:true
+2020-05-07 19:35:39,706 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:35:41,878 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 990MHz
+2020-05-07 19:35:44,221 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:36:54,940 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-07 19:36:57,096 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-07 19:36:59,411 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:249] - INFO: DVBS:SOUR TSPL
+2020-05-07 19:37:01,562 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-07 19:37:04,052 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:330] - INFO: DVBS:RATE R1_2
+2020-05-07 19:37:06,348 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:287] - INFO: DVBS:SYMB 10.000000e6
+2020-05-07 19:37:08,644 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 950MHz
+2020-05-07 19:37:10,943 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:38:04,898 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:38:05,901 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:38:20,631 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:38:24,690 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:38:24,851 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:38:25,855 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:38:37,733 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:38:37,928 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:38:40,242 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:38:41,246 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:38:53,121 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-80.0, 马赛克结果:true
+2020-05-07 19:38:53,273 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:38:55,444 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-07 19:38:56,450 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-70.0 dBm
+2020-05-07 19:39:11,007 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:39:15,036 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-70.0, 马赛克结果:True
+2020-05-07 19:39:15,226 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -65.0 dBm
+2020-05-07 19:39:16,230 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-65.0 dBm
+2020-05-07 19:39:30,805 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:39:34,848 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-65.0, 马赛克结果:False
+2020-05-07 19:39:35,023 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 970MHz
+2020-05-07 19:39:37,384 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:40:38,213 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:40:39,217 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:40:54,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:40:58,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:40:58,338 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:40:59,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:41:11,259 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:41:11,464 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:41:13,760 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:41:14,766 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:41:29,464 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:41:33,390 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 19:41:33,542 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 19:41:34,548 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 19:41:46,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 19:41:46,621 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:41:48,963 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 19:41:49,967 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 19:42:04,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:42:08,607 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 19:42:08,808 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 990MHz
+2020-05-07 19:42:10,996 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:43:11,936 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:43:12,940 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:43:27,592 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:43:31,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:43:31,796 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:43:32,803 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:43:44,678 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:43:44,842 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:43:47,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:43:48,019 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:44:02,703 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:44:06,644 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 19:44:06,796 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 19:44:07,799 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 19:44:19,650 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 19:44:19,842 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:44:22,187 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 19:44:23,191 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 19:44:38,062 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:44:42,131 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 19:44:42,280 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1010MHz
+2020-05-07 19:44:44,625 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:45:45,470 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:45:46,476 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:46:01,017 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:46:05,178 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:46:05,329 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:46:06,334 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:46:18,259 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:46:18,407 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:46:20,704 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:46:21,710 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:46:36,533 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:46:40,467 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 19:46:40,611 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 19:46:41,618 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 19:46:53,500 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 19:46:53,690 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:46:56,033 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 19:46:57,042 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 19:47:11,676 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:47:15,687 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 19:47:15,878 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1030MHz
+2020-05-07 19:47:18,174 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:48:19,036 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:48:20,046 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:48:34,739 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:48:38,862 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:48:39,005 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:48:40,010 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:48:51,980 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:48:52,131 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:48:54,272 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:48:55,276 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:49:10,036 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:49:13,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 19:49:14,115 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 19:49:15,121 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 19:49:27,033 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 19:49:27,224 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:49:29,411 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 19:49:30,417 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 19:49:44,990 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:49:48,976 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 19:49:49,177 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1050MHz
+2020-05-07 19:49:51,476 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:50:53,086 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:50:54,092 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:51:08,914 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:51:12,951 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:51:13,102 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:51:14,107 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:51:26,025 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:51:26,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:51:28,523 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:51:29,529 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:51:43,977 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:51:47,854 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 19:51:48,009 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 19:51:49,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 19:52:00,888 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 19:52:01,086 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:52:03,415 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 19:52:04,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 19:52:16,326 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-85.0, 马赛克结果:true
+2020-05-07 19:52:16,479 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:52:18,775 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1070MHz
+2020-05-07 19:52:21,118 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:53:26,839 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:53:27,845 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:53:42,450 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:53:46,479 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:53:46,637 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:53:47,641 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:53:59,515 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:53:59,716 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:54:02,059 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:54:03,063 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:54:17,964 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:54:21,992 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 19:54:22,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 19:54:23,188 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 19:54:35,078 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 19:54:35,263 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:54:37,607 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 19:54:38,611 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 19:54:52,982 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:54:57,019 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 19:54:57,170 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1090MHz
+2020-05-07 19:54:59,466 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:55:59,812 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:56:00,818 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:56:15,765 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:56:19,898 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:56:20,094 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:56:21,098 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:56:32,980 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:56:33,171 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:56:35,469 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:56:36,474 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:56:51,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:56:55,230 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 19:56:55,437 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 19:56:56,443 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 19:57:08,288 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 19:57:08,437 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:57:10,782 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 19:57:11,786 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 19:57:26,438 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:57:30,391 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 19:57:30,532 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1110MHz
+2020-05-07 19:57:32,877 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 19:58:33,831 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:58:34,838 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 19:58:49,503 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:58:53,517 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 19:58:53,674 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 19:58:54,678 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 19:59:06,575 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 19:59:06,721 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:59:08,910 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:59:09,914 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 19:59:24,269 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 19:59:28,154 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 19:59:28,301 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 19:59:29,305 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 19:59:41,196 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 19:59:41,394 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:59:43,582 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 19:59:44,588 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 19:59:56,542 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-85.0, 马赛克结果:true
+2020-05-07 19:59:56,691 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 19:59:58,987 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1130MHz
+2020-05-07 20:00:01,285 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:01:05,022 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:01:06,026 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:01:20,381 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:01:24,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:01:24,569 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:01:25,572 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:01:37,431 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:01:37,601 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:01:39,788 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:01:40,793 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:01:55,367 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:01:59,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:01:59,538 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:02:00,549 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:02:12,726 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:02:12,930 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:02:15,117 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:02:16,121 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:02:30,976 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:02:35,009 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:02:35,164 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1150MHz
+2020-05-07 20:02:37,507 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:03:40,572 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:03:41,578 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:03:56,119 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:04:00,157 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:04:00,305 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:04:01,316 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:04:13,262 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:04:13,417 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:04:15,604 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:04:16,608 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:04:31,009 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:04:34,960 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:04:35,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:04:36,155 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:04:48,278 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:04:48,417 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:04:50,759 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:04:51,765 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:05:06,526 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:05:10,559 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:05:10,760 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1170MHz
+2020-05-07 20:05:13,105 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:06:14,888 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:06:15,894 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:06:30,668 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:06:34,835 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:06:35,029 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:06:36,033 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:06:48,000 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:06:48,154 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:06:50,341 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:06:51,355 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:07:05,733 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:07:09,624 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:07:09,779 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:07:10,785 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:07:22,684 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:07:22,826 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:07:25,171 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:07:26,181 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:07:41,029 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:07:45,107 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:07:45,296 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1190MHz
+2020-05-07 20:07:47,640 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:08:48,219 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:08:49,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:09:04,095 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:09:08,173 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:09:08,375 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:09:09,380 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:09:21,252 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:09:21,407 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:09:23,766 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:09:24,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:09:39,253 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:09:43,194 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:09:43,377 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:09:44,381 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:09:56,279 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:09:56,424 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:09:58,720 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:09:59,726 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:10:14,142 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:10:18,177 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:10:18,329 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1210MHz
+2020-05-07 20:10:20,657 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:11:21,285 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:11:22,292 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:11:36,957 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:11:40,997 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:11:41,191 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:11:42,197 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:11:54,092 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:11:54,239 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:11:56,380 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:11:57,384 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:12:11,881 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:12:15,826 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:12:16,020 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:12:17,026 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:12:29,000 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:12:29,194 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:12:31,334 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:12:32,339 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:12:46,959 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:12:50,983 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:12:51,177 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1230MHz
+2020-05-07 20:12:53,522 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:13:55,351 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:13:56,357 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:14:11,150 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:14:15,209 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:14:15,352 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:14:16,359 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:14:28,221 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:14:28,368 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:14:30,680 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:14:31,684 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:14:46,101 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:14:50,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:14:50,164 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:14:51,168 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:15:02,973 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:15:03,165 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:15:05,352 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:15:06,358 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:15:21,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:15:25,319 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:15:25,525 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1250MHz
+2020-05-07 20:15:27,868 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:16:28,776 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:16:29,782 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:16:44,338 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:16:49,592 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:16:49,746 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:16:50,753 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:17:02,630 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:17:02,823 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:17:05,121 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:17:06,125 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:17:21,089 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:17:24,966 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:17:25,168 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:17:26,174 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:17:38,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:17:38,339 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:17:40,668 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:17:41,676 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:17:56,091 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:18:00,095 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:18:00,292 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1270MHz
+2020-05-07 20:18:02,638 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:19:02,326 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:19:03,332 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:19:18,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:19:22,081 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:19:22,233 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:19:23,239 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:19:35,118 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:19:35,265 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:19:37,453 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:19:38,459 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:19:53,296 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:19:57,177 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:19:57,375 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:19:58,381 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:20:10,334 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:20:10,483 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:20:12,657 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:20:13,663 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:20:28,421 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:20:32,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:20:32,562 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1290MHz
+2020-05-07 20:20:34,907 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:21:35,970 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:21:36,976 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:21:51,721 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:21:55,734 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:21:55,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:21:56,928 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:22:08,904 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:22:09,065 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:22:11,252 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:22:12,257 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:22:26,753 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:22:30,648 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:22:30,799 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:22:31,806 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:22:43,736 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:22:43,894 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:22:46,082 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:22:47,086 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:22:58,947 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-85.0, 马赛克结果:true
+2020-05-07 20:22:59,096 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:23:01,424 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1310MHz
+2020-05-07 20:23:03,769 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:24:03,240 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:24:04,244 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:24:18,740 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:24:22,763 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:24:22,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:24:23,936 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:24:35,805 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:24:35,990 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:24:38,177 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:24:39,181 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:24:54,148 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:24:58,084 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:True
+2020-05-07 20:24:58,272 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-07 20:24:59,280 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-70.0 dBm
+2020-05-07 20:25:14,085 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:25:18,269 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-70.0, 马赛克结果:False
+2020-05-07 20:25:18,460 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-07 20:25:19,463 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-07 20:25:34,226 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-07 20:25:38,108 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-75.0, 马赛克结果:False
+2020-05-07 20:25:38,256 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1330MHz
+2020-05-07 20:25:40,553 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:26:43,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:26:44,186 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:26:58,884 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:27:02,947 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:27:03,150 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:27:04,155 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:27:16,015 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:27:16,213 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:27:18,509 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:27:19,515 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:27:34,197 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:27:38,111 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:27:38,306 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:27:39,311 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:27:51,368 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:27:51,558 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:27:53,917 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:27:54,921 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:28:09,619 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:28:13,709 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:28:13,901 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1350MHz
+2020-05-07 20:28:16,246 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:29:17,091 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:29:18,095 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:29:32,888 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:29:36,960 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:29:37,107 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:29:38,111 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:29:50,062 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:29:50,263 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:29:52,404 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:29:53,407 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:30:07,842 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:30:11,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:30:11,967 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:30:12,970 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:30:24,904 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:30:25,092 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:30:27,233 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:30:28,240 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:30:43,076 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:30:47,217 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:30:47,421 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1370MHz
+2020-05-07 20:30:49,717 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-07 20:31:50,562 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:31:51,566 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-07 20:32:06,234 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:32:10,512 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-07 20:32:10,703 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-07 20:32:11,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-07 20:32:23,618 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-07 20:32:23,766 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:32:25,953 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:32:26,961 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-07 20:32:41,484 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-07 20:32:45,619 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-07 20:32:45,813 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-07 20:32:46,818 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-07 20:32:58,716 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-07 20:32:58,861 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:33:01,157 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-07 20:33:02,164 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-07 20:33:16,658 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-07 20:33:20,776 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-07 20:33:20,986 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1390MHz
+2020-05-07 20:33:23,315 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 09:44:08,823 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-08 09:44:17,214 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-08 09:44:20,730 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-08 09:44:33,839 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-08 09:44:41,401 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-08 09:44:45,512 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-08 09:44:50,917 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-08 09:44:54,842 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:385] - INFO: SYST:PRES
+2020-05-08 09:45:04,408 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:388] - INFO: SYST:PRES
+2020-05-08 09:45:16,621 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:388] - INFO: SYST:PRES
+2020-05-08 09:48:29,878 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:249] - INFO: DVBS:SOUR TSPL
+2020-05-08 09:48:52,153 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 09:48:59,684 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 09:49:07,312 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 09:49:11,450 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 09:49:18,420 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 09:49:23,499 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 09:49:36,686 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 09:49:41,921 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 09:49:46,779 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 10:00:59,029 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:263] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 10:01:11,155 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:263] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 10:01:17,344 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:263] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 10:01:48,750 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:264] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 10:01:56,454 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:264] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 10:02:17,865 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:265] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 18:33:24,914 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:265] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 18:33:32,319 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:264] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 18:34:03,131 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:266] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 18:35:36,170 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:387] - INFO: SYST:PRES
+2020-05-08 18:35:38,954 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:249] - INFO: DVBS:SOUR TSPL
+2020-05-08 18:35:41,368 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:263] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 18:35:42,969 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:332] - INFO: DVBS:RATE R1_2
+2020-05-08 18:35:45,344 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:289] - INFO: DVBS:SYMB 10.000000e6
+2020-05-08 18:35:47,562 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 950MHz
+2020-05-08 18:35:49,766 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:36:44,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:36:45,928 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:37:01,033 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:37:07,161 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:37:07,408 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 18:37:08,413 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 18:37:20,256 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 18:37:20,460 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:37:22,815 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:37:23,819 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 18:37:35,665 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-80.0, 马赛克结果:true
+2020-05-08 18:37:35,815 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:37:38,158 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-08 18:37:39,164 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-70.0 dBm
+2020-05-08 18:37:53,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:37:58,069 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-70.0, 马赛克结果:False
+2020-05-08 18:37:58,269 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -75.0 dBm
+2020-05-08 18:37:59,273 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-75.0 dBm
+2020-05-08 18:38:11,226 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-75.0, 马赛克结果:true
+2020-05-08 18:38:11,440 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -70.0 dBm
+2020-05-08 18:38:13,785 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 970MHz
+2020-05-08 18:38:16,082 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:39:17,897 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:39:18,903 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:39:33,693 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:39:37,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:39:38,069 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 18:39:39,072 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 18:39:51,017 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 18:39:51,240 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:39:53,584 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:39:54,588 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 18:40:09,148 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:40:13,250 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 18:40:13,397 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 18:40:14,403 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 18:40:26,335 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 18:40:26,476 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:40:28,663 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 18:40:29,667 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 18:40:44,384 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:40:48,301 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 18:40:48,490 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 990MHz
+2020-05-08 18:40:50,789 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:41:51,947 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:41:52,951 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:42:07,588 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:42:11,517 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:42:11,727 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 18:42:12,733 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 18:42:24,608 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 18:42:24,822 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:42:27,009 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:42:28,015 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 18:42:42,369 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:42:46,201 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 18:42:46,401 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 18:42:47,405 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 18:42:59,190 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 18:42:59,338 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:43:01,681 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 18:43:02,686 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 18:43:17,401 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:43:21,316 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 18:43:21,525 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1010MHz
+2020-05-08 18:43:23,822 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:44:26,950 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:44:27,954 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:44:42,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:44:46,272 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:44:46,420 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 18:44:47,426 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 18:44:59,266 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 18:44:59,466 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:45:01,654 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:45:02,658 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 18:45:17,529 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:45:21,368 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 18:45:21,513 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 18:45:22,523 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 18:45:34,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 18:45:34,513 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:45:36,858 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 18:45:37,861 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 18:45:52,309 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:45:56,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 18:45:56,576 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1030MHz
+2020-05-08 18:45:58,874 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:46:58,641 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:46:59,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:47:14,516 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:47:18,960 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:47:19,108 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 18:47:20,115 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 18:47:32,005 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 18:47:32,203 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:47:34,391 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:47:35,395 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 18:47:50,062 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:47:53,875 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 18:47:54,016 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 18:47:55,023 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 18:48:07,035 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 18:48:07,188 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:48:09,532 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 18:48:10,536 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 18:48:25,127 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:48:29,187 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 18:48:29,391 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1050MHz
+2020-05-08 18:48:31,736 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:49:32,971 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:49:33,976 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:49:48,957 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:49:53,243 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:49:53,424 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 18:49:54,430 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 18:50:06,232 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 18:50:06,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:50:08,721 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:50:09,727 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 18:50:24,101 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:50:27,970 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 18:50:28,191 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 18:50:29,197 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 18:50:41,043 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 18:50:41,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:50:43,457 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 18:50:44,463 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 18:50:56,326 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-85.0, 马赛克结果:true
+2020-05-08 18:50:56,505 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:50:58,661 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1070MHz
+2020-05-08 18:51:00,802 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:52:06,463 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:52:07,469 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:52:21,994 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:52:26,394 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:52:26,539 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 18:52:27,545 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 18:52:39,358 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 18:52:39,506 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:52:41,648 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:52:42,653 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 18:52:57,226 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:53:01,233 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 18:53:01,365 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 18:53:02,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 18:53:14,311 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 18:53:14,446 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:53:16,585 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 18:53:17,591 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 18:53:32,118 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:53:35,940 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 18:53:36,086 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1090MHz
+2020-05-08 18:53:38,226 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:54:39,572 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:54:40,575 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:54:55,244 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:55:00,164 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:55:00,338 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 18:55:01,342 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 18:55:13,154 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 18:55:13,306 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:55:15,447 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:55:16,460 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 18:55:31,104 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:55:35,255 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 18:55:35,401 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 18:55:36,408 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 18:55:48,321 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 18:55:48,480 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:55:50,621 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 18:55:51,625 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 18:56:06,309 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:56:10,657 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 18:56:10,809 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1110MHz
+2020-05-08 18:56:12,948 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:57:13,450 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:57:14,454 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:57:29,107 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:57:33,293 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:57:33,434 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 18:57:34,440 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 18:57:46,288 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 18:57:46,451 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:57:48,592 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:57:49,596 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 18:58:03,888 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:58:08,111 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 18:58:08,250 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 18:58:09,253 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 18:58:21,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 18:58:21,326 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:58:23,451 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 18:58:24,457 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 18:58:36,357 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-85.0, 马赛克结果:true
+2020-05-08 18:58:36,500 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 18:58:38,640 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1130MHz
+2020-05-08 18:58:40,765 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 18:59:39,298 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:59:40,305 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 18:59:54,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 18:59:59,089 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 18:59:59,236 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 19:00:00,240 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 19:00:12,089 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 19:00:12,236 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:00:14,377 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:00:15,381 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 19:00:30,079 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:00:34,203 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 19:00:34,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 19:00:35,349 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 19:00:47,138 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 19:00:47,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:00:49,440 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 19:00:50,446 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 19:01:04,957 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:01:09,138 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 19:01:09,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1150MHz
+2020-05-08 19:01:11,424 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 19:02:12,628 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:02:13,632 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 19:02:27,973 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:02:32,174 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 19:02:32,316 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 19:02:33,321 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 19:02:45,186 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 19:02:45,348 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:02:47,490 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:02:48,493 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 19:03:02,990 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:03:07,121 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 19:03:07,272 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 19:03:08,276 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 19:03:20,131 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 19:03:20,270 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:03:22,413 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 19:03:23,417 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 19:03:38,318 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:03:42,516 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 19:03:42,661 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1170MHz
+2020-05-08 19:03:44,788 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 19:04:46,618 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:04:47,621 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 19:05:02,101 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:05:06,002 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 19:05:06,148 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 19:05:07,153 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 19:05:19,039 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 19:05:19,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:05:21,321 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:05:22,325 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 19:05:37,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:05:40,964 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 19:05:41,102 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 19:05:42,107 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 19:05:54,015 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 19:05:54,150 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:05:56,275 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 19:05:57,279 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 19:06:11,776 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:06:15,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 19:06:15,743 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1190MHz
+2020-05-08 19:06:17,884 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 19:07:19,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:07:20,720 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 19:07:35,480 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:07:39,555 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 19:07:39,698 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 19:07:40,703 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 19:07:52,510 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 19:07:52,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:07:54,793 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:07:55,798 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 19:08:10,154 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:08:15,545 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 19:08:15,700 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 19:08:16,704 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 19:08:28,532 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 19:08:28,668 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:08:30,809 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 19:08:31,813 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 19:08:46,529 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:08:51,111 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 19:08:51,263 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1210MHz
+2020-05-08 19:08:53,404 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 19:09:53,858 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:09:54,864 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 19:10:09,421 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:10:13,819 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 19:10:13,969 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 19:10:14,974 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 19:10:26,930 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 19:10:27,063 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:10:29,203 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:10:30,207 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 19:10:44,578 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:10:48,476 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 19:10:48,625 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 19:10:49,628 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 19:11:01,601 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 19:11:01,734 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:11:03,859 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 19:11:04,865 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 19:11:16,688 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-85.0, 马赛克结果:true
+2020-05-08 19:11:16,829 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:11:18,970 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1230MHz
+2020-05-08 19:11:21,109 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 19:11:33,556 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_sfe.py[line:262] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-08 19:12:13,688 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:12:14,696 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 19:12:29,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:12:34,322 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 19:12:34,471 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 19:12:35,476 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 19:12:47,359 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 19:12:47,503 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:12:49,658 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:12:50,663 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 19:13:05,190 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:13:10,165 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 19:13:10,316 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 19:13:11,321 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 19:13:23,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 19:13:23,285 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:13:25,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 19:13:26,430 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 19:13:40,973 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:13:44,846 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 19:13:44,989 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1250MHz
+2020-05-08 19:13:47,114 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 19:14:46,802 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:14:47,905 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm
+2020-05-08 19:15:02,834 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:15:08,618 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-60, 马赛克结果:False
+2020-05-08 19:15:08,756 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -100 dBm
+2020-05-08 19:15:09,915 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-100 dBm
+2020-05-08 19:15:21,617 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-100, 马赛克结果:true
+2020-05-08 19:15:21,772 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:15:23,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:15:24,959 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-80.0 dBm
+2020-05-08 19:15:39,648 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:15:43,562 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-80.0, 马赛克结果:False
+2020-05-08 19:15:43,710 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -90.0 dBm
+2020-05-08 19:15:44,717 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-90.0 dBm
+2020-05-08 19:15:56,562 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:39] - INFO: level:-90.0, 马赛克结果:true
+2020-05-08 19:15:56,710 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:15:58,851 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -85.0 dBm
+2020-05-08 19:15:59,857 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-85.0 dBm
+2020-05-08 19:16:14,696 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -80.0 dBm
+2020-05-08 19:16:18,736 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:56] - INFO: level:-85.0, 马赛克结果:False
+2020-05-08 19:16:18,882 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:41] - INFO: FREQ:CW 1270MHz
+2020-05-08 19:16:21,023 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -50 dBm
+2020-05-08 19:17:20,963 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_sfe.py[line:109] - INFO: POW:LEV -60 dBm
+2020-05-08 19:17:21,967 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\threshold_algorithm_SFE.py[line:27] - INFO: 设置set_level_level_level:-60 dBm

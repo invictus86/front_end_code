@@ -1,2 +1,2 @@
-BANCH_ID = "0a72c3c"
+BANCH_ID = "cc06dbd"
 STB_TESTER_URL = "http://192.168.1.154"

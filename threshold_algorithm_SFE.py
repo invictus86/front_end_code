@@ -23,7 +23,6 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
 def mosaic_algorithm(sfe_ip, test_level_data, can_play_data):
     specan = Ektsfe(sfe_ip)
     specan.set_level_level_level(str(test_level_data) + " dBm")
-    del specan
     print "设置set_level_level_level:{}".format(str(test_level_data) + " dBm")
     logging.info("设置set_level_level_level:{}".format(str(test_level_data) + " dBm"))
     time.sleep(5)
@@ -40,15 +39,13 @@ def mosaic_algorithm(sfe_ip, test_level_data, can_play_data):
         logging.info("level:{}, 马赛克结果:true".format(test_level_data))
         specan = Ektsfe(sfe_ip)
         specan.set_level_level_level(str(can_play_data) + " dBm")
-        del specan
         return mosaic_algorithm_result
     elif res == True:
         # num = 50
-        num = 20
+        num = 10
         list_image = capture_image(num, "192.168.1.154")
         specan = Ektsfe(sfe_ip)
         specan.set_level_level_level(str(can_play_data) + " dBm")
-        del specan
         dict_result, mosaic_result = image_classification(list_image)
         print dict_result, mosaic_result
         mosaic_algorithm_result = {
@@ -92,12 +89,14 @@ def iterate_to_find_threshold(sfe_ip, start_num, end_num):
         return json.dumps({"threshold_algorithm_result": False,
                            "msg": "初始值处于马赛克阈值外"})
     while True:
-        if start_num - end_num >= 0.3:
+        # if start_num - end_num >= 0.3:
+        if start_num - end_num >= 10:
             print "start_num:{},  end_num:{}".format(start_num, end_num)
             dict_threshold_algorithm_result = threshold_algorithm(sfe_ip, start_num, end_num)
             [start_num, end_num] = dict_threshold_algorithm_result.get("step_range")
         # elif start_num - end_num - 0.1 < 0.000001:
-        elif start_num - end_num - 0.3 < 0.000001:
+        # elif start_num - end_num - 0.3 < 0.000001:
+        elif start_num - end_num - 10 < 0.000001:
             print "阈值为: {}".format(start_num)
             return "阈值为: {}".format(start_num)
             # print "*" * 50

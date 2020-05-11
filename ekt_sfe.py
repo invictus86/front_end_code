@@ -26,6 +26,7 @@ class Ektsfe(object):
         rm = pyvisa.ResourceManager()
         specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
         self.specan = specan
+        del self.specan.timeout
 
     def set_frequency_frequency_frequency(self, frequency):
         """
@@ -40,6 +41,7 @@ class Ektsfe(object):
         self.specan.write('FREQ:CW {}'.format(frequency))
         logging.info('FREQ:CW {}'.format(frequency))
         time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_frequency_frequency_channel(self, channel):
@@ -107,6 +109,7 @@ class Ektsfe(object):
         self.specan.write('POW:LEV {}'.format(level))
         logging.info('POW:LEV {}'.format(level))
         time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_level_level_rf(self, rf_type):
@@ -246,6 +249,7 @@ class Ektsfe(object):
         self.specan.write('DVBS:SOUR {}'.format(source_type))
         logging.info('DVBS:SOUR {}'.format(source_type))
         time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_input_load(self, file_path):
@@ -257,7 +261,8 @@ class Ektsfe(object):
         """
         self.specan.write(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
         logging.info(r'TSGEN:CONF:PLAY "{}"'.format(file_path))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_input_stuffing(self, source_type):
@@ -282,6 +287,7 @@ class Ektsfe(object):
         self.specan.write('DVBS:SYMB {}'.format(symbol_rate))
         logging.info('DVBS:SYMB {}'.format(symbol_rate))
         time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_coding_constellation(self, constellation_type):
@@ -324,6 +330,7 @@ class Ektsfe(object):
         self.specan.write('DVBS:RATE {}'.format(code_rate))
         logging.info('DVBS:RATE {}'.format(code_rate))
         time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_special_special(self, special_type):
@@ -380,6 +387,22 @@ class Ektsfe(object):
         time.sleep(1)
         del self.specan
 
+    def query_opc(self):
+        """
+        """
+        # self.specan.write('*OPC?')
+        self.specan.query('*OPC?')
+        time.sleep(1)
+        del self.specan
+
+    def clean_reset(self):
+        """
+        """
+        self.specan.write('*RST;*CLS')
+        time.sleep(1)
+        # self.specan.close()
+        # del self.specan
+
     def set_cmd(self):
         """
         The constellation type determines the available code rates.
@@ -393,7 +416,10 @@ class Ektsfe(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write('PFREQ:STEP:DEC')
+        # self.specan.write('*RST;*CLS')
+        self.specan.timeout = 2000
+        # self.specan.ext_error_checking()
+        # self.specan.query('*OPC?')
 
     # def __del__(self):
     #     del self.specan
@@ -425,13 +451,16 @@ def _test_code():
     # specan.set_digitaltv_coding_rolloff("0.25")
     # specan.set_digitaltv_coding_coderate("R8_9")
     # specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\FACT_4M.GTS")
-    specan.preset_instrument()
+    # specan.preset_instrument()
     # specan.set_digitaltv_special_special("OFF")
     # specan.set_digitaltv_settings_testtspacket("H184")
     # specan.set_digitaltv_settings_prbs("P23_1")
     # specan.set_level_settings_state("DEC")
     # specan.set_level_settings_increment("2.5")
     # specan.set_cmd()
+    # specan.clean_reset()
+    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+    # specan.query_opc()
 
 
 if __name__ == '__main__':

@@ -25,6 +25,7 @@ class Ektsfu(object):
         rm = pyvisa.ResourceManager()
         specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
         self.specan = specan
+        del self.specan.timeout
 
     def set_frequency_frequency_frequency(self, frequency):
         """
@@ -42,7 +43,8 @@ class Ektsfu(object):
         # self.specan.write('FREQ {}'.format(frequency))
         self.specan.write('FREQ:CW {}'.format(frequency))
         logging.info('FREQ:CW {}'.format(frequency))
-        time.sleep(2)
+        # time.sleep(2)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_frequency_frequency_offset(self, frequency):
@@ -287,6 +289,7 @@ class Ektsfu(object):
         time.sleep(0.1)
         self.specan.write('POW {}'.format(level_num))
         time.sleep(0.1)
+        self.specan.query('*OPC?')
         del self.specan
         logging.info('UNIT:VOLT {}'.format(level_unit))
         logging.info('POW {}'.format(level_num))
@@ -318,7 +321,8 @@ class Ektsfu(object):
         """
         self.specan.write('POW:OFFS {}'.format(offset))
         logging.info('POW:OFFS {}'.format(offset))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_level_level_userlimit(self, limit_level):
@@ -604,7 +608,8 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:SYMB {}'.format(symbol_rate))
         logging.info('DVBS2:SYMB {}'.format(symbol_rate))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_coding_constellation_dvbs2(self, constellation_type):
@@ -689,7 +694,8 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:RATE {}'.format(code_rate))
         logging.info('DVBS2:RATE {}'.format(code_rate))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_special_settings_dvbs2(self, setting_type):
@@ -957,7 +963,8 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:CN {}'.format(cn))
         logging.info('NOIS:CN {}'.format(cn))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_noise_awgn_ebno(self, ebno):
@@ -2577,7 +2584,8 @@ class Ektsfu(object):
         """
         self.specan.write('SYST:PRES')
         logging.info(r'SYST:PRES')
-        time.sleep(17)
+        self.specan.query('*OPC?')
+        # time.sleep(17)
         del self.specan
 
 def __del__(self):
@@ -2634,7 +2642,7 @@ def _test_code():
     # specan.set_noise_noise_noise("ADD")
     # specan = Ektsfu(sfu_ip)
     # specan.set_noise_noise_awgn("OFF")
-    specan.set_noise_awgn_cn("45")
+    # specan.set_noise_awgn_cn("45")
     # specan.set_noise_impulsive_ci("45")
     # specan.set_noise_impulsive_frameduration("0.1")
     # specan.set_noise_settings_bandwith("ON")
@@ -2741,7 +2749,7 @@ def _test_code():
     # specan.set_modulation_settings_mode("WBEC")
     # specan.set_modulation_settings_output("AFC")
     # specan.set_noise_noise_phase("OFF")
-    # specan.preset_instrument()
+    specan.preset_instrument()
     # specan.set_impairments_modulator("OFF")
     # specan.set_impairments_baseband("OFF")
     # specan.set_impairments_optimize("OFF")

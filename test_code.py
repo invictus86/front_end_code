@@ -33,6 +33,7 @@
 
 import ekt_net
 import json
+
 # net = ekt_net.EktNetClient('192.168.1.24', 9999)
 # frequency = net.send_rec(json.dumps({"cmd": "get_frequency_data"}))
 # symbol_rate = net.send_rec(json.dumps({"cmd": "get_symbol_rate_data"}))
@@ -49,13 +50,20 @@ import json
 # net = ekt_net.EktNetClient('192.168.1.24', 9999)
 # net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(DVBS_S2_FREQUENCY_LEVEL_OFFSET[0][0])}))
 
-import ekt_cfg
-from ekt_stb_tester import stb_tester_detect_motion
-for _ in range(3):
-    stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                           ["tests/front_end_test/testcases.py::test_continuous_button"],
-                                           "auto_front_end_test", "DSD4614iALM")
+# import ekt_cfg
+# from ekt_stb_tester import stb_tester_detect_motion
+# for _ in range(3):
+#     stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+#                                            ["tests/front_end_test/testcases.py::test_continuous_button"],
+#                                            "auto_front_end_test", "DSD4614iALM")
 
+
+# import pyvisa
+# rm = pyvisa.ResourceManager()
+# print rm.list_resources()
+#
+# rm.assert_trigger()
+# rm.wait_for_srq()
 
 # def write_json(jlist):
 #     # 将bx列表写入json文件
@@ -70,3 +78,18 @@ for _ in range(3):
 #     return jlist
 #
 
+
+# import serial
+# import binascii
+# s = serial.Serial('com3',115200)
+# s.write(d)
+# argv = s.read(3)
+# result =""
+# hlen = len(argv)
+# for i in range(hlen):
+#     hvol =ord(argv[i])
+#     hhex = '%02x'%hvol
+#     result +=hhex+''
+# print ('hexshow:',result)
+#
+#

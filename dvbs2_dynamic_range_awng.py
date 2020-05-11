@@ -32,10 +32,10 @@ MODULATION_QPSK = "S4"
 MODULATION_8PSK = "S8"
 MODULATION_16QAM = "S16"
 
-SYMBOL_RATE_5M = ["5.000000e6", 5000]
-SYMBOL_RATE_10M = ["10.000000e6", 10000]
-SYMBOL_RATE_27_5M = ["27.500000e6", 27500]
-SYMBOL_RATE_45M = ["45.000000e6", 45000]
+SYMBOL_RATE_5M = ["5.000000e6", "05000"]
+SYMBOL_RATE_10M = ["10.000000e6", "10000"]
+SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
+SYMBOL_RATE_45M = ["45.000000e6", "45000"]
 
 FREQUENCY_950M = "950 MHz"
 FREQUENCY_1550M = "1550 MHz"
@@ -56,7 +56,8 @@ dict_config_data = {
     #                          CODE_RATE_8_9, CODE_RATE_9_10],
     # "CODE_RATE_DVBS2_8PSK": [CODE_RATE_3_5, CODE_RATE_2_3, CODE_RATE_3_4, CODE_RATE_5_6, CODE_RATE_8_9, CODE_RATE_9_10],
     # "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
-    "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
+    # "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
+    "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M],
 
 }
 
@@ -143,66 +144,6 @@ def read_ekt_config_data(file_path):
 #     specan.set_digitaltv_coding_symbolrate(symbol_rate)
 #     specan.set_frequency_frequency_frequency(frequency)
 #     specan.set_level_level_level(input_signal_level)
-
-
-# if __name__ == '__main__':
-#     """
-#     测试流程：
-#     ①重置设备
-#     ②选择 TSPLAYER
-#     ③播放流文件
-#     ④设置code_rate，modulation，symbol_rate，frequency，input_signal_level
-#     ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase，由于每款机顶盒界面、锁台操作不同，
-#     是否需要对testcase与PC端做参数交互？）
-#     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
-#     可变参数设置顺序
-#     ①AWGN_LIST
-#     ②SYMBOL_RATE_LIST
-#     ③MODULATION_LIST
-#     ④CODE_RATE 和 CN
-#     ⑤FREQUENCY 和 OFFSET
-#     """
-#     sfu_ip = "192.168.1.50"
-#     specan = ekt_sfu.Ektsfu(sfu_ip)
-#     specan.preset_instrument()
-#     specan.set_digitaltv_input_source_dvbs2("TSPL")
-#     specan.set_player_timing_openfile(r"E:\333\HEVC\1280x720p_hevc_aac.ts")
-#     set_dvbs2_fixed_parameter(specan)
-# 
-#     # set_dvbs_variable_parameter(specan, "R1_2", "S4", "5.000000e6", "950 MHz", "-87 dBm")
-#     # set_dvbs_variable_parameter(specan, "R3_4", "S4", "5.000000e6", "1550 MHz", "-70 dBm")
-#     # time.sleep(5)
-#     # list_input_signal_level = ["-87 dBm", "-96 dBm", "-84 dBm"]
-#     # for level in list_input_signal_level:
-#     #     specan.set_level_level_level(level)
-#     #     time.sleep(10)
-# 
-#     # for symbol_rate in SYMBOL_TATE_LIST:
-#     #     specan.set_digitaltv_coding_symbolrate(symbol_rate)
-#     #     time.sleep(5)
-# 
-#     dict_data = read_ekt_config_data("./ekt_config.json")
-#     DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
-#     DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
-#     DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
-# 
-#     for AWGN in AWGN_LIST:
-#         specan.set_noise_noise_awgn(AWGN)
-#         for SYMBOL_RATE in SYMBOL_RATE_LIST:
-#             specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE)
-#             for MODULATION in MODULATION_LIST:
-#                 specan.set_digitaltv_coding_constellation(MODULATION)
-#                 if MODULATION == MODULATION_QPSK:
-#                     for i in range(len(DVBS2_QPSK_CODE_RATE_CN)):
-#                         specan.set_digitaltv_coding_coderate(DVBS2_QPSK_CODE_RATE_CN[i][0])
-#                         specan.set_noise_awgn_cn(str(DVBS2_QPSK_CODE_RATE_CN[i][1]))
-#                         for FREQUENCY_LEVEL_OFFSET in DVBS_S2_FREQUENCY_LEVEL_OFFSET:
-#                             specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
-#                             specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
-#                             """
-#                             进行机顶盒的频率修改或其他参数的修改
-#                             读取误码率或者判断机顶盒是否含有马赛克
-#                             """
 
 
 # def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
@@ -307,19 +248,21 @@ if __name__ == '__main__':
                 stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                          ["tests/front_end_test/testcases.py::test_continuous_button"],
                                          "auto_front_end_test", "DSD4614iALM")
+                net = ekt_net.EktNetClient('192.168.1.24', 9999)
                 lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
                 if lock_state == "1":
                     pass
                 elif lock_state == "0":
-                    write_test_result(write_test_result("./test_result_sfu.txt",
-                                      "current_time:{}, coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+                    write_test_result("./test_result_sfu.txt",
+                                      ("current_time:{}, coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "锁台失败") + "\n"))
                     continue
                 else:
                     write_test_result("./test_result_sfu.txt", ("出错了" + "\n"))
+                    continue
                 try:
-                    res = iterate_to_find_threshold(sfu_ip, -50, -90)
+                    res = iterate_to_find_threshold(sfu_ip, -50, -100)
                     print "current_time:{}, coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
@@ -328,7 +271,7 @@ if __name__ == '__main__':
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
                 except:
-                    res = iterate_to_find_threshold(sfu_ip, -50, -90)
+                    res = iterate_to_find_threshold(sfu_ip, -50, -100)
                     print "current_time:{},  coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
