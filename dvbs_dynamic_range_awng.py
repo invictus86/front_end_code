@@ -10,27 +10,20 @@ from threshold_algorithm_SFE import iterate_to_find_threshold
 import ekt_cfg
 import datetime
 
-CODE_RATE_1_2 = "R1_2"
-CODE_RATE_2_3 = "R2_3"
-CODE_RATE_3_4 = "R3_4"
-CODE_RATE_5_6 = "R5_6"
-CODE_RATE_7_8 = "R7_8"
 
-SYMBOL_RATE_5M = ["5.000000e6", 5000]
-SYMBOL_RATE_10M = ["10.000000e6", 10000]
-SYMBOL_RATE_27_5M = ["27.500000e6", 27500]
-SYMBOL_RATE_45M = ["45.000000e6", 45000]
+SYMBOL_RATE_5M = ["5.000000e6", "05000"]
+SYMBOL_RATE_10M = ["10.000000e6", "10000"]
+SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
+SYMBOL_RATE_45M = ["45.000000e6", "45000"]
 
 SYMBOL_TATE_LIST = [str(i) + ".000000e6" for i in range(5, 46)]
 FREQUENCY_LIST = [str(i) + " MHz" for i in range(950, 2150, 20)]
 FREQUENCY_LIST.append("2147 MHz")
 
 dict_config_data = {
-    # "CODE_RATE_DVBS2_QPSK": [CODE_RATE_1_2, CODE_RATE_3_5, CODE_RATE_2_3, CODE_RATE_3_4, CODE_RATE_4_5, CODE_RATE_5_6,
-    #                          CODE_RATE_8_9, CODE_RATE_9_10],
-    # "CODE_RATE_DVBS2_8PSK": [CODE_RATE_3_5, CODE_RATE_2_3, CODE_RATE_3_4, CODE_RATE_5_6, CODE_RATE_8_9, CODE_RATE_9_10],
-    # "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
-    "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
+    "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
+    # "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
+
 
 
 def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):

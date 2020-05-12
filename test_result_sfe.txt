@@ -49,3 +49,63 @@ current_time:2020-05-08 19:08:51, coderate：R1_2, frequency：1190，symbol_rat
 current_time:2020-05-08 19:11:17, coderate：R1_2, frequency：1210，symbol_rate：10000，阈值为: -80.0
 current_time:2020-05-08 19:13:44, coderate：R1_2, frequency：1230，symbol_rate：10000，阈值为: -85.0
 current_time:2020-05-08 19:16:18, coderate：R1_2, frequency：1250，symbol_rate：10000，阈值为: -85.0
+current_time:2020-05-11 10:09:50, coderate：R1_2, frequency：950，symbol_rate：10000，阈值为: -75.0
+current_time:2020-05-11 10:12:28, coderate：R1_2, frequency：970，symbol_rate：10000，阈值为: -81.3
+current_time:2020-05-11 10:15:00, coderate：R1_2, frequency：990，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:17:34, coderate：R1_2, frequency：1010，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:20:07, coderate：R1_2, frequency：1030，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:22:42, coderate：R1_2, frequency：1050，symbol_rate：10000，阈值为: -81.3
+current_time:2020-05-11 10:25:16, coderate：R1_2, frequency：1070，symbol_rate：10000，阈值为: -81.3
+current_time:2020-05-11 10:27:49, coderate：R1_2, frequency：1090，symbol_rate：10000，阈值为: -81.3
+current_time:2020-05-11 10:30:24, coderate：R1_2, frequency：1110，symbol_rate：10000，阈值为: -81.3
+current_time:2020-05-11 10:33:02, coderate：R1_2, frequency：1130，symbol_rate：10000，阈值为: -81.3
+current_time:2020-05-11 10:35:37, coderate：R1_2, frequency：1150，symbol_rate：10000，阈值为: -81.3
+current_time:2020-05-11 10:38:13, coderate：R1_2, frequency：1170，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:40:51, coderate：R1_2, frequency：1190，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:43:25, coderate：R1_2, frequency：1210，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:45:59, coderate：R1_2, frequency：1230，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:48:32, coderate：R1_2, frequency：1250，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:51:06, coderate：R1_2, frequency：1270，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:53:40, coderate：R1_2, frequency：1290，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:56:14, coderate：R1_2, frequency：1310，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 10:58:47, coderate：R1_2, frequency：1330，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:01:21, coderate：R1_2, frequency：1350，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:03:54, coderate：R1_2, frequency：1370，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:06:30, coderate：R1_2, frequency：1390，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:09:09, coderate：R1_2, frequency：1410，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:11:43, coderate：R1_2, frequency：1430，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:14:16, coderate：R1_2, frequency：1450，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:16:49, coderate：R1_2, frequency：1470，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:19:24, coderate：R1_2, frequency：1490，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:22:00, coderate：R1_2, frequency：1510，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:24:37, coderate：R1_2, frequency：1530，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:27:11, coderate：R1_2, frequency：1550，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:29:45, coderate：R1_2, frequency：1570，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:32:18, coderate：R1_2, frequency：1590，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:34:52, coderate：R1_2, frequency：1610，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:37:26, coderate：R1_2, frequency：1630，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:39:59, coderate：R1_2, frequency：1650，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:42:35, coderate：R1_2, frequency：1670，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:45:07, coderate：R1_2, frequency：1690，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:47:40, coderate：R1_2, frequency：1710，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:50:14, coderate：R1_2, frequency：1730，symbol_rate：10000，阈值为: -87.5
+current_time:2020-05-11 11:52:53, coderate：R1_2, frequency：1750，symbol_rate：10000，阈值为: -81.3
+current_time:2020-05-11 11:55:34, coderate：R1_2, frequency：1770，symbol_rate：10000，阈值为: -81.3
+current_time:2020-05-11 15:04:00, coderate：R1_2, frequency：950，symbol_rate：05000，阈值为: -75.0
+current_time:2020-05-11 15:06:33, coderate：R1_2, frequency：970，symbol_rate：05000，阈值为: -81.3
+current_time:2020-05-11 15:09:06, coderate：R1_2, frequency：990，symbol_rate：05000，阈值为: -87.5
+current_time:2020-05-11 15:10:10, coderate：R1_2, frequency：1010，symbol_rate：05000，锁台失败
+current_time:2020-05-11 15:11:13, coderate：R1_2, frequency：1030，symbol_rate：05000，锁台失败
+current_time:2020-05-11 15:12:16, coderate：R1_2, frequency：1050，symbol_rate：05000，锁台失败
+current_time:2020-05-11 15:13:19, coderate：R1_2, frequency：1070，symbol_rate：05000，锁台失败
+current_time:2020-05-11 15:14:23, coderate：R1_2, frequency：1090，symbol_rate：05000，锁台失败
+current_time:2020-05-11 15:15:26, coderate：R1_2, frequency：1110，symbol_rate：05000，锁台失败
+current_time:2020-05-11 16:34:47, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000，马赛克检测结果：True
+current_time:2020-05-11 16:38:14, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000，马赛克检测结果：False
+current_time:2020-05-11 16:39:39, coderate：R3_4, frequency：1550 MHz，symbol_rate：06000，马赛克检测结果：False
+current_time:2020-05-11 16:40:40, coderate：R3_4, frequency：1550 MHz，symbol_rate：07000，锁台失败
+current_time:2020-05-11 16:48:21, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000，马赛克检测结果：True
+current_time:2020-05-11 16:49:45, coderate：R3_4, frequency：1550 MHz，symbol_rate：06000，马赛克检测结果：True
+current_time:2020-05-11 16:51:12, coderate：R3_4, frequency：1550 MHz，symbol_rate：07000，马赛克检测结果：True
+current_time:2020-05-11 16:52:36, coderate：R3_4, frequency：1550 MHz，symbol_rate：08000，马赛克检测结果：False
+current_time:2020-05-11 16:53:54, coderate：R3_4, frequency：1550 MHz，symbol_rate：09000，马赛克检测结果：True

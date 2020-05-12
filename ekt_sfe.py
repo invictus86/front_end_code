@@ -300,6 +300,7 @@ class Ektsfe(object):
         self.specan.write('DVBS:CONS {}'.format(constellation_type))
         logging.info('DVBS:CONS {}'.format(constellation_type))
         time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_coding_rolloff(self, rolloff_num):
@@ -385,6 +386,7 @@ class Ektsfe(object):
         self.specan.write('SYST:PRES')
         logging.info(r'SYST:PRES')
         time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def query_opc(self):
@@ -401,7 +403,7 @@ class Ektsfe(object):
         self.specan.write('*RST;*CLS')
         time.sleep(1)
         # self.specan.close()
-        # del self.specan
+        del self.specan
 
     def set_cmd(self):
         """
