@@ -16,11 +16,16 @@ FREQUENCY_1550 = "1550"
 LEVEL_50 = "-50 dBm"
 
 SYMBOL_RATE_5M = ["5.000000e6", "05002"]
+SYMBOL_RATE_5M_ = ["5.000000e6", "04998"]
 SYMBOL_RATE_27_5M = ["27.500000e6", "27503"]
+SYMBOL_RATE_27_5M_ = ["27.500000e6", "27497"]
 SYMBOL_RATE_45M = ["45.000000e6", "44995"]
+SYMBOL_RATE_45M_ = ["45.000000e6", "45005"]
 
 dict_config_data = {
-    "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
+    # "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
+    "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_5M_, SYMBOL_RATE_27_5M, SYMBOL_RATE_27_5M_, SYMBOL_RATE_45M,
+                    SYMBOL_RATE_45M_]}
 
 
 def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
