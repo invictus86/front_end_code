@@ -83,7 +83,7 @@ if __name__ == '__main__':
     specan.set_digitaltv_input_source_dvbs2("TSPLayer")
     time.sleep(1)
     specan = Ektsfu(sfu_ip)
-    specan.set_digitaltv_coding_constellation_dvbs2("MODULATION_8PSK")
+    specan.set_digitaltv_coding_constellation_dvbs2(MODULATION_8PSK)
     time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_rf("ON")
