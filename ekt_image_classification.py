@@ -28,7 +28,7 @@ def image_classification(list_image):
     if dict_result.get("mosaic") == None or dict_result.get("mosaic") <= 2:
         mosaic_result = False
     else:
-        print dict_result.get("mosaic")
+        # print dict_result.get("mosaic")
         mosaic_result = True
     return dict_result, mosaic_result
     # return dict_result

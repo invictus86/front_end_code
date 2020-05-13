@@ -433,7 +433,7 @@ def _test_code():
     # host = '127.0.0.1'
     # port = 8900
     specan = Ektsfe(sfu_ip)
-    # specan.set_frequency_frequency_frequency("101 MHz")
+    specan.set_frequency_frequency_frequency("101.001 MHz")
     # specan.set_frequency_frequency_channel("4")
     # specan.set_frequency_settings_knobstepstate("DEC")
     # specan.set_frequency_settings_increment("50 kHz")
@@ -461,7 +461,7 @@ def _test_code():
     # specan.set_level_settings_increment("2.5")
     # specan.set_cmd()
     # specan.clean_reset()
-    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+    # specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
     # specan.query_opc()
 
 

@@ -6,24 +6,21 @@ import time
 import json
 import ekt_net
 from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFE import iterate_to_find_threshold
+from threshold_algorithm_SFE import iterate_to_find_threshold, mosaic_algorithm
 import ekt_cfg
 import datetime
 
+CODE_RATE_LIST = ["R1_2", "R2_3", "R3_4", "R5_6", "R7_8"]
 
-SYMBOL_RATE_5M = ["5.000000e6", "05000"]
-SYMBOL_RATE_10M = ["10.000000e6", "10000"]
-SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
-SYMBOL_RATE_45M = ["45.000000e6", "45000"]
+MODULATION_QPSK = "S4"
+LEVEL_50 = "-50 dBm"
 
-SYMBOL_TATE_LIST = [str(i) + ".000000e6" for i in range(5, 46)]
-FREQUENCY_LIST = [str(i) + " MHz" for i in range(950, 2150, 20)]
-FREQUENCY_LIST.append("2147 MHz")
+SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000", [["950", "951"], ["1550", "1551"], ["2150", "2149"]]]
+SYMBOL_RATE_FREQUENCY_27_5M = ["27.500000e6", "27500", [["950", "952.75"], ["1550", "1552.75"], ["2150", "2147.25"]]]
+SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000",  [["950", "954.5"], ["1550", "1554.5"], ["2150", "2145.5"]]]
 
 dict_config_data = {
-    "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
-    # "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
-
+    "SYMBOL_RATE_FREQUENCY": [SYMBOL_RATE_FREQUENCY_5M, SYMBOL_RATE_FREQUENCY_27_5M, SYMBOL_RATE_FREQUENCY_45M]}
 
 
 def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
@@ -61,42 +58,39 @@ if __name__ == '__main__':
     specan.clean_reset()
     specan = ekt_sfe.Ektsfe(sfe_ip)
     specan.preset_instrument()
-    # specan.timeout = 2000
     specan = ekt_sfe.Ektsfe(sfe_ip)
     specan.set_digitaltv_input_source("TSPL")
     specan = ekt_sfe.Ektsfe(sfe_ip)
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan.set_level_level_level(LEVEL_50)
 
     dict_data = read_ekt_config_data("./ekt_config.json")
-    DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
-    DVBS_QPSK_CODE_RATE_CN = dict_data.get("DVBS_QPSK_CODE_RATE_CN")
+    # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
+    # DVBS_QPSK_CODE_RATE_CN = dict_data.get("DVBS_QPSK_CODE_RATE_CN")
     # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
-    for code_rate_cn in DVBS_QPSK_CODE_RATE_CN:
+    for code_rate_cn in CODE_RATE_LIST:
         del specan
         specan = ekt_sfe.Ektsfe(sfe_ip)
-        specan.set_digitaltv_coding_coderate(code_rate_cn[0])
+        specan.set_digitaltv_coding_coderate(code_rate_cn)
         time.sleep(1)
-        print str(code_rate_cn[1])
-        for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
+        for SYMBOL_RATE_FREQUENCY in dict_config_data.get("SYMBOL_RATE_FREQUENCY"):
             del specan
             specan = ekt_sfe.Ektsfe(sfe_ip)
-            specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE[0])
-            for FREQUENCY_LEVEL_OFFSET in DVBS_S2_FREQUENCY_LEVEL_OFFSET:
+            specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE_FREQUENCY[0])
+            for FREQUENCY_OFFSET in SYMBOL_RATE_FREQUENCY[2]:
                 del specan
                 specan = ekt_sfe.Ektsfe(sfe_ip)
-                specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
-                specan = ekt_sfe.Ektsfe(sfe_ip)
-                specan.set_level_level_level("-50 dBm")
-
+                specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
                 net = ekt_net.EktNetClient('192.168.1.24', 9999)
                 # print str(FREQUENCY_LEVEL_OFFSET[0])
                 # print type(str(FREQUENCY_LEVEL_OFFSET[0]))
-                net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
+                net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": FREQUENCY_OFFSET[0]}))
                 time.sleep(1)
                 del net
                 net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
+                net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE_FREQUENCY[1])}))
                 time.sleep(1)
                 del net
 
@@ -113,30 +107,32 @@ if __name__ == '__main__':
                 elif lock_state == "0":
                     write_test_result("./test_result_sfe.txt",
                                       ("current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "锁台失败") + "\n"))
+                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
+                                          FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], "锁台失败") + "\n"))
                     continue
                 else:
                     write_test_result("./test_result_sfe.txt", ("出错了" + "\n"))
                     continue
                 try:
-                    res = iterate_to_find_threshold(sfe_ip, -50, -100)
-                    print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                        str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
+                    start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50 dBm")
+                    print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
+                        FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], start_data_result.get("detect_mosic_result"))
                     write_test_result("./test_result_sfe.txt",
-                                      "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
+                                      "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
+                                          FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
+                                          start_data_result.get("detect_mosic_result")) + "\n")
                 except:
-                    res = iterate_to_find_threshold(sfe_ip, -50, -100)
-                    print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                        str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
+                    start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50 dBm")
+                    print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
+                        FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], start_data_result.get("detect_mosic_result"))
                     write_test_result("./test_result_sfe.txt",
-                                      "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
+                                      "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
+                                          FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
+                                          start_data_result.get("detect_mosic_result")) + "\n")
 
                 """
                 进行机顶盒的频率修改或其他参数的修改

@@ -139,7 +139,7 @@ if __name__ == '__main__':
             pass
         elif lock_state == "0":
             write_test_result("./test_result_sfu.txt",
-                              ("current_time:{}, coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+                              ("current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                                   FREQUENCY_1550, str(SYMBOL_RATE[1]), "锁台失败") + "\n"))
             continue
@@ -149,23 +149,23 @@ if __name__ == '__main__':
         try:
             start_data_result = mosaic_algorithm(sfu_ip, "-65 dBm", "-50 dBm")
             # res = iterate_to_find_threshold(sfu_ip, -50, -100)
-            print "current_time:{}, coderate：{}, frequency：{}，symbol_rate：{}，马赛克检测结果：{}".format(
+            print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                 FREQUENCY_1550, str(SYMBOL_RATE[1]), start_data_result.get("detect_mosic_result"))
             write_test_result("./test_result_sfu.txt",
-                              "current_time:{}, coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+                              "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                                   FREQUENCY_1550, str(SYMBOL_RATE[1]),
                                   start_data_result.get("detect_mosic_result")) + "\n")
         except:
             start_data_result = mosaic_algorithm(sfu_ip, "-65 dBm", "-50 dBm")
-            print "current_time:{},  coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+            print "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                 FREQUENCY_1550, str(SYMBOL_RATE[1]), start_data_result.get("detect_mosic_result"))
             write_test_result("./test_result_sfu.txt",
-                              "current_time:{},  coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+                              "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
-                                  FREQUENCY_1550, str(SYMBOL_RATE[1]),
+                                  str(FREQUENCY_1550), str(SYMBOL_RATE[1]),
                                   start_data_result.get("detect_mosic_result")) + "\n")
 
         """

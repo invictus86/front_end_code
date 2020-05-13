@@ -254,7 +254,7 @@ if __name__ == '__main__':
                     pass
                 elif lock_state == "0":
                     write_test_result("./test_result_sfu.txt",
-                                      ("current_time:{}, coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+                                      ("current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "锁台失败") + "\n"))
                     continue
@@ -263,20 +263,20 @@ if __name__ == '__main__':
                     continue
                 try:
                     res = iterate_to_find_threshold(sfu_ip, -50, -100)
-                    print "current_time:{}, coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+                    print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
                     write_test_result("./test_result_sfu.txt",
-                                      "current_time:{}, coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+                                      "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
                 except:
                     res = iterate_to_find_threshold(sfu_ip, -50, -100)
-                    print "current_time:{},  coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+                    print "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
                     write_test_result("./test_result_sfu.txt",
-                                      "current_time:{},  coderate：{}, frequency：{}，symbol_rate：{}，{}".format(
+                                      "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
 

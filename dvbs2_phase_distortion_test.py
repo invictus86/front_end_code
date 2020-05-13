@@ -11,6 +11,7 @@ from threshold_algorithm_SFU import iterate_to_find_threshold, mosaic_algorithm
 import ekt_cfg
 import datetime
 
+
 CODE_RATE_3_4 = "R3_4"
 MODULATION_8PSK = "S8"
 FREQUENCY_1550 = "1550"
@@ -103,7 +104,7 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_offset(str("-4.1"))
     specan = Ektsfu(sfu_ip)
-    specan.set_level_level_level("dBm", LEVEL_65)
+    specan.set_level_level_level("dBm", LEVEL_45)
 
     for SYMBOL_RATE in SYMBOL_RATE_LIST:
         specan = Ektsfu(sfu_ip)
