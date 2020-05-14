@@ -93,3 +93,13 @@ def read_ekt_config_data(file_path):
     with open(file_path, 'r') as f:
         dict_data = json.load(f, "utf-8")
         return dict_data
+
+
+def generate_symbol_rate_list():
+    SYMBOL_TATE_LIST = []
+    for i in range(5, 46):
+        if i < 10:
+            SYMBOL_TATE_LIST.append([str(i) + ".000000e6", "0{}000".format(i)])
+        else:
+            SYMBOL_TATE_LIST.append([str(i) + ".000000e6", "{}000".format(i)])
+    return SYMBOL_TATE_LIST

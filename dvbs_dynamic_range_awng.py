@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import ekt_sfe
 import time
 import json
 import ekt_net
-from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFE import iterate_to_find_threshold
 import ekt_cfg
 import datetime
+from ekt_sfe import Ektsfe
+from ekt_stb_tester import stb_tester_detect_motion
+from threshold_algorithm_SFE import iterate_to_find_threshold
 from ekt_utils import write_test_result, read_ekt_config_data
 
 SYMBOL_RATE_5M = ["5.000000e6", "05000"]
@@ -31,14 +31,14 @@ if __name__ == '__main__':
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
     sfe_ip = "192.168.1.47"
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.clean_reset()
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.preset_instrument()
     # specan.timeout = 2000
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_source("TSPL")
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
 
     dict_data = read_ekt_config_data("./ekt_config.json")
@@ -48,19 +48,19 @@ if __name__ == '__main__':
 
     for code_rate_cn in DVBS_QPSK_CODE_RATE_CN:
         del specan
-        specan = ekt_sfe.Ektsfe(sfe_ip)
+        specan = Ektsfe(sfe_ip)
         specan.set_digitaltv_coding_coderate(code_rate_cn[0])
         time.sleep(1)
         print str(code_rate_cn[1])
         for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
             del specan
-            specan = ekt_sfe.Ektsfe(sfe_ip)
+            specan = Ektsfe(sfe_ip)
             specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE[0])
             for FREQUENCY_LEVEL_OFFSET in DVBS_S2_FREQUENCY_LEVEL_OFFSET:
                 del specan
-                specan = ekt_sfe.Ektsfe(sfe_ip)
+                specan = Ektsfe(sfe_ip)
                 specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
-                specan = ekt_sfe.Ektsfe(sfe_ip)
+                specan = Ektsfe(sfe_ip)
                 specan.set_level_level_level("-50 dBm")
 
                 net = ekt_net.EktNetClient('192.168.1.24', 9999)

@@ -1,39 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import ekt_sfe
 import time
 import json
 import ekt_net
-from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFE import mosaic_algorithm
-
 import ekt_cfg
 import datetime
-from ekt_utils import write_test_result, read_ekt_config_data
+from ekt_sfe import Ektsfe
+from ekt_stb_tester import stb_tester_detect_motion
+from threshold_algorithm_SFE import mosaic_algorithm
+from ekt_utils import write_test_result, read_ekt_config_data, generate_symbol_rate_list
 
 CODE_RATE_3_4 = "R3_4"
 MODULATION_QPSK = "S4"
 FREQUENCY_1550 = "1550"
 LEVEL_70 = "-70"
 
-SYMBOL_RATE_5M = ["5.000000e6", "05000"]
-SYMBOL_RATE_10M = ["10.000000e6", "10000"]
-SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
-SYMBOL_RATE_45M = ["45.000000e6", "45000"]
-
-SYMBOL_TATE_LIST = []
-
-
-def generate_symbol_rate_list():
-    for i in range(5, 46):
-        if i < 10:
-            SYMBOL_TATE_LIST.append([str(i) + ".000000e6", "0{}000".format(i)])
-        else:
-            SYMBOL_TATE_LIST.append([str(i) + ".000000e6", "{}000".format(i)])
-
-
-generate_symbol_rate_list()
+SYMBOL_RATE_LIST = generate_symbol_rate_list()
 
 if __name__ == '__main__':
     """
@@ -47,14 +30,14 @@ if __name__ == '__main__':
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
     sfe_ip = "192.168.1.47"
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.clean_reset()
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.preset_instrument()
     # specan.timeout = 2000
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_source("TSPL")
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
 
     dict_data = read_ekt_config_data("./ekt_config.json")
@@ -65,18 +48,18 @@ if __name__ == '__main__':
 
     # for code_rate_cn in DVBS_QPSK_CODE_RATE_CN:
     #     del specan
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_coding_constellation("S4")
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_coding_coderate(CODE_RATE_3_4)
     time.sleep(1)
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_frequency_frequency_frequency(str(FREQUENCY_1550) + "MHz")
     # specan.set_frequency_frequency_frequency(FREQUENCY_1550)
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_level_level_level(LEVEL_70 + " dBm")
-    for SYMBOL_RATE in SYMBOL_TATE_LIST:
-        specan = ekt_sfe.Ektsfe(sfe_ip)
+    for SYMBOL_RATE in SYMBOL_RATE_LIST:
+        specan = Ektsfe(sfe_ip)
         specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE[0])
 
         net = ekt_net.EktNetClient('192.168.1.24', 9999)

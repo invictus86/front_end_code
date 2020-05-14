@@ -3,12 +3,12 @@
 
 import time
 import json
-from ekt_sfu import Ektsfu
 import ekt_net
-from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFU import iterate_to_find_threshold
 import ekt_cfg
 import datetime
+from ekt_sfu import Ektsfu
+from ekt_stb_tester import stb_tester_detect_motion
+from threshold_algorithm_SFU import iterate_to_find_threshold
 from ekt_utils import write_test_result, read_ekt_config_data
 
 AWGN_ON = "ON"

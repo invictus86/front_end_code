@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from ekt_sfu import Ektsfu
 import time
 import json
 import ekt_net
-from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFU import mosaic_algorithm
-
 import ekt_cfg
 import datetime
+from ekt_sfu import Ektsfu
+from ekt_stb_tester import stb_tester_detect_motion
+from threshold_algorithm_SFU import mosaic_algorithm
 from ekt_utils import write_test_result, read_ekt_config_data
 
 MODULATION_8PSK = "S8"

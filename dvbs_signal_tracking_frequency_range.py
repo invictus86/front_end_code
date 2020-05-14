@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import ekt_sfe
 import time
 import json
 import ekt_net
-from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFE import mosaic_algorithm
 import ekt_cfg
 import datetime
+from ekt_sfe import Ektsfe
+from ekt_stb_tester import stb_tester_detect_motion
+from threshold_algorithm_SFE import mosaic_algorithm
 from ekt_utils import write_test_result, read_ekt_config_data
 
 CODE_RATE_LIST = ["R1_2", "R2_3", "R3_4", "R5_6", "R7_8"]
@@ -35,15 +35,15 @@ if __name__ == '__main__':
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
     sfe_ip = "192.168.1.47"
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.clean_reset()
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.preset_instrument()
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_source("TSPL")
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
-    specan = ekt_sfe.Ektsfe(sfe_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_level_level_level(LEVEL_50 + " dBm")
 
     dict_data = read_ekt_config_data("./ekt_config.json")
@@ -53,16 +53,16 @@ if __name__ == '__main__':
 
     for code_rate_cn in CODE_RATE_LIST:
         del specan
-        specan = ekt_sfe.Ektsfe(sfe_ip)
+        specan = Ektsfe(sfe_ip)
         specan.set_digitaltv_coding_coderate(code_rate_cn)
         time.sleep(1)
         for SYMBOL_RATE_FREQUENCY in dict_config_data.get("SYMBOL_RATE_FREQUENCY"):
             del specan
-            specan = ekt_sfe.Ektsfe(sfe_ip)
+            specan = Ektsfe(sfe_ip)
             specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE_FREQUENCY[0])
             for FREQUENCY_OFFSET in SYMBOL_RATE_FREQUENCY[2]:
                 del specan
-                specan = ekt_sfe.Ektsfe(sfe_ip)
+                specan = Ektsfe(sfe_ip)
                 specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[0] + "MHz")
                 net = ekt_net.EktNetClient('192.168.1.24', 9999)
                 # print str(FREQUENCY_LEVEL_OFFSET[0])
@@ -96,7 +96,7 @@ if __name__ == '__main__':
                     continue
                 try:
                     mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
-                    specan = ekt_sfe.Ektsfe(sfe_ip)
+                    specan = Ektsfe(sfe_ip)
                     specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
                     start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
                     print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
@@ -109,7 +109,7 @@ if __name__ == '__main__':
                                           start_data_result.get("detect_mosic_result")) + "\n")
                 except:
                     mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
-                    specan = ekt_sfe.Ektsfe(sfe_ip)
+                    specan = Ektsfe(sfe_ip)
                     specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
                     start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
                     print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(

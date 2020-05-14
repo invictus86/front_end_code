@@ -1,16 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from ekt_sfu import Ektsfu
 import time
 import json
 import ekt_net
-from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFU import mosaic_algorithm
-
 import ekt_cfg
 import datetime
-from ekt_utils import write_test_result, read_ekt_config_data
+from ekt_sfu import Ektsfu
+from ekt_stb_tester import stb_tester_detect_motion
+from threshold_algorithm_SFU import mosaic_algorithm
+from ekt_utils import write_test_result, read_ekt_config_data, generate_symbol_rate_list
 
 CODE_RATE_3_4 = "R3_4"
 MODULATION_8PSK = "S8"
@@ -18,18 +17,7 @@ FREQUENCY_1550 = "1550"
 LEVEL_65 = "-65"
 CN = "8.9"
 
-SYMBOL_RATE_LIST = []
-
-
-def generate_symbol_rate_list():
-    for i in range(5, 46):
-        if i < 10:
-            SYMBOL_RATE_LIST.append([str(i) + ".000000e6", "0{}000".format(i)])
-        else:
-            SYMBOL_RATE_LIST.append([str(i) + ".000000e6", "{}000".format(i)])
-
-
-generate_symbol_rate_list()
+SYMBOL_RATE_LIST = generate_symbol_rate_list()
 
 if __name__ == '__main__':
     """
