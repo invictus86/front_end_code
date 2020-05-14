@@ -93,7 +93,7 @@ if __name__ == '__main__':
                     write_test_result("./../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
                     continue
                 try:
-                    res = iterate_to_find_threshold(sfe_ip, -50, -100)
+                    res = iterate_to_find_threshold(sfe_ip, -50, -100, level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
                     print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
@@ -102,7 +102,7 @@ if __name__ == '__main__':
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
                 except:
-                    res = iterate_to_find_threshold(sfe_ip, -50, -100)
+                    res = iterate_to_find_threshold(sfe_ip, -50, -100, level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
                     print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)

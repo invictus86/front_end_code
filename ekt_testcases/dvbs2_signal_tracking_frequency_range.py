@@ -8,14 +8,23 @@ import datetime
 from ekt_lib.ekt_sfu import Ektsfu
 from ekt_lib.ekt_stb_tester import stb_tester_detect_motion
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, find_level_offset_by_frequency
 
 MODULATION_8PSK = "S8"
-LEVEL_50 = "-50"
 
-SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000", [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
-SYMBOL_RATE_FREQUENCY_27_5M = ["27.500000e6", "27500", [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
-SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000", [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
+LEVEL_OFFSET_950 = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 950)
+LEVEL_50_950 = str("%.2f" % ((-50) - LEVEL_OFFSET_950))
+LEVEL_OFFSET_1550 = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 1550)
+LEVEL_50_1550 = str("%.2f" % ((-50) - LEVEL_OFFSET_1550))
+LEVEL_OFFSET_2150 = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 2150)
+LEVEL_50_2150 = str("%.2f" % ((-50) - LEVEL_OFFSET_2150))
+
+SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000", [["950", "952", LEVEL_50_950], ["1550", "1552", LEVEL_50_1550],
+                                                    ["2150", "2148", LEVEL_50_2150]]]
+SYMBOL_RATE_FREQUENCY_27_5M = ["27.500000e6", "27500", [["950", "952", LEVEL_50_950], ["1550", "1552", LEVEL_50_1550],
+                                                        ["2150", "2148", LEVEL_50_2150]]]
+SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000", [["950", "952", LEVEL_50_950], ["1550", "1552", LEVEL_50_1550],
+                                                      ["2150", "2148", LEVEL_50_2150]]]
 
 dict_config_data = {
     "SYMBOL_RATE_FREQUENCY": [SYMBOL_RATE_FREQUENCY_5M, SYMBOL_RATE_FREQUENCY_27_5M, SYMBOL_RATE_FREQUENCY_45M]}
@@ -72,8 +81,6 @@ if __name__ == '__main__':
             time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_level_level_offset(str("-4.1"))
-            specan = Ektsfu(sfu_ip)
-            specan.set_level_level_level("dBm", LEVEL_50)
 
             for SYMBOL_RATE_FREQUENCY in dict_config_data.get("SYMBOL_RATE_FREQUENCY"):
                 specan = Ektsfu(sfu_ip)
@@ -81,6 +88,8 @@ if __name__ == '__main__':
                 for FREQUENCY_OFFSET in SYMBOL_RATE_FREQUENCY[2]:
                     specan = Ektsfu(sfu_ip)
                     specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[0] + "MHz")
+                    specan = Ektsfu(sfu_ip)
+                    specan.set_level_level_level("dBm", FREQUENCY_OFFSET[2])
                     net = ekt_net.EktNetClient('192.168.1.24', 9999)
                     net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": FREQUENCY_OFFSET[0]}))
                     time.sleep(1)
@@ -114,10 +123,10 @@ if __name__ == '__main__':
                         write_test_result("../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
                         continue
                     try:
-                        mosaic_algorithm(sfu_ip, "-50", "-50")
+                        mosaic_algorithm(sfu_ip, FREQUENCY_OFFSET[2], "-50")
                         specan = Ektsfu(sfu_ip)
                         specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
-                        start_data_result = mosaic_algorithm(sfu_ip, "-50", "-50")
+                        start_data_result = mosaic_algorithm(sfu_ip, FREQUENCY_OFFSET[2], "-50")
                         print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                             FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], start_data_result.get("detect_mosic_result"))
@@ -127,10 +136,10 @@ if __name__ == '__main__':
                                               FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
                                               start_data_result.get("detect_mosic_result")) + "\n")
                     except:
-                        mosaic_algorithm(sfu_ip, "-50", "-50")
+                        mosaic_algorithm(sfu_ip, FREQUENCY_OFFSET[2], "-50")
                         specan = Ektsfu(sfu_ip)
                         specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
-                        start_data_result = mosaic_algorithm(sfu_ip, "-50", "-50")
+                        start_data_result = mosaic_algorithm(sfu_ip, FREQUENCY_OFFSET[2], "-50")
                         print "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                             FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], start_data_result.get("detect_mosic_result"))

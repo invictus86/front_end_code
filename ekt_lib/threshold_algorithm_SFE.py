@@ -77,7 +77,7 @@ def threshold_algorithm(sfe_ip, start_data, end_data):
                 "step_range": [start_data, step_data]}
 
 
-def iterate_to_find_threshold(sfe_ip, start_num, end_num):
+def iterate_to_find_threshold(sfe_ip, start_num, end_num, level_offset="0"):
     start_data_result = mosaic_algorithm(sfe_ip, start_num, start_num)
     end_data_result = mosaic_algorithm(sfe_ip, end_num, start_num)
     if start_data_result.get("detect_mosic_result") is False and end_data_result.get("detect_mosic_result") is True:
@@ -90,17 +90,11 @@ def iterate_to_find_threshold(sfe_ip, start_num, end_num):
             dict_threshold_algorithm_result = threshold_algorithm(sfe_ip, start_num, end_num)
             [start_num, end_num] = dict_threshold_algorithm_result.get("step_range")
         elif start_num - end_num - ekt_cfg.TEST_LEVLE_PRECISION < 0.000001:
-            print "阈值为: {}".format(start_num)
-            return "阈值为: {}".format(start_num)
+            print "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
+            return "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
         else:
             print " start_num - end_num 小于 0.1"
             return start_num, end_num
-
-
-def jest_test(net, num):
-    specan = Ektsfe(net)
-    specan.set_level_level_level(str(num) + " dBm")
-    time.sleep(5)
 
 
 if __name__ == '__main__':

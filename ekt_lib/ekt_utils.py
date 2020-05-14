@@ -80,10 +80,6 @@ def set_dvbs2_fixed_parameter(specan):
     specan.set_noise_settings_receiver("7.5e6")
 
 
-def find_level_offset_by_frequency(frequency_offset_type, frequency):
-    pass
-
-
 def write_test_result(file_path, content):
     with open(file_path, "a") as f:
         f.write(content)
@@ -103,3 +99,16 @@ def generate_symbol_rate_list():
         else:
             SYMBOL_TATE_LIST.append([str(i) + ".000000e6", "{}000".format(i)])
     return SYMBOL_TATE_LIST
+
+
+def find_level_offset_by_frequency(frequency_offset_type, frequency):
+    dict_data = read_ekt_config_data("../ekt_lib/ekt_config.json")
+    FREQUENCY_LEVEL_OFFSET_LIST = dict_data.get(frequency_offset_type)
+    for FREQUENCY_LEVEL_OFFSET in FREQUENCY_LEVEL_OFFSET_LIST:
+        if FREQUENCY_LEVEL_OFFSET[0] == frequency:
+            return FREQUENCY_LEVEL_OFFSET[1]
+
+
+if __name__ == '__main__':
+    result = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 1310)
+    print result

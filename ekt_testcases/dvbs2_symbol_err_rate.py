@@ -8,11 +8,12 @@ import datetime
 from ekt_lib.ekt_sfu import Ektsfu
 from ekt_lib.ekt_stb_tester import stb_tester_detect_motion
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, find_level_offset_by_frequency
 
 MODULATION_8PSK = "S8"
 FREQUENCY_1550 = "1550"
-LEVEL_50 = "-50"
+LEVEL_OFFSET = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", int(FREQUENCY_1550))
+LEVEL_50 = str("%.2f" % ((-50) - LEVEL_OFFSET))
 
 SYMBOL_RATE_5M = ["5.000000e6", "05002"]
 SYMBOL_RATE_5M_ = ["5.000000e6", "04998"]

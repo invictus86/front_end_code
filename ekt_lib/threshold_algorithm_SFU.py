@@ -99,12 +99,6 @@ def iterate_to_find_threshold(sfu_ip, start_num, end_num, level_offset="0"):
             return start_num, end_num
 
 
-def jest_test(net, num):
-    specan = Ektsfu(net)
-    specan.set_level_level_level("dBm", str(num))
-    time.sleep(5)
-
-
 if __name__ == '__main__':
     sfu_ip = "192.168.1.50"
     # specan = Ektsfu(net)
