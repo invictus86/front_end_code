@@ -378,3 +378,13 @@ current_time:2020-05-13 11:09:50, coderate：R1_2, frequency：954.5 MHz，symbo
 current_time:2020-05-13 11:10:51, coderate：R1_2, frequency：1554.5 MHz，symbol_rate：45000 Ksym/s，锁台失败
 current_time:2020-05-13 11:11:52, coderate：R1_2, frequency：2145.5 MHz，symbol_rate：45000 Ksym/s，锁台失败
 current_time:2020-05-13 11:12:57, coderate：R2_3, frequency：951 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-14 14:09:37, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-14 14:11:12, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-14 14:12:11, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-14 14:13:09, coderate：R1_2, frequency：990 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-14 14:14:07, coderate：R1_2, frequency：1010 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-14 14:15:06, coderate：R1_2, frequency：1030 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-14 14:23:25, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-14 14:24:26, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-14 14:26:02, coderate：R1_2, frequency：990 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+current_time:2020-05-14 14:28:39, coderate：R1_2, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -62.5

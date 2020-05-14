@@ -6,7 +6,7 @@ import json
 from ekt_sfu import Ektsfu
 import ekt_net
 from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFU import iterate_to_find_threshold, mosaic_algorithm
+from threshold_algorithm_SFU import mosaic_algorithm
 import ekt_cfg
 import datetime
 
@@ -24,14 +24,6 @@ SYMBOL_RATE_45M_ = ["45.000000e6", "45004"]
 dict_config_data = {
     "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_5M_, SYMBOL_RATE_27_5M, SYMBOL_RATE_27_5M_, SYMBOL_RATE_45M,
                     SYMBOL_RATE_45M_]}
-
-
-def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
-    specan.set_digitaltv_coding_constellation(modulation)
-    specan.set_digitaltv_coding_coderate(code_rate)
-    specan.set_digitaltv_coding_symbolrate(symbol_rate)
-    specan.set_frequency_frequency_frequency(frequency)
-    specan.set_level_level_level(input_signal_level)
 
 
 def write_test_result(file_path, content):
@@ -81,6 +73,9 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_awgn("ON")
     time.sleep(1)
+    specan.set_impairments_modulator("OFF")
+    specan = Ektsfu(sfu_ip)
+    specan.set_impairments_baseband("OFF")
 
     dict_data = read_ekt_config_data("./ekt_config.json")
     # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
@@ -136,7 +131,6 @@ if __name__ == '__main__':
                 continue
             try:
                 start_data_result = mosaic_algorithm(sfu_ip, "-50", "-50")
-                # res = iterate_to_find_threshold(sfu_ip, -50, -100)
                 print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                     FREQUENCY_1550, str(SYMBOL_RATE[1]), start_data_result.get("detect_mosic_result"))

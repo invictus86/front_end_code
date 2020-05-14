@@ -11,11 +11,10 @@ import ekt_cfg
 import json
 
 logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
-                    filename='front_end_test.log',
+                    filename='sfe.log',
                     filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志
                     # a是追加模式，默认如果不写的话，就是追加模式
-                    format=
-                    '%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
                     # 日志格式
                     )
 
@@ -41,9 +40,7 @@ def mosaic_algorithm(sfe_ip, test_level_data, can_play_data):
         specan.set_level_level_level(str(can_play_data) + " dBm")
         return mosaic_algorithm_result
     elif res == True:
-        # num = 50
-        num = 10
-        list_image = capture_image(num, "192.168.1.154")
+        list_image = capture_image(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
         specan = Ektsfe(sfe_ip)
         specan.set_level_level_level(str(can_play_data) + " dBm")
         dict_result, mosaic_result = image_classification(list_image)
@@ -86,33 +83,15 @@ def iterate_to_find_threshold(sfe_ip, start_num, end_num):
     if start_data_result.get("detect_mosic_result") is False and end_data_result.get("detect_mosic_result") is True:
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False,
-                           "msg": "初始值处于马赛克阈值外"})
+        return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外"}, ensure_ascii=False)
     while True:
-        # if start_num - end_num >= 0.3:
-        if start_num - end_num >= 10:
+        if start_num - end_num >= ekt_cfg.TEST_LEVLE_PRECISION:
             print "start_num:{},  end_num:{}".format(start_num, end_num)
             dict_threshold_algorithm_result = threshold_algorithm(sfe_ip, start_num, end_num)
             [start_num, end_num] = dict_threshold_algorithm_result.get("step_range")
-        # elif start_num - end_num - 0.1 < 0.000001:
-        # elif start_num - end_num - 0.3 < 0.000001:
-        elif start_num - end_num - 10 < 0.000001:
+        elif start_num - end_num - ekt_cfg.TEST_LEVLE_PRECISION < 0.000001:
             print "阈值为: {}".format(start_num)
             return "阈值为: {}".format(start_num)
-            # print "*" * 50
-            # start_num_resutl = mosaic_algorithm(net, start_num, start_num)
-            # end_num_resutl = mosaic_algorithm(net, end_num, start_num)
-            # if start_num_resutl.get("detect_mosic_result") is False and end_num_resutl.get(
-            #         "detect_mosic_result") is True:
-            #     print "阈值为: {}".format(start_num)
-            #     return start_num
-            # elif start_num_resutl.get("detect_mosic_result") is True and end_num_resutl.get(
-            #         "detect_mosic_result") is False:
-            #     print "阈值为: {}".format(end_num)
-            #     return end_num
-            # else:
-            #     print "阈值错误"
-            #     break
         else:
             print " start_num - end_num 小于 0.1"
             return start_num, end_num

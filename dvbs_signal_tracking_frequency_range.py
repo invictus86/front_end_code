@@ -17,18 +17,10 @@ LEVEL_50 = "-50"
 
 SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000", [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
 SYMBOL_RATE_FREQUENCY_27_5M = ["27.500000e6", "27500", [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
-SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000",  [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
+SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000", [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
 
 dict_config_data = {
     "SYMBOL_RATE_FREQUENCY": [SYMBOL_RATE_FREQUENCY_5M, SYMBOL_RATE_FREQUENCY_27_5M, SYMBOL_RATE_FREQUENCY_45M]}
-
-
-def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
-    specan.set_digitaltv_coding_constellation(modulation)
-    specan.set_digitaltv_coding_coderate(code_rate)
-    specan.set_digitaltv_coding_symbolrate(symbol_rate)
-    specan.set_frequency_frequency_frequency(frequency)
-    specan.set_level_level_level(input_signal_level)
 
 
 def write_test_result(file_path, content):

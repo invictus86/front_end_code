@@ -306,7 +306,8 @@ class Ektsfu(object):
         """
         self.specan.write('OUTP {}'.format(rf_type))
         logging.info('OUTP {}'.format(rf_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_level_level_offset(self, offset):
@@ -421,6 +422,7 @@ class Ektsfu(object):
         self.specan.write('DM:SOUR {}'.format(source_type))
         logging.info('DM:SOUR {}'.format(source_type))
         time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_modulation_modulation_standard_atv(self, standard_type):
@@ -477,7 +479,8 @@ class Ektsfu(object):
         """
         self.specan.write('DM:TRAN {}'.format(standard_type))
         logging.info('DM:TRAN {}'.format(standard_type))
-        time.sleep(3)
+        # time.sleep(3)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_modulation_modulation_spectrum(self, spectrum_type):
@@ -594,7 +597,8 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:SOUR {}'.format(source_type))
         logging.info('DVBS2:SOUR {}'.format(source_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_coding_symbolrate_dvbs2(self, symbol_rate):
@@ -625,7 +629,8 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:CONS {}'.format(constellation_type))
         logging.info('DVBS2:CONS {}'.format(constellation_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_coding_fecframe_dvbs2(self, fecframe_type):
@@ -859,8 +864,44 @@ class Ektsfu(object):
         """
         self.specan.write('IQ:IMP {}'.format(modulator_type))
         logging.info('IQ:IMP {}'.format(modulator_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
+
+    def set_impairments_modulator_quadrature(self, quadrature_num):
+        """
+        Sets the quadrature offset of I/Q modulation.
+            Range:         -10.0  to  10.0 deg
+            Increment:     0.02 deg
+            *RST:          0 deg
+            Default unit:  deg
+        example :
+            IQ:IMP:QUAD:ANGL -5DEG
+        :return:
+        """
+        self.specan.write('IQ:IMP:QUAD:ANGL {}DEG'.format(quadrature_num))
+        logging.info('IQ:IMP:QUAD:ANGL {}DEG'.format(quadrature_num))
+        # time.sleep(1)
+        self.specan.query('*OPC?')
+        del self.specan
+
+    def set_impairments_modulator_amplitude(self, amplitude_num):
+        """
+        Sets the ratio of I gain to Q gain (gain imbalance).
+            Range:         -10  to  +10%
+            Increment:      0.05%
+            *RST:           0%
+            Default unit:   %
+        example :
+            IQ:IMP:IQR 3 PCT
+        :return:
+        """
+        self.specan.write('IQ:IMP:IQR {} PCT'.format(amplitude_num))
+        logging.info('IQ:IMP:IQR {} PCT'.format(amplitude_num))
+        # time.sleep(1)
+        self.specan.query('*OPC?')
+        del self.specan
+
 
     def set_impairments_baseband(self, baseband_type):
         """
@@ -873,7 +914,42 @@ class Ektsfu(object):
         """
         self.specan.write('BB:IMP {}'.format(baseband_type))
         logging.info('BB:IMP {}'.format(baseband_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
+        del self.specan
+
+    def set_impairments_baseband_quadrature(self, quadrature_num):
+        """
+        Sets the quadrature offset of I/Q modulation.
+            Range:           -10.0  to  10.0 deg
+            Increment:       0.02 deg
+            *RST:            0 deg
+            Default unit:    deg
+        example :
+            BB:IMP:QUAD:ANGL -5DEG
+        :return:
+        """
+        self.specan.write('BB:IMP:QUAD:ANGL {}DEG'.format(quadrature_num))
+        logging.info('BB:IMP:QUAD:ANGL {}DEG'.format(quadrature_num))
+        # time.sleep(1)
+        self.specan.query('*OPC?')
+        del self.specan
+
+    def set_impairments_baseband_amplitude(self, amplitude_num):
+        """
+        Sets the ratio of I gain to Q gain (gain imbalance).
+            Range:         -10  to  +10%
+            Increment:      0.05%
+            *RST:           0%
+            Default unit:   %
+        example :
+            BB:IMP:IQR 3 PCT
+        :return:
+        """
+        self.specan.write('BB:IMP:IQR {} PCT'.format(amplitude_num))
+        logging.info('BB:IMP:IQR {} PCT'.format(amplitude_num))
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_impairments_optimize(self, optimize_type):
@@ -902,7 +978,8 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS {}'.format(noise_type))
         logging.info('NOIS {}'.format(noise_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_noise_noise_awgn(self, awgn_type):
@@ -919,7 +996,8 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:AWGN {}'.format(awgn_type))
         logging.info('NOIS:AWGN {}'.format(awgn_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_noise_noise_impulsive(self, awgn_type):
@@ -2572,7 +2650,8 @@ class Ektsfu(object):
         """
         self.specan.write(r'TSG:CONF:PLAY "{}"'.format(file_path))
         logging.info(r'TSG:CONF:PLAY "{}"'.format(file_path))
-        time.sleep(3)
+        # time.sleep(3)
+        self.specan.query('*OPC?')
         del self.specan
 
     def preset_instrument(self):
@@ -2639,7 +2718,7 @@ def _test_code():
     # specan.set_digitaltv_settings_payloadtest_dvbs2("HFF")
     # specan.set_digitaltv_settings_prbs_dvbs2("P15_1")
     # specan.set_interferer_source("ATVPr")
-    specan.set_noise_noise_noise("OFF")
+    # specan.set_noise_noise_noise("OFF")
     # specan = Ektsfu(sfu_ip)
     # specan.set_noise_noise_awgn("OFF")
     # specan.set_noise_awgn_cn("45")
@@ -2750,8 +2829,12 @@ def _test_code():
     # specan.set_modulation_settings_output("AFC")
     # specan.set_noise_noise_phase("OFF")
     # specan.preset_instrument()
-    # specan.set_impairments_modulator("OFF")
+    # specan.set_impairments_modulator("ON")
+    # specan.set_impairments_modulator_quadrature("-5")
+    # specan.set_impairments_modulator_amplitude("3")
     # specan.set_impairments_baseband("OFF")
+    # specan.set_impairments_baseband_quadrature("-5")
+    specan.set_impairments_baseband_amplitude("4")
     # specan.set_impairments_optimize("OFF")
     # specan.set_level_level_offset(str(4.6))
     # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")

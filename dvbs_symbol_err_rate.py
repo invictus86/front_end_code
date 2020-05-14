@@ -28,14 +28,6 @@ dict_config_data = {
                     SYMBOL_RATE_45M_]}
 
 
-def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
-    specan.set_digitaltv_coding_constellation(modulation)
-    specan.set_digitaltv_coding_coderate(code_rate)
-    specan.set_digitaltv_coding_symbolrate(symbol_rate)
-    specan.set_frequency_frequency_frequency(frequency)
-    specan.set_level_level_level(input_signal_level)
-
-
 def write_test_result(file_path, content):
     with open(file_path, "a") as f:
         f.write(content)

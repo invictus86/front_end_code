@@ -88,7 +88,6 @@ class RVTserver():
                         result = conn.send(str(self.json_data))
                         print "result:", result, "send read json data ok!"
                     elif dict_data.get("cmd") == "set_frequency_data":
-                        print "*" * 50
                         frequency = dict_data.get("frequency")
                         result = conn.send("set frequency data : {} ok ".format(frequency))
                         print "result:", result, "set frequency data : {} ok ".format(frequency)
