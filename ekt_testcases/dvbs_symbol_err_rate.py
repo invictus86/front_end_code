@@ -3,13 +3,12 @@
 
 import time
 import json
-import ekt_net
-import ekt_cfg
+from ekt_lib import ekt_net, ekt_cfg
 import datetime
-from ekt_sfe import Ektsfe
-from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFE import mosaic_algorithm
-from ekt_utils import write_test_result, read_ekt_config_data
+from ekt_lib.ekt_sfe import Ektsfe
+from ekt_lib.ekt_stb_tester import stb_tester_detect_motion
+from ekt_lib.threshold_algorithm_SFE import mosaic_algorithm
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data
 
 CODE_RATE_LIST = ["R1_2", "R2_3", "R3_4", "R5_6", "R7_8"]
 MODULATION_QPSK = "S4"
@@ -49,7 +48,7 @@ if __name__ == '__main__':
     specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
 
-    dict_data = read_ekt_config_data("./ekt_config.json")
+    dict_data = read_ekt_config_data("../ekt_lib/ekt_config.json")
     # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
     # DVBS_QPSK_CODE_RATE_CN = dict_data.get("DVBS_QPSK_CODE_RATE_CN")
     # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
@@ -91,20 +90,20 @@ if __name__ == '__main__':
             if lock_state == "1":
                 pass
             elif lock_state == "0":
-                write_test_result("./test_result_sfe.txt",
+                write_test_result("./../ekt_log/test_result_sfe.txt",
                                   ("current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                                       FREQUENCY_1550, str(SYMBOL_RATE[1]), "锁台失败") + "\n"))
                 continue
             else:
-                write_test_result("./test_result_sfe.txt", ("出错了" + "\n"))
+                write_test_result("./../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
                 continue
             try:
                 start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
                 print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                     FREQUENCY_1550, str(SYMBOL_RATE[1]), start_data_result.get("detect_mosic_result"))
-                write_test_result("./test_result_sfe.txt",
+                write_test_result("./../ekt_log/test_result_sfe.txt",
                                   "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                                       FREQUENCY_1550, str(SYMBOL_RATE[1]),
@@ -114,7 +113,7 @@ if __name__ == '__main__':
                 print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                     FREQUENCY_1550, str(SYMBOL_RATE[1]), start_data_result.get("detect_mosic_result"))
-                write_test_result("./test_result_sfe.txt",
+                write_test_result("./../ekt_log/test_result_sfe.txt",
                                   "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                                       FREQUENCY_1550, str(SYMBOL_RATE[1]),

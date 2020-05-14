@@ -2,9 +2,6 @@
 # -*- coding: utf-8 -*-
 import requests
 import json
-import time
-import cv2
-import numpy
 import ekt_cfg
 
 

@@ -29,10 +29,10 @@ class RVTserver():
     def __init__(self):
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.img_json = None
-        self.app_image = "./image_file/application.png"
-        self.lock_success_image = "./image_file/lock_success.png"
-        self.lock_fail_image = "./image_file/lock_fail.png"
-        self.front_end_cfg_file = "./image_file/front_end_cfg.json"
+        self.app_image = "../image_file/application.png"
+        self.lock_success_image = "../image_file/lock_success.png"
+        self.lock_fail_image = "../image_file/lock_fail.png"
+        self.front_end_cfg_file = "../image_file/front_end_cfg.json"
 
     def read_image_file(self, image_name):
         img = cv2.imread(image_name, 1)

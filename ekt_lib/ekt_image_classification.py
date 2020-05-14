@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 import requests
 import cv2
-import time
 import ekt_image_capture
 import ekt_cfg
 
