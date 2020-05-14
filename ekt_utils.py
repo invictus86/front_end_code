@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import time
+import json
 
 
 def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
@@ -86,3 +87,9 @@ def find_level_offset_by_frequency(frequency_offset_type, frequency):
 def write_test_result(file_path, content):
     with open(file_path, "a") as f:
         f.write(content)
+
+
+def read_ekt_config_data(file_path):
+    with open(file_path, 'r') as f:
+        dict_data = json.load(f, "utf-8")
+        return dict_data

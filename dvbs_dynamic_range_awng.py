@@ -9,33 +9,15 @@ from ekt_stb_tester import stb_tester_detect_motion
 from threshold_algorithm_SFE import iterate_to_find_threshold
 import ekt_cfg
 import datetime
+from ekt_utils import write_test_result, read_ekt_config_data
 
 SYMBOL_RATE_5M = ["5.000000e6", "05000"]
 SYMBOL_RATE_10M = ["10.000000e6", "10000"]
 SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
 SYMBOL_RATE_45M = ["45.000000e6", "45000"]
 
-# SYMBOL_TATE_LIST = [str(i) + ".000000e6" for i in range(5, 46)]
-# FREQUENCY_LIST = [str(i) + " MHz" for i in range(950, 2150, 20)]
-# FREQUENCY_LIST.append("2147 MHz")
-
 dict_config_data = {
     "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
-
-
-# "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
-
-
-def write_test_result(file_path, content):
-    with open(file_path, "a") as f:
-        f.write(content)
-
-
-def read_ekt_config_data(file_path):
-    with open(file_path, 'r') as f:
-        dict_data = json.load(f, "utf-8")
-        return dict_data
-
 
 if __name__ == '__main__':
     """

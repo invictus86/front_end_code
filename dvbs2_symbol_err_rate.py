@@ -9,6 +9,7 @@ from ekt_stb_tester import stb_tester_detect_motion
 from threshold_algorithm_SFU import mosaic_algorithm
 import ekt_cfg
 import datetime
+from ekt_utils import write_test_result, read_ekt_config_data
 
 MODULATION_8PSK = "S8"
 FREQUENCY_1550 = "1550"
@@ -24,18 +25,6 @@ SYMBOL_RATE_45M_ = ["45.000000e6", "45004"]
 dict_config_data = {
     "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_5M_, SYMBOL_RATE_27_5M, SYMBOL_RATE_27_5M_, SYMBOL_RATE_45M,
                     SYMBOL_RATE_45M_]}
-
-
-def write_test_result(file_path, content):
-    with open(file_path, "a") as f:
-        f.write(content)
-
-
-def read_ekt_config_data(file_path):
-    with open(file_path, 'r') as f:
-        dict_data = json.load(f, "utf-8")
-        return dict_data
-
 
 if __name__ == '__main__':
     """

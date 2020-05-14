@@ -6,9 +6,10 @@ import time
 import json
 import ekt_net
 from ekt_stb_tester import stb_tester_detect_motion
-from threshold_algorithm_SFE import iterate_to_find_threshold, mosaic_algorithm
+from threshold_algorithm_SFE import mosaic_algorithm
 import ekt_cfg
 import datetime
+from ekt_utils import write_test_result, read_ekt_config_data
 
 CODE_RATE_LIST = ["R1_2", "R2_3", "R3_4", "R5_6", "R7_8"]
 
@@ -21,18 +22,6 @@ SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000", [["950", "952"], ["1550", "
 
 dict_config_data = {
     "SYMBOL_RATE_FREQUENCY": [SYMBOL_RATE_FREQUENCY_5M, SYMBOL_RATE_FREQUENCY_27_5M, SYMBOL_RATE_FREQUENCY_45M]}
-
-
-def write_test_result(file_path, content):
-    with open(file_path, "a") as f:
-        f.write(content)
-
-
-def read_ekt_config_data(file_path):
-    with open(file_path, 'r') as f:
-        dict_data = json.load(f, "utf-8")
-        return dict_data
-
 
 if __name__ == '__main__':
     """

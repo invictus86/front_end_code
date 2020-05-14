@@ -7,9 +7,9 @@ import json
 import ekt_net
 from ekt_stb_tester import stb_tester_detect_motion
 from threshold_algorithm_SFU import mosaic_algorithm
-
 import ekt_cfg
 import datetime
+from ekt_utils import write_test_result
 
 MODULATION_8PSK = "S8"
 LEVEL_45 = "-45"
@@ -17,20 +17,6 @@ LEVEL_45 = "-45"
 CODE_RATE_LIST = ["R3_5", "R9_10"]
 SYMBOL_RATE_LIST = [["5.000000e6", "05000"], ["27.500000e6", "27500"], ["45.000000e6", "45000"]]
 FREQUENCY_LEVEL_OFFSET_LIST = [["950", "-4.6"], ["1200", "-4.3"], ["1550", "-4.1"], ["1800", "-5.4"], ["2147", "-5.4"]]
-
-
-
-
-def write_test_result(file_path, content):
-    with open(file_path, "a") as f:
-        f.write(content)
-
-
-def read_ekt_config_data(file_path):
-    with open(file_path, 'r') as f:
-        dict_data = json.load(f, "utf-8")
-        return dict_data
-
 
 if __name__ == '__main__':
 
@@ -63,14 +49,6 @@ if __name__ == '__main__':
     time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_noise("OFF")
-    # specan = Ektsfu(sfu_ip)
-    # specan.set_noise_noise_awgn("ON")
-    # time.sleep(1)
-
-    # dict_data = read_ekt_config_data("./ekt_config.json")
-    # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
-    # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
-    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
     # for MODULATION in dict_config_data.get("MODULATION"):
     specan = Ektsfu(sfu_ip)

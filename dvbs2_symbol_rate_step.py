@@ -10,6 +10,7 @@ from threshold_algorithm_SFU import mosaic_algorithm
 
 import ekt_cfg
 import datetime
+from ekt_utils import write_test_result, read_ekt_config_data
 
 CODE_RATE_3_4 = "R3_4"
 MODULATION_8PSK = "S8"
@@ -29,18 +30,6 @@ def generate_symbol_rate_list():
 
 
 generate_symbol_rate_list()
-
-
-def write_test_result(file_path, content):
-    with open(file_path, "a") as f:
-        f.write(content)
-
-
-def read_ekt_config_data(file_path):
-    with open(file_path, 'r') as f:
-        dict_data = json.load(f, "utf-8")
-        return dict_data
-
 
 if __name__ == '__main__':
     """

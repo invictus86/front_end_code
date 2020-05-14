@@ -9,6 +9,7 @@ from ekt_stb_tester import stb_tester_detect_motion
 from threshold_algorithm_SFU import iterate_to_find_threshold
 import ekt_cfg
 import datetime
+from ekt_utils import write_test_result, read_ekt_config_data
 
 AWGN_ON = "ON"
 AWGN_OFF = "OFF"
@@ -21,47 +22,13 @@ SYMBOL_RATE_10M = ["10.000000e6", "10000"]
 SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
 SYMBOL_RATE_45M = ["45.000000e6", "45000"]
 
-FREQUENCY_950M = "950 MHz"
-FREQUENCY_1550M = "1550 MHz"
-FREQUENCY_2147M = "2147 MHz"
-
-AWGN_LIST = [AWGN_ON, AWGN_OFF]
-SYMBOL_RATE_LIST = [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]
-MODULATION_LIST = [MODULATION_QPSK, MODULATION_8PSK]
-
-SYMBOL_TATE_LIST = [str(i) + ".000000e6" for i in range(5, 46)]
-FREQUENCY_LIST = [str(i) + " MHz" for i in range(950, 2150, 20)]
-FREQUENCY_LIST.append("2147 MHz")
-
-#    DVBS2   QPSK
 dict_config_data = {
     "MODULATION": [MODULATION_QPSK, MODULATION_8PSK],
-    # "CODE_RATE_DVBS2_QPSK": [CODE_RATE_1_2, CODE_RATE_3_5, CODE_RATE_2_3, CODE_RATE_3_4, CODE_RATE_4_5, CODE_RATE_5_6,
-    #                          CODE_RATE_8_9, CODE_RATE_9_10],
-    # "CODE_RATE_DVBS2_8PSK": [CODE_RATE_3_5, CODE_RATE_2_3, CODE_RATE_3_4, CODE_RATE_5_6, CODE_RATE_8_9, CODE_RATE_9_10],
     # "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
     # "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
     "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M],
 
 }
-
-
-def read_ekt_config_data(file_path):
-    with open(file_path, 'r') as f:
-        dict_data = json.load(f, "utf-8")
-        return dict_data
-
-
-def write_test_result(file_path, content):
-    with open(file_path, "a") as f:
-        f.write(content)
-
-
-def read_ekt_config_data(file_path):
-    with open(file_path, 'r') as f:
-        dict_data = json.load(f, "utf-8")
-        return dict_data
-
 
 if __name__ == '__main__':
     """
@@ -167,11 +134,11 @@ if __name__ == '__main__':
                     elif lock_state == "0":
                         write_test_result("./test_result_sfu.txt",
                                           (
-                                                      "current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level: {}, {}".format(
-                                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                                          MODULATION, code_rate_cn[0],
-                                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "-30",
-                                                          "锁台失败") + "\n"))
+                                                  "current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level: {}, {}".format(
+                                                      datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                                      MODULATION, code_rate_cn[0],
+                                                      str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "-30",
+                                                      "锁台失败") + "\n"))
                         continue
                     else:
                         write_test_result("./test_result_sfu.txt", ("出错了" + "\n"))
