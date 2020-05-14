@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import ekt_sfu
 import time
 import json
 from ekt_sfu import Ektsfu
@@ -14,23 +13,8 @@ import datetime
 AWGN_ON = "ON"
 AWGN_OFF = "OFF"
 
-# CODE_RATE_1_4 = "R1_4"
-# CODE_RATE_1_3 = "R1_3"
-# CODE_RATE_2_5 = "R2_5"
-# CODE_RATE_1_2 = "R1_2"
-# CODE_RATE_3_5 = "R3_5"
-# CODE_RATE_2_3 = "R2_3"
-# CODE_RATE_3_4 = "R3_4"
-# CODE_RATE_4_5 = "R4_5"
-# CODE_RATE_5_6 = "R5_6"
-# CODE_RATE_6_7 = "R6_7"
-# CODE_RATE_7_8 = "R7_8"
-# CODE_RATE_8_9 = "R8_9"
-# CODE_RATE_9_10 = "R9_10"
-
 MODULATION_QPSK = "S4"
 MODULATION_8PSK = "S8"
-MODULATION_16QAM = "S16"
 
 SYMBOL_RATE_5M = ["5.000000e6", "05000"]
 SYMBOL_RATE_10M = ["10.000000e6", "10000"]
@@ -191,9 +175,6 @@ if __name__ == '__main__':
     specan.set_digitaltv_input_source_dvbs2("TSPLayer")
     time.sleep(1)
     specan = Ektsfu(sfu_ip)
-    specan.set_digitaltv_coding_constellation_dvbs2("S4")
-    time.sleep(1)
-    specan = Ektsfu(sfu_ip)
     specan.set_level_level_rf("ON")
     time.sleep(1)
     specan = Ektsfu(sfu_ip)
@@ -205,82 +186,97 @@ if __name__ == '__main__':
     dict_data = read_ekt_config_data("./ekt_config.json")
     DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
     DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
-    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
+    DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
-    for code_rate_cn in DVBS2_QPSK_CODE_RATE_CN:
-        del specan
+    for MODULATION in dict_config_data.get("MODULATION"):
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_coderate_dvbs2(code_rate_cn[0])
+        specan.set_digitaltv_coding_constellation_dvbs2(MODULATION)
         time.sleep(1)
-        specan = Ektsfu(sfu_ip)
-        print str(code_rate_cn[1])
-        specan.set_noise_awgn_cn(str(code_rate_cn[1]))
-        time.sleep(1)
+        CURRENT_DVBS2_CODE_RATE_CN = None
+        if MODULATION == MODULATION_QPSK:
+            CURRENT_DVBS2_CODE_RATE_CN = DVBS2_QPSK_CODE_RATE_CN
+        elif MODULATION == DVBS2_8PSK_CODE_RATE_CN:
+            CURRENT_DVBS2_CODE_RATE_CN = DVBS2_8PSK_CODE_RATE_CN
+        else:
+            write_test_result("./test_result_sfu.txt", ("MODULATION 出错了" + "\n"))
 
-        for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
+        for code_rate_cn in CURRENT_DVBS2_CODE_RATE_CN:
             del specan
             specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_symbolrate_dvbs2(SYMBOL_RATE[0])
-            for FREQUENCY_LEVEL_OFFSET in DVBS_S2_FREQUENCY_LEVEL_OFFSET:
+            specan.set_digitaltv_coding_coderate_dvbs2(code_rate_cn[0])
+            time.sleep(1)
+            specan = Ektsfu(sfu_ip)
+            print str(code_rate_cn[1])
+            specan.set_noise_awgn_cn(str(code_rate_cn[1]))
+            time.sleep(1)
+
+            for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
                 del specan
                 specan = Ektsfu(sfu_ip)
-                specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
-                time.sleep(1)
-                specan = Ektsfu(sfu_ip)
-                specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
-                specan = Ektsfu(sfu_ip)
-                specan.set_level_level_level("dBm", "-30")
+                specan.set_digitaltv_coding_symbolrate_dvbs2(SYMBOL_RATE[0])
+                for FREQUENCY_LEVEL_OFFSET in DVBS_S2_FREQUENCY_LEVEL_OFFSET:
+                    del specan
+                    specan = Ektsfu(sfu_ip)
+                    specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
+                    time.sleep(1)
+                    specan = Ektsfu(sfu_ip)
+                    specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
+                    specan = Ektsfu(sfu_ip)
+                    specan.set_level_level_level("dBm", "-30")
 
-                net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                # print str(FREQUENCY_LEVEL_OFFSET[0])
-                # print type(str(FREQUENCY_LEVEL_OFFSET[0]))
-                net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
-                time.sleep(1)
-                del net
-                net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
-                time.sleep(1)
-                del net
+                    net = ekt_net.EktNetClient('192.168.1.24', 9999)
+                    # print str(FREQUENCY_LEVEL_OFFSET[0])
+                    # print type(str(FREQUENCY_LEVEL_OFFSET[0]))
+                    net.send_data(
+                        json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
+                    time.sleep(1)
+                    del net
+                    net = ekt_net.EktNetClient('192.168.1.24', 9999)
+                    net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
+                    time.sleep(1)
+                    del net
 
-                """
-                触发stb-tester进行频率和符号率设置
-                """
-                stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                         ["tests/front_end_test/testcases.py::test_continuous_button"],
-                                         "auto_front_end_test", "DSD4614iALM")
-                net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
-                if lock_state == "1":
-                    pass
-                elif lock_state == "0":
-                    write_test_result("./test_result_sfu.txt",
-                                      ("current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "锁台失败") + "\n"))
-                    continue
-                else:
-                    write_test_result("./test_result_sfu.txt", ("出错了" + "\n"))
-                    continue
-                try:
-                    res = iterate_to_find_threshold(sfu_ip, -50, -100)
-                    print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                        str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
-                    write_test_result("./test_result_sfu.txt",
-                                      "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
-                except:
-                    res = iterate_to_find_threshold(sfu_ip, -50, -100)
-                    print "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                        str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
-                    write_test_result("./test_result_sfu.txt",
-                                      "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
-
-                """
-                进行机顶盒的频率修改或其他参数的修改
-                读取误码率或者判断机顶盒是否含有马赛克
-                """
+                    """
+                    触发stb-tester进行频率和符号率设置
+                    """
+                    stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+                                             ["tests/front_end_test/testcases.py::test_continuous_button"],
+                                             "auto_front_end_test", "DSD4614iALM")
+                    net = ekt_net.EktNetClient('192.168.1.24', 9999)
+                    lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
+                    if lock_state == "1":
+                        pass
+                    elif lock_state == "0":
+                        write_test_result("./test_result_sfu.txt",
+                                          (
+                                                  "current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                                                      datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                                      MODULATION, code_rate_cn[0],
+                                                      str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                                                      "锁台失败") + "\n"))
+                        continue
+                    else:
+                        write_test_result("./test_result_sfu.txt", ("出错了" + "\n"))
+                        continue
+                    try:
+                        res = iterate_to_find_threshold(sfu_ip, -50, -100)
+                        print "current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
+                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
+                        write_test_result("./test_result_sfu.txt",
+                                          "current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
+                                              str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
+                    except:
+                        res = iterate_to_find_threshold(sfu_ip, -50, -100)
+                        print "current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
+                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
+                        write_test_result("./test_result_sfu.txt",
+                                          "current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
+                                              str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
+                    """
+                    进行机顶盒的频率修改或其他参数的修改
+                    读取误码率或者判断机顶盒是否含有马赛克
+                    """

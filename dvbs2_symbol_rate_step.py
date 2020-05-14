@@ -147,7 +147,7 @@ if __name__ == '__main__':
             write_test_result("./test_result_sfu.txt", ("出错了" + "\n"))
             continue
         try:
-            start_data_result = mosaic_algorithm(sfu_ip, "-65 dBm", "-50 dBm")
+            start_data_result = mosaic_algorithm(sfu_ip, "-65", "-50")
             # res = iterate_to_find_threshold(sfu_ip, -50, -100)
             print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
@@ -158,7 +158,7 @@ if __name__ == '__main__':
                                   FREQUENCY_1550, str(SYMBOL_RATE[1]),
                                   start_data_result.get("detect_mosic_result")) + "\n")
         except:
-            start_data_result = mosaic_algorithm(sfu_ip, "-65 dBm", "-50 dBm")
+            start_data_result = mosaic_algorithm(sfu_ip, "-65", "-50")
             print "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                 FREQUENCY_1550, str(SYMBOL_RATE[1]), start_data_result.get("detect_mosic_result"))

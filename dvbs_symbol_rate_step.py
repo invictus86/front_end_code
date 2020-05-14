@@ -14,7 +14,7 @@ import datetime
 CODE_RATE_3_4 = "R3_4"
 MODULATION_QPSK = "S4"
 FREQUENCY_1550 = "1550"
-LEVEL_70 = "-70 dBm"
+LEVEL_70 = "-70"
 
 SYMBOL_RATE_5M = ["5.000000e6", "05000"]
 SYMBOL_RATE_10M = ["10.000000e6", "10000"]
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     specan.set_frequency_frequency_frequency(str(FREQUENCY_1550) + "MHz")
     # specan.set_frequency_frequency_frequency(FREQUENCY_1550)
     specan = ekt_sfe.Ektsfe(sfe_ip)
-    specan.set_level_level_level(LEVEL_70)
+    specan.set_level_level_level(LEVEL_70 + " dBm")
     for SYMBOL_RATE in SYMBOL_TATE_LIST:
         specan = ekt_sfe.Ektsfe(sfe_ip)
         specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE[0])
@@ -129,7 +129,7 @@ if __name__ == '__main__':
             write_test_result("./test_result_sfe.txt", ("出错了" + "\n"))
             continue
         try:
-            start_data_result = mosaic_algorithm(sfe_ip, LEVEL_70, "-50 dBm")
+            start_data_result = mosaic_algorithm(sfe_ip, LEVEL_70, "-50")
             # res = iterate_to_find_threshold(sfe_ip, -50, -100)
             print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
@@ -140,7 +140,7 @@ if __name__ == '__main__':
                                   str(FREQUENCY_1550), str(SYMBOL_RATE[1]),
                                   start_data_result.get("detect_mosic_result")) + "\n")
         except:
-            start_data_result = mosaic_algorithm(sfe_ip, LEVEL_70, "-50 dBm")
+            start_data_result = mosaic_algorithm(sfe_ip, LEVEL_70, "-50")
             print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                 str(FREQUENCY_1550), str(SYMBOL_RATE[1]), start_data_result.get("detect_mosic_result"))

@@ -13,11 +13,11 @@ import datetime
 CODE_RATE_LIST = ["R1_2", "R2_3", "R3_4", "R5_6", "R7_8"]
 
 MODULATION_QPSK = "S4"
-LEVEL_50 = "-50 dBm"
+LEVEL_50 = "-50"
 
-SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000", [["950", "951"], ["1550", "1551"], ["2150", "2149"]]]
-SYMBOL_RATE_FREQUENCY_27_5M = ["27.500000e6", "27500", [["950", "952.75"], ["1550", "1552.75"], ["2150", "2147.25"]]]
-SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000",  [["950", "954.5"], ["1550", "1554.5"], ["2150", "2145.5"]]]
+SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000", [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
+SYMBOL_RATE_FREQUENCY_27_5M = ["27.500000e6", "27500", [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
+SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000",  [["950", "952"], ["1550", "1552"], ["2150", "2148"]]]
 
 dict_config_data = {
     "SYMBOL_RATE_FREQUENCY": [SYMBOL_RATE_FREQUENCY_5M, SYMBOL_RATE_FREQUENCY_27_5M, SYMBOL_RATE_FREQUENCY_45M]}
@@ -63,7 +63,7 @@ if __name__ == '__main__':
     specan = ekt_sfe.Ektsfe(sfe_ip)
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
     specan = ekt_sfe.Ektsfe(sfe_ip)
-    specan.set_level_level_level(LEVEL_50)
+    specan.set_level_level_level(LEVEL_50 + " dBm")
 
     dict_data = read_ekt_config_data("./ekt_config.json")
     # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
@@ -114,10 +114,10 @@ if __name__ == '__main__':
                     write_test_result("./test_result_sfe.txt", ("出错了" + "\n"))
                     continue
                 try:
-                    mosaic_algorithm(sfe_ip, LEVEL_50, "-50 dBm")
+                    mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
                     specan = ekt_sfe.Ektsfe(sfe_ip)
                     specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
-                    start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50 dBm")
+                    start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
                     print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                         FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], start_data_result.get("detect_mosic_result"))
@@ -127,10 +127,10 @@ if __name__ == '__main__':
                                           FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
                                           start_data_result.get("detect_mosic_result")) + "\n")
                 except:
-                    mosaic_algorithm(sfe_ip, LEVEL_50, "-50 dBm")
+                    mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
                     specan = ekt_sfe.Ektsfe(sfe_ip)
                     specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
-                    start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50 dBm")
+                    start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
                     print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                         FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], start_data_result.get("detect_mosic_result"))

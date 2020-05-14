@@ -13,7 +13,7 @@ import datetime
 CODE_RATE_LIST = ["R1_2", "R2_3", "R3_4", "R5_6", "R7_8"]
 MODULATION_QPSK = "S4"
 FREQUENCY_1550 = "1550"
-LEVEL_50 = "-50 dBm"
+LEVEL_50 = "-50"
 
 SYMBOL_RATE_5M = ["5.000000e6", "05002"]
 SYMBOL_RATE_5M_ = ["5.000000e6", "04998"]
@@ -82,7 +82,7 @@ if __name__ == '__main__':
         specan = ekt_sfe.Ektsfe(sfe_ip)
         specan.set_frequency_frequency_frequency(FREQUENCY_1550 + "MHz")
         specan = ekt_sfe.Ektsfe(sfe_ip)
-        specan.set_level_level_level(LEVEL_50)
+        specan.set_level_level_level(LEVEL_50 + " dBm")
         for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
             del specan
             specan = ekt_sfe.Ektsfe(sfe_ip)
@@ -120,7 +120,7 @@ if __name__ == '__main__':
                 write_test_result("./test_result_sfe.txt", ("出错了" + "\n"))
                 continue
             try:
-                start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50 dBm")
+                start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
                 print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                     FREQUENCY_1550, str(SYMBOL_RATE[1]), start_data_result.get("detect_mosic_result"))
@@ -130,7 +130,7 @@ if __name__ == '__main__':
                                       FREQUENCY_1550, str(SYMBOL_RATE[1]),
                                       start_data_result.get("detect_mosic_result")) + "\n")
             except:
-                start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50 dBm")
+                start_data_result = mosaic_algorithm(sfe_ip, LEVEL_50, "-50")
                 print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                     FREQUENCY_1550, str(SYMBOL_RATE[1]), start_data_result.get("detect_mosic_result"))
