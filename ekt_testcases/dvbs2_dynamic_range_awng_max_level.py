@@ -3,11 +3,11 @@
 
 import time
 import json
-from ekt_lib import ekt_net, ekt_cfg
 import datetime
+from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
 from ekt_lib.ekt_stb_tester import stb_tester_detect_motion
-from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold
+from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold, mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data
 
 AWGN_ON = "ON"
@@ -90,7 +90,7 @@ if __name__ == '__main__':
             specan.set_digitaltv_coding_coderate_dvbs2(code_rate_cn[0])
             time.sleep(1)
             specan = Ektsfu(sfu_ip)
-            print str(code_rate_cn[1])
+            # print str(code_rate_cn[1])
             specan.set_noise_awgn_cn(str(code_rate_cn[1]))
             time.sleep(1)
 
@@ -106,7 +106,8 @@ if __name__ == '__main__':
                     specan = Ektsfu(sfu_ip)
                     specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
                     specan = Ektsfu(sfu_ip)
-                    specan.set_level_level_level("dBm", "-30")
+                    # specan.set_level_level_level("dBm", "-30")
+                    specan.set_level_level_level("dBm", str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])))
 
                     net = ekt_net.EktNetClient('192.168.1.24', 9999)
                     # print str(FREQUENCY_LEVEL_OFFSET[0])
@@ -133,35 +134,39 @@ if __name__ == '__main__':
                     elif lock_state == "0":
                         write_test_result("../ekt_log/test_result_sfu.txt",
                                           (
-                                                  "current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level: {}, {}".format(
+                                                  "dvbs2_dynamic_range_awng_max_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level: {}, {}".format(
                                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                                       MODULATION, code_rate_cn[0],
-                                                      str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "-30",
+                                                      str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "-10",
                                                       "锁台失败") + "\n"))
                         continue
                     else:
                         write_test_result("../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
                         continue
                     try:
-                        res = iterate_to_find_threshold(sfu_ip, -50, -100, level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
-                        print "current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
-                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
+                        start_data_result = mosaic_algorithm(sfu_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                                             "-10")
+                        print "dvbs2_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
+                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                            start_data_result.get("detect_mosic_result"))
                         write_test_result("../ekt_log/test_result_sfu.txt",
-                                          "current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION,
-                                              code_rate_cn[0],
-                                              str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
+                                          "dvbs2_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
+                                              str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                                              start_data_result.get("detect_mosic_result")) + "\n")
                     except:
-                        res = iterate_to_find_threshold(sfu_ip, -50, -100, level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
-                        print "current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
-                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
+                        start_data_result = mosaic_algorithm(sfu_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                                             "-10")
+                        print "dvbs2_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
+                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                            start_data_result.get("detect_mosic_result"))
                         write_test_result("../ekt_log/test_result_sfu.txt",
-                                          "current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION,
-                                              code_rate_cn[0],
-                                              str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
+                                          "dvbs2_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
+                                              str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                                              start_data_result.get("detect_mosic_result")) + "\n")
                     """
                     进行机顶盒的频率修改或其他参数的修改
                     读取误码率或者判断机顶盒是否含有马赛克

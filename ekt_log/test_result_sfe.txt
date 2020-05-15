@@ -479,3 +479,60 @@ current_time:2020-05-15 09:40:36, coderate：R3_4, frequency：1550 MHz，symbol
 current_time:2020-05-15 09:42:01, coderate：R3_4, frequency：1550 MHz，symbol_rate：06000 Ksym/s，马赛克检测结果：True
 current_time:2020-05-15 09:43:26, coderate：R3_4, frequency：1550 MHz，symbol_rate：07000 Ksym/s，马赛克检测结果：True
 current_time:2020-05-15 09:45:11, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 09:46:36, coderate：R3_4, frequency：1550 MHz，symbol_rate：06000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 09:48:00, coderate：R3_4, frequency：1550 MHz，symbol_rate：07000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 09:49:25, coderate：R3_4, frequency：1550 MHz，symbol_rate：08000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 09:50:49, coderate：R3_4, frequency：1550 MHz，symbol_rate：09000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 09:52:14, coderate：R3_4, frequency：1550 MHz，symbol_rate：10000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 09:53:38, coderate：R3_4, frequency：1550 MHz，symbol_rate：11000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 09:55:03, coderate：R3_4, frequency：1550 MHz，symbol_rate：12000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 09:56:28, coderate：R3_4, frequency：1550 MHz，symbol_rate：13000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 09:57:52, coderate：R3_4, frequency：1550 MHz，symbol_rate：14000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 09:59:17, coderate：R3_4, frequency：1550 MHz，symbol_rate：15000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:11:10, coderate：[u'R1_2', 4.5], frequency：950 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:12:34, coderate：[u'R1_2', 4.5], frequency：970 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 10:13:59, coderate：[u'R1_2', 4.5], frequency：990 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 10:15:23, coderate：[u'R1_2', 4.5], frequency：1010 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:16:47, coderate：[u'R1_2', 4.5], frequency：1030 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:19:44, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 10:22:16, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:23:27, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:24:36, coderate：R1_2, frequency：990 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 10:25:46, coderate：R1_2, frequency：1010 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 10:26:39, coderate：R1_2, frequency：1030 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-15 10:27:48, coderate：R1_2, frequency：1050 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:28:41, coderate：R1_2, frequency：1070 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-15 10:29:51, coderate：R1_2, frequency：1090 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:31:00, coderate：R1_2, frequency：1110 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:32:09, coderate：R1_2, frequency：1130 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:33:18, coderate：R1_2, frequency：1150 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:34:27, coderate：R1_2, frequency：1170 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:35:36, coderate：R1_2, frequency：1190 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:36:47, coderate：R1_2, frequency：1210 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:37:55, coderate：R1_2, frequency：1230 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:39:03, coderate：R1_2, frequency：1250 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:40:13, coderate：R1_2, frequency：1270 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:41:22, coderate：R1_2, frequency：1290 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 10:42:15, coderate：R1_2, frequency：1310 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-15 10:43:25, coderate：R1_2, frequency：1330 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 10:44:34, coderate：R1_2, frequency：1350 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 10:45:43, coderate：R1_2, frequency：1370 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 10:46:53, coderate：R1_2, frequency：1390 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_symbol_rate_step: current_time:2020-05-15 10:49:10, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 10:50:01, coderate：R3_4, frequency：1550 MHz，symbol_rate：06000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 10:50:53, coderate：R3_4, frequency：1550 MHz，symbol_rate：07000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 10:51:44, coderate：R3_4, frequency：1550 MHz，symbol_rate：08000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 10:52:35, coderate：R3_4, frequency：1550 MHz，symbol_rate：09000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 10:53:26, coderate：R3_4, frequency：1550 MHz，symbol_rate：10000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 10:54:17, coderate：R3_4, frequency：1550 MHz，symbol_rate：11000 Ksym/s，锁台失败
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 10:56:05, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 10:57:17, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 10:58:26, coderate：R1_2, frequency：990 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 10:59:36, coderate：R1_2, frequency：1010 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:00:44, coderate：R1_2, frequency：1030 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:01:54, coderate：R1_2, frequency：1050 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:03:03, coderate：R1_2, frequency：1070 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:04:12, coderate：R1_2, frequency：1090 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:05:21, coderate：R1_2, frequency：1110 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:06:30, coderate：R1_2, frequency：1130 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:07:39, coderate：R1_2, frequency：1150 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False

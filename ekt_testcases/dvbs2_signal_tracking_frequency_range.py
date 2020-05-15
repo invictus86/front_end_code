@@ -113,11 +113,11 @@ if __name__ == '__main__':
                     elif lock_state == "0":
                         write_test_result("../ekt_log/test_result_sfu.txt",
                                           (
-                                                  "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                                      datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                                      code_rate_cn[0],
-                                                      FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
-                                                      "锁台失败") + "\n"))
+                                                      "dvbs2_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                                          code_rate_cn[0], FREQUENCY_OFFSET[1],
+                                                          SYMBOL_RATE_FREQUENCY[1],
+                                                          "锁台失败") + "\n"))
                         continue
                     else:
                         write_test_result("../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
@@ -127,11 +127,11 @@ if __name__ == '__main__':
                         specan = Ektsfu(sfu_ip)
                         specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
                         start_data_result = mosaic_algorithm(sfu_ip, FREQUENCY_OFFSET[2], "-50")
-                        print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                        print "dvbs2_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                             FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], start_data_result.get("detect_mosic_result"))
                         write_test_result("../ekt_log/test_result_sfu.txt",
-                                          "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                                          "dvbs2_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                               FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
                                               start_data_result.get("detect_mosic_result")) + "\n")
@@ -140,11 +140,11 @@ if __name__ == '__main__':
                         specan = Ektsfu(sfu_ip)
                         specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
                         start_data_result = mosaic_algorithm(sfu_ip, FREQUENCY_OFFSET[2], "-50")
-                        print "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                        print "dvbs2_signal_tracking_frequency_range: current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                             FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], start_data_result.get("detect_mosic_result"))
                         write_test_result("../ekt_log/test_result_sfu.txt",
-                                          "current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                                          "dvbs2_signal_tracking_frequency_range: current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                               FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
                                               start_data_result.get("detect_mosic_result")) + "\n")

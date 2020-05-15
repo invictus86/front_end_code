@@ -50,7 +50,7 @@ if __name__ == '__main__':
         specan = Ektsfe(sfe_ip)
         specan.set_digitaltv_coding_coderate(code_rate_cn[0])
         time.sleep(1)
-        print str(code_rate_cn[1])
+        # print str(code_rate_cn[1])
         for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
             del specan
             specan = Ektsfe(sfe_ip)
@@ -85,7 +85,7 @@ if __name__ == '__main__':
                     pass
                 elif lock_state == "0":
                     write_test_result("./../ekt_log/test_result_sfe.txt",
-                                      ("current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                                      ("dvbs_dynamic_range_awng_min_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "锁台失败") + "\n"))
                     continue
@@ -94,20 +94,20 @@ if __name__ == '__main__':
                     continue
                 try:
                     res = iterate_to_find_threshold(sfe_ip, -50, -100, level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
-                    print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                    print "dvbs_dynamic_range_awng_min_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
                     write_test_result("./../ekt_log/test_result_sfe.txt",
-                                      "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                                      "dvbs_dynamic_range_awng_min_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
                 except:
                     res = iterate_to_find_threshold(sfe_ip, -50, -100, level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
-                    print "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                    print "dvbs_dynamic_range_awng_min_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
                     write_test_result("./../ekt_log/test_result_sfe.txt",
-                                      "current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                                      "dvbs_dynamic_range_awng_min_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
 
