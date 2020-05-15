@@ -86,9 +86,13 @@ if __name__ == '__main__':
                     pass
                 elif lock_state == "0":
                     write_test_result("./../ekt_log/test_result_sfe.txt",
-                                      ("dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), "锁台失败") + "\n"))
+                                      (
+                                                  "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                                      datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                                      code_rate_cn[0],
+                                                      str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                                                      str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                                      "锁台失败") + "\n"))
                     continue
                 else:
                     write_test_result("./../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
@@ -96,26 +100,30 @@ if __name__ == '__main__':
                 try:
                     start_data_result = mosaic_algorithm(sfe_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                                          "-10")
-                    print "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                    print "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                        str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                         start_data_result.get("detect_mosic_result"))
                     write_test_result("./../ekt_log/test_result_sfe.txt",
-                                      "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                                      "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                                          str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                           start_data_result.get("detect_mosic_result")) + "\n")
                 except:
                     start_data_result = mosaic_algorithm(sfe_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                                          "-10")
-                    print "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                    print "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                         str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                        str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                         start_data_result.get("detect_mosic_result"))
                     write_test_result("./../ekt_log/test_result_sfe.txt",
-                                      "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，马赛克检测结果：{}".format(
+                                      "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                                          str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                           start_data_result.get("detect_mosic_result")) + "\n")
 
                 """

@@ -536,3 +536,53 @@ dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:04:12, coderate：
 dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:05:21, coderate：R1_2, frequency：1110 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
 dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:06:30, coderate：R1_2, frequency：1130 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
 dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:07:39, coderate：R1_2, frequency：1150 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:08:48, coderate：R1_2, frequency：1170 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:09:58, coderate：R1_2, frequency：1190 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_dynamic_range_awng_max_level: current_time:2020-05-15 11:10:51, coderate：R1_2, frequency：1210 MHz，symbol_rate：05000 Ksym/s，锁台失败
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-15 11:12:57, coderate：R1_2, frequency：951 MHz，symbol_rate：05000 Ksym/s，锁台失败
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-15 11:13:50, coderate：R1_2, frequency：1551 MHz，symbol_rate：05000 Ksym/s，锁台失败
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-15 11:14:39, coderate：R1_2, frequency：2149 MHz，symbol_rate：05000 Ksym/s，锁台失败
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-15 11:15:47, coderate：R1_2, frequency：952.75 MHz，symbol_rate：27500 Ksym/s，马赛克检测结果：True
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-15 11:16:58, coderate：R1_2, frequency：1552.75 MHz，symbol_rate：27500 Ksym/s，马赛克检测结果：True
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-15 11:17:46, coderate：R1_2, frequency：2147.25 MHz，symbol_rate：27500 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:22:47, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+dvbs_symbol_rate_step: current_time:2020-05-15 11:23:51, coderate：R3_4, frequency：1550 MHz，symbol_rate：06000 Ksym/s，马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:25:00, coderate：R3_4, frequency：1550 MHz，symbol_rate：07000 Ksym/s，马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:26:09, coderate：R3_4, frequency：1550 MHz，symbol_rate：08000 Ksym/s，马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:27:19, coderate：R3_4, frequency：1550 MHz，symbol_rate：09000 Ksym/s，马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:28:29, coderate：R3_4, frequency：1550 MHz，symbol_rate：10000 Ksym/s，马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:29:20, coderate：R3_4, frequency：1550 MHz，symbol_rate：11000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:30:11, coderate：R3_4, frequency：1550 MHz，symbol_rate：12000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:31:02, coderate：R3_4, frequency：1550 MHz，symbol_rate：13000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:31:53, coderate：R3_4, frequency：1550 MHz，symbol_rate：14000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:32:44, coderate：R3_4, frequency：1550 MHz，symbol_rate：15000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:33:36, coderate：R3_4, frequency：1550 MHz，symbol_rate：16000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:34:27, coderate：R3_4, frequency：1550 MHz，symbol_rate：17000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:35:18, coderate：R3_4, frequency：1550 MHz，symbol_rate：18000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:36:09, coderate：R3_4, frequency：1550 MHz，symbol_rate：19000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:37:00, coderate：R3_4, frequency：1550 MHz，symbol_rate：20000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:37:51, coderate：R3_4, frequency：1550 MHz，symbol_rate：21000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:38:43, coderate：R3_4, frequency：1550 MHz，symbol_rate：22000 Ksym/s，锁台失败
+dvbs_symbol_rate_step: current_time:2020-05-15 11:40:22, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：False
+dvbs_symbol_rate_step: current_time:2020-05-15 11:41:25, coderate：R3_4, frequency：1550 MHz，symbol_rate：06000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:42:34, coderate：R3_4, frequency：1550 MHz，symbol_rate：07000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:43:43, coderate：R3_4, frequency：1550 MHz，symbol_rate：08000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:44:52, coderate：R3_4, frequency：1550 MHz，symbol_rate：09000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:46:02, coderate：R3_4, frequency：1550 MHz，symbol_rate：10000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:47:10, coderate：R3_4, frequency：1550 MHz，symbol_rate：11000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:48:20, coderate：R3_4, frequency：1550 MHz，symbol_rate：12000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:49:28, coderate：R3_4, frequency：1550 MHz，symbol_rate：13000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:50:38, coderate：R3_4, frequency：1550 MHz，symbol_rate：14000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:51:47, coderate：R3_4, frequency：1550 MHz，symbol_rate：15000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:52:56, coderate：R3_4, frequency：1550 MHz，symbol_rate：16000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:54:05, coderate：R3_4, frequency：1550 MHz，symbol_rate：17000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:55:14, coderate：R3_4, frequency：1550 MHz，symbol_rate：18000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:56:24, coderate：R3_4, frequency：1550 MHz，symbol_rate：19000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:57:33, coderate：R3_4, frequency：1550 MHz，symbol_rate：20000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:58:41, coderate：R3_4, frequency：1550 MHz，symbol_rate：21000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 11:59:51, coderate：R3_4, frequency：1550 MHz，symbol_rate：22000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 12:01:00, coderate：R3_4, frequency：1550 MHz，symbol_rate：23000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 12:02:09, coderate：R3_4, frequency：1550 MHz，symbol_rate：24000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 12:03:18, coderate：R3_4, frequency：1550 MHz，symbol_rate：25000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 12:04:28, coderate：R3_4, frequency：1550 MHz，symbol_rate：26000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
+dvbs_symbol_rate_step: current_time:2020-05-15 12:05:36, coderate：R3_4, frequency：1550 MHz，symbol_rate：27000 Ksym/s，level：-65.90 dbm, 马赛克检测结果：True
