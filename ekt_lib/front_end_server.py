@@ -9,6 +9,7 @@ import cv2
 import logging
 import numpy as np
 import threading
+import datetime
 
 logging.basicConfig(level=logging.NOTSET)
 log = logging.getLogger("RVTserver")
@@ -90,24 +91,30 @@ class RVTserver():
                     elif dict_data.get("cmd") == "set_frequency_data":
                         frequency = dict_data.get("frequency")
                         result = conn.send("set frequency data : {} ok ".format(frequency))
-                        print "result:", result, "set frequency data : {} ok ".format(frequency)
+                        print "result:", result, "current_time:{}, set frequency data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), frequency)
                     elif dict_data.get("cmd") == "get_frequency_data":
                         result = conn.send(str(frequency))
-                        print "result:", result, "get frequency data : {} ok ".format(frequency)
+                        print "result:", result, "current_time:{}, get frequency data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), frequency)
                     elif dict_data.get("cmd") == "set_symbol_rate_data":
                         symbol_rate = dict_data.get("symbol_rate")
                         result = conn.send("set symbol_rate data : {} ok ".format(symbol_rate))
-                        print "result:", result, "set symbol_rate data : {} ok ".format(symbol_rate)
+                        print "result:", result, "current_time:{}, set symbol_rate data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), symbol_rate)
                     elif dict_data.get("cmd") == "get_symbol_rate_data":
                         result = conn.send(str(symbol_rate))
-                        print "result:", result, "get symbol_rate data : {} ok ".format(symbol_rate)
+                        print "result:", result, "current_time:{}, get symbol_rate data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), symbol_rate)
                     elif dict_data.get("cmd") == "set_lock_state":
                         lock_state = dict_data.get("lock_state")
                         result = conn.send("set lock_state data : {} ok ".format(lock_state))
-                        print "result:", result, "set lock_state data : {} ok ".format(lock_state)
+                        print "result:", result, "current_time:{}, set lock_state data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), lock_state)
                     elif dict_data.get("cmd") == "get_lock_state":
                         result = conn.send(lock_state)
-                        print "result:", result, "get symbol_rate data : {} ok ".format(lock_state)
+                        print "result:", result, "current_time:{}, get symbol_rate data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), lock_state)
                     else:
                         print data
                         print "unknown message"

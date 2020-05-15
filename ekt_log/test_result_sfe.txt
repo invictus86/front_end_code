@@ -475,3 +475,7 @@ current_time:2020-05-14 18:28:58, coderate：R1_2, frequency：1552 MHz，symbol
 current_time:2020-05-14 18:30:00, coderate：R1_2, frequency：2148 MHz，symbol_rate：45000 Ksym/s，锁台失败
 current_time:2020-05-14 18:31:08, coderate：R2_3, frequency：952 MHz，symbol_rate：05000 Ksym/s，锁台失败
 current_time:2020-05-14 18:32:11, coderate：R2_3, frequency：1552 MHz，symbol_rate：05000 Ksym/s，锁台失败
+current_time:2020-05-15 09:40:36, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False
+current_time:2020-05-15 09:42:01, coderate：R3_4, frequency：1550 MHz，symbol_rate：06000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 09:43:26, coderate：R3_4, frequency：1550 MHz，symbol_rate：07000 Ksym/s，马赛克检测结果：True
+current_time:2020-05-15 09:45:11, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，马赛克检测结果：False

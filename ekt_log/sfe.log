@@ -6742,3 +6742,59 @@
 2020-05-14 18:31:11,239 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -45.90 dBm
 2020-05-14 18:32:11,536 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:42] - INFO: FREQ:CW 2150MHz
 2020-05-14 18:32:13,756 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -44.60 dBm
+2020-05-14 18:36:15,176 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:387] - INFO: SYST:PRES
+2020-05-14 18:36:17,397 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:250] - INFO: DVBS:SOUR TSPL
+2020-05-14 18:36:19,796 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:263] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-14 18:36:21,380 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:332] - INFO: DVBS:RATE R1_2
+2020-05-14 18:36:23,615 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:288] - INFO: DVBS:SYMB 5.000000e6
+2020-05-14 18:36:26,020 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:42] - INFO: FREQ:CW 950MHz
+2020-05-14 18:36:28,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -45.40 dBm
+2020-05-14 18:37:40,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:387] - INFO: SYST:PRES
+2020-05-14 18:37:42,391 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:250] - INFO: DVBS:SOUR TSPL
+2020-05-14 18:37:44,759 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:263] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-15 09:34:57,552 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:387] - INFO: SYST:PRES
+2020-05-15 09:34:59,946 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:250] - INFO: DVBS:SOUR TSPL
+2020-05-15 09:35:02,328 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:263] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-15 09:35:03,898 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:301] - INFO: DVBS:CONS S4
+2020-05-15 09:35:06,256 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:332] - INFO: DVBS:RATE R3_4
+2020-05-15 09:35:08,553 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:42] - INFO: FREQ:CW 1550MHz
+2020-05-15 09:35:10,868 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -65.90 dBm
+2020-05-15 09:35:13,256 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:288] - INFO: DVBS:SYMB 5.000000e6
+2020-05-15 09:39:09,539 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:387] - INFO: SYST:PRES
+2020-05-15 09:39:11,760 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:250] - INFO: DVBS:SOUR TSPL
+2020-05-15 09:39:13,986 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:263] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-15 09:39:15,477 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:301] - INFO: DVBS:CONS S4
+2020-05-15 09:39:17,868 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:332] - INFO: DVBS:RATE R3_4
+2020-05-15 09:39:20,026 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:42] - INFO: FREQ:CW 1550MHz
+2020-05-15 09:39:22,229 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -65.90 dBm
+2020-05-15 09:39:24,430 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:288] - INFO: DVBS:SYMB 5.000000e6
+2020-05-15 09:40:17,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -65.90 dBm
+2020-05-15 09:40:18,720 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:26] - INFO: 设置set_level_level_level:-65.90 dBm
+2020-05-15 09:40:32,447 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -50 dBm
+2020-05-15 09:40:36,812 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:53] - INFO: level:-65.90, 马赛克结果:False
+2020-05-15 09:40:37,056 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:288] - INFO: DVBS:SYMB 6.000000e6
+2020-05-15 09:41:41,917 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -65.90 dBm
+2020-05-15 09:41:42,923 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:26] - INFO: 设置set_level_level_level:-65.90 dBm
+2020-05-15 09:41:56,512 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -50 dBm
+2020-05-15 09:42:01,220 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:53] - INFO: level:-65.90, 马赛克结果:True
+2020-05-15 09:42:01,448 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:288] - INFO: DVBS:SYMB 7.000000e6
+2020-05-15 09:43:06,309 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -65.90 dBm
+2020-05-15 09:43:07,315 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:26] - INFO: 设置set_level_level_level:-65.90 dBm
+2020-05-15 09:43:21,342 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -50 dBm
+2020-05-15 09:43:26,280 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:53] - INFO: level:-65.90, 马赛克结果:True
+2020-05-15 09:43:26,528 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:288] - INFO: DVBS:SYMB 8.000000e6
+2020-05-15 09:43:44,823 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:387] - INFO: SYST:PRES
+2020-05-15 09:43:47,140 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:250] - INFO: DVBS:SOUR TSPL
+2020-05-15 09:43:49,538 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:263] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-05-15 09:43:51,061 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:301] - INFO: DVBS:CONS S4
+2020-05-15 09:43:53,434 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:332] - INFO: DVBS:RATE R3_4
+2020-05-15 09:43:55,733 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:42] - INFO: FREQ:CW 1550MHz
+2020-05-15 09:43:58,138 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -65.90 dBm
+2020-05-15 09:44:00,450 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:288] - INFO: DVBS:SYMB 5.000000e6
+2020-05-15 09:44:53,062 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -65.90 dBm
+2020-05-15 09:44:54,068 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:26] - INFO: 设置set_level_level_level:-65.90 dBm
+2020-05-15 09:45:07,765 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -50 dBm
+2020-05-15 09:45:11,660 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:53] - INFO: level:-65.90, 马赛克结果:False
+2020-05-15 09:45:11,904 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:288] - INFO: DVBS:SYMB 6.000000e6
+2020-05-15 09:46:17,266 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:110] - INFO: POW:LEV -65.90 dBm
+2020-05-15 09:46:18,272 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:26] - INFO: 设置set_level_level_level:-65.90 dBm
