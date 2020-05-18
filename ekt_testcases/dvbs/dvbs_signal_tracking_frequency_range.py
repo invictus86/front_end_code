@@ -3,8 +3,8 @@
 
 import time
 import json
-from ekt_lib import ekt_net, ekt_cfg
 import datetime
+from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfe import Ektsfe
 from ekt_lib.ekt_stb_tester import stb_tester_detect_motion
 from ekt_lib.threshold_algorithm_SFE import mosaic_algorithm
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
     # specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\FACT_15M.GTS")
 
-    dict_data = read_ekt_config_data("../ekt_lib/ekt_config.json")
+    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
     # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
     # DVBS_QPSK_CODE_RATE_CN = dict_data.get("DVBS_QPSK_CODE_RATE_CN")
     # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
@@ -94,7 +94,7 @@ if __name__ == '__main__':
                 if lock_state == "1":
                     pass
                 elif lock_state == "0":
-                    write_test_result("./../ekt_log/test_result_sfe.txt",
+                    write_test_result("../../ekt_log/test_result_sfe.txt",
                                       (
                                               "dvbs_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
@@ -103,7 +103,7 @@ if __name__ == '__main__':
                                                   FREQUENCY_OFFSET[2], "锁台失败") + "\n"))
                     continue
                 else:
-                    write_test_result("./../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
+                    write_test_result("../../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
                     continue
                 try:
                     mosaic_algorithm(sfe_ip, FREQUENCY_OFFSET[2], "-50")
@@ -114,7 +114,7 @@ if __name__ == '__main__':
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                         FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
                         start_data_result.get("detect_mosic_result"))
-                    write_test_result("./../ekt_log/test_result_sfe.txt",
+                    write_test_result("../../ekt_log/test_result_sfe.txt",
                                       "dvbs_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                                           FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
@@ -128,7 +128,7 @@ if __name__ == '__main__':
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                         FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
                         start_data_result.get("detect_mosic_result"))
-                    write_test_result("./../ekt_log/test_result_sfe.txt",
+                    write_test_result("../../ekt_log/test_result_sfe.txt",
                                       "dvbs_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn,
                                           FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],

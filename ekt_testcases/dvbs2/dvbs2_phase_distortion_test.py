@@ -8,7 +8,7 @@ from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
 from ekt_lib.ekt_stb_tester import stb_tester_detect_motion
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data
 
 MODULATION_8PSK = "S8"
 LEVEL_45 = "-45"
@@ -48,6 +48,14 @@ if __name__ == '__main__':
     time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_noise("OFF")
+    # specan = Ektsfu(sfu_ip)
+    # specan.set_noise_noise_awgn("ON")
+    # time.sleep(1)
+
+    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
+    DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
+    # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
+    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
     # for MODULATION in dict_config_data.get("MODULATION"):
     specan = Ektsfu(sfu_ip)
@@ -56,15 +64,11 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("ON")
     specan = Ektsfu(sfu_ip)
-    specan.set_impairments_modulator_quadrature("0")
+    specan.set_impairments_modulator_quadrature("10")
     specan = Ektsfu(sfu_ip)
-    specan.set_impairments_modulator_amplitude("10")
+    specan.set_impairments_modulator_amplitude("0")
     specan = Ektsfu(sfu_ip)
-    specan.set_impairments_baseband("ON")
-    specan = Ektsfu(sfu_ip)
-    specan.set_impairments_baseband_quadrature("0")
-    specan = Ektsfu(sfu_ip)
-    specan.set_impairments_baseband_amplitude("10")
+    specan.set_impairments_baseband("OFF")
 
     for code_rate in CODE_RATE_LIST:
         specan = Ektsfu(sfu_ip)
@@ -105,35 +109,35 @@ if __name__ == '__main__':
                 if lock_state == "1":
                     pass
                 elif lock_state == "0":
-                    write_test_result("../ekt_log/test_result_sfu.txt",
+                    write_test_result("../../ekt_log/test_result_sfu.txt",
                                       (
-                                                  "dvbs2_amplitude_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                                  "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
                                                       FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
                                                       "锁台失败") + "\n"))
                     continue
                 else:
-                    write_test_result("../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+                    write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
                     continue
                 try:
                     start_data_result = mosaic_algorithm(sfu_ip, str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))), "-50")
-                    print "dvbs2_amplitude_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                    print "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
                         FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
                         start_data_result.get("detect_mosic_result"))
-                    write_test_result("../ekt_log/test_result_sfu.txt",
-                                      "dvbs2_amplitude_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                    write_test_result("../../ekt_log/test_result_sfu.txt",
+                                      "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
                                           FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
                                           start_data_result.get("detect_mosic_result")) + "\n")
                 except:
                     start_data_result = mosaic_algorithm(sfu_ip, str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))), "-50")
-                    print "dvbs2_amplitude_distortion_test: current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                    print "dvbs2_phase_distortion_test: current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
                         FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
                         start_data_result.get("detect_mosic_result"))
-                    write_test_result("../ekt_log/test_result_sfu.txt",
-                                      "dvbs2_amplitude_distortion_test: current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                    write_test_result("../../ekt_log/test_result_sfu.txt",
+                                      "dvbs2_phase_distortion_test: current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
                                           FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
                                           start_data_result.get("detect_mosic_result")) + "\n")

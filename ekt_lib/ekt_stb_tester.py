@@ -63,7 +63,7 @@ def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
                 res = requests.get(job_url).json()
 
         # print res
-        time.sleep(1)
+        time.sleep(0.5)
         if res['status'] == "exited":
             fail_result = res.get("result_counts").get("fail")
             pass_result = res.get("result_counts").get("pass")

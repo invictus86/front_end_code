@@ -3,8 +3,8 @@
 
 import time
 import json
-from ekt_lib import ekt_net, ekt_cfg
 import datetime
+from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
 from ekt_lib.ekt_stb_tester import stb_tester_detect_motion
 from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold
@@ -67,7 +67,7 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
 
-    dict_data = read_ekt_config_data("../ekt_lib/ekt_config.json")
+    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
     DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
     DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
     DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
@@ -82,7 +82,7 @@ if __name__ == '__main__':
         elif MODULATION == MODULATION_8PSK:
             CURRENT_DVBS2_CODE_RATE_CN = DVBS2_8PSK_CODE_RATE_CN
         else:
-            write_test_result("../ekt_log/test_result_sfu.txt", ("MODULATION 出错了: {}".format(MODULATION) + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("MODULATION 出错了: {}".format(MODULATION) + "\n"))
         for code_rate_cn in CURRENT_DVBS2_CODE_RATE_CN:
             del specan
             specan = Ektsfu(sfu_ip)
@@ -130,7 +130,7 @@ if __name__ == '__main__':
                     if lock_state == "1":
                         pass
                     elif lock_state == "0":
-                        write_test_result("../ekt_log/test_result_sfu.txt",
+                        write_test_result("../../ekt_log/test_result_sfu.txt",
                                           (
                                                   "dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level: {}, {}".format(
                                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
@@ -139,14 +139,14 @@ if __name__ == '__main__':
                                                       "锁台失败") + "\n"))
                         continue
                     else:
-                        write_test_result("../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+                        write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
                         continue
                     try:
                         res = iterate_to_find_threshold(sfu_ip, -60, -110, level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
                         print "dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
                             str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
-                        write_test_result("../ekt_log/test_result_sfu.txt",
+                        write_test_result("../../ekt_log/test_result_sfu.txt",
                                           "dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION,
                                               code_rate_cn[0],
@@ -156,7 +156,7 @@ if __name__ == '__main__':
                         print "dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
                             str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
-                        write_test_result("../ekt_log/test_result_sfu.txt",
+                        write_test_result("../../ekt_log/test_result_sfu.txt",
                                           "dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION,
                                               code_rate_cn[0],

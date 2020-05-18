@@ -3,8 +3,8 @@
 
 import time
 import json
-from ekt_lib import ekt_net, ekt_cfg
 import datetime
+from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
 from ekt_lib.ekt_stb_tester import stb_tester_detect_motion
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
 
-    dict_data = read_ekt_config_data("../ekt_lib/ekt_config.json")
+    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
     # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
     # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
 
@@ -105,21 +105,21 @@ if __name__ == '__main__':
         if lock_state == "1":
             pass
         elif lock_state == "0":
-            write_test_result("../ekt_log/test_result_sfu.txt",
+            write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
                                           "dvbs2_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                                               FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_65, "锁台失败") + "\n"))
             continue
         else:
-            write_test_result("../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
             continue
         try:
             start_data_result = mosaic_algorithm(sfu_ip, LEVEL_65, "-50")
             print "dvbs2_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                 FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_65, start_data_result.get("detect_mosic_result"))
-            write_test_result("../ekt_log/test_result_sfu.txt",
+            write_test_result("../../ekt_log/test_result_sfu.txt",
                               "dvbs2_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                                   FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_65,
@@ -129,7 +129,7 @@ if __name__ == '__main__':
             print "dvbs2_symbol_rate_step: current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                 FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_65, start_data_result.get("detect_mosic_result"))
-            write_test_result("../ekt_log/test_result_sfu.txt",
+            write_test_result("../../ekt_log/test_result_sfu.txt",
                               "dvbs2_symbol_rate_step: current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                                   str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_65,

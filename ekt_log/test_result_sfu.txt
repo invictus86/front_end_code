@@ -3843,3 +3843,8 @@ dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:38:39, modulation
 dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:39:31, modulation: S4, coderate：R8_9, frequency：2110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
 dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:41:13, modulation: S4, coderate：R8_9, frequency：2130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
 dvbs2_dynamic_range_awng_min_level: current_time:2020-05-18 10:11:47, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-18 10:15:00, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -64.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-18 10:26:26, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-18 10:32:25, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-18 10:35:41, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-18 10:40:34, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.40

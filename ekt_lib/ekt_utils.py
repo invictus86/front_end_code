@@ -102,7 +102,7 @@ def generate_symbol_rate_list():
 
 
 def find_level_offset_by_frequency(frequency_offset_type, frequency):
-    dict_data = read_ekt_config_data("../ekt_lib/ekt_config.json")
+    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
     FREQUENCY_LEVEL_OFFSET_LIST = dict_data.get(frequency_offset_type)
     for FREQUENCY_LEVEL_OFFSET in FREQUENCY_LEVEL_OFFSET_LIST:
         if FREQUENCY_LEVEL_OFFSET[0] == frequency:
