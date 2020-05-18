@@ -3,6 +3,7 @@
 import requests
 import json
 import ekt_cfg
+import time
 
 
 def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
@@ -15,23 +16,54 @@ def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
     :param remote:RCU
     :return:
     """
-    res_status = requests.post(
-        '{}/api/v1/run_tests'.format(ip),
-        data=json.dumps({
-            "test_pack_revision": banch_id,
-            "test_cases": test_cases,
-            "category": category,
-            "remote_control": remote
-        }))
+    try:
+        res_status = requests.post(
+            '{}/api/v1/run_tests'.format(ip),
+            data=json.dumps({
+                "test_pack_revision": banch_id,
+                "test_cases": test_cases,
+                "category": category,
+                "remote_control": remote
+            }))
+    except:
+        try:
+            time.sleep(3)
+            res_status = requests.post(
+                '{}/api/v1/run_tests'.format(ip),
+                data=json.dumps({
+                    "test_pack_revision": banch_id,
+                    "test_cases": test_cases,
+                    "category": category,
+                    "remote_control": remote
+                }))
+        except:
+            time.sleep(3)
+            res_status = requests.post(
+                '{}/api/v1/run_tests'.format(ip),
+                data=json.dumps({
+                    "test_pack_revision": banch_id,
+                    "test_cases": test_cases,
+                    "category": category,
+                    "remote_control": remote
+                }))
 
     result = res_status.json()  # dict
     job_url = result.get("job_url")
     print result
 
     while True:
-        res = requests.get(job_url).json()
+        try:
+            res = requests.get(job_url).json()
+        except:
+            try:
+                time.sleep(1)
+                res = requests.get(job_url).json()
+            except:
+                time.sleep(1)
+                res = requests.get(job_url).json()
+
         # print res
-        # time.sleep(1)
+        time.sleep(1)
         if res['status'] == "exited":
             fail_result = res.get("result_counts").get("fail")
             pass_result = res.get("result_counts").get("pass")

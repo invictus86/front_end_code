@@ -17,7 +17,15 @@ def capture_image(num, ip):
     """
     list_image = []
     for i in range(num):
-        result = requests.get("http://{}/api/v1/device/screenshot.png".format(ip))
+        try:
+            result = requests.get("http://{}/api/v1/device/screenshot.png".format(ip))
+        except:
+            try:
+                time.sleep(1)
+                result = requests.get("http://{}/api/v1/device/screenshot.png".format(ip))
+            except:
+                time.sleep(1)
+                result = requests.get("http://{}/api/v1/device/screenshot.png".format(ip))
         image = cv2.imdecode(numpy.frombuffer(result.content, dtype='uint8'), 1)
         list_image.append(image)
     return list_image

@@ -4,7 +4,7 @@ import requests
 import cv2
 import ekt_image_capture
 import ekt_cfg
-
+import time
 
 def image_classification(list_image):
     """
@@ -17,7 +17,16 @@ def image_classification(list_image):
     for image in list_image:
         img_str = cv2.imencode('.jpg', image)[1].tostring()
         # params 为GET参数 data 为POST Body
-        result = requests.post('http://127.0.0.1:24401/', params={'threshold': 0.1}, data=img_str).json()
+        try:
+            result = requests.post('http://127.0.0.1:24401/', params={'threshold': 0.1}, data=img_str).json()
+        except:
+            try:
+                time.sleep(3)
+                result = requests.post('http://127.0.0.1:24401/', params={'threshold': 0.1}, data=img_str).json()
+            except:
+                time.sleep(3)
+                result = requests.post('http://127.0.0.1:24401/', params={'threshold': 0.1}, data=img_str).json()
+
         # print result
         result_list.append(result["results"][0]["label"])
 

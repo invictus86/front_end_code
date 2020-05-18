@@ -2719,3 +2719,1127 @@ current_time:2020-05-14 12:13:23, modulation: S4, coderate：R1_2, frequency：9
 current_time:2020-05-14 12:15:57, modulation: S4, coderate：R1_2, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.70
 current_time:2020-05-14 12:18:31, modulation: S4, coderate：R1_2, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -54.00
 current_time:2020-05-14 12:21:04, modulation: S4, coderate：R1_2, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:11:29, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_symbol_rate_step: current_time:2020-05-15 18:15:10, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，level：-60.90 dbm, 马赛克检测结果：False
+dvbs2_symbol_err_rate: current_time:2020-05-15 18:17:46, coderate：R3_5, frequency：1550 MHz，symbol_rate：05002 Ksym/s，level：-45.90 dbm, 马赛克检测结果：False
+dvbs2_signal_tracking_frequency_range: current_time:2020-05-15 18:20:04, coderate：R3_5, frequency：952 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs2_signal_acquisition_frequency_range: current_time:2020-05-15 18:22:35, coderate：R3_5, frequency：951 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs2_phase_distortion_test: current_time:2020-05-15 18:25:01, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，level：-40.4 dbm, 马赛克检测结果：False
+dvbs2_dynamic_range_awng_max_level: current_time:2020-05-15 18:27:46, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，level：-5.40 dbm, 马赛克检测结果：False
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:32:13, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:35:20, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:40:04, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:43:10, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:46:27, modulation: S4, coderate：R1_2, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:49:46, modulation: S4, coderate：R1_2, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:52:53, modulation: S4, coderate：R1_2, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:56:02, modulation: S4, coderate：R1_2, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 18:59:16, modulation: S4, coderate：R1_2, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:02:36, modulation: S4, coderate：R1_2, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:05:54, modulation: S4, coderate：R1_2, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:08:59, modulation: S4, coderate：R1_2, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:12:18, modulation: S4, coderate：R1_2, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:15:41, modulation: S4, coderate：R1_2, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:18:49, modulation: S4, coderate：R1_2, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:22:09, modulation: S4, coderate：R1_2, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:25:26, modulation: S4, coderate：R1_2, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:28:33, modulation: S4, coderate：R1_2, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:31:34, modulation: S4, coderate：R1_2, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:34:46, modulation: S4, coderate：R1_2, frequency：1290 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:37:59, modulation: S4, coderate：R1_2, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:41:13, modulation: S4, coderate：R1_2, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:44:26, modulation: S4, coderate：R1_2, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:47:37, modulation: S4, coderate：R1_2, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:50:53, modulation: S4, coderate：R1_2, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:54:06, modulation: S4, coderate：R1_2, frequency：1410 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 19:57:18, modulation: S4, coderate：R1_2, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:00:37, modulation: S4, coderate：R1_2, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:03:54, modulation: S4, coderate：R1_2, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:07:13, modulation: S4, coderate：R1_2, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:10:33, modulation: S4, coderate：R1_2, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:13:49, modulation: S4, coderate：R1_2, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:17:04, modulation: S4, coderate：R1_2, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:20:20, modulation: S4, coderate：R1_2, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:23:36, modulation: S4, coderate：R1_2, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:26:52, modulation: S4, coderate：R1_2, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:30:08, modulation: S4, coderate：R1_2, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:33:23, modulation: S4, coderate：R1_2, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:36:40, modulation: S4, coderate：R1_2, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:39:56, modulation: S4, coderate：R1_2, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:43:03, modulation: S4, coderate：R1_2, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:46:19, modulation: S4, coderate：R1_2, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:49:27, modulation: S4, coderate：R1_2, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -102.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:52:46, modulation: S4, coderate：R1_2, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:56:03, modulation: S4, coderate：R1_2, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 20:59:12, modulation: S4, coderate：R1_2, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -70.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:02:09, modulation: S4, coderate：R1_2, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -65.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:05:12, modulation: S4, coderate：R1_2, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:08:31, modulation: S4, coderate：R1_2, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:11:45, modulation: S4, coderate：R1_2, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:15:00, modulation: S4, coderate：R1_2, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:18:13, modulation: S4, coderate：R1_2, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:21:39, modulation: S4, coderate：R1_2, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:22:27, modulation: S4, coderate：R1_2, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:23:15, modulation: S4, coderate：R1_2, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:24:03, modulation: S4, coderate：R1_2, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:24:52, modulation: S4, coderate：R1_2, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:25:40, modulation: S4, coderate：R1_2, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:26:28, modulation: S4, coderate：R1_2, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:27:16, modulation: S4, coderate：R1_2, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:28:04, modulation: S4, coderate：R1_2, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:28:52, modulation: S4, coderate：R1_2, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:29:40, modulation: S4, coderate：R1_2, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:32:52, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:35:55, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:39:04, modulation: S4, coderate：R1_2, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:42:17, modulation: S4, coderate：R1_2, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:45:27, modulation: S4, coderate：R1_2, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:48:39, modulation: S4, coderate：R1_2, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:51:49, modulation: S4, coderate：R1_2, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:55:01, modulation: S4, coderate：R1_2, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 21:58:12, modulation: S4, coderate：R1_2, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:01:31, modulation: S4, coderate：R1_2, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:04:48, modulation: S4, coderate：R1_2, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:08:04, modulation: S4, coderate：R1_2, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:11:17, modulation: S4, coderate：R1_2, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:14:33, modulation: S4, coderate：R1_2, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:17:51, modulation: S4, coderate：R1_2, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:21:04, modulation: S4, coderate：R1_2, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:24:14, modulation: S4, coderate：R1_2, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:27:35, modulation: S4, coderate：R1_2, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:30:43, modulation: S4, coderate：R1_2, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:33:56, modulation: S4, coderate：R1_2, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:37:07, modulation: S4, coderate：R1_2, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:40:20, modulation: S4, coderate：R1_2, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:43:36, modulation: S4, coderate：R1_2, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:46:44, modulation: S4, coderate：R1_2, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:49:59, modulation: S4, coderate：R1_2, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:52:59, modulation: S4, coderate：R1_2, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:56:09, modulation: S4, coderate：R1_2, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 22:59:16, modulation: S4, coderate：R1_2, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:02:20, modulation: S4, coderate：R1_2, frequency：1510 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:05:33, modulation: S4, coderate：R1_2, frequency：1530 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:08:45, modulation: S4, coderate：R1_2, frequency：1550 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:11:53, modulation: S4, coderate：R1_2, frequency：1570 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:14:59, modulation: S4, coderate：R1_2, frequency：1590 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:18:15, modulation: S4, coderate：R1_2, frequency：1610 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:21:20, modulation: S4, coderate：R1_2, frequency：1630 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:24:33, modulation: S4, coderate：R1_2, frequency：1650 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:27:40, modulation: S4, coderate：R1_2, frequency：1670 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:30:56, modulation: S4, coderate：R1_2, frequency：1690 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:34:09, modulation: S4, coderate：R1_2, frequency：1710 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:37:17, modulation: S4, coderate：R1_2, frequency：1730 MHz，symbol_rate：10000 Ksym/s，阈值为: -94.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:38:43, modulation: S4, coderate：R1_2, frequency：1750 MHz，symbol_rate：10000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:41:50, modulation: S4, coderate：R1_2, frequency：1770 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:45:08, modulation: S4, coderate：R1_2, frequency：1790 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:46:29, modulation: S4, coderate：R1_2, frequency：1810 MHz，symbol_rate：10000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:49:37, modulation: S4, coderate：R1_2, frequency：1830 MHz，symbol_rate：10000 Ksym/s，阈值为: -74.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:52:42, modulation: S4, coderate：R1_2, frequency：1850 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:55:55, modulation: S4, coderate：R1_2, frequency：1870 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-15 23:59:18, modulation: S4, coderate：R1_2, frequency：1890 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:02:39, modulation: S4, coderate：R1_2, frequency：1910 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:05:42, modulation: S4, coderate：R1_2, frequency：1930 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:08:51, modulation: S4, coderate：R1_2, frequency：1950 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:09:39, modulation: S4, coderate：R1_2, frequency：1970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:10:27, modulation: S4, coderate：R1_2, frequency：1990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:11:15, modulation: S4, coderate：R1_2, frequency：2010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:12:03, modulation: S4, coderate：R1_2, frequency：2030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:12:51, modulation: S4, coderate：R1_2, frequency：2050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:13:39, modulation: S4, coderate：R1_2, frequency：2070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:14:27, modulation: S4, coderate：R1_2, frequency：2090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:15:15, modulation: S4, coderate：R1_2, frequency：2110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:16:03, modulation: S4, coderate：R1_2, frequency：2130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:16:51, modulation: S4, coderate：R1_2, frequency：2150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:18:21, modulation: S4, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:21:34, modulation: S4, coderate：R3_5, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:24:47, modulation: S4, coderate：R3_5, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:27:51, modulation: S4, coderate：R3_5, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:31:17, modulation: S4, coderate：R3_5, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:34:31, modulation: S4, coderate：R3_5, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:37:42, modulation: S4, coderate：R3_5, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:40:58, modulation: S4, coderate：R3_5, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:44:14, modulation: S4, coderate：R3_5, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:47:18, modulation: S4, coderate：R3_5, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:50:18, modulation: S4, coderate：R3_5, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:53:34, modulation: S4, coderate：R3_5, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 00:56:51, modulation: S4, coderate：R3_5, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:00:02, modulation: S4, coderate：R3_5, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:03:14, modulation: S4, coderate：R3_5, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:06:34, modulation: S4, coderate：R3_5, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:09:38, modulation: S4, coderate：R3_5, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:13:02, modulation: S4, coderate：R3_5, frequency：1290 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:16:06, modulation: S4, coderate：R3_5, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:19:22, modulation: S4, coderate：R3_5, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:22:35, modulation: S4, coderate：R3_5, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:25:53, modulation: S4, coderate：R3_5, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:29:16, modulation: S4, coderate：R3_5, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:32:24, modulation: S4, coderate：R3_5, frequency：1410 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:35:47, modulation: S4, coderate：R3_5, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:38:55, modulation: S4, coderate：R3_5, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:42:19, modulation: S4, coderate：R3_5, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:45:27, modulation: S4, coderate：R3_5, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:48:51, modulation: S4, coderate：R3_5, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:52:07, modulation: S4, coderate：R3_5, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:55:22, modulation: S4, coderate：R3_5, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 01:58:38, modulation: S4, coderate：R3_5, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:01:54, modulation: S4, coderate：R3_5, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:05:20, modulation: S4, coderate：R3_5, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:08:39, modulation: S4, coderate：R3_5, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:11:53, modulation: S4, coderate：R3_5, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:15:13, modulation: S4, coderate：R3_5, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:18:29, modulation: S4, coderate：R3_5, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:21:48, modulation: S4, coderate：R3_5, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:24:52, modulation: S4, coderate：R3_5, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:28:05, modulation: S4, coderate：R3_5, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:31:16, modulation: S4, coderate：R3_5, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:34:37, modulation: S4, coderate：R3_5, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:37:56, modulation: S4, coderate：R3_5, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -70.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:40:49, modulation: S4, coderate：R3_5, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -65.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:44:07, modulation: S4, coderate：R3_5, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 02:47:30, modulation: S4, coderate：R3_5, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 08:34:08, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 08:37:26, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 08:40:35, modulation: S4, coderate：R1_2, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 08:43:44, modulation: S4, coderate：R1_2, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 08:46:51, modulation: S4, coderate：R1_2, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 08:50:07, modulation: S4, coderate：R1_2, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 08:53:23, modulation: S4, coderate：R1_2, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 08:56:39, modulation: S4, coderate：R1_2, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 08:59:52, modulation: S4, coderate：R1_2, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:02:56, modulation: S4, coderate：R1_2, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:06:12, modulation: S4, coderate：R1_2, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:09:25, modulation: S4, coderate：R1_2, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:12:31, modulation: S4, coderate：R1_2, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:15:39, modulation: S4, coderate：R1_2, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:18:52, modulation: S4, coderate：R1_2, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:22:04, modulation: S4, coderate：R1_2, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:25:01, modulation: S4, coderate：R1_2, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:28:20, modulation: S4, coderate：R1_2, frequency：1290 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:31:38, modulation: S4, coderate：R1_2, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:34:51, modulation: S4, coderate：R1_2, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:38:04, modulation: S4, coderate：R1_2, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:41:12, modulation: S4, coderate：R1_2, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:44:28, modulation: S4, coderate：R1_2, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:47:44, modulation: S4, coderate：R1_2, frequency：1410 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:51:00, modulation: S4, coderate：R1_2, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:54:18, modulation: S4, coderate：R1_2, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 09:57:35, modulation: S4, coderate：R1_2, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:00:54, modulation: S4, coderate：R1_2, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:04:06, modulation: S4, coderate：R1_2, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:07:25, modulation: S4, coderate：R1_2, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:10:41, modulation: S4, coderate：R1_2, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:13:57, modulation: S4, coderate：R1_2, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:17:13, modulation: S4, coderate：R1_2, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:20:25, modulation: S4, coderate：R1_2, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:23:42, modulation: S4, coderate：R1_2, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:26:59, modulation: S4, coderate：R1_2, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:30:16, modulation: S4, coderate：R1_2, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:33:24, modulation: S4, coderate：R1_2, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:36:44, modulation: S4, coderate：R1_2, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:40:00, modulation: S4, coderate：R1_2, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:43:08, modulation: S4, coderate：R1_2, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -102.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:46:29, modulation: S4, coderate：R1_2, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:49:37, modulation: S4, coderate：R1_2, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:52:58, modulation: S4, coderate：R1_2, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -70.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:55:58, modulation: S4, coderate：R1_2, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -65.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 10:59:13, modulation: S4, coderate：R1_2, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:02:26, modulation: S4, coderate：R1_2, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:05:41, modulation: S4, coderate：R1_2, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:08:59, modulation: S4, coderate：R1_2, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:10:24, modulation: S4, coderate：R1_2, frequency：1930 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:13:36, modulation: S4, coderate：R1_2, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:14:25, modulation: S4, coderate：R1_2, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:15:13, modulation: S4, coderate：R1_2, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:16:01, modulation: S4, coderate：R1_2, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:16:49, modulation: S4, coderate：R1_2, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:17:37, modulation: S4, coderate：R1_2, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:18:26, modulation: S4, coderate：R1_2, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:19:14, modulation: S4, coderate：R1_2, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:20:02, modulation: S4, coderate：R1_2, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:20:50, modulation: S4, coderate：R1_2, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:21:38, modulation: S4, coderate：R1_2, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:23:04, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：10000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:26:09, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:29:31, modulation: S4, coderate：R1_2, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:32:41, modulation: S4, coderate：R1_2, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:35:49, modulation: S4, coderate：R1_2, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:38:51, modulation: S4, coderate：R1_2, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:42:01, modulation: S4, coderate：R1_2, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:45:14, modulation: S4, coderate：R1_2, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:48:25, modulation: S4, coderate：R1_2, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:51:44, modulation: S4, coderate：R1_2, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:55:05, modulation: S4, coderate：R1_2, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 11:58:17, modulation: S4, coderate：R1_2, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:01:29, modulation: S4, coderate：R1_2, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:04:40, modulation: S4, coderate：R1_2, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:07:58, modulation: S4, coderate：R1_2, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:11:18, modulation: S4, coderate：R1_2, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:14:28, modulation: S4, coderate：R1_2, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:17:37, modulation: S4, coderate：R1_2, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:20:54, modulation: S4, coderate：R1_2, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:24:08, modulation: S4, coderate：R1_2, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:27:21, modulation: S4, coderate：R1_2, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:28:45, modulation: S4, coderate：R1_2, frequency：1370 MHz，symbol_rate：10000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:32:02, modulation: S4, coderate：R1_2, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:35:09, modulation: S4, coderate：R1_2, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:38:26, modulation: S4, coderate：R1_2, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:41:43, modulation: S4, coderate：R1_2, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:44:56, modulation: S4, coderate：R1_2, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:48:14, modulation: S4, coderate：R1_2, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:51:16, modulation: S4, coderate：R1_2, frequency：1510 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:54:28, modulation: S4, coderate：R1_2, frequency：1530 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 12:57:42, modulation: S4, coderate：R1_2, frequency：1550 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 17:43:52, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 17:45:15, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 17:48:36, modulation: S4, coderate：R1_2, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 17:51:44, modulation: S4, coderate：R1_2, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 17:55:08, modulation: S4, coderate：R1_2, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 17:58:15, modulation: S4, coderate：R1_2, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:01:40, modulation: S4, coderate：R1_2, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:04:47, modulation: S4, coderate：R1_2, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:07:55, modulation: S4, coderate：R1_2, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:11:00, modulation: S4, coderate：R1_2, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:14:00, modulation: S4, coderate：R1_2, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:17:24, modulation: S4, coderate：R1_2, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:20:35, modulation: S4, coderate：R1_2, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:23:52, modulation: S4, coderate：R1_2, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:27:04, modulation: S4, coderate：R1_2, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:30:19, modulation: S4, coderate：R1_2, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:33:28, modulation: S4, coderate：R1_2, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:36:48, modulation: S4, coderate：R1_2, frequency：1290 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:40:03, modulation: S4, coderate：R1_2, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:43:20, modulation: S4, coderate：R1_2, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:46:35, modulation: S4, coderate：R1_2, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:49:51, modulation: S4, coderate：R1_2, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:53:04, modulation: S4, coderate：R1_2, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:56:23, modulation: S4, coderate：R1_2, frequency：1410 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 18:59:43, modulation: S4, coderate：R1_2, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:02:58, modulation: S4, coderate：R1_2, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:06:14, modulation: S4, coderate：R1_2, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:09:27, modulation: S4, coderate：R1_2, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:12:49, modulation: S4, coderate：R1_2, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:16:00, modulation: S4, coderate：R1_2, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:17:25, modulation: S4, coderate：R1_2, frequency：1550 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:20:46, modulation: S4, coderate：R1_2, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:24:05, modulation: S4, coderate：R1_2, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:27:22, modulation: S4, coderate：R1_2, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:30:38, modulation: S4, coderate：R1_2, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:33:56, modulation: S4, coderate：R1_2, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:37:12, modulation: S4, coderate：R1_2, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:40:21, modulation: S4, coderate：R1_2, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:43:32, modulation: S4, coderate：R1_2, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:46:49, modulation: S4, coderate：R1_2, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:49:56, modulation: S4, coderate：R1_2, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -102.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:53:13, modulation: S4, coderate：R1_2, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:56:29, modulation: S4, coderate：R1_2, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 19:59:45, modulation: S4, coderate：R1_2, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -70.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:03:06, modulation: S4, coderate：R1_2, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -83.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:06:21, modulation: S4, coderate：R1_2, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:09:36, modulation: S4, coderate：R1_2, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:13:04, modulation: S4, coderate：R1_2, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -77.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:16:28, modulation: S4, coderate：R1_2, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:19:44, modulation: S4, coderate：R1_2, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:22:58, modulation: S4, coderate：R1_2, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:23:47, modulation: S4, coderate：R1_2, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:24:35, modulation: S4, coderate：R1_2, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:25:24, modulation: S4, coderate：R1_2, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:26:12, modulation: S4, coderate：R1_2, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:27:00, modulation: S4, coderate：R1_2, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:27:48, modulation: S4, coderate：R1_2, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:28:36, modulation: S4, coderate：R1_2, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:29:25, modulation: S4, coderate：R1_2, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:30:13, modulation: S4, coderate：R1_2, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:31:01, modulation: S4, coderate：R1_2, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:34:11, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:37:19, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:40:27, modulation: S4, coderate：R1_2, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:43:32, modulation: S4, coderate：R1_2, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:46:47, modulation: S4, coderate：R1_2, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:49:51, modulation: S4, coderate：R1_2, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:53:04, modulation: S4, coderate：R1_2, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:56:13, modulation: S4, coderate：R1_2, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 20:59:27, modulation: S4, coderate：R1_2, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:02:43, modulation: S4, coderate：R1_2, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:05:59, modulation: S4, coderate：R1_2, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:09:13, modulation: S4, coderate：R1_2, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:12:23, modulation: S4, coderate：R1_2, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:15:37, modulation: S4, coderate：R1_2, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:18:52, modulation: S4, coderate：R1_2, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:22:12, modulation: S4, coderate：R1_2, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:25:22, modulation: S4, coderate：R1_2, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:28:42, modulation: S4, coderate：R1_2, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:31:52, modulation: S4, coderate：R1_2, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:35:05, modulation: S4, coderate：R1_2, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:38:14, modulation: S4, coderate：R1_2, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:41:27, modulation: S4, coderate：R1_2, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:44:44, modulation: S4, coderate：R1_2, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:48:02, modulation: S4, coderate：R1_2, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:51:16, modulation: S4, coderate：R1_2, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:54:34, modulation: S4, coderate：R1_2, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 21:57:40, modulation: S4, coderate：R1_2, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:00:58, modulation: S4, coderate：R1_2, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:04:02, modulation: S4, coderate：R1_2, frequency：1510 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:07:19, modulation: S4, coderate：R1_2, frequency：1530 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:10:30, modulation: S4, coderate：R1_2, frequency：1550 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:13:33, modulation: S4, coderate：R1_2, frequency：1570 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:16:42, modulation: S4, coderate：R1_2, frequency：1590 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:19:51, modulation: S4, coderate：R1_2, frequency：1610 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:22:58, modulation: S4, coderate：R1_2, frequency：1630 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:26:11, modulation: S4, coderate：R1_2, frequency：1650 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:29:22, modulation: S4, coderate：R1_2, frequency：1670 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:32:35, modulation: S4, coderate：R1_2, frequency：1690 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:35:55, modulation: S4, coderate：R1_2, frequency：1710 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:39:03, modulation: S4, coderate：R1_2, frequency：1730 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:42:11, modulation: S4, coderate：R1_2, frequency：1750 MHz，symbol_rate：10000 Ksym/s，阈值为: -94.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:45:15, modulation: S4, coderate：R1_2, frequency：1770 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:48:30, modulation: S4, coderate：R1_2, frequency：1790 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:49:55, modulation: S4, coderate：R1_2, frequency：1810 MHz，symbol_rate：10000 Ksym/s，{"msg": "初始值处于马赛克阈值外", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:53:05, modulation: S4, coderate：R1_2, frequency：1830 MHz，symbol_rate：10000 Ksym/s，阈值为: -73.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:56:17, modulation: S4, coderate：R1_2, frequency：1850 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 22:59:32, modulation: S4, coderate：R1_2, frequency：1870 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:02:50, modulation: S4, coderate：R1_2, frequency：1890 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:06:13, modulation: S4, coderate：R1_2, frequency：1910 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:09:22, modulation: S4, coderate：R1_2, frequency：1930 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:12:32, modulation: S4, coderate：R1_2, frequency：1950 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:13:20, modulation: S4, coderate：R1_2, frequency：1970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:14:08, modulation: S4, coderate：R1_2, frequency：1990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:14:56, modulation: S4, coderate：R1_2, frequency：2010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:15:44, modulation: S4, coderate：R1_2, frequency：2030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:16:32, modulation: S4, coderate：R1_2, frequency：2050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:17:20, modulation: S4, coderate：R1_2, frequency：2070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:18:08, modulation: S4, coderate：R1_2, frequency：2090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:18:57, modulation: S4, coderate：R1_2, frequency：2110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:19:45, modulation: S4, coderate：R1_2, frequency：2130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:20:33, modulation: S4, coderate：R1_2, frequency：2150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:23:46, modulation: S4, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:26:50, modulation: S4, coderate：R3_5, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:29:59, modulation: S4, coderate：R3_5, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:33:11, modulation: S4, coderate：R3_5, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:36:25, modulation: S4, coderate：R3_5, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:39:39, modulation: S4, coderate：R3_5, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:42:52, modulation: S4, coderate：R3_5, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:46:02, modulation: S4, coderate：R3_5, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:49:07, modulation: S4, coderate：R3_5, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:52:15, modulation: S4, coderate：R3_5, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:55:15, modulation: S4, coderate：R3_5, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-16 23:58:24, modulation: S4, coderate：R3_5, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:01:40, modulation: S4, coderate：R3_5, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:04:50, modulation: S4, coderate：R3_5, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:07:55, modulation: S4, coderate：R3_5, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:11:15, modulation: S4, coderate：R3_5, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:14:16, modulation: S4, coderate：R3_5, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:17:36, modulation: S4, coderate：R3_5, frequency：1290 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:20:48, modulation: S4, coderate：R3_5, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:24:06, modulation: S4, coderate：R3_5, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:27:19, modulation: S4, coderate：R3_5, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:30:42, modulation: S4, coderate：R3_5, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:33:58, modulation: S4, coderate：R3_5, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:37:07, modulation: S4, coderate：R3_5, frequency：1410 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:40:30, modulation: S4, coderate：R3_5, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:43:38, modulation: S4, coderate：R3_5, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:46:50, modulation: S4, coderate：R3_5, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:50:02, modulation: S4, coderate：R3_5, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:53:07, modulation: S4, coderate：R3_5, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:56:21, modulation: S4, coderate：R3_5, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 00:59:44, modulation: S4, coderate：R3_5, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:02:53, modulation: S4, coderate：R3_5, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:06:05, modulation: S4, coderate：R3_5, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:09:25, modulation: S4, coderate：R3_5, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:12:47, modulation: S4, coderate：R3_5, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:15:57, modulation: S4, coderate：R3_5, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:19:06, modulation: S4, coderate：R3_5, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:22:25, modulation: S4, coderate：R3_5, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:25:38, modulation: S4, coderate：R3_5, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:28:41, modulation: S4, coderate：R3_5, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:31:45, modulation: S4, coderate：R3_5, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:34:49, modulation: S4, coderate：R3_5, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:38:01, modulation: S4, coderate：R3_5, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:41:14, modulation: S4, coderate：R3_5, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -70.10
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:44:07, modulation: S4, coderate：R3_5, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -65.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:47:20, modulation: S4, coderate：R3_5, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:50:34, modulation: S4, coderate：R3_5, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:53:32, modulation: S4, coderate：R3_5, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:56:36, modulation: S4, coderate：R3_5, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 01:59:44, modulation: S4, coderate：R3_5, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:02:48, modulation: S4, coderate：R3_5, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:03:37, modulation: S4, coderate：R3_5, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:04:25, modulation: S4, coderate：R3_5, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:05:13, modulation: S4, coderate：R3_5, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:06:01, modulation: S4, coderate：R3_5, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:06:49, modulation: S4, coderate：R3_5, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:07:37, modulation: S4, coderate：R3_5, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:08:25, modulation: S4, coderate：R3_5, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:09:14, modulation: S4, coderate：R3_5, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:10:02, modulation: S4, coderate：R3_5, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:10:49, modulation: S4, coderate：R3_5, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:14:05, modulation: S4, coderate：R3_5, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:17:09, modulation: S4, coderate：R3_5, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:20:17, modulation: S4, coderate：R3_5, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:23:23, modulation: S4, coderate：R3_5, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:26:28, modulation: S4, coderate：R3_5, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:29:49, modulation: S4, coderate：R3_5, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:33:10, modulation: S4, coderate：R3_5, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:36:19, modulation: S4, coderate：R3_5, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:39:27, modulation: S4, coderate：R3_5, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:42:35, modulation: S4, coderate：R3_5, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:45:48, modulation: S4, coderate：R3_5, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:48:52, modulation: S4, coderate：R3_5, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:52:04, modulation: S4, coderate：R3_5, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:55:09, modulation: S4, coderate：R3_5, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 02:58:31, modulation: S4, coderate：R3_5, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.70
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:01:32, modulation: S4, coderate：R3_5, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:04:42, modulation: S4, coderate：R3_5, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:07:47, modulation: S4, coderate：R3_5, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.40
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:08:40, modulation: S4, coderate：R3_5, frequency：1310 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:09:32, modulation: S4, coderate：R3_5, frequency：1330 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:10:25, modulation: S4, coderate：R3_5, frequency：1350 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:11:18, modulation: S4, coderate：R3_5, frequency：1370 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:12:10, modulation: S4, coderate：R3_5, frequency：1390 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:13:03, modulation: S4, coderate：R3_5, frequency：1410 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:13:55, modulation: S4, coderate：R3_5, frequency：1430 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:14:48, modulation: S4, coderate：R3_5, frequency：1450 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:15:41, modulation: S4, coderate：R3_5, frequency：1470 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:16:34, modulation: S4, coderate：R3_5, frequency：1490 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:17:26, modulation: S4, coderate：R3_5, frequency：1510 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:18:19, modulation: S4, coderate：R3_5, frequency：1530 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:19:12, modulation: S4, coderate：R3_5, frequency：1550 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:20:04, modulation: S4, coderate：R3_5, frequency：1570 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:20:57, modulation: S4, coderate：R3_5, frequency：1590 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:21:50, modulation: S4, coderate：R3_5, frequency：1610 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:22:43, modulation: S4, coderate：R3_5, frequency：1630 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:23:35, modulation: S4, coderate：R3_5, frequency：1650 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:24:28, modulation: S4, coderate：R3_5, frequency：1670 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:25:21, modulation: S4, coderate：R3_5, frequency：1690 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:26:13, modulation: S4, coderate：R3_5, frequency：1710 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:27:06, modulation: S4, coderate：R3_5, frequency：1730 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:27:59, modulation: S4, coderate：R3_5, frequency：1750 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:28:51, modulation: S4, coderate：R3_5, frequency：1770 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:29:44, modulation: S4, coderate：R3_5, frequency：1790 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:30:36, modulation: S4, coderate：R3_5, frequency：1810 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:31:29, modulation: S4, coderate：R3_5, frequency：1830 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:32:22, modulation: S4, coderate：R3_5, frequency：1850 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:33:15, modulation: S4, coderate：R3_5, frequency：1870 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:34:07, modulation: S4, coderate：R3_5, frequency：1890 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:35:00, modulation: S4, coderate：R3_5, frequency：1910 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:35:53, modulation: S4, coderate：R3_5, frequency：1930 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:36:45, modulation: S4, coderate：R3_5, frequency：1950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:37:38, modulation: S4, coderate：R3_5, frequency：1970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:38:31, modulation: S4, coderate：R3_5, frequency：1990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:39:23, modulation: S4, coderate：R3_5, frequency：2010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:40:16, modulation: S4, coderate：R3_5, frequency：2030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:41:08, modulation: S4, coderate：R3_5, frequency：2050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:42:01, modulation: S4, coderate：R3_5, frequency：2070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:42:54, modulation: S4, coderate：R3_5, frequency：2090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:43:46, modulation: S4, coderate：R3_5, frequency：2110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:44:39, modulation: S4, coderate：R3_5, frequency：2130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:45:32, modulation: S4, coderate：R3_5, frequency：2150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:46:28, modulation: S4, coderate：R2_3, frequency：950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:47:21, modulation: S4, coderate：R2_3, frequency：970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:48:13, modulation: S4, coderate：R2_3, frequency：990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:49:06, modulation: S4, coderate：R2_3, frequency：1010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:49:59, modulation: S4, coderate：R2_3, frequency：1030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:50:52, modulation: S4, coderate：R2_3, frequency：1050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:51:44, modulation: S4, coderate：R2_3, frequency：1070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:52:37, modulation: S4, coderate：R2_3, frequency：1090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:53:30, modulation: S4, coderate：R2_3, frequency：1110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:54:23, modulation: S4, coderate：R2_3, frequency：1130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:55:15, modulation: S4, coderate：R2_3, frequency：1150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:56:08, modulation: S4, coderate：R2_3, frequency：1170 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:57:00, modulation: S4, coderate：R2_3, frequency：1190 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:57:53, modulation: S4, coderate：R2_3, frequency：1210 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:58:46, modulation: S4, coderate：R2_3, frequency：1230 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 03:59:38, modulation: S4, coderate：R2_3, frequency：1250 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:00:31, modulation: S4, coderate：R2_3, frequency：1270 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:01:24, modulation: S4, coderate：R2_3, frequency：1290 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:02:17, modulation: S4, coderate：R2_3, frequency：1310 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:03:09, modulation: S4, coderate：R2_3, frequency：1330 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:04:02, modulation: S4, coderate：R2_3, frequency：1350 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:04:55, modulation: S4, coderate：R2_3, frequency：1370 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:05:48, modulation: S4, coderate：R2_3, frequency：1390 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:06:40, modulation: S4, coderate：R2_3, frequency：1410 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:07:33, modulation: S4, coderate：R2_3, frequency：1430 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:08:26, modulation: S4, coderate：R2_3, frequency：1450 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:09:19, modulation: S4, coderate：R2_3, frequency：1470 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:10:11, modulation: S4, coderate：R2_3, frequency：1490 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:11:04, modulation: S4, coderate：R2_3, frequency：1510 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:11:56, modulation: S4, coderate：R2_3, frequency：1530 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:12:49, modulation: S4, coderate：R2_3, frequency：1550 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:13:42, modulation: S4, coderate：R2_3, frequency：1570 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:14:34, modulation: S4, coderate：R2_3, frequency：1590 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:15:27, modulation: S4, coderate：R2_3, frequency：1610 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:16:20, modulation: S4, coderate：R2_3, frequency：1630 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:17:12, modulation: S4, coderate：R2_3, frequency：1650 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:18:05, modulation: S4, coderate：R2_3, frequency：1670 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:18:58, modulation: S4, coderate：R2_3, frequency：1690 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:19:50, modulation: S4, coderate：R2_3, frequency：1710 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:20:43, modulation: S4, coderate：R2_3, frequency：1730 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:21:35, modulation: S4, coderate：R2_3, frequency：1750 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:22:28, modulation: S4, coderate：R2_3, frequency：1770 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:23:21, modulation: S4, coderate：R2_3, frequency：1790 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:24:13, modulation: S4, coderate：R2_3, frequency：1810 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:25:06, modulation: S4, coderate：R2_3, frequency：1830 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:25:58, modulation: S4, coderate：R2_3, frequency：1850 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:26:51, modulation: S4, coderate：R2_3, frequency：1870 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:27:44, modulation: S4, coderate：R2_3, frequency：1890 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:28:36, modulation: S4, coderate：R2_3, frequency：1910 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:29:29, modulation: S4, coderate：R2_3, frequency：1930 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:30:22, modulation: S4, coderate：R2_3, frequency：1950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:31:15, modulation: S4, coderate：R2_3, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:32:07, modulation: S4, coderate：R2_3, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:33:00, modulation: S4, coderate：R2_3, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:33:52, modulation: S4, coderate：R2_3, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:34:45, modulation: S4, coderate：R2_3, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:35:38, modulation: S4, coderate：R2_3, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:36:30, modulation: S4, coderate：R2_3, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:37:23, modulation: S4, coderate：R2_3, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:38:16, modulation: S4, coderate：R2_3, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:39:09, modulation: S4, coderate：R2_3, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:40:03, modulation: S4, coderate：R2_3, frequency：950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:40:55, modulation: S4, coderate：R2_3, frequency：970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:41:48, modulation: S4, coderate：R2_3, frequency：990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:42:41, modulation: S4, coderate：R2_3, frequency：1010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:43:33, modulation: S4, coderate：R2_3, frequency：1030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:44:26, modulation: S4, coderate：R2_3, frequency：1050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:45:19, modulation: S4, coderate：R2_3, frequency：1070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:46:11, modulation: S4, coderate：R2_3, frequency：1090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:47:04, modulation: S4, coderate：R2_3, frequency：1110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:47:57, modulation: S4, coderate：R2_3, frequency：1130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:48:49, modulation: S4, coderate：R2_3, frequency：1150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:49:42, modulation: S4, coderate：R2_3, frequency：1170 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:50:34, modulation: S4, coderate：R2_3, frequency：1190 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:51:27, modulation: S4, coderate：R2_3, frequency：1210 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:52:19, modulation: S4, coderate：R2_3, frequency：1230 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:53:12, modulation: S4, coderate：R2_3, frequency：1250 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:54:04, modulation: S4, coderate：R2_3, frequency：1270 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:54:57, modulation: S4, coderate：R2_3, frequency：1290 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:55:50, modulation: S4, coderate：R2_3, frequency：1310 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:56:42, modulation: S4, coderate：R2_3, frequency：1330 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:57:35, modulation: S4, coderate：R2_3, frequency：1350 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:58:28, modulation: S4, coderate：R2_3, frequency：1370 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 04:59:20, modulation: S4, coderate：R2_3, frequency：1390 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:00:13, modulation: S4, coderate：R2_3, frequency：1410 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:01:05, modulation: S4, coderate：R2_3, frequency：1430 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:01:58, modulation: S4, coderate：R2_3, frequency：1450 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:02:51, modulation: S4, coderate：R2_3, frequency：1470 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:03:43, modulation: S4, coderate：R2_3, frequency：1490 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:04:36, modulation: S4, coderate：R2_3, frequency：1510 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:05:29, modulation: S4, coderate：R2_3, frequency：1530 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:06:21, modulation: S4, coderate：R2_3, frequency：1550 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:07:14, modulation: S4, coderate：R2_3, frequency：1570 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:08:07, modulation: S4, coderate：R2_3, frequency：1590 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:08:59, modulation: S4, coderate：R2_3, frequency：1610 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:09:52, modulation: S4, coderate：R2_3, frequency：1630 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:10:45, modulation: S4, coderate：R2_3, frequency：1650 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:11:38, modulation: S4, coderate：R2_3, frequency：1670 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:12:31, modulation: S4, coderate：R2_3, frequency：1690 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:13:23, modulation: S4, coderate：R2_3, frequency：1710 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:14:16, modulation: S4, coderate：R2_3, frequency：1730 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:15:09, modulation: S4, coderate：R2_3, frequency：1750 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:16:01, modulation: S4, coderate：R2_3, frequency：1770 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:16:54, modulation: S4, coderate：R2_3, frequency：1790 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:17:46, modulation: S4, coderate：R2_3, frequency：1810 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:18:39, modulation: S4, coderate：R2_3, frequency：1830 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:19:32, modulation: S4, coderate：R2_3, frequency：1850 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:20:24, modulation: S4, coderate：R2_3, frequency：1870 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:21:17, modulation: S4, coderate：R2_3, frequency：1890 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:22:09, modulation: S4, coderate：R2_3, frequency：1910 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:23:02, modulation: S4, coderate：R2_3, frequency：1930 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:23:54, modulation: S4, coderate：R2_3, frequency：1950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:24:47, modulation: S4, coderate：R2_3, frequency：1970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:25:40, modulation: S4, coderate：R2_3, frequency：1990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:26:32, modulation: S4, coderate：R2_3, frequency：2010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:27:25, modulation: S4, coderate：R2_3, frequency：2030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:28:18, modulation: S4, coderate：R2_3, frequency：2050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:29:11, modulation: S4, coderate：R2_3, frequency：2070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:30:04, modulation: S4, coderate：R2_3, frequency：2090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:30:56, modulation: S4, coderate：R2_3, frequency：2110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:31:49, modulation: S4, coderate：R2_3, frequency：2130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:32:41, modulation: S4, coderate：R2_3, frequency：2150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:33:38, modulation: S4, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:34:30, modulation: S4, coderate：R3_4, frequency：970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:35:23, modulation: S4, coderate：R3_4, frequency：990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:36:15, modulation: S4, coderate：R3_4, frequency：1010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:37:08, modulation: S4, coderate：R3_4, frequency：1030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:38:01, modulation: S4, coderate：R3_4, frequency：1050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:38:54, modulation: S4, coderate：R3_4, frequency：1070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:39:46, modulation: S4, coderate：R3_4, frequency：1090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:40:39, modulation: S4, coderate：R3_4, frequency：1110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:41:31, modulation: S4, coderate：R3_4, frequency：1130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:42:24, modulation: S4, coderate：R3_4, frequency：1150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:43:17, modulation: S4, coderate：R3_4, frequency：1170 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:44:09, modulation: S4, coderate：R3_4, frequency：1190 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:45:02, modulation: S4, coderate：R3_4, frequency：1210 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:45:55, modulation: S4, coderate：R3_4, frequency：1230 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:46:47, modulation: S4, coderate：R3_4, frequency：1250 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:47:40, modulation: S4, coderate：R3_4, frequency：1270 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:48:33, modulation: S4, coderate：R3_4, frequency：1290 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:49:26, modulation: S4, coderate：R3_4, frequency：1310 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:50:18, modulation: S4, coderate：R3_4, frequency：1330 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:51:11, modulation: S4, coderate：R3_4, frequency：1350 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:52:04, modulation: S4, coderate：R3_4, frequency：1370 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:52:56, modulation: S4, coderate：R3_4, frequency：1390 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:53:48, modulation: S4, coderate：R3_4, frequency：1410 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:54:41, modulation: S4, coderate：R3_4, frequency：1430 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:55:34, modulation: S4, coderate：R3_4, frequency：1450 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:56:26, modulation: S4, coderate：R3_4, frequency：1470 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:57:19, modulation: S4, coderate：R3_4, frequency：1490 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:58:12, modulation: S4, coderate：R3_4, frequency：1510 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:59:05, modulation: S4, coderate：R3_4, frequency：1530 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 05:59:57, modulation: S4, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:00:50, modulation: S4, coderate：R3_4, frequency：1570 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:01:43, modulation: S4, coderate：R3_4, frequency：1590 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:02:36, modulation: S4, coderate：R3_4, frequency：1610 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:03:28, modulation: S4, coderate：R3_4, frequency：1630 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:04:21, modulation: S4, coderate：R3_4, frequency：1650 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:05:13, modulation: S4, coderate：R3_4, frequency：1670 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:06:06, modulation: S4, coderate：R3_4, frequency：1690 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:06:59, modulation: S4, coderate：R3_4, frequency：1710 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:07:51, modulation: S4, coderate：R3_4, frequency：1730 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:08:44, modulation: S4, coderate：R3_4, frequency：1750 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:09:37, modulation: S4, coderate：R3_4, frequency：1770 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:10:30, modulation: S4, coderate：R3_4, frequency：1790 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:11:22, modulation: S4, coderate：R3_4, frequency：1810 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:12:15, modulation: S4, coderate：R3_4, frequency：1830 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:13:08, modulation: S4, coderate：R3_4, frequency：1850 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:14:00, modulation: S4, coderate：R3_4, frequency：1870 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:14:53, modulation: S4, coderate：R3_4, frequency：1890 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:15:46, modulation: S4, coderate：R3_4, frequency：1910 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:16:38, modulation: S4, coderate：R3_4, frequency：1930 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:17:31, modulation: S4, coderate：R3_4, frequency：1950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:18:24, modulation: S4, coderate：R3_4, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:19:16, modulation: S4, coderate：R3_4, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:20:09, modulation: S4, coderate：R3_4, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:21:01, modulation: S4, coderate：R3_4, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:21:54, modulation: S4, coderate：R3_4, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:22:47, modulation: S4, coderate：R3_4, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:23:39, modulation: S4, coderate：R3_4, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:24:32, modulation: S4, coderate：R3_4, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:25:25, modulation: S4, coderate：R3_4, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:26:18, modulation: S4, coderate：R3_4, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:27:11, modulation: S4, coderate：R3_4, frequency：950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:28:04, modulation: S4, coderate：R3_4, frequency：970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:28:56, modulation: S4, coderate：R3_4, frequency：990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:29:49, modulation: S4, coderate：R3_4, frequency：1010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:30:41, modulation: S4, coderate：R3_4, frequency：1030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:31:34, modulation: S4, coderate：R3_4, frequency：1050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:32:27, modulation: S4, coderate：R3_4, frequency：1070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:33:19, modulation: S4, coderate：R3_4, frequency：1090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:34:12, modulation: S4, coderate：R3_4, frequency：1110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:35:05, modulation: S4, coderate：R3_4, frequency：1130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:35:58, modulation: S4, coderate：R3_4, frequency：1150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:36:51, modulation: S4, coderate：R3_4, frequency：1170 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:37:44, modulation: S4, coderate：R3_4, frequency：1190 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:38:36, modulation: S4, coderate：R3_4, frequency：1210 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:39:29, modulation: S4, coderate：R3_4, frequency：1230 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:40:22, modulation: S4, coderate：R3_4, frequency：1250 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:41:15, modulation: S4, coderate：R3_4, frequency：1270 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:42:07, modulation: S4, coderate：R3_4, frequency：1290 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:43:00, modulation: S4, coderate：R3_4, frequency：1310 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:43:52, modulation: S4, coderate：R3_4, frequency：1330 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:44:45, modulation: S4, coderate：R3_4, frequency：1350 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:45:38, modulation: S4, coderate：R3_4, frequency：1370 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:46:30, modulation: S4, coderate：R3_4, frequency：1390 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:47:23, modulation: S4, coderate：R3_4, frequency：1410 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:48:16, modulation: S4, coderate：R3_4, frequency：1430 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:49:08, modulation: S4, coderate：R3_4, frequency：1450 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:50:00, modulation: S4, coderate：R3_4, frequency：1470 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:50:53, modulation: S4, coderate：R3_4, frequency：1490 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:51:46, modulation: S4, coderate：R3_4, frequency：1510 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:52:38, modulation: S4, coderate：R3_4, frequency：1530 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:53:31, modulation: S4, coderate：R3_4, frequency：1550 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:54:24, modulation: S4, coderate：R3_4, frequency：1570 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:55:16, modulation: S4, coderate：R3_4, frequency：1590 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:56:08, modulation: S4, coderate：R3_4, frequency：1610 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:57:01, modulation: S4, coderate：R3_4, frequency：1630 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:57:54, modulation: S4, coderate：R3_4, frequency：1650 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:58:47, modulation: S4, coderate：R3_4, frequency：1670 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 06:59:39, modulation: S4, coderate：R3_4, frequency：1690 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:00:32, modulation: S4, coderate：R3_4, frequency：1710 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:01:25, modulation: S4, coderate：R3_4, frequency：1730 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:02:17, modulation: S4, coderate：R3_4, frequency：1750 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:03:10, modulation: S4, coderate：R3_4, frequency：1770 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:04:02, modulation: S4, coderate：R3_4, frequency：1790 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:04:55, modulation: S4, coderate：R3_4, frequency：1810 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:05:48, modulation: S4, coderate：R3_4, frequency：1830 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:06:40, modulation: S4, coderate：R3_4, frequency：1850 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:07:33, modulation: S4, coderate：R3_4, frequency：1870 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:08:26, modulation: S4, coderate：R3_4, frequency：1890 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:09:18, modulation: S4, coderate：R3_4, frequency：1910 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:10:11, modulation: S4, coderate：R3_4, frequency：1930 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:11:03, modulation: S4, coderate：R3_4, frequency：1950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:11:56, modulation: S4, coderate：R3_4, frequency：1970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:12:49, modulation: S4, coderate：R3_4, frequency：1990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:13:42, modulation: S4, coderate：R3_4, frequency：2010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:14:34, modulation: S4, coderate：R3_4, frequency：2030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:15:27, modulation: S4, coderate：R3_4, frequency：2050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:16:19, modulation: S4, coderate：R3_4, frequency：2070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:17:12, modulation: S4, coderate：R3_4, frequency：2090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:18:05, modulation: S4, coderate：R3_4, frequency：2110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:18:58, modulation: S4, coderate：R3_4, frequency：2130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:19:50, modulation: S4, coderate：R3_4, frequency：2150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:20:47, modulation: S4, coderate：R4_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:21:39, modulation: S4, coderate：R4_5, frequency：970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:22:32, modulation: S4, coderate：R4_5, frequency：990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:23:25, modulation: S4, coderate：R4_5, frequency：1010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:24:17, modulation: S4, coderate：R4_5, frequency：1030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:25:10, modulation: S4, coderate：R4_5, frequency：1050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:26:03, modulation: S4, coderate：R4_5, frequency：1070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:26:55, modulation: S4, coderate：R4_5, frequency：1090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:27:48, modulation: S4, coderate：R4_5, frequency：1110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:28:41, modulation: S4, coderate：R4_5, frequency：1130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:29:33, modulation: S4, coderate：R4_5, frequency：1150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:30:26, modulation: S4, coderate：R4_5, frequency：1170 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:31:18, modulation: S4, coderate：R4_5, frequency：1190 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:32:11, modulation: S4, coderate：R4_5, frequency：1210 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:33:04, modulation: S4, coderate：R4_5, frequency：1230 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:33:56, modulation: S4, coderate：R4_5, frequency：1250 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:34:48, modulation: S4, coderate：R4_5, frequency：1270 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:35:41, modulation: S4, coderate：R4_5, frequency：1290 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:36:34, modulation: S4, coderate：R4_5, frequency：1310 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:37:27, modulation: S4, coderate：R4_5, frequency：1330 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:38:19, modulation: S4, coderate：R4_5, frequency：1350 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:39:12, modulation: S4, coderate：R4_5, frequency：1370 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:40:05, modulation: S4, coderate：R4_5, frequency：1390 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:40:58, modulation: S4, coderate：R4_5, frequency：1410 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:41:50, modulation: S4, coderate：R4_5, frequency：1430 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:42:43, modulation: S4, coderate：R4_5, frequency：1450 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:43:35, modulation: S4, coderate：R4_5, frequency：1470 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:44:28, modulation: S4, coderate：R4_5, frequency：1490 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:45:20, modulation: S4, coderate：R4_5, frequency：1510 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:46:13, modulation: S4, coderate：R4_5, frequency：1530 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:47:05, modulation: S4, coderate：R4_5, frequency：1550 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:47:58, modulation: S4, coderate：R4_5, frequency：1570 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:48:50, modulation: S4, coderate：R4_5, frequency：1590 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:49:43, modulation: S4, coderate：R4_5, frequency：1610 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:50:36, modulation: S4, coderate：R4_5, frequency：1630 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:51:29, modulation: S4, coderate：R4_5, frequency：1650 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:52:21, modulation: S4, coderate：R4_5, frequency：1670 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:53:14, modulation: S4, coderate：R4_5, frequency：1690 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:54:06, modulation: S4, coderate：R4_5, frequency：1710 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:54:59, modulation: S4, coderate：R4_5, frequency：1730 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:55:51, modulation: S4, coderate：R4_5, frequency：1750 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:56:44, modulation: S4, coderate：R4_5, frequency：1770 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:57:36, modulation: S4, coderate：R4_5, frequency：1790 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:58:29, modulation: S4, coderate：R4_5, frequency：1810 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 07:59:22, modulation: S4, coderate：R4_5, frequency：1830 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:00:15, modulation: S4, coderate：R4_5, frequency：1850 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:01:07, modulation: S4, coderate：R4_5, frequency：1870 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:02:00, modulation: S4, coderate：R4_5, frequency：1890 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:02:53, modulation: S4, coderate：R4_5, frequency：1910 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:03:45, modulation: S4, coderate：R4_5, frequency：1930 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:04:38, modulation: S4, coderate：R4_5, frequency：1950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:05:30, modulation: S4, coderate：R4_5, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:06:23, modulation: S4, coderate：R4_5, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:07:16, modulation: S4, coderate：R4_5, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:08:09, modulation: S4, coderate：R4_5, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:09:01, modulation: S4, coderate：R4_5, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:09:54, modulation: S4, coderate：R4_5, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:10:47, modulation: S4, coderate：R4_5, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:11:40, modulation: S4, coderate：R4_5, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:12:32, modulation: S4, coderate：R4_5, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:13:25, modulation: S4, coderate：R4_5, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:14:19, modulation: S4, coderate：R4_5, frequency：950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:15:11, modulation: S4, coderate：R4_5, frequency：970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:16:04, modulation: S4, coderate：R4_5, frequency：990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:16:57, modulation: S4, coderate：R4_5, frequency：1010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:17:49, modulation: S4, coderate：R4_5, frequency：1030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:18:42, modulation: S4, coderate：R4_5, frequency：1050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:19:35, modulation: S4, coderate：R4_5, frequency：1070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:20:28, modulation: S4, coderate：R4_5, frequency：1090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:21:20, modulation: S4, coderate：R4_5, frequency：1110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:22:13, modulation: S4, coderate：R4_5, frequency：1130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:23:06, modulation: S4, coderate：R4_5, frequency：1150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:23:58, modulation: S4, coderate：R4_5, frequency：1170 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:24:51, modulation: S4, coderate：R4_5, frequency：1190 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:25:44, modulation: S4, coderate：R4_5, frequency：1210 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:26:37, modulation: S4, coderate：R4_5, frequency：1230 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:27:29, modulation: S4, coderate：R4_5, frequency：1250 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:28:22, modulation: S4, coderate：R4_5, frequency：1270 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:29:15, modulation: S4, coderate：R4_5, frequency：1290 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:30:08, modulation: S4, coderate：R4_5, frequency：1310 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:31:00, modulation: S4, coderate：R4_5, frequency：1330 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:31:53, modulation: S4, coderate：R4_5, frequency：1350 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:32:46, modulation: S4, coderate：R4_5, frequency：1370 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:33:38, modulation: S4, coderate：R4_5, frequency：1390 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:34:31, modulation: S4, coderate：R4_5, frequency：1410 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:35:24, modulation: S4, coderate：R4_5, frequency：1430 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:36:17, modulation: S4, coderate：R4_5, frequency：1450 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:37:09, modulation: S4, coderate：R4_5, frequency：1470 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:38:02, modulation: S4, coderate：R4_5, frequency：1490 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:38:55, modulation: S4, coderate：R4_5, frequency：1510 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:39:47, modulation: S4, coderate：R4_5, frequency：1530 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:40:40, modulation: S4, coderate：R4_5, frequency：1550 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:41:33, modulation: S4, coderate：R4_5, frequency：1570 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:42:25, modulation: S4, coderate：R4_5, frequency：1590 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:43:18, modulation: S4, coderate：R4_5, frequency：1610 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:44:10, modulation: S4, coderate：R4_5, frequency：1630 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:45:03, modulation: S4, coderate：R4_5, frequency：1650 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:45:55, modulation: S4, coderate：R4_5, frequency：1670 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:46:48, modulation: S4, coderate：R4_5, frequency：1690 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:47:40, modulation: S4, coderate：R4_5, frequency：1710 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:48:33, modulation: S4, coderate：R4_5, frequency：1730 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:49:26, modulation: S4, coderate：R4_5, frequency：1750 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:50:19, modulation: S4, coderate：R4_5, frequency：1770 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:51:11, modulation: S4, coderate：R4_5, frequency：1790 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:52:04, modulation: S4, coderate：R4_5, frequency：1810 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:52:57, modulation: S4, coderate：R4_5, frequency：1830 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:53:49, modulation: S4, coderate：R4_5, frequency：1850 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:54:42, modulation: S4, coderate：R4_5, frequency：1870 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:55:35, modulation: S4, coderate：R4_5, frequency：1890 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:56:28, modulation: S4, coderate：R4_5, frequency：1910 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:57:20, modulation: S4, coderate：R4_5, frequency：1930 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:58:13, modulation: S4, coderate：R4_5, frequency：1950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:59:06, modulation: S4, coderate：R4_5, frequency：1970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 08:59:58, modulation: S4, coderate：R4_5, frequency：1990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:00:51, modulation: S4, coderate：R4_5, frequency：2010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:01:43, modulation: S4, coderate：R4_5, frequency：2030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:02:36, modulation: S4, coderate：R4_5, frequency：2050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:03:29, modulation: S4, coderate：R4_5, frequency：2070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:04:21, modulation: S4, coderate：R4_5, frequency：2090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:05:14, modulation: S4, coderate：R4_5, frequency：2110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:06:06, modulation: S4, coderate：R4_5, frequency：2130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:06:59, modulation: S4, coderate：R4_5, frequency：2150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:07:55, modulation: S4, coderate：R5_6, frequency：950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:08:48, modulation: S4, coderate：R5_6, frequency：970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:09:40, modulation: S4, coderate：R5_6, frequency：990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:10:33, modulation: S4, coderate：R5_6, frequency：1010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:11:25, modulation: S4, coderate：R5_6, frequency：1030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:12:18, modulation: S4, coderate：R5_6, frequency：1050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:13:11, modulation: S4, coderate：R5_6, frequency：1070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:14:04, modulation: S4, coderate：R5_6, frequency：1090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:14:56, modulation: S4, coderate：R5_6, frequency：1110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:15:49, modulation: S4, coderate：R5_6, frequency：1130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:16:42, modulation: S4, coderate：R5_6, frequency：1150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:17:34, modulation: S4, coderate：R5_6, frequency：1170 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:18:27, modulation: S4, coderate：R5_6, frequency：1190 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:19:20, modulation: S4, coderate：R5_6, frequency：1210 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:20:12, modulation: S4, coderate：R5_6, frequency：1230 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:21:05, modulation: S4, coderate：R5_6, frequency：1250 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:21:58, modulation: S4, coderate：R5_6, frequency：1270 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:22:50, modulation: S4, coderate：R5_6, frequency：1290 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:23:43, modulation: S4, coderate：R5_6, frequency：1310 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:24:36, modulation: S4, coderate：R5_6, frequency：1330 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:25:28, modulation: S4, coderate：R5_6, frequency：1350 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:26:21, modulation: S4, coderate：R5_6, frequency：1370 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:27:14, modulation: S4, coderate：R5_6, frequency：1390 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:28:06, modulation: S4, coderate：R5_6, frequency：1410 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:28:59, modulation: S4, coderate：R5_6, frequency：1430 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:29:52, modulation: S4, coderate：R5_6, frequency：1450 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:30:44, modulation: S4, coderate：R5_6, frequency：1470 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:31:37, modulation: S4, coderate：R5_6, frequency：1490 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:32:29, modulation: S4, coderate：R5_6, frequency：1510 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:33:22, modulation: S4, coderate：R5_6, frequency：1530 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:34:14, modulation: S4, coderate：R5_6, frequency：1550 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:35:07, modulation: S4, coderate：R5_6, frequency：1570 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:35:59, modulation: S4, coderate：R5_6, frequency：1590 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:36:52, modulation: S4, coderate：R5_6, frequency：1610 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:37:45, modulation: S4, coderate：R5_6, frequency：1630 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:38:37, modulation: S4, coderate：R5_6, frequency：1650 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:39:30, modulation: S4, coderate：R5_6, frequency：1670 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:40:23, modulation: S4, coderate：R5_6, frequency：1690 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:41:15, modulation: S4, coderate：R5_6, frequency：1710 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:42:08, modulation: S4, coderate：R5_6, frequency：1730 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:43:00, modulation: S4, coderate：R5_6, frequency：1750 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:43:53, modulation: S4, coderate：R5_6, frequency：1770 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:44:45, modulation: S4, coderate：R5_6, frequency：1790 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:45:38, modulation: S4, coderate：R5_6, frequency：1810 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:46:30, modulation: S4, coderate：R5_6, frequency：1830 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:47:23, modulation: S4, coderate：R5_6, frequency：1850 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:48:16, modulation: S4, coderate：R5_6, frequency：1870 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:49:08, modulation: S4, coderate：R5_6, frequency：1890 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:50:01, modulation: S4, coderate：R5_6, frequency：1910 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:50:54, modulation: S4, coderate：R5_6, frequency：1930 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:51:47, modulation: S4, coderate：R5_6, frequency：1950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:52:39, modulation: S4, coderate：R5_6, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:53:32, modulation: S4, coderate：R5_6, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:54:24, modulation: S4, coderate：R5_6, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:55:17, modulation: S4, coderate：R5_6, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:56:10, modulation: S4, coderate：R5_6, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:57:02, modulation: S4, coderate：R5_6, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:57:55, modulation: S4, coderate：R5_6, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:58:48, modulation: S4, coderate：R5_6, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 09:59:41, modulation: S4, coderate：R5_6, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:00:33, modulation: S4, coderate：R5_6, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:01:27, modulation: S4, coderate：R5_6, frequency：950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:02:20, modulation: S4, coderate：R5_6, frequency：970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:03:12, modulation: S4, coderate：R5_6, frequency：990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:04:05, modulation: S4, coderate：R5_6, frequency：1010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:04:58, modulation: S4, coderate：R5_6, frequency：1030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:05:51, modulation: S4, coderate：R5_6, frequency：1050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:06:43, modulation: S4, coderate：R5_6, frequency：1070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:07:36, modulation: S4, coderate：R5_6, frequency：1090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:08:28, modulation: S4, coderate：R5_6, frequency：1110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:09:21, modulation: S4, coderate：R5_6, frequency：1130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:10:13, modulation: S4, coderate：R5_6, frequency：1150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:11:06, modulation: S4, coderate：R5_6, frequency：1170 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:11:59, modulation: S4, coderate：R5_6, frequency：1190 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:12:51, modulation: S4, coderate：R5_6, frequency：1210 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:13:44, modulation: S4, coderate：R5_6, frequency：1230 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:14:37, modulation: S4, coderate：R5_6, frequency：1250 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:15:29, modulation: S4, coderate：R5_6, frequency：1270 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:16:22, modulation: S4, coderate：R5_6, frequency：1290 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:17:14, modulation: S4, coderate：R5_6, frequency：1310 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:18:07, modulation: S4, coderate：R5_6, frequency：1330 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:19:00, modulation: S4, coderate：R5_6, frequency：1350 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:19:52, modulation: S4, coderate：R5_6, frequency：1370 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:20:45, modulation: S4, coderate：R5_6, frequency：1390 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:21:38, modulation: S4, coderate：R5_6, frequency：1410 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:22:30, modulation: S4, coderate：R5_6, frequency：1430 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:23:23, modulation: S4, coderate：R5_6, frequency：1450 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:24:15, modulation: S4, coderate：R5_6, frequency：1470 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:25:08, modulation: S4, coderate：R5_6, frequency：1490 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:26:00, modulation: S4, coderate：R5_6, frequency：1510 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:26:53, modulation: S4, coderate：R5_6, frequency：1530 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:27:46, modulation: S4, coderate：R5_6, frequency：1550 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:28:39, modulation: S4, coderate：R5_6, frequency：1570 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:29:31, modulation: S4, coderate：R5_6, frequency：1590 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:30:24, modulation: S4, coderate：R5_6, frequency：1610 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:31:16, modulation: S4, coderate：R5_6, frequency：1630 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:32:09, modulation: S4, coderate：R5_6, frequency：1650 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:33:02, modulation: S4, coderate：R5_6, frequency：1670 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:33:55, modulation: S4, coderate：R5_6, frequency：1690 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:34:47, modulation: S4, coderate：R5_6, frequency：1710 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:35:41, modulation: S4, coderate：R5_6, frequency：1730 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:36:33, modulation: S4, coderate：R5_6, frequency：1750 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:37:27, modulation: S4, coderate：R5_6, frequency：1770 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:38:19, modulation: S4, coderate：R5_6, frequency：1790 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:39:12, modulation: S4, coderate：R5_6, frequency：1810 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:40:05, modulation: S4, coderate：R5_6, frequency：1830 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:40:58, modulation: S4, coderate：R5_6, frequency：1850 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:41:50, modulation: S4, coderate：R5_6, frequency：1870 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:42:43, modulation: S4, coderate：R5_6, frequency：1890 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:43:36, modulation: S4, coderate：R5_6, frequency：1910 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:44:29, modulation: S4, coderate：R5_6, frequency：1930 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:45:21, modulation: S4, coderate：R5_6, frequency：1950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:46:14, modulation: S4, coderate：R5_6, frequency：1970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:47:06, modulation: S4, coderate：R5_6, frequency：1990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:47:59, modulation: S4, coderate：R5_6, frequency：2010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:48:52, modulation: S4, coderate：R5_6, frequency：2030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:49:44, modulation: S4, coderate：R5_6, frequency：2050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:50:37, modulation: S4, coderate：R5_6, frequency：2070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:51:30, modulation: S4, coderate：R5_6, frequency：2090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:52:22, modulation: S4, coderate：R5_6, frequency：2110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:53:15, modulation: S4, coderate：R5_6, frequency：2130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:54:08, modulation: S4, coderate：R5_6, frequency：2150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:55:04, modulation: S4, coderate：R8_9, frequency：950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:55:57, modulation: S4, coderate：R8_9, frequency：970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:56:49, modulation: S4, coderate：R8_9, frequency：990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:57:42, modulation: S4, coderate：R8_9, frequency：1010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:58:35, modulation: S4, coderate：R8_9, frequency：1030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 10:59:27, modulation: S4, coderate：R8_9, frequency：1050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:00:20, modulation: S4, coderate：R8_9, frequency：1070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:01:13, modulation: S4, coderate：R8_9, frequency：1090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:02:05, modulation: S4, coderate：R8_9, frequency：1110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:02:58, modulation: S4, coderate：R8_9, frequency：1130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:03:51, modulation: S4, coderate：R8_9, frequency：1150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:04:43, modulation: S4, coderate：R8_9, frequency：1170 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:05:36, modulation: S4, coderate：R8_9, frequency：1190 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:06:29, modulation: S4, coderate：R8_9, frequency：1210 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:07:21, modulation: S4, coderate：R8_9, frequency：1230 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:08:14, modulation: S4, coderate：R8_9, frequency：1250 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:09:06, modulation: S4, coderate：R8_9, frequency：1270 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:09:59, modulation: S4, coderate：R8_9, frequency：1290 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:10:52, modulation: S4, coderate：R8_9, frequency：1310 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:11:44, modulation: S4, coderate：R8_9, frequency：1330 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:12:37, modulation: S4, coderate：R8_9, frequency：1350 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:13:30, modulation: S4, coderate：R8_9, frequency：1370 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:14:22, modulation: S4, coderate：R8_9, frequency：1390 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:15:15, modulation: S4, coderate：R8_9, frequency：1410 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:16:07, modulation: S4, coderate：R8_9, frequency：1430 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:17:00, modulation: S4, coderate：R8_9, frequency：1450 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:17:53, modulation: S4, coderate：R8_9, frequency：1470 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:18:46, modulation: S4, coderate：R8_9, frequency：1490 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:19:38, modulation: S4, coderate：R8_9, frequency：1510 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:20:31, modulation: S4, coderate：R8_9, frequency：1530 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:21:24, modulation: S4, coderate：R8_9, frequency：1550 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:22:16, modulation: S4, coderate：R8_9, frequency：1570 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:23:09, modulation: S4, coderate：R8_9, frequency：1590 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:24:02, modulation: S4, coderate：R8_9, frequency：1610 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:24:54, modulation: S4, coderate：R8_9, frequency：1630 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:25:47, modulation: S4, coderate：R8_9, frequency：1650 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:26:39, modulation: S4, coderate：R8_9, frequency：1670 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:27:32, modulation: S4, coderate：R8_9, frequency：1690 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:28:24, modulation: S4, coderate：R8_9, frequency：1710 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:29:17, modulation: S4, coderate：R8_9, frequency：1730 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:30:10, modulation: S4, coderate：R8_9, frequency：1750 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:31:02, modulation: S4, coderate：R8_9, frequency：1770 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:31:55, modulation: S4, coderate：R8_9, frequency：1790 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:32:47, modulation: S4, coderate：R8_9, frequency：1810 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:33:40, modulation: S4, coderate：R8_9, frequency：1830 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:34:33, modulation: S4, coderate：R8_9, frequency：1850 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:35:25, modulation: S4, coderate：R8_9, frequency：1870 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:36:18, modulation: S4, coderate：R8_9, frequency：1890 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:37:11, modulation: S4, coderate：R8_9, frequency：1910 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:38:03, modulation: S4, coderate：R8_9, frequency：1930 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:38:56, modulation: S4, coderate：R8_9, frequency：1950 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:39:49, modulation: S4, coderate：R8_9, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:40:42, modulation: S4, coderate：R8_9, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:41:34, modulation: S4, coderate：R8_9, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:42:27, modulation: S4, coderate：R8_9, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:43:19, modulation: S4, coderate：R8_9, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:44:12, modulation: S4, coderate：R8_9, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:45:05, modulation: S4, coderate：R8_9, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:45:57, modulation: S4, coderate：R8_9, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:46:50, modulation: S4, coderate：R8_9, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:47:42, modulation: S4, coderate：R8_9, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:48:36, modulation: S4, coderate：R8_9, frequency：950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:49:29, modulation: S4, coderate：R8_9, frequency：970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:50:22, modulation: S4, coderate：R8_9, frequency：990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:51:15, modulation: S4, coderate：R8_9, frequency：1010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:52:08, modulation: S4, coderate：R8_9, frequency：1030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:53:01, modulation: S4, coderate：R8_9, frequency：1050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:53:53, modulation: S4, coderate：R8_9, frequency：1070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:54:46, modulation: S4, coderate：R8_9, frequency：1090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:55:39, modulation: S4, coderate：R8_9, frequency：1110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:56:31, modulation: S4, coderate：R8_9, frequency：1130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:57:24, modulation: S4, coderate：R8_9, frequency：1150 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:58:17, modulation: S4, coderate：R8_9, frequency：1170 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 11:59:09, modulation: S4, coderate：R8_9, frequency：1190 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:00:02, modulation: S4, coderate：R8_9, frequency：1210 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:00:55, modulation: S4, coderate：R8_9, frequency：1230 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:01:47, modulation: S4, coderate：R8_9, frequency：1250 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:02:40, modulation: S4, coderate：R8_9, frequency：1270 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:03:33, modulation: S4, coderate：R8_9, frequency：1290 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:04:25, modulation: S4, coderate：R8_9, frequency：1310 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:05:18, modulation: S4, coderate：R8_9, frequency：1330 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:06:11, modulation: S4, coderate：R8_9, frequency：1350 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:07:03, modulation: S4, coderate：R8_9, frequency：1370 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:07:56, modulation: S4, coderate：R8_9, frequency：1390 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:08:49, modulation: S4, coderate：R8_9, frequency：1410 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:09:42, modulation: S4, coderate：R8_9, frequency：1430 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:10:35, modulation: S4, coderate：R8_9, frequency：1450 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:11:27, modulation: S4, coderate：R8_9, frequency：1470 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:12:20, modulation: S4, coderate：R8_9, frequency：1490 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:13:13, modulation: S4, coderate：R8_9, frequency：1510 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:14:05, modulation: S4, coderate：R8_9, frequency：1530 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:14:58, modulation: S4, coderate：R8_9, frequency：1550 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:15:51, modulation: S4, coderate：R8_9, frequency：1570 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:16:43, modulation: S4, coderate：R8_9, frequency：1590 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:17:36, modulation: S4, coderate：R8_9, frequency：1610 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:18:28, modulation: S4, coderate：R8_9, frequency：1630 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:19:21, modulation: S4, coderate：R8_9, frequency：1650 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:20:14, modulation: S4, coderate：R8_9, frequency：1670 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:21:06, modulation: S4, coderate：R8_9, frequency：1690 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:21:59, modulation: S4, coderate：R8_9, frequency：1710 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:22:51, modulation: S4, coderate：R8_9, frequency：1730 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:23:44, modulation: S4, coderate：R8_9, frequency：1750 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:24:37, modulation: S4, coderate：R8_9, frequency：1770 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:25:29, modulation: S4, coderate：R8_9, frequency：1790 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:26:22, modulation: S4, coderate：R8_9, frequency：1810 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:27:15, modulation: S4, coderate：R8_9, frequency：1830 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:28:07, modulation: S4, coderate：R8_9, frequency：1850 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:29:00, modulation: S4, coderate：R8_9, frequency：1870 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:29:52, modulation: S4, coderate：R8_9, frequency：1890 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:30:45, modulation: S4, coderate：R8_9, frequency：1910 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:31:38, modulation: S4, coderate：R8_9, frequency：1930 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:32:30, modulation: S4, coderate：R8_9, frequency：1950 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:33:23, modulation: S4, coderate：R8_9, frequency：1970 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:34:15, modulation: S4, coderate：R8_9, frequency：1990 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:35:08, modulation: S4, coderate：R8_9, frequency：2010 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:36:01, modulation: S4, coderate：R8_9, frequency：2030 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:36:53, modulation: S4, coderate：R8_9, frequency：2050 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:37:46, modulation: S4, coderate：R8_9, frequency：2070 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:38:39, modulation: S4, coderate：R8_9, frequency：2090 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:39:31, modulation: S4, coderate：R8_9, frequency：2110 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-17 12:41:13, modulation: S4, coderate：R8_9, frequency：2130 MHz，symbol_rate：10000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-18 10:11:47, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60

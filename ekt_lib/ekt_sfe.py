@@ -23,10 +23,23 @@ class Ektsfe(object):
     """
 
     def __init__(self, sfu_ip):
-        rm = pyvisa.ResourceManager()
-        specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
-        self.specan = specan
-        del self.specan.timeout
+        try:
+            rm = pyvisa.ResourceManager()
+            specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
+            self.specan = specan
+            del self.specan.timeout
+        except:
+            try:
+                rm = pyvisa.ResourceManager()
+                specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
+                self.specan = specan
+                del self.specan.timeout
+            except:
+                rm = pyvisa.ResourceManager()
+                specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
+                self.specan = specan
+                del self.specan.timeout
+
 
     def set_frequency_frequency_frequency(self, frequency):
         """
@@ -40,7 +53,7 @@ class Ektsfe(object):
         # self.specan.write('FREQ {}'.format(frequency))
         self.specan.write('FREQ:CW {}'.format(frequency))
         logging.info('FREQ:CW {}'.format(frequency))
-        time.sleep(1)
+        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -52,7 +65,8 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:CHAN {}'.format(channel))
         logging.info('FREQ:CHAN {}'.format(channel))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_frequency_settings_knobstepstate(self, state_type):
@@ -67,7 +81,8 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:STEP:MODE {}'.format(state_type))
         logging.info('FREQ:STEP:MODE {}'.format(state_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_frequency_settings_increment(self, frequency):
@@ -83,7 +98,8 @@ class Ektsfe(object):
         # self.specan.write('FREQ:STEP {}'.format(frequency))
         self.specan.write('FREQ:STEP 50 kHz')
         logging.info('FREQ:STEP 50 kHz')
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_frequency_settings_channel(self, channel_num, frequency):
@@ -94,7 +110,8 @@ class Ektsfe(object):
         """
         self.specan.write('FREQ:CHAN:TABL:FREQ {}, {} MHz'.format(channel_num, frequency))
         logging.info('FREQ:CHAN:TABL:FREQ {}, {} MHz'.format(channel_num, frequency))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_level_level_level(self, level):
@@ -108,7 +125,7 @@ class Ektsfe(object):
         """
         self.specan.write('POW:LEV {}'.format(level))
         logging.info('POW:LEV {}'.format(level))
-        time.sleep(1)
+        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -124,7 +141,8 @@ class Ektsfe(object):
         """
         self.specan.write('OUTP {}'.format(rf_type))
         logging.info('OUTP {}'.format(rf_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_level_level_userlimit(self, limit_level):
@@ -137,7 +155,8 @@ class Ektsfe(object):
         """
         self.specan.write('POW:LIM {}'.format(limit_level))
         logging.info('POW:LIM {}'.format(limit_level))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_level_level_mode(self, level_mode):
@@ -152,7 +171,8 @@ class Ektsfe(object):
         """
         self.specan.write('OUTP:AMOD {}'.format(level_mode))
         logging.info('OUTP:AMOD {}'.format(level_mode))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_level_settings_state(self, state_type):
@@ -166,7 +186,8 @@ class Ektsfe(object):
         """
         self.specan.write('POW:STEP:MODE {}'.format(state_type))
         logging.info('POW:STEP:MODE {}'.format(state_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_level_settings_increment(self, state_type):
@@ -180,7 +201,8 @@ class Ektsfe(object):
         """
         self.specan.write('POW:STEP {}'.format(state_type))
         logging.info('POW:STEP {}'.format(state_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_level_settings_unit(self, level_unit):
@@ -193,7 +215,8 @@ class Ektsfe(object):
         """
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
         logging.info('UNIT:VOLT {}'.format(level_unit))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_modulation_modulation_modulation(self, modulation_type):
@@ -208,7 +231,8 @@ class Ektsfe(object):
         """
         self.specan.write('MOD {}'.format(modulation_type))
         logging.info('MOD {}'.format(modulation_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_modulation_modulation_source(self, source_type):
@@ -221,7 +245,8 @@ class Ektsfe(object):
         """
         self.specan.write('DM:SOUR {}'.format(source_type))
         logging.info('DM:SOUR {}'.format(source_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_modulation_modulation_spectrum(self, standard_type):
@@ -233,7 +258,8 @@ class Ektsfe(object):
         """
         self.specan.write('DM:POL {}'.format(standard_type))
         logging.info('DM:POL {}'.format(standard_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_input_source(self, source_type):
@@ -248,7 +274,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:SOUR {}'.format(source_type))
         logging.info('DVBS:SOUR {}'.format(source_type))
-        time.sleep(1)
+        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -274,7 +300,8 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:STUF {}'.format(source_type))
         logging.info('DVBS:STUF {}'.format(source_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_coding_symbolrate(self, symbol_rate):
@@ -286,7 +313,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:SYMB {}'.format(symbol_rate))
         logging.info('DVBS:SYMB {}'.format(symbol_rate))
-        time.sleep(1)
+        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -299,7 +326,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:CONS {}'.format(constellation_type))
         logging.info('DVBS:CONS {}'.format(constellation_type))
-        time.sleep(1)
+        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -312,7 +339,8 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:ROLL {}'.format(rolloff_num))
         logging.info('DVBS:ROLL {}'.format(rolloff_num))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_coding_coderate(self, code_rate):
@@ -330,7 +358,7 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:RATE {}'.format(code_rate))
         logging.info('DVBS:RATE {}'.format(code_rate))
-        time.sleep(1)
+        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -345,7 +373,8 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:SETT {}'.format(special_type))
         logging.info('DVBS:SETT {}'.format(special_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_settings_testtspacket(self, packet_type):
@@ -359,7 +388,8 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:TSP {}'.format(packet_type))
         logging.info('DVBS:TSP {}'.format(packet_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def set_digitaltv_settings_prbs(self, prbs_type):
@@ -373,7 +403,8 @@ class Ektsfe(object):
         """
         self.specan.write('DVBS:PRBS {}'.format(prbs_type))
         logging.info('DVBS:PRBS {}'.format(prbs_type))
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         del self.specan
 
     def preset_instrument(self):
@@ -385,7 +416,7 @@ class Ektsfe(object):
         """
         self.specan.write('SYST:PRES')
         logging.info(r'SYST:PRES')
-        time.sleep(1)
+        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -401,7 +432,8 @@ class Ektsfe(object):
         """
         """
         self.specan.write('*RST;*CLS')
-        time.sleep(1)
+        # time.sleep(1)
+        self.specan.query('*OPC?')
         # self.specan.close()
         del self.specan
 

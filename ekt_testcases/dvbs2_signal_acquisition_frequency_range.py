@@ -65,6 +65,7 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_noise("OFF")
     time.sleep(1)
+    specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")

@@ -50,6 +50,7 @@ if __name__ == '__main__':
     specan.set_digitaltv_input_source("TSPL")
     specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+    # specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\FACT_15M.GTS")
 
     dict_data = read_ekt_config_data("../ekt_lib/ekt_config.json")
     # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
