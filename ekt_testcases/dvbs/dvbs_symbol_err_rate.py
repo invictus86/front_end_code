@@ -6,7 +6,7 @@ import json
 import datetime
 from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfe import Ektsfe
-from ekt_lib.ekt_stb_tester import stb_tester_detect_motion
+from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFE import mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, find_level_offset_by_frequency
 
@@ -83,7 +83,7 @@ if __name__ == '__main__':
             """
             触发stb-tester进行频率和符号率设置
             """
-            stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+            stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                      ["tests/front_end_test/testcases.py::test_continuous_button"],
                                      "auto_front_end_test", "DSD4614iALM")
             net = ekt_net.EktNetClient('192.168.1.24', 9999)

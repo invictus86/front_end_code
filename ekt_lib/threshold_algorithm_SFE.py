@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import division
-from ekt_stb_tester import stb_tester_detect_motion
+from ekt_stb_tester import stb_tester_execute_testcase
 from ekt_image_capture import capture_image
 from ekt_image_classification import image_classification
 from ekt_sfe import Ektsfe
@@ -25,7 +25,7 @@ def mosaic_algorithm(sfe_ip, test_level_data, can_play_data):
     print "设置set_level_level_level:{}".format(str(test_level_data) + " dBm")
     logging.info("设置set_level_level_level:{}".format(str(test_level_data) + " dBm"))
     time.sleep(5)
-    res = stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+    res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                    ["tests/front_end_test/testcases.py::test_recored"],
                                    "auto_front_end_test", "DSD4614iALM")
     print res
@@ -97,8 +97,58 @@ def iterate_to_find_threshold(sfe_ip, start_num, end_num, level_offset="0"):
             return start_num, end_num
 
 
+def iterate_to_find_threshold_step_by_step(sfe_ip, start_num, level_offset="0"):
+    start_data_result = mosaic_algorithm(sfe_ip, start_num, start_num)
+    # end_data_result = mosaic_algorithm(sfe_ip, end_num, start_num)
+    if start_data_result.get("detect_mosic_result") is False:
+        pass
+    else:
+        return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外:{}".format(start_num)},
+                          ensure_ascii=False)
+    while True:
+        step = 10
+        step_num = start_num - step
+        step_num_data_result = mosaic_algorithm(sfe_ip, step_num, start_num)
+        if step_num_data_result.get("detect_mosic_result") is False:
+            start_num = step_num
+        elif step_num_data_result.get("detect_mosic_result") is True:
+            print "{} 出现马赛克".format(step_num)
+            break
+    while True:
+        step = 2
+        step_num = start_num - step
+        step_num_data_result = mosaic_algorithm(sfe_ip, step_num, start_num)
+        if step_num_data_result.get("detect_mosic_result") is False:
+            start_num = step_num
+        elif step_num_data_result.get("detect_mosic_result") is True:
+            print "{} 出现马赛克".format(step_num)
+            break
+    while True:
+        step = 0.5
+        step_num = start_num - step
+        step_num_data_result = mosaic_algorithm(sfe_ip, step_num, start_num)
+        if step_num_data_result.get("detect_mosic_result") is False:
+            start_num = step_num
+        elif step_num_data_result.get("detect_mosic_result") is True:
+            print "{} 出现马赛克".format(step_num)
+            break
+    print "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
+
+    # if start_num - end_num >= ekt_cfg.TEST_LEVLE_PRECISION:
+    #     print "start_num:{},  end_num:{}".format(start_num, end_num)
+    #     dict_threshold_algorithm_result = threshold_algorithm(sfe_ip, start_num, end_num)
+    #     [start_num, end_num] = dict_threshold_algorithm_result.get("step_range")
+    # elif start_num - end_num - ekt_cfg.TEST_LEVLE_PRECISION < 0.000001:
+    #     print "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
+    #     return "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
+    # else:
+    #     print " start_num - end_num 小于 0.1"
+    #     return start_num, end_num
+
+
 if __name__ == '__main__':
     sfe_ip = "192.168.1.47"
     # specan = Ektsfe(net)
     # mosaic_algorithm(specan, "-77 dBm")
-    iterate_to_find_threshold(sfe_ip, -70, -80)
+    # iterate_to_find_threshold_step_by_step(sfe_ip, -60)
+    iterate_to_find_threshold(sfe_ip, -60, -100)

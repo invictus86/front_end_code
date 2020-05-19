@@ -6,7 +6,7 @@ import ekt_cfg
 import time
 
 
-def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
+def stb_tester_execute_testcase(ip, banch_id, test_cases, category, remote):
     """
     detect motion using stb_tester
     :param ip:stb_tester_ip
@@ -74,7 +74,7 @@ def stb_tester_detect_motion(ip, banch_id, test_cases, category, remote):
 
 
 if __name__ == '__main__':
-    res = stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+    res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                    ["tests/front_end_test/testcases.py::test_recored"],
                                    "auto_front_end_test", "DSD4614iALM")
     print res

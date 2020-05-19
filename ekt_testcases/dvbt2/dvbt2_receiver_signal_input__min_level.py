@@ -10,11 +10,67 @@ from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data
 
-AWGN_ON = "ON"
-AWGN_OFF = "OFF"
+MODULATION_QPSK = "T4"
+MODULATION_16QAM = "T16"
+MODULATION_64QAM = "T64"
+MODULATION_256QAM = "T256"
 
-MODULATION_QPSK = "S4"
-MODULATION_8PSK = "S8"
+CODE_RATE_1_2 = "R1_2"
+CODE_RATE_3_5 = "R3_5"
+CODE_RATE_2_3 = "R2_3"
+CODE_RATE_3_4 = "R3_4"
+CODE_RATE_4_5 = "R4_5"
+CODE_RATE_5_6 = "R5_6"
+
+MODULATION__CODERATE_7M_SPEC_LIST = [[MODULATION_QPSK, CODE_RATE_1_2, -97.3],
+                                     [MODULATION_QPSK, CODE_RATE_3_5, -96.1],
+                                     [MODULATION_QPSK, CODE_RATE_2_3, -95.2],
+                                     [MODULATION_QPSK, CODE_RATE_3_4, -94.2],
+                                     [MODULATION_QPSK, CODE_RATE_4_5, -93.6],
+                                     [MODULATION_QPSK, CODE_RATE_5_6, -93.1],
+                                     [MODULATION_16QAM, CODE_RATE_1_2, -92.1],
+                                     [MODULATION_16QAM, CODE_RATE_3_5, -90.7],
+                                     [MODULATION_16QAM, CODE_RATE_2_3, -89.3],
+                                     [MODULATION_16QAM, CODE_RATE_3_4, -88.2],
+                                     [MODULATION_16QAM, CODE_RATE_4_5, -87.4],
+                                     [MODULATION_16QAM, CODE_RATE_5_6, -86.9],
+                                     [MODULATION_64QAM, CODE_RATE_1_2, -87.7],
+                                     [MODULATION_64QAM, CODE_RATE_3_5, -85.9],
+                                     [MODULATION_64QAM, CODE_RATE_2_3, -84.6],
+                                     [MODULATION_64QAM, CODE_RATE_3_4, -83.1],
+                                     [MODULATION_64QAM, CODE_RATE_4_5, -82.0],
+                                     [MODULATION_64QAM, CODE_RATE_5_6, -81.4],
+                                     [MODULATION_256QAM, CODE_RATE_1_2, -83.8],
+                                     [MODULATION_256QAM, CODE_RATE_3_5, -81.4],
+                                     [MODULATION_256QAM, CODE_RATE_2_3, -80.0],
+                                     [MODULATION_256QAM, CODE_RATE_3_4, -78.0],
+                                     [MODULATION_256QAM, CODE_RATE_4_5, -76.5],
+                                     [MODULATION_256QAM, CODE_RATE_5_6, -75.8]]
+
+MODULATION__CODERATE_8M_SPEC_LIST = [[MODULATION_QPSK, CODE_RATE_1_2, -96.7],
+                                     [MODULATION_QPSK, CODE_RATE_3_5, -95.5],
+                                     [MODULATION_QPSK, CODE_RATE_2_3, -94.6],
+                                     [MODULATION_QPSK, CODE_RATE_3_4, -93.6],
+                                     [MODULATION_QPSK, CODE_RATE_4_5, -93.0],
+                                     [MODULATION_QPSK, CODE_RATE_5_6, -92.5],
+                                     [MODULATION_16QAM, CODE_RATE_1_2, -91.5],
+                                     [MODULATION_16QAM, CODE_RATE_3_5, -90.1],
+                                     [MODULATION_16QAM, CODE_RATE_2_3, -88.7],
+                                     [MODULATION_16QAM, CODE_RATE_3_4, -87.6],
+                                     [MODULATION_16QAM, CODE_RATE_4_5, -86.8],
+                                     [MODULATION_16QAM, CODE_RATE_5_6, -86.3],
+                                     [MODULATION_64QAM, CODE_RATE_1_2, -87.1],
+                                     [MODULATION_64QAM, CODE_RATE_3_5, -85.3],
+                                     [MODULATION_64QAM, CODE_RATE_2_3, -84.0],
+                                     [MODULATION_64QAM, CODE_RATE_3_4, -82.5],
+                                     [MODULATION_64QAM, CODE_RATE_4_5, -81.4],
+                                     [MODULATION_64QAM, CODE_RATE_5_6, -80.8],
+                                     [MODULATION_256QAM, CODE_RATE_1_2, -83.2],
+                                     [MODULATION_256QAM, CODE_RATE_3_5, -80.8],
+                                     [MODULATION_256QAM, CODE_RATE_2_3, -79.4],
+                                     [MODULATION_256QAM, CODE_RATE_3_4, -77.4],
+                                     [MODULATION_256QAM, CODE_RATE_4_5, -75.9],
+                                     [MODULATION_256QAM, CODE_RATE_5_6, -75.2]]
 
 SYMBOL_RATE_5M = ["5.000000e6", "05000"]
 SYMBOL_RATE_10M = ["10.000000e6", "10000"]
@@ -22,7 +78,7 @@ SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
 SYMBOL_RATE_45M = ["45.000000e6", "45000"]
 
 dict_config_data = {
-    "MODULATION": [MODULATION_QPSK, MODULATION_8PSK],
+    "MODULATION": [MODULATION_QPSK, MODULATION_16QAM, MODULATION_64QAM, MODULATION_256QAM],
     # "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
     # "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
     "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M],
@@ -68,9 +124,9 @@ if __name__ == '__main__':
     specan.set_impairments_baseband("OFF")
 
     dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
-    DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
-    DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
+    DVBT_T2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBT_T2_FREQUENCY_LEVEL_OFFSET")
+    # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
+    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
     for MODULATION in dict_config_data.get("MODULATION"):
         specan = Ektsfu(sfu_ip)

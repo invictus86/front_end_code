@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import division
-from ekt_stb_tester import stb_tester_detect_motion
+from ekt_stb_tester import stb_tester_execute_testcase
 from ekt_image_capture import capture_image
 from ekt_image_classification import image_classification
 from ekt_sfu import Ektsfu
@@ -25,7 +25,7 @@ def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
     print "设置set_level_level_level:{}".format(str(test_level_data) + " dBm")
     logging.info("设置set_level_level_level:{}".format(str(test_level_data) + " dBm"))
     time.sleep(5)
-    res = stb_tester_detect_motion(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+    res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                    ["tests/front_end_test/testcases.py::test_recored"],
                                    "auto_front_end_test", "DSD4614iALM")
     print res

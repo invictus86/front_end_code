@@ -65,6 +65,7 @@ class RVTserver():
         frequency = None
         symbol_rate = None
         lock_state = None
+        stb_tester_run_state = "2"
         while True:
             conn, addr = server.accept()
             print "%s connected" % (conn)
@@ -115,6 +116,15 @@ class RVTserver():
                         result = conn.send(lock_state)
                         print "result:", result, "current_time:{}, get symbol_rate data : {} ok ".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), lock_state)
+                    elif dict_data.get("cmd") == "set_stb_tester_run_state":
+                        stb_tester_run_state = dict_data.get("stb_tester_run_state")
+                        result = conn.send("set lock_state data : {} ok ".format(stb_tester_run_state))
+                        print "result:", result, "current_time:{}, set lock_state data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), stb_tester_run_state)
+                    elif dict_data.get("cmd") == "get_stb_tester_run_state":
+                        result = conn.send(stb_tester_run_state)
+                        print "result:", result, "current_time:{}, get symbol_rate data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), stb_tester_run_state)
                     else:
                         print data
                         print "unknown message"
