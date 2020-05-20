@@ -99,8 +99,48 @@ def iterate_to_find_threshold(sfu_ip, start_num, end_num, level_offset="0"):
             return start_num, end_num
 
 
+def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
+    start_data_result = mosaic_algorithm(sfu_ip, start_num, start_num)
+    # end_data_result = mosaic_algorithm(sfu_ip, end_num, start_num)
+    if start_data_result.get("detect_mosic_result") is False:
+        pass
+    else:
+        return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外:{}".format(start_num)},
+                          ensure_ascii=False)
+    # while True:
+    #     step = 5
+    #     step_num = start_num - step
+    #     step_num_data_result = mosaic_algorithm(sfu_ip, step_num, start_num)
+    #     if step_num_data_result.get("detect_mosic_result") is False:
+    #         start_num = step_num
+    #     elif step_num_data_result.get("detect_mosic_result") is True:
+    #         print "{} 出现马赛克".format(step_num)
+    #         break
+    while True:
+        step = 1
+        step_num = start_num - step
+        step_num_data_result = mosaic_algorithm(sfu_ip, step_num, start_num)
+        if step_num_data_result.get("detect_mosic_result") is False:
+            start_num = step_num
+        elif step_num_data_result.get("detect_mosic_result") is True:
+            print "{} 出现马赛克".format(step_num)
+            break
+    while True:
+        step = 0.1
+        step_num = start_num - step
+        step_num_data_result = mosaic_algorithm(sfu_ip, step_num, start_num)
+        if step_num_data_result.get("detect_mosic_result") is False:
+            start_num = step_num
+        elif step_num_data_result.get("detect_mosic_result") is True:
+            print "{} 出现马赛克".format(step_num)
+            break
+    print "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
+    return "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
+
+
 if __name__ == '__main__':
     sfu_ip = "192.168.1.50"
     # specan = Ektsfu(net)
     # mosaic_algorithm(specan, "-77 dBm")
-    iterate_to_find_threshold(sfu_ip, -60, -80)
+    iterate_to_find_threshold_step_by_step(sfu_ip, -85)
+    # iterate_to_find_threshold(sfu_ip, -60, -80)

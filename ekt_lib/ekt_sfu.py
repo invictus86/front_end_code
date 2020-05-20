@@ -4,11 +4,14 @@ import visa
 import pyvisa
 import logging
 import time
+import os
 
 # import VISAresourceExtentions
 
+current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
 logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
-                    filename='../ekt_log/sfu.log',
+                    filename='{}/ekt_log/sfu.log'.format(current_path),
                     filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志
                     # a是追加模式，默认如果不写的话，就是追加模式
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
@@ -22,22 +25,18 @@ class Ektsfu(object):
     """
 
     def __init__(self, sfu_ip):
-        try:
-            rm = pyvisa.ResourceManager()
-            specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
-            self.specan = specan
-            del self.specan.timeout
-        except:
+        while True:
             try:
                 rm = pyvisa.ResourceManager()
                 specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
                 self.specan = specan
                 del self.specan.timeout
+                break
             except:
-                rm = pyvisa.ResourceManager()
-                specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
-                self.specan = specan
-                del self.specan.timeout
+                print "SFU连接出错"
+                logging.info('SFU连接出错')
+                time.sleep(60)
+
 
     def set_frequency_frequency_frequency(self, frequency):
         """
@@ -2852,7 +2851,7 @@ def _test_code():
     # specan.set_modulation_modulation_modulation("ON")
     # specan.set_modulation_modulation_source("DTV")
     # specan.set_modulation_modulation_standard_atv("LPR")
-    # specan.set_modulation_modulation_standard_dvt("DVBC")
+    # specan.set_modulation_modulation_standard_dvt("T2DVb")
     # specan.set_digitaltv_input_source_dvbs2("TSPL")
     # specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
     # specan.set_digitaltv_coding_constellation_dvbs2("S4")
@@ -2913,8 +2912,8 @@ def _test_code():
     # specan.set_digitaltv_coding_fftmode_dvbt("M8K")
     # specan.set_digitaltv_coding_dvbhstate_dvbt("OFF")
     # specan.set_digitaltv_coding_hierarchy_dvbt("NONHier")
-    # specan.set_digitaltv_framing_fftsize_dvbt2("M2K")
-    # specan.set_digitaltv_framing_channelbandwidth_dvbt2("BW_5")
+    # specan.set_digitaltv_framing_fftsize_dvbt2("M32K")
+    # specan.set_digitaltv_framing_channelbandwidth_dvbt2("BW_7")
     # specan.set_digitaltv_framing_guard_dvbt2("G1128")
     # specan.set_digitaltv_bicm_coderate_dvbt2("R3_4")
     # specan.set_digitaltv_bicm_constellation_dvbt2("T64")
@@ -2940,7 +2939,7 @@ def _test_code():
     # specan.set_digitaltv_bicm_frameint_dvbt2("1")
     # specan.set_digitaltv_bicm_timeinterllength_dvbt2("4")
     # specan.set_digitaltv_framing_bandwidth_dvbt2("4")
-    # specan.set_digitaltv_framing_pilot_dvbt2("PP1")
+    specan.set_digitaltv_framing_pilot_dvbt2("PP7")
     # specan.set_digitaltv_framing_nt2_dvbt2("30")
     # specan.set_digitaltv_framing_ldata_dvbt2("60")
     # specan.set_digitaltv_framing_nsub_dvbt2("2")
@@ -2986,7 +2985,7 @@ def _test_code():
     # specan.set_impairments_modulator_amplitude("3")
     # specan.set_impairments_baseband("OFF")
     # specan.set_impairments_baseband_quadrature("-5")
-    specan.set_impairments_baseband_amplitude("4")
+    # specan.set_impairments_baseband_amplitude("4")
     # specan.set_impairments_optimize("OFF")
     # specan.set_level_level_offset(str(4.6))
     # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")

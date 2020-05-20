@@ -11,7 +11,6 @@ import os
 
 # current_path = os.path.dirname(__file__)
 current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-print current_path
 
 logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     filename='{}/ekt_log/sfe.log'.format(current_path),

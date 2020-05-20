@@ -114,17 +114,26 @@ class RVTserver():
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), lock_state)
                     elif dict_data.get("cmd") == "get_lock_state":
                         result = conn.send(lock_state)
-                        print "result:", result, "current_time:{}, get symbol_rate data : {} ok ".format(
+                        print "result:", result, "current_time:{}, get lock_state data : {} ok ".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), lock_state)
                     elif dict_data.get("cmd") == "set_stb_tester_run_state":
                         stb_tester_run_state = dict_data.get("stb_tester_run_state")
                         result = conn.send("set lock_state data : {} ok ".format(stb_tester_run_state))
-                        print "result:", result, "current_time:{}, set lock_state data : {} ok ".format(
+                        print "result:", result, "current_time:{}, set stb_tester run state : {} ok ".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), stb_tester_run_state)
                     elif dict_data.get("cmd") == "get_stb_tester_run_state":
                         result = conn.send(stb_tester_run_state)
-                        print "result:", result, "current_time:{}, get symbol_rate data : {} ok ".format(
+                        print "result:", result, "current_time:{}, get stb_tester run state : {} ok ".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), stb_tester_run_state)
+                    elif dict_data.get("cmd") == "set_bandwidth_data":
+                        bandwidth = dict_data.get("bandwidth")
+                        result = conn.send("set bandwidth data : {} ok ".format(bandwidth))
+                        print "result:", result, "current_time:{}, set bandwidth data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), bandwidth)
+                    elif dict_data.get("cmd") == "get_bandwidth_data":
+                        result = conn.send(str(bandwidth))
+                        print "result:", result, "current_time:{}, get bandwidth data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), bandwidth)
                     else:
                         print data
                         print "unknown message"
