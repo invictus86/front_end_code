@@ -27,24 +27,18 @@ class Ektsfe(object):
         SFE接口
     """
 
-    def __init__(self, sfu_ip):
-        try:
-            rm = pyvisa.ResourceManager()
-            specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
-            self.specan = specan
-            del self.specan.timeout
-        except:
+    def __init__(self, sfe_ip):
+        while True:
             try:
                 rm = pyvisa.ResourceManager()
-                specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
+                specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfe_ip))
                 self.specan = specan
                 del self.specan.timeout
+                break
             except:
-                rm = pyvisa.ResourceManager()
-                specan = rm.open_resource('TCPIP::{}::INSTR'.format(sfu_ip))
-                self.specan = specan
-                del self.specan.timeout
-
+                print "SFE连接出错"
+                logging.info('SFE连接出错')
+                time.sleep(60)
 
     def set_frequency_frequency_frequency(self, frequency):
         """
@@ -465,11 +459,11 @@ class Ektsfe(object):
 
 
 def _test_code():
-    sfu_ip = "192.168.1.47"
-    # sfu_ip = "192.168.1.50"
+    sfe_ip = "192.168.1.47"
+    # sfe_ip = "192.168.1.50"
     # host = '127.0.0.1'
     # port = 8900
-    specan = Ektsfe(sfu_ip)
+    specan = Ektsfe(sfe_ip)
     specan.set_frequency_frequency_frequency("101.001 MHz")
     # specan.set_frequency_frequency_channel("4")
     # specan.set_frequency_settings_knobstepstate("DEC")

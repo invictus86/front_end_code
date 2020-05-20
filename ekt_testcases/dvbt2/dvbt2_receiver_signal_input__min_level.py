@@ -25,12 +25,12 @@ CODE_RATE_5_6 = "R5_6"
 MODULATION__CODERATE_7M_SPEC_LIST = [
     # [MODULATION_QPSK, CODE_RATE_1_2, -97.3],
     # [MODULATION_QPSK, CODE_RATE_3_5, -96.1],
-    # [MODULATION_QPSK, CODE_RATE_2_3, -95.2],
-    # [MODULATION_QPSK, CODE_RATE_3_4, -94.2],
-    # [MODULATION_QPSK, CODE_RATE_4_5, -93.6],
-    # [MODULATION_QPSK, CODE_RATE_5_6, -93.1],
-    # [MODULATION_16QAM, CODE_RATE_1_2, -92.1],
-    # [MODULATION_16QAM, CODE_RATE_3_5, -90.7],
+    [MODULATION_QPSK, CODE_RATE_2_3, -95.2],
+    [MODULATION_QPSK, CODE_RATE_3_4, -94.2],
+    [MODULATION_QPSK, CODE_RATE_4_5, -93.6],
+    [MODULATION_QPSK, CODE_RATE_5_6, -93.1],
+    [MODULATION_16QAM, CODE_RATE_1_2, -92.1],
+    [MODULATION_16QAM, CODE_RATE_3_5, -90.7],
     [MODULATION_16QAM, CODE_RATE_2_3, -89.3],
     [MODULATION_16QAM, CODE_RATE_3_4, -88.2],
     [MODULATION_16QAM, CODE_RATE_4_5, -87.4],
@@ -51,12 +51,12 @@ MODULATION__CODERATE_7M_SPEC_LIST = [
 MODULATION__CODERATE_8M_SPEC_LIST = [
     # [MODULATION_QPSK, CODE_RATE_1_2, -96.7],
     # [MODULATION_QPSK, CODE_RATE_3_5, -95.5],
-    # [MODULATION_QPSK, CODE_RATE_2_3, -94.6],
-    # [MODULATION_QPSK, CODE_RATE_3_4, -93.6],
-    # [MODULATION_QPSK, CODE_RATE_4_5, -93.0],
-    # [MODULATION_QPSK, CODE_RATE_5_6, -92.5],
-    # [MODULATION_16QAM, CODE_RATE_1_2, -91.5],
-    # [MODULATION_16QAM, CODE_RATE_3_5, -90.1],
+    [MODULATION_QPSK, CODE_RATE_2_3, -94.6],
+    [MODULATION_QPSK, CODE_RATE_3_4, -93.6],
+    [MODULATION_QPSK, CODE_RATE_4_5, -93.0],
+    [MODULATION_QPSK, CODE_RATE_5_6, -92.5],
+    [MODULATION_16QAM, CODE_RATE_1_2, -91.5],
+    [MODULATION_16QAM, CODE_RATE_3_5, -90.1],
     [MODULATION_16QAM, CODE_RATE_2_3, -88.7],
     [MODULATION_16QAM, CODE_RATE_3_4, -87.6],
     [MODULATION_16QAM, CODE_RATE_4_5, -86.8],
@@ -73,12 +73,6 @@ MODULATION__CODERATE_8M_SPEC_LIST = [
     [MODULATION_256QAM, CODE_RATE_3_4, -77.4],
     [MODULATION_256QAM, CODE_RATE_4_5, -75.9],
     [MODULATION_256QAM, CODE_RATE_5_6, -75.2]]
-
-dict_config_data = {
-    "MODULATION": [MODULATION_QPSK, MODULATION_16QAM, MODULATION_64QAM, MODULATION_256QAM],
-    # "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
-    # "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
-}
 
 if __name__ == '__main__':
     """
@@ -153,6 +147,12 @@ if __name__ == '__main__':
             specan.set_digitaltv_bicm_constellation_dvbt2(MODULATION_CODERATE_SPEC[0])
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_coderate_dvbt2(MODULATION_CODERATE_SPEC[1])
+            if MODULATION_CODERATE_SPEC[0] == MODULATION_QPSK:
+                specan = Ektsfu(sfu_ip)
+                specan.set_digitaltv_system_modulation_dvbt2("T2")
+            else:
+                specan = Ektsfu(sfu_ip)
+                specan.set_digitaltv_system_modulation_dvbt2("T64")
             specan = Ektsfu(sfu_ip)
             specan.set_level_level_level("dBm",
                                          str("%.2f" % ((MODULATION_CODERATE_SPEC[2]) - FREQUENCY_LEVEL_OFFSET[1])))

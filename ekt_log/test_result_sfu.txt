@@ -3982,3 +3982,33 @@ dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 10:14:16, modula
 dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 10:18:46, modulation: T16, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -92.30
 dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 10:20:34, modulation: T16, coderate：R3_4, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -91.20
 dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 10:22:32, modulation: T16, coderate：R4_5, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -90.40
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 10:50:52, modulation: T16, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 Ksym/s，level: -89.3, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 10:51:57, modulation: T16, coderate：R3_4, frequency：177.5 MHz，bandwidth：7 Ksym/s，level: -88.2, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 10:54:57, modulation: T16, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -91.30
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 10:58:24, modulation: T16, coderate：R3_4, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -90.80
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 11:00:27, modulation: T16, coderate：R4_5, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -89.60
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-20 11:02:11, modulation: T16, coderate：R5_6, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -89.00
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:06:27, modulation: T4, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:4.5", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:06:43, modulation: T4, coderate：R3_4, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:5.5", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:07:00, modulation: T4, coderate：R4_5, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:6.1", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:07:16, modulation: T4, coderate：R5_6, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:6.6", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:07:32, modulation: T16, coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:7.6", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:07:48, modulation: T16, coderate：R3_5, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:9.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:08:04, modulation: T16, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.4", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:12:45, modulation: T4, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:4.5", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:16:06, modulation: T4, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:4.5", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:16:22, modulation: T4, coderate：R3_4, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:5.5", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:16:38, modulation: T4, coderate：R4_5, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:6.1", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:16:54, modulation: T4, coderate：R5_6, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:6.6", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 12:17:11, modulation: T16, coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:7.6", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:24:17, modulation: T4, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 4.20
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:27:07, modulation: T4, coderate：R3_4, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 5.20
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:29:36, modulation: T4, coderate：R4_5, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 5.90
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:31:48, modulation: T4, coderate：R5_6, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 6.50
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:32:05, modulation: T16, coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.6", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:33:32, modulation: T16, coderate：R3_5, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 10.00
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:35:18, modulation: T16, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 10.40
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:38:02, modulation: T16, coderate：R3_4, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 11.20
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:40:16, modulation: T16, coderate：R4_5, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 12.20
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:42:08, modulation: T16, coderate：R5_6, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 12.80
+dvbt2_performance_gaussian_channel: current_time:2020-05-20 14:44:59, modulation: T64, coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 11.70

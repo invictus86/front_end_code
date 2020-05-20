@@ -37,7 +37,6 @@ class Ektsfu(object):
                 logging.info('SFU连接出错')
                 time.sleep(60)
 
-
     def set_frequency_frequency_frequency(self, frequency):
         """
         Sets the RF output frequency
@@ -2514,6 +2513,23 @@ class Ektsfu(object):
         self.specan.query('*OPC?')
         del self.specan
 
+    def set_digitaltv_system_modulation_dvbt2(self, modulation_type):
+        """
+        Sets the L1 post constellation.
+            T2
+            T4
+            T16
+            T64
+        example :
+            T2DV:L:CONS T64
+        :return:
+        """
+        self.specan.write('T2DV:L:CONS {}'.format(modulation_type))
+        logging.info('T2DV:L:CONS {}'.format(modulation_type))
+        # time.sleep(1)
+        self.specan.query('*OPC?')
+        del self.specan
+
     def set_digitaltv_settings_testtspacket_dvbt2(self, packet_type):
         """
         Sets the payload length of the test TS packet.
@@ -2939,7 +2955,7 @@ def _test_code():
     # specan.set_digitaltv_bicm_frameint_dvbt2("1")
     # specan.set_digitaltv_bicm_timeinterllength_dvbt2("4")
     # specan.set_digitaltv_framing_bandwidth_dvbt2("4")
-    specan.set_digitaltv_framing_pilot_dvbt2("PP7")
+    # specan.set_digitaltv_framing_pilot_dvbt2("PP7")
     # specan.set_digitaltv_framing_nt2_dvbt2("30")
     # specan.set_digitaltv_framing_ldata_dvbt2("60")
     # specan.set_digitaltv_framing_nsub_dvbt2("2")
@@ -2989,6 +3005,8 @@ def _test_code():
     # specan.set_impairments_optimize("OFF")
     # specan.set_level_level_offset(str(4.6))
     # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
+    specan.set_digitaltv_system_modulation_dvbt2("T64")
+
     # specan.set_cmd()
 
     # sfu_ip = "192.168.1.50"
