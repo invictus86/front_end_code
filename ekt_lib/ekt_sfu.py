@@ -2921,7 +2921,7 @@ def _test_code():
     # specan.set_fading_settings_insertionloss("5 dB")
     # specan.set_coder_output_symbol_rate_dvbc("5.711e6")
     # specan.set_digitaltv_coding_symbolrate_dvbc("C256")
-    # specan.set_digitaltv_coding_coderate_dvbt("R7_8")
+    specan.set_digitaltv_coding_coderate_dvbt("R7_8")
     # specan.set_digitaltv_coding_constellation_dvbt("T16")
     # specan.set_digitaltv_coding_guard_dvbt("G1_32")
     # specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_7")
@@ -3005,7 +3005,7 @@ def _test_code():
     # specan.set_impairments_optimize("OFF")
     # specan.set_level_level_offset(str(4.6))
     # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
-    specan.set_digitaltv_system_modulation_dvbt2("T64")
+    # specan.set_digitaltv_system_modulation_dvbt2("T64")
 
     # specan.set_cmd()
 

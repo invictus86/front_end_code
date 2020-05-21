@@ -88,12 +88,10 @@ if __name__ == '__main__':
                 write_test_result("../../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
                 continue
             for code_rate_cn in DVBS_QPSK_CODE_RATE_CN:
-                del specan
-                specan = Ektsfe(sfe_ip)
-                specan.set_digitaltv_coding_coderate(code_rate_cn[0])
                 specan = Ektsfe(sfe_ip)
                 specan.set_level_level_level("-50 dBm")
-                time.sleep(1)
+                specan = Ektsfe(sfe_ip)
+                specan.set_digitaltv_coding_coderate(code_rate_cn[0])
                 try:
                     res = iterate_to_find_threshold_step_by_step(sfe_ip,
                                                                  float((-70) - FREQUENCY_LEVEL_OFFSET[1]),

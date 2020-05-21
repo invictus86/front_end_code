@@ -47,21 +47,16 @@ if __name__ == '__main__':
     specan.set_modulation_modulation_source("DTV")
     specan = Ektsfu(sfu_ip)
     specan.set_modulation_modulation_standard_dvt("DVS2")
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_digitaltv_input_source_dvbs2("TSPLayer")
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_rf("ON")
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_noise("ADD")
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_awgn("ON")
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
@@ -122,8 +117,9 @@ if __name__ == '__main__':
 
             for MODULATION in dict_config_data.get("MODULATION"):
                 specan = Ektsfu(sfu_ip)
+                specan.set_level_level_level("dBm", "-50")
+                specan = Ektsfu(sfu_ip)
                 specan.set_digitaltv_coding_constellation_dvbs2(MODULATION)
-                time.sleep(1)
                 CURRENT_DVBS2_CODE_RATE_CN = None
                 if MODULATION == MODULATION_QPSK:
                     CURRENT_DVBS2_CODE_RATE_CN = DVBS2_QPSK_CODE_RATE_CN
@@ -133,13 +129,12 @@ if __name__ == '__main__':
                     write_test_result("../../ekt_log/test_result_sfu.txt",
                                       ("MODULATION 出错了: {}".format(MODULATION) + "\n"))
                 for code_rate_cn in CURRENT_DVBS2_CODE_RATE_CN:
-                    del specan
+                    specan = Ektsfu(sfu_ip)
+                    specan.set_level_level_level("dBm", "-50")
                     specan = Ektsfu(sfu_ip)
                     specan.set_digitaltv_coding_coderate_dvbs2(code_rate_cn[0])
-                    time.sleep(1)
                     specan = Ektsfu(sfu_ip)
                     specan.set_noise_awgn_cn(str(code_rate_cn[1]))
-                    time.sleep(1)
 
                     try:
                         res = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip,
