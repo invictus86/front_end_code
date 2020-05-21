@@ -8,7 +8,7 @@ from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, find_level_offset_by_frequency
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data
 
 MODULATION_QPSK = "T4"
 MODULATION_16QAM = "T16"

@@ -70,55 +70,56 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
 
-    for code_rate in CODE_RATE_LIST:
+    for SYMBOL_RATE in SYMBOL_RATE_LIST:
+        del specan
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_coderate_dvbs2(code_rate)
-        time.sleep(1)
-        for SYMBOL_RATE in SYMBOL_RATE_LIST:
+        specan.set_digitaltv_coding_symbolrate_dvbs2(SYMBOL_RATE[0])
+        for FREQUENCY_LEVEL_OFFSET in FREQUENCY_LEVEL_OFFSET_LIST:
             del specan
             specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_symbolrate_dvbs2(SYMBOL_RATE[0])
-            for FREQUENCY_LEVEL_OFFSET in FREQUENCY_LEVEL_OFFSET_LIST:
-                del specan
-                specan = Ektsfu(sfu_ip)
-                specan.set_frequency_frequency_frequency(FREQUENCY_LEVEL_OFFSET[0] + "MHz")
-                time.sleep(1)
-                specan = Ektsfu(sfu_ip)
-                specan.set_level_level_offset(FREQUENCY_LEVEL_OFFSET[1])
+            specan.set_frequency_frequency_frequency(FREQUENCY_LEVEL_OFFSET[0] + "MHz")
+            time.sleep(1)
+            specan = Ektsfu(sfu_ip)
+            specan.set_level_level_offset(FREQUENCY_LEVEL_OFFSET[1])
 
+            specan = Ektsfu(sfu_ip)
+            specan.set_level_level_level("dBm", str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))))
+
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
+            time.sleep(1)
+            del net
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
+            time.sleep(1)
+            del net
+
+            """
+            触发stb-tester进行频率和符号率设置
+            """
+            stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+                                        ["tests/front_end_test/testcases.py::test_continuous_button"],
+                                        "auto_front_end_test", "DSD4614iALM")
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
+            if lock_state == "1":
+                pass
+            elif lock_state == "0":
+                write_test_result("../../ekt_log/test_result_sfu.txt",
+                                  (
+                                          "dvbs2_phase_distortion_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                              FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]),
+                                              str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
+                                              "锁台失败") + "\n"))
+                continue
+            else:
+                write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+                continue
+            for code_rate in CODE_RATE_LIST:
                 specan = Ektsfu(sfu_ip)
-                specan.set_level_level_level("dBm", str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))))
-
-                net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
+                specan.set_digitaltv_coding_coderate_dvbs2(code_rate)
                 time.sleep(1)
-                del net
-                net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
-                time.sleep(1)
-                del net
-
-                """
-                触发stb-tester进行频率和符号率设置
-                """
-                stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                         ["tests/front_end_test/testcases.py::test_continuous_button"],
-                                         "auto_front_end_test", "DSD4614iALM")
-                net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
-                if lock_state == "1":
-                    pass
-                elif lock_state == "0":
-                    write_test_result("../../ekt_log/test_result_sfu.txt",
-                                      (
-                                                  "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
-                                                      datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
-                                                      FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
-                                                      "锁台失败") + "\n"))
-                    continue
-                else:
-                    write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
-                    continue
                 try:
                     start_data_result = mosaic_algorithm(sfu_ip, str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))), "-50")
                     print "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
@@ -128,7 +129,8 @@ if __name__ == '__main__':
                     write_test_result("../../ekt_log/test_result_sfu.txt",
                                       "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
-                                          FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
+                                          FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]),
+                                          str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
                                           start_data_result.get("detect_mosic_result")) + "\n")
                 except:
                     start_data_result = mosaic_algorithm(sfu_ip, str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))), "-50")
@@ -139,7 +141,8 @@ if __name__ == '__main__':
                     write_test_result("../../ekt_log/test_result_sfu.txt",
                                       "dvbs2_phase_distortion_test: current_time:{},  coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
-                                          FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
+                                          FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]),
+                                          str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
                                           start_data_result.get("detect_mosic_result")) + "\n")
 
                 """

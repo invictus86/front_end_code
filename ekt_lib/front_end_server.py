@@ -10,9 +10,17 @@ import logging
 import numpy as np
 import threading
 import datetime
+import os
 
-logging.basicConfig(level=logging.NOTSET)
-log = logging.getLogger("RVTserver")
+current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
+                    filename='{}/ekt_log/front_end_server.log'.format(current_path),
+                    filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志
+                    # a是追加模式，默认如果不写的话，就是追加模式
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
+                    # 日志格式
+                    )
 
 # get local ip
 addrs = socket.getaddrinfo(socket.gethostname(), None)
@@ -134,6 +142,11 @@ class RVTserver():
                         result = conn.send(str(bandwidth))
                         print "result:", result, "current_time:{}, get bandwidth data : {} ok ".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), bandwidth)
+                    elif dict_data.get("cmd") == "set_stb_crash":
+                        result = conn.send("set stb crash state:ok ")
+                        print "result:", result, "current_time:{}, set stb crash state:ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+                        logging.info('set stb crash state:ok')
                     else:
                         print data
                         print "unknown message"

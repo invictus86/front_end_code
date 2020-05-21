@@ -57,53 +57,54 @@ if __name__ == '__main__':
     # DVBS_QPSK_CODE_RATE_CN = dict_data.get("DVBS_QPSK_CODE_RATE_CN")
     # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
-    for code_rate_cn in CODE_RATE_LIST:
+    for SYMBOL_RATE_FREQUENCY in dict_config_data.get("SYMBOL_RATE_FREQUENCY"):
         del specan
         specan = Ektsfe(sfe_ip)
-        specan.set_digitaltv_coding_coderate(code_rate_cn)
-        time.sleep(1)
-        for SYMBOL_RATE_FREQUENCY in dict_config_data.get("SYMBOL_RATE_FREQUENCY"):
+        specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE_FREQUENCY[0])
+        for FREQUENCY_OFFSET in SYMBOL_RATE_FREQUENCY[2]:
             del specan
             specan = Ektsfe(sfe_ip)
-            specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE_FREQUENCY[0])
-            for FREQUENCY_OFFSET in SYMBOL_RATE_FREQUENCY[2]:
+            specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
+            specan = Ektsfe(sfe_ip)
+            specan.set_level_level_level(FREQUENCY_OFFSET[2] + " dBm")
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            # print str(FREQUENCY_LEVEL_OFFSET[0])
+            # print type(str(FREQUENCY_LEVEL_OFFSET[0]))
+            net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": FREQUENCY_OFFSET[0]}))
+            time.sleep(1)
+            del net
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE_FREQUENCY[1])}))
+            time.sleep(1)
+            del net
+
+            """
+            触发stb-tester进行频率和符号率设置
+            """
+            stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+                                        ["tests/front_end_test/testcases.py::test_continuous_button"],
+                                        "auto_front_end_test", "DSD4614iALM")
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
+            if lock_state == "1":
+                pass
+            elif lock_state == "0":
+                write_test_result("../../ekt_log/test_result_sfe.txt",
+                                  (
+                                          "dvbs_signal_acquisition_frequency_range; current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                              FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
+                                              FREQUENCY_OFFSET[2], "锁台失败") + "\n"))
+                continue
+            else:
+                write_test_result("../../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
+                continue
+
+            for code_rate_cn in CODE_RATE_LIST:
                 del specan
                 specan = Ektsfe(sfe_ip)
-                specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
-                specan = Ektsfe(sfe_ip)
-                specan.set_level_level_level(FREQUENCY_OFFSET[2] + " dBm")
-                net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                # print str(FREQUENCY_LEVEL_OFFSET[0])
-                # print type(str(FREQUENCY_LEVEL_OFFSET[0]))
-                net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": FREQUENCY_OFFSET[0]}))
+                specan.set_digitaltv_coding_coderate(code_rate_cn)
                 time.sleep(1)
-                del net
-                net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE_FREQUENCY[1])}))
-                time.sleep(1)
-                del net
-
-                """
-                触发stb-tester进行频率和符号率设置
-                """
-                stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                         ["tests/front_end_test/testcases.py::test_continuous_button"],
-                                         "auto_front_end_test", "DSD4614iALM")
-                net = ekt_net.EktNetClient('192.168.1.24', 9999)
-                lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
-                if lock_state == "1":
-                    pass
-                elif lock_state == "0":
-                    write_test_result("../../ekt_log/test_result_sfe.txt",
-                                      (
-                                              "dvbs_signal_acquisition_frequency_range; current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
-                                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                                  code_rate_cn, FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
-                                                  FREQUENCY_OFFSET[2], "锁台失败") + "\n"))
-                    continue
-                else:
-                    write_test_result("../../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
-                    continue
                 try:
                     start_data_result = mosaic_algorithm(sfe_ip, FREQUENCY_OFFSET[2], "-50")
                     print "dvbs_signal_acquisition_frequency_range; current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(

@@ -115,7 +115,7 @@ def iterate_to_find_threshold_step_by_step(sfe_ip, start_num, level_offset="0"):
             print "{} 出现马赛克".format(step_num)
             break
     while True:
-        step = 2
+        step = 1
         step_num = start_num - step
         step_num_data_result = mosaic_algorithm(sfe_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
@@ -124,7 +124,7 @@ def iterate_to_find_threshold_step_by_step(sfe_ip, start_num, level_offset="0"):
             print "{} 出现马赛克".format(step_num)
             break
     while True:
-        step = 0.5
+        step = 0.3
         step_num = start_num - step
         step_num_data_result = mosaic_algorithm(sfe_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
@@ -132,6 +132,7 @@ def iterate_to_find_threshold_step_by_step(sfe_ip, start_num, level_offset="0"):
         elif step_num_data_result.get("detect_mosic_result") is True:
             print "{} 出现马赛克".format(step_num)
             break
+    return "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
     print "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
 
     # if start_num - end_num >= ekt_cfg.TEST_LEVLE_PRECISION:
