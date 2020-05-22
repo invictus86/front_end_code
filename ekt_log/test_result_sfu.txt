@@ -4989,3 +4989,91 @@ dvbt2_34_centre_frequencies: current_time:2020-05-22 14:27:17, modulation: T64, 
 dvbt2_34_centre_frequencies: current_time:2020-05-22 14:28:26, modulation: T64, coderate：R2_3, frequency：554.0 MHz，bandwidth：8 MHZ，False
 dvbt2_34_centre_frequencies: current_time:2020-05-22 14:29:35, modulation: T64, coderate：R2_3, frequency：562.0 MHz，bandwidth：8 MHZ，False
 dvbt2_34_centre_frequencies: current_time:2020-05-22 14:30:45, modulation: T64, coderate：R2_3, frequency：570.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:36:53, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:37:14, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:37:34, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:37:55, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:38:16, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:38:37, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:40:30, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:40:50, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:41:10, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:41:30, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:41:51, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:42:12, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:42:32, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:42:53, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:43:15, fft_size: M2K, modulation: T4, coderate：R3_4,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 16:43:36, fft_size: M2K, modulation: T4, coderate：R3_4,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-22 16:45:21, frequency：177.5 MHz，stb_frequency：127 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt_5_frequency_offset: current_time:2020-05-22 16:46:36, modulation: T64, coderate：R2_3, frequency：177.5 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-22 16:55:30, modulation: T64, coderate：R2_3, frequency：177.5 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-22 16:56:56, modulation: T64, coderate：R2_3, frequency：177.5 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-22 16:58:00, frequency：177.5 MHz，stb_frequency：177 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt_5_frequency_offset: current_time:2020-05-22 16:59:20, modulation: T64, coderate：R2_3, frequency：226.5 MHz，stb_frequency：226 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-22 17:01:30, modulation: T64, coderate：R2_3, frequency：177.45 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-22 17:02:57, modulation: T64, coderate：R2_3, frequency：177.5 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-22 17:04:00, frequency：177.5 MHz，stb_frequency：177 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt_5_frequency_offset: current_time:2020-05-22 17:07:10, modulation: T64, coderate：R2_3, frequency：177.45 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-22 17:08:29, modulation: T64, coderate：R2_3, frequency：177.5 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-22 17:23:31, modulation: T64, coderate：R2_3, frequency：176 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-22 17:24:57, modulation: T64, coderate：R2_3, frequency：177 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-22 17:27:56, modulation: T64, coderate：R2_3, frequency：176.95 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-22 17:29:20, modulation: T64, coderate：R2_3, frequency：177 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-22 17:30:44, modulation: T64, coderate：R2_3, frequency：177.05 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-22 17:32:09, modulation: T64, coderate：R2_3, frequency：225.95 MHz，stb_frequency：226 MHz，bandwidth：7 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 17:34:32, modulation: T64, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 17:35:52, modulation: T64, coderate：R2_3, frequency：184.5 MHz，bandwidth：7 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:38:52, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:39:13, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:39:32, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:39:53, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:40:14, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:40:34, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:40:53, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:41:13, fft_size: M2K, modulation: T4, coderate：R2_3,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:41:34, fft_size: M2K, modulation: T4, coderate：R3_4,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:41:54, fft_size: M2K, modulation: T4, coderate：R3_4,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:42:15, fft_size: M2K, modulation: T4, coderate：R3_4,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:42:35, fft_size: M2K, modulation: T4, coderate：R3_4,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:42:58, fft_size: M2K, modulation: T4, coderate：R5_6,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:43:17, fft_size: M2K, modulation: T4, coderate：R5_6,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:43:37, fft_size: M2K, modulation: T4, coderate：R5_6,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:43:59, fft_size: M2K, modulation: T4, coderate：R5_6,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:44:20, fft_size: M2K, modulation: T4, coderate：R7_8,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:44:40, fft_size: M2K, modulation: T4, coderate：R7_8,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:45:01, fft_size: M2K, modulation: T4, coderate：R7_8,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:45:21, fft_size: M2K, modulation: T4, coderate：R7_8,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:45:45, fft_size: M2K, modulation: T16, coderate：R1_2,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:46:06, fft_size: M2K, modulation: T16, coderate：R1_2,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:46:27, fft_size: M2K, modulation: T16, coderate：R1_2,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:46:49, fft_size: M2K, modulation: T16, coderate：R1_2,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:47:10, fft_size: M2K, modulation: T16, coderate：R2_3,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:47:30, fft_size: M2K, modulation: T16, coderate：R2_3,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:47:50, fft_size: M2K, modulation: T16, coderate：R2_3,guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:48:11, fft_size: M2K, modulation: T16, coderate：R2_3,guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:48:33, fft_size: M2K, modulation: T16, coderate：R3_4,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-22 17:48:53, fft_size: M2K, modulation: T16, coderate：R3_4,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes: current_time:2020-05-22 18:27:09, fft_size: M32E, modulation: T4, coderate：R1_2,PIL:PP7, guard:G1128, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes: current_time:2020-05-22 18:27:32, fft_size: M32E, modulation: T4, coderate：R1_2,PIL:PP4, guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes: current_time:2020-05-22 18:27:56, fft_size: M32E, modulation: T4, coderate：R1_2,PIL:PP2, guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes: current_time:2020-05-22 18:28:20, fft_size: M32E, modulation: T4, coderate：R1_2,PIL:PP2, guard:G19256, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:37:23, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:37:41, modulation: S4, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:37:58, modulation: S4, coderate：R2_3, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:39:56, modulation: S4, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:40:13, modulation: S4, coderate：R4_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:40:31, modulation: S4, coderate：R5_6, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:45:41, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:45:59, modulation: S4, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:46:16, modulation: S4, coderate：R2_3, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:46:34, modulation: S4, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:46:51, modulation: S4, coderate：R4_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:47:09, modulation: S4, coderate：R5_6, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:47:26, modulation: S4, coderate：R8_9, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:47:44, modulation: S4, coderate：R9_10, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:48:08, modulation: S8, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:48:26, modulation: S8, coderate：R2_3, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:48:43, modulation: S8, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:55:43, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:01:28, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00

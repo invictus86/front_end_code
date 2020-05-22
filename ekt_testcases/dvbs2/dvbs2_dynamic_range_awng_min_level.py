@@ -118,6 +118,7 @@ if __name__ == '__main__':
             for MODULATION in dict_config_data.get("MODULATION"):
                 specan = Ektsfu(sfu_ip)
                 specan.set_level_level_level("dBm", "-50")
+                time.sleep(10)
                 specan = Ektsfu(sfu_ip)
                 specan.set_digitaltv_coding_constellation_dvbs2(MODULATION)
                 CURRENT_DVBS2_CODE_RATE_CN = None
@@ -131,6 +132,7 @@ if __name__ == '__main__':
                 for code_rate_cn in CURRENT_DVBS2_CODE_RATE_CN:
                     specan = Ektsfu(sfu_ip)
                     specan.set_level_level_level("dBm", "-50")
+                    time.sleep(10)
                     specan = Ektsfu(sfu_ip)
                     specan.set_digitaltv_coding_coderate_dvbs2(code_rate_cn[0])
                     specan = Ektsfu(sfu_ip)

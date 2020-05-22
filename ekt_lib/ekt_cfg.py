@@ -1,5 +1,5 @@
 # stb_tester config
-BANCH_ID = "fe3ef9e"
+BANCH_ID = "9e3498c"
 STB_TESTER_URL = "http://192.168.1.154"
 STB_TESTER_IP = "192.168.1.154"
 

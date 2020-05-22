@@ -17,18 +17,18 @@ GUARD_G1_8 = "G1_8"
 LEVEL_60 = "-60"
 
 FREQUENCY_BW_OFFSET_LIST = [
-    [177.5, 7, -50],
-    [177.5, 7, 0],
-    [177.5, 7, +50],
-    [226.5, 7, -50],
-    [226.5, 7, 0],
-    [226.5, 7, +50],
-    [474.0, 8, -50],
-    [474.0, 8, 0],
-    [474.0, 8, +50],
-    [858.0, 8, -50],
-    [858.0, 8, 0],
-    [858.0, 8, +50]]
+    [177, 7, -0.05],
+    [177, 7, 0],
+    [177, 7, +0.05],
+    [226, 7, -0.05],
+    [226, 7, 0],
+    [226, 7, +0.05],
+    [474, 8, -0.05],
+    [474, 8, 0],
+    [474, 8, +0.05],
+    [858, 8, -0.05],
+    [858, 8, 0],
+    [858, 8, +0.05]]
 
 if __name__ == '__main__':
     """
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     for FREQUENCY_BW in FREQUENCY_BW_OFFSET_LIST:
         specan = Ektsfu(sfu_ip)
-        specan.set_frequency_frequency_frequency(str(FREQUENCY_BW[0]) + "MHz")
+        specan.set_frequency_frequency_frequency(str(FREQUENCY_BW[0] + FREQUENCY_BW[2]) + "MHz")
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str(FREQUENCY_BW[1])))
         specan = Ektsfu(sfu_ip)
@@ -84,7 +84,7 @@ if __name__ == '__main__':
 
         net = ekt_net.EktNetClient('192.168.1.24', 9999)
         net.send_data(
-            json.dumps({"cmd": "set_frequency_data", "frequency": str(int(FREQUENCY_BW[0] + FREQUENCY_BW[2]))}))
+            json.dumps({"cmd": "set_frequency_data", "frequency": str(int(FREQUENCY_BW[0]))}))
         time.sleep(1)
         del net
         net = ekt_net.EktNetClient('192.168.1.24', 9999)
@@ -118,25 +118,25 @@ if __name__ == '__main__':
             start_data_result = mosaic_algorithm(sfu_ip, "-60", "-60")
             print "dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_64QAM,
-                CODE_RATE_2_3, str(FREQUENCY_BW[0]), str(int(FREQUENCY_BW[0] + FREQUENCY_BW[2])), str(FREQUENCY_BW[1]),
+                CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]), str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
                 start_data_result.get("detect_mosic_result"))
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               "dvbt_5_frequency_offset: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                  MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0]),
-                                  str(int(FREQUENCY_BW[0] + FREQUENCY_BW[2])), str(FREQUENCY_BW[1]),
+                                  MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]),
+                                  str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
                                   start_data_result.get("detect_mosic_result")) + "\n")
         except:
             start_data_result = mosaic_algorithm(sfu_ip, "-60", "-60")
             print "dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_64QAM,
-                CODE_RATE_2_3, str(FREQUENCY_BW[0]), str(int(FREQUENCY_BW[0] + FREQUENCY_BW[2])), str(FREQUENCY_BW[1]),
+                CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]), str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
                 start_data_result.get("detect_mosic_result"))
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               "dvbt_5_frequency_offset: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                  MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0]),
-                                  str(int(FREQUENCY_BW[0] + FREQUENCY_BW[2])), str(FREQUENCY_BW[1]),
+                                  MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]),
+                                  str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
                                   start_data_result.get("detect_mosic_result")) + "\n")
         """
         进行机顶盒的频率修改或其他参数的修改
