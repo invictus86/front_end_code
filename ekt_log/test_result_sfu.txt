@@ -4749,3 +4749,243 @@ dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 18:25:54, freque
 dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 18:32:09, frequency：177.5 MHz，bandwidth：7 Ksym/s, 锁台失败
 dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:33:23, modulation: T4 coderate：R1_2, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
 dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:37:24, modulation: T4 coderate：R2_3, frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: 3.70
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:40:42, modulation: T4 coderate：R3_4, frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: 4.80
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:46:00, modulation: T4 coderate：R5_6, frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: 6.00
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:48:39, modulation: T4 coderate：R7_8, frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: 6.80
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:52:40, modulation: T16 coderate：R1_2, frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: 7.30
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:54:38, modulation: T16 coderate：R2_3, frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: 9.70
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:54:56, modulation: T16 coderate：R3_4, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:55:15, modulation: T16 coderate：R5_6, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:55:33, modulation: T16 coderate：R7_8, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:55:52, modulation: T64 coderate：R1_2, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:56:11, modulation: T64 coderate：R2_3, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:56:30, modulation: T64 coderate：R2_3, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:56:49, modulation: T64 coderate：R3_4, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:57:07, modulation: T64 coderate：R5_6, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-21 18:57:26, modulation: T64 coderate：R7_8, frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 18:58:22, frequency：191.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 18:59:17, frequency：198.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:00:12, frequency：205.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:01:06, frequency：212.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:02:01, frequency：219.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:02:56, frequency：226.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:03:51, frequency：474.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:04:46, frequency：482.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:05:41, frequency：490.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:06:36, frequency：498.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:07:31, frequency：506.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:08:26, frequency：514.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:09:21, frequency：522.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:10:16, frequency：530.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:11:11, frequency：538.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:12:05, frequency：546.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:13:00, frequency：554.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:13:55, frequency：562.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:14:50, frequency：570.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:15:45, frequency：578.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:16:40, frequency：586.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:17:35, frequency：594.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:18:30, frequency：602.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:19:25, frequency：610.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:20:20, frequency：618.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:21:15, frequency：626.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:22:09, frequency：634.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:23:04, frequency：642.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:23:59, frequency：650.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:24:54, frequency：658.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:25:48, frequency：666.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:26:43, frequency：674.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:27:38, frequency：682.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:28:33, frequency：690.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:29:28, frequency：698.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:30:23, frequency：706.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:31:18, frequency：714.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:32:12, frequency：722.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:33:07, frequency：730.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:34:02, frequency：738.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:34:57, frequency：746.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:35:52, frequency：754.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:36:47, frequency：762.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:37:42, frequency：770.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:38:37, frequency：778.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:39:32, frequency：786.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:40:27, frequency：794.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:41:22, frequency：802.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:42:16, frequency：810.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:43:11, frequency：818.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:44:06, frequency：826.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:45:01, frequency：834.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:45:56, frequency：842.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:46:51, frequency：850.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-21 19:47:46, frequency：858.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 21:22:41, modulation: T4, coderate：R1_2, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-86.7", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 21:25:30, modulation: T4, coderate：R1_2, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-81.7", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 21:33:25, modulation: T4, coderate：R2_3, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -98.30
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 21:40:28, modulation: T4, coderate：R3_4, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -97.10
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 21:46:35, modulation: T4, coderate：R5_6, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -95.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 21:53:41, modulation: T4, coderate：R7_8, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -95.30
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 22:00:12, modulation: T16, coderate：R1_2, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -94.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 22:08:37, modulation: T16, coderate：R2_3, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -92.30
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 22:16:39, modulation: T16, coderate：R3_4, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -90.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 22:25:03, modulation: T16, coderate：R5_6, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -89.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 22:31:33, modulation: T16, coderate：R7_8, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -88.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 22:38:36, modulation: T64, coderate：R1_2, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -90.20
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 22:45:11, modulation: T64, coderate：R2_3, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -87.00
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 22:54:30, modulation: T64, coderate：R2_3, guard:G1_8,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -86.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 23:01:18, modulation: T64, coderate：R3_4, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -85.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 23:11:19, modulation: T64, coderate：R5_6, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -84.10
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 23:20:10, modulation: T64, coderate：R7_8, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -82.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 23:21:21, modulation: T4, coderate：R1_2, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-81.5", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 23:28:02, modulation: T4, coderate：R2_3, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -98.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 23:34:54, modulation: T4, coderate：R3_4, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -97.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 23:43:53, modulation: T4, coderate：R5_6, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -96.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 23:50:16, modulation: T4, coderate：R7_8, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -95.00
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-21 23:59:48, modulation: T16, coderate：R1_2, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -95.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 00:07:45, modulation: T16, coderate：R2_3, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -92.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 00:16:45, modulation: T16, coderate：R3_4, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -91.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 00:24:00, modulation: T16, coderate：R5_6, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -90.20
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 00:32:56, modulation: T16, coderate：R7_8, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -89.40
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 00:43:05, modulation: T64, coderate：R1_2, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -91.00
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 00:53:11, modulation: T64, coderate：R2_3, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -87.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 01:02:11, modulation: T64, coderate：R2_3, guard:G1_8,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -87.60
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 01:12:22, modulation: T64, coderate：R3_4, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -86.40
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 01:21:24, modulation: T64, coderate：R5_6, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -84.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 01:29:42, modulation: T64, coderate：R7_8, guard:G1_4,frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: -83.60
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 01:30:54, modulation: T4, coderate：R1_2, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-81.3", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 01:39:25, modulation: T4, coderate：R2_3, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -99.30
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 01:47:22, modulation: T4, coderate：R3_4, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -98.10
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 01:54:28, modulation: T4, coderate：R5_6, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -96.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 02:01:25, modulation: T4, coderate：R7_8, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -96.00
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 02:08:30, modulation: T16, coderate：R1_2, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -95.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 02:17:30, modulation: T16, coderate：R2_3, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -93.20
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 02:27:20, modulation: T16, coderate：R3_4, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -91.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 02:35:39, modulation: T16, coderate：R5_6, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -90.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 02:45:47, modulation: T16, coderate：R7_8, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -89.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 02:53:21, modulation: T64, coderate：R1_2, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -91.20
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 03:01:18, modulation: T64, coderate：R2_3, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -88.20
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 03:11:32, modulation: T64, coderate：R2_3, guard:G1_8,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -87.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 03:18:47, modulation: T64, coderate：R3_4, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -86.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 03:29:16, modulation: T64, coderate：R5_6, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -85.10
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 03:38:13, modulation: T64, coderate：R7_8, guard:G1_4,frequency：191.5 MHz，bandwidth：7 MHZ，阈值为: -83.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 03:39:24, modulation: T4, coderate：R1_2, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-81.4", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 03:46:20, modulation: T4, coderate：R2_3, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -98.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 03:56:14, modulation: T4, coderate：R3_4, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -97.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 04:04:30, modulation: T4, coderate：R5_6, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -96.30
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 04:13:22, modulation: T4, coderate：R7_8, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -95.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 04:22:22, modulation: T16, coderate：R1_2, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -95.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 04:30:18, modulation: T16, coderate：R2_3, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -92.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 04:38:14, modulation: T16, coderate：R3_4, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -91.40
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 04:45:30, modulation: T16, coderate：R5_6, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -90.20
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 04:53:51, modulation: T16, coderate：R7_8, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -89.20
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 05:03:32, modulation: T64, coderate：R1_2, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -90.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 05:12:52, modulation: T64, coderate：R2_3, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -87.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 05:20:49, modulation: T64, coderate：R2_3, guard:G1_8,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -87.30
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 05:28:48, modulation: T64, coderate：R3_4, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -85.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 05:37:08, modulation: T64, coderate：R5_6, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -84.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 05:44:25, modulation: T64, coderate：R7_8, guard:G1_4,frequency：198.5 MHz，bandwidth：7 MHZ，阈值为: -83.30
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 05:45:36, modulation: T4, coderate：R1_2, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-81.5", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 05:52:34, modulation: T4, coderate：R2_3, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -97.00
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 05:59:05, modulation: T4, coderate：R3_4, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -95.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 06:05:08, modulation: T4, coderate：R5_6, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -94.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 06:11:20, modulation: T4, coderate：R7_8, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -94.00
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 06:20:32, modulation: T16, coderate：R1_2, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -93.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 06:28:30, modulation: T16, coderate：R2_3, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -91.10
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 06:38:32, modulation: T16, coderate：R3_4, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -90.20
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 06:45:44, modulation: T16, coderate：R5_6, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -88.40
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 06:55:06, modulation: T16, coderate：R7_8, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -87.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 07:03:08, modulation: T64, coderate：R1_2, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -89.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 07:12:36, modulation: T64, coderate：R2_3, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -85.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 07:21:19, modulation: T64, coderate：R2_3, guard:G1_8,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -85.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 07:28:41, modulation: T64, coderate：R3_4, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -84.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 07:37:25, modulation: T64, coderate：R5_6, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -82.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 07:45:23, modulation: T64, coderate：R7_8, guard:G1_4,frequency：205.5 MHz，bandwidth：7 MHZ，阈值为: -81.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 07:46:33, modulation: T4, coderate：R1_2, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-81.4", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 07:55:05, modulation: T4, coderate：R2_3, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -97.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 08:03:03, modulation: T4, coderate：R3_4, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -96.30
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 08:11:48, modulation: T4, coderate：R5_6, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -95.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 08:19:59, modulation: T4, coderate：R7_8, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -94.60
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 08:26:55, modulation: T16, coderate：R1_2, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -94.00
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 08:36:23, modulation: T16, coderate：R2_3, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -91.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 08:43:41, modulation: T16, coderate：R3_4, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -90.30
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 08:52:42, modulation: T16, coderate：R5_6, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -88.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 08:59:59, modulation: T16, coderate：R7_8, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -88.00
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 09:09:01, modulation: T64, coderate：R1_2, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -89.80
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 09:17:24, modulation: T64, coderate：R2_3, guard:G1_4,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -86.50
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 09:24:19, modulation: T64, coderate：R2_3, guard:G1_8,frequency：212.5 MHz，bandwidth：7 MHZ，阈值为: -86.10
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 09:30:58, modulation: T4, coderate：R1_2, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-81.7", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 09:35:36, modulation: T4, coderate：R1_2, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-86.7", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-22 09:38:05, modulation: T4, coderate：R2_3, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -95.90
+dvbt2_receiver_signal_input__min_level: current_time:2020-05-22 09:44:13, frequency：177.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_performance_gaussian_channel: current_time:2020-05-22 09:47:22, modulation: T4 coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt2_performance_gaussian_channel: current_time:2020-05-22 09:51:07, modulation: T4 coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 3.70
+dvbt2_performance_gaussian_channel: current_time:2020-05-22 09:54:35, modulation: T4 coderate：R3_4, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 4.70
+dvbt2_performance_gaussian_channel: current_time:2020-05-22 09:57:30, modulation: T4 coderate：R5_6, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 5.80
+dvbt2_performance_gaussian_channel: current_time:2020-05-22 10:00:20, modulation: T4 coderate：R7_8, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 6.70
+dvbt2_34_centre_frequencies: current_time:2020-05-22 11:24:23, frequency：177.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_34_centre_frequencies: current_time:2020-05-22 11:25:27, modulation: T64, coderate：R2_3, frequency：184.5 MHz，bandwidth：7 MHZ，True
+dvbt2_34_centre_frequencies: current_time:2020-05-22 11:26:22, frequency：191.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_34_centre_frequencies: current_time:2020-05-22 11:27:33, modulation: T64, coderate：R2_3, frequency：198.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 11:31:43, modulation: T64, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 11:32:55, modulation: T64, coderate：R2_3, frequency：184.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 11:34:12, modulation: T64, coderate：R2_3, frequency：191.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 11:35:28, modulation: T64, coderate：R2_3, frequency：198.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 11:36:46, modulation: T64, coderate：R2_3, frequency：205.5 MHz，bandwidth：7 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:44:26, frequency：177.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:45:45, frequency：184.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:46:56, modulation: T64, coderate：R2_3, frequency：191.5 MHz，bandwidth：7 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:48:07, modulation: T64, coderate：R2_3, frequency：198.5 MHz，bandwidth：7 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:49:16, modulation: T64, coderate：R2_3, frequency：205.5 MHz，bandwidth：7 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:50:25, modulation: T64, coderate：R2_3, frequency：212.5 MHz，bandwidth：7 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:51:42, modulation: T64, coderate：R2_3, frequency：219.5 MHz，bandwidth：7 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:52:59, modulation: T64, coderate：R2_3, frequency：226.5 MHz，bandwidth：7 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:54:15, modulation: T64, coderate：R2_3, frequency：474.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:55:25, modulation: T64, coderate：R2_3, frequency：482.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:56:34, modulation: T64, coderate：R2_3, frequency：490.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:57:44, modulation: T64, coderate：R2_3, frequency：498.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 11:58:59, modulation: T64, coderate：R2_3, frequency：506.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:00:09, modulation: T64, coderate：R2_3, frequency：514.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:01:26, modulation: T64, coderate：R2_3, frequency：522.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:02:43, modulation: T64, coderate：R2_3, frequency：530.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:04:00, modulation: T64, coderate：R2_3, frequency：538.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:05:09, modulation: T64, coderate：R2_3, frequency：546.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:06:25, modulation: T64, coderate：R2_3, frequency：554.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:07:42, modulation: T64, coderate：R2_3, frequency：562.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:08:51, modulation: T64, coderate：R2_3, frequency：570.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:10:01, modulation: T64, coderate：R2_3, frequency：578.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:11:17, modulation: T64, coderate：R2_3, frequency：586.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:12:27, modulation: T64, coderate：R2_3, frequency：594.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:13:43, modulation: T64, coderate：R2_3, frequency：602.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:15:00, modulation: T64, coderate：R2_3, frequency：610.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:16:16, modulation: T64, coderate：R2_3, frequency：618.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:17:26, modulation: T64, coderate：R2_3, frequency：626.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:18:36, modulation: T64, coderate：R2_3, frequency：634.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:19:52, modulation: T64, coderate：R2_3, frequency：642.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:21:09, modulation: T64, coderate：R2_3, frequency：650.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:22:25, modulation: T64, coderate：R2_3, frequency：658.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:23:34, modulation: T64, coderate：R2_3, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:24:43, modulation: T64, coderate：R2_3, frequency：674.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:25:52, modulation: T64, coderate：R2_3, frequency：682.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:27:02, modulation: T64, coderate：R2_3, frequency：690.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:28:19, modulation: T64, coderate：R2_3, frequency：698.0 MHz，bandwidth：8 MHZ，False
+dvbt_4_centre_frequencies: current_time:2020-05-22 12:29:36, modulation: T64, coderate：R2_3, frequency：706.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:06:10, frequency：177.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:07:23, modulation: T64, coderate：R2_3, frequency：184.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:08:35, modulation: T64, coderate：R2_3, frequency：191.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:09:45, modulation: T64, coderate：R2_3, frequency：198.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:11:02, modulation: T64, coderate：R2_3, frequency：205.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:12:18, modulation: T64, coderate：R2_3, frequency：212.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:13:35, modulation: T64, coderate：R2_3, frequency：219.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:14:52, modulation: T64, coderate：R2_3, frequency：226.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:16:09, modulation: T64, coderate：R2_3, frequency：474.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:17:25, modulation: T64, coderate：R2_3, frequency：482.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:18:36, modulation: T64, coderate：R2_3, frequency：490.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:19:52, modulation: T64, coderate：R2_3, frequency：498.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:21:08, modulation: T64, coderate：R2_3, frequency：506.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:22:18, modulation: T64, coderate：R2_3, frequency：514.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:23:34, modulation: T64, coderate：R2_3, frequency：522.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:24:51, modulation: T64, coderate：R2_3, frequency：530.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:26:01, modulation: T64, coderate：R2_3, frequency：538.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:27:17, modulation: T64, coderate：R2_3, frequency：546.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:28:26, modulation: T64, coderate：R2_3, frequency：554.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:29:35, modulation: T64, coderate：R2_3, frequency：562.0 MHz，bandwidth：8 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-22 14:30:45, modulation: T64, coderate：R2_3, frequency：570.0 MHz，bandwidth：8 MHZ，False
