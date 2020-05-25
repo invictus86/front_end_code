@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import time
 import json
+import pandas as pd
 
 
 def set_dvbs_variable_parameter(specan, code_rate, modulation, symbol_rate, frequency, input_signal_level):
@@ -107,6 +108,59 @@ def find_level_offset_by_frequency(frequency_offset_type, frequency):
     for FREQUENCY_LEVEL_OFFSET in FREQUENCY_LEVEL_OFFSET_LIST:
         if FREQUENCY_LEVEL_OFFSET[0] == frequency:
             return FREQUENCY_LEVEL_OFFSET[1]
+
+
+def read_json_file(file_path):
+    """
+    read json file from file path
+    :param file_path:
+    :return:
+    """
+    with open(file_path, 'r') as load_f:
+        load_dict = json.load(load_f)
+    return load_dict
+
+
+def write_json_file(file_path, load_dict):
+    """
+    write json file from file path
+    :return:
+    """
+    with open(file_path, "w") as dump_f:
+        json.dump(load_dict, dump_f)
+
+
+def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[2]:
+            if count == 0:
+                list_required_data.append([i[0][1], i[1][0], j[0][0], j[1]])
+            else:
+                list_required_data.append(["", "", j[0][0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'code_rate', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbs2_dynamic_min_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[2]:
+            if count == 0:
+                list_required_data.append([i[0][1], i[1][0], j[0], j[1][0], j[2]])
+            else:
+                list_required_data.append(["", "", j[0], j[1][0], j[2]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'modulation', 'code_rate', 'level'])
+    pd_data.to_csv(csv_path, index=None)
 
 
 if __name__ == '__main__':

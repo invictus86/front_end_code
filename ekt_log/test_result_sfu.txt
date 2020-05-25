@@ -5077,3 +5077,1135 @@ dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:48:26, modulation
 dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:48:43, modulation: S8, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
 dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 18:55:43, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
 dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:01:28, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:04:31, modulation: S4, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:04:57, modulation: S4, coderate：R2_3, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:05:24, modulation: S4, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:05:51, modulation: S4, coderate：R4_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:06:17, modulation: S4, coderate：R5_6, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:06:43, modulation: S4, coderate：R8_9, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:07:10, modulation: S4, coderate：R9_10, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:11:52, modulation: S8, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:16:11, modulation: S8, coderate：R2_3, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:19:58, modulation: S8, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:22:26, modulation: S8, coderate：R5_6, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:27:12, modulation: S8, coderate：R8_9, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -84.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:32:16, modulation: S8, coderate：R9_10, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -83.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:36:34, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:39:35, modulation: S4, coderate：R3_5, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:42:17, modulation: S4, coderate：R2_3, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:44:41, modulation: S4, coderate：R3_4, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:45:07, modulation: S4, coderate：R4_5, frequency：970 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:45:34, modulation: S4, coderate：R5_6, frequency：970 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:46:00, modulation: S4, coderate：R8_9, frequency：970 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:46:27, modulation: S4, coderate：R9_10, frequency：970 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:51:26, modulation: S8, coderate：R3_5, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 19:56:38, modulation: S8, coderate：R2_3, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:00:57, modulation: S8, coderate：R3_4, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:04:31, modulation: S8, coderate：R5_6, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:07:55, modulation: S8, coderate：R8_9, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:10:59, modulation: S8, coderate：R9_10, frequency：970 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:15:40, modulation: S4, coderate：R1_2, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:19:20, modulation: S4, coderate：R3_5, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:22:08, modulation: S4, coderate：R2_3, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:24:12, modulation: S4, coderate：R3_4, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:24:39, modulation: S4, coderate：R4_5, frequency：990 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:25:05, modulation: S4, coderate：R5_6, frequency：990 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:25:32, modulation: S4, coderate：R8_9, frequency：990 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:25:58, modulation: S4, coderate：R9_10, frequency：990 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:31:04, modulation: S8, coderate：R3_5, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:35:40, modulation: S8, coderate：R2_3, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:39:50, modulation: S8, coderate：R3_4, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:43:08, modulation: S8, coderate：R5_6, frequency：990 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:43:34, modulation: S8, coderate：R8_9, frequency：990 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:44:01, modulation: S8, coderate：R9_10, frequency：990 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:48:45, modulation: S4, coderate：R1_2, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:51:26, modulation: S4, coderate：R3_5, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:53:32, modulation: S4, coderate：R2_3, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:53:59, modulation: S4, coderate：R3_4, frequency：1010 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:54:25, modulation: S4, coderate：R4_5, frequency：1010 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 20:59:07, modulation: S4, coderate：R5_6, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:03:08, modulation: S4, coderate：R8_9, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:07:02, modulation: S4, coderate：R9_10, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:11:32, modulation: S8, coderate：R3_5, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:15:50, modulation: S8, coderate：R2_3, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:19:43, modulation: S8, coderate：R3_4, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:22:42, modulation: S8, coderate：R5_6, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:25:23, modulation: S8, coderate：R8_9, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:28:04, modulation: S8, coderate：R9_10, frequency：1010 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:33:04, modulation: S4, coderate：R1_2, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:36:22, modulation: S4, coderate：R3_5, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:39:45, modulation: S4, coderate：R2_3, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:42:49, modulation: S4, coderate：R3_4, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:44:55, modulation: S4, coderate：R4_5, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:45:21, modulation: S4, coderate：R5_6, frequency：1030 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:45:48, modulation: S4, coderate：R8_9, frequency：1030 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:46:14, modulation: S4, coderate：R9_10, frequency：1030 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:51:15, modulation: S8, coderate：R3_5, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:55:28, modulation: S8, coderate：R2_3, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:59:22, modulation: S8, coderate：R3_4, frequency：1030 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 21:59:48, modulation: S8, coderate：R5_6, frequency：1030 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:00:15, modulation: S8, coderate：R8_9, frequency：1030 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:00:41, modulation: S8, coderate：R9_10, frequency：1030 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:05:21, modulation: S4, coderate：R1_2, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:08:58, modulation: S4, coderate：R3_5, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:11:38, modulation: S4, coderate：R2_3, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:14:08, modulation: S4, coderate：R3_4, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:14:34, modulation: S4, coderate：R4_5, frequency：1050 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:15:00, modulation: S4, coderate：R5_6, frequency：1050 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:15:27, modulation: S4, coderate：R8_9, frequency：1050 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:15:53, modulation: S4, coderate：R9_10, frequency：1050 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:20:34, modulation: S8, coderate：R3_5, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:24:46, modulation: S8, coderate：R2_3, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:25:12, modulation: S8, coderate：R3_4, frequency：1050 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:28:30, modulation: S8, coderate：R5_6, frequency：1050 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:28:57, modulation: S8, coderate：R8_9, frequency：1050 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:29:23, modulation: S8, coderate：R9_10, frequency：1050 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:34:01, modulation: S4, coderate：R1_2, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:37:01, modulation: S4, coderate：R3_5, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:40:20, modulation: S4, coderate：R2_3, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:42:44, modulation: S4, coderate：R3_4, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:43:10, modulation: S4, coderate：R4_5, frequency：1070 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:43:37, modulation: S4, coderate：R5_6, frequency：1070 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:44:03, modulation: S4, coderate：R8_9, frequency：1070 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:44:29, modulation: S4, coderate：R9_10, frequency：1070 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:47:05, modulation: S8, coderate：R3_5, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:47:31, modulation: S8, coderate：R2_3, frequency：1070 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:52:01, modulation: S8, coderate：R3_4, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:55:43, modulation: S8, coderate：R5_6, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 22:59:40, modulation: S8, coderate：R8_9, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:03:16, modulation: S8, coderate：R9_10, frequency：1070 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:07:22, modulation: S4, coderate：R1_2, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:07:49, modulation: S4, coderate：R3_5, frequency：1090 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:08:15, modulation: S4, coderate：R2_3, frequency：1090 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:10:41, modulation: S4, coderate：R3_4, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:15:48, modulation: S4, coderate：R4_5, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:17:35, modulation: S4, coderate：R5_6, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:18:02, modulation: S4, coderate：R8_9, frequency：1090 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:18:28, modulation: S4, coderate：R9_10, frequency：1090 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:23:28, modulation: S8, coderate：R3_5, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:28:21, modulation: S8, coderate：R2_3, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:32:32, modulation: S8, coderate：R3_4, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:36:16, modulation: S8, coderate：R5_6, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:39:20, modulation: S8, coderate：R8_9, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:42:17, modulation: S8, coderate：R9_10, frequency：1090 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:46:22, modulation: S4, coderate：R1_2, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:48:26, modulation: S4, coderate：R3_5, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:53:30, modulation: S4, coderate：R2_3, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-22 23:58:17, modulation: S4, coderate：R3_4, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:03:07, modulation: S4, coderate：R4_5, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:07:24, modulation: S4, coderate：R5_6, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:10:58, modulation: S4, coderate：R8_9, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:14:25, modulation: S4, coderate：R9_10, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:18:30, modulation: S8, coderate：R3_5, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:21:34, modulation: S8, coderate：R2_3, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:24:25, modulation: S8, coderate：R3_4, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:26:34, modulation: S8, coderate：R5_6, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:28:20, modulation: S8, coderate：R8_9, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:30:08, modulation: S8, coderate：R9_10, frequency：1110 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:33:39, modulation: S4, coderate：R1_2, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:34:05, modulation: S4, coderate：R3_5, frequency：1130 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:34:32, modulation: S4, coderate：R2_3, frequency：1130 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:34:58, modulation: S4, coderate：R3_4, frequency：1130 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:39:09, modulation: S4, coderate：R4_5, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:43:02, modulation: S4, coderate：R5_6, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:47:31, modulation: S4, coderate：R8_9, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:51:06, modulation: S4, coderate：R9_10, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:55:09, modulation: S8, coderate：R3_5, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 00:58:43, modulation: S8, coderate：R2_3, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:02:47, modulation: S8, coderate：R3_4, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:05:45, modulation: S8, coderate：R5_6, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:08:27, modulation: S8, coderate：R8_9, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:10:50, modulation: S8, coderate：R9_10, frequency：1130 MHz，symbol_rate：05000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:14:21, modulation: S4, coderate：R1_2, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:14:47, modulation: S4, coderate：R3_5, frequency：1150 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:15:14, modulation: S4, coderate：R2_3, frequency：1150 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:15:40, modulation: S4, coderate：R3_4, frequency：1150 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:16:06, modulation: S4, coderate：R4_5, frequency：1150 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:19:57, modulation: S4, coderate：R5_6, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:24:03, modulation: S4, coderate：R8_9, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:27:19, modulation: S4, coderate：R9_10, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:31:05, modulation: S8, coderate：R3_5, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:34:22, modulation: S8, coderate：R2_3, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:37:21, modulation: S8, coderate：R3_4, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:39:32, modulation: S8, coderate：R5_6, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:44:08, modulation: S8, coderate：R8_9, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:45:55, modulation: S8, coderate：R9_10, frequency：1150 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:51:12, modulation: S4, coderate：R1_2, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:54:54, modulation: S4, coderate：R3_5, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:57:44, modulation: S4, coderate：R2_3, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 01:59:48, modulation: S4, coderate：R3_4, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:01:54, modulation: S4, coderate：R4_5, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:02:20, modulation: S4, coderate：R5_6, frequency：1170 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:02:47, modulation: S4, coderate：R8_9, frequency：1170 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:03:14, modulation: S4, coderate：R9_10, frequency：1170 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:08:11, modulation: S8, coderate：R3_5, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:13:27, modulation: S8, coderate：R2_3, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:17:36, modulation: S8, coderate：R3_4, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:21:48, modulation: S8, coderate：R5_6, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:25:24, modulation: S8, coderate：R8_9, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:28:42, modulation: S8, coderate：R9_10, frequency：1170 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:33:45, modulation: S4, coderate：R1_2, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:37:02, modulation: S4, coderate：R3_5, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:40:03, modulation: S4, coderate：R2_3, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:42:09, modulation: S4, coderate：R3_4, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:42:35, modulation: S4, coderate：R4_5, frequency：1190 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:43:02, modulation: S4, coderate：R5_6, frequency：1190 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:47:18, modulation: S4, coderate：R8_9, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:52:08, modulation: S4, coderate：R9_10, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 02:57:11, modulation: S8, coderate：R3_5, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:01:39, modulation: S8, coderate：R2_3, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:05:34, modulation: S8, coderate：R3_4, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:06:01, modulation: S8, coderate：R5_6, frequency：1190 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:06:27, modulation: S8, coderate：R8_9, frequency：1190 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:09:32, modulation: S8, coderate：R9_10, frequency：1190 MHz，symbol_rate：05000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:13:54, modulation: S4, coderate：R1_2, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:14:20, modulation: S4, coderate：R3_5, frequency：1210 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:14:47, modulation: S4, coderate：R2_3, frequency：1210 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:15:13, modulation: S4, coderate：R3_4, frequency：1210 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:15:40, modulation: S4, coderate：R4_5, frequency：1210 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:16:06, modulation: S4, coderate：R5_6, frequency：1210 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:16:33, modulation: S4, coderate：R8_9, frequency：1210 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:16:59, modulation: S4, coderate：R9_10, frequency：1210 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:21:58, modulation: S8, coderate：R3_5, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:26:26, modulation: S8, coderate：R2_3, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:30:37, modulation: S8, coderate：R3_4, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:34:18, modulation: S8, coderate：R5_6, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:37:34, modulation: S8, coderate：R8_9, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:40:59, modulation: S8, coderate：R9_10, frequency：1210 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:45:59, modulation: S4, coderate：R1_2, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:49:16, modulation: S4, coderate：R3_5, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:52:22, modulation: S4, coderate：R2_3, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:55:09, modulation: S4, coderate：R3_4, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:57:14, modulation: S4, coderate：R4_5, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 03:57:40, modulation: S4, coderate：R5_6, frequency：1230 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:02:32, modulation: S4, coderate：R8_9, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:07:04, modulation: S4, coderate：R9_10, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:09:20, modulation: S8, coderate：R3_5, frequency：1230 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:09:47, modulation: S8, coderate：R2_3, frequency：1230 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:10:13, modulation: S8, coderate：R3_4, frequency：1230 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:10:40, modulation: S8, coderate：R5_6, frequency：1230 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:11:06, modulation: S8, coderate：R8_9, frequency：1230 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:11:33, modulation: S8, coderate：R9_10, frequency：1230 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:15:51, modulation: S4, coderate：R1_2, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:18:52, modulation: S4, coderate：R3_5, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:21:38, modulation: S4, coderate：R2_3, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:24:01, modulation: S4, coderate：R3_4, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:26:07, modulation: S4, coderate：R4_5, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:26:33, modulation: S4, coderate：R5_6, frequency：1250 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:31:02, modulation: S4, coderate：R8_9, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:31:28, modulation: S4, coderate：R9_10, frequency：1250 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:36:27, modulation: S8, coderate：R3_5, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:40:55, modulation: S8, coderate：R2_3, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:44:48, modulation: S8, coderate：R3_4, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:48:57, modulation: S8, coderate：R5_6, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:51:56, modulation: S8, coderate：R8_9, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:55:15, modulation: S8, coderate：R9_10, frequency：1250 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 04:59:38, modulation: S4, coderate：R1_2, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:00:05, modulation: S4, coderate：R3_5, frequency：1270 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:00:31, modulation: S4, coderate：R2_3, frequency：1270 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:00:58, modulation: S4, coderate：R3_4, frequency：1270 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:01:24, modulation: S4, coderate：R4_5, frequency：1270 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:01:50, modulation: S4, coderate：R5_6, frequency：1270 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:02:17, modulation: S4, coderate：R8_9, frequency：1270 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:02:44, modulation: S4, coderate：R9_10, frequency：1270 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:08:00, modulation: S8, coderate：R3_5, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:12:16, modulation: S8, coderate：R2_3, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:16:16, modulation: S8, coderate：R3_4, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:20:08, modulation: S8, coderate：R5_6, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:23:55, modulation: S8, coderate：R8_9, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:26:34, modulation: S8, coderate：R9_10, frequency：1270 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:31:17, modulation: S4, coderate：R1_2, frequency：1290 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:31:44, modulation: S4, coderate：R3_5, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:32:10, modulation: S4, coderate：R2_3, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:32:37, modulation: S4, coderate：R3_4, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:33:03, modulation: S4, coderate：R4_5, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:33:30, modulation: S4, coderate：R5_6, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:33:56, modulation: S4, coderate：R8_9, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:34:23, modulation: S4, coderate：R9_10, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:36:40, modulation: S8, coderate：R3_5, frequency：1290 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:37:06, modulation: S8, coderate：R2_3, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:37:33, modulation: S8, coderate：R3_4, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:37:59, modulation: S8, coderate：R5_6, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:38:26, modulation: S8, coderate：R8_9, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:38:52, modulation: S8, coderate：R9_10, frequency：1290 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:43:34, modulation: S4, coderate：R1_2, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:44:01, modulation: S4, coderate：R3_5, frequency：1310 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:44:27, modulation: S4, coderate：R2_3, frequency：1310 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:44:54, modulation: S4, coderate：R3_4, frequency：1310 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:45:20, modulation: S4, coderate：R4_5, frequency：1310 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:45:47, modulation: S4, coderate：R5_6, frequency：1310 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:46:13, modulation: S4, coderate：R8_9, frequency：1310 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:46:40, modulation: S4, coderate：R9_10, frequency：1310 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:48:59, modulation: S8, coderate：R3_5, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:54:00, modulation: S8, coderate：R2_3, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:58:15, modulation: S8, coderate：R3_4, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:58:42, modulation: S8, coderate：R5_6, frequency：1310 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 05:59:08, modulation: S8, coderate：R8_9, frequency：1310 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:02:29, modulation: S8, coderate：R9_10, frequency：1310 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:07:26, modulation: S4, coderate：R1_2, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:10:43, modulation: S4, coderate：R3_5, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:14:00, modulation: S4, coderate：R2_3, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:16:58, modulation: S4, coderate：R3_4, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:19:22, modulation: S4, coderate：R4_5, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:19:48, modulation: S4, coderate：R5_6, frequency：1330 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:20:15, modulation: S4, coderate：R8_9, frequency：1330 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:20:41, modulation: S4, coderate：R9_10, frequency：1330 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:22:58, modulation: S8, coderate：R3_5, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:27:26, modulation: S8, coderate：R2_3, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:31:54, modulation: S8, coderate：R3_4, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:35:47, modulation: S8, coderate：R5_6, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:39:03, modulation: S8, coderate：R8_9, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:42:49, modulation: S8, coderate：R9_10, frequency：1330 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:47:26, modulation: S4, coderate：R1_2, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:50:32, modulation: S4, coderate：R3_5, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:53:30, modulation: S4, coderate：R2_3, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:55:36, modulation: S4, coderate：R3_4, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:56:02, modulation: S4, coderate：R4_5, frequency：1350 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:56:29, modulation: S4, coderate：R5_6, frequency：1350 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:56:55, modulation: S4, coderate：R8_9, frequency：1350 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 06:57:22, modulation: S4, coderate：R9_10, frequency：1350 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:02:03, modulation: S8, coderate：R3_5, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:06:13, modulation: S8, coderate：R2_3, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:06:40, modulation: S8, coderate：R3_4, frequency：1350 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:10:21, modulation: S8, coderate：R5_6, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:13:18, modulation: S8, coderate：R8_9, frequency：1350 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:13:45, modulation: S8, coderate：R9_10, frequency：1350 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:18:26, modulation: S4, coderate：R1_2, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:21:31, modulation: S4, coderate：R3_5, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:24:29, modulation: S4, coderate：R2_3, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:26:34, modulation: S4, coderate：R3_4, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:27:01, modulation: S4, coderate：R4_5, frequency：1370 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:27:27, modulation: S4, coderate：R5_6, frequency：1370 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:32:14, modulation: S4, coderate：R8_9, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:36:44, modulation: S4, coderate：R9_10, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:41:23, modulation: S8, coderate：R3_5, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:45:32, modulation: S8, coderate：R2_3, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:49:48, modulation: S8, coderate：R3_4, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:53:22, modulation: S8, coderate：R5_6, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:56:22, modulation: S8, coderate：R8_9, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 07:59:45, modulation: S8, coderate：R9_10, frequency：1370 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:04:04, modulation: S4, coderate：R1_2, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:04:30, modulation: S4, coderate：R3_5, frequency：1390 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:04:57, modulation: S4, coderate：R2_3, frequency：1390 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:05:23, modulation: S4, coderate：R3_4, frequency：1390 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:05:50, modulation: S4, coderate：R4_5, frequency：1390 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:06:16, modulation: S4, coderate：R5_6, frequency：1390 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:10:45, modulation: S4, coderate：R8_9, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:11:11, modulation: S4, coderate：R9_10, frequency：1390 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:16:08, modulation: S8, coderate：R3_5, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:20:56, modulation: S8, coderate：R2_3, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:24:47, modulation: S8, coderate：R3_4, frequency：1390 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:25:14, modulation: S8, coderate：R5_6, frequency：1390 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:25:40, modulation: S8, coderate：R8_9, frequency：1390 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:26:07, modulation: S8, coderate：R9_10, frequency：1390 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:31:02, modulation: S4, coderate：R1_2, frequency：1410 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:34:18, modulation: S4, coderate：R3_5, frequency：1410 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:34:45, modulation: S4, coderate：R2_3, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:35:11, modulation: S4, coderate：R3_4, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:35:38, modulation: S4, coderate：R4_5, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:37:43, modulation: S4, coderate：R5_6, frequency：1410 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:38:09, modulation: S4, coderate：R8_9, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:38:36, modulation: S4, coderate：R9_10, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:40:54, modulation: S8, coderate：R3_5, frequency：1410 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:41:20, modulation: S8, coderate：R2_3, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:41:47, modulation: S8, coderate：R3_4, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:42:13, modulation: S8, coderate：R5_6, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:42:40, modulation: S8, coderate：R8_9, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:43:06, modulation: S8, coderate：R9_10, frequency：1410 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:47:47, modulation: S4, coderate：R1_2, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:48:14, modulation: S4, coderate：R3_5, frequency：1430 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:48:40, modulation: S4, coderate：R2_3, frequency：1430 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:49:07, modulation: S4, coderate：R3_4, frequency：1430 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:49:33, modulation: S4, coderate：R4_5, frequency：1430 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:50:00, modulation: S4, coderate：R5_6, frequency：1430 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:50:26, modulation: S4, coderate：R8_9, frequency：1430 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:50:53, modulation: S4, coderate：R9_10, frequency：1430 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:53:10, modulation: S8, coderate：R3_5, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 08:57:38, modulation: S8, coderate：R2_3, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:01:31, modulation: S8, coderate：R3_4, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:05:31, modulation: S8, coderate：R5_6, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:08:29, modulation: S8, coderate：R8_9, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:12:09, modulation: S8, coderate：R9_10, frequency：1430 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:17:25, modulation: S4, coderate：R1_2, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:20:48, modulation: S4, coderate：R3_5, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:24:05, modulation: S4, coderate：R2_3, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:27:04, modulation: S4, coderate：R3_4, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:29:27, modulation: S4, coderate：R4_5, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:29:54, modulation: S4, coderate：R5_6, frequency：1450 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:30:20, modulation: S4, coderate：R8_9, frequency：1450 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:30:47, modulation: S4, coderate：R9_10, frequency：1450 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:33:04, modulation: S8, coderate：R3_5, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:33:31, modulation: S8, coderate：R2_3, frequency：1450 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:38:06, modulation: S8, coderate：R3_4, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:38:32, modulation: S8, coderate：R5_6, frequency：1450 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:38:59, modulation: S8, coderate：R8_9, frequency：1450 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:39:25, modulation: S8, coderate：R9_10, frequency：1450 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:44:40, modulation: S4, coderate：R1_2, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:48:15, modulation: S4, coderate：R3_5, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:51:39, modulation: S4, coderate：R2_3, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:54:42, modulation: S4, coderate：R3_4, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 09:57:59, modulation: S4, coderate：R4_5, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:00:40, modulation: S4, coderate：R5_6, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:01:07, modulation: S4, coderate：R8_9, frequency：1470 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:01:33, modulation: S4, coderate：R9_10, frequency：1470 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:04:38, modulation: S8, coderate：R3_5, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:09:51, modulation: S8, coderate：R2_3, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:14:25, modulation: S8, coderate：R3_4, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:18:17, modulation: S8, coderate：R5_6, frequency：1470 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:18:43, modulation: S8, coderate：R8_9, frequency：1470 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:19:10, modulation: S8, coderate：R9_10, frequency：1470 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:23:52, modulation: S4, coderate：R1_2, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:27:50, modulation: S4, coderate：R3_5, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:30:49, modulation: S4, coderate：R2_3, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:31:16, modulation: S4, coderate：R3_4, frequency：1490 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:31:43, modulation: S4, coderate：R4_5, frequency：1490 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:32:09, modulation: S4, coderate：R5_6, frequency：1490 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:32:36, modulation: S4, coderate：R8_9, frequency：1490 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:33:02, modulation: S4, coderate：R9_10, frequency：1490 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:35:20, modulation: S8, coderate：R3_5, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:35:46, modulation: S8, coderate：R2_3, frequency：1490 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:39:57, modulation: S8, coderate：R3_4, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:40:24, modulation: S8, coderate：R5_6, frequency：1490 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:44:06, modulation: S8, coderate：R8_9, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:47:39, modulation: S8, coderate：R9_10, frequency：1490 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:52:18, modulation: S4, coderate：R1_2, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:55:52, modulation: S4, coderate：R3_5, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:57:58, modulation: S4, coderate：R2_3, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:58:25, modulation: S4, coderate：R3_4, frequency：1510 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:58:51, modulation: S4, coderate：R4_5, frequency：1510 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:59:18, modulation: S4, coderate：R5_6, frequency：1510 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 10:59:44, modulation: S4, coderate：R8_9, frequency：1510 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:00:11, modulation: S4, coderate：R9_10, frequency：1510 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:02:47, modulation: S8, coderate：R3_5, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:07:34, modulation: S8, coderate：R2_3, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:12:02, modulation: S8, coderate：R3_4, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:15:56, modulation: S8, coderate：R5_6, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:19:42, modulation: S8, coderate：R8_9, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:23:17, modulation: S8, coderate：R9_10, frequency：1510 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:28:28, modulation: S4, coderate：R1_2, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:32:02, modulation: S4, coderate：R3_5, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:35:38, modulation: S4, coderate：R2_3, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:38:43, modulation: S4, coderate：R3_4, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:41:24, modulation: S4, coderate：R4_5, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:41:50, modulation: S4, coderate：R5_6, frequency：1530 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:43:55, modulation: S4, coderate：R8_9, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:44:22, modulation: S4, coderate：R9_10, frequency：1530 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:46:58, modulation: S8, coderate：R3_5, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:49:05, modulation: S8, coderate：R2_3, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:53:40, modulation: S8, coderate：R3_4, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 11:57:49, modulation: S8, coderate：R5_6, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:01:55, modulation: S8, coderate：R8_9, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:05:35, modulation: S8, coderate：R9_10, frequency：1530 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:10:32, modulation: S4, coderate：R1_2, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:13:48, modulation: S4, coderate：R3_5, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:17:05, modulation: S4, coderate：R2_3, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:20:05, modulation: S4, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:23:10, modulation: S4, coderate：R4_5, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:25:51, modulation: S4, coderate：R5_6, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:27:56, modulation: S4, coderate：R8_9, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:28:22, modulation: S4, coderate：R9_10, frequency：1550 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:30:39, modulation: S8, coderate：R3_5, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:31:06, modulation: S8, coderate：R2_3, frequency：1550 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:35:34, modulation: S8, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:39:26, modulation: S8, coderate：R5_6, frequency：1550 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:39:52, modulation: S8, coderate：R8_9, frequency：1550 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:40:19, modulation: S8, coderate：R9_10, frequency：1550 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:45:30, modulation: S4, coderate：R1_2, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:49:06, modulation: S4, coderate：R3_5, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:52:42, modulation: S4, coderate：R2_3, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:55:48, modulation: S4, coderate：R3_4, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 12:59:08, modulation: S4, coderate：R4_5, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:01:50, modulation: S4, coderate：R5_6, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:03:55, modulation: S4, coderate：R8_9, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:04:22, modulation: S4, coderate：R9_10, frequency：1570 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:07:38, modulation: S8, coderate：R3_5, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:09:44, modulation: S8, coderate：R2_3, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:14:19, modulation: S8, coderate：R3_4, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:18:16, modulation: S8, coderate：R5_6, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:21:32, modulation: S8, coderate：R8_9, frequency：1570 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:21:58, modulation: S8, coderate：R9_10, frequency：1570 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:27:02, modulation: S4, coderate：R1_2, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:30:37, modulation: S4, coderate：R3_5, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:34:00, modulation: S4, coderate：R2_3, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:37:03, modulation: S4, coderate：R3_4, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:40:19, modulation: S4, coderate：R4_5, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:43:00, modulation: S4, coderate：R5_6, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:45:06, modulation: S4, coderate：R8_9, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:45:33, modulation: S4, coderate：R9_10, frequency：1590 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:48:36, modulation: S8, coderate：R3_5, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:53:57, modulation: S8, coderate：R2_3, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 13:58:25, modulation: S8, coderate：R3_4, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:02:18, modulation: S8, coderate：R5_6, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:05:35, modulation: S8, coderate：R8_9, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:09:10, modulation: S8, coderate：R9_10, frequency：1590 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:14:27, modulation: S4, coderate：R1_2, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:18:06, modulation: S4, coderate：R3_5, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:21:41, modulation: S4, coderate：R2_3, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:24:58, modulation: S4, coderate：R3_4, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:27:40, modulation: S4, coderate：R4_5, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:28:07, modulation: S4, coderate：R5_6, frequency：1610 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:28:33, modulation: S4, coderate：R8_9, frequency：1610 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:29:00, modulation: S4, coderate：R9_10, frequency：1610 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:31:34, modulation: S8, coderate：R3_5, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:33:39, modulation: S8, coderate：R2_3, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:38:27, modulation: S8, coderate：R3_4, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:42:37, modulation: S8, coderate：R5_6, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:46:52, modulation: S8, coderate：R8_9, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:50:43, modulation: S8, coderate：R9_10, frequency：1610 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:55:57, modulation: S4, coderate：R1_2, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 14:59:38, modulation: S4, coderate：R3_5, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:03:11, modulation: S4, coderate：R2_3, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:03:37, modulation: S4, coderate：R3_4, frequency：1630 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:04:04, modulation: S4, coderate：R4_5, frequency：1630 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:04:30, modulation: S4, coderate：R5_6, frequency：1630 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:04:57, modulation: S4, coderate：R8_9, frequency：1630 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:05:23, modulation: S4, coderate：R9_10, frequency：1630 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:07:59, modulation: S8, coderate：R3_5, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:10:05, modulation: S8, coderate：R2_3, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:14:53, modulation: S8, coderate：R3_4, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:19:04, modulation: S8, coderate：R5_6, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:22:41, modulation: S8, coderate：R8_9, frequency：1630 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:23:07, modulation: S8, coderate：R9_10, frequency：1630 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.8", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:28:19, modulation: S4, coderate：R1_2, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:31:56, modulation: S4, coderate：R3_5, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:35:19, modulation: S4, coderate：R2_3, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:38:24, modulation: S4, coderate：R3_4, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:40:29, modulation: S4, coderate：R4_5, frequency：1650 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:40:55, modulation: S4, coderate：R5_6, frequency：1650 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:41:21, modulation: S4, coderate：R8_9, frequency：1650 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:41:48, modulation: S4, coderate：R9_10, frequency：1650 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:42:26, modulation: S8, coderate：R3_5, frequency：1650 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:42:52, modulation: S8, coderate：R2_3, frequency：1650 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:43:19, modulation: S8, coderate：R3_4, frequency：1650 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:43:45, modulation: S8, coderate：R5_6, frequency：1650 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:44:12, modulation: S8, coderate：R8_9, frequency：1650 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:44:38, modulation: S8, coderate：R9_10, frequency：1650 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:50:04, modulation: S4, coderate：R1_2, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:53:40, modulation: S4, coderate：R3_5, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 15:57:20, modulation: S4, coderate：R2_3, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:00:38, modulation: S4, coderate：R3_4, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:03:20, modulation: S4, coderate：R4_5, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:05:25, modulation: S4, coderate：R5_6, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:05:52, modulation: S4, coderate：R8_9, frequency：1670 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:06:18, modulation: S4, coderate：R9_10, frequency：1670 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:08:36, modulation: S8, coderate：R3_5, frequency：1670 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:09:02, modulation: S8, coderate：R2_3, frequency：1670 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:09:29, modulation: S8, coderate：R3_4, frequency：1670 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:09:55, modulation: S8, coderate：R5_6, frequency：1670 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:10:22, modulation: S8, coderate：R8_9, frequency：1670 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:10:48, modulation: S8, coderate：R9_10, frequency：1670 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-61.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:16:08, modulation: S4, coderate：R1_2, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:19:44, modulation: S4, coderate：R3_5, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:23:14, modulation: S4, coderate：R2_3, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:26:35, modulation: S4, coderate：R3_4, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:29:17, modulation: S4, coderate：R4_5, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:31:23, modulation: S4, coderate：R5_6, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:31:50, modulation: S4, coderate：R8_9, frequency：1690 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:36:57, modulation: S4, coderate：R9_10, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:39:14, modulation: S8, coderate：R3_5, frequency：1690 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:39:41, modulation: S8, coderate：R2_3, frequency：1690 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:40:07, modulation: S8, coderate：R3_4, frequency：1690 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:40:34, modulation: S8, coderate：R5_6, frequency：1690 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:41:00, modulation: S8, coderate：R8_9, frequency：1690 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:41:27, modulation: S8, coderate：R9_10, frequency：1690 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:46:21, modulation: S4, coderate：R1_2, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:46:48, modulation: S4, coderate：R3_5, frequency：1710 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:47:14, modulation: S4, coderate：R2_3, frequency：1710 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:47:40, modulation: S4, coderate：R3_4, frequency：1710 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:48:07, modulation: S4, coderate：R4_5, frequency：1710 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:48:34, modulation: S4, coderate：R5_6, frequency：1710 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:51:38, modulation: S4, coderate：R8_9, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:53:44, modulation: S4, coderate：R9_10, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:56:37, modulation: S8, coderate：R3_5, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:58:43, modulation: S8, coderate：R2_3, frequency：1710 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:59:10, modulation: S8, coderate：R3_4, frequency：1710 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 16:59:36, modulation: S8, coderate：R5_6, frequency：1710 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:00:02, modulation: S8, coderate：R8_9, frequency：1710 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:00:29, modulation: S8, coderate：R9_10, frequency：1710 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:05:50, modulation: S4, coderate：R1_2, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:09:25, modulation: S4, coderate：R3_5, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:09:52, modulation: S4, coderate：R2_3, frequency：1730 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:10:18, modulation: S4, coderate：R3_4, frequency：1730 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:10:45, modulation: S4, coderate：R4_5, frequency：1730 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:11:11, modulation: S4, coderate：R5_6, frequency：1730 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:11:37, modulation: S4, coderate：R8_9, frequency：1730 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.1", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:14:42, modulation: S4, coderate：R9_10, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:17:53, modulation: S8, coderate：R3_5, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:19:57, modulation: S8, coderate：R2_3, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:24:26, modulation: S8, coderate：R3_4, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:29:17, modulation: S8, coderate：R5_6, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:32:52, modulation: S8, coderate：R8_9, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:36:59, modulation: S8, coderate：R9_10, frequency：1730 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:42:15, modulation: S4, coderate：R1_2, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -102.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:46:33, modulation: S4, coderate：R3_5, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:50:06, modulation: S4, coderate：R2_3, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:53:23, modulation: S4, coderate：R3_4, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:53:50, modulation: S4, coderate：R4_5, frequency：1750 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:56:49, modulation: S4, coderate：R5_6, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:57:16, modulation: S4, coderate：R8_9, frequency：1750 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 17:57:42, modulation: S4, coderate：R9_10, frequency：1750 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:00:54, modulation: S8, coderate：R3_5, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:03:35, modulation: S8, coderate：R2_3, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:05:41, modulation: S8, coderate：R3_4, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:10:28, modulation: S8, coderate：R5_6, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:14:40, modulation: S8, coderate：R8_9, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:18:50, modulation: S8, coderate：R9_10, frequency：1750 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:24:12, modulation: S4, coderate：R1_2, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -101.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:28:05, modulation: S4, coderate：R3_5, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:31:46, modulation: S4, coderate：R2_3, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:35:20, modulation: S4, coderate：R3_4, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:38:19, modulation: S4, coderate：R4_5, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:38:45, modulation: S4, coderate：R5_6, frequency：1770 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:39:12, modulation: S4, coderate：R8_9, frequency：1770 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:39:38, modulation: S4, coderate：R9_10, frequency：1770 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:43:11, modulation: S8, coderate：R3_5, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:46:15, modulation: S8, coderate：R2_3, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:51:08, modulation: S8, coderate：R3_4, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:55:18, modulation: S8, coderate：R5_6, frequency：1770 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:55:44, modulation: S8, coderate：R8_9, frequency：1770 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 18:56:11, modulation: S8, coderate：R9_10, frequency：1770 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.3", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:01:17, modulation: S4, coderate：R1_2, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:04:52, modulation: S4, coderate：R3_5, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -99.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:08:15, modulation: S4, coderate：R2_3, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:11:20, modulation: S4, coderate：R3_4, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:14:00, modulation: S4, coderate：R4_5, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:16:42, modulation: S4, coderate：R5_6, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:18:49, modulation: S4, coderate：R8_9, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:19:15, modulation: S4, coderate：R9_10, frequency：1790 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:22:14, modulation: S8, coderate：R3_5, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:27:31, modulation: S8, coderate：R2_3, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:32:05, modulation: S8, coderate：R3_4, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:36:02, modulation: S8, coderate：R5_6, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:40:04, modulation: S8, coderate：R8_9, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:43:57, modulation: S8, coderate：R9_10, frequency：1790 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:48:12, modulation: S4, coderate：R1_2, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -77.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:50:27, modulation: S4, coderate：R3_5, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -77.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:51:39, modulation: S4, coderate：R2_3, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -65.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:52:05, modulation: S4, coderate：R3_4, frequency：1810 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:52:32, modulation: S4, coderate：R4_5, frequency：1810 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:52:58, modulation: S4, coderate：R5_6, frequency：1810 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:53:25, modulation: S4, coderate：R8_9, frequency：1810 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:53:51, modulation: S4, coderate：R9_10, frequency：1810 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 19:57:53, modulation: S8, coderate：R3_5, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -73.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:01:21, modulation: S8, coderate：R2_3, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -70.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:04:51, modulation: S8, coderate：R3_4, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -70.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:07:25, modulation: S8, coderate：R5_6, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -69.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:07:56, modulation: S8, coderate：R8_9, frequency：1810 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:10:12, modulation: S8, coderate：R9_10, frequency：1810 MHz，symbol_rate：05000 Ksym/s，阈值为: -66.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:14:35, modulation: S4, coderate：R1_2, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:15:02, modulation: S4, coderate：R3_5, frequency：1830 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:15:28, modulation: S4, coderate：R2_3, frequency：1830 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:15:55, modulation: S4, coderate：R3_4, frequency：1830 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:16:21, modulation: S4, coderate：R4_5, frequency：1830 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:18:09, modulation: S4, coderate：R5_6, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:19:57, modulation: S4, coderate：R8_9, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:20:24, modulation: S4, coderate：R9_10, frequency：1830 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:22:23, modulation: S8, coderate：R3_5, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:24:12, modulation: S8, coderate：R2_3, frequency：1830 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:24:38, modulation: S8, coderate：R3_4, frequency：1830 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:25:05, modulation: S8, coderate：R5_6, frequency：1830 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:25:31, modulation: S8, coderate：R8_9, frequency：1830 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:25:58, modulation: S8, coderate：R9_10, frequency：1830 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.2", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:30:31, modulation: S4, coderate：R1_2, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:33:17, modulation: S4, coderate：R3_5, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:35:22, modulation: S4, coderate：R2_3, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:35:48, modulation: S4, coderate：R3_4, frequency：1850 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:36:15, modulation: S4, coderate：R4_5, frequency：1850 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:36:41, modulation: S4, coderate：R5_6, frequency：1850 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:37:08, modulation: S4, coderate：R8_9, frequency：1850 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:37:34, modulation: S4, coderate：R9_10, frequency：1850 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:42:04, modulation: S8, coderate：R3_5, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:45:56, modulation: S8, coderate：R2_3, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:49:58, modulation: S8, coderate：R3_4, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:53:27, modulation: S8, coderate：R5_6, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:56:08, modulation: S8, coderate：R8_9, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 20:58:50, modulation: S8, coderate：R9_10, frequency：1850 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:03:41, modulation: S4, coderate：R1_2, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -100.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:07:38, modulation: S4, coderate：R3_5, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:10:45, modulation: S4, coderate：R2_3, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:13:46, modulation: S4, coderate：R3_4, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:16:47, modulation: S4, coderate：R4_5, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:19:12, modulation: S4, coderate：R5_6, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:24:31, modulation: S4, coderate：R8_9, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:29:39, modulation: S4, coderate：R9_10, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:31:56, modulation: S8, coderate：R3_5, frequency：1870 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:32:23, modulation: S8, coderate：R2_3, frequency：1870 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:32:49, modulation: S8, coderate：R3_4, frequency：1870 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:33:16, modulation: S8, coderate：R5_6, frequency：1870 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:33:42, modulation: S8, coderate：R8_9, frequency：1870 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:34:09, modulation: S8, coderate：R9_10, frequency：1870 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-59.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:40:22, modulation: S4, coderate：R1_2, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:45:03, modulation: S4, coderate：R3_5, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:49:12, modulation: S4, coderate：R2_3, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:51:27, modulation: S4, coderate：R3_4, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:54:56, modulation: S4, coderate：R4_5, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -87.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 21:58:25, modulation: S4, coderate：R5_6, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -87.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:01:49, modulation: S4, coderate：R8_9, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -87.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:04:09, modulation: S4, coderate：R9_10, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:07:34, modulation: S8, coderate：R3_5, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -86.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:09:32, modulation: S8, coderate：R2_3, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:14:38, modulation: S8, coderate：R3_4, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:18:24, modulation: S8, coderate：R5_6, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -81.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:22:30, modulation: S8, coderate：R8_9, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -80.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:25:17, modulation: S8, coderate：R9_10, frequency：1890 MHz，symbol_rate：05000 Ksym/s，阈值为: -79.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:28:26, modulation: S4, coderate：R1_2, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:28:53, modulation: S4, coderate：R3_5, frequency：1910 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:29:19, modulation: S4, coderate：R2_3, frequency：1910 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:29:45, modulation: S4, coderate：R3_4, frequency：1910 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:30:12, modulation: S4, coderate：R4_5, frequency：1910 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:30:38, modulation: S4, coderate：R5_6, frequency：1910 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:31:05, modulation: S4, coderate：R8_9, frequency：1910 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:34:53, modulation: S4, coderate：R9_10, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -87.50
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:38:51, modulation: S8, coderate：R3_5, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:41:26, modulation: S8, coderate：R2_3, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:44:21, modulation: S8, coderate：R3_4, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:46:08, modulation: S8, coderate：R5_6, frequency：1910 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:46:35, modulation: S8, coderate：R8_9, frequency：1910 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:47:01, modulation: S8, coderate：R9_10, frequency：1910 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:51:06, modulation: S4, coderate：R1_2, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:53:48, modulation: S4, coderate：R3_5, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:56:13, modulation: S4, coderate：R2_3, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:56:39, modulation: S4, coderate：R3_4, frequency：1930 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:57:06, modulation: S4, coderate：R4_5, frequency：1930 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:57:32, modulation: S4, coderate：R5_6, frequency：1930 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:57:59, modulation: S4, coderate：R8_9, frequency：1930 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 22:58:25, modulation: S4, coderate：R9_10, frequency：1930 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:03:13, modulation: S8, coderate：R3_5, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:07:31, modulation: S8, coderate：R2_3, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:11:07, modulation: S8, coderate：R3_4, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:11:33, modulation: S8, coderate：R5_6, frequency：1930 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:12:00, modulation: S8, coderate：R8_9, frequency：1930 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.6", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:14:43, modulation: S8, coderate：R9_10, frequency：1930 MHz，symbol_rate：05000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:19:55, modulation: S4, coderate：R1_2, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:23:13, modulation: S4, coderate：R3_5, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:26:36, modulation: S4, coderate：R2_3, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:29:26, modulation: S4, coderate：R3_4, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:31:30, modulation: S4, coderate：R4_5, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:31:57, modulation: S4, coderate：R5_6, frequency：1950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:32:23, modulation: S4, coderate：R8_9, frequency：1950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:32:50, modulation: S4, coderate：R9_10, frequency：1950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:37:49, modulation: S8, coderate：R3_5, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -94.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:42:19, modulation: S8, coderate：R2_3, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:46:13, modulation: S8, coderate：R3_4, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:50:08, modulation: S8, coderate：R5_6, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:53:08, modulation: S8, coderate：R8_9, frequency：1950 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:53:35, modulation: S8, coderate：R9_10, frequency：1950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.0", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:54:24, frequency：1970 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:55:13, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:56:02, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:56:50, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:57:39, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:58:28, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-23 23:59:16, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:00:05, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:00:53, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:01:42, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level: -30, 锁台失败
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:05:51, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:07:57, modulation: S4, coderate：R3_5, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:10:03, modulation: S4, coderate：R2_3, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:14:34, modulation: S4, coderate：R3_4, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:18:51, modulation: S4, coderate：R4_5, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:22:09, modulation: S4, coderate：R5_6, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:25:27, modulation: S4, coderate：R8_9, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -78.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:28:29, modulation: S4, coderate：R9_10, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -78.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:31:29, modulation: S8, coderate：R3_5, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -79.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:34:12, modulation: S8, coderate：R2_3, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -78.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:36:55, modulation: S8, coderate：R3_4, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -76.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:38:48, modulation: S8, coderate：R5_6, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -75.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:42:53, modulation: S8, coderate：R8_9, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -72.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:44:23, modulation: S8, coderate：R9_10, frequency：950 MHz，symbol_rate：10000 Ksym/s，阈值为: -75.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:49:04, modulation: S4, coderate：R1_2, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:52:39, modulation: S4, coderate：R3_5, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:55:40, modulation: S4, coderate：R2_3, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 00:58:22, modulation: S4, coderate：R3_4, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:01:23, modulation: S4, coderate：R4_5, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:03:53, modulation: S4, coderate：R5_6, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:05:59, modulation: S4, coderate：R8_9, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:08:24, modulation: S4, coderate：R9_10, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:10:47, modulation: S8, coderate：R3_5, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:13:01, modulation: S8, coderate：R2_3, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:17:41, modulation: S8, coderate：R3_4, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:21:53, modulation: S8, coderate：R5_6, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:25:21, modulation: S8, coderate：R8_9, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:29:04, modulation: S8, coderate：R9_10, frequency：970 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:33:49, modulation: S4, coderate：R1_2, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:37:07, modulation: S4, coderate：R3_5, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:40:30, modulation: S4, coderate：R2_3, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:43:16, modulation: S4, coderate：R3_4, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:45:58, modulation: S4, coderate：R4_5, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:48:40, modulation: S4, coderate：R5_6, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:50:52, modulation: S4, coderate：R8_9, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:52:56, modulation: S4, coderate：R9_10, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:55:41, modulation: S8, coderate：R3_5, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 01:57:46, modulation: S8, coderate：R2_3, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:02:07, modulation: S8, coderate：R3_4, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:06:25, modulation: S8, coderate：R5_6, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:10:20, modulation: S8, coderate：R8_9, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:13:43, modulation: S8, coderate：R9_10, frequency：990 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:18:24, modulation: S4, coderate：R1_2, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:22:06, modulation: S4, coderate：R3_5, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:25:07, modulation: S4, coderate：R2_3, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:27:55, modulation: S4, coderate：R3_4, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:30:36, modulation: S4, coderate：R4_5, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:34:11, modulation: S4, coderate：R5_6, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:35:59, modulation: S4, coderate：R8_9, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:41:05, modulation: S4, coderate：R9_10, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:43:07, modulation: S8, coderate：R3_5, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:47:45, modulation: S8, coderate：R2_3, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:52:14, modulation: S8, coderate：R3_4, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:55:55, modulation: S8, coderate：R5_6, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 02:59:17, modulation: S8, coderate：R8_9, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:02:35, modulation: S8, coderate：R9_10, frequency：1010 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:07:53, modulation: S4, coderate：R1_2, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:11:31, modulation: S4, coderate：R3_5, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:14:31, modulation: S4, coderate：R2_3, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:17:13, modulation: S4, coderate：R3_4, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:20:13, modulation: S4, coderate：R4_5, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:22:55, modulation: S4, coderate：R5_6, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:25:29, modulation: S4, coderate：R8_9, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:27:58, modulation: S4, coderate：R9_10, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:30:16, modulation: S8, coderate：R3_5, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:32:10, modulation: S8, coderate：R2_3, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:36:46, modulation: S8, coderate：R3_4, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:40:28, modulation: S8, coderate：R5_6, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:43:56, modulation: S8, coderate：R8_9, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:47:24, modulation: S8, coderate：R9_10, frequency：1030 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:52:44, modulation: S4, coderate：R1_2, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 03:56:21, modulation: S4, coderate：R3_5, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:00:16, modulation: S4, coderate：R2_3, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:02:45, modulation: S4, coderate：R3_4, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:05:09, modulation: S4, coderate：R4_5, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:08:17, modulation: S4, coderate：R5_6, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:10:22, modulation: S4, coderate：R8_9, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:12:29, modulation: S4, coderate：R9_10, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:15:28, modulation: S8, coderate：R3_5, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:20:03, modulation: S8, coderate：R2_3, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:24:44, modulation: S8, coderate：R3_4, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:28:43, modulation: S8, coderate：R5_6, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:32:28, modulation: S8, coderate：R8_9, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -79.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:35:27, modulation: S8, coderate：R9_10, frequency：1050 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:40:31, modulation: S4, coderate：R1_2, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:44:07, modulation: S4, coderate：R3_5, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:47:49, modulation: S4, coderate：R2_3, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:51:13, modulation: S4, coderate：R3_4, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:54:18, modulation: S4, coderate：R4_5, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 04:57:36, modulation: S4, coderate：R5_6, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:00:06, modulation: S4, coderate：R8_9, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:03:17, modulation: S4, coderate：R9_10, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:06:25, modulation: S8, coderate：R3_5, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:09:07, modulation: S8, coderate：R2_3, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:11:14, modulation: S8, coderate：R3_4, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:15:53, modulation: S8, coderate：R5_6, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:20:06, modulation: S8, coderate：R8_9, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:24:18, modulation: S8, coderate：R9_10, frequency：1070 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:29:52, modulation: S4, coderate：R1_2, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:33:33, modulation: S4, coderate：R3_5, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:36:33, modulation: S4, coderate：R2_3, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:39:44, modulation: S4, coderate：R3_4, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:42:25, modulation: S4, coderate：R4_5, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:44:51, modulation: S4, coderate：R5_6, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:47:45, modulation: S4, coderate：R8_9, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:50:15, modulation: S4, coderate：R9_10, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:52:32, modulation: S8, coderate：R3_5, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:54:26, modulation: S8, coderate：R2_3, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 05:59:02, modulation: S8, coderate：R3_4, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:03:15, modulation: S8, coderate：R5_6, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:06:42, modulation: S8, coderate：R8_9, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:10:19, modulation: S8, coderate：R9_10, frequency：1090 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:13:45, modulation: S4, coderate：R1_2, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:18:35, modulation: S4, coderate：R3_5, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:23:05, modulation: S4, coderate：R2_3, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:27:16, modulation: S4, coderate：R3_4, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:31:10, modulation: S4, coderate：R4_5, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:34:45, modulation: S4, coderate：R5_6, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:38:22, modulation: S4, coderate：R8_9, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:42:15, modulation: S4, coderate：R9_10, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:46:20, modulation: S8, coderate：R3_5, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:49:38, modulation: S8, coderate：R2_3, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:52:08, modulation: S8, coderate：R3_4, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -78.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:54:49, modulation: S8, coderate：R5_6, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -77.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:56:30, modulation: S8, coderate：R8_9, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -75.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 06:58:18, modulation: S8, coderate：R9_10, frequency：1110 MHz，symbol_rate：10000 Ksym/s，阈值为: -75.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:02:03, modulation: S4, coderate：R1_2, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:04:45, modulation: S4, coderate：R3_5, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:07:45, modulation: S4, coderate：R2_3, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:09:50, modulation: S4, coderate：R3_4, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:11:38, modulation: S4, coderate：R4_5, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:16:27, modulation: S4, coderate：R5_6, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:20:40, modulation: S4, coderate：R8_9, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:25:10, modulation: S4, coderate：R9_10, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:29:22, modulation: S8, coderate：R3_5, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:33:32, modulation: S8, coderate：R2_3, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:37:35, modulation: S8, coderate：R3_4, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:43:57, modulation: S8, coderate：R5_6, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -79.80
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:48:19, modulation: S8, coderate：R8_9, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -72.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:51:05, modulation: S8, coderate：R9_10, frequency：1130 MHz，symbol_rate：10000 Ksym/s，阈值为: -78.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:55:23, modulation: S4, coderate：R1_2, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 07:58:11, modulation: S4, coderate：R3_5, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:00:16, modulation: S4, coderate：R2_3, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:04:47, modulation: S4, coderate：R3_4, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:09:17, modulation: S4, coderate：R4_5, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:13:35, modulation: S4, coderate：R5_6, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:18:11, modulation: S4, coderate：R8_9, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:22:23, modulation: S4, coderate：R9_10, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:26:31, modulation: S8, coderate：R3_5, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:30:34, modulation: S8, coderate：R2_3, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:34:20, modulation: S8, coderate：R3_4, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -80.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:40:01, modulation: S8, coderate：R5_6, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -79.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:43:31, modulation: S8, coderate：R8_9, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -72.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:44:59, modulation: S8, coderate：R9_10, frequency：1150 MHz，symbol_rate：10000 Ksym/s，阈值为: -75.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:50:09, modulation: S4, coderate：R1_2, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:53:32, modulation: S4, coderate：R3_5, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 08:56:55, modulation: S4, coderate：R2_3, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:00:19, modulation: S4, coderate：R3_4, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:03:06, modulation: S4, coderate：R4_5, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:06:28, modulation: S4, coderate：R5_6, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:08:58, modulation: S4, coderate：R8_9, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:11:11, modulation: S4, coderate：R9_10, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:13:52, modulation: S8, coderate：R3_5, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:16:24, modulation: S8, coderate：R2_3, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:21:04, modulation: S8, coderate：R3_4, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:25:27, modulation: S8, coderate：R5_6, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:29:27, modulation: S8, coderate：R8_9, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:33:21, modulation: S8, coderate：R9_10, frequency：1170 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:38:17, modulation: S4, coderate：R1_2, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:42:21, modulation: S4, coderate：R3_5, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:45:26, modulation: S4, coderate：R2_3, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:48:07, modulation: S4, coderate：R3_4, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:51:27, modulation: S4, coderate：R4_5, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:54:10, modulation: S4, coderate：R5_6, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:56:16, modulation: S4, coderate：R8_9, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 09:59:03, modulation: S4, coderate：R9_10, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:01:22, modulation: S8, coderate：R3_5, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:03:29, modulation: S8, coderate：R2_3, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:08:24, modulation: S8, coderate：R3_4, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:11:35, modulation: S8, coderate：R5_6, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -79.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:14:27, modulation: S8, coderate：R8_9, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -77.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:17:21, modulation: S8, coderate：R9_10, frequency：1190 MHz，symbol_rate：10000 Ksym/s，阈值为: -77.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:22:01, modulation: S4, coderate：R1_2, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:25:38, modulation: S4, coderate：R3_5, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:29:03, modulation: S4, coderate：R2_3, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:31:44, modulation: S4, coderate：R3_4, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:32:10, modulation: S4, coderate：R4_5, frequency：1210 MHz，symbol_rate：10000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:32:37, modulation: S4, coderate：R5_6, frequency：1210 MHz，symbol_rate：10000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:33:04, modulation: S4, coderate：R8_9, frequency：1210 MHz，symbol_rate：10000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:33:30, modulation: S4, coderate：R9_10, frequency：1210 MHz，symbol_rate：10000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:36:07, modulation: S8, coderate：R3_5, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:38:19, modulation: S8, coderate：R2_3, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:43:18, modulation: S8, coderate：R3_4, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:47:53, modulation: S8, coderate：R5_6, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:51:16, modulation: S8, coderate：R8_9, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:54:41, modulation: S8, coderate：R9_10, frequency：1210 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 10:59:40, modulation: S4, coderate：R1_2, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:03:42, modulation: S4, coderate：R3_5, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:06:59, modulation: S4, coderate：R2_3, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:10:57, modulation: S4, coderate：R3_4, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:14:34, modulation: S4, coderate：R4_5, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:17:16, modulation: S4, coderate：R5_6, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:19:40, modulation: S4, coderate：R8_9, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:22:33, modulation: S4, coderate：R9_10, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:25:08, modulation: S8, coderate：R3_5, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:27:32, modulation: S8, coderate：R2_3, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:32:47, modulation: S8, coderate：R3_4, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:36:59, modulation: S8, coderate：R5_6, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:40:43, modulation: S8, coderate：R8_9, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:44:24, modulation: S8, coderate：R9_10, frequency：1230 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:49:45, modulation: S4, coderate：R1_2, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:53:38, modulation: S4, coderate：R3_5, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 11:57:37, modulation: S4, coderate：R2_3, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:00:50, modulation: S4, coderate：R3_4, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:03:35, modulation: S4, coderate：R4_5, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:06:58, modulation: S4, coderate：R5_6, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:09:52, modulation: S4, coderate：R8_9, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:12:23, modulation: S4, coderate：R9_10, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:15:23, modulation: S8, coderate：R3_5, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:17:39, modulation: S8, coderate：R2_3, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:22:26, modulation: S8, coderate：R3_4, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:26:37, modulation: S8, coderate：R5_6, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:30:53, modulation: S8, coderate：R8_9, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:34:55, modulation: S8, coderate：R9_10, frequency：1250 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:39:51, modulation: S4, coderate：R1_2, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:43:26, modulation: S4, coderate：R3_5, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:47:00, modulation: S4, coderate：R2_3, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:50:18, modulation: S4, coderate：R3_4, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:53:18, modulation: S4, coderate：R4_5, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:56:04, modulation: S4, coderate：R5_6, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 12:59:15, modulation: S4, coderate：R8_9, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:01:57, modulation: S4, coderate：R9_10, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:04:33, modulation: S8, coderate：R3_5, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:06:57, modulation: S8, coderate：R2_3, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:11:13, modulation: S8, coderate：R3_4, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:15:10, modulation: S8, coderate：R5_6, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:18:32, modulation: S8, coderate：R8_9, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:22:13, modulation: S8, coderate：R9_10, frequency：1270 MHz，symbol_rate：10000 Ksym/s，阈值为: -73.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:27:41, modulation: S4, coderate：R1_2, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:31:17, modulation: S4, coderate：R3_5, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:34:52, modulation: S4, coderate：R2_3, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:38:11, modulation: S4, coderate：R3_4, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:41:11, modulation: S4, coderate：R4_5, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:44:15, modulation: S4, coderate：R5_6, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:46:59, modulation: S4, coderate：R8_9, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:49:40, modulation: S4, coderate：R9_10, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:52:52, modulation: S8, coderate：R3_5, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:55:15, modulation: S8, coderate：R2_3, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 13:57:29, modulation: S8, coderate：R3_4, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:01:57, modulation: S8, coderate：R5_6, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:06:18, modulation: S8, coderate：R8_9, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:10:23, modulation: S8, coderate：R9_10, frequency：1290 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:16:02, modulation: S4, coderate：R1_2, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:20:01, modulation: S4, coderate：R3_5, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:24:03, modulation: S4, coderate：R2_3, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:27:37, modulation: S4, coderate：R3_4, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:30:41, modulation: S4, coderate：R4_5, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:34:03, modulation: S4, coderate：R5_6, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:37:09, modulation: S4, coderate：R8_9, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:39:56, modulation: S4, coderate：R9_10, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:42:48, modulation: S8, coderate：R3_5, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:45:12, modulation: S8, coderate：R2_3, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:47:38, modulation: S8, coderate：R3_4, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:52:13, modulation: S8, coderate：R5_6, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 14:56:50, modulation: S8, coderate：R8_9, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:01:21, modulation: S8, coderate：R9_10, frequency：1310 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:06:35, modulation: S4, coderate：R1_2, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:10:10, modulation: S4, coderate：R3_5, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:13:46, modulation: S4, coderate：R2_3, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:16:51, modulation: S4, coderate：R3_4, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:20:17, modulation: S4, coderate：R4_5, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:23:20, modulation: S4, coderate：R5_6, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:26:02, modulation: S4, coderate：R8_9, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:29:04, modulation: S4, coderate：R9_10, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:32:16, modulation: S8, coderate：R3_5, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:34:45, modulation: S8, coderate：R2_3, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:39:19, modulation: S8, coderate：R3_4, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:43:38, modulation: S8, coderate：R5_6, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:47:35, modulation: S8, coderate：R8_9, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:51:14, modulation: S8, coderate：R9_10, frequency：1330 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 15:56:14, modulation: S4, coderate：R1_2, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:00:29, modulation: S4, coderate：R3_5, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.20
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:03:48, modulation: S4, coderate：R2_3, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:06:35, modulation: S4, coderate：R3_4, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:09:33, modulation: S4, coderate：R4_5, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:12:15, modulation: S4, coderate：R5_6, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:14:39, modulation: S4, coderate：R8_9, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:16:45, modulation: S4, coderate：R9_10, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:19:22, modulation: S8, coderate：R3_5, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:21:44, modulation: S8, coderate：R2_3, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:25:56, modulation: S8, coderate：R3_4, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:30:31, modulation: S8, coderate：R5_6, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:34:24, modulation: S8, coderate：R8_9, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:37:47, modulation: S8, coderate：R9_10, frequency：1350 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:42:47, modulation: S4, coderate：R1_2, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:46:10, modulation: S4, coderate：R3_5, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:49:26, modulation: S4, coderate：R2_3, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:52:25, modulation: S4, coderate：R3_4, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:55:54, modulation: S4, coderate：R4_5, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 16:58:53, modulation: S4, coderate：R5_6, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:01:17, modulation: S4, coderate：R8_9, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:03:22, modulation: S4, coderate：R9_10, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:06:03, modulation: S8, coderate：R3_5, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:08:31, modulation: S8, coderate：R2_3, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:12:41, modulation: S8, coderate：R3_4, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:17:19, modulation: S8, coderate：R5_6, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:20:58, modulation: S8, coderate：R8_9, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:24:20, modulation: S8, coderate：R9_10, frequency：1370 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:29:56, modulation: S4, coderate：R1_2, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:33:50, modulation: S4, coderate：R3_5, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:37:09, modulation: S4, coderate：R2_3, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:40:39, modulation: S4, coderate：R3_4, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:43:38, modulation: S4, coderate：R4_5, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:46:20, modulation: S4, coderate：R5_6, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:49:06, modulation: S4, coderate：R8_9, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:51:34, modulation: S4, coderate：R9_10, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:54:32, modulation: S8, coderate：R3_5, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 17:56:57, modulation: S8, coderate：R2_3, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:01:57, modulation: S8, coderate：R3_4, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:06:23, modulation: S8, coderate：R5_6, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:10:43, modulation: S8, coderate：R8_9, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:14:57, modulation: S8, coderate：R9_10, frequency：1390 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:20:10, modulation: S4, coderate：R1_2, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:23:45, modulation: S4, coderate：R3_5, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:27:20, modulation: S4, coderate：R2_3, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:30:36, modulation: S4, coderate：R3_4, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:34:11, modulation: S4, coderate：R4_5, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:37:10, modulation: S4, coderate：R5_6, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:39:52, modulation: S4, coderate：R8_9, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:42:16, modulation: S4, coderate：R9_10, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:45:15, modulation: S8, coderate：R3_5, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:48:02, modulation: S8, coderate：R2_3, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:49:55, modulation: S8, coderate：R3_4, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:54:33, modulation: S8, coderate：R5_6, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 18:58:45, modulation: S8, coderate：R8_9, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:02:47, modulation: S8, coderate：R9_10, frequency：1410 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:07:49, modulation: S4, coderate：R1_2, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:11:28, modulation: S4, coderate：R3_5, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:14:51, modulation: S4, coderate：R2_3, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:17:50, modulation: S4, coderate：R3_4, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:20:54, modulation: S4, coderate：R4_5, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:23:34, modulation: S4, coderate：R5_6, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:26:40, modulation: S4, coderate：R8_9, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:29:23, modulation: S4, coderate：R9_10, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:32:05, modulation: S8, coderate：R3_5, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:34:30, modulation: S8, coderate：R2_3, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:39:24, modulation: S8, coderate：R3_4, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:43:42, modulation: S8, coderate：R5_6, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:48:02, modulation: S8, coderate：R8_9, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:52:05, modulation: S8, coderate：R9_10, frequency：1430 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 19:57:19, modulation: S4, coderate：R1_2, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:01:17, modulation: S4, coderate：R3_5, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:04:51, modulation: S4, coderate：R2_3, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:08:55, modulation: S4, coderate：R3_4, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:12:30, modulation: S4, coderate：R4_5, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:15:29, modulation: S4, coderate：R5_6, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:18:09, modulation: S4, coderate：R8_9, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:21:15, modulation: S4, coderate：R9_10, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:24:12, modulation: S8, coderate：R3_5, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:27:01, modulation: S8, coderate：R2_3, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:29:43, modulation: S8, coderate：R3_4, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -85.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:34:42, modulation: S8, coderate：R5_6, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:38:39, modulation: S8, coderate：R8_9, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:43:19, modulation: S8, coderate：R9_10, frequency：1450 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:48:36, modulation: S4, coderate：R1_2, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -93.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:53:08, modulation: S4, coderate：R3_5, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 20:57:02, modulation: S4, coderate：R2_3, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:00:25, modulation: S4, coderate：R3_4, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:04:05, modulation: S4, coderate：R4_5, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:07:09, modulation: S4, coderate：R5_6, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:09:49, modulation: S4, coderate：R8_9, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:13:12, modulation: S4, coderate：R9_10, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:16:06, modulation: S8, coderate：R3_5, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:18:54, modulation: S8, coderate：R2_3, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:20:59, modulation: S8, coderate：R3_4, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:26:08, modulation: S8, coderate：R5_6, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:30:25, modulation: S8, coderate：R8_9, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:34:22, modulation: S8, coderate：R9_10, frequency：1470 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:39:51, modulation: S4, coderate：R1_2, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:43:44, modulation: S4, coderate：R3_5, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:47:25, modulation: S4, coderate：R2_3, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -90.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:51:11, modulation: S4, coderate：R3_4, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:54:36, modulation: S4, coderate：R4_5, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -89.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 21:57:19, modulation: S4, coderate：R5_6, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -88.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 22:00:22, modulation: S4, coderate：R8_9, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 22:03:11, modulation: S4, coderate：R9_10, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 22:05:51, modulation: S8, coderate：R3_5, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 22:08:16, modulation: S8, coderate：R2_3, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -86.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 22:13:08, modulation: S8, coderate：R3_4, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -84.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 22:27:29, modulation: S8, coderate：R5_6, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -83.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 22:38:55, modulation: S8, coderate：R8_9, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -81.90
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 22:42:29, modulation: S8, coderate：R9_10, frequency：1490 MHz，symbol_rate：10000 Ksym/s，阈值为: -82.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 22:47:54, modulation: S4, coderate：R1_2, frequency：1510 MHz，symbol_rate：10000 Ksym/s，阈值为: -92.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-24 23:01:49, modulation: S4, coderate：R3_5, frequency：1510 MHz，symbol_rate：10000 Ksym/s，阈值为: -91.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:02:53, modulation: S4, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -98.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:05:54, modulation: S4, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -97.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:06:32, modulation: S4, coderate：R2_3, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:08:55, modulation: S4, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -95.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:09:33, modulation: S4, coderate：R4_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:10:12, modulation: S4, coderate：R5_6, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:10:50, modulation: S4, coderate：R8_9, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:11:28, modulation: S4, coderate：R9_10, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:16:26, modulation: S8, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:20:48, modulation: S8, coderate：R2_3, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -91.30
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:25:00, modulation: S8, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -89.60
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:27:53, modulation: S8, coderate：R5_6, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -87.00
+dvbs2_dynamic_range_awng_min_level: current_time:2020-05-25 18:32:49, modulation: S8, coderate：R8_9, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -84.00
+dvbs2_dynamic_range_awng_min_level_resuming_measurement: current_time:2020-05-25 18:42:32, modulation: S4, coderate：R2_3, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -96.00
+dvbs2_dynamic_range_awng_min_level_resuming_measurement: current_time:2020-05-25 18:43:10, modulation: S4, coderate：R4_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
