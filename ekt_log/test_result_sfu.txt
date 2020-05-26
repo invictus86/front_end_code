@@ -6558,3 +6558,8 @@ dvbs2_dynamic_range_awng_min_level_resuming_measurement: current_time:2020-05-26
 dvbs2_dynamic_range_awng_min_level_resuming_measurement: current_time:2020-05-26 10:09:49, modulation: S4, coderate：R4_5, frequency：1450 MHz，symbol_rate：05000 Ksym/s，阈值为: -85.00
 dvbs2_dynamic_range_awng_min_level_resuming_measurement: current_time:2020-05-26 10:10:15, modulation: S4, coderate：R5_6, frequency：1450 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
 dvbs2_dynamic_range_awng_min_level_resuming_measurement: current_time:2020-05-26 10:10:41, modulation: S4, coderate：R8_9, frequency：1450 MHz，symbol_rate：05000 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.1", "threshold_algorithm_result": false}
+dvbt2_57_performance_gaussian_channel_resuming_measuremen: current_time:2020-05-26 11:57:11, frequency：177.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_57_performance_gaussian_channel_resuming_measuremen: current_time:2020-05-26 12:01:08, modulation: T4 coderate：R1_2, frequency：184.5 MHz，bandwidth：7 MHZ，阈值为: 2.10
+dvbt2_59_receiver_signal_input__min_level_resuming_measurement: current_time:2020-05-26 12:18:21, modulation: T4, coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -100.20
+dvbt2_59_receiver_signal_input__min_level_resuming_measurement: current_time:2020-05-26 12:23:00, modulation: T4, coderate：R3_5, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -98.90
+dvbt2_59_receiver_signal_input__min_level_resuming_measurement: current_time:2020-05-26 12:27:25, modulation: T4, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -97.90

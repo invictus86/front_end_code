@@ -166,7 +166,7 @@ def dvbs2_dynamic_min_json_to_csv(json_path, csv_path):
 def dvbt2_57_gaussian_channel_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    print list_data
+    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0

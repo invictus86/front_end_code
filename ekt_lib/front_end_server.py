@@ -73,6 +73,8 @@ class RVTserver():
         frequency = None
         symbol_rate = None
         lock_state = None
+        strength_num = None
+        quality_num = None
         stb_tester_run_state = "2"
         while True:
             conn, addr = server.accept()
@@ -147,6 +149,18 @@ class RVTserver():
                         print "result:", result, "current_time:{}, set stb crash state:ok ".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
                         logging.info('set stb crash state:ok')
+                    elif dict_data.get("cmd") == "set_strength_quality":
+                        strength_num = dict_data.get("strength_num")
+                        quality_num = dict_data.get("quality_num")
+                        result = conn.send(
+                            "set strength_num: {} ,quality_num: {} ok".format(strength_num, quality_num))
+                        print "result:", result, "current_time:{}, set strength_num: {} ,quality_num: {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), strength_num, quality_num)
+                    elif dict_data.get("cmd") == "get_strength_quality":
+                        strength_quality_data = {"strength_num": strength_num, "quality_num": quality_num}
+                        result = conn.send(json.dumps(strength_quality_data))
+                        print "result:", result, "current_time:{}, get strength_quality_data : {}  ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), strength_quality_data)
                     else:
                         print data
                         print "unknown message"

@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     for FREQUENCY_BW in FREQUENCY_BW_OFFSET_LIST:
         specan = Ektsfu(sfu_ip)
-        specan.set_frequency_frequency_frequency(str(FREQUENCY_BW[0] + FREQUENCY_BW[2]) + "MHz")
+        specan.set_frequency_frequency_frequency(str(int(FREQUENCY_BW[0]) + FREQUENCY_BW[2]) + "MHz")
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str(FREQUENCY_BW[1])))
         specan = Ektsfu(sfu_ip)

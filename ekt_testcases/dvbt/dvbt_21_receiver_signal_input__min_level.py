@@ -107,12 +107,12 @@ if __name__ == '__main__':
             # specan = Ektsfu(sfu_ip)
             # specan.set_digitaltv_framing_fftsize_dvbt2("M32K")
         else:
-            CURRENT_MODULATION__CODERATE_SPEC_LIST = MODULATION__CODERATE_7M_SPEC_LIST
+            CURRENT_MODULATION__CODERATE_SPEC_LIST = MODULATION__CODERATE_8M_SPEC_LIST
             CURRENT_BANDWIDTH = 8
             # specan = Ektsfu(sfu_ip)
             # specan.set_digitaltv_framing_fftsize_dvbt2("M32E")
         specan = Ektsfu(sfu_ip)
-        specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
+        specan.set_frequency_frequency_frequency(str(int(FREQUENCY_LEVEL_OFFSET[0])) + "MHz")
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str(CURRENT_BANDWIDTH)))
         specan = Ektsfu(sfu_ip)
