@@ -219,7 +219,7 @@ def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
         pass
     else:
         return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外:{}".format(start_num)},
-                          ensure_ascii=False)
+                          ensure_ascii=False), None
     while True:
         step = 1
         step_num = start_num - step
@@ -239,7 +239,7 @@ def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
             print "{} 出现马赛克".format(step_num)
             break
     print "阈值为: {}".format(str("%.2f" % float(start_num)))
-    return "阈值为: {}".format(str("%.2f" % float(start_num)))
+    return "阈值为: {}".format(str("%.2f" % float(start_num))), str("%.2f" % float(start_num))
 
 
 if __name__ == '__main__':
