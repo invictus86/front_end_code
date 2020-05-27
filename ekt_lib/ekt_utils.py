@@ -268,4 +268,4 @@ def dvbt2_52_verification_quality_json_to_csv(json_path, csv_path):
 
 if __name__ == '__main__':
     result = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 1310)
-    print result
+    print(result)

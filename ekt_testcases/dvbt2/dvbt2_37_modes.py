@@ -140,10 +140,10 @@ if __name__ == '__main__':
 
                 try:
                     start_data_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
-                    print "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFTSIZE_PIL_LEVEL_GUARD[0], MODULATION,
-                        CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3], FREQUENCY_666, str("8"),
-                        start_data_result.get("detect_mosic_result"))
+                    # print "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                    #     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFTSIZE_PIL_LEVEL_GUARD[0], MODULATION,
+                    #     CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3], FREQUENCY_666, str("8"),
+                    #     start_data_result.get("detect_mosic_result"))
                     write_test_result("../../ekt_log/test_result_sfu.txt",
                                       "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
@@ -153,10 +153,10 @@ if __name__ == '__main__':
                                           start_data_result.get("detect_mosic_result")) + "\n")
                 except:
                     start_data_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
-                    print "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFTSIZE_PIL_LEVEL_GUARD[0], MODULATION,
-                        CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3], FREQUENCY_666, str("8"),
-                        start_data_result.get("detect_mosic_result"))
+                    # print "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                    #     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFTSIZE_PIL_LEVEL_GUARD[0], MODULATION,
+                    #     CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3], FREQUENCY_666, str("8"),
+                    #     start_data_result.get("detect_mosic_result"))
                     write_test_result("../../ekt_log/test_result_sfu.txt",
                                       "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),

@@ -27,7 +27,7 @@ addrs = socket.getaddrinfo(socket.gethostname(), None)
 for item in addrs:
     if str(item[-1][0])[0:3] == "192":
         ip = str(item[-1][0])
-        print "current ip is : {}".format(ip)
+        print ("current ip is : {}".format(ip))
 
 port = 9999
 
@@ -61,7 +61,7 @@ class RVTserver():
             dict_data = json.load(f, "utf-8")
             json_data = json.dumps(dict_data)
             self.json_data = json_data
-            print json_data
+            print (json_data)
 
     def response(self):
         server = self.server
@@ -78,92 +78,92 @@ class RVTserver():
         stb_tester_run_state = "2"
         while True:
             conn, addr = server.accept()
-            print "%s connected" % (conn)
+            print ("%s connected" % (conn))
             while True:
                 try:
                     data = conn.recv(1024)
-                    print type(data), "\n", data
+                    print (type(data), "\n", data)
                     dict_data = json.loads(data)
                     if not data:
                         # print "%s disconnected"%conn
                         break
                     elif dict_data.get("cmd") == "app_image":
                         result = conn.send(image_app)
-                        print "result:", result, "send image app ok!"
+                        print ("result:", result, "send image app ok!")
                     elif dict_data.get("cmd") == "lock_success_image":
                         result = conn.send(image_lock_success)
-                        print "result:", result, "send image lock success ok!"
+                        print ("result:", result, "send image lock success ok!")
                     elif dict_data.get("cmd") == "lock_fail_image":
                         result = conn.send(image_lock_fail)
-                        print "result:", result, "send image lock fail ok!"
+                        print ("result:", result, "send image lock fail ok!")
                     elif dict_data.get("cmd") == "read_json_data":
                         result = conn.send(str(self.json_data))
-                        print "result:", result, "send read json data ok!"
+                        print ("result:", result, "send read json data ok!")
                     elif dict_data.get("cmd") == "set_frequency_data":
                         frequency = dict_data.get("frequency")
                         result = conn.send("set frequency data : {} ok ".format(frequency))
-                        print "result:", result, "current_time:{}, set frequency data : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), frequency)
+                        print ("result:", result, "current_time:{}, set frequency data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), frequency))
                     elif dict_data.get("cmd") == "get_frequency_data":
                         result = conn.send(str(frequency))
-                        print "result:", result, "current_time:{}, get frequency data : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), frequency)
+                        print ("result:", result, "current_time:{}, get frequency data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), frequency))
                     elif dict_data.get("cmd") == "set_symbol_rate_data":
                         symbol_rate = dict_data.get("symbol_rate")
                         result = conn.send("set symbol_rate data : {} ok ".format(symbol_rate))
-                        print "result:", result, "current_time:{}, set symbol_rate data : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), symbol_rate)
+                        print ("result:", result, "current_time:{}, set symbol_rate data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), symbol_rate))
                     elif dict_data.get("cmd") == "get_symbol_rate_data":
                         result = conn.send(str(symbol_rate))
-                        print "result:", result, "current_time:{}, get symbol_rate data : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), symbol_rate)
+                        print ("result:", result, "current_time:{}, get symbol_rate data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), symbol_rate))
                     elif dict_data.get("cmd") == "set_lock_state":
                         lock_state = dict_data.get("lock_state")
                         result = conn.send("set lock_state data : {} ok ".format(lock_state))
-                        print "result:", result, "current_time:{}, set lock_state data : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), lock_state)
+                        print ("result:", result, "current_time:{}, set lock_state data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), lock_state))
                     elif dict_data.get("cmd") == "get_lock_state":
                         result = conn.send(lock_state)
-                        print "result:", result, "current_time:{}, get lock_state data : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), lock_state)
+                        print ("result:", result, "current_time:{}, get lock_state data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), lock_state))
                     elif dict_data.get("cmd") == "set_stb_tester_run_state":
                         stb_tester_run_state = dict_data.get("stb_tester_run_state")
                         result = conn.send("set lock_state data : {} ok ".format(stb_tester_run_state))
-                        print "result:", result, "current_time:{}, set stb_tester run state : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), stb_tester_run_state)
+                        print ("result:", result, "current_time:{}, set stb_tester run state : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), stb_tester_run_state))
                     elif dict_data.get("cmd") == "get_stb_tester_run_state":
                         result = conn.send(stb_tester_run_state)
-                        print "result:", result, "current_time:{}, get stb_tester run state : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), stb_tester_run_state)
+                        print ("result:", result, "current_time:{}, get stb_tester run state : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), stb_tester_run_state))
                     elif dict_data.get("cmd") == "set_bandwidth_data":
                         bandwidth = dict_data.get("bandwidth")
                         result = conn.send("set bandwidth data : {} ok ".format(bandwidth))
-                        print "result:", result, "current_time:{}, set bandwidth data : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), bandwidth)
+                        print ("result:", result, "current_time:{}, set bandwidth data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), bandwidth))
                     elif dict_data.get("cmd") == "get_bandwidth_data":
                         result = conn.send(str(bandwidth))
-                        print "result:", result, "current_time:{}, get bandwidth data : {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), bandwidth)
+                        print ("result:", result, "current_time:{}, get bandwidth data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), bandwidth))
                     elif dict_data.get("cmd") == "set_stb_crash":
                         result = conn.send("set stb crash state:ok ")
-                        print "result:", result, "current_time:{}, set stb crash state:ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+                        print ("result:", result, "current_time:{}, set stb crash state:ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
                         logging.info('set stb crash state:ok')
                     elif dict_data.get("cmd") == "set_strength_quality":
                         strength_num = dict_data.get("strength_num")
                         quality_num = dict_data.get("quality_num")
                         result = conn.send(
                             "set strength_num: {} ,quality_num: {} ok".format(strength_num, quality_num))
-                        print "result:", result, "current_time:{}, set strength_num: {} ,quality_num: {} ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), strength_num, quality_num)
+                        print ("result:", result, "current_time:{}, set strength_num: {} ,quality_num: {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), strength_num, quality_num))
                     elif dict_data.get("cmd") == "get_strength_quality":
                         strength_quality_data = {"strength_num": strength_num, "quality_num": quality_num}
                         result = conn.send(json.dumps(strength_quality_data))
-                        print "result:", result, "current_time:{}, get strength_quality_data : {}  ok ".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), strength_quality_data)
+                        print ("result:", result, "current_time:{}, get strength_quality_data : {}  ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), strength_quality_data))
                     else:
-                        print data
-                        print "unknown message"
+                        print (data)
+                        print ("unknown message")
                 except:
                     break
 
@@ -175,9 +175,9 @@ if __name__ == '__main__':
     t.setDaemon(True)
     t.start()
     try:
-        print 'Enter "Ctrl + C" to exit '
+        print ('Enter "Ctrl + C" to exit ')
         while 1:
             time.sleep(1)
     except KeyboardInterrupt:
-        print "program exited"
+        print ("program exited")
         sys.exit(0)

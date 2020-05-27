@@ -142,9 +142,9 @@ if __name__ == '__main__':
                         res = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip,
                                                                            float((-65) - FREQUENCY_LEVEL_OFFSET[1]),
                                                                            level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
-                        print "dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                        print ("dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
-                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
+                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res))
                         write_test_result("../../ekt_log/test_result_sfu.txt",
                                           "dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION,
@@ -154,9 +154,9 @@ if __name__ == '__main__':
                         res = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip,
                                                                            float((-65) - FREQUENCY_LEVEL_OFFSET[1]),
                                                                            level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
-                        print "dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                        print ("dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
-                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res)
+                            str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res))
                         write_test_result("../../ekt_log/test_result_sfu.txt",
                                           "dvbs2_dynamic_range_awng_min_level: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION,

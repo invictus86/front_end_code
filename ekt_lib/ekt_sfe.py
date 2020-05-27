@@ -36,7 +36,7 @@ class Ektsfe(object):
                 del self.specan.timeout
                 break
             except:
-                print "SFE连接出错"
+                print("SFE连接出错")
                 logging.info('SFE连接出错')
                 time.sleep(60)
 

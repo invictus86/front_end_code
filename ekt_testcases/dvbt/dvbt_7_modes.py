@@ -121,31 +121,15 @@ if __name__ == '__main__':
                 for GUARD in dict_config_data.get("GUARD"):
                     specan = Ektsfu(sfu_ip)
                     specan.set_digitaltv_coding_guard_dvbt(GUARD)
-                    try:
-                        start_data_result = mosaic_algorithm(sfu_ip, float("%.2f" % (LEVEL_60 - LEVEL_OFFSET_666)),
-                                                             "-60")
-                        print "dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFT_SIZE,
-                                              MODULATION, CODE_RATE, GUARD, FREQUENCY_666, str("8"),
-                                              start_data_result.get("detect_mosic_result"))
-                        write_test_result("../../ekt_log/test_result_sfu.txt",
-                                          "dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFT_SIZE,
-                                              MODULATION, CODE_RATE, GUARD, FREQUENCY_666, str("8"),
-                                              start_data_result.get("detect_mosic_result")) + "\n")
-                    except:
-                        start_data_result = mosaic_algorithm(sfu_ip, float("%.2f" % (LEVEL_60 - LEVEL_OFFSET_666)),
-                                                             "-60")
-                        print "dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFT_SIZE,
-                            MODULATION, CODE_RATE, GUARD, FREQUENCY_666, str("8"),
-                            start_data_result.get("detect_mosic_result"))
-                        write_test_result("../../ekt_log/test_result_sfu.txt",
-                                          "dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFT_SIZE,
-                                              MODULATION, CODE_RATE, GUARD, FREQUENCY_666, str("8"),
-                                              start_data_result.get("detect_mosic_result")) + "\n")
-                    """
-                    进行机顶盒的频率修改或其他参数的修改
-                    读取误码率或者判断机顶盒是否含有马赛克
-                    """
+                    start_data_result = mosaic_algorithm(sfu_ip, float("%.2f" % (LEVEL_60 - LEVEL_OFFSET_666)),
+                                                         "-60")
+                    print ("dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFT_SIZE,
+                                          MODULATION, CODE_RATE, GUARD, FREQUENCY_666, str("8"),
+                                          start_data_result.get("detect_mosic_result")))
+                    write_test_result("../../ekt_log/test_result_sfu.txt",
+                                      "dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFT_SIZE,
+                                          MODULATION, CODE_RATE, GUARD, FREQUENCY_666, str("8"),
+                                          start_data_result.get("detect_mosic_result")) + "\n")
+

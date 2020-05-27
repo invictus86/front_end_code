@@ -33,7 +33,7 @@ def capture_image(num, ip):
 
 if __name__ == '__main__':
     list_image = capture_image(50, "192.168.1.154")
-    print list_image
+    print(list_image)
 # end_time = time.time()
 # print start_time
 # print end_time

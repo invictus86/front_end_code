@@ -33,7 +33,7 @@ class Ektsfu(object):
                 del self.specan.timeout
                 break
             except:
-                print "SFU连接出错"
+                print("SFU连接出错")
                 logging.info('SFU连接出错')
                 time.sleep(60)
 

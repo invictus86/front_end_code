@@ -184,12 +184,12 @@ if __name__ == '__main__':
                                                                             level_offset=str(
                                                                                 load_dict.get("test_parame_result")[
                                                                                     lock_parame_index][1][1]))
-            print "dvbs2_dynamic_range_awng_min_level_resuming_measurement: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+            print ("dvbs2_dynamic_range_awng_min_level_resuming_measurement: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                 load_dict.get("test_parame_result")[lock_parame_index][2][no_lock_parame_index][0],
                 load_dict.get("test_parame_result")[lock_parame_index][2][no_lock_parame_index][1][0],
                 str(load_dict.get("test_parame_result")[lock_parame_index][1][0]),
-                str(load_dict.get("test_parame_result")[lock_parame_index][0][1]), res)
+                str(load_dict.get("test_parame_result")[lock_parame_index][0][1]), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               "dvbs2_dynamic_range_awng_min_level_resuming_measurement: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),

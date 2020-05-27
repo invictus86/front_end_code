@@ -116,31 +116,14 @@ if __name__ == '__main__':
             write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
             continue
 
-        try:
-            start_data_result = mosaic_algorithm(sfu_ip, "-60", "-60")
-            print "dvbt2_35_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_64QAM,
-                CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]), str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
-                start_data_result.get("detect_mosic_result"))
-            write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbt2_35_frequency_offset: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                  MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]),
-                                  str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
-                                  start_data_result.get("detect_mosic_result")) + "\n")
-        except:
-            start_data_result = mosaic_algorithm(sfu_ip, "-60", "-60")
-            print "dvbt2_35_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_64QAM,
-                CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]),str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
-                start_data_result.get("detect_mosic_result"))
-            write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbt2_35_frequency_offset: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                  MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]),
-                                  str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
-                                  start_data_result.get("detect_mosic_result")) + "\n")
-        """
-        进行机顶盒的频率修改或其他参数的修改
-        读取误码率或者判断机顶盒是否含有马赛克
-        """
+        start_data_result = mosaic_algorithm(sfu_ip, "-60", "-60")
+        print ("dvbt2_35_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_64QAM,
+            CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]), str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
+            start_data_result.get("detect_mosic_result")))
+        write_test_result("../../ekt_log/test_result_sfu.txt",
+                          "dvbt2_35_frequency_offset: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                              MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]),
+                              str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
+                              start_data_result.get("detect_mosic_result")) + "\n")

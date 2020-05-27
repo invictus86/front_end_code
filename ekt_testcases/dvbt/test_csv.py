@@ -54,21 +54,39 @@ from ekt_lib.ekt_utils import read_json_file
 # pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
 
 
-load_dict = read_json_file("../../ekt_json/dvbt_13_verification_signal_strength_indicator_ssi.json")
+# load_dict = read_json_file("../../ekt_json/dvbt_13_verification_signal_strength_indicator_ssi.json")
+# list_data = load_dict.get("test_parame_result")
+# print list_data
+# list_required_data = []
+# for i in list_data:
+#     count = 0
+#     for j in i[1]:
+#         if count == 0:
+#             list_required_data.append([i[0][0], i[0][1], i[0][2], i[0][3], i[0][4], j[0], j[1]])
+#         else:
+#             list_required_data.append(["", "", "", "", "", j[0], j[1]])
+#         count = count + 1
+# pd_data = pd.DataFrame(list_required_data,
+#                        columns=['modulation', 'code_rate', 'guard', 'bandwidth', 'frequency', 'level', 'strength'])
+# pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
+
+
+load_dict = read_json_file(json_path)
 list_data = load_dict.get("test_parame_result")
-print list_data
+# print list_data
 list_required_data = []
 for i in list_data:
     count = 0
-    for j in i[1]:
+    for j in i[6]:
         if count == 0:
-            list_required_data.append([i[0][0], i[0][1], i[0][2], i[0][3], i[0][4], j[0], j[1]])
+            list_required_data.append([i[0][0], i[1], i[2], i[3], i[4], i[5], j[0], j[1]])
         else:
-            list_required_data.append(["", "", "", "", "", j[0], j[1]])
+            list_required_data.append(["", "", "", "", "", "", j[0], j[1]])
         count = count + 1
 pd_data = pd.DataFrame(list_required_data,
-                       columns=['modulation', 'code_rate', 'guard', 'bandwidth', 'frequency', 'level', 'strength'])
-pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
+                       columns=['frequency', 'modulation', 'pilot', 'code_rate', 'guard', 'bandwidth', 'level',
+                                'strength'])
+pd_data.to_csv(csv_path, index=None)
 
 # print(os.listdir('E:/data'))
 # a.to_csv('E:/data/m.csv', sep=';', index=False)
