@@ -21030,3 +21030,4 @@
 2020-05-25 17:48:45,660 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1050MHz
 2020-05-25 17:48:46,894 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
 2020-05-25 17:49:40,313 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:40] - INFO: SFE连接出错
+2020-05-27 09:36:06,246 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_lib/ekt_sfe.py[line:54] - INFO: FREQ:CW 101.001 MHz

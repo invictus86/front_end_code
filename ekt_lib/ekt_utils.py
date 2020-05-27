@@ -198,6 +198,74 @@ def dvbt2_13_verification_strength_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbt2_14_verification_quality_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[4]:
+            if count == 0:
+                list_required_data.append([i[0], i[1], i[2], i[3], j[0], j[1]])
+            else:
+                list_required_data.append(["", "", "", "", j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['modulation', 'code_rate', 'guard', 'fft_mode', 'CN', 'quality'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt2_15_changes_modulation_parameters_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        list_required_data.append([i[0], i[1], i[2], i[3], i[4]])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['fftmode', 'modulation', 'code_rate', 'guard', 'test_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt2_51_verification_strength_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[6]:
+            if count == 0:
+                list_required_data.append([i[0][0], i[1], i[2], i[3], i[4], i[5], j[0], j[1]])
+            else:
+                list_required_data.append(["", "", "", "", "", "", j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'modulation', 'pilot', 'code_rate', 'guard', 'bandwidth', 'level',
+                                    'strength'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt2_52_verification_quality_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[5]:
+            if count == 0:
+                list_required_data.append([i[0], i[1], i[2], i[3], i[4], j[0], j[1]])
+            else:
+                list_required_data.append(["", "", "", "", "", j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['modulation', 'pilot', 'code_rate', 'guard', 'bandwidth', 'CN', 'quality'])
+
+    pd_data.to_csv(csv_path, index=None)
+
+
 if __name__ == '__main__':
     result = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 1310)
     print result

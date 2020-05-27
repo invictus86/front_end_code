@@ -17,10 +17,6 @@ CODE_RATE_2_3 = "R2_3"
 CODE_RATE_3_4 = "R3_4"
 GUARD_G1_8 = "G1_8"
 FFT_SIZE_8K = "M8K"
-LEVEL_60 = "-80"
-
-BW_7 = "BW_7"
-BW_8 = "BW_8"
 
 LEVEL_OFFSET_666 = find_level_offset_by_frequency("DVBT_T2_FREQUENCY_LEVEL_OFFSET", 666.0)
 LEVEL_OFFSET_474 = find_level_offset_by_frequency("DVBT_T2_FREQUENCY_LEVEL_OFFSET", 474.0)
@@ -149,6 +145,7 @@ if __name__ == '__main__':
                 continue
             specan = Ektsfu(sfu_ip)
             specan.set_level_level_level("dBm", str(LEVEL[0] - float(PARAMETER[0][5])))
+            time.sleep(5)
             stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                         [
                                             "tests/front_end_test/testcases.py::test_ocr_strength_quality"],

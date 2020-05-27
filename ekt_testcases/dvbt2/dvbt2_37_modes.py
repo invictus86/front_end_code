@@ -13,7 +13,7 @@ from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency
 FREQUENCY_666 = 666.0
 
 LEVEL_OFFSET_666 = find_level_offset_by_frequency("DVBT_T2_FREQUENCY_LEVEL_OFFSET", FREQUENCY_666)
-LEVEL_60 = str("%.2f" % (-60 - LEVEL_OFFSET_666))
+LEVEL_50 = str("%.2f" % (-50 - LEVEL_OFFSET_666))
 
 MODULATION_QPSK = "T4"
 MODULATION_16QAM = "T16"
@@ -36,13 +36,13 @@ GUARD_G19_128 = "G19128"
 GUARD_G1_4 = "G1_4"
 
 FFTSIZE_PIL_LEVEL_GUARD_LIST = [
-    ["M32E", "PP7", LEVEL_60, GUARD_G1_128],
-    ["M32E", "PP4", LEVEL_60, GUARD_G1_32],
-    ["M32E", "PP2", LEVEL_60, GUARD_G1_16],
-    ["M32E", "PP2", LEVEL_60, GUARD_G19_256],
-    ["M32E", "PP2", LEVEL_60, GUARD_G1_8],
-    ["M32E", "PP2", LEVEL_60, GUARD_G19_128],
-    ["M8K", "PP1", LEVEL_60, GUARD_G1_4]
+    ["M32E", "PP7", 60, GUARD_G1_128],
+    ["M32E", "PP4", 60, GUARD_G1_32],
+    ["M32E", "PP2", 60, GUARD_G1_16],
+    ["M32E", "PP2", 60, GUARD_G19_256],
+    ["M32E", "PP2", 60, GUARD_G1_8],
+    ["M32E", "PP2", 60, GUARD_G19_128],
+    ["M8K", "PP1", 60, GUARD_G1_4]
 ]
 
 dict_config_data = {
@@ -90,7 +90,9 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_offset(str(LEVEL_OFFSET_666))
     specan = Ektsfu(sfu_ip)
-    specan.set_level_level_level("dBm", LEVEL_60)
+    specan.set_level_level_level("dBm", LEVEL_50)
+    specan = Ektsfu(sfu_ip)
+    specan.set_digitaltv_system_papr_dvbt2("TR")
 
     net = ekt_net.EktNetClient('192.168.1.24', 9999)
     net.send_data(
@@ -132,10 +134,12 @@ if __name__ == '__main__':
                 specan = Ektsfu(sfu_ip)
                 specan.set_digitaltv_framing_pilot_dvbt2(FFTSIZE_PIL_LEVEL_GUARD[1])
                 specan = Ektsfu(sfu_ip)
+                specan.set_digitaltv_framing_ldata_dvbt2(FFTSIZE_PIL_LEVEL_GUARD[2])
+                specan = Ektsfu(sfu_ip)
                 specan.set_digitaltv_framing_guard_dvbt2(FFTSIZE_PIL_LEVEL_GUARD[3])
 
                 try:
-                    start_data_result = mosaic_algorithm(sfu_ip, "-60", "-60")
+                    start_data_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
                     print "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFTSIZE_PIL_LEVEL_GUARD[0], MODULATION,
                         CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3], FREQUENCY_666, str("8"),
@@ -148,7 +152,7 @@ if __name__ == '__main__':
                                           FREQUENCY_666, str("8"),
                                           start_data_result.get("detect_mosic_result")) + "\n")
                 except:
-                    start_data_result = mosaic_algorithm(sfu_ip, "-60", "-60")
+                    start_data_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
                     print "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFTSIZE_PIL_LEVEL_GUARD[0], MODULATION,
                         CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3], FREQUENCY_666, str("8"),

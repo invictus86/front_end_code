@@ -2530,6 +2530,21 @@ class Ektsfu(object):
         self.specan.query('*OPC?')
         del self.specan
 
+    def set_digitaltv_system_papr_dvbt2(self, papr_type):
+        """
+        Sets the peak-to-average-power ratio (PAPR) state.
+            OFF
+            TR
+        example :
+            T2DV:PAPR OFF
+        :return:
+        """
+        self.specan.write('T2DV:PAPR {}'.format(papr_type))
+        logging.info('T2DV:PAPR {}'.format(papr_type))
+        # time.sleep(1)
+        self.specan.query('*OPC?')
+        del self.specan
+
     def set_digitaltv_settings_testtspacket_dvbt2(self, packet_type):
         """
         Sets the payload length of the test TS packet.
@@ -2805,7 +2820,11 @@ class Ektsfu(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
-        self.specan.write('NOIS:AWGN OFF')
+        # self.specan.write('NOIS:AWGN OFF')
+        # self.specan.ext_clear_status()
+        # print self.specan.query('*IDN?')
+        self.specan.query('*OPC?')
+        # self.specan.write('*RST;*CLS')
 
     def set_player_timing_openfile(self, file_path):
         """
@@ -2844,7 +2863,7 @@ def _test_code():
     # host = '127.0.0.1'
     # port = 8900
     specan = Ektsfu(sfu_ip)
-    # specan.set_frequency_frequency_frequency("990 MHz")
+    specan.set_frequency_frequency_frequency("990 MHz")
     # specan.set_frequency_frequency_offset("500kHz")
     # specan.set_frequency_frequency_channel("4")
     # specan.set_frequency_sweep_start("1 MHz")
@@ -2921,7 +2940,7 @@ def _test_code():
     # specan.set_fading_settings_insertionloss("5 dB")
     # specan.set_coder_output_symbol_rate_dvbc("5.711e6")
     # specan.set_digitaltv_coding_symbolrate_dvbc("C256")
-    specan.set_digitaltv_coding_coderate_dvbt("R7_8")
+    # specan.set_digitaltv_coding_coderate_dvbt("R7_8")
     # specan.set_digitaltv_coding_constellation_dvbt("T16")
     # specan.set_digitaltv_coding_guard_dvbt("G1_32")
     # specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_7")
@@ -2957,7 +2976,7 @@ def _test_code():
     # specan.set_digitaltv_framing_bandwidth_dvbt2("4")
     # specan.set_digitaltv_framing_pilot_dvbt2("PP7")
     # specan.set_digitaltv_framing_nt2_dvbt2("30")
-    # specan.set_digitaltv_framing_ldata_dvbt2("60")
+    # specan.set_digitaltv_framing_ldata_dvbt2("61")
     # specan.set_digitaltv_framing_nsub_dvbt2("2")
     # specan.set_digitaltv_input_t2miinterface_dvbt2("OFF")
     # specan.set_digitaltv_input_t2misource_dvbt2("EXTernal")
@@ -3006,6 +3025,7 @@ def _test_code():
     # specan.set_level_level_offset(str(4.6))
     # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
     # specan.set_digitaltv_system_modulation_dvbt2("T64")
+    # specan.set_digitaltv_system_papr_dvbt2("TR")
 
     # specan.set_cmd()
 
