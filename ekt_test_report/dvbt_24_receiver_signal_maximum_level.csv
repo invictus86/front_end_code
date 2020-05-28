@@ -1,0 +1,4 @@
+fft_mode,modulation,code_rate,guard,spec_level,level
+M8K,T64,R2_3,G1_8,-35,False
+M8K,T64,R2_3,G1_4,-35,False
+M8K,T64,R3_4,G1_4,-35,False

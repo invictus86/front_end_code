@@ -6781,3 +6781,6 @@ dvbt_22_minimun_signal_level_0db: current_time:2020-05-28 09:01:16, modulation: 
 dvbt_22_minimun_signal_level_0db: current_time:2020-05-28 09:01:32, modulation: T64 coderate：R3_4, frequency：199 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-63.9", "threshold_algorithm_result": false}
 dvbt_22_minimun_signal_level_0db: current_time:2020-05-28 09:01:48, modulation: T64 coderate：R3_4, frequency：199 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-63.9", "threshold_algorithm_result": false}
 dvbt_22_minimun_signal_level_0db: current_time:2020-05-28 09:02:03, modulation: T64 coderate：R3_4, frequency：199 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-63.9", "threshold_algorithm_result": false}
+dvbt_5_frequency_offset: current_time:2020-05-28 10:50:01, modulation: T64,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-28 10:50:25, modulation: T64,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-28 10:50:51, modulation: T64,coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，False
