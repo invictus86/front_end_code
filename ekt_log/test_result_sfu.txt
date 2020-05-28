@@ -6799,3 +6799,8 @@ dvbt2_65_co_channel_interference: current_time:2020-05-28 17:11:38, modulation: 
 dvbt2_65_co_channel_interference: current_time:2020-05-28 17:22:21, modulation: T256 coderate：PP2, frequency：474 MHz，bandwidth：8 MHZ，阈值为: -8.00
 dvbt2_65_co_channel_interference: current_time:2020-05-28 17:28:37, modulation: T256 coderate：PP4, frequency：474 MHz，bandwidth：8 MHZ，阈值为: -11.00
 dvbt_29_performance_time_varying_channel: current_time:2020-05-28 18:29:10, modulation: T64 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 11.60
+dvbt_30_synchronisation_varying_echo: current_time:2020-05-28 18:44:24, modulation: T64 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 11.50
+dvbt_30_synchronisation_varying_echo: current_time:2020-05-28 18:53:20, modulation: T64 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 11.50
+dvbt_30_synchronisation_varying_echo: current_time:2020-05-28 19:02:20, modulation: T64 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 11.60
+dvbt_30_synchronisation_varying_echo: current_time:2020-05-28 19:09:13, modulation: T64 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 11.20
+dvbt_30_synchronisation_varying_echo: current_time:2020-05-28 19:16:02, modulation: T64 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 11.20

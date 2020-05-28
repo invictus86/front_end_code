@@ -159,7 +159,7 @@ if __name__ == '__main__':
         specan = Ektsfu(sfu_ip)
         specan.set_fading_profile_basicdelay("2", "{}E-6".format(PARAMETER[5]))
 
-        res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[4] + 3)
+        res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[4])
         print(
             "dvbt_30_synchronisation_varying_echo: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
