@@ -8,9 +8,9 @@ from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
-from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_step_by_step
+from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_noise_cn_step_by_step
 from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, find_level_offset_by_frequency, \
-    dvbt2_25_analogue_signal_other_json_to_csv
+    dvbt2_29_performance_time_varying_to_csv
 
 FFT_SIZE_8K = "M8K"
 
@@ -27,7 +27,7 @@ GUARD_G1_8 = "G1_8"
 
 FREQUENCY_666 = 666
 LEVEL_OFFSET_666 = find_level_offset_by_frequency("DVBT_T2_FREQUENCY_LEVEL_OFFSET", 666.0)
-LEVEL_30_666 = str("%.2f" % (-30 - LEVEL_OFFSET_666))
+LEVEL_50_666 = str("%.2f" % (-50 - LEVEL_OFFSET_666))
 
 PARAMETER_LIST = [
     [FFT_SIZE_8K, MODULATION_64QAM, CODE_RATE_2_3, GUARD_G1_8, 23.2, 20, 0, None],
@@ -49,7 +49,6 @@ PARAMETER_LIST = [
     [FFT_SIZE_8K, MODULATION_64QAM, CODE_RATE_3_4, GUARD_G1_4, 27.6, 20, 5, None],
     [FFT_SIZE_8K, MODULATION_64QAM, CODE_RATE_3_4, GUARD_G1_4, 27.6, 20, 10, None],
 ]
-
 
 my_file = Path("../../ekt_json/dvbt_29_performance_time_varying_channel.json")
 if my_file.exists():
@@ -109,80 +108,70 @@ if __name__ == '__main__':
     specan.set_fading_profile_profile("1", "2", "SPATh")
 
     specan = Ektsfu(sfu_ip)
-    specan.set_fading_profile_additdelay("1", "2", "1.95E-6")
+    specan.set_fading_profile_additdelay("2", "1", "20E-6")
 
-    for PARAMETER_FIXED in load_dict.get("test_parame_result"):
-        loop_lock_mark = False
-        for check_list in PARAMETER_FIXED[4]:
-            if check_list[5] == None:
-                loop_lock_mark = True
-                break
-        if loop_lock_mark == True:
+    specan = Ektsfu(sfu_ip)
+    specan.set_frequency_frequency_frequency(str(FREQUENCY_666) + "MHz")
+    specan = Ektsfu(sfu_ip)
+    specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str(8)))
+    specan = Ektsfu(sfu_ip)
+    specan.set_level_level_offset(str(LEVEL_OFFSET_666))
+    specan = Ektsfu(sfu_ip)
+    specan.set_level_level_level("dBm", str(LEVEL_50_666))
+
+    net = ekt_net.EktNetClient('192.168.1.24', 9999)
+    net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(int(FREQUENCY_666))}))
+    time.sleep(1)
+    del net
+    net = ekt_net.EktNetClient('192.168.1.24', 9999)
+    net.send_data(json.dumps({"cmd": "set_bandwidth_data", "bandwidth": str(8)}))
+    time.sleep(1)
+    del net
+    """
+    触发stb-tester进行频率和符号率设置
+    """
+    stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+                                ["tests/front_end_test/testcases.py::test_continuous_button_7414g"],
+                                "auto_front_end_test", "DSD4614iALM")
+    net = ekt_net.EktNetClient('192.168.1.24', 9999)
+    lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
+    if lock_state == "1":
+        pass
+    elif lock_state == "0":
+        write_test_result("../../ekt_log/test_result_sfu.txt",
+                          (
+                                  "dvbt_29_performance_time_varying_channel: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
+                                      datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                      str(FREQUENCY_666), str(8), "锁台失败") + "\n"))
+
+    for PARAMETER in load_dict.get("test_parame_result"):
+        if PARAMETER[7] == None:
             pass
         else:
             continue
-
         specan = Ektsfu(sfu_ip)
-        specan.set_frequency_frequency_frequency(str(PARAMETER_FIXED[0]) + "MHz")
+        specan.set_digitaltv_coding_fftmode_dvbt(PARAMETER[0])
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str(PARAMETER_FIXED[3])))
+        specan.set_digitaltv_coding_constellation_dvbt(PARAMETER[1])
         specan = Ektsfu(sfu_ip)
-        specan.set_level_level_offset(str(PARAMETER_FIXED[1]))
+        specan.set_digitaltv_coding_coderate_dvbt(PARAMETER[2])
         specan = Ektsfu(sfu_ip)
-        specan.set_level_level_level("dBm", str(PARAMETER_FIXED[2]))
+        specan.set_digitaltv_coding_guard_dvbt(PARAMETER[3])
+        specan = Ektsfu(sfu_ip)
+        specan.set_fading_profile_pathloss("1", "2", "{} dB".format(str(PARAMETER[6])))
 
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
-        net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(int(PARAMETER_FIXED[0]))}))
-        time.sleep(1)
-        del net
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
-        net.send_data(json.dumps({"cmd": "set_bandwidth_data", "bandwidth": str(PARAMETER_FIXED[3])}))
-        time.sleep(1)
-        del net
-        """
-        触发stb-tester进行频率和符号率设置
-        """
-        stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                    ["tests/front_end_test/testcases.py::test_continuous_button_7414g"],
-                                    "auto_front_end_test", "DSD4614iALM")
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
-        lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
-        if lock_state == "1":
-            pass
-        elif lock_state == "0":
-            write_test_result("../../ekt_log/test_result_sfu.txt",
-                              (
-                                      "dvbt_29_performance_time_varying_channel: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          str(PARAMETER_FIXED[0]), str(8), "锁台失败") + "\n"))
-
-        for PARAMETER in PARAMETER_FIXED[4]:
-            if PARAMETER[5] == None:
-                pass
-            else:
-                continue
-            specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_fftmode_dvbt(PARAMETER[0])
-            specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_constellation_dvbt(PARAMETER[1])
-            specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_coderate_dvbt(PARAMETER[2])
-            specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_guard_dvbt(PARAMETER[3])
-
-            # 设置spec
-            res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[4] + 3)
-            print(
+        res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[4] + 3)
+        print(
             "dvbt_29_performance_time_varying_channel: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
-                PARAMETER[2], str(PARAMETER_FIXED[0]), str(PARAMETER_FIXED[3]), res))
-            write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbt_29_performance_time_varying_channel: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
-                                  PARAMETER[2], str(PARAMETER_FIXED[0]), str(PARAMETER_FIXED[3]), res) + "\n")
+                PARAMETER[2], str(FREQUENCY_666), str(8), res))
+        write_test_result("../../ekt_log/test_result_sfu.txt",
+                          "dvbt_29_performance_time_varying_channel: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
+                              PARAMETER[2], str(FREQUENCY_666), str(8), res) + "\n")
 
-            PARAMETER[5] = test_result
-            write_json_file("../../ekt_json/dvbt_29_performance_time_varying_channel.json", load_dict)
-            dvbt2_20_performance_0db_to_csv(
-                "../../ekt_json/dvbt_29_performance_time_varying_channel.json",
-                "../../ekt_test_report/dvbt_29_performance_time_varying_channel.csv")
+        PARAMETER[7] = test_result
+        write_json_file("../../ekt_json/dvbt_29_performance_time_varying_channel.json", load_dict)
+        dvbt2_29_performance_time_varying_to_csv(
+            "../../ekt_json/dvbt_29_performance_time_varying_channel.json",
+            "../../ekt_test_report/dvbt_29_performance_time_varying_channel.csv")
