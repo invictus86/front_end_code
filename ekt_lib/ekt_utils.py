@@ -279,6 +279,24 @@ def dvbt2_24_receiver_maximum_level_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbt2_25_analogue_signal_other_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[2]:
+            if count == 0:
+                list_required_data.append([i[0], i[1], j[0], j[1], j[2], j[3], j[4]])
+            else:
+                list_required_data.append(["", "", j[0], j[1], j[2], j[3], j[4]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'spec', 'fft_mode', 'modulation', 'code_rate', 'guard', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbt2_51_verification_strength_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")

@@ -903,6 +903,68 @@ class Ektsfu(object):
         self.specan.query('*OPC?')
         del self.specan
 
+    def set_interferer_reference(self, reference_type):
+        """
+        Determines how the level of the interferer signal is set.
+            LEV
+            ATT
+        example :
+            DM:IREF ATT
+        :return:
+        """
+        self.specan.write('DM:IREF {}'.format(reference_type))
+        logging.info('DM:IREF {}'.format(reference_type))
+        self.specan.query('*OPC?')
+        del self.specan
+
+    def set_interferer_level(self, level):
+        """
+        Sets the absolute level of the interferer signal.
+            Range:          -70.00 dBm  to  +50.00 dBm
+            Increment:      0.01 dBm
+            *RST:           -30 dBm
+            Default unit:   dBm
+        example :
+            DM:ILEV -10
+        :return:
+        """
+        self.specan.write('DM:ILEV {}'.format(level))
+        logging.info('DM:ILEV {}'.format(level))
+        self.specan.query('*OPC?')
+        del self.specan
+
+    def set_interferer_frequency_offset(self, frequency):
+        """
+        Sets the frequency offset of the interferer signal in the baseband.
+            Range:        -40.00 MHz  to  +40.00 MHz
+            Increment:    0.1 Hz
+            *RST:         0 Hz
+            Default unit: Hz
+        example :
+            DM:IFR -1e6 HZ
+        :return:
+        """
+        self.specan.write('DM:IFR {}e6 HZ'.format(frequency))
+        logging.info('DM:IFR {}e6 HZ'.format(frequency))
+        self.specan.query('*OPC?')
+        del self.specan
+
+    def set_interferer_singal_frequency_offset(self, frequency):
+        """
+        Sets the frequency offset of the useful signal in the baseband.
+            Range:       -10.00 MHz  to  +10.00 MHz
+            Increment:    0.1 Hz
+            *RST:         0 Hz
+            Default unit: Hz
+        example :
+            DM:SFR -1e6 Hz
+        :return:
+        """
+        self.specan.write('DM:SFR {}e6 HZ'.format(frequency))
+        logging.info('DM:SFR {}e6 HZ'.format(frequency))
+        self.specan.query('*OPC?')
+        del self.specan
+
     def set_impairments_modulator(self, modulator_type):
         """
         Activates or deactivates the three impairment or correction values LEAKage, QUADrature and IQRatio for the analog signal in the I/Q modulator.
@@ -2918,7 +2980,7 @@ def _test_code():
     # specan.set_fading_profile_state("1", "1", "ON")
     # specan.set_fading_profile_profile("1", "1", "SPATh")
     # specan.set_fading_profile_pathloss("2", "2", "2 dB")
-    specan.set_fading_profile_basicdelay("2", "486E-6")
+    # specan.set_fading_profile_basicdelay("2", "486E-6")
     # specan.set_fading_profile_additdelay("2", "1", "486E-6")
     # specan.set_fading_profile_resuldelay("2", "2", "20E-6")
     # specan.set_fading_profile_power("2", "2", "-15")
@@ -3026,6 +3088,11 @@ def _test_code():
     # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
     # specan.set_digitaltv_system_modulation_dvbt2("T64")
     # specan.set_digitaltv_system_papr_dvbt2("TR")
+    specan.set_interferer_source("ATVPr")
+    # specan.set_interferer_reference("LEV")
+    # specan.set_interferer_level("-10")
+    # specan.set_interferer_frequency_offset("-1")
+    specan.set_interferer_singal_frequency_offset("-1")
 
     # specan.set_cmd()
 

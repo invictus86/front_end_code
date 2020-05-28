@@ -152,11 +152,8 @@ if __name__ == '__main__':
 
     for PARAMETER_FIXED in load_dict.get("test_parame_result"):
         for PARAMETER in PARAMETER_FIXED[4]:
-            # print PARAMETER
             loop_lock_mark = False
-            # print PARAMETER[5]
             for FADING in PARAMETER[5]:
-                # print FADING
                 if FADING[1] == None:
                     loop_lock_mark = True
                     break
