@@ -903,6 +903,22 @@ class Ektsfu(object):
         self.specan.query('*OPC?')
         del self.specan
 
+    def set_interferer_addition(self, addition_type):
+        """
+        Sets the feed-in point for adding the interference signal.
+            OFF
+            BEFNoise    Before the noise.
+            AFN     After the noise.
+        example :
+            DM:IADD AFN
+        :return:
+        """
+        self.specan.write('DM:IADD {}'.format(addition_type))
+        logging.info('DM:IADD {}'.format(addition_type))
+        # time.sleep(1)
+        self.specan.query('*OPC?')
+        del self.specan
+
     def set_interferer_reference(self, reference_type):
         """
         Determines how the level of the interferer signal is set.
@@ -914,6 +930,22 @@ class Ektsfu(object):
         """
         self.specan.write('DM:IREF {}'.format(reference_type))
         logging.info('DM:IREF {}'.format(reference_type))
+        self.specan.query('*OPC?')
+        del self.specan
+
+    def set_interferer_attenuation(self, attenuation):
+        """
+        Sets the attenuation of the interference signal.
+            Range:         -60  to  +60 dB
+            Increment:      0.01 dB
+            *RST:           20 dB
+            Default unit:   dB
+        example :
+            DM:IATT 5 dB
+        :return:
+        """
+        self.specan.write('DM:IATT {} dB'.format(attenuation))
+        logging.info('DM:IATT {} dB'.format(attenuation))
         self.specan.query('*OPC?')
         del self.specan
 
@@ -3088,11 +3120,13 @@ def _test_code():
     # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
     # specan.set_digitaltv_system_modulation_dvbt2("T64")
     # specan.set_digitaltv_system_papr_dvbt2("TR")
-    specan.set_interferer_source("ATVPr")
-    # specan.set_interferer_reference("LEV")
+    # specan.set_interferer_source("ATVPr")
+    # specan.set_interferer_addition("BEFN")
+    # specan.set_interferer_reference("ATT")
+    specan.set_interferer_attenuation("5")
     # specan.set_interferer_level("-10")
     # specan.set_interferer_frequency_offset("-1")
-    specan.set_interferer_singal_frequency_offset("-1")
+    # specan.set_interferer_singal_frequency_offset("-1")
 
     # specan.set_cmd()
 

@@ -8,7 +8,7 @@ from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
-from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_step_by_step
+from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_interferer_attenuation_step_by_step
 from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, find_level_offset_by_frequency, \
     dvbt2_28_analogue_signal_other_json_to_csv
 
@@ -103,13 +103,15 @@ if __name__ == '__main__':
     specan.set_interferer_source("ATVPr")
 
     specan = Ektsfu(sfu_ip)
-    specan.set_interferer_reference("LEV")
+    specan.set_interferer_addition("BEFN")
 
     specan = Ektsfu(sfu_ip)
-    specan.set_interferer_level("-25")
+    specan.set_interferer_reference("ATT")
     specan = Ektsfu(sfu_ip)
     specan.set_interferer_frequency_offset(str(-2.75))
 
+    # specan = Ektsfu(sfu_ip)
+    # specan.set_interferer_attenuation("5")
 
     for FREQUENCY in load_dict.get("test_parame_result"):
         loop_lock_mark = False
@@ -155,11 +157,9 @@ if __name__ == '__main__':
                               (
                                       "dvbt_28_co_channek_interference_analogue: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s， {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          str(FREQUENCY_666),
-                                          str(8), "锁台失败") + "\n"))
+                                          str(FREQUENCY[0]), str(8), "锁台失败") + "\n"))
         else:
             write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
-
 
         for PARAMETER in FREQUENCY[3]:
             if PARAMETER[5] == None:
@@ -175,11 +175,8 @@ if __name__ == '__main__':
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_guard_dvbt(PARAMETER[3])
 
-            res, test_result = iterate_to_find_threshold_step_by_step(sfu_ip,
-                                                                      float(
-                                                                          "%.2f" % (float(FREQUENCY[2]) - float(
-                                                                              PARAMETER[4]) + 5)),
-                                                                      level_offset=str(FREQUENCY[1]))
+            res, test_result = iterate_to_find_threshold_interferer_attenuation_step_by_step(sfu_ip,
+                                                                                             float(PARAMETER[4]))
             print(
                 "dvbt_28_co_channek_interference_analogue: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
@@ -189,7 +186,7 @@ if __name__ == '__main__':
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                                   PARAMETER[2], str(FREQUENCY[0]), str(8), res) + "\n")
 
-            PARAMETER[5] = str("%.2f" % (float(test_result) + 60 - float(FREQUENCY[1])))
+            PARAMETER[5] = str("%.2f" % (float(test_result)))
             write_json_file("../../ekt_json/dvbt_28_co_channek_interference_analogue.json", load_dict)
             dvbt2_28_analogue_signal_other_json_to_csv(
                 "../../ekt_json/dvbt_28_co_channek_interference_analogue.json",

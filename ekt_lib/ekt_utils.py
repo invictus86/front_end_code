@@ -384,6 +384,25 @@ def dvbt2_62_maximum_level_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbt2_65_co_channel_interference_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[0], j[0], j[1], j[2], j[3], j[4], j[5], j[6]])
+            else:
+                list_required_data.append(["", j[0], j[1], j[2], j[3], j[4], j[5], j[6]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'fft_mode', 'modulation', "pilot", 'code_rate', 'guard', 'spec',
+                                    'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 if __name__ == '__main__':
     result = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 1310)
     print(result)
