@@ -326,6 +326,17 @@ def dvbt2_29_performance_time_varying_to_csv(json_path, csv_path):
                                     "freq_sparation", 'noise_cn'])
     pd_data.to_csv(csv_path, index=None)
 
+def dvbt2_30_synchronisation_varying_echo_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        list_required_data.append([i[0], i[1], i[2], i[3], i[4], i[5], i[6], i[7]])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['fft_mode', 'modulation', 'code_rate', 'guard', 'spec_noise', 'delay',
+                                    "freq_sparation", 'noise_cn'])
+    pd_data.to_csv(csv_path, index=None)
+
 
 def dvbt2_51_verification_strength_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
