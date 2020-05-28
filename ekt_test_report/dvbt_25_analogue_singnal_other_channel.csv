@@ -1,7 +1,7 @@
 frequency,spec,fft_mode,modulation,code_rate,guard,level
 647.25,44,M8K,T64,R2_3,G1_8,-59.00000000000001
-,,M8K,T64,R2_3,G1_4,
-,,M8K,T64,R3_4,G1_4,
+,,M8K,T64,R2_3,G1_4,-59.20
+,,M8K,T64,R3_4,G1_4,-57.80
 655.25,33,M8K,T64,R2_3,G1_8,
 ,,M8K,T64,R2_3,G1_4,
 ,,M8K,T64,R3_4,G1_4,

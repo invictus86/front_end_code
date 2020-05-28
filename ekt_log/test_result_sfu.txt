@@ -6786,3 +6786,11 @@ dvbt_5_frequency_offset: current_time:2020-05-28 10:50:25, modulation: T64,coder
 dvbt_5_frequency_offset: current_time:2020-05-28 10:50:51, modulation: T64,coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，False
 dvbt_5_frequency_offset: current_time:2020-05-28 11:16:10, modulation: T256,coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，False
 dvbt_25_analogue_singnal_other_channel: current_time:2020-05-28 14:20:44, modulation: T64 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: -88.40
+dvbt_25_analogue_singnal_other_channel: current_time:2020-05-28 14:33:30, modulation: T64 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: -88.60
+dvbt_25_analogue_singnal_other_channel: current_time:2020-05-28 14:38:39, modulation: T64 coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，阈值为: -87.20
+dvbt_28_co_channek_interference_analogue: current_time:2020-05-28 15:06:03, modulation: T64 coderate：R2_3, frequency：474 MHz，bandwidth：8 MHZ，阈值为: -86.90
+dvbt_28_co_channek_interference_analogue: current_time:2020-05-28 15:13:08, modulation: T64 coderate：R3_4, frequency：474 MHz，bandwidth：8 MHZ，阈值为: -85.80
+dvbt_28_co_channek_interference_analogue: current_time:2020-05-28 15:19:53, modulation: T64 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: -88.40
+dvbt_28_co_channek_interference_analogue: current_time:2020-05-28 15:22:53, modulation: T64 coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，阈值为: -80.00
+dvbt_28_co_channek_interference_analogue: current_time:2020-05-28 15:23:58, frequency：666 MHz，bandwidth：8 Ksym/s， 锁台失败
+dvbt_28_co_channek_interference_analogue: current_time:2020-05-28 15:24:16, modulation: T64 coderate：R2_3, frequency：858 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:-53.3", "threshold_algorithm_result": false}
