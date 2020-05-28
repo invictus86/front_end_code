@@ -1,0 +1,2 @@
+fft_size,modulation,pilot,code_rate,guard,spec_level,level
+M32E,T256,PP7,R3_4,G1128,-35,False

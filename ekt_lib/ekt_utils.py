@@ -337,6 +337,17 @@ def dvbt2_60_minuimun_level_0db_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbt2_62_maximum_level_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        list_required_data.append([i[0], i[1], i[2], i[3], i[4], i[5], i[6]])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['fft_size', 'modulation', 'pilot', 'code_rate', 'guard', 'spec_level', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 if __name__ == '__main__':
     result = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 1310)
     print(result)
