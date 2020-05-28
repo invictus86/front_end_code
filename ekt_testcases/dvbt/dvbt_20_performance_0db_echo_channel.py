@@ -9,7 +9,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm, iterate_to_find_threshold_noise_cn_step_by_step
 from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency, write_json_file, read_json_file, \
-    dvbt2_15_changes_modulation_parameters_to_csv
+    dvbt2_20_performance_0db_to_csv
 
 FFT_SIZE_2K = "M2K"
 FFT_SIZE_8K = "M8K"
@@ -103,13 +103,35 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_noise_settings_bandwith("ON")
     specan = Ektsfu(sfu_ip)
-    specan.set_fading_fading_state("OFF")
+    specan.set_fading_fading_state("ON")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
 
+    specan = Ektsfu(sfu_ip)
+    specan.set_fading_profile_state("1", "1", "ON")
+    specan = Ektsfu(sfu_ip)
+    specan.set_fading_profile_state("1", "2", "ON")
+
+    specan = Ektsfu(sfu_ip)
+    specan.set_fading_profile_profile("1", "1", "SPATh")
+    specan = Ektsfu(sfu_ip)
+    specan.set_fading_profile_profile("1", "2", "SPATh")
+
+    specan = Ektsfu(sfu_ip)
+    specan.set_fading_profile_additdelay("1", "2", "1.95E-6")
+
     for PARAMETER_FIXED in load_dict.get("test_parame_result"):
+        loop_lock_mark = False
+        for check_list in PARAMETER_FIXED[4]:
+            if check_list[5] == None:
+                loop_lock_mark = True
+                break
+        if loop_lock_mark == True:
+            pass
+        else:
+            continue
 
         specan = Ektsfu(sfu_ip)
         specan.set_frequency_frequency_frequency(str(PARAMETER_FIXED[0]) + "MHz")
@@ -141,11 +163,15 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                          "dvbt_20_performance_0db_echo_channel: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
-                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                              str(PARAMETER_FIXED[0]), str(8), "锁台失败") + "\n"))
+                                      "dvbt_20_performance_0db_echo_channel: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
+                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                          str(PARAMETER_FIXED[0]), str(8), "锁台失败") + "\n"))
 
-        for PARAMETER in load_dict.get("test_parame_result"):
+        for PARAMETER in PARAMETER_FIXED[4]:
+            if PARAMETER[5] == None:
+                pass
+            else:
+                continue
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_fftmode_dvbt(PARAMETER[0])
             specan = Ektsfu(sfu_ip)
@@ -157,16 +183,17 @@ if __name__ == '__main__':
 
             # 设置spec
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[4] + 3)
-            print("dvbt_20_performance_0db_echo_channel: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+            print(
+            "dvbt_20_performance_0db_echo_channel: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                 PARAMETER[2], str(PARAMETER_FIXED[0]), str(PARAMETER_FIXED[3]), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               "dvbt_20_performance_0db_echo_channel: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
-                PARAMETER[2], str(PARAMETER_FIXED[0]), str(PARAMETER_FIXED[3]), res) + "\n")
+                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
+                                  PARAMETER[2], str(PARAMETER_FIXED[0]), str(PARAMETER_FIXED[3]), res) + "\n")
 
             PARAMETER[5] = test_result
-            write_json_file("../../ekt_json/dvbt_20_performance_0db_echo_channel.json",load_dict)
-            dvbt2_57_gaussian_channel_json_to_csv(
+            write_json_file("../../ekt_json/dvbt_20_performance_0db_echo_channel.json", load_dict)
+            dvbt2_20_performance_0db_to_csv(
                 "../../ekt_json/dvbt_20_performance_0db_echo_channel.json",
                 "../../ekt_test_report/dvbt_20_performance_0db_echo_channel.csv")

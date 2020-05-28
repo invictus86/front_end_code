@@ -136,9 +136,9 @@ if __name__ == '__main__':
         specan.set_digitaltv_coding_guard_dvbt(PARAMETER[3])
 
         start_data_result = mosaic_algorithm(sfu_ip, LEVEL_50, LEVEL_50)
-        print "dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+        print ("dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
-            PARAMETER[2], str(FREQUENCY_666), str(8), start_data_result.get("detect_mosic_result"))
+            PARAMETER[2], str(FREQUENCY_666), str(8), start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfu.txt",
                           "dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],

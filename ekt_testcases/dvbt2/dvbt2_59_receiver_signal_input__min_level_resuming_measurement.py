@@ -221,9 +221,9 @@ if __name__ == '__main__':
             res, test_result = iterate_to_find_threshold_step_by_step(sfu_ip,
                                                                       float("%.2f" % ((MODULATION_CODERATE_SPEC[2]) -FREQUENCY_LEVEL_OFFSET[0][1] + 5)),
                                                                       level_offset=str(FREQUENCY_LEVEL_OFFSET[0][1]))
-            print "dvbt2_59_receiver_signal_input__min_level_resuming_measurement: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+            print ("dvbt2_59_receiver_signal_input__min_level_resuming_measurement: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_CODERATE_SPEC[0],
-                MODULATION_CODERATE_SPEC[1], str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res)
+                MODULATION_CODERATE_SPEC[1], str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               "dvbt2_59_receiver_signal_input__min_level_resuming_measurement: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),

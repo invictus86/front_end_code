@@ -157,7 +157,7 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
-            print "{} 出现马赛克".format(step_num)
+            print ("{} 出现马赛克".format(step_num))
             break
     while True:
         step = 0.3
@@ -166,9 +166,9 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
-            print "{} 出现马赛克".format(step_num)
+            print ("{} 出现马赛克".format(step_num))
             break
-    print "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
+    print ("阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))))
     return "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))), str(
         "%.2f" % (float(start_num) + float(level_offset)))
 
@@ -188,7 +188,7 @@ def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
-            print "{} 出现马赛克".format(step_num)
+            print ("{} 出现马赛克".format(step_num))
             break
     while True:
         step = 1
@@ -197,7 +197,7 @@ def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
-            print "{} 出现马赛克".format(step_num)
+            print ("{} 出现马赛克".format(step_num))
             break
     while True:
         step = 0.1
@@ -206,9 +206,9 @@ def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
-            print "{} 出现马赛克".format(step_num)
+            print ("{} 出现马赛克".format(step_num))
             break
-    print "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
+    print ("阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))))
     return "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))), str(
         "%.2f" % (float(start_num) + float(level_offset)))
 
@@ -228,7 +228,7 @@ def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
-            print "{} 出现马赛克".format(step_num)
+            print ("{} 出现马赛克".format(step_num))
             break
     while True:
         step = 0.1
@@ -239,7 +239,7 @@ def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
         elif step_num_data_result.get("detect_mosic_result") is True:
             print("{} 出现马赛克".format(step_num))
             break
-    print "阈值为: {}".format(str("%.2f" % float(start_num)))
+    print ("阈值为: {}".format(str("%.2f" % float(start_num))))
     return "阈值为: {}".format(str("%.2f" % float(start_num))), str("%.2f" % float(start_num))
 
 

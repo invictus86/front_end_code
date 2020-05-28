@@ -228,6 +228,46 @@ def dvbt2_15_changes_modulation_parameters_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbt2_20_performance_0db_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[4]:
+            if count == 0:
+                list_required_data.append([i[0], i[3], j[0], j[1], j[2], j[3], j[4], j[5]])
+            else:
+                list_required_data.append(["", "", j[0], j[1], j[2], j[3], j[4], j[5]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'bandwidth', 'pilot', 'modulation', 'code_rate', 'guard', 'spec_noise',
+                                    'noise'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt2_22_minimun_level_0db_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        for j in i[4]:
+            count_j = 0
+            for k in j[5]:
+                # print k
+                if count_j == 0:
+                    list_required_data.append([i[0], i[3], j[0], j[1], j[2], j[3], j[4], k[0], k[1]])
+                else:
+                    list_required_data.append(["", "", "", "", "", "", "", k[0], k[1]])
+                count_j = count_j + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'bandwidth', 'pilot', 'modulation', 'code_rate', 'guard', 'spec_level',
+                                    'fading',
+                                    'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbt2_51_verification_strength_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
@@ -263,6 +303,26 @@ def dvbt2_52_verification_quality_json_to_csv(json_path, csv_path):
     pd_data = pd.DataFrame(list_required_data,
                            columns=['modulation', 'pilot', 'code_rate', 'guard', 'bandwidth', 'CN', 'quality'])
 
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt2_60_minuimun_level_0db_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    i = list_data
+
+    count = 0
+    for j in i[2]:
+        if count == 0:
+            list_required_data.append([i[0], j[0], j[1], j[2], j[3], j[4], j[5], j[6], j[7], j[8]])
+        else:
+            list_required_data.append(["", j[0], j[1], j[2], j[3], j[4], j[5], j[6], j[7], j[8]])
+        count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'fft_size', 'modulation', 'pilot', 'code_rate', 'guard', 'bandwidth',
+                                    'spec', 'delay', 'level'])
     pd_data.to_csv(csv_path, index=None)
 
 

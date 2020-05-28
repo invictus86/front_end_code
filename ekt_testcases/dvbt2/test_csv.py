@@ -58,21 +58,40 @@ from ekt_lib.ekt_utils import read_json_file
 # pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
 
 
-load_dict = read_json_file("../../ekt_json/dvbt2_52_verification_signal_quality_indicator_sqi.json")
+# load_dict = read_json_file("../../ekt_json/dvbt2_52_verification_signal_quality_indicator_sqi.json")
+# list_data = load_dict.get("test_parame_result")
+# # print list_data
+# list_required_data = []
+# for i in list_data:
+#     print i
+#     count = 0
+#     for j in i[5]:
+#         if count == 0:
+#             list_required_data.append([i[0], i[1], i[2], i[3], i[4], j[0], j[1]])
+#         else:
+#             list_required_data.append(["", "", "", "", "", j[0], j[1]])
+#         count = count + 1
+# pd_data = pd.DataFrame(list_required_data,
+#                        columns=['modulation', 'pilot', 'code_rate', 'guard', 'bandwidth', 'CN', 'quality'])
+#
+# pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
+
+load_dict = read_json_file("../../ekt_json/dvbt_60_minimum_level_0db_echo_channel.json")
 list_data = load_dict.get("test_parame_result")
 # print list_data
 list_required_data = []
-for i in list_data:
-    print i
-    count = 0
-    for j in i[5]:
-        if count == 0:
-            list_required_data.append([i[0], i[1], i[2], i[3], i[4], j[0], j[1]])
-        else:
-            list_required_data.append(["", "", "", "", "", j[0], j[1]])
-        count = count + 1
+i = list_data
+
+count = 0
+for j in i[2]:
+    if count == 0:
+        list_required_data.append([i[0], j[0], j[1], j[2], j[3], j[4], j[5], j[6], j[7], j[8]])
+    else:
+        list_required_data.append(["", j[0], j[1], j[2], j[3], j[4], j[5], j[6], j[7], j[8]])
+    count = count + 1
 pd_data = pd.DataFrame(list_required_data,
-                       columns=['modulation', 'pilot', 'code_rate', 'guard', 'bandwidth', 'CN', 'quality'])
+                   columns=['frequency', 'fft_size', 'modulation', 'pilot', 'code_rate', 'guard', 'bandwidth',
+                            'spec', 'delay', 'level'])
 
 pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
 
