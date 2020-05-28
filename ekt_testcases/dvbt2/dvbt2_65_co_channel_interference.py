@@ -194,7 +194,7 @@ if __name__ == '__main__':
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                                   PARAMETER[2], str(FREQUENCY[0]), str(8), res) + "\n")
 
-            PARAMETER[5] = str("%.2f" % (float(test_result)))
+            PARAMETER[6] = str("%.2f" % (float(test_result)))
             write_json_file("../../ekt_json/dvbt2_65_co_channel_interference.json", load_dict)
             dvbt2_65_co_channel_interference_json_to_csv(
                 "../../ekt_json/dvbt2_65_co_channel_interference.json",

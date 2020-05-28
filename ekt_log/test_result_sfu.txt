@@ -6796,3 +6796,5 @@ dvbt_28_co_channek_interference_analogue: current_time:2020-05-28 15:23:58, freq
 dvbt_28_co_channek_interference_analogue: current_time:2020-05-28 15:24:16, modulation: T64 coderate：R2_3, frequency：858 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:-53.3", "threshold_algorithm_result": false}
 dvbt_28_co_channek_interference_analogue: current_time:2020-05-28 16:29:40, modulation: T64 coderate：R2_3, frequency：474 MHz，bandwidth：8 MHZ，阈值为: -5.00
 dvbt2_65_co_channel_interference: current_time:2020-05-28 17:11:38, modulation: T256 coderate：PP2, frequency：474 MHz，bandwidth：8 MHZ，阈值为: -7.00
+dvbt2_65_co_channel_interference: current_time:2020-05-28 17:22:21, modulation: T256 coderate：PP2, frequency：474 MHz，bandwidth：8 MHZ，阈值为: -8.00
+dvbt2_65_co_channel_interference: current_time:2020-05-28 17:28:37, modulation: T256 coderate：PP4, frequency：474 MHz，bandwidth：8 MHZ，阈值为: -11.00
