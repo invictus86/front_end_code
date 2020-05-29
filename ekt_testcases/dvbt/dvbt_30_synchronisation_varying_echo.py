@@ -99,15 +99,15 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_fading_profile_state("1", "1", "ON")
     specan = Ektsfu(sfu_ip)
-    specan.set_fading_profile_state("1", "2", "ON")
+    specan.set_fading_profile_state("2", "1", "ON")
 
     specan = Ektsfu(sfu_ip)
     specan.set_fading_profile_profile("1", "1", "SPATh")
     specan = Ektsfu(sfu_ip)
-    specan.set_fading_profile_profile("1", "2", "SPATh")
+    specan.set_fading_profile_profile("2", "1", "SPATh")
 
     specan = Ektsfu(sfu_ip)
-    specan.set_fading_profile_pathloss("1", "2", "{} dB".format(str(0)))
+    specan.set_fading_profile_pathloss("2", "1", "{} dB".format(str(0)))
 
     specan = Ektsfu(sfu_ip)
     specan.set_frequency_frequency_frequency(str(FREQUENCY_666) + "MHz")
