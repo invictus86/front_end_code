@@ -324,7 +324,11 @@ if __name__ == '__main__':
                               (
                                       "dvbt_32_performance_SFN_inside_guard: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          str(FREQUENCY_666), str(8), "锁台失败") + "\n"))
+                                          str(PARAMETER[0]), str(PARAMETER[3]), "锁台失败") + "\n"))
+            continue
+        else:
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            continue
 
         loop_lock_mark_fadomg = False
         for FADING in PARAMETER[9]:
@@ -355,7 +359,7 @@ if __name__ == '__main__':
                 else:
                     continue
                 specan = Ektsfu(sfu_ip)
-                specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(LOSS[1])))
+                specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(LOSS[0])))
 
                 res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[8])
                 print(
