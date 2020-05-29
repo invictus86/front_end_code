@@ -106,6 +106,8 @@ else:
     write_json_file("../../ekt_json/dvbt2_67_synchronisation_varying_echo.json",
                     dict_test_parame_result)
 
+# 32KN 256QAM PP4 R2/3 G19/256 7M                     frame length set to 55
+
 if __name__ == '__main__':
     """
     测试流程：
@@ -132,7 +134,11 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_rf("ON")
     specan = Ektsfu(sfu_ip)
-    specan.set_noise_noise_noise("OFF")
+    specan.set_noise_noise_noise("ADD")
+    specan = Ektsfu(sfu_ip)
+    specan.set_noise_noise_awgn("ON")
+    specan = Ektsfu(sfu_ip)
+    specan.set_noise_settings_bandwith("ON")
     specan = Ektsfu(sfu_ip)
     specan.set_fading_fading_state("ON")
     specan = Ektsfu(sfu_ip)
@@ -149,11 +155,6 @@ if __name__ == '__main__':
     specan.set_fading_profile_profile("1", "1", "SPATh")
     specan = Ektsfu(sfu_ip)
     specan.set_fading_profile_profile("2", "1", "SPATh")
-
-    # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
-    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
-
-    # for FREQUENCY_LEVEL_OFFSET in DVBT_T2_FREQUENCY_LEVEL_OFFSET:
 
     LIST_PARAMETER_DATA = load_dict.get("test_parame_result")
     for PARAMETER_FIXED in LIST_PARAMETER_DATA:
@@ -184,7 +185,7 @@ if __name__ == '__main__':
         time.sleep(1)
         del net
         net = ekt_net.EktNetClient('192.168.1.24', 9999)
-        net.send_data(json.dumps({"cmd": "set_bandwidth_data", "bandwidth": str(PARAMETER[5])}))
+        net.send_data(json.dumps({"cmd": "set_bandwidth_data", "bandwidth": str(PARAMETER_FIXED[3])}))
         time.sleep(1)
         del net
         """
@@ -202,7 +203,7 @@ if __name__ == '__main__':
                               (
                                       "dvbt2_67_synchronisation_varying_echo: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          str(PARAMETER_FIXED[0]), str(PARAMETER[5]),
+                                          str(PARAMETER_FIXED[0]), str(PARAMETER_FIXED[3]),
                                           "锁台失败") + "\n"))
             continue
         else:
@@ -239,6 +240,7 @@ if __name__ == '__main__':
                                   PARAMETER[2], str(FREQUENCY_666), str(8), res) + "\n")
 
             PARAMETER[8] = test_result
+            PARAMETER[8] = 1000
             write_json_file("../../ekt_json/dvbt2_67_synchronisation_varying_echo.json", load_dict)
             dvbt2_67_synchronisation_varying_echo_json_to_csv(
                 "../../ekt_json/dvbt2_67_synchronisation_varying_echo.json",

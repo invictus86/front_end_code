@@ -339,6 +339,24 @@ def dvbt2_30_synchronisation_varying_echo_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbt2_31_performance_SFN_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[5]:
+            if count == 0:
+                list_required_data.append([i[0], i[1], i[2], i[3], i[4], j[0], j[1], j[2], j[3], j[4], j[5], j[6]])
+            else:
+                list_required_data.append(["", "", "", "", "", j[0], j[1], j[2], j[3], j[4], j[5], j[6]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['fft_mode', 'modulation', 'code_rate', 'guard', 'spec', 'mian_att', 'mian_delay',
+                                    'pre_att', 'pre_delay', 'post_att', 'post_delay', 'noise_cn'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbt2_51_verification_strength_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
@@ -434,7 +452,7 @@ def dvbt2_67_synchronisation_varying_echo_json_to_csv(json_path, csv_path):
     list_required_data = []
     for i in list_data:
         count = 0
-        for j in i[3]:
+        for j in i[4]:
             if count == 0:
                 list_required_data.append([i[0], i[3], j[0], j[1], j[2], j[3], j[4], j[6], j[7], j[8]])
             else:

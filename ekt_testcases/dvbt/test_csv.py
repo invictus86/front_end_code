@@ -90,22 +90,38 @@ from ekt_lib.ekt_utils import read_json_file
 
 
 
-load_dict = read_json_file("../../ekt_json/dvbt_22_minimun_signal_level_0db.json")
+# load_dict = read_json_file("../../ekt_json/dvbt_22_minimun_signal_level_0db.json")
+# list_data = load_dict.get("test_parame_result")
+# list_required_data = []
+# for i in list_data:
+#     for j in i[4]:
+#         count_j = 0
+#         for k in j[5]:
+#             print k
+#             if count_j == 0:
+#                 list_required_data.append([i[0], i[3], j[0], j[1], j[2], j[3], j[4], k[0], k[1]])
+#             else:
+#                 list_required_data.append(["", "", "", "", "", "", "", k[0], k[1]])
+#             count_j = count_j + 1
+# pd_data = pd.DataFrame(list_required_data,
+#                        columns=['frequency', 'bandwidth', 'pilot', 'modulation', 'code_rate', 'guard', 'spec_level','fading',
+#                                 'level'])
+# pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
+
+load_dict = read_json_file("../../ekt_json/dvbt_31_performance_SFN_more_than_one.json")
 list_data = load_dict.get("test_parame_result")
 list_required_data = []
 for i in list_data:
-    for j in i[4]:
-        count_j = 0
-        for k in j[5]:
-            print k
-            if count_j == 0:
-                list_required_data.append([i[0], i[3], j[0], j[1], j[2], j[3], j[4], k[0], k[1]])
-            else:
-                list_required_data.append(["", "", "", "", "", "", "", k[0], k[1]])
-            count_j = count_j + 1
+    count = 0
+    for j in i[5]:
+        if count == 0:
+            list_required_data.append([i[0], i[1], i[2], i[3], i[4], j[0], j[1], j[2], j[3], j[4], j[5], j[6]])
+        else:
+            list_required_data.append(["", "", "", "", "", j[0], j[1], j[2], j[3], j[4], j[5], j[6]])
+        count = count + 1
 pd_data = pd.DataFrame(list_required_data,
-                       columns=['frequency', 'bandwidth', 'pilot', 'modulation', 'code_rate', 'guard', 'spec_level','fading',
-                                'level'])
+                       columns=['fft_mode', 'modulation', 'code_rate', 'guard', 'spec', 'mian_att', 'mian_delay',
+                                'pre_att', 'pre_delay', 'post_att', 'post_delay', 'noise_cn'])
 pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
 
 # print(os.listdir('E:/data'))
