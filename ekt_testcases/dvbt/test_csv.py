@@ -125,29 +125,50 @@ from ekt_lib.ekt_utils import read_json_file
 # pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
 
 
-load_dict = read_json_file("../../ekt_json/dvbt_32_performance_SFN_inside_guard.json")
+# load_dict = read_json_file("../../ekt_json/dvbt_32_performance_SFN_inside_guard.json")
+# list_data = load_dict.get("test_parame_result")
+# list_required_data = []
+# for i in list_data:
+#     # count = 0
+#     for j in i[9]:
+#         count_j = 0
+#         # list_data_j = []
+#         for k in j[3]:
+#             # if count_j == 0:
+#             # list_data_j.append([k[0], k[1]])
+#             # count_j = count_j + 1
+#             if count_j == 0:
+#                 list_required_data.append(
+#                     [i[0], i[3], i[4], i[5], i[6], i[7], i[8], j[0], j[1], j[2], k[0], k[1]])
+#             else:
+#                 list_required_data.append(
+#                     ['', '', '', '', '', '', '', j[0], j[1], j[2], k[0], k[1]])
+#             count_j = count_j + 1
+# pd_data = pd.DataFrame(list_required_data,
+#                        columns=['frequency', 'bandwidth', 'fft_mode', 'modulation', 'code_rate', 'guard', 'spec',
+#                                 'mian_att', 'mian_delay',
+#                                 'pre_delay', 'pre_att', 'noise_cn'])
+# pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
+
+load_dict = read_json_file( "../../ekt_json/dvbt_33_performance_SFN_outside_guard.json")
 list_data = load_dict.get("test_parame_result")
 list_required_data = []
 for i in list_data:
-    # count = 0
-    for j in i[9]:
-        count_j = 0
-        # list_data_j = []
-        for k in j[3]:
-            # if count_j == 0:
-            # list_data_j.append([k[0], k[1]])
-            # count_j = count_j + 1
-            if count_j == 0:
-                list_required_data.append(
-                    [i[0], i[3], i[4], i[5], i[6], i[7], i[8], j[0], j[1], j[2], k[0], k[1]])
+    count = 0
+    for j in i[8]:
+        try:
+            # print i
+            if count == 0:
+                list_required_data.append([i[0], i[3], i[4], i[5], i[6], i[7], j[0], j[1], j[2], j[3]])
             else:
-                list_required_data.append(
-                    ['', '', '', '', '', '', '', j[0], j[1], j[2], k[0], k[1]])
-            count_j = count_j + 1
+                list_required_data.append(['', '', '', '', '', '', j[0], j[1], j[2], j[3]])
+        except:
+            print i
+            print j
+    count = count + 1
 pd_data = pd.DataFrame(list_required_data,
-                       columns=['frequency', 'bandwidth', 'fft_mode', 'modulation', 'code_rate', 'guard', 'spec',
-                                'mian_att', 'mian_delay',
-                                'pre_delay', 'pre_att', 'noise_cn'])
+                       columns=['frequency', 'bandwidth', 'fft_mode', 'modulation', 'code_rate', 'guard',
+                                'mian_att', 'mian_delay', 'pre_delay', 'pre_att'])
 pd_data.to_csv("../../ekt_test_report/1.csv", index=None)
 # print(os.listdir('E:/data'))
 # a.to_csv('E:/data/m.csv', sep=';', index=False)

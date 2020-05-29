@@ -3011,7 +3011,7 @@ def _test_code():
     # specan.set_fading_profile_configuration("D30Fine")
     # specan.set_fading_profile_state("1", "1", "ON")
     # specan.set_fading_profile_profile("1", "1", "SPATh")
-    # specan.set_fading_profile_pathloss("2", "2", "2 dB")
+    # specan.set_fading_profile_pathloss("3", "1", "16 dB")
     # specan.set_fading_profile_basicdelay("2", "486E-6")
     # specan.set_fading_profile_additdelay("2", "1", "486E-6")
     # specan.set_fading_profile_resuldelay("2", "2", "20E-6")
@@ -3123,10 +3123,12 @@ def _test_code():
     # specan.set_interferer_source("ATVPr")
     # specan.set_interferer_addition("BEFN")
     # specan.set_interferer_reference("ATT")
-    specan.set_interferer_attenuation("5")
+    # specan.set_interferer_attenuation("5")
     # specan.set_interferer_level("-10")
     # specan.set_interferer_frequency_offset("-1")
     # specan.set_interferer_singal_frequency_offset("-1")
+    specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str("16")))
+    # specan.set_fading_profile_pathloss("3", "1", "16 dB")
 
     # specan.set_cmd()
 

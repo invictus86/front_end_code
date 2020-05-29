@@ -6830,3 +6830,40 @@ dvbt2_67_synchronisation_varying_echo: current_time:2020-05-29 00:33:03, modulat
 dvbt2_67_synchronisation_varying_echo: current_time:2020-05-29 00:37:50, modulation: T256 coderate：PP2, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 25.30
 dvbt2_67_synchronisation_varying_echo: current_time:2020-05-29 00:42:01, modulation: T256 coderate：PP2, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 25.50
 dvbt2_67_synchronisation_varying_echo: current_time:2020-05-29 00:43:09, frequency：199 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:19:18, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:G1_16", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:26:58, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 21.60
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:29:35, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 21.40
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:33:24, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 21.00
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:35:34, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 20.60
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:38:46, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 20.30
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:42:34, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 20.10
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:42:54, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:43:14, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:43:35, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:43:55, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:44:15, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:44:35, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:44:54, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:45:15, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:45:36, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:45:56, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:46:17, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:46:37, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:46:56, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:47:17, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:47:37, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:47:57, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:48:21, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-05-29 16:48:41, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:24.6", "threshold_algorithm_result": false}
+dvbt_32_performance_SFN_inside_guard: current_time:2020-05-29 16:56:07, modulation: T64 coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 19.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-05-29 17:01:41, modulation: T64 coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 19.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-05-29 17:03:39, modulation: T64 coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 24.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-05-29 17:03:58, modulation: T64 coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:27.6", "threshold_algorithm_result": false}
+dvbt_32_performance_SFN_inside_guard: current_time:2020-05-29 17:04:16, modulation: T64 coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，{"msg": "初始值处于马赛克阈值外:27.6", "threshold_algorithm_result": false}
+dvbt_32_performance_SFN_inside_guard: current_time:2020-05-29 17:08:58, modulation: T64 coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 17.40
+dvbt_33_performance_SFN_outside_guard: current_time:2020-05-29 18:01:15, modulation: T64 coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-05-29 18:06:06, modulation: T64 coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-05-29 18:09:54, modulation: T64 coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-05-29 18:22:57, modulation: T64 coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-05-29 18:26:35, modulation: T64 coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-05-29 18:36:48, modulation: T64 coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，阈值为: 2.00

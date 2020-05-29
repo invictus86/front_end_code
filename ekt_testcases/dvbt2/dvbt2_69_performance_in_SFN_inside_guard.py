@@ -346,7 +346,7 @@ if __name__ == '__main__':
                 specan = Ektsfu(sfu_ip)
                 specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(LOSS[0])))
 
-                res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[8])
+                res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[9])
                 print(
                     "dvbt2_69_performance_in_SFN_inside_guard: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[5],

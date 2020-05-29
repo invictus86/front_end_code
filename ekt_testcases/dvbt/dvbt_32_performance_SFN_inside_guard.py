@@ -342,13 +342,14 @@ if __name__ == '__main__':
                 continue
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_pathloss("2", "1", "{} dB".format(str(FADING[0])))
-            specan = Ektsfu(sfu_ip)
+
             if FADING[2] < 0:
                 main_delay = abs(FADING[2])
                 per_delay = 0
             else:
                 main_delay = FADING[1]
                 per_delay = FADING[2]
+            specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_basicdelay("2", "{}E-6".format(str(main_delay)))
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_basicdelay("3", "{}E-6".format(str(per_delay)))
