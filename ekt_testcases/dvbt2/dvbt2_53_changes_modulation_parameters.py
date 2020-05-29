@@ -111,7 +111,7 @@ else:
 #     specan = Ektsfu(sfu_ip)
 #     specan.set_frequency_frequency_frequency(str(FREQUENCY_666) + "MHz")
 #     specan = Ektsfu(sfu_ip)
-#     specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str(8)))
+#     specan.set_digitaltv_framing_channelbandwidth_dvbt2("BW_{}".format(str(8)))
 #     specan = Ektsfu(sfu_ip)
 #     specan.set_level_level_offset(str(LEVEL_OFFSET_666))
 #     specan = Ektsfu(sfu_ip)

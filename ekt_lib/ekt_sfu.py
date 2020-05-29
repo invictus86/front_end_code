@@ -3126,8 +3126,9 @@ def _test_code():
     # specan.set_interferer_attenuation("5")
     # specan.set_interferer_level("-10")
     # specan.set_interferer_frequency_offset("-1")
-    # specan.set_interferer_singal_frequency_offset("-1")
-    specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str("16")))
+    # specan.set_interferer_singal_frequency_offs99et("-1")
+    # specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str("16")))
+    specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str("8")))
     # specan.set_fading_profile_pathloss("3", "1", "16 dB")
 
     # specan.set_cmd()

@@ -269,7 +269,7 @@ if __name__ == '__main__':
         specan = Ektsfu(sfu_ip)
         specan.set_frequency_frequency_frequency(str(PARAMETER[0]) + "MHz")
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str(PARAMETER[3])))
+        specan.set_digitaltv_framing_channelbandwidth_dvbt2("BW_{}".format(str(PARAMETER[3])))
         specan = Ektsfu(sfu_ip)
         specan.set_level_level_offset(str(PARAMETER[1]))
         specan = Ektsfu(sfu_ip)
