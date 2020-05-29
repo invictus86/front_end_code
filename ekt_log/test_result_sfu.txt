@@ -6873,3 +6873,26 @@ dvbt_33_performance_SFN_outside_guard: current_time:2020-05-29 18:51:20, modulat
 dvbt_33_performance_SFN_outside_guard: current_time:2020-05-29 18:56:45, modulation: T64 coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，阈值为: 1.00
 dvbt_33_performance_SFN_outside_guard: current_time:2020-05-29 19:01:59, modulation: T64 coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，阈值为: 0.00
 dvbt2_70_performance_in_frequency_outside: current_time:2020-05-29 19:41:06, modulation: T256 coderate：PP4, frequency：199 MHz，bandwidth：7 MHZ，阈值为: 1.00
+dvbt2_68_performance_in_SFN_echo: current_time:2020-05-29 19:49:41, modulation: T256 coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 22.10
+dvbt_31_performance_SFN_more_than_one: current_time:2020-05-29 19:57:13, modulation: T64 coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，阈值为: 20.60
+dvbt2_34_centre_frequencies: current_time:2020-05-29 20:00:50, modulation: T64, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，False
+dvbt2_34_centre_frequencies: current_time:2020-05-29 20:03:14, modulation: T64, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:09:35, modulation: T64, coderate：R2_3, frequency：176.95 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:12:46, modulation: T64, coderate：R2_3, frequency：177 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:14:11, modulation: T64, coderate：R2_3, frequency：177.05 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:15:36, modulation: T64, coderate：R2_3, frequency：225.95 MHz，stb_frequency：226 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:17:00, modulation: T64, coderate：R2_3, frequency：226 MHz，stb_frequency：226 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:18:24, modulation: T64, coderate：R2_3, frequency：226.05 MHz，stb_frequency：226 MHz，bandwidth：7 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:19:32, frequency：474 MHz，stb_frequency：473 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:20:59, modulation: T64, coderate：R2_3, frequency：474 MHz，stb_frequency：474 MHz，bandwidth：8 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:22:26, modulation: T64, coderate：R2_3, frequency：474.05 MHz，stb_frequency：474 MHz，bandwidth：8 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:23:49, modulation: T64, coderate：R2_3, frequency：857.95 MHz，stb_frequency：858 MHz，bandwidth：8 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:25:14, modulation: T64, coderate：R2_3, frequency：858 MHz，stb_frequency：858 MHz，bandwidth：8 MHZ，False
+dvbt2_35_frequency_offset: current_time:2020-05-29 20:26:39, modulation: T64, coderate：R2_3, frequency：858.05 MHz，stb_frequency：858 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes: current_time:2020-05-29 20:31:59, fft_size: PP7, modulation: T4,coderate：R1_2, PIL:M32E, guard:G1128, frequency：666.0 MHz，bandwidth：8 MHZ，True
+dvbt2_37_modes: current_time:2020-05-29 20:32:20, fft_size: PP4, modulation: T4,coderate：R1_2, PIL:M32E, guard:G1_32, frequency：666.0 MHz，bandwidth：8 MHZ，True
+dvbt2_37_modes: current_time:2020-05-29 20:32:41, fft_size: PP2, modulation: T4,coderate：R1_2, PIL:M32E, guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，True
+dvbt2_37_modes: current_time:2020-05-29 20:33:02, fft_size: PP2, modulation: T4,coderate：R1_2, PIL:M32E, guard:G19256, frequency：666.0 MHz，bandwidth：8 MHZ，True
+dvbt2_37_modes: current_time:2020-05-29 20:33:24, fft_size: PP2, modulation: T4,coderate：R1_2, PIL:M32E, guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，True
+dvbt2_37_modes: current_time:2020-05-29 20:33:45, fft_size: PP2, modulation: T4,coderate：R1_2, PIL:M32E, guard:G19128, frequency：666.0 MHz，bandwidth：8 MHZ，True
+dvbt2_37_modes: current_time:2020-05-29 20:34:12, fft_size: PP1, modulation: T4,coderate：R1_2, PIL:M8K, guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False

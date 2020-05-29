@@ -38,7 +38,7 @@ def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
         logging.info("level:{}, 马赛克结果:true".format(test_level_data))
         specan = Ektsfu(sfu_ip)
         specan.set_level_level_level("dBm", str(can_play_data))
-        return mosaic_algorithm_result
+        return mosaic_algorithm_result, True
     elif res == True:
         list_image = capture_image(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
         specan = Ektsfu(sfu_ip)
@@ -51,7 +51,7 @@ def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
             "msg": dict_result
         }
         logging.info("level:{}, 马赛克结果:{}".format(test_level_data, mosaic_result))
-        return mosaic_algorithm_result
+        return mosaic_algorithm_result, mosaic_result
 
 
 def mosaic_algorithm_noise_cn(sfu_ip, test_cn_data, can_play_data):

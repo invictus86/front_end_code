@@ -6,9 +6,10 @@ import json
 import datetime
 from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
+from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency
+from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency, write_json_file, read_json_file, dvbt2_37_modes_json_to_csv
 
 FREQUENCY_666 = 666.0
 
@@ -50,6 +51,22 @@ dict_config_data = {
     "CODE_RATE": [CODE_RATE_1_2, CODE_RATE_3_5, CODE_RATE_2_3, CODE_RATE_3_4, CODE_RATE_4_5, CODE_RATE_5_6]
 }
 
+my_file = Path("../../ekt_json/dvbt2_37_modes.json")
+if my_file.exists():
+    pass
+else:
+    dict_test_parame_result = {}
+    list_test_parame_result = []
+
+    for MODULATION in dict_config_data.get("MODULATION"):
+        for CODE_RATE in dict_config_data.get("CODE_RATE"):
+            for FFTSIZE_PIL_LEVEL_GUARD in FFTSIZE_PIL_LEVEL_GUARD_LIST:
+                list_test_parame_result.append(
+                    [MODULATION, CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[0], FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[2],
+                     FFTSIZE_PIL_LEVEL_GUARD[3], None])
+    dict_test_parame_result["test_parame_result"] = list_test_parame_result
+    write_json_file("../../ekt_json/dvbt2_37_modes.json", dict_test_parame_result)
+
 if __name__ == '__main__':
     """
     测试流程：
@@ -61,6 +78,7 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
+    load_dict = read_json_file("../../ekt_json/dvbt2_37_modes.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
@@ -122,49 +140,37 @@ if __name__ == '__main__':
     else:
         write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
 
-    for MODULATION in dict_config_data.get("MODULATION"):
-        specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_constellation_dvbt(MODULATION)
-        for CODE_RATE in dict_config_data.get("CODE_RATE"):
-            specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_coderate_dvbt(CODE_RATE)
-            for FFTSIZE_PIL_LEVEL_GUARD in FFTSIZE_PIL_LEVEL_GUARD_LIST:
-                specan = Ektsfu(sfu_ip)
-                specan.set_digitaltv_framing_fftsize_dvbt2(FFTSIZE_PIL_LEVEL_GUARD[0])
-                specan = Ektsfu(sfu_ip)
-                specan.set_digitaltv_framing_pilot_dvbt2(FFTSIZE_PIL_LEVEL_GUARD[1])
-                specan = Ektsfu(sfu_ip)
-                specan.set_digitaltv_framing_ldata_dvbt2(FFTSIZE_PIL_LEVEL_GUARD[2])
-                specan = Ektsfu(sfu_ip)
-                specan.set_digitaltv_framing_guard_dvbt2(FFTSIZE_PIL_LEVEL_GUARD[3])
+    for PARAME in load_dict.get("test_parame_result"):
+        if PARAME[6] == None:
+            pass
+        else:
+            continue
 
-                try:
-                    start_data_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
-                    # print "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                    #     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFTSIZE_PIL_LEVEL_GUARD[0], MODULATION,
-                    #     CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3], FREQUENCY_666, str("8"),
-                    #     start_data_result.get("detect_mosic_result"))
-                    write_test_result("../../ekt_log/test_result_sfu.txt",
-                                      "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          FFTSIZE_PIL_LEVEL_GUARD[0],
-                                          MODULATION, CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3],
-                                          FREQUENCY_666, str("8"),
-                                          start_data_result.get("detect_mosic_result")) + "\n")
-                except:
-                    start_data_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
-                    # print "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                    #     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFTSIZE_PIL_LEVEL_GUARD[0], MODULATION,
-                    #     CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3], FREQUENCY_666, str("8"),
-                    #     start_data_result.get("detect_mosic_result"))
-                    write_test_result("../../ekt_log/test_result_sfu.txt",
-                                      "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          FFTSIZE_PIL_LEVEL_GUARD[0],
-                                          MODULATION, CODE_RATE, FFTSIZE_PIL_LEVEL_GUARD[1], FFTSIZE_PIL_LEVEL_GUARD[3],
-                                          FREQUENCY_666, str("8"),
-                                          start_data_result.get("detect_mosic_result")) + "\n")
-                """
-                进行机顶盒的频率修改或其他参数的修改
-                读取误码率或者判断机顶盒是否含有马赛克
-                """
+        specan = Ektsfu(sfu_ip)
+        specan.set_digitaltv_coding_constellation_dvbt(PARAME[0])
+        specan = Ektsfu(sfu_ip)
+        specan.set_digitaltv_coding_coderate_dvbt(PARAME[1])
+        specan = Ektsfu(sfu_ip)
+        specan.set_digitaltv_framing_fftsize_dvbt2(PARAME[2])
+        specan = Ektsfu(sfu_ip)
+        specan.set_digitaltv_framing_pilot_dvbt2(PARAME[3])
+        specan = Ektsfu(sfu_ip)
+        specan.set_digitaltv_framing_ldata_dvbt2(PARAME[4])
+        specan = Ektsfu(sfu_ip)
+        specan.set_digitaltv_framing_guard_dvbt2(PARAME[5])
+
+        start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
+        print (
+            "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAME[3], PARAME[0],
+                PARAME[1], PARAME[2], PARAME[5], FREQUENCY_666, str("8"), start_data_result.get("detect_mosic_result")))
+        write_test_result("../../ekt_log/test_result_sfu.txt",
+                          "dvbt2_37_modes: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAME[3], PARAME[0],
+                              PARAME[1], PARAME[2], PARAME[5], FREQUENCY_666, str("8"),
+                              start_data_result.get("detect_mosic_result")) + "\n")
+        PARAME[6] = mosaic_result
+        write_json_file("../../ekt_json/dvbt2_37_modes.json", load_dict)
+        dvbt2_37_modes_json_to_csv(
+            "../../ekt_json/dvbt2_37_modes.json",
+            "../../ekt_test_report/dvbt2_37_modes.csv")
