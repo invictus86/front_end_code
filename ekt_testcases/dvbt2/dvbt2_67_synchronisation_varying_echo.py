@@ -240,7 +240,6 @@ if __name__ == '__main__':
                                   PARAMETER[2], str(FREQUENCY_666), str(8), res) + "\n")
 
             PARAMETER[8] = test_result
-            PARAMETER[8] = 1000
             write_json_file("../../ekt_json/dvbt2_67_synchronisation_varying_echo.json", load_dict)
             dvbt2_67_synchronisation_varying_echo_json_to_csv(
                 "../../ekt_json/dvbt2_67_synchronisation_varying_echo.json",
