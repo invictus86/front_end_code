@@ -140,9 +140,8 @@ if __name__ == '__main__':
             mosaic_algorithm(sfe_ip, FREQUENCY_OFFSET[2], "-50")
             specan = Ektsfe(sfe_ip)
             specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
-            start_data_result, mosaic_result = mosaic_algorithm(sfe_ip, FREQUENCY_OFFSET[2], "-50")
-            print (
-            "dvbs_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+            start_data_result,mosaic_result  = mosaic_algorithm(sfe_ip, FREQUENCY_OFFSET[2], "-50")
+            print ("dvbs_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                 FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
                 start_data_result.get("detect_mosic_result")))
@@ -155,4 +154,4 @@ if __name__ == '__main__':
             code_rate_cn[1] = mosaic_result
             write_json_file("../../ekt_json/dvbs_signal_tracking_frequency_range.json", load_dict)
             dvbs_signal_tracking_frequency_range_json_to_csv("../../ekt_json/dvbs_signal_tracking_frequency_range.json",
-                                                             "../../ekt_test_report/dvbs_signal_tracking_frequency_range.csv")
+                                                                "../../ekt_test_report/dvbs_signal_tracking_frequency_range.csv")
