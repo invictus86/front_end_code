@@ -47,10 +47,7 @@ else:
 
         list_test_parame_result.append(
             [PARAMETER[0], PARAMETER[1], PARAMETER[2], PARAMETER[3], list_test_result])
-
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
-    # print dict_test_parame_result
-
     write_json_file("../../ekt_json/dvbt_14_verification_signal_quality_indicator_sqi.json",
                     dict_test_parame_result)
 

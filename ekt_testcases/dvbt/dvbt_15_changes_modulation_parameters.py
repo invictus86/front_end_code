@@ -51,9 +51,7 @@ else:
 
     for PARAMETER in PARAMETER_LIST:
         list_test_parame_result.append([PARAMETER[0], PARAMETER[1], PARAMETER[2], PARAMETER[3], None])
-
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
-
     write_json_file("../../ekt_json/dvbt_15_changes_modulation_parameters.json",
                     dict_test_parame_result)
 

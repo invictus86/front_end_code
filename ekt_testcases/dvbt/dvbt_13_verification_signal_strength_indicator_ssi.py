@@ -48,12 +48,8 @@ else:
         list_test_result = []
         for LEVEL in LEVEL_LIST:
             list_test_result.append([LEVEL, None])
-
         list_test_parame_result.append([PARAMETER, list_test_result])
-
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
-    # print dict_test_parame_result
-
     write_json_file("../../ekt_json/dvbt_13_verification_signal_strength_indicator_ssi.json",
                     dict_test_parame_result)
 
