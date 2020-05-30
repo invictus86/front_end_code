@@ -7087,3 +7087,12 @@ dvbt_21_receiver_signal_input__min_level: current_time:2020-05-30 12:10:49, modu
 dvbt_21_receiver_signal_input__min_level: current_time:2020-05-30 12:16:01, modulation: T4, coderate：R3_4, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -98.70
 dvbt_21_receiver_signal_input__min_level: current_time:2020-05-30 12:21:18, modulation: T4, coderate：R5_6, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -97.60
 dvbt_5_frequency_offset: current_time:2020-05-30 13:02:04, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，True
+dvbt_5_frequency_offset: current_time:2020-05-30 13:04:20, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，True
+dvbt_5_frequency_offset: current_time:2020-05-30 13:04:51, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 13:05:20, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 13:05:49, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 13:06:18, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 13:06:48, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 13:07:12, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，True
+dvbt_5_frequency_offset: current_time:2020-05-30 13:07:37, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，True
+dvbt_5_frequency_offset: current_time:2020-05-30 13:09:34, modulation: T256,coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，False

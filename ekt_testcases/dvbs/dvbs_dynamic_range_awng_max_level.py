@@ -6,9 +6,11 @@ import json
 import datetime
 from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfe import Ektsfe
+from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFE import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
+    dvbs_dynamic_max_json_to_csv
 
 SYMBOL_RATE_5M = ["5.000000e6", "05000"]
 SYMBOL_RATE_10M = ["10.000000e6", "10000"]
@@ -17,6 +19,28 @@ SYMBOL_RATE_45M = ["45.000000e6", "45000"]
 
 dict_config_data = {
     "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
+
+my_file = Path("../../ekt_json/dvbs_dynamic_range_awng_max_level.json")
+if my_file.exists():
+    pass
+else:
+    dict_test_parame_result = {}
+    list_test_parame_result = []
+
+    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
+    DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
+    DVBS_QPSK_CODE_RATE_CN = dict_data.get("DVBS_QPSK_CODE_RATE_CN")
+
+    for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
+        for FREQUENCY_LEVEL_OFFSET in DVBS_S2_FREQUENCY_LEVEL_OFFSET:
+            list_test_result = []
+            for code_rate_cn in DVBS_QPSK_CODE_RATE_CN:
+                list_test_result.append([code_rate_cn, None])
+            list_test_parame_result.append([SYMBOL_RATE, FREQUENCY_LEVEL_OFFSET, list_test_result])
+
+    dict_test_parame_result["test_parame_result"] = list_test_parame_result
+
+    write_json_file("../../ekt_json/dvbs_dynamic_range_awng_max_level.json", dict_test_parame_result)
 
 if __name__ == '__main__':
     """
@@ -29,6 +53,7 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
+    load_dict = read_json_file("../../ekt_json/dvbs_dynamic_range_awng_max_level.json")
     sfe_ip = "192.168.1.47"
     specan = Ektsfe(sfe_ip)
     specan.clean_reset()
@@ -40,90 +65,82 @@ if __name__ == '__main__':
     specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
 
-    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
-    DVBS_QPSK_CODE_RATE_CN = dict_data.get("DVBS_QPSK_CODE_RATE_CN")
-    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
+    for PARAMETER in load_dict.get("test_parame_result"):
+        loop_lock_mark = False
+        for check_list in PARAMETER[2]:
+            if check_list[1] == None:
+                loop_lock_mark = True
+                break
+        if loop_lock_mark == True:
+            pass
+        else:
+            continue
 
-    for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
-        del specan
+        SYMBOL_RATE = PARAMETER[0]
+        FREQUENCY_LEVEL_OFFSET = PARAMETER[1]
+
         specan = Ektsfe(sfe_ip)
         specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE[0])
-        for FREQUENCY_LEVEL_OFFSET in DVBS_S2_FREQUENCY_LEVEL_OFFSET:
-            del specan
-            specan = Ektsfe(sfe_ip)
-            specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
-            specan = Ektsfe(sfe_ip)
-            # specan.set_level_level_level("-10 dBm")
-            specan.set_level_level_level(str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])) + " dBm")
 
-            net = ekt_net.EktNetClient('192.168.1.24', 9999)
-            # print str(FREQUENCY_LEVEL_OFFSET[0])
-            # print type(str(FREQUENCY_LEVEL_OFFSET[0]))
-            net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
-            time.sleep(1)
-            del net
-            net = ekt_net.EktNetClient('192.168.1.24', 9999)
-            net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
-            time.sleep(1)
-            del net
+        specan = Ektsfe(sfe_ip)
+        specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
+        specan = Ektsfe(sfe_ip)
+        specan.set_level_level_level(str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])) + " dBm")
 
-            """
-            触发stb-tester进行频率和符号率设置
-            """
-            stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        ["tests/front_end_test/testcases.py::test_continuous_button"],
-                                        "auto_front_end_test", "DSD4614iALM")
-            net = ekt_net.EktNetClient('192.168.1.24', 9999)
-            lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
-            if lock_state == "1":
+        net = ekt_net.EktNetClient('192.168.1.24', 9999)
+        net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
+        time.sleep(1)
+        del net
+        net = ekt_net.EktNetClient('192.168.1.24', 9999)
+        net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
+        time.sleep(1)
+        del net
+
+        """
+        触发stb-tester进行频率和符号率设置
+        """
+        stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+                                    ["tests/front_end_test/testcases.py::test_continuous_button"], "auto_front_end_test", "DSD4614iALM")
+        net = ekt_net.EktNetClient('192.168.1.24', 9999)
+        lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
+        if lock_state == "1":
+            pass
+        elif lock_state == "0":
+            write_test_result("../../ekt_log/test_result_sfe.txt",
+                              (
+                                      "dvbs_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                                          str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])), "锁台失败") + "\n"))
+            continue
+        else:
+            write_test_result("../../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
+            continue
+        for code_rate_cn in PARAMETER[2]:
+            if code_rate_cn[1] == None:
                 pass
-            elif lock_state == "0":
-                write_test_result("../../ekt_log/test_result_sfe.txt",
-                                  (
-                                          "dvbs_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
-                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                              str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                              str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])), "锁台失败") + "\n"))
-                continue
             else:
-                write_test_result("../../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
                 continue
-            for code_rate_cn in DVBS_QPSK_CODE_RATE_CN:
-                del specan
-                specan = Ektsfe(sfe_ip)
-                specan.set_digitaltv_coding_coderate(code_rate_cn[0])
-                time.sleep(1)
-                try:
-                    start_data_result = mosaic_algorithm(sfe_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
-                                                         "-10")
-                    print "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
-                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                        str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                        str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
-                        start_data_result.get("detect_mosic_result"))
-                    write_test_result("../../ekt_log/test_result_sfe.txt",
-                                      "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                          str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
-                                          start_data_result.get("detect_mosic_result")) + "\n")
-                except:
-                    start_data_result = mosaic_algorithm(sfe_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
-                                                         "-10")
-                    print "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
-                        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                        str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                        str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
-                        start_data_result.get("detect_mosic_result"))
-                    write_test_result("../../ekt_log/test_result_sfe.txt",
-                                      "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                                          str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                          str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
-                                          start_data_result.get("detect_mosic_result")) + "\n")
+            specan = Ektsfe(sfe_ip)
+            specan.set_digitaltv_coding_coderate(code_rate_cn[0][0])
+            time.sleep(1)
 
-                """
-                进行机顶盒的频率修改或其他参数的修改
-                读取误码率或者判断机顶盒是否含有马赛克
-                """
+            start_data_result, mosaic_result = mosaic_algorithm(sfe_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                                                "-10")
+            print (
+                "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                    datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
+                    str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                    str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                    start_data_result.get("detect_mosic_result")))
+            write_test_result("../../ekt_log/test_result_sfe.txt",
+                              "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
+                                  str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                                  str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                  start_data_result.get("detect_mosic_result")) + "\n")
+
+            code_rate_cn[1] = mosaic_result
+            write_json_file("../../ekt_json/dvbs_dynamic_range_awng_max_level.json", load_dict)
+            dvbs_dynamic_max_json_to_csv("../../ekt_json/dvbs_dynamic_range_awng_max_level.json",
+                                         "../../ekt_test_report/dvbs_dynamic_range_awng_max_level.csv")
