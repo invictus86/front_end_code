@@ -241,6 +241,23 @@ def dvbt_15_changes_modulation_parameters_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbt_19_gaussian_channel_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[1]:
+            if count == 0:
+                list_required_data.append([i[0][0], j[0], j[1], j[2], j[3], j[4]])
+            else:
+                list_required_data.append(["", j[0], j[1], j[2], j[3], j[4]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'guard', 'spec', 'noise'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbt_20_performance_0db_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")

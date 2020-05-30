@@ -118,8 +118,17 @@ if __name__ == '__main__':
     # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
     # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
-    # for FREQUENCY_LEVEL_OFFSET in DVBT_T2_FREQUENCY_LEVEL_OFFSET:
     for FREQUENCY_LEVEL_OFFSET in load_dict.get("test_parame_result"):
+        loop_lock_mark = False
+        for PARAMETER in FREQUENCY_LEVEL_OFFSET[1]:
+            if PARAMETER[3] == None:
+                loop_lock_mark = True
+                break
+        if loop_lock_mark == True:
+            pass
+        else:
+            continue
+
         if FREQUENCY_LEVEL_OFFSET[0][0] < 400:
             CURRENT_BANDWIDTH = 7
             specan = Ektsfu(sfu_ip)
@@ -169,6 +178,10 @@ if __name__ == '__main__':
             continue
         # for MODULATION_CODERATE_SPEC in MODULATION__CODERATE_SPEC_LIST:
         for MODULATION_CODERATE_SPEC in FREQUENCY_LEVEL_OFFSET[1]:
+            if MODULATION_CODERATE_SPEC[3] == None:
+                pass
+            else:
+                continue
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_constellation_dvbt2(MODULATION_CODERATE_SPEC[0])
             specan = Ektsfu(sfu_ip)

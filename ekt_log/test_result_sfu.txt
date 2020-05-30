@@ -7076,3 +7076,7 @@ dvbt_5_frequency_offset: current_time:2020-05-30 11:17:28, modulation: T64, code
 dvbt_5_frequency_offset: current_time:2020-05-30 11:18:54, modulation: T64, coderate：R2_3, frequency：474.05 MHz，stb_frequency：474 MHz，bandwidth：8 MHZ，False
 dvbt_5_frequency_offset: current_time:2020-05-30 11:20:18, modulation: T64, coderate：R2_3, frequency：857.95 MHz，stb_frequency：858 MHz，bandwidth：8 MHZ，False
 dvbt_7_modes: current_time:2020-05-30 11:23:09, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-30 11:23:31, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_19_performance_gaussian_channel: current_time:2020-05-30 11:36:32, modulation: T4 coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-05-30 11:41:11, modulation: T4 coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 3.30
+dvbt_19_performance_gaussian_channel: current_time:2020-05-30 11:50:50, modulation: T4 coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:10.0", "threshold_algorithm_result": false}
