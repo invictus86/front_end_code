@@ -211,6 +211,16 @@ def dvbs_symbol_err_rate_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbs_symbol_rate_step_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        list_required_data.append([i[0][0], i[0][1], i[1]])
+    pd_data = pd.DataFrame(list_required_data, columns=['sfu_symbol_rate', 'stb_symbol_rate', 'test_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbs2_dynamic_min_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
