@@ -7059,3 +7059,4 @@ dvbt2_37_modes: current_time:2020-05-29 21:34:16, fft_size: PP2, modulation: T25
 dvbt2_37_modes: current_time:2020-05-29 21:34:42, fft_size: PP1, modulation: T256,coderate：R5_6, PIL:M8K, guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False
 dvbt2_57_performance_gaussian_channel: current_time:2020-05-30 10:01:25, modulation: T4 coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 2.10
 dvbt2_57_performance_gaussian_channel_resuming_measuremen: current_time:2020-05-30 10:10:00, modulation: T4 coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 1.60
+dvbt2_59_receiver_signal_input__min_level: current_time:2020-05-30 10:25:39, modulation: T4, coderate：R1_2, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -101.30

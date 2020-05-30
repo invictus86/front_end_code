@@ -163,7 +163,17 @@ def dvbs2_dynamic_min_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_13_verification_strength_json_to_csv(json_path, csv_path):
+def dvbt_4_centre_frequencies_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        list_required_data.append([i[0], i[1], i[2]])
+    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'bandwidth', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt_13_verification_strength_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     # print list_data
@@ -181,7 +191,7 @@ def dvbt2_13_verification_strength_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_14_verification_quality_json_to_csv(json_path, csv_path):
+def dvbt_14_verification_quality_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     # print list_data
@@ -199,7 +209,7 @@ def dvbt2_14_verification_quality_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_15_changes_modulation_parameters_to_csv(json_path, csv_path):
+def dvbt_15_changes_modulation_parameters_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     # print list_data
@@ -211,7 +221,7 @@ def dvbt2_15_changes_modulation_parameters_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_20_performance_0db_to_csv(json_path, csv_path):
+def dvbt_20_performance_0db_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     # print list_data
@@ -230,7 +240,7 @@ def dvbt2_20_performance_0db_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_22_minimun_level_0db_to_csv(json_path, csv_path):
+def dvbt_22_minimun_level_0db_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     list_required_data = []
@@ -251,7 +261,7 @@ def dvbt2_22_minimun_level_0db_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_24_receiver_maximum_level_to_csv(json_path, csv_path):
+def dvbt_24_receiver_maximum_level_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     list_required_data = []
@@ -262,7 +272,7 @@ def dvbt2_24_receiver_maximum_level_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_25_analogue_signal_other_json_to_csv(json_path, csv_path):
+def dvbt_25_analogue_signal_other_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     # print list_data
@@ -280,7 +290,7 @@ def dvbt2_25_analogue_signal_other_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_28_analogue_signal_other_json_to_csv(json_path, csv_path):
+def dvbt_28_analogue_signal_other_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     # print list_data
@@ -298,7 +308,7 @@ def dvbt2_28_analogue_signal_other_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_29_performance_time_varying_to_csv(json_path, csv_path):
+def dvbt_29_performance_time_varying_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     list_required_data = []
@@ -310,7 +320,7 @@ def dvbt2_29_performance_time_varying_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_30_synchronisation_varying_echo_json_to_csv(json_path, csv_path):
+def dvbt_30_synchronisation_varying_echo_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     list_required_data = []
@@ -322,7 +332,7 @@ def dvbt2_30_synchronisation_varying_echo_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_31_performance_SFN_json_to_csv(json_path, csv_path):
+def dvbt_31_performance_SFN_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     list_required_data = []
@@ -340,7 +350,7 @@ def dvbt2_31_performance_SFN_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_32_performance_SFN_inside_guard_json_to_csv(json_path, csv_path):
+def dvbt_32_performance_SFN_inside_guard_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     list_required_data = []
@@ -360,7 +370,7 @@ def dvbt2_32_performance_SFN_inside_guard_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbt2_33_performance_SFN_outside_guard_json_to_csv(json_path, csv_path):
+def dvbt_33_performance_SFN_outside_guard_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     list_required_data = []

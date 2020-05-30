@@ -10,7 +10,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency, write_json_file, read_json_file, \
-    dvbt2_13_verification_strength_json_to_csv
+    dvbt_13_verification_strength_json_to_csv
 
 MODULATION_64QAM = "T64"
 CODE_RATE_2_3 = "R2_3"
@@ -160,6 +160,6 @@ if __name__ == '__main__':
             LEVEL[1] = strength_num
             write_json_file(
                 "../../ekt_json/dvbt_13_verification_signal_strength_indicator_ssi.json", load_dict)
-            dvbt2_13_verification_strength_json_to_csv(
+            dvbt_13_verification_strength_json_to_csv(
                 "../../ekt_json/dvbt_13_verification_signal_strength_indicator_ssi.json",
                 "../../ekt_test_report/dvbt_13_verification_signal_strength_indicator_ssi.csv")

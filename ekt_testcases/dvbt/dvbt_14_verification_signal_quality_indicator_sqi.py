@@ -10,7 +10,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency, write_json_file, read_json_file, \
-    dvbt2_14_verification_quality_json_to_csv
+    dvbt_14_verification_quality_json_to_csv
 
 MODULATION_64QAM = "T64"
 
@@ -176,6 +176,6 @@ if __name__ == '__main__':
             CN[1] = quality_num
             write_json_file(
                 "../../ekt_json/dvbt_14_verification_signal_quality_indicator_sqi.json", load_dict)
-            dvbt2_14_verification_quality_json_to_csv(
+            dvbt_14_verification_quality_json_to_csv(
                 "../../ekt_json/dvbt_14_verification_signal_quality_indicator_sqi.json",
                 "../../ekt_test_report/dvbt_14_verification_signal_quality_indicator_sqi.csv")

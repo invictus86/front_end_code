@@ -10,7 +10,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_interferer_attenuation_step_by_step
 from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, find_level_offset_by_frequency, \
-    dvbt2_28_analogue_signal_other_json_to_csv
+    dvbt_28_analogue_signal_other_json_to_csv
 
 FFT_SIZE_8K = "M8K"
 
@@ -188,6 +188,6 @@ if __name__ == '__main__':
 
             PARAMETER[5] = str("%.2f" % (float(test_result)))
             write_json_file("../../ekt_json/dvbt_28_co_channek_interference_analogue.json", load_dict)
-            dvbt2_28_analogue_signal_other_json_to_csv(
+            dvbt_28_analogue_signal_other_json_to_csv(
                 "../../ekt_json/dvbt_28_co_channek_interference_analogue.json",
                 "../../ekt_test_report/dvbt_28_co_channek_interference_analogue.csv")

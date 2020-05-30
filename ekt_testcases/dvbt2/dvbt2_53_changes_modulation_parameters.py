@@ -10,7 +10,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency, write_json_file, read_json_file, \
-    dvbt2_15_changes_modulation_parameters_to_csv
+    dvbt_15_changes_modulation_parameters_to_csv
 
 MODULATION_QPSK = "T4"
 MODULATION_16QAM = "T16"
@@ -164,6 +164,6 @@ else:
 #         PARAMETER[4] = start_data_result.get("detect_mosic_result")
 #         write_json_file(
 #             "../../ekt_json/dvbt2_53_changes_modulation_parameters.json", load_dict)
-#         dvbt2_15_changes_modulation_parameters_to_csv(
+#         dvbt_15_changes_modulation_parameters_to_csv(
 #             "../../ekt_json/dvbt2_53_changes_modulation_parameters.json",
 #             "../../ekt_test_report/dvbt2_53_changes_modulation_parameters.csv")

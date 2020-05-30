@@ -10,7 +10,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, find_level_offset_by_frequency, \
-    dvbt2_24_receiver_maximum_level_to_csv
+    dvbt_24_receiver_maximum_level_to_csv
 
 FFT_SIZE_8K = "M8K"
 
@@ -139,6 +139,6 @@ if __name__ == '__main__':
         PARAMETER[5] = start_data_result.get("detect_mosic_result")
         write_json_file(
             "../../ekt_json/dvbt_24_receiver_signal_maximum_level.json", load_dict)
-        dvbt2_24_receiver_maximum_level_to_csv(
+        dvbt_24_receiver_maximum_level_to_csv(
             "../../ekt_json/dvbt_24_receiver_signal_maximum_level.json",
             "../../ekt_test_report/dvbt_24_receiver_signal_maximum_level.csv")
