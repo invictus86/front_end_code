@@ -37,7 +37,6 @@ else:
             for code_rate_cn in DVBS_QPSK_CODE_RATE_CN:
                 list_test_result.append([code_rate_cn, None])
             list_test_parame_result.append([SYMBOL_RATE, FREQUENCY_LEVEL_OFFSET, list_test_result])
-
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
 
     write_json_file("../../ekt_json/dvbs_dynamic_range_awng_max_level.json", dict_test_parame_result)
@@ -59,7 +58,6 @@ if __name__ == '__main__':
     specan.clean_reset()
     specan = Ektsfe(sfe_ip)
     specan.preset_instrument()
-    # specan.timeout = 2000
     specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_source("TSPL")
     specan = Ektsfe(sfe_ip)
@@ -123,7 +121,6 @@ if __name__ == '__main__':
                 continue
             specan = Ektsfe(sfe_ip)
             specan.set_digitaltv_coding_coderate(code_rate_cn[0][0])
-            time.sleep(1)
 
             start_data_result, mosaic_result = mosaic_algorithm(sfe_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                                                 "-10")

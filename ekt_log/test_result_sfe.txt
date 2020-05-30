@@ -966,3 +966,25 @@ dvbs_dynamic_range_awng_max_level: current_time:2020-05-30 14:09:52, coderate：
 dvbs_dynamic_range_awng_max_level: current_time:2020-05-30 14:10:11, coderate：R3_4, frequency：950 MHz，symbol_rate：05000 Ksym/s，level：-5.40 dbm, 马赛克检测结果：False
 dvbs_dynamic_range_awng_max_level: current_time:2020-05-30 14:12:03, coderate：R5_6, frequency：950 MHz，symbol_rate：05000 Ksym/s，level：-5.40 dbm, 马赛克检测结果：False
 dvbs_dynamic_range_awng_max_level: current_time:2020-05-30 14:12:24, coderate：R7_8, frequency：950 MHz，symbol_rate：05000 Ksym/s，level：-5.40 dbm, 马赛克检测结果：False
+dvbs_dynamic_range_awng_min_level: current_time:2020-05-30 14:47:51, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，阈值为: -93.90
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:04:57, coderate：R1_2, frequency：951 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:07:08, coderate：R2_3, frequency：951 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:07:28, coderate：R3_4, frequency：951 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:12:39, coderate：R5_6, frequency：951 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:19:53, coderate：R7_8, frequency：951 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:21:02, coderate：R1_2, frequency：1551 MHz，symbol_rate：05000 Ksym/s，level：-45.90 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:21:23, coderate：R2_3, frequency：1551 MHz，symbol_rate：05000 Ksym/s，level：-45.90 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:21:42, coderate：R3_4, frequency：1551 MHz，symbol_rate：05000 Ksym/s，level：-45.90 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:22:02, coderate：R5_6, frequency：1551 MHz，symbol_rate：05000 Ksym/s，level：-45.90 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:22:22, coderate：R7_8, frequency：1551 MHz，symbol_rate：05000 Ksym/s，level：-45.90 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:23:33, coderate：R1_2, frequency：2149 MHz，symbol_rate：05000 Ksym/s，level：-44.60 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:23:53, coderate：R2_3, frequency：2149 MHz，symbol_rate：05000 Ksym/s，level：-44.60 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:24:13, coderate：R3_4, frequency：2149 MHz，symbol_rate：05000 Ksym/s，level：-44.60 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:24:33, coderate：R5_6, frequency：2149 MHz，symbol_rate：05000 Ksym/s，level：-44.60 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:24:52, coderate：R7_8, frequency：2149 MHz，symbol_rate：05000 Ksym/s，level：-44.60 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:26:02, coderate：R1_2, frequency：952.75 MHz，symbol_rate：27500 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:26:22, coderate：R2_3, frequency：952.75 MHz，symbol_rate：27500 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:26:42, coderate：R3_4, frequency：952.75 MHz，symbol_rate：27500 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:27:02, coderate：R5_6, frequency：952.75 MHz，symbol_rate：27500 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:27:22, coderate：R7_8, frequency：952.75 MHz，symbol_rate：27500 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_tracking_frequency_range: current_time:2020-05-30 15:29:58, coderate：R1_2, frequency：952 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False

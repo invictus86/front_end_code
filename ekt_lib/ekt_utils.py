@@ -163,13 +163,45 @@ def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbs_signal_acquisition_frequency_range_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[1], i[2][0], i[2][1], j[0], j[1]])
+            else:
+                list_required_data.append(["", "", "", j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'sfu_frequency', 'code_rate', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbs_signal_tracking_frequency_range_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[1], i[2][0], i[2][1], j[0], j[1]])
+            else:
+                list_required_data.append(["", "", "", j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'sfu_frequency', 'code_rate', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbs2_dynamic_min_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     list_required_data = []
     for i in list_data:
         count = 0
-        for j in i[2]:
+        for j in i[3]:
             if count == 0:
                 list_required_data.append([i[0][1], i[1][0], j[0], j[1][0], j[2]])
             else:

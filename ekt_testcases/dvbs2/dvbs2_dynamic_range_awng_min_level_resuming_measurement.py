@@ -27,8 +27,6 @@ else:
     dict_config_data = {
         "MODULATION": [MODULATION_QPSK, MODULATION_8PSK],
         "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
-        # "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
-        # "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M],
     }
 
     dict_test_parame_result = {}
@@ -54,7 +52,6 @@ else:
             list_test_parame_result.append([SYMBOL_RATE, FREQUENCY_LEVEL_OFFSET, list_test_result])
 
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
-    # print dict_test_parame_result
 
     write_json_file("../../ekt_json/dvbs2_dynamic_range_awng_min_level_resuming_measurement.json",
                     dict_test_parame_result)
@@ -93,11 +90,6 @@ if __name__ == '__main__':
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
-
-    # dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
-    # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
-    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
     for lock_parame_index in range(len(load_dict.get("test_parame_result"))):
         loop_lock_mark = False
