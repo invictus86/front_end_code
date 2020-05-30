@@ -509,6 +509,17 @@ def dvbt2_52_verification_quality_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbt2_53_changes_modulation_parameters_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        list_required_data.append([i[0], i[1], i[2], i[3], i[4], i[6], i[7]])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['fft_size', 'modulation', 'pilot', 'code_rate', 'guard', 'rp_level', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbt2_57_gaussian_channel_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")

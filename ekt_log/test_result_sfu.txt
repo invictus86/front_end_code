@@ -7084,3 +7084,6 @@ dvbt2_57_performance_gaussian_channel: current_time:2020-05-30 11:57:38, modulat
 dvbt2_57_performance_gaussian_channel: current_time:2020-05-30 12:01:47, modulation: T4 coderate：R3_5, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: 2.80
 dvbt_21_receiver_signal_input__min_level: current_time:2020-05-30 12:05:47, modulation: T4, coderate：R1_2, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，{"msg": "初始值处于马赛克阈值外:-86.7", "threshold_algorithm_result": false}
 dvbt_21_receiver_signal_input__min_level: current_time:2020-05-30 12:10:49, modulation: T4, coderate：R2_3, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -99.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-30 12:16:01, modulation: T4, coderate：R3_4, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -98.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-05-30 12:21:18, modulation: T4, coderate：R5_6, guard:G1_4,frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -97.60
+dvbt_5_frequency_offset: current_time:2020-05-30 13:02:04, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，True

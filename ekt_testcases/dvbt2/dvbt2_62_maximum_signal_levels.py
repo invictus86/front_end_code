@@ -70,7 +70,6 @@ if __name__ == '__main__':
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
-    specan = Ektsfu(sfu_ip)
 
     specan = Ektsfu(sfu_ip)
     specan.set_frequency_frequency_frequency(str(int(FREQUENCY_666)) + "MHz")
@@ -120,9 +119,9 @@ if __name__ == '__main__':
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_bicm_coderate_dvbt2(PARAMETER[3])
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_framing_guard_dvbt2(PARAMETER[3])
+        specan.set_digitaltv_framing_guard_dvbt2(PARAMETER[4])
 
-        start_data_result = mosaic_algorithm(sfu_ip, LEVEL_30, LEVEL_30)
+        start_data_result, test_result = mosaic_algorithm(sfu_ip, LEVEL_30, LEVEL_30)
         print (
             "dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
@@ -132,7 +131,7 @@ if __name__ == '__main__':
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                               PARAMETER[3], str(FREQUENCY_666), str(8),
                               start_data_result.get("detect_mosic_result")) + "\n")
-        PARAMETER[6] = start_data_result.get("detect_mosic_result")
+        PARAMETER[6] = test_result
         write_json_file(
             "../../ekt_json/dvbt2_62_maximum_signal_levels.json", load_dict)
         dvbt2_62_maximum_level_to_csv(
