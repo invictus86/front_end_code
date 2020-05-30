@@ -7065,3 +7065,14 @@ dvbt2_59_receiver_signal_input__min_level: current_time:2020-05-30 10:55:48, mod
 dvbt2_59_receiver_signal_input__min_level: current_time:2020-05-30 10:57:47, modulation: T4, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，阈值为: -99.20
 dvbt_4_centre_frequencies: current_time:2020-05-30 11:00:40, modulation: T64, coderate：R2_3, frequency：177.5 MHz，bandwidth：7 MHZ，False
 dvbt_4_centre_frequencies: current_time:2020-05-30 11:02:05, modulation: T64, coderate：R2_3, frequency：184.5 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:07:36, modulation: T64, coderate：R2_3, frequency：176.95 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:09:01, modulation: T64, coderate：R2_3, frequency：177 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:10:25, modulation: T64, coderate：R2_3, frequency：177.05 MHz，stb_frequency：177 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:11:50, modulation: T64, coderate：R2_3, frequency：225.95 MHz，stb_frequency：226 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:13:15, modulation: T64, coderate：R2_3, frequency：226 MHz，stb_frequency：226 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:14:39, modulation: T64, coderate：R2_3, frequency：226.05 MHz，stb_frequency：226 MHz，bandwidth：7 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:16:05, modulation: T64, coderate：R2_3, frequency：473.95 MHz，stb_frequency：474 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:17:28, modulation: T64, coderate：R2_3, frequency：474 MHz，stb_frequency：474 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:18:54, modulation: T64, coderate：R2_3, frequency：474.05 MHz，stb_frequency：474 MHz，bandwidth：8 MHZ，False
+dvbt_5_frequency_offset: current_time:2020-05-30 11:20:18, modulation: T64, coderate：R2_3, frequency：857.95 MHz，stb_frequency：858 MHz，bandwidth：8 MHZ，False
+dvbt_7_modes: current_time:2020-05-30 11:23:09, fft_size: M2K, modulation: T4, coderate：R1_2,guard:G1_4, frequency：666.0 MHz，bandwidth：8 MHZ，False

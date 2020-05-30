@@ -6,9 +6,10 @@ import json
 import datetime
 from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
+from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency
+from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency, write_json_file, read_json_file, dvbt_7_modes_json_to_csv
 
 FREQUENCY_666 = 666.0
 LEVEL_60 = -60
@@ -39,6 +40,21 @@ dict_config_data = {
     "GUARD": [GUARD_G1_4, GUARD_G1_8, GUARD_G1_16, GUARD_G1_32],
 }
 
+my_file = Path("../../ekt_json/dvbt_7_modes.json")
+if my_file.exists():
+    pass
+else:
+    dict_test_parame_result = {}
+    list_test_parame_result = []
+    for FFT_SIZE in dict_config_data.get("FFT_SIZE"):
+        for MODULATION in dict_config_data.get("MODULATION"):
+            for CODE_RATE in dict_config_data.get("CODE_RATE"):
+                for GUARD in dict_config_data.get("GUARD"):
+                    list_test_parame_result.append(
+                        [FFT_SIZE, MODULATION, CODE_RATE, GUARD, None])
+    dict_test_parame_result["test_parame_result"] = list_test_parame_result
+    write_json_file("../../ekt_json/dvbt_7_modes.json", dict_test_parame_result)
+
 if __name__ == '__main__':
     """
     测试流程：
@@ -50,6 +66,7 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
+    load_dict = read_json_file("../../ekt_json/dvbt_7_modes.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
@@ -109,27 +126,33 @@ if __name__ == '__main__':
     else:
         write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
 
-    for FFT_SIZE in dict_config_data.get("FFT_SIZE"):
+    for PARAME in load_dict.get("test_parame_result"):
+        if PARAME[4] == None:
+            pass
+        else:
+            continue
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_fftmode_dvbt(FFT_SIZE)
-        for MODULATION in dict_config_data.get("MODULATION"):
-            specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_constellation_dvbt(MODULATION)
-            for CODE_RATE in dict_config_data.get("CODE_RATE"):
-                specan = Ektsfu(sfu_ip)
-                specan.set_digitaltv_coding_coderate_dvbt(CODE_RATE)
-                for GUARD in dict_config_data.get("GUARD"):
-                    specan = Ektsfu(sfu_ip)
-                    specan.set_digitaltv_coding_guard_dvbt(GUARD)
-                    start_data_result = mosaic_algorithm(sfu_ip, float("%.2f" % (LEVEL_60 - LEVEL_OFFSET_666)),
-                                                         "-60")
-                    print ("dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFT_SIZE,
-                                          MODULATION, CODE_RATE, GUARD, FREQUENCY_666, str("8"),
-                                          start_data_result.get("detect_mosic_result")))
-                    write_test_result("../../ekt_log/test_result_sfu.txt",
-                                      "dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), FFT_SIZE,
-                                          MODULATION, CODE_RATE, GUARD, FREQUENCY_666, str("8"),
-                                          start_data_result.get("detect_mosic_result")) + "\n")
+        specan.set_digitaltv_coding_fftmode_dvbt(PARAME[0])
+        specan = Ektsfu(sfu_ip)
+        specan.set_digitaltv_coding_constellation_dvbt(PARAME[1])
+        specan = Ektsfu(sfu_ip)
+        specan.set_digitaltv_coding_coderate_dvbt(PARAME[2])
+        specan = Ektsfu(sfu_ip)
+        specan.set_digitaltv_coding_guard_dvbt(PARAME[3])
+        start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, float("%.2f" % (LEVEL_60 - LEVEL_OFFSET_666)), "-60")
+        print (
+            "dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAME[0],
+                PARAME[1], PARAME[2], PARAME[3], FREQUENCY_666, str("8"),
+                start_data_result.get("detect_mosic_result")))
+        write_test_result("../../ekt_log/test_result_sfu.txt",
+                          "dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate：{},guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAME[0],
+                              PARAME[1], PARAME[2], PARAME[3], FREQUENCY_666, str("8"),
+                              start_data_result.get("detect_mosic_result")) + "\n")
 
+        PARAME[4] = mosaic_result
+        write_json_file("../../ekt_json/dvbt_7_modes.json", load_dict)
+        dvbt_7_modes_json_to_csv(
+            "../../ekt_json/dvbt_7_modes.json",
+            "../../ekt_test_report/dvbt_7_modes.csv")
