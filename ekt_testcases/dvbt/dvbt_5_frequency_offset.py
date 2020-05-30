@@ -6,9 +6,10 @@ import json
 import datetime
 from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
+from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result
+from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, dvbt_5_frequency_offset_json_to_csv
 
 MODULATION_64QAM = "T64"
 FFT_SIZE_8K = "M8K"
@@ -30,6 +31,14 @@ FREQUENCY_BW_OFFSET_LIST = [
     [858, 8, 0],
     [858, 8, +0.05]]
 
+my_file = Path("../../ekt_json/dvbt_5_frequency_offset.json")
+if my_file.exists():
+    pass
+else:
+    dict_test_parame_result = {}
+    dict_test_parame_result["test_parame_result"] = FREQUENCY_BW_OFFSET_LIST
+    write_json_file("../../ekt_json/dvbt_5_frequency_offset.json", dict_test_parame_result)
+    
 if __name__ == '__main__':
     """
     测试流程：
@@ -41,6 +50,7 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
+    load_dict = read_json_file("../../ekt_json/dvbt_5_frequency_offset.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
@@ -72,7 +82,11 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_digitaltv_coding_guard_dvbt(GUARD_G1_8)
 
-    for FREQUENCY_BW in FREQUENCY_BW_OFFSET_LIST:
+    for FREQUENCY_BW in load_dict.get("test_parame_result"):
+        if FREQUENCY_BW[3] == None:
+            pass
+        else:
+            continue
         specan = Ektsfu(sfu_ip)
         specan.set_frequency_frequency_frequency(str(int(FREQUENCY_BW[0]) + FREQUENCY_BW[2]) + "MHz")
         specan = Ektsfu(sfu_ip)
@@ -114,7 +128,7 @@ if __name__ == '__main__':
             write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
             continue
 
-        start_data_result = mosaic_algorithm(sfu_ip, "-60", "-60")
+        start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, "-60", "-60")
         print ("dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_64QAM,
             CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]), str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
@@ -125,3 +139,8 @@ if __name__ == '__main__':
                               MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]),
                               str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
                               start_data_result.get("detect_mosic_result")) + "\n")
+        FREQUENCY_BW[3] = mosaic_result
+        write_json_file("../../ekt_json/dvbt_5_frequency_offset.json", load_dict)
+        dvbt_5_frequency_offset_json_to_csv(
+            "../../ekt_json/dvbt_5_frequency_offset.json",
+            "../../ekt_test_report/dvbt_5_frequency_offset.csv")
