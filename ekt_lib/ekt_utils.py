@@ -463,6 +463,25 @@ def dvbt2_52_verification_quality_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbt2_57_performance_gaussian_channel_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[2]:
+            if count == 0:
+                list_required_data.append([i[0], j[0], j[1], j[2], j[3]])
+            else:
+                list_required_data.append(['', j[0], j[1], j[2], j[3]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'modulation', 'code_rate', 'spec', 'noise_cn'])
+
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbt2_60_minuimun_level_0db_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")

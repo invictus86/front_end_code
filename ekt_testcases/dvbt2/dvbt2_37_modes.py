@@ -111,6 +111,8 @@ if __name__ == '__main__':
     specan.set_level_level_level("dBm", LEVEL_50)
     specan = Ektsfu(sfu_ip)
     specan.set_digitaltv_system_papr_dvbt2("TR")
+    specan = Ektsfu(sfu_ip)
+    specan.set_digitaltv_framing_ldata_dvbt2("45")
 
     net = ekt_net.EktNetClient('192.168.1.24', 9999)
     net.send_data(
