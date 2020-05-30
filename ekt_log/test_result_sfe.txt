@@ -988,3 +988,4 @@ dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:26:42, coder
 dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:27:02, coderate：R5_6, frequency：952.75 MHz，symbol_rate：27500 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
 dvbs_signal_acquisition_frequency_range; current_time:2020-05-30 15:27:22, coderate：R7_8, frequency：952.75 MHz，symbol_rate：27500 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
 dvbs_signal_tracking_frequency_range: current_time:2020-05-30 15:29:58, coderate：R1_2, frequency：952 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
+dvbs_signal_tracking_frequency_range: current_time:2020-05-30 15:32:00, coderate：R2_3, frequency：952 MHz，symbol_rate：05000 Ksym/s，level：-45.40 dbm, 马赛克检测结果：False
