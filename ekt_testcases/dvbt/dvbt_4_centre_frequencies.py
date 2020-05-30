@@ -6,9 +6,10 @@ import json
 import datetime
 from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
+from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result
+from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file
 
 MODULATION_64QAM = "T64"
 FFT_SIZE_8K = "M8K"
@@ -165,6 +166,14 @@ FREQUENCY_BW_LIST = [
     [458.0, 8],
     [466.0, 8]]
 
+my_file = Path("../../ekt_json/dvbt2_34_centre_frequencies.json")
+if my_file.exists():
+    pass
+else:
+    dict_test_parame_result = {}
+    dict_test_parame_result["test_parame_result"] = FREQUENCY_BW_LIST
+    write_json_file("../../ekt_json/dvbt2_34_centre_frequencies.json", dict_test_parame_result)
+
 if __name__ == '__main__':
     """
     测试流程：
@@ -176,6 +185,7 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
+    load_dict = read_json_file("../../ekt_json/dvbt2_34_centre_frequencies.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()

@@ -173,7 +173,7 @@ def threshold_algorithm(sfu_ip, start_data, end_data):
     :return:
     """
     step_data = round((start_data + end_data) / 2, 1)
-    step_data_result = mosaic_algorithm(sfu_ip, step_data, start_data)
+    step_data_result, test_result = mosaic_algorithm(sfu_ip, step_data, start_data)
     if step_data_result.get("detect_mosic_result") is False:
         return {"threshold_algorithm_result": False,
                 "step_range": [step_data, end_data]}
@@ -183,8 +183,8 @@ def threshold_algorithm(sfu_ip, start_data, end_data):
 
 
 def iterate_to_find_threshold(sfu_ip, start_num, end_num, level_offset="0"):
-    start_data_result = mosaic_algorithm(sfu_ip, start_num, start_num)
-    end_data_result = mosaic_algorithm(sfu_ip, end_num, start_num)
+    start_data_result, _ = mosaic_algorithm(sfu_ip, start_num, start_num)
+    end_data_result, _ = mosaic_algorithm(sfu_ip, end_num, start_num)
     if start_data_result.get("detect_mosic_result") is False and end_data_result.get("detect_mosic_result") is True:
         pass
     else:
@@ -205,7 +205,7 @@ def iterate_to_find_threshold(sfu_ip, start_num, end_num, level_offset="0"):
 
 
 def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset="0"):
-    start_data_result = mosaic_algorithm(sfu_ip, start_num, start_num)
+    start_data_result, _ = mosaic_algorithm(sfu_ip, start_num, start_num)
     if start_data_result.get("detect_mosic_result") is False:
         pass
     else:
@@ -214,7 +214,7 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
     while True:
         step = 10
         step_num = start_num - step
-        step_num_data_result = mosaic_algorithm(sfu_ip, step_num, start_num)
+        step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
@@ -223,7 +223,7 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
     while True:
         step = 1
         step_num = start_num - step
-        step_num_data_result = mosaic_algorithm(sfu_ip, step_num, start_num)
+        step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
@@ -232,7 +232,7 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
     while True:
         step = 0.3
         step_num = start_num - step
-        step_num_data_result = mosaic_algorithm(sfu_ip, step_num, start_num)
+        step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
@@ -244,8 +244,7 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
 
 
 def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
-    start_data_result = mosaic_algorithm(sfu_ip, start_num, start_num)
-    # end_data_result = mosaic_algorithm(sfu_ip, end_num, start_num)
+    start_data_result, _ = mosaic_algorithm(sfu_ip, start_num, start_num)
     if start_data_result.get("detect_mosic_result") is False:
         pass
     else:
@@ -254,7 +253,7 @@ def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
     while True:
         step = 3
         step_num = start_num - step
-        step_num_data_result = mosaic_algorithm(sfu_ip, step_num, start_num)
+        step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
@@ -263,7 +262,7 @@ def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
     while True:
         step = 1
         step_num = start_num - step
-        step_num_data_result = mosaic_algorithm(sfu_ip, step_num, start_num)
+        step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
@@ -272,7 +271,7 @@ def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
     while True:
         step = 0.1
         step_num = start_num - step
-        step_num_data_result = mosaic_algorithm(sfu_ip, step_num, start_num)
+        step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
             start_num = step_num
         elif step_num_data_result.get("detect_mosic_result") is True:
@@ -285,7 +284,6 @@ def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
 
 def iterate_to_find_threshold_interferer_attenuation_step_by_step(sfu_ip, start_num):
     start_data_result = mosaic_algorithm_interferer_attenuation(sfu_ip, start_num, start_num)
-    # end_data_result = mosaic_algorithm(sfu_ip, end_num, start_num)
     if start_data_result.get("detect_mosic_result") is False:
         pass
     else:
@@ -315,7 +313,6 @@ def iterate_to_find_threshold_interferer_attenuation_step_by_step(sfu_ip, start_
 
 def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
     start_data_result = mosaic_algorithm_noise_cn(sfu_ip, start_num, start_num)
-    # end_data_result = mosaic_algorithm(sfu_ip, end_num, start_num)
     if start_data_result.get("detect_mosic_result") is False:
         pass
     else:
@@ -345,7 +342,6 @@ def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
 
 def iterate_to_find_threshold_fading_att_step_by_step(sfu_ip, start_num):
     start_data_result = mosaic_algorithm_fading_att(sfu_ip, start_num, start_num)
-    # end_data_result = mosaic_algorithm(sfu_ip, end_num, start_num)
     if start_data_result.get("detect_mosic_result") is False:
         pass
     else:

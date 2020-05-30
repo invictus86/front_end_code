@@ -110,12 +110,6 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_fading_profile_profile("2", "1", "SPATh")
 
-
-
-    # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
-    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
-
-    # for FREQUENCY_LEVEL_OFFSET in DVBT_T2_FREQUENCY_LEVEL_OFFSET:
     PARAMETER_FIXED = load_dict.get("test_parame_result")
 
     specan = Ektsfu(sfu_ip)
@@ -192,8 +186,8 @@ if __name__ == '__main__':
                 PARAMETER[3], str(PARAMETER_FIXED[0]), str(PARAMETER[5]), res))
         write_test_result("../../ekt_log/test_result_sfu.txt",
                           "dvbt2_60_minimum_level_0db_echo_channel: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
-                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
-                PARAMETER[3], str(PARAMETER_FIXED[0]), str(PARAMETER[5]), res) + "\n")
+                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
+                              PARAMETER[3], str(PARAMETER_FIXED[0]), str(PARAMETER[5]), res) + "\n")
 
         PARAMETER[8] = test_result
         write_json_file("../../ekt_json/dvbt2_60_minimum_level_0db_echo_channel.json",
