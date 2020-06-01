@@ -7096,3 +7096,11 @@ dvbt_5_frequency_offset: current_time:2020-05-30 13:06:48, modulation: T256,code
 dvbt_5_frequency_offset: current_time:2020-05-30 13:07:12, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，True
 dvbt_5_frequency_offset: current_time:2020-05-30 13:07:37, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，True
 dvbt_5_frequency_offset: current_time:2020-05-30 13:09:34, modulation: T256,coderate：R3_4, frequency：666 MHz，bandwidth：8 MHZ，False
+dvbt_6_signal_bandwidth: current_time:2020-06-01 11:15:29, frequency：198.5 MHz，bandwidth：7 Ksym/s, 锁台失败
+dvbt_6_signal_bandwidth: current_time:2020-06-01 11:17:01, frequency：666.0 MHz，bandwidth：8 Ksym/s, 锁台失败
+dvbt_6_signal_bandwidth: current_time:2020-06-01 11:26:55, modulation: T64, coderate：R2_3, frequency：198.5 MHz，bandwidth：7 MHZ，False
+dvbt_6_signal_bandwidth: current_time:2020-06-01 11:28:22, modulation: T64, coderate：R2_3, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt_6_signal_bandwidth: current_time:2020-06-01 11:29:47, modulation: T64, coderate：R2_3, frequency：198.5 MHz，bandwidth：8 MHZ，False
+dvbt2_36_signal_bandwidths: current_time:2020-06-01 12:13:32, modulation: T256,coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，False
+dvbt2_36_signal_bandwidths: current_time:2020-06-01 12:15:46, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
+dvbt2_36_signal_bandwidths: current_time:2020-06-01 12:17:21, modulation: T256,coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，False

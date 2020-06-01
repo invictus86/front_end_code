@@ -1720,7 +1720,7 @@ class Ektsfu(object):
         self.specan.query('*OPC?')
         del self.specan
 
-    def set_fading_settings_peference(self, peference_type):
+    def set_fading_settings_reference(self, peference_type):
         """
         Set the constant in the formula for the Doppler frequency calculation
         not complet
@@ -3026,7 +3026,7 @@ def _test_code():
     # specan.set_fading_profile_lognormal("2", "2", "ON")
     # specan.set_fading_profile_localconstant("2", "2", "100")
     # specan.set_fading_profile_standard("2", "2", "2")
-    # specan.set_fading_settings_peference("SPEED")
+    specan.set_fading_settings_reference("SPE")
     # specan.set_fading_settings_common("ON")
     # specan.set_fading_settings_ignore("ON")
     # specan.set_fading_settings_signal("BB")
@@ -3128,7 +3128,7 @@ def _test_code():
     # specan.set_interferer_frequency_offset("-1")
     # specan.set_interferer_singal_frequency_offs99et("-1")
     # specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str("16")))
-    specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str("8")))
+    # specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str("8")))
     # specan.set_fading_profile_pathloss("3", "1", "16 dB")
 
     # specan.set_cmd()

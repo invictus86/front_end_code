@@ -98,6 +98,9 @@ if __name__ == '__main__':
     specan.set_impairments_baseband("OFF")
 
     specan = Ektsfu(sfu_ip)
+    specan.set_fading_settings_reference("FDOPpler")
+
+    specan = Ektsfu(sfu_ip)
     specan.set_fading_profile_state("1", "1", "ON")
     specan = Ektsfu(sfu_ip)
     specan.set_fading_profile_state("1", "2", "ON")

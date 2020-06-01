@@ -1,0 +1,6 @@
+frequency,bandwidth,fft_size,modulation,pilot,code_rate,guard,mosic_result
+199,7,M32K,T256,PP2,R2_3,G19256,False
+666,8,M32K,T256,PP4,R2_3,G1_16,False
+199,7,M32E,T256,PP2,R2_3,G19256,False
+666,8,M32E,T256,PP4,R2_3,G1_16,
+199,8,M32E,T256,PP2,R3_5,G19256,
