@@ -7110,3 +7110,4 @@ dvbt2_37_modes_supplument_2_papr: current_time:2020-06-01 14:34:40, fft_size: M3
 dvbt2_37_modes_supplument_2_papr: current_time:2020-06-01 14:35:01, fft_size: M32E, modulation: T256,coderate：R3_4, PIL:PP2, guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
 dvbt2_37_modes_supplument_2_papr: current_time:2020-06-01 14:40:48, fft_size: M32E, modulation: T256,coderate：R3_4, PIL:PP2, guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
 dvbt2_37_modes_supplument_2_papr: current_time:2020-06-01 14:41:10, fft_size: M32E, modulation: T256,coderate：R3_4, PIL:PP2, guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_44_normal_mode: current_time:2020-06-01 15:45:12, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
