@@ -7104,3 +7104,9 @@ dvbt_6_signal_bandwidth: current_time:2020-06-01 11:29:47, modulation: T64, code
 dvbt2_36_signal_bandwidths: current_time:2020-06-01 12:13:32, modulation: T256,coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，False
 dvbt2_36_signal_bandwidths: current_time:2020-06-01 12:15:46, modulation: T256,coderate：R2_3, frequency：666 MHz，bandwidth：8 MHZ，False
 dvbt2_36_signal_bandwidths: current_time:2020-06-01 12:17:21, modulation: T256,coderate：R2_3, frequency：199 MHz，bandwidth：7 MHZ，False
+dvbt2_37_modes_supplument_1: current_time:2020-06-01 14:28:18, fft_size: M32E, modulation: T256,coderate：R2_3, PIL:PP4, guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes_supplument_1: current_time:2020-06-01 14:28:39, fft_size: M32E, modulation: T256,coderate：R2_3, PIL:PP4, guard:G1_16, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes_supplument_2_papr: current_time:2020-06-01 14:34:40, fft_size: M32E, modulation: T256,coderate：R3_4, PIL:PP2, guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes_supplument_2_papr: current_time:2020-06-01 14:35:01, fft_size: M32E, modulation: T256,coderate：R3_4, PIL:PP2, guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes_supplument_2_papr: current_time:2020-06-01 14:40:48, fft_size: M32E, modulation: T256,coderate：R3_4, PIL:PP2, guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
+dvbt2_37_modes_supplument_2_papr: current_time:2020-06-01 14:41:10, fft_size: M32E, modulation: T256,coderate：R3_4, PIL:PP2, guard:G1_8, frequency：666.0 MHz，bandwidth：8 MHZ，False
