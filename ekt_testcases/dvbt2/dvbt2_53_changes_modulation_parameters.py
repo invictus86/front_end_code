@@ -170,6 +170,10 @@ if __name__ == '__main__':
         write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
 
     for PARAMETER in load_dict.get("test_parame_result"):
+        if PARAMETER[7] == None:
+            pass
+        else:
+            continue
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_fftsize_dvbt2(PARAMETER[0])
         specan = Ektsfu(sfu_ip)

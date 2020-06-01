@@ -2562,7 +2562,7 @@ class Ektsfu(object):
         self.specan.query('*OPC?')
         del self.specan
 
-    def set_digitaltv_bicm_timeinterljump_dvbt2(self, timeintel):
+    def set_digitaltv_bicm_timeinterl_type_dvbt2(self, timeintel):
         """
         Sets the time interleaver type.
             0
@@ -3064,9 +3064,9 @@ def _test_code():
     # specan.set_digitaltv_settings_payload_dvbt2("H00")
     # specan.set_digitaltv_settings_prbs_dvbt2("P23_1")
     # specan.set_digitaltv_bicm_fecframe_dvbt2("SHORt")
-    # specan.set_digitaltv_bicm_timeinterljump_dvbt2("0")
+    # specan.set_digitaltv_bicm_timeinterl_type_dvbt2("0")
     # specan.set_digitaltv_bicm_frameint_dvbt2("1")
-    # specan.set_digitaltv_bicm_timeinterllength_dvbt2("4")
+    specan.set_digitaltv_bicm_timeinterllength_dvbt2("4")
     # specan.set_digitaltv_framing_bandwidth_dvbt2("4")
     # specan.set_digitaltv_framing_pilot_dvbt2("PP7")
     # specan.set_digitaltv_framing_nt2_dvbt2("30")
@@ -3119,7 +3119,7 @@ def _test_code():
     # specan.set_level_level_offset(str(4.6))
     # specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
     # specan.set_digitaltv_system_modulation_dvbt2("T64")
-    specan.set_digitaltv_system_papr_dvbt2("TR")
+    # specan.set_digitaltv_system_papr_dvbt2("TR")
     # specan.set_interferer_source("ATVPr")
     # specan.set_interferer_addition("BEFN")
     # specan.set_interferer_reference("ATT")
