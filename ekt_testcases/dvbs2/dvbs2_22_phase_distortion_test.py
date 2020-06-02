@@ -48,16 +48,10 @@ if __name__ == '__main__':
     time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_noise("OFF")
-    # specan = Ektsfu(sfu_ip)
-    # specan.set_noise_noise_awgn("ON")
-    # time.sleep(1)
 
     dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
     DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
-    # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
-    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
-    # for MODULATION in dict_config_data.get("MODULATION"):
     specan = Ektsfu(sfu_ip)
     specan.set_digitaltv_coding_constellation_dvbs2(MODULATION_8PSK)
     time.sleep(1)

@@ -49,7 +49,6 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_noise("OFF")
 
-    # for MODULATION in dict_config_data.get("MODULATION"):
     specan = Ektsfu(sfu_ip)
     specan.set_digitaltv_coding_constellation_dvbs2(MODULATION_8PSK)
     time.sleep(1)
