@@ -75,8 +75,6 @@ if __name__ == '__main__':
         specan.set_digitaltv_coding_symbolrate(SYMBOL_RATE[0])
 
         net = ekt_net.EktNetClient('192.168.1.24', 9999)
-        # print str(FREQUENCY_LEVEL_OFFSET[0])
-        # print type(str(FREQUENCY_LEVEL_OFFSET[0]))
         net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_1550)}))
         time.sleep(1)
         del net
@@ -107,7 +105,6 @@ if __name__ == '__main__':
             continue
 
         start_data_result, mosaic_result = mosaic_algorithm(sfe_ip, LEVEL_70, "-50")
-        # res = iterate_to_find_threshold(sfe_ip, -50, -100)
         print (
             "dvbs_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,

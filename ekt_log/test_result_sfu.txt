@@ -7122,3 +7122,25 @@ dvbt2_58_performance_0db_echo_channel: current_time:2020-06-01 16:57:09, modulat
 dvbs2_dynamic_range_awng_max_level: current_time:2020-06-02 10:02:57, coderate：R1_2, frequency：950 MHz，symbol_rate：05000 Ksym/s，level：-5.40 dbm, 马赛克检测结果：False
 dvbs2_dynamic_range_awng_max_level: current_time:2020-06-02 10:05:29, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，level：-5.40 dbm, 马赛克检测结果：False
 dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-02 10:26:07, modulation: R1_2,coderate：950, frequency：05000 MHz，symbol_rate：-60.40 Ksym/s，阈值为: -98.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-02 10:32:17, modulation: R3_5,coderate：950, frequency：05000 MHz，symbol_rate：-60.40 Ksym/s，阈值为: -97.30
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-02 10:34:52, modulation: R2_3,coderate：950, frequency：05000 MHz，symbol_rate：-60.40 Ksym/s，阈值为: -96.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-02 10:36:40, modulation: R3_4,coderate：950, frequency：05000 MHz，symbol_rate：-60.40 Ksym/s，阈值为: -85.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-02 10:37:02, modulation: R4_5,coderate：950, frequency：05000 MHz，symbol_rate：-60.40 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-02 10:37:22, modulation: R5_6,coderate：950, frequency：05000 MHz，symbol_rate：-60.40 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-02 10:37:43, modulation: R8_9,coderate：950, frequency：05000 MHz，symbol_rate：-60.40 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-02 10:38:04, modulation: R9_10,coderate：950, frequency：05000 MHz，symbol_rate：-60.40 Ksym/s，{"msg": "初始值处于马赛克阈值外:-60.4", "threshold_algorithm_result": false}
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:43:52, coderate：R3_4, frequency：1550 MHz，symbol_rate：05000 Ksym/s，level：-60.90 dbm, 马赛克检测结果：False
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:45:03, coderate：R3_4, frequency：1550 MHz，symbol_rate：06000 Ksym/s，level：-60.90 dbm, 马赛克检测结果：False
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:46:12, coderate：R3_4, frequency：1550 MHz，symbol_rate：07000 Ksym/s，level：-60.90 dbm, 马赛克检测结果：False
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:47:16, coderate：R3_4, frequency：1550 MHz，symbol_rate：08000 Ksym/s，level：-60.90 dbm, 锁台失败
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:48:26, coderate：R3_4, frequency：1550 MHz，symbol_rate：09000 Ksym/s，level：-60.90 dbm, 马赛克检测结果：False
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:49:30, coderate：R3_4, frequency：1550 MHz，symbol_rate：10000 Ksym/s，level：-60.90 dbm, 锁台失败
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:50:34, coderate：R3_4, frequency：1550 MHz，symbol_rate：11000 Ksym/s，level：-60.90 dbm, 锁台失败
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:51:43, coderate：R3_4, frequency：1550 MHz，symbol_rate：12000 Ksym/s，level：-60.90 dbm, 马赛克检测结果：False
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:52:30, coderate：R3_4, frequency：1550 MHz，symbol_rate：13000 Ksym/s，level：-60.90 dbm, 锁台失败
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:53:16, coderate：R3_4, frequency：1550 MHz，symbol_rate：14000 Ksym/s，level：-60.90 dbm, 锁台失败
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:54:02, coderate：R3_4, frequency：1550 MHz，symbol_rate：15000 Ksym/s，level：-60.90 dbm, 锁台失败
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:54:49, coderate：R3_4, frequency：1550 MHz，symbol_rate：16000 Ksym/s，level：-60.90 dbm, 锁台失败
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:55:35, coderate：R3_4, frequency：1550 MHz，symbol_rate：17000 Ksym/s，level：-60.90 dbm, 锁台失败
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:56:21, coderate：R3_4, frequency：1550 MHz，symbol_rate：18000 Ksym/s，level：-60.90 dbm, 锁台失败
+dvbs2_19_symbol_rate_step: current_time:2020-06-02 10:58:42, coderate：R3_4, frequency：1550 MHz，symbol_rate：08000 Ksym/s，level：-60.90 dbm, 马赛克检测结果：False
