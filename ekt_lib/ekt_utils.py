@@ -305,7 +305,7 @@ def dvbs2_26_signal_tracking_frequency_range_json_to_csv(json_path, csv_path):
             if count == 0:
                 list_required_data.append([i[1], i[2][0], i[2][1], j[0][0], j[1]])
             else:
-                list_required_data.append(["", "", "", j[0], j[1]])
+                list_required_data.append(["", i[2][0], i[2][1], j[0][0], j[1]])
             count = count + 1
     pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'sfu_frequency', 'code_rate', 'level'])
     pd_data.to_csv(csv_path, index=None)
