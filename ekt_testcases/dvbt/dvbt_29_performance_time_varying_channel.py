@@ -50,6 +50,8 @@ PARAMETER_LIST = [
     [FFT_SIZE_8K, MODULATION_64QAM, CODE_RATE_3_4, GUARD_G1_4, 27.6, 20, 10, None],
 ]
 
+# 无法设置fading 里面的Doppler     SFU的 set_fading_settings_reference 设置无效
+
 my_file = Path("../../ekt_json/dvbt_29_performance_time_varying_channel.json")
 if my_file.exists():
     pass

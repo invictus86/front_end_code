@@ -215,6 +215,16 @@ if __name__ == '__main__':
                 pass
             else:
                 continue
+            # 待确认设置项是否正确
+            if PARAMETER[3] == CODE_RATE_2_3 and PARAMETER[4] == GUARD_G19_256:
+                specan = Ektsfu(sfu_ip)
+                specan.set_digitaltv_system_papr_dvbt2("TR")
+                specan = Ektsfu(sfu_ip)
+                specan.set_digitaltv_framing_ldata_dvbt2("54")
+            else:
+                specan = Ektsfu(sfu_ip)
+                specan.set_digitaltv_system_papr_dvbt2("OFF")
+
 
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_framing_fftsize_dvbt2(PARAMETER[0])

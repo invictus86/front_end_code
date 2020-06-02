@@ -45,7 +45,7 @@ KN32 = "M32K"
 PARAMETER_LIST = [
     [FREQUENCY_666, LEVEL_OFFSET_666, LEVEL_50_666, KE32, MODULATION_256QAM, "PP4", CODE_RATE_2_3, GUARD_G19_256]
 
-    # 未完成，缺少spec 已经咨询tony
+    # 无法设置fading 里面的Doppler     SFU的 set_fading_settings_reference 设置无效
 
 ]
 

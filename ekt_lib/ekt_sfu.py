@@ -1720,7 +1720,7 @@ class Ektsfu(object):
         self.specan.query('*OPC?')
         del self.specan
 
-    def set_fading_settings_reference(self, peference_type):
+    def set_fading_settings_reference(self, reference_type):
         """
         Set the constant in the formula for the Doppler frequency calculation
         not complet
@@ -1730,8 +1730,8 @@ class Ektsfu(object):
             FSIM:REF:SPE
         :return:
         """
-        self.specan.write('FSIM:REF:{}'.format(peference_type))
-        logging.info('FSIM:REF:{}'.format(peference_type))
+        self.specan.write('FSIM:REF:{}'.format(reference_type))
+        logging.info('FSIM:REF:{}'.format(reference_type))
         # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
@@ -2917,8 +2917,9 @@ class Ektsfu(object):
         # self.specan.write('NOIS:AWGN OFF')
         # self.specan.ext_clear_status()
         # print self.specan.query('*IDN?')
-        self.specan.query('*OPC?')
-        # self.specan.write('*RST;*CLS')
+        # self.specan.query('*OPC?')
+        self.specan.write('FSIM:REF:SPE')
+        # self.specan.write('111')
 
     def set_player_timing_openfile(self, file_path):
         """
@@ -3026,7 +3027,7 @@ def _test_code():
     # specan.set_fading_profile_lognormal("2", "2", "ON")
     # specan.set_fading_profile_localconstant("2", "2", "100")
     # specan.set_fading_profile_standard("2", "2", "2")
-    # specan.set_fading_settings_reference("SPE")
+    # specan.set_fading_settings_reference("SPEed")
     # specan.set_fading_settings_common("ON")
     # specan.set_fading_settings_ignore("ON")
     # specan.set_fading_settings_signal("BB")
@@ -3066,7 +3067,7 @@ def _test_code():
     # specan.set_digitaltv_bicm_fecframe_dvbt2("SHORt")
     # specan.set_digitaltv_bicm_timeinterl_type_dvbt2("0")
     # specan.set_digitaltv_bicm_frameint_dvbt2("1")
-    specan.set_digitaltv_bicm_timeinterllength_dvbt2("4")
+    # specan.set_digitaltv_bicm_timeinterllength_dvbt2("4")
     # specan.set_digitaltv_framing_bandwidth_dvbt2("4")
     # specan.set_digitaltv_framing_pilot_dvbt2("PP7")
     # specan.set_digitaltv_framing_nt2_dvbt2("30")
@@ -3130,8 +3131,9 @@ def _test_code():
     # specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str("16")))
     # specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str("8")))
     # specan.set_fading_profile_pathloss("3", "1", "16 dB")
+    # specan.set_fading_settings_speedunit("KMH")
 
-    # specan.set_cmd()
+    specan.set_cmd()
 
     # sfu_ip = "192.168.1.50"
 
