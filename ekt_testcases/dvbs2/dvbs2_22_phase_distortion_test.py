@@ -9,8 +9,7 @@ from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, \
-    dvbs2_22_phase_distortion_test_json_to_csv
+from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, dvbs2_22_phase_distortion_test_json_to_csv
 
 MODULATION_8PSK = "S8"
 LEVEL_45 = "-45"
