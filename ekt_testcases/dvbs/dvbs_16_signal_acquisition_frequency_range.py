@@ -96,8 +96,8 @@ if __name__ == '__main__':
         specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
         specan = Ektsfe(sfe_ip)
         specan.set_level_level_level(FREQUENCY_OFFSET[2] + " dBm")
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
 
+        net = ekt_net.EktNetClient('192.168.1.24', 9999)
         net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": FREQUENCY_OFFSET[0]}))
         time.sleep(1)
         del net
