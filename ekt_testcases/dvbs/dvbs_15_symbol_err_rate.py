@@ -37,9 +37,9 @@ else:
     dict_test_parame_result = {}
     list_test_parame_result = []
 
-    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
-    DVBS_QPSK_CODE_RATE_CN = dict_data.get("DVBS_QPSK_CODE_RATE_CN")
+    # dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
+    # DVBS_S2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBS_S2_FREQUENCY_LEVEL_OFFSET")
+    # DVBS_QPSK_CODE_RATE_CN = dict_data.get("DVBS_QPSK_CODE_RATE_CN")
 
     for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
         list_test_result = []
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     specan = Ektsfe(sfe_ip)
     specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
 
-    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
+    # dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
 
     specan = Ektsfe(sfe_ip)
     specan.set_frequency_frequency_frequency(FREQUENCY_1550 + "MHz")
