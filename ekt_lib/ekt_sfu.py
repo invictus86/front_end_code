@@ -2983,7 +2983,7 @@ def _test_code():
     # specan.set_modulation_modulation_standard_atv("LPR")
     # specan.set_modulation_modulation_standard_dvt("T2DVb")
     # specan.set_digitaltv_input_source_dvbs2("TSPL")
-    specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
+    # specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
     # specan.set_digitaltv_coding_constellation_dvbs2("S4")
     # specan.set_digitaltv_coding_fecframe_dvbs2("NORM")
     # specan.set_digitaltv_coding_pilots_dvbs2("OFF")
@@ -3102,7 +3102,7 @@ def _test_code():
     # specan.set_noise_noise_impulsive("ON")
     # specan.set_frequency_settings_channlfrequency("5", "400 MHz")
     # specan.set_modulation_modulation_standard("J83B")
-    # specan.set_modulation_modulation_spectrum("NORMal")
+    specan.set_modulation_modulation_spectrum("INV")
     # specan.set_modulation_settings_level("DBM3")
     # specan.set_modulation_settings_factor("20")
     # specan.set_modulation_settings_filtering("ON")
@@ -3133,7 +3133,7 @@ def _test_code():
     # specan.set_fading_profile_pathloss("3", "1", "16 dB")
     # specan.set_fading_settings_speedunit("KMH")
 
-    specan.set_cmd()
+    # specan.set_cmd()
 
     # sfu_ip = "192.168.1.50"
 

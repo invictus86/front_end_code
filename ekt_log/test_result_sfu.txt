@@ -7467,3 +7467,7 @@ dvbc_4_symbol_rate: current_time:2020-06-04 12:08:04, frequency：666 MHz，symb
 dvbc_4_symbol_rate: current_time:2020-06-04 12:09:12, frequency：666 MHz，symbol_rate：6000 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
 dvbc_4_symbol_rate: current_time:2020-06-04 12:10:21, frequency：666 MHz，symbol_rate：5000 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
 dvbc_4_symbol_rate: current_time:2020-06-04 12:11:27, frequency：666 MHz，symbol_rate：4000 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_5_IQ_inverted: current_time:2020-06-04 14:15:18, frequency：106 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_5_IQ_inverted: current_time:2020-06-04 14:17:10, frequency：474 MHz，symbol_rate：6952 Ksym/s，level：-6.40 dbm, 马赛克检测结果：False
+dvbc_5_IQ_inverted: current_time:2020-06-04 14:18:19, frequency：666 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_5_IQ_inverted: current_time:2020-06-04 14:19:28, frequency：858 MHz，symbol_rate：6952 Ksym/s，level：-5.30 dbm, 马赛克检测结果：False

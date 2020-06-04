@@ -10,29 +10,21 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, find_level_offset_by_frequency, \
-    dvbc_4_symbol_rate_json_to_csv
+    dvbc_5_IQ_inverted_json_to_csv
 
 MODULATION_64QAM = "C64"
 MODULATION_256QAM = "C256"
 
 SYMBOL_RATE_6952 = ["6.952e6", "6952"]
-SYMBOL_RATE_6875 = ["6.875e6", "6875"]
-SYMBOL_RATE_6000 = ["6e6", "6000"]
-SYMBOL_RATE_5000 = ["5e6", "5000"]
-SYMBOL_RATE_4000 = ["4e6", "4000"]
 
-FREQUENCY_666 = 666
-LEVEL_OFFSET_666 = find_level_offset_by_frequency("DVBC_FREQUENCY_LEVEL_OFFSET", 666)
-LEVEL_50_666 = str("%.2f" % (-50 - LEVEL_OFFSET_666))
 
 PARAMETER_LIST = [
-    [MODULATION_64QAM, FREQUENCY_666, LEVEL_OFFSET_666, LEVEL_50_666, -50, 27],
-    [MODULATION_256QAM, FREQUENCY_666, LEVEL_OFFSET_666, LEVEL_50_666, -50, 35]
+    [MODULATION_256QAM, SYMBOL_RATE_6952, -60, 35]
 ]
 
-SYMBOL_RATE_LIST = [SYMBOL_RATE_6952, SYMBOL_RATE_6875, SYMBOL_RATE_6000, SYMBOL_RATE_5000, SYMBOL_RATE_4000]
+FREQUENCY_LIST = [106, 474, 666, 858]
 
-my_file = Path("../../ekt_json/dvbc_4_symbol_rate.json")
+my_file = Path("../../ekt_json/dvbc_5_IQ_inverted.json")
 if my_file.exists():
     pass
 else:
@@ -44,13 +36,13 @@ else:
 
     for PARAMETER in PARAMETER_LIST:
         list_test_result = []
-        for SYMBOL_RATE in SYMBOL_RATE_LIST:
-            list_test_result.append([SYMBOL_RATE, None])
+        for FREQUENCY in FREQUENCY_LIST:
+            list_test_result.append([FREQUENCY, None])
         list_test_parame_result.append(
-            [PARAMETER[0], PARAMETER[1], PARAMETER[2], PARAMETER[3], PARAMETER[4], PARAMETER[5], list_test_result])
+            [PARAMETER[0], PARAMETER[1], PARAMETER[2], PARAMETER[3], list_test_result])
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
 
-    write_json_file("../../ekt_json/dvbc_4_symbol_rate.json", dict_test_parame_result)
+    write_json_file("../../ekt_json/dvbc_5_IQ_inverted.json", dict_test_parame_result)
 
 if __name__ == '__main__':
     """
@@ -63,7 +55,7 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
-    load_dict = read_json_file("../../ekt_json/dvbc_4_symbol_rate.json")
+    load_dict = read_json_file("../../ekt_json/dvbc_5_IQ_inverted.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
@@ -85,10 +77,12 @@ if __name__ == '__main__':
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
+    specan = Ektsfu(sfu_ip)
+    specan.set_modulation_modulation_spectrum("INV")
 
     for LOCK_PARAMETER in load_dict.get("test_parame_result"):
         loop_lock_mark = False
-        for check_list in LOCK_PARAMETER[6]:
+        for check_list in LOCK_PARAMETER[4]:
             if check_list[1] == None:
                 loop_lock_mark = True
                 break
@@ -98,29 +92,30 @@ if __name__ == '__main__':
             continue
 
         MODULATION = LOCK_PARAMETER[0]
-        FREQUENCY_LEVEL_OFFSET = [LOCK_PARAMETER[1], LOCK_PARAMETER[2]]
-        CN = LOCK_PARAMETER[5]
+        SYMBOL_RATE = LOCK_PARAMETER[1]
+        CN = LOCK_PARAMETER[3]
 
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_constellation_dvbc(MODULATION)
-
         specan = Ektsfu(sfu_ip)
         specan.set_noise_awgn_cn(str(CN))
         specan = Ektsfu(sfu_ip)
-        specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
-        specan = Ektsfu(sfu_ip)
-        specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
-        specan = Ektsfu(sfu_ip)
-        specan.set_level_level_level("dBm", LOCK_PARAMETER[3])
+        specan.set_digitaltv_coding_symbolrate_dvbc(SYMBOL_RATE[0])
 
-        for PARAMETER in LOCK_PARAMETER[6]:
+        for PARAMETER in LOCK_PARAMETER[4]:
             if PARAMETER[1] == None:
                 pass
             else:
                 continue
-            SYMBOL_RATE = PARAMETER[0]
+
+            FREQUENCY_LEVEL_OFFSET = [PARAMETER[0], find_level_offset_by_frequency("DVBC_FREQUENCY_LEVEL_OFFSET", PARAMETER[0])]
+
             specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_symbolrate_dvbc(SYMBOL_RATE[0])
+            specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
+            specan = Ektsfu(sfu_ip)
+            specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
+            specan = Ektsfu(sfu_ip)
+            specan.set_level_level_level("dBm", str("%.2f" % (-60 - FREQUENCY_LEVEL_OFFSET[1])))
 
             net = ekt_net.EktNetClient('192.168.1.24', 9999)
             net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
@@ -151,43 +146,43 @@ if __name__ == '__main__':
             elif lock_state == "0":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "dvbc_4_symbol_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "dvbc_5_IQ_inverted: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                              str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                              str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])),
                                               "锁台失败") + "\n"))
                 continue
             elif lock_state == "2":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "dvbc_4_symbol_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "dvbc_5_IQ_inverted: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                              str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                              str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])),
                                               "频点不支持") + "\n"))
                 PARAMETER[1] = "Frequency points are not supported"
-                write_json_file("../../ekt_json/dvbc_4_symbol_rate.json", load_dict)
-                dvbc_4_symbol_rate_json_to_csv("../../ekt_json/dvbc_4_symbol_rate.json",
-                                               "../../ekt_test_report/dvbc_4_symbol_rate.csv")
+                write_json_file("../../ekt_json/dvbc_5_IQ_inverted.json", load_dict)
+                dvbc_5_IQ_inverted_json_to_csv("../../ekt_json/dvbc_5_IQ_inverted.json",
+                                               "../../ekt_test_report/dvbc_5_IQ_inverted.csv")
                 continue
             else:
                 write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
                 continue
 
-            start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, LOCK_PARAMETER[3], LOCK_PARAMETER[3])
+            start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, -60 - FREQUENCY_LEVEL_OFFSET[1], -60 - FREQUENCY_LEVEL_OFFSET[1])
             print (
-                "dvbc_4_symbol_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                "dvbc_5_IQ_inverted: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                    str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                    str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])),
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbc_4_symbol_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                              "dvbc_5_IQ_inverted: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                  str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                  str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])),
                                   start_data_result.get("detect_mosic_result")) + "\n")
 
             PARAMETER[1] = mosaic_result
-            write_json_file("../../ekt_json/dvbc_4_symbol_rate.json", load_dict)
-            dvbc_4_symbol_rate_json_to_csv("../../ekt_json/dvbc_4_symbol_rate.json", "../../ekt_test_report/dvbc_4_symbol_rate.csv")
+            write_json_file("../../ekt_json/dvbc_5_IQ_inverted.json", load_dict)
+            dvbc_5_IQ_inverted_json_to_csv("../../ekt_json/dvbc_5_IQ_inverted.json", "../../ekt_test_report/dvbc_5_IQ_inverted.csv")

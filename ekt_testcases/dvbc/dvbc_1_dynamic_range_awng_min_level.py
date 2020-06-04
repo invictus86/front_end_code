@@ -147,7 +147,7 @@ if __name__ == '__main__':
                                           "dvbc_1_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                              str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                              str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])),
                                               "锁台失败") + "\n"))
                 continue
             elif lock_state == "2":
@@ -156,7 +156,7 @@ if __name__ == '__main__':
                                           "dvbc_1_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                              str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                              str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])),
                                               "频点不支持") + "\n"))
                 PARAMETER[1] = "Frequency points are not supported"
                 write_json_file("../../ekt_json/dvbc_1_dynamic_range_awng_min_level.json", load_dict)
@@ -169,7 +169,6 @@ if __name__ == '__main__':
 
             res, test_result = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, (-60 - FREQUENCY_LEVEL_OFFSET[1]),
                                                                             level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
-            # start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])), "-10")
             print (
                 "dvbc_1_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
