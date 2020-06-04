@@ -9,23 +9,19 @@ from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
+    dvbc_1_dynamic_range_awng_max_level_json_to_csv
 
 MODULATION_64QAM = "C64"
 MODULATION_256QAM = "C256"
 
-SYMBOL_RATE_5075 = ["5.075e6", "5075"]
-SYMBOL_RATE_5361 = ["5.361e6", "5361"]
-# SYMBOL_RATE_10M = ["10.000000e6", "10000"]
-# SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
-# SYMBOL_RATE_45M = ["45.000000e6", "45000"]
+SYMBOL_RATE_6900_4 = ["6.9004e6", "6900"]
+SYMBOL_RATE_6899_6 = ["6.8996e6", "6900"]
 
-PARAMETER_LIST = [
-    [MODULATION_64QAM, SYMBOL_RATE_5075, 27],
-    [MODULATION_256QAM, SYMBOL_RATE_5361, 33],
-]
+REQUENCY_LIST = [98, 201, 315, 405, 501, 603, 705, 801, 862]
+SYMBOL_RATE_LIST = [SYMBOL_RATE_6900_4, SYMBOL_RATE_6899_6]
 
-my_file = Path("../../ekt_json/j83_1_dynamic_range_awng_max_level.json")
+my_file = Path("../../ekt_json/dvbc_1_dynamic_range_awng_max_level.json")
 if my_file.exists():
     pass
 else:
@@ -33,16 +29,16 @@ else:
     list_test_parame_result = []
 
     dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    ANNEXB_FREQUENCY_LEVEL_OFFSET = dict_data.get("ANNEXB_FREQUENCY_LEVEL_OFFSET")
+    DVBC_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBC_FREQUENCY_LEVEL_OFFSET")
 
     for PARAMETER in PARAMETER_LIST:
         list_test_result = []
-        for FREQUENCY_LEVEL_OFFSET in ANNEXB_FREQUENCY_LEVEL_OFFSET:
+        for FREQUENCY_LEVEL_OFFSET in DVBC_FREQUENCY_LEVEL_OFFSET:
             list_test_result.append([FREQUENCY_LEVEL_OFFSET, None])
         list_test_parame_result.append([PARAMETER[0], PARAMETER[1], PARAMETER[2], list_test_result])
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
 
-    write_json_file("../../ekt_json/j83_1_dynamic_range_awng_max_level.json", dict_test_parame_result)
+    write_json_file("../../ekt_json/dvbc_1_dynamic_range_awng_max_level.json", dict_test_parame_result)
 
 if __name__ == '__main__':
     """
@@ -55,18 +51,18 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
-    load_dict = read_json_file("../../ekt_json/j83_1_dynamic_range_awng_max_level.json")
+    load_dict = read_json_file("../../ekt_json/dvbc_1_dynamic_range_awng_max_level.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
     specan = Ektsfu(sfu_ip)
     specan.set_modulation_modulation_source("DTV")
     specan = Ektsfu(sfu_ip)
-    specan.set_modulation_modulation_standard_dvt("J83B")
+    specan.set_modulation_modulation_standard_dvt("DVBC")
     specan = Ektsfu(sfu_ip)
     specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
     specan = Ektsfu(sfu_ip)
-    specan.set_digitaltv_input_source_j83b("TSPLayer")
+    specan.set_digitaltv_input_source_dvbc("TSPLayer")
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_rf("ON")
     specan = Ektsfu(sfu_ip)
@@ -129,8 +125,8 @@ if __name__ == '__main__':
             """
             try:
                 stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
-                                        "dcn7514i")
+                                            ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
+                                            "dcn7514i")
             except:
                 time.sleep(60)
                 stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
@@ -144,7 +140,7 @@ if __name__ == '__main__':
             elif lock_state == "0":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "j83_1_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "dvbc_1_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
@@ -153,15 +149,15 @@ if __name__ == '__main__':
             elif lock_state == "2":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "j83_1_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "dvbc_1_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                               "频点不支持") + "\n"))
                 PARAMETER[1] = "Frequency points are not supported"
-                write_json_file("../../ekt_json/j83_1_dynamic_range_awng_max_level.json", load_dict)
-                j83_1_dynamic_range_awng_max_level_json_to_csv("../../ekt_json/j83_1_dynamic_range_awng_max_level.json",
-                                                                "../../ekt_test_report/j83_1_dynamic_range_awng_max_level.csv")
+                write_json_file("../../ekt_json/dvbc_1_dynamic_range_awng_max_level.json", load_dict)
+                dvbc_1_dynamic_range_awng_max_level_json_to_csv("../../ekt_json/dvbc_1_dynamic_range_awng_max_level.json",
+                                                                "../../ekt_test_report/dvbc_1_dynamic_range_awng_max_level.csv")
                 continue
             else:
                 write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
@@ -169,19 +165,19 @@ if __name__ == '__main__':
 
             start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])), "-10")
             print (
-                "j83_1_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                "dvbc_1_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                     str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "j83_1_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                              "dvbc_1_dynamic_range_awng_max_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                   str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                   start_data_result.get("detect_mosic_result")) + "\n")
 
             PARAMETER[1] = mosaic_result
-            write_json_file("../../ekt_json/j83_1_dynamic_range_awng_max_level.json", load_dict)
-            j83_1_dynamic_range_awng_max_level_json_to_csv("../../ekt_json/j83_1_dynamic_range_awng_max_level.json",
-                                                            "../../ekt_test_report/j83_1_dynamic_range_awng_max_level.csv")
+            write_json_file("../../ekt_json/dvbc_1_dynamic_range_awng_max_level.json", load_dict)
+            dvbc_1_dynamic_range_awng_max_level_json_to_csv("../../ekt_json/dvbc_1_dynamic_range_awng_max_level.json",
+                                                            "../../ekt_test_report/dvbc_1_dynamic_range_awng_max_level.csv")

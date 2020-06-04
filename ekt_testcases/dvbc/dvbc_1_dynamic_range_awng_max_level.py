@@ -16,9 +16,6 @@ MODULATION_64QAM = "C64"
 MODULATION_256QAM = "C256"
 
 SYMBOL_RATE_6952 = ["6.952e6", "6952"]
-# SYMBOL_RATE_10M = ["10.000000e6", "10000"]
-# SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
-# SYMBOL_RATE_45M = ["45.000000e6", "45000"]
 
 PARAMETER_LIST = [
     [MODULATION_64QAM, SYMBOL_RATE_6952, 27],
@@ -129,8 +126,8 @@ if __name__ == '__main__':
             """
             try:
                 stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
-                                        "dcn7514i")
+                                            ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
+                                            "dcn7514i")
             except:
                 time.sleep(60)
                 stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
