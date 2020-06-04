@@ -113,7 +113,7 @@ if __name__ == '__main__':
             specan = Ektsfu(sfu_ip)
             specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
             specan = Ektsfu(sfu_ip)
-            specan.set_level_level_level("dBm", str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])))
+            specan.set_level_level_level("dBm", str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])))
 
             net = ekt_net.EktNetClient('192.168.1.24', 9999)
             net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))

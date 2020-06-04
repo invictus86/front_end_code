@@ -221,7 +221,8 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
             print ("{} 出现马赛克".format(step_num))
             break
     while True:
-        step = 1
+        # step = 1
+        step = 2
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
@@ -230,7 +231,8 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
             print ("{} 出现马赛克".format(step_num))
             break
     while True:
-        step = 0.3
+        # step = 0.3
+        step = 0.5
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") is False:
