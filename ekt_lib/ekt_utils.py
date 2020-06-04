@@ -146,6 +146,39 @@ def dvbs_dynamic_max_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbc_1_dynamic_range_awng_max_level_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[0], i[1][1], i[2], j[0][0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0][0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data, columns=['modulation', 'symbol_rate', 'CN', 'frequency', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+def dvbc_1_dynamic_range_awng_min_level_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[0], i[1][1], i[2], j[0][0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0][0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data, columns=['modulation', 'symbol_rate', 'CN', 'frequency', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
@@ -293,6 +326,7 @@ def dvbs2_23_amplitude_distortion_test_json_to_csv(json_path, csv_path):
             count = count + 1
     pd_data = pd.DataFrame(list_required_data, columns=['stb_symbol_rate', 'frequency', 'code_rate', 'test_result'])
     pd_data.to_csv(csv_path, index=None)
+
 
 def dvbs2_24_symbol_err_rate_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
@@ -749,6 +783,7 @@ def dvbt2_53_changes_modulation_parameters_to_csv(json_path, csv_path):
     pd_data = pd.DataFrame(list_required_data,
                            columns=['fft_size', 'modulation', 'pilot', 'code_rate', 'guard', 'rp_level', 'level'])
     pd_data.to_csv(csv_path, index=None)
+
 
 def dvbt2_53_changes_modulation_supplement_2_PARP_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)

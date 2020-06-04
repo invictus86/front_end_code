@@ -2983,7 +2983,7 @@ def _test_code():
     # specan.set_modulation_modulation_standard_atv("LPR")
     # specan.set_modulation_modulation_standard_dvt("T2DVb")
     # specan.set_digitaltv_input_source_dvbs2("TSPL")
-    # specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
+    specan.set_digitaltv_coding_symbolrate_dvbs2("31.711e6")
     # specan.set_digitaltv_coding_constellation_dvbs2("S4")
     # specan.set_digitaltv_coding_fecframe_dvbs2("NORM")
     # specan.set_digitaltv_coding_pilots_dvbs2("OFF")

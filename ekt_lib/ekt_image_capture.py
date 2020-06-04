@@ -4,6 +4,18 @@ import requests
 import cv2
 import numpy
 import time
+import os
+import logging
+
+current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
+                    filename='{}/ekt_log/ekt_image_capture.log'.format(current_path),
+                    filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志
+                    # a是追加模式，默认如果不写的话，就是追加模式
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
+                    # 日志格式
+                    )
 
 start_time = time.time()
 
@@ -17,15 +29,14 @@ def capture_image(num, ip):
     """
     list_image = []
     for i in range(num):
-        try:
-            result = requests.get("http://{}/api/v1/device/screenshot.png".format(ip))
-        except:
+        while True:
             try:
-                time.sleep(1)
                 result = requests.get("http://{}/api/v1/device/screenshot.png".format(ip))
+                break
             except:
-                time.sleep(1)
-                result = requests.get("http://{}/api/v1/device/screenshot.png".format(ip))
+                time.sleep(60)
+                print("ekt_image_capture 请求出错")
+                logging.info("ekt_image_capture 请求出错")
         image = cv2.imdecode(numpy.frombuffer(result.content, dtype='uint8'), 1)
         list_image.append(image)
     return list_image

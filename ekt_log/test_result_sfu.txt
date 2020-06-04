@@ -7186,3 +7186,257 @@ dvbs2_phase_distortion_test: current_time:2020-06-02 14:49:50, coderate：R3_5, 
 dvbs2_phase_distortion_test: current_time:2020-06-02 14:50:10, coderate：R9_10, frequency：2147 MHz，symbol_rate：05000 Ksym/s，level：-39.6 dbm, 马赛克检测结果：False
 dvbs2_amplitude_distortion_test: current_time:2020-06-02 14:52:56, coderate：R3_5, frequency：950 MHz，symbol_rate：05000 Ksym/s，level：-40.4 dbm, 马赛克检测结果：False
 dvbs2_amplitude_distortion_test: current_time:2020-06-02 14:53:15, coderate：R9_10, frequency：950 MHz，symbol_rate：05000 Ksym/s，level：-40.4 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:07:14, frequency：50 MHz，symbol_rate：6952 Ksym/s，level：-8.00 dbm, 频点不支持
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:09:35, frequency：50 MHz，symbol_rate：6952 Ksym/s，level：-8.00 dbm, 频点不支持
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:11:33, frequency：58 MHz，symbol_rate：6952 Ksym/s，level：-8.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:16:58, frequency：50 MHz，symbol_rate：6952 Ksym/s，level：-8.00 dbm, 频点不支持
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:18:07, frequency：58 MHz，symbol_rate：6952 Ksym/s，level：-8.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:19:18, frequency：66 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:21:59, frequency：74 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:23:07, frequency：82 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:24:17, frequency：90 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:25:26, frequency：98 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:26:35, frequency：106 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:27:44, frequency：114 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:28:53, frequency：122 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:30:03, frequency：130 MHz，symbol_rate：6952 Ksym/s，level：-8.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:31:12, frequency：138 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:32:21, frequency：146 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:33:29, frequency：154 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:34:38, frequency：162 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:35:46, frequency：170 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:36:55, frequency：178 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:38:04, frequency：186 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:39:13, frequency：194 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:40:23, frequency：202 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:41:31, frequency：210 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:42:40, frequency：218 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:43:50, frequency：226 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:44:59, frequency：234 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:46:09, frequency：242 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:47:17, frequency：250 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:48:27, frequency：258 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:49:36, frequency：266 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:50:45, frequency：274 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:51:54, frequency：282 MHz，symbol_rate：6952 Ksym/s，level：-7.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:53:03, frequency：290 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:54:13, frequency：298 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:55:21, frequency：306 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:56:31, frequency：314 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:57:40, frequency：322 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:58:49, frequency：330 MHz，symbol_rate：6952 Ksym/s，level：-7.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 18:59:58, frequency：338 MHz，symbol_rate：6952 Ksym/s，level：-7.50 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:01:06, frequency：346 MHz，symbol_rate：6952 Ksym/s，level：-7.30 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:02:16, frequency：354 MHz，symbol_rate：6952 Ksym/s，level：-7.20 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:03:25, frequency：362 MHz，symbol_rate：6952 Ksym/s，level：-7.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:04:34, frequency：370 MHz，symbol_rate：6952 Ksym/s，level：-6.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:05:44, frequency：378 MHz，symbol_rate：6952 Ksym/s，level：-6.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:06:52, frequency：386 MHz，symbol_rate：6952 Ksym/s，level：-6.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:08:02, frequency：394 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:09:10, frequency：402 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:10:20, frequency：410 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:11:30, frequency：418 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:12:37, frequency：426 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:13:47, frequency：434 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:14:57, frequency：442 MHz，symbol_rate：6952 Ksym/s，level：-6.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:16:05, frequency：450 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:17:15, frequency：458 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:18:23, frequency：466 MHz，symbol_rate：6952 Ksym/s，level：-6.50 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:19:32, frequency：474 MHz，symbol_rate：6952 Ksym/s，level：-6.40 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:20:42, frequency：482 MHz，symbol_rate：6952 Ksym/s，level：-6.20 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:21:51, frequency：490 MHz，symbol_rate：6952 Ksym/s，level：-6.20 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:23:00, frequency：498 MHz，symbol_rate：6952 Ksym/s，level：-6.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:24:09, frequency：506 MHz，symbol_rate：6952 Ksym/s，level：-6.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:25:18, frequency：514 MHz，symbol_rate：6952 Ksym/s，level：-6.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:26:27, frequency：522 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:27:37, frequency：530 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:28:46, frequency：538 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:29:55, frequency：546 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:31:05, frequency：554 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:32:13, frequency：562 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:33:22, frequency：570 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:34:32, frequency：578 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:35:41, frequency：586 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:36:49, frequency：594 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:37:59, frequency：602 MHz，symbol_rate：6952 Ksym/s，level：-6.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:39:08, frequency：610 MHz，symbol_rate：6952 Ksym/s，level：-6.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:40:17, frequency：618 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:41:26, frequency：626 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:42:35, frequency：634 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:43:45, frequency：642 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:44:53, frequency：650 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:46:02, frequency：658 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:47:12, frequency：666 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:48:20, frequency：674 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:49:30, frequency：682 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:50:39, frequency：690 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:51:48, frequency：698 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:52:57, frequency：706 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:54:06, frequency：714 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:55:15, frequency：722 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:56:25, frequency：730 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:57:34, frequency：738 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:58:42, frequency：746 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 19:59:53, frequency：754 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:01:01, frequency：762 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:02:11, frequency：770 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:03:20, frequency：778 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:04:29, frequency：786 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:05:38, frequency：794 MHz，symbol_rate：6952 Ksym/s，level：-5.40 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:06:46, frequency：802 MHz，symbol_rate：6952 Ksym/s，level：-5.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:07:55, frequency：810 MHz，symbol_rate：6952 Ksym/s，level：-5.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:09:05, frequency：818 MHz，symbol_rate：6952 Ksym/s，level：-5.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:10:14, frequency：826 MHz，symbol_rate：6952 Ksym/s，level：-4.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:11:23, frequency：834 MHz，symbol_rate：6952 Ksym/s，level：-4.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:12:32, frequency：842 MHz，symbol_rate：6952 Ksym/s，level：-4.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:13:42, frequency：850 MHz，symbol_rate：6952 Ksym/s，level：-5.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:14:50, frequency：858 MHz，symbol_rate：6952 Ksym/s，level：-5.30 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:15:59, frequency：50 MHz，symbol_rate：6952 Ksym/s，level：-8.00 dbm, 频点不支持
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:17:09, frequency：58 MHz，symbol_rate：6952 Ksym/s，level：-8.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:18:18, frequency：66 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:19:27, frequency：74 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:20:37, frequency：82 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:21:46, frequency：90 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:22:55, frequency：98 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:24:04, frequency：106 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:25:12, frequency：114 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:26:22, frequency：122 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:27:31, frequency：130 MHz，symbol_rate：6952 Ksym/s，level：-8.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:28:40, frequency：138 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:29:49, frequency：146 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:30:59, frequency：154 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:32:08, frequency：162 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:33:17, frequency：170 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:34:25, frequency：178 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:35:35, frequency：186 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:36:44, frequency：194 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:37:53, frequency：202 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:39:03, frequency：210 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:40:11, frequency：218 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:41:21, frequency：226 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:42:30, frequency：234 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:43:38, frequency：242 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:44:48, frequency：250 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:45:56, frequency：258 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:47:06, frequency：266 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:48:16, frequency：274 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:49:25, frequency：282 MHz，symbol_rate：6952 Ksym/s，level：-7.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:50:34, frequency：290 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:51:42, frequency：298 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:52:51, frequency：306 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:54:01, frequency：314 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:55:10, frequency：322 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:56:19, frequency：330 MHz，symbol_rate：6952 Ksym/s，level：-7.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:57:28, frequency：338 MHz，symbol_rate：6952 Ksym/s，level：-7.50 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:58:37, frequency：346 MHz，symbol_rate：6952 Ksym/s，level：-7.30 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 20:59:47, frequency：354 MHz，symbol_rate：6952 Ksym/s，level：-7.20 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:00:55, frequency：362 MHz，symbol_rate：6952 Ksym/s，level：-7.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:02:05, frequency：370 MHz，symbol_rate：6952 Ksym/s，level：-6.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:03:14, frequency：378 MHz，symbol_rate：6952 Ksym/s，level：-6.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:04:24, frequency：386 MHz，symbol_rate：6952 Ksym/s，level：-6.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:05:31, frequency：394 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:06:41, frequency：402 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:07:51, frequency：410 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:09:00, frequency：418 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:10:08, frequency：426 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:11:18, frequency：434 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:12:27, frequency：442 MHz，symbol_rate：6952 Ksym/s，level：-6.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:13:36, frequency：450 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:14:45, frequency：458 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:15:53, frequency：466 MHz，symbol_rate：6952 Ksym/s，level：-6.50 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:17:03, frequency：474 MHz，symbol_rate：6952 Ksym/s，level：-6.40 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:18:12, frequency：482 MHz，symbol_rate：6952 Ksym/s，level：-6.20 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:19:22, frequency：490 MHz，symbol_rate：6952 Ksym/s，level：-6.20 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:20:30, frequency：498 MHz，symbol_rate：6952 Ksym/s，level：-6.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:21:40, frequency：506 MHz，symbol_rate：6952 Ksym/s，level：-6.10 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:22:48, frequency：514 MHz，symbol_rate：6952 Ksym/s，level：-6.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:23:57, frequency：522 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:25:07, frequency：530 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:26:16, frequency：538 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:27:25, frequency：546 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:28:33, frequency：554 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:29:43, frequency：562 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:30:52, frequency：570 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:32:02, frequency：578 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:33:11, frequency：586 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:34:19, frequency：594 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:35:28, frequency：602 MHz，symbol_rate：6952 Ksym/s，level：-6.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:36:37, frequency：610 MHz，symbol_rate：6952 Ksym/s，level：-6.00 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:37:47, frequency：618 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:38:55, frequency：626 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:40:04, frequency：634 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:41:14, frequency：642 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:42:23, frequency：650 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:43:32, frequency：658 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:44:42, frequency：666 MHz，symbol_rate：6952 Ksym/s，level：-5.60 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:45:51, frequency：674 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:47:00, frequency：682 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:48:09, frequency：690 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:49:18, frequency：698 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_max_level: current_time:2020-06-03 21:50:27, frequency：706 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 马赛克检测结果：False
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:13:20, frequency：50 MHz，symbol_rate：6952 Ksym/s，level：-8.00 dbm, 频点不支持
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:17:32, frequency：58 MHz，symbol_rate：6952 Ksym/s，level：-8.10 dbm, 阈值为: -69.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:21:21, frequency：66 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 阈值为: -71.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:25:22, frequency：74 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 阈值为: -69.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:29:24, frequency：82 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 阈值为: -70.60
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:33:59, frequency：90 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -71.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:38:57, frequency：98 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -73.60
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:41:10, frequency：106 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 阈值为: -75.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:43:29, frequency：114 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 阈值为: -75.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:45:46, frequency：122 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 阈值为: -75.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:48:39, frequency：130 MHz，symbol_rate：6952 Ksym/s，level：-8.00 dbm, 阈值为: -75.60
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:50:54, frequency：138 MHz，symbol_rate：6952 Ksym/s，level：-7.90 dbm, 阈值为: -75.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:53:27, frequency：146 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 阈值为: -75.30
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-03 23:55:45, frequency：154 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 阈值为: -75.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:00:08, frequency：162 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -73.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:04:58, frequency：170 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -72.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:09:38, frequency：178 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -74.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:14:43, frequency：186 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -74.30
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:16:55, frequency：194 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -75.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:21:39, frequency：202 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 阈值为: -74.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:25:45, frequency：210 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -72.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:30:54, frequency：218 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -73.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:36:06, frequency：226 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -73.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:38:24, frequency：234 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -75.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:41:13, frequency：242 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -75.60
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:43:36, frequency：250 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -76.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:46:12, frequency：258 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -76.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:48:50, frequency：266 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -76.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:52:00, frequency：274 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -75.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:54:34, frequency：282 MHz，symbol_rate：6952 Ksym/s，level：-7.60 dbm, 阈值为: -76.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:57:16, frequency：290 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -76.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 00:59:56, frequency：298 MHz，symbol_rate：6952 Ksym/s，level：-7.70 dbm, 阈值为: -75.30
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:04:34, frequency：306 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 阈值为: -74.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:10:19, frequency：314 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 阈值为: -74.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:14:57, frequency：322 MHz，symbol_rate：6952 Ksym/s，level：-7.80 dbm, 阈值为: -74.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:19:37, frequency：330 MHz，symbol_rate：6952 Ksym/s，level：-7.60 dbm, 阈值为: -74.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:24:31, frequency：338 MHz，symbol_rate：6952 Ksym/s，level：-7.50 dbm, 阈值为: -74.30
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:29:12, frequency：346 MHz，symbol_rate：6952 Ksym/s，level：-7.30 dbm, 阈值为: -74.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:34:23, frequency：354 MHz，symbol_rate：6952 Ksym/s，level：-7.20 dbm, 阈值为: -73.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:39:17, frequency：362 MHz，symbol_rate：6952 Ksym/s，level：-7.10 dbm, 阈值为: -73.60
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:44:12, frequency：370 MHz，symbol_rate：6952 Ksym/s，level：-6.90 dbm, 阈值为: -73.30
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:49:06, frequency：378 MHz，symbol_rate：6952 Ksym/s，level：-6.70 dbm, 阈值为: -74.30
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:54:33, frequency：386 MHz，symbol_rate：6952 Ksym/s，level：-6.70 dbm, 阈值为: -73.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 01:59:45, frequency：394 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 阈值为: -73.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:04:24, frequency：402 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 阈值为: -74.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:08:40, frequency：410 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 阈值为: -72.30
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:13:23, frequency：418 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 阈值为: -74.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:17:05, frequency：426 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 阈值为: -71.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:21:26, frequency：434 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 阈值为: -73.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:25:42, frequency：442 MHz，symbol_rate：6952 Ksym/s，level：-6.70 dbm, 阈值为: -72.30
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:29:23, frequency：450 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 阈值为: -71.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:33:40, frequency：458 MHz，symbol_rate：6952 Ksym/s，level：-6.60 dbm, 阈值为: -73.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:37:40, frequency：466 MHz，symbol_rate：6952 Ksym/s，level：-6.50 dbm, 阈值为: -69.90
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:41:36, frequency：474 MHz，symbol_rate：6952 Ksym/s，level：-6.40 dbm, 阈值为: -72.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:45:37, frequency：482 MHz，symbol_rate：6952 Ksym/s，level：-6.20 dbm, 阈值为: -70.60
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:49:06, frequency：490 MHz，symbol_rate：6952 Ksym/s，level：-6.20 dbm, 阈值为: -70.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:52:29, frequency：498 MHz，symbol_rate：6952 Ksym/s，level：-6.10 dbm, 阈值为: -70.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:53:42, frequency：506 MHz，symbol_rate：6952 Ksym/s，level：-6.10 dbm, {"msg": "初始值处于马赛克阈值外:-61.1", "threshold_algorithm_result": false}
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:56:23, frequency：514 MHz，symbol_rate：6952 Ksym/s，level：-6.00 dbm, 阈值为: -66.60
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:57:35, frequency：522 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, {"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 02:59:40, frequency：530 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, 阈值为: -65.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 03:01:59, frequency：538 MHz，symbol_rate：6952 Ksym/s，level：-5.80 dbm, 阈值为: -66.00
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 03:03:10, frequency：546 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, {"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 09:41:50, frequency：506 MHz，symbol_rate：6952 Ksym/s，level：-6.10 dbm, {"msg": "初始值处于马赛克阈值外:-61.1", "threshold_algorithm_result": false}
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 09:43:02, frequency：522 MHz，symbol_rate：6952 Ksym/s，level：-5.90 dbm, {"msg": "初始值处于马赛克阈值外:-60.9", "threshold_algorithm_result": false}
+dvbc_1_dynamic_range_awng_min_level: current_time:2020-06-04 09:44:15, frequency：546 MHz，symbol_rate：6952 Ksym/s，level：-5.70 dbm, {"msg": "初始值处于马赛克阈值外:-60.7", "threshold_algorithm_result": false}

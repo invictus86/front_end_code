@@ -5,6 +5,19 @@ import cv2
 import ekt_image_capture
 import ekt_cfg
 import time
+import os
+import logging
+
+current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
+                    filename='{}/ekt_log/ekt_image_classification.log'.format(current_path),
+                    filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志
+                    # a是追加模式，默认如果不写的话，就是追加模式
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
+                    # 日志格式
+                    )
+
 
 def image_classification(list_image):
     """
@@ -17,15 +30,14 @@ def image_classification(list_image):
     for image in list_image:
         img_str = cv2.imencode('.jpg', image)[1].tostring()
         # params 为GET参数 data 为POST Body
-        try:
-            result = requests.post('http://127.0.0.1:24401/', params={'threshold': 0.1}, data=img_str).json()
-        except:
+        while True:
             try:
-                time.sleep(3)
                 result = requests.post('http://127.0.0.1:24401/', params={'threshold': 0.1}, data=img_str).json()
+                break
             except:
-                time.sleep(3)
-                result = requests.post('http://127.0.0.1:24401/', params={'threshold': 0.1}, data=img_str).json()
+                time.sleep(60)
+                print("ekt_image_classification 连接出错")
+                logging.info('ekt_image_classification 连接出错')
 
         # print result
         result_list.append(result["results"][0]["label"])
