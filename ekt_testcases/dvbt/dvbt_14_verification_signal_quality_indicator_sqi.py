@@ -88,14 +88,6 @@ if __name__ == '__main__':
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
-    # specan = Ektsfu(sfu_ip)
-    # specan.set_digitaltv_system_papr_dvbt2("TR")
-    # specan = Ektsfu(sfu_ip)
-    # specan.set_digitaltv_framing_ldata_dvbt2("61")
-    # specan.set_digitaltv_framing_ldata_dvbt2("45")
-
-    # specan = Ektsfu(sfu_ip)
-    # specan.set_digitaltv_framing_fftsize_dvbt2("M32E")
 
     specan = Ektsfu(sfu_ip)
     specan.set_frequency_frequency_frequency(str(FREQUENCY_666) + "MHz")
@@ -124,8 +116,6 @@ if __name__ == '__main__':
 
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_constellation_dvbt(PARAMETER[0])
-        # specan = Ektsfu(sfu_ip)
-        # specan.set_digitaltv_framing_pilot_dvbt2(PARAMETER[1])
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_coderate_dvbt(PARAMETER[1])
         specan = Ektsfu(sfu_ip)

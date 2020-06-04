@@ -149,9 +149,9 @@ if __name__ == '__main__':
             continue
 
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_constellation_dvbt(PARAME[0])
+        specan.set_digitaltv_bicm_constellation_dvbt2(PARAME[0])
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_coderate_dvbt(PARAME[1])
+        specan.set_digitaltv_bicm_coderate_dvbt2(PARAME[1])
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_fftsize_dvbt2(PARAME[2])
         specan = Ektsfu(sfu_ip)
