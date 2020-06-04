@@ -8,9 +8,9 @@ from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
-from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_step_by_step_dvbs2
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
-    dvbc_1_dynamic_range_awng_min_level_json_to_csv
+from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_noise_cn_step_by_step
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, find_level_offset_by_frequency, \
+    dvbc_3_cn_test_json_to_csv
 
 MODULATION_64QAM = "C64"
 MODULATION_256QAM = "C256"
@@ -25,7 +25,9 @@ PARAMETER_LIST = [
     [MODULATION_256QAM, SYMBOL_RATE_6952, 35],
 ]
 
-my_file = Path("../../ekt_json/dvbc_1_dynamic_range_awng_min_level.json")
+FREQUENCY_LIST = [106, 162, 242, 298, 362, 418, 474, 522, 594, 666, 722, 770, 858]
+
+my_file = Path("../../ekt_json/dvbc_3_cn_test.json")
 if my_file.exists():
     pass
 else:
@@ -37,12 +39,12 @@ else:
 
     for PARAMETER in PARAMETER_LIST:
         list_test_result = []
-        for FREQUENCY_LEVEL_OFFSET in DVBC_FREQUENCY_LEVEL_OFFSET:
-            list_test_result.append([FREQUENCY_LEVEL_OFFSET, None])
+        for FREQUENCY in FREQUENCY_LIST:
+            list_test_result.append([FREQUENCY, None])
         list_test_parame_result.append([PARAMETER[0], PARAMETER[1], PARAMETER[2], list_test_result])
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
 
-    write_json_file("../../ekt_json/dvbc_1_dynamic_range_awng_min_level.json", dict_test_parame_result)
+    write_json_file("../../ekt_json/dvbc_3_cn_test.json", dict_test_parame_result)
 
 if __name__ == '__main__':
     """
@@ -55,7 +57,7 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
-    load_dict = read_json_file("../../ekt_json/dvbc_1_dynamic_range_awng_min_level.json")
+    load_dict = read_json_file("../../ekt_json/dvbc_3_cn_test.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
@@ -106,14 +108,14 @@ if __name__ == '__main__':
             else:
                 continue
 
-            FREQUENCY_LEVEL_OFFSET = PARAMETER[0]
+            FREQUENCY_LEVEL_OFFSET = [PARAMETER[0], find_level_offset_by_frequency("DVBC_FREQUENCY_LEVEL_OFFSET", PARAMETER[0])]
 
             specan = Ektsfu(sfu_ip)
             specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
             specan = Ektsfu(sfu_ip)
             specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
             specan = Ektsfu(sfu_ip)
-            specan.set_level_level_level("dBm", str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])))
+            specan.set_level_level_level("dBm", str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])))
 
             net = ekt_net.EktNetClient('192.168.1.24', 9999)
             net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
@@ -144,7 +146,7 @@ if __name__ == '__main__':
             elif lock_state == "0":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "dvbc_1_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "dvbc_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
@@ -153,33 +155,32 @@ if __name__ == '__main__':
             elif lock_state == "2":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "dvbc_1_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "dvbc_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                               "频点不支持") + "\n"))
                 PARAMETER[1] = "Frequency points are not supported"
-                write_json_file("../../ekt_json/dvbc_1_dynamic_range_awng_min_level.json", load_dict)
-                dvbc_1_dynamic_range_awng_min_level_json_to_csv("../../ekt_json/dvbc_1_dynamic_range_awng_min_level.json",
-                                                                "../../ekt_test_report/dvbc_1_dynamic_range_awng_min_level.csv")
+                write_json_file("../../ekt_json/dvbc_3_cn_test.json", load_dict)
+                dvbc_3_cn_test_json_to_csv("../../ekt_json/dvbc_3_cn_test.json",
+                                           "../../ekt_test_report/dvbc_3_cn_test.csv")
                 continue
             else:
                 write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
                 continue
 
-            res, test_result = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, (-60 - FREQUENCY_LEVEL_OFFSET[1]),
-                                                                            level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
+            res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, LOCK_PARAMETER[2])
             # start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])), "-10")
             print (
-                "dvbc_1_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                "dvbc_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbc_1_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s， {}".format(
+                              "dvbc_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s， {}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
 
             PARAMETER[1] = test_result
-            write_json_file("../../ekt_json/dvbc_1_dynamic_range_awng_min_level.json", load_dict)
-            dvbc_1_dynamic_range_awng_min_level_json_to_csv("../../ekt_json/dvbc_1_dynamic_range_awng_min_level.json",
-                                                            "../../ekt_test_report/dvbc_1_dynamic_range_awng_min_level.csv")
+            write_json_file("../../ekt_json/dvbc_3_cn_test.json", load_dict)
+            dvbc_3_cn_test_json_to_csv("../../ekt_json/dvbc_3_cn_test.json",
+                                       "../../ekt_test_report/dvbc_3_cn_test.csv")

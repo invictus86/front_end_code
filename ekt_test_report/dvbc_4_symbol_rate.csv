@@ -1,0 +1,11 @@
+modulation,frequency,level,cn,symbol_rate,mosic_result
+C64,666,-50,27,6952,False
+,,,,6875,False
+,,,,6000,False
+,,,,5000,False
+,,,,4000,False
+C256,666,-50,35,6952,
+,,,,6875,
+,,,,6000,
+,,,,5000,
+,,,,4000,

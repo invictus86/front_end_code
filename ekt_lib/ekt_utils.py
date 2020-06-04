@@ -191,6 +191,41 @@ def dvbc_2_channel_bandwidth_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbc_3_cn_test_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[0], i[1][1], i[2], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data, columns=['modulation', 'symbol_rate', 'spec', 'frequency', 'noise_cn'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbc_4_symbol_rate_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[6]:
+            if count == 0:
+                list_required_data.append([i[0], i[1], i[4], i[5], j[0][1], j[1]])
+            else:
+                list_required_data.append(['', '', '', '', j[0][1], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['modulation', 'frequency', 'level', 'cn', 'symbol_rate', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
