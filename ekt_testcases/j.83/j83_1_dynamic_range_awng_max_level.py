@@ -9,19 +9,17 @@ from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
+    j83_1_dynamic_range_awng_max_level_json_to_csv
 
 MODULATION_64QAM = "C64"
 MODULATION_256QAM = "C256"
 
-SYMBOL_RATE_5075 = ["5.075e6", "5075"]
+SYMBOL_RATE_5057 = ["5.057e6", "5057"]
 SYMBOL_RATE_5361 = ["5.361e6", "5361"]
-# SYMBOL_RATE_10M = ["10.000000e6", "10000"]
-# SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
-# SYMBOL_RATE_45M = ["45.000000e6", "45000"]
 
 PARAMETER_LIST = [
-    [MODULATION_64QAM, SYMBOL_RATE_5075, 27],
+    [MODULATION_64QAM, SYMBOL_RATE_5057, 27],
     [MODULATION_256QAM, SYMBOL_RATE_5361, 33],
 ]
 
@@ -94,9 +92,9 @@ if __name__ == '__main__':
         CN = LOCK_PARAMETER[2]
 
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_constellation_dvbc(MODULATION)
-        specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_symbolrate_dvbc(SYMBOL_RATE[0])
+        specan.set_digitaltv_coding_constellation_j83b(MODULATION)
+        # specan = Ektsfu(sfu_ip)
+        # specan.set_digitaltv_coding_symbolrate_j83b(SYMBOL_RATE[0])
         specan = Ektsfu(sfu_ip)
         specan.set_noise_awgn_cn(str(CN))
 
@@ -123,14 +121,18 @@ if __name__ == '__main__':
             net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
             time.sleep(1)
             del net
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            net.send_data(json.dumps({"cmd": "set_modulation_data", "modulation": str(MODULATION)}))
+            time.sleep(1)
+            del net
 
             """
             触发stb-tester进行频率和符号率设置
             """
             try:
                 stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
-                                        "dcn7514i")
+                                            ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
+                                            "dcn7514i")
             except:
                 time.sleep(60)
                 stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
@@ -161,7 +163,7 @@ if __name__ == '__main__':
                 PARAMETER[1] = "Frequency points are not supported"
                 write_json_file("../../ekt_json/j83_1_dynamic_range_awng_max_level.json", load_dict)
                 j83_1_dynamic_range_awng_max_level_json_to_csv("../../ekt_json/j83_1_dynamic_range_awng_max_level.json",
-                                                                "../../ekt_test_report/j83_1_dynamic_range_awng_max_level.csv")
+                                                               "../../ekt_test_report/j83_1_dynamic_range_awng_max_level.csv")
                 continue
             else:
                 write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
@@ -184,4 +186,4 @@ if __name__ == '__main__':
             PARAMETER[1] = mosaic_result
             write_json_file("../../ekt_json/j83_1_dynamic_range_awng_max_level.json", load_dict)
             j83_1_dynamic_range_awng_max_level_json_to_csv("../../ekt_json/j83_1_dynamic_range_awng_max_level.json",
-                                                            "../../ekt_test_report/j83_1_dynamic_range_awng_max_level.csv")
+                                                           "../../ekt_test_report/j83_1_dynamic_range_awng_max_level.csv")

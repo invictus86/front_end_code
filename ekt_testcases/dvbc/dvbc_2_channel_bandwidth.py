@@ -83,8 +83,6 @@ if __name__ == '__main__':
         specan = Ektsfu(sfu_ip)
         specan.set_noise_awgn_cn(str("35"))
 
-        # for PARAMETER in LOCK_PARAMETER[3]:
-
         FREQUENCY_LEVEL_OFFSET = [LOCK_PARAMETER[0], LOCK_PARAMETER[1]]
 
         specan = Ektsfu(sfu_ip)

@@ -2738,6 +2738,22 @@ class Ektsfu(object):
         self.specan.query('*OPC?')
         del self.specan
 
+    def set_digitaltv_coding_constellation_j83b(self, constellation_type):
+        """
+        Selects the modulation (constellation) of the J.83B signal.
+            J64      64QAM
+            J256    256QAM
+            J1024   1024QAM
+        example :
+            J83B:CONS J64
+        :return:
+        """
+        self.specan.write('J83B:CONS {}'.format(constellation_type))
+        logging.info('J83B:CONS {}'.format(constellation_type))
+        # time.sleep(1)
+        self.specan.query('*OPC?')
+        del self.specan
+
     def set_digitaltv_coding_interleavermode_j83b(self, mode_type):
         """
         Selects the interleaver mode.
@@ -3125,13 +3141,14 @@ def _test_code():
     # specan.set_interferer_addition("BEFN")
     # specan.set_interferer_reference("ATT")
     # specan.set_interferer_attenuation("5")
-    specan.set_interferer_level("-25")
+    # specan.set_interferer_level("-25")
     # specan.set_interferer_frequency_offset("-1")
     # specan.set_interferer_singal_frequency_offs99et("-1")
     # specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str("16")))
     # specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str("8")))
     # specan.set_fading_profile_pathloss("3", "1", "16 dB")
     # specan.set_fading_settings_speedunit("KMH")
+    specan.set_digitaltv_coding_constellation_j83b("J256")
 
     # specan.set_cmd()
 

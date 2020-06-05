@@ -71,7 +71,9 @@ class RVTserver():
         image_lock_success = self.read_image_file(self.lock_success_image)
         image_lock_fail = self.read_image_file(self.lock_fail_image)
         frequency = None
+        bandwidth = None
         symbol_rate = None
+        modulation = None
         lock_state = None
         strength_num = None
         quality_num = None
@@ -161,6 +163,15 @@ class RVTserver():
                         result = conn.send(json.dumps(strength_quality_data))
                         print ("result:", result, "current_time:{}, get strength_quality_data : {}  ok ".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), strength_quality_data))
+                    elif dict_data.get("cmd") == "set_modulation_data":
+                        modulation = dict_data.get("modulation")
+                        result = conn.send("set modulation data : {} ok ".format(modulation))
+                        print ("result:", result, "current_time:{}, set modulation data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), modulation))
+                    elif dict_data.get("cmd") == "get_modulation_data":
+                        result = conn.send(str(modulation))
+                        print ("result:", result, "current_time:{}, get modulation data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), modulation))
                     else:
                         print (data)
                         print ("unknown message")
