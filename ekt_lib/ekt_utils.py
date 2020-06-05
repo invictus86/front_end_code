@@ -350,6 +350,17 @@ def j83_1_dynamic_range_awng_min_level_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def j83_2_channel_bandwidth_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        list_required_data.append([i[0], i[3], i[4][1], i[5]])
+    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'symbol_rate', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")

@@ -12,8 +12,8 @@ from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
     j83_1_dynamic_range_awng_max_level_json_to_csv
 
-MODULATION_64QAM = "C64"
-MODULATION_256QAM = "C256"
+MODULATION_64QAM = "J64"
+MODULATION_256QAM = "J256"
 
 SYMBOL_RATE_5057 = ["5.057e6", "5057"]
 SYMBOL_RATE_5361 = ["5.361e6", "5361"]
