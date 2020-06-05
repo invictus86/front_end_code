@@ -244,6 +244,24 @@ def dvbc_5_IQ_inverted_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
+def dvbc_7_digital_adjacent_carrier_interference_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[0], i[1][1], i[2], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['modulation', 'symbol_rate', 'spec', 'frequency', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
 def dvbc_8_symbol_error_rate_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
@@ -259,6 +277,42 @@ def dvbc_8_symbol_error_rate_json_to_csv(json_path, csv_path):
             count = count + 1
     pd_data = pd.DataFrame(list_required_data,
                            columns=['sfu_symbol_rate', 'stb_symbol_rate', 'frequency', 'modulation', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbc_9_frequency_error_rate_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[2]:
+            if count == 0:
+                list_required_data.append([i[0][1], i[1][0], i[1][1], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['symbol_rate', 'stb_frequency', 'sfu_frequency', 'modulation', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbc_10_frequency_capture_range_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[2]:
+            if count == 0:
+                list_required_data.append([i[0][1], i[1][0], i[1][1], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['symbol_rate', 'stb_frequency', 'sfu_frequency', 'modulation', 'mosic_result'])
     pd_data.to_csv(csv_path, index=None)
 
 

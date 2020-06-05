@@ -9,7 +9,8 @@ from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_step_by_step_dvbs2
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, find_level_offset_by_frequency
+from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, find_level_offset_by_frequency, \
+    dvbc_7_digital_adjacent_carrier_interference_json_to_csv
 
 MODULATION_64QAM = "C64"
 MODULATION_256QAM = "C256"
@@ -120,7 +121,7 @@ if __name__ == '__main__':
             specan = Ektsfu(sfu_ip)
             specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
             specan = Ektsfu(sfu_ip)
-            specan.set_level_level_level("dBm", str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])))
+            specan.set_level_level_level("dBm", str("%.2f" % ((-25) - FREQUENCY_LEVEL_OFFSET[1])))
 
             net = ekt_net.EktNetClient('192.168.1.24', 9999)
             net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
@@ -154,7 +155,7 @@ if __name__ == '__main__':
                                           "dvbc_7_digital_adjacent_carrier_interference: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                              str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])),
+                                              str("%.2f" % ((-25) - FREQUENCY_LEVEL_OFFSET[1])),
                                               "锁台失败") + "\n"))
                 continue
             elif lock_state == "2":
@@ -163,7 +164,7 @@ if __name__ == '__main__':
                                           "dvbc_7_digital_adjacent_carrier_interference: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                              str("%.2f" % ((-60) - FREQUENCY_LEVEL_OFFSET[1])),
+                                              str("%.2f" % ((-25) - FREQUENCY_LEVEL_OFFSET[1])),
                                               "频点不支持") + "\n"))
                 PARAMETER[1] = "Frequency points are not supported"
                 write_json_file("../../ekt_json/dvbc_7_digital_adjacent_carrier_interference.json", load_dict)
@@ -174,7 +175,7 @@ if __name__ == '__main__':
                 write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
                 continue
 
-            res, test_result = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, (-60 - FREQUENCY_LEVEL_OFFSET[1]),
+            res, test_result = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, (-25 - FREQUENCY_LEVEL_OFFSET[1]),
                                                                             level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
             print (
                 "dvbc_7_digital_adjacent_carrier_interference: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
@@ -185,7 +186,7 @@ if __name__ == '__main__':
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
 
-            PARAMETER[1] = test_result
+            PARAMETER[1] = str(-25 - float(test_result))
             write_json_file("../../ekt_json/dvbc_7_digital_adjacent_carrier_interference.json", load_dict)
             dvbc_7_digital_adjacent_carrier_interference_json_to_csv("../../ekt_json/dvbc_7_digital_adjacent_carrier_interference.json",
                                                                      "../../ekt_test_report/dvbc_7_digital_adjacent_carrier_interference.csv")
