@@ -13,11 +13,11 @@ from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file
     j83_2_channel_bandwidth_json_to_csv
 
 FREQUENCY_666 = 666
-LEVEL_OFFSET_666 = find_level_offset_by_frequency("DVBC_FREQUENCY_LEVEL_OFFSET", 666)
+LEVEL_OFFSET_666 = find_level_offset_by_frequency("ANNEXB_FREQUENCY_LEVEL_OFFSET", 666)
 LEVEL_50_666 = str("%.2f" % (-50 - LEVEL_OFFSET_666))
 
-MODULATION_64QAM = "C64"
-MODULATION_256QAM = "C256"
+MODULATION_64QAM = "J64"
+MODULATION_256QAM = "J256"
 
 SYMBOL_RATE_5361 = ["5.361e6", "5361"]
 
@@ -64,7 +64,6 @@ if __name__ == '__main__':
     specan.set_noise_noise_awgn("ON")
     specan = Ektsfu(sfu_ip)
     specan.set_noise_settings_bandwith("ON")
-
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
@@ -100,6 +99,10 @@ if __name__ == '__main__':
         del net
         net = ekt_net.EktNetClient('192.168.1.24', 9999)
         net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
+        time.sleep(1)
+        del net
+        net = ekt_net.EktNetClient('192.168.1.24', 9999)
+        net.send_data(json.dumps({"cmd": "set_modulation_data", "modulation": str(MODULATION)}))
         time.sleep(1)
         del net
 

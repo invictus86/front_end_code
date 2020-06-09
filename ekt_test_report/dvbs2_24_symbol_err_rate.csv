@@ -1,8 +1,8 @@
 sfu_symbol_rate,stb_symbol_rate,code_rate,test_result
 5.000000e6,05002,R3_5,False
-,,R2_3,False
-,,R3_4,False
-,,R5_6,False
+,,R2_3,
+,,R3_4,
+,,R5_6,
 ,,R8_9,
 ,,R9_10,
 5.000000e6,04998,R3_5,

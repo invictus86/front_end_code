@@ -30,9 +30,6 @@ else:
     dict_test_parame_result = {}
     list_test_parame_result = []
 
-    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    DVBC_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBC_FREQUENCY_LEVEL_OFFSET")
-
     for SYMBOL_RATE in SYMBOL_RATE_LIST:
         for REQUENCY in REQUENCY_LIST:
             list_test_result = []

@@ -17,12 +17,12 @@ FREQUENCY_1550 = "1550"
 LEVEL_OFFSET = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", int(FREQUENCY_1550))
 LEVEL_50 = str("%.2f" % ((-50) - LEVEL_OFFSET))
 
-SYMBOL_RATE_5M = ["5.000000e6", "05002"]
-SYMBOL_RATE_5M_ = ["5.000000e6", "04998"]
-SYMBOL_RATE_27_5M = ["27.500000e6", "27503"]
-SYMBOL_RATE_27_5M_ = ["27.500000e6", "27497"]
-SYMBOL_RATE_45M = ["45.000000e6", "44996"]
-SYMBOL_RATE_45M_ = ["45.000000e6", "45004"]
+SYMBOL_RATE_5M = ["5.000000e6", "05002", 5]
+SYMBOL_RATE_5M_ = ["5.000000e6", "04998", 5]
+SYMBOL_RATE_27_5M = ["27.500000e6", "27503", 27.5]
+SYMBOL_RATE_27_5M_ = ["27.500000e6", "27497", 27.5]
+SYMBOL_RATE_45M = ["45.000000e6", "44996", 45]
+SYMBOL_RATE_45M_ = ["45.000000e6", "45004", 45]
 
 dict_config_data = {
     "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_5M_, SYMBOL_RATE_27_5M, SYMBOL_RATE_27_5M_, SYMBOL_RATE_45M,
@@ -67,24 +67,20 @@ if __name__ == '__main__':
     specan.set_modulation_modulation_source("DTV")
     specan = Ektsfu(sfu_ip)
     specan.set_modulation_modulation_standard_dvt("DVS2")
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_digitaltv_input_source_dvbs2("TSPLayer")
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_digitaltv_coding_constellation_dvbs2(MODULATION_8PSK)
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_rf("ON")
-    time.sleep(1)
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_noise("ADD")
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_awgn("ON")
-    time.sleep(1)
+    specan = Ektsfu(sfu_ip)
+    specan.set_noise_settings_bandwith("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
@@ -115,6 +111,8 @@ if __name__ == '__main__':
         SYMBOL_RATE = LOCK_PARAMETER[0]
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_symbolrate_dvbs2(SYMBOL_RATE[0])
+        specan = Ektsfu(sfu_ip)
+        specan.set_noise_settings_receiver("{}e6".format(str(SYMBOL_RATE[2] * 1.2)))
 
         net = ekt_net.EktNetClient('192.168.1.24', 9999)
         net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": FREQUENCY_1550}))
@@ -157,8 +155,9 @@ if __name__ == '__main__':
             specan = Ektsfu(sfu_ip)
             specan.set_noise_awgn_cn(str(code_rate_cn[1]))
 
-            start_data_result,mosaic_result  = mosaic_algorithm(sfu_ip, LEVEL_50, "-50")
-            print ("dvbs2_symbol_err_rate: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+            start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, LEVEL_50, "-50")
+            print (
+            "dvbs2_symbol_err_rate: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                 FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_50, start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
@@ -170,4 +169,4 @@ if __name__ == '__main__':
             PARAMETER[1] = mosaic_result
             write_json_file("../../ekt_json/dvbs2_24_symbol_err_rate.json", load_dict)
             dvbs2_24_symbol_err_rate_json_to_csv("../../ekt_json/dvbs2_24_symbol_err_rate.json",
-                                             "../../ekt_test_report/dvbs2_24_symbol_err_rate.csv")
+                                                 "../../ekt_test_report/dvbs2_24_symbol_err_rate.csv")

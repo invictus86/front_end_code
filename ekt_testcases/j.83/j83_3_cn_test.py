@@ -10,10 +10,10 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_noise_cn_step_by_step
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, find_level_offset_by_frequency, \
-    dvbc_3_cn_test_json_to_csv
+    j83_3_cn_test_json_to_csv
 
-MODULATION_64QAM = "C64"
-MODULATION_256QAM = "C256"
+MODULATION_64QAM = "J64"
+MODULATION_256QAM = "J256"
 
 SYMBOL_RATE_5057 = ["5.057e6", "5057"]
 SYMBOL_RATE_5361 = ["5.361e6", "5361"]
@@ -25,15 +25,12 @@ PARAMETER_LIST = [
 
 FREQUENCY_LIST = [60, 90, 162, 240, 300, 366, 420, 474, 522, 594, 666, 726, 774, 858]
 
-my_file = Path("../../ekt_json/dvbc_3_cn_test.json")
+my_file = Path("../../ekt_json/j83_3_cn_test.json")
 if my_file.exists():
     pass
 else:
     dict_test_parame_result = {}
     list_test_parame_result = []
-
-    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    DVBC_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBC_FREQUENCY_LEVEL_OFFSET")
 
     for PARAMETER in PARAMETER_LIST:
         list_test_result = []
@@ -42,7 +39,7 @@ else:
         list_test_parame_result.append([PARAMETER[0], PARAMETER[1], PARAMETER[2], list_test_result])
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
 
-    write_json_file("../../ekt_json/dvbc_3_cn_test.json", dict_test_parame_result)
+    write_json_file("../../ekt_json/j83_3_cn_test.json", dict_test_parame_result)
 
 if __name__ == '__main__':
     """
@@ -55,24 +52,26 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
-    load_dict = read_json_file("../../ekt_json/dvbc_3_cn_test.json")
+    load_dict = read_json_file("../../ekt_json/j83_3_cn_test.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
     specan = Ektsfu(sfu_ip)
     specan.set_modulation_modulation_source("DTV")
     specan = Ektsfu(sfu_ip)
-    specan.set_modulation_modulation_standard_dvt("DVBC")
+    specan.set_modulation_modulation_standard_dvt("J83B")
     specan = Ektsfu(sfu_ip)
     specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
     specan = Ektsfu(sfu_ip)
-    specan.set_digitaltv_input_source_dvbc("TSPLayer")
+    specan.set_digitaltv_input_source_j83b("TSPLayer")
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_rf("ON")
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_noise("ADD")
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_awgn("ON")
+    specan = Ektsfu(sfu_ip)
+    specan.set_noise_settings_bandwith("ON")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
@@ -94,9 +93,9 @@ if __name__ == '__main__':
         CN = LOCK_PARAMETER[2]
 
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_constellation_dvbc(MODULATION)
-        specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_symbolrate_dvbc(SYMBOL_RATE[0])
+        specan.set_digitaltv_coding_constellation_j83b(MODULATION)
+        # specan = Ektsfu(sfu_ip)
+        # specan.set_digitaltv_coding_symbolrate_j83b(SYMBOL_RATE[0])
         specan = Ektsfu(sfu_ip)
         specan.set_noise_awgn_cn(str(CN))
 
@@ -106,7 +105,7 @@ if __name__ == '__main__':
             else:
                 continue
 
-            FREQUENCY_LEVEL_OFFSET = [PARAMETER[0], find_level_offset_by_frequency("DVBC_FREQUENCY_LEVEL_OFFSET", PARAMETER[0])]
+            FREQUENCY_LEVEL_OFFSET = [PARAMETER[0], find_level_offset_by_frequency("ANNEXB_FREQUENCY_LEVEL_OFFSET", PARAMETER[0])]
 
             specan = Ektsfu(sfu_ip)
             specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
@@ -121,6 +120,10 @@ if __name__ == '__main__':
             del net
             net = ekt_net.EktNetClient('192.168.1.24', 9999)
             net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
+            time.sleep(1)
+            del net
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            net.send_data(json.dumps({"cmd": "set_modulation_data", "modulation": str(MODULATION)}))
             time.sleep(1)
             del net
 
@@ -144,7 +147,7 @@ if __name__ == '__main__':
             elif lock_state == "0":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "dvbc_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "j83_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
@@ -153,15 +156,15 @@ if __name__ == '__main__':
             elif lock_state == "2":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "dvbc_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "j83_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
                                               "频点不支持") + "\n"))
                 PARAMETER[1] = "Frequency points are not supported"
-                write_json_file("../../ekt_json/dvbc_3_cn_test.json", load_dict)
-                dvbc_3_cn_test_json_to_csv("../../ekt_json/dvbc_3_cn_test.json",
-                                           "../../ekt_test_report/dvbc_3_cn_test.csv")
+                write_json_file("../../ekt_json/j83_3_cn_test.json", load_dict)
+                j83_3_cn_test_json_to_csv("../../ekt_json/j83_3_cn_test.json",
+                                          "../../ekt_test_report/j83_3_cn_test.csv")
                 continue
             else:
                 write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
@@ -169,15 +172,15 @@ if __name__ == '__main__':
 
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, LOCK_PARAMETER[2])
             print (
-                "dvbc_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                "j83_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbc_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s， {}".format(
+                              "j83_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s， {}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
 
             PARAMETER[1] = test_result
-            write_json_file("../../ekt_json/dvbc_3_cn_test.json", load_dict)
-            dvbc_3_cn_test_json_to_csv("../../ekt_json/dvbc_3_cn_test.json",
-                                       "../../ekt_test_report/dvbc_3_cn_test.csv")
+            write_json_file("../../ekt_json/j83_3_cn_test.json", load_dict)
+            j83_3_cn_test_json_to_csv("../../ekt_json/j83_3_cn_test.json",
+                                      "../../ekt_test_report/j83_3_cn_test.csv")

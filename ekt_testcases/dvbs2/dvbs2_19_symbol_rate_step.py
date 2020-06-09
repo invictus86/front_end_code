@@ -64,6 +64,8 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_awgn("ON")
     specan = Ektsfu(sfu_ip)
+    specan.set_noise_settings_bandwith("OFF")
+    specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
@@ -91,6 +93,8 @@ if __name__ == '__main__':
         SYMBOL_RATE = PARAMETER[0]
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_symbolrate_dvbs2(SYMBOL_RATE[0])
+        specan = Ektsfu(sfu_ip)
+        specan.set_noise_settings_receiver("{}e6".format(str(SYMBOL_RATE[2] * 1.2)))
 
         net = ekt_net.EktNetClient('192.168.1.24', 9999)
         net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_1550)}))

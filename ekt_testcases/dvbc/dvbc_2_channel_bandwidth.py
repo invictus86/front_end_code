@@ -9,7 +9,7 @@ from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, find_level_offset_by_frequency, \
+from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, find_level_offset_by_frequency, \
     dvbc_2_channel_bandwidth_json_to_csv
 
 FREQUENCY_666 = 666

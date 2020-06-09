@@ -96,9 +96,9 @@ def generate_symbol_rate_list():
     SYMBOL_TATE_LIST = []
     for i in range(5, 46):
         if i < 10:
-            SYMBOL_TATE_LIST.append([str(i) + ".000000e6", "0{}000".format(i)])
+            SYMBOL_TATE_LIST.append([str(i) + ".000000e6", "0{}000".format(i), i])
         else:
-            SYMBOL_TATE_LIST.append([str(i) + ".000000e6", "{}000".format(i)])
+            SYMBOL_TATE_LIST.append([str(i) + ".000000e6", "{}000".format(i), i])
     return SYMBOL_TATE_LIST
 
 
@@ -244,7 +244,25 @@ def dvbc_5_IQ_inverted_json_to_csv(json_path, csv_path):
     pd_data.to_csv(csv_path, index=None)
 
 
-def dvbc_7_digital_adjacent_carrier_interference_json_to_csv(json_path, csv_path):
+def dvbc_7_analogue_adjacent_carrier_interference_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[0], i[1][1], i[2], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['modulation', 'symbol_rate', 'spec', 'frequency', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbc_7_analogue_adjacent_carrier_interference_N_1_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
     # print list_data
@@ -358,6 +376,130 @@ def j83_2_channel_bandwidth_json_to_csv(json_path, csv_path):
     for i in list_data:
         list_required_data.append([i[0], i[3], i[4][1], i[5]])
     pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'symbol_rate', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def j83_3_cn_test_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[0], i[1][1], i[2], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data, columns=['modulation', 'symbol_rate', 'spec', 'frequency', 'noise_cn'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def j83_5_IQ_inverted_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[4]:
+            if count == 0:
+                list_required_data.append([i[0], i[1][1], i[2], i[3], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['modulation', 'symbol_rate', 'level', 'cn', 'frequency', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def j83_7_analogue_adjacent_carrier_interference_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[0], i[1][1], i[2], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['modulation', 'symbol_rate', 'spec', 'frequency', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def j83_7_analogue_adjacent_carrier_interference_N_1_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[3]:
+            if count == 0:
+                list_required_data.append([i[0], i[1][1], i[2], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['modulation', 'symbol_rate', 'spec', 'frequency', 'level'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def j83_8_symbol_error_rate_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[2]:
+            if count == 0:
+                list_required_data.append([i[0][0], i[0][1], i[1], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['sfu_symbol_rate', 'stb_symbol_rate', 'frequency', 'modulation', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def j83_9_frequency_error_rate_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[2]:
+            if count == 0:
+                list_required_data.append([i[0][1], i[1][0], i[1][1], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['symbol_rate', 'stb_frequency', 'sfu_frequency', 'modulation', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+def j83_10_frequency_capture_range_json_to_csv(json_path, csv_path):
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    # print list_data
+    list_required_data = []
+    for i in list_data:
+        count = 0
+        for j in i[2]:
+            if count == 0:
+                list_required_data.append([i[0][1], i[1][0], i[1][1], j[0], j[1]])
+            else:
+                list_required_data.append(['', '', '', j[0], j[1]])
+            count = count + 1
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['symbol_rate', 'stb_frequency', 'sfu_frequency', 'modulation', 'mosic_result'])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -1152,5 +1294,7 @@ def dvbt2_70_performance_in_frequency_outside_json_to_csv(json_path, csv_path):
 
 
 if __name__ == '__main__':
-    result = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 1310)
-    print(result)
+    # result = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 1310)
+    # print(result)
+    SYMBOL_TATE_LIST = generate_symbol_rate_list()
+    print SYMBOL_TATE_LIST

@@ -9,16 +9,15 @@ from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, dvbc_9_frequency_error_rate_json_to_csv
+from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, j83_9_frequency_error_rate_json_to_csv
 
-MODULATION_64QAM = "C64"
-MODULATION_128QAM = "C128"
-MODULATION_256QAM = "C256"
+MODULATION_64QAM = "J64"
+MODULATION_256QAM = "J256"
 
-SYMBOL_RATE_6900 = ["6.9e6", "6900"]
+SYMBOL_RATE_5361 = ["5.361e6", "5361"]
 
 REQUENCY_LIST = [
-    [111, 111.2],
+    [60, 60.2],
     [201, 201.2],
     [315, 315.2],
     [405, 405.2],
@@ -26,8 +25,8 @@ REQUENCY_LIST = [
     [603, 603.2],
     [705, 705.2],
     [801, 801.2],
-    [862, 862.2],
-    [111, 110.8],
+    [858, 858.2],
+    [60, 59.8],
     [201, 200.8],
     [315, 314.8],
     [405, 404.8],
@@ -35,21 +34,18 @@ REQUENCY_LIST = [
     [603, 602.8],
     [705, 704.8],
     [801, 800.8],
-    [862, 861.8]
+    [858, 857.8],
 ]
 
-SYMBOL_RATE_LIST = [SYMBOL_RATE_6900]
-MODULATION_LIST = [MODULATION_64QAM, MODULATION_128QAM, MODULATION_256QAM]
+SYMBOL_RATE_LIST = [SYMBOL_RATE_5361]
+MODULATION_LIST = [MODULATION_64QAM, MODULATION_256QAM]
 
-my_file = Path("../../ekt_json/dvbc_9_frequency_error_rate.json")
+my_file = Path("../../ekt_json/j83_9_frequency_error_rate.json")
 if my_file.exists():
     pass
 else:
     dict_test_parame_result = {}
     list_test_parame_result = []
-
-    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    DVBC_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBC_FREQUENCY_LEVEL_OFFSET")
 
     for SYMBOL_RATE in SYMBOL_RATE_LIST:
         for REQUENCY in REQUENCY_LIST:
@@ -59,7 +55,7 @@ else:
             list_test_parame_result.append([SYMBOL_RATE, REQUENCY, list_test_result])
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
 
-    write_json_file("../../ekt_json/dvbc_9_frequency_error_rate.json", dict_test_parame_result)
+    write_json_file("../../ekt_json/j83_9_frequency_error_rate.json", dict_test_parame_result)
 
 if __name__ == '__main__':
     """
@@ -72,18 +68,18 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
     """
-    load_dict = read_json_file("../../ekt_json/dvbc_9_frequency_error_rate.json")
+    load_dict = read_json_file("../../ekt_json/j83_9_frequency_error_rate.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
     specan = Ektsfu(sfu_ip)
     specan.set_modulation_modulation_source("DTV")
     specan = Ektsfu(sfu_ip)
-    specan.set_modulation_modulation_standard_dvt("DVBC")
+    specan.set_modulation_modulation_standard_dvt("J83B")
     specan = Ektsfu(sfu_ip)
     specan.set_player_timing_openfile(r"E:\333\DIVER.GTS")
     specan = Ektsfu(sfu_ip)
-    specan.set_digitaltv_input_source_dvbc("TSPLayer")
+    specan.set_digitaltv_input_source_j83b("TSPLayer")
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_rf("ON")
     specan = Ektsfu(sfu_ip)
@@ -109,60 +105,14 @@ if __name__ == '__main__':
         SYMBOL_RATE = LOCK_PARAMETER[0]
         FREQUENCY_LEVEL_OFFSET = LOCK_PARAMETER[1]
 
-        specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_coding_symbolrate_dvbc(SYMBOL_RATE[0])
+        # specan = Ektsfu(sfu_ip)
+        # specan.set_digitaltv_coding_symbolrate_dvbc(SYMBOL_RATE[0])
         specan = Ektsfu(sfu_ip)
         specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[1]) + "MHz")
         # specan = Ektsfu(sfu_ip)
         # specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
         specan = Ektsfu(sfu_ip)
         specan.set_level_level_level("dBm", "-50")
-
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
-        net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
-        time.sleep(1)
-        del net
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
-        net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
-        time.sleep(1)
-        del net
-
-        """
-        触发stb-tester进行频率和符号率设置
-        """
-        try:
-            stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
-                                        "dcn7514i")
-        except:
-            time.sleep(60)
-            stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
-                                        "dcn7514i")
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
-
-        lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
-        if lock_state == "1":
-            pass
-        elif lock_state == "0":
-            write_test_result("../../ekt_log/test_result_sfu.txt",
-                              (
-                                      "dvbc_9_frequency_error_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          str(FREQUENCY_LEVEL_OFFSET[1]), str(SYMBOL_RATE[1]), str(-50),
-                                          "锁台失败") + "\n"))
-            continue
-        elif lock_state == "2":
-            write_test_result("../../ekt_log/test_result_sfu.txt",
-                              (
-                                      "dvbc_9_frequency_error_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
-                                          datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          str(FREQUENCY_LEVEL_OFFSET[1]), str(SYMBOL_RATE[1]), str(-50),
-                                          "频点不支持") + "\n"))
-            continue
-        else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
-            continue
 
         for PARAMETER in LOCK_PARAMETER[2]:
             if PARAMETER[1] == None:
@@ -172,22 +122,71 @@ if __name__ == '__main__':
 
             MODULATION = PARAMETER[0]
             specan = Ektsfu(sfu_ip)
-            specan.set_digitaltv_coding_constellation_dvbc(MODULATION)
+            specan.set_digitaltv_coding_constellation_j83b(MODULATION)
             time.sleep(3)
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
+            time.sleep(1)
+            del net
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE[1])}))
+            time.sleep(1)
+            del net
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            net.send_data(json.dumps({"cmd": "set_modulation_data", "modulation": str(MODULATION)}))
+            time.sleep(1)
+            del net
+
+            """
+            触发stb-tester进行频率和符号率设置
+            """
+            try:
+                stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+                                            ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
+                                            "dcn7514i")
+            except:
+                time.sleep(60)
+                stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+                                            ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
+                                            "dcn7514i")
+            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+
+            lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
+            if lock_state == "1":
+                pass
+            elif lock_state == "0":
+                write_test_result("../../ekt_log/test_result_sfu.txt",
+                                  (
+                                          "j83_9_frequency_error_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                              str(FREQUENCY_LEVEL_OFFSET[1]), str(SYMBOL_RATE[1]), str(-50),
+                                              "锁台失败") + "\n"))
+                continue
+            elif lock_state == "2":
+                write_test_result("../../ekt_log/test_result_sfu.txt",
+                                  (
+                                          "j83_9_frequency_error_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                              datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                              str(FREQUENCY_LEVEL_OFFSET[1]), str(SYMBOL_RATE[1]), str(-50),
+                                              "频点不支持") + "\n"))
+                continue
+            else:
+                write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+                continue
 
             start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, -50, -50)
             print (
-                "dvbc_9_frequency_error_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                "j83_9_frequency_error_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), str(-50),
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbc_9_frequency_error_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                              "j83_9_frequency_error_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), str(-50),
                                   start_data_result.get("detect_mosic_result")) + "\n")
 
             PARAMETER[1] = mosaic_result
-            write_json_file("../../ekt_json/dvbc_9_frequency_error_rate.json", load_dict)
-            dvbc_9_frequency_error_rate_json_to_csv("../../ekt_json/dvbc_9_frequency_error_rate.json",
-                                                    "../../ekt_test_report/dvbc_9_frequency_error_rate.csv")
+            write_json_file("../../ekt_json/j83_9_frequency_error_rate.json", load_dict)
+            j83_9_frequency_error_rate_json_to_csv("../../ekt_json/j83_9_frequency_error_rate.json",
+                                                   "../../ekt_test_report/j83_9_frequency_error_rate.csv")

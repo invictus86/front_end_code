@@ -39,9 +39,6 @@ else:
     dict_test_parame_result = {}
     list_test_parame_result = []
 
-    dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    DVBC_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBC_FREQUENCY_LEVEL_OFFSET")
-
     for PARAMETER in PARAMETER_LIST:
         list_test_result = []
         for SYMBOL_RATE in SYMBOL_RATE_LIST:
@@ -81,6 +78,8 @@ if __name__ == '__main__':
     specan.set_noise_noise_noise("ADD")
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_awgn("ON")
+    specan = Ektsfu(sfu_ip)
+    specan.set_noise_settings_bandwith("ON")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)

@@ -73,6 +73,8 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_awgn("ON")
     specan = Ektsfu(sfu_ip)
+    specan.set_noise_settings_bandwith("ON")
+    specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")

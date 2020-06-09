@@ -3022,7 +3022,7 @@ def _test_code():
     # specan.set_noise_impulsive_ci("45")
     # specan.set_noise_impulsive_frameduration("0.1")
     # specan.set_noise_settings_bandwith("ON")
-    # specan.set_noise_settings_receiver("7.5e6")
+    specan.set_noise_settings_receiver("24e6")
     # specan.set_fading_fading_state("ON")
     # specan.set_fading_profile_parameterset("TU12")
     # specan.set_fading_profile_configuration("D30Fine")
@@ -3148,7 +3148,7 @@ def _test_code():
     # specan.set_digitaltv_coding_channelbandwidth_dvbt("BW_{}".format(str("8")))
     # specan.set_fading_profile_pathloss("3", "1", "16 dB")
     # specan.set_fading_settings_speedunit("KMH")
-    specan.set_digitaltv_coding_constellation_j83b("J256")
+    # specan.set_digitaltv_coding_constellation_j83b("J256")
 
     # specan.set_cmd()
 

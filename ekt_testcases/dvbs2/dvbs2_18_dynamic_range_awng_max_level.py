@@ -15,16 +15,14 @@ from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_jso
 MODULATION_QPSK = "S4"
 MODULATION_8PSK = "S8"
 
-SYMBOL_RATE_5M = ["5.000000e6", "05000"]
-SYMBOL_RATE_10M = ["10.000000e6", "10000"]
-SYMBOL_RATE_27_5M = ["27.500000e6", "27500"]
-SYMBOL_RATE_45M = ["45.000000e6", "45000"]
+SYMBOL_RATE_5M = ["5.000000e6", "05000", 5]
+SYMBOL_RATE_10M = ["10.000000e6", "10000", 10]
+SYMBOL_RATE_27_5M = ["27.500000e6", "27500", 27.5]
+SYMBOL_RATE_45M = ["45.000000e6", "45000", 45]
 
 dict_config_data = {
     "MODULATION": [MODULATION_QPSK, MODULATION_8PSK],
     "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
-    # "SYMBOL_RATE": [SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M],
-    # "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M],
 }
 
 my_file = Path("../../ekt_json/dvbs2_18_dynamic_range_awng_max_level.json")
@@ -86,6 +84,8 @@ if __name__ == '__main__':
     specan = Ektsfu(sfu_ip)
     specan.set_noise_noise_awgn("ON")
     specan = Ektsfu(sfu_ip)
+    specan.set_noise_settings_bandwith("OFF")
+    specan = Ektsfu(sfu_ip)
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
@@ -106,12 +106,13 @@ if __name__ == '__main__':
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_symbolrate_dvbs2(SYMBOL_RATE[0])
         specan = Ektsfu(sfu_ip)
+        specan.set_noise_settings_receiver("{}e6".format(str(SYMBOL_RATE[2] * 1.2)))
+        specan = Ektsfu(sfu_ip)
         specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
         time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[1]))
         specan = Ektsfu(sfu_ip)
-        # specan.set_level_level_level("dBm", "-30")
         specan.set_level_level_level("dBm", str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])))
 
         net = ekt_net.EktNetClient('192.168.1.24', 9999)
@@ -165,14 +166,14 @@ if __name__ == '__main__':
 
             start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])), "-10")
             print (
-                "dvbs2_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
-                    datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
+                "dvbs2_dynamic_range_awng_max_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                    datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                     str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbs2_dynamic_range_awng_max_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
-                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
+                              "dvbs2_dynamic_range_awng_max_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                   str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                   start_data_result.get("detect_mosic_result")) + "\n")
