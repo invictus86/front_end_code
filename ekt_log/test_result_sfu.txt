@@ -10334,3 +10334,18 @@ dvbs2_dynamic_range_awng_max_level: current_time:2020-06-08 16:50:56, coderate�
 dvbs2_dynamic_range_awng_max_level: current_time:2020-06-08 16:51:18, coderate：R5_6, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level：-3.70 dbm, 马赛克检测结果：False
 dvbs2_dynamic_range_awng_max_level: current_time:2020-06-08 16:51:41, coderate：R8_9, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level：-3.70 dbm, 马赛克检测结果：False
 dvbs2_dynamic_range_awng_max_level: current_time:2020-06-08 16:52:03, coderate：R9_10, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level：-3.70 dbm, 马赛克检测结果：False
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:35:07, frequency：1990 MHz，symbol_rate：05000 Ksym/s，level：-3.70 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:35:59, frequency：2010 MHz，symbol_rate：05000 Ksym/s，level：-4.10 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:36:50, frequency：2030 MHz，symbol_rate：05000 Ksym/s，level：-4.60 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:37:41, frequency：2050 MHz，symbol_rate：05000 Ksym/s，level：-4.90 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:38:32, frequency：2070 MHz，symbol_rate：05000 Ksym/s，level：-5.20 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:39:23, frequency：2090 MHz，symbol_rate：05000 Ksym/s，level：-4.70 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:40:14, frequency：2110 MHz，symbol_rate：05000 Ksym/s，level：-4.10 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:41:05, frequency：2130 MHz，symbol_rate：05000 Ksym/s，level：-4.00 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:41:57, frequency：2150 MHz，symbol_rate：05000 Ksym/s，level：-4.60 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:42:48, frequency：950 MHz，symbol_rate：10000 Ksym/s，level：-5.40 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:43:39, frequency：970 MHz，symbol_rate：10000 Ksym/s，level：-5.40 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:44:30, frequency：990 MHz，symbol_rate：10000 Ksym/s，level：-5.80 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:45:22, frequency：1010 MHz，symbol_rate：10000 Ksym/s，level：-6.00 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:46:13, frequency：1030 MHz，symbol_rate：10000 Ksym/s，level：-5.90 dbm, 锁台失败
+dvbs2_dynamic_range_awng_max_level: current_time:2020-06-09 17:47:04, frequency：1050 MHz，symbol_rate：10000 Ksym/s，level：-5.60 dbm, 锁台失败

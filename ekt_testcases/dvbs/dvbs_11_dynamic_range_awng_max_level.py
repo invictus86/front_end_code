@@ -4,6 +4,10 @@
 import time
 import json
 import datetime
+import os, sys
+
+parentdir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, parentdir)
 from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfe import Ektsfe
 from pathlib2 import Path
