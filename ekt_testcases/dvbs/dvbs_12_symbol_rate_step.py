@@ -102,19 +102,19 @@ if __name__ == '__main__':
                               (
                                       "dvbs_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
-                                          str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70, "锁台失败") + "\n"))
+                                          str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70, "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfe.txt", ("Lock state err" + "\n"))
             continue
 
         start_data_result, mosaic_result = mosaic_algorithm(sfe_ip, LEVEL_70, "-50")
         print (
-            "dvbs_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+            "dvbs_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                 str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70, start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfe.txt",
-                          "dvbs_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                          "dvbs_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                               str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70,
                               start_data_result.get("detect_mosic_result")) + "\n")

@@ -36,8 +36,8 @@ def image_classification(list_image):
                 break
             except:
                 time.sleep(60)
-                print("ekt_image_classification 连接出错")
-                logging.info('ekt_image_classification 连接出错')
+                print("ekt_image_classification  connection error")
+                logging.info('ekt_image_classification  connection error')
 
         # print result
         result_list.append(result["results"][0]["label"])
@@ -47,10 +47,12 @@ def image_classification(list_image):
     # print dict_result.get("mosaic")
     # if dict_result.get("mosaic") == None or dict_result.get("mosaic") == 1:
     if dict_result.get("mosaic") == None or dict_result.get("mosaic") <= ekt_cfg.ERR_MOSIC_NUM:
-        mosaic_result = False
+        # mosaic_result = False
+        mosaic_result = "Pass"
     else:
         # print dict_result.get("mosaic")
-        mosaic_result = True
+        # mosaic_result = True
+        mosaic_result = "Fail"
     return dict_result, mosaic_result
     # return dict_result
 

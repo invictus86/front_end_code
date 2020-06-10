@@ -40,8 +40,8 @@ def stb_tester_execute_testcase(ip, banch_id, test_cases, category, remote):
             break
         except:
             time.sleep(60)
-            print("stb_tester post请求出错")
-            logging.info("stb_tester post请求出错")
+            print("stb_tester post Request error")
+            logging.info("stb_tester post Request error")
 
     result = res_status.json()  # dict
     job_url = result.get("job_url")
@@ -54,8 +54,8 @@ def stb_tester_execute_testcase(ip, banch_id, test_cases, category, remote):
                 break
             except:
                 time.sleep(60)
-                print("stb_tester get请求出错")
-                logging.info("stb_tester get请求出错")
+                print("stb_tester get Request error")
+                logging.info("stb_tester get Request error")
 
         # print res
         time.sleep(0.5)

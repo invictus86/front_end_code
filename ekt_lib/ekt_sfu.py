@@ -33,8 +33,8 @@ class Ektsfu(object):
                 del self.specan.timeout
                 break
             except:
-                print("SFU连接出错")
-                logging.info('SFU连接出错')
+                print("SFU connection error")
+                logging.info('SFU connection error')
                 time.sleep(60)
 
     def set_frequency_frequency_frequency(self, frequency):

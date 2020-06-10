@@ -151,7 +151,7 @@ if __name__ == '__main__':
                           (
                                   "dvbt_29_performance_time_varying_channel: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                      str(FREQUENCY_666), str(8), "锁台失败") + "\n"))
+                                      str(FREQUENCY_666), str(8), "Lock fail") + "\n"))
 
     for PARAMETER in load_dict.get("test_parame_result"):
         if PARAMETER[7] == None:

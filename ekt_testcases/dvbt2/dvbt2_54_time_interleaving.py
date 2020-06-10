@@ -148,9 +148,9 @@ if __name__ == '__main__':
                                   "dvbt2_54_time_interleaving: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                       str(FREQUENCY_666), str(8),
-                                      "锁台失败") + "\n"))
+                                      "Lock fail") + "\n"))
     else:
-        write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+        write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
 
     for PARAMETER in load_dict.get("test_parame_result"):
         if PARAMETER[4] == None:

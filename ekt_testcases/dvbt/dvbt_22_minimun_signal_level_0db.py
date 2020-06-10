@@ -197,7 +197,7 @@ if __name__ == '__main__':
                                   (
                                           "dvbt_22_minimun_signal_level_0db: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                              str(PARAMETER_FIXED[0]), str(8), "锁台失败") + "\n"))
+                                              str(PARAMETER_FIXED[0]), str(8), "Lock fail") + "\n"))
 
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_fftmode_dvbt(PARAMETER[0])

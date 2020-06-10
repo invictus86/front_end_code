@@ -348,10 +348,10 @@ if __name__ == '__main__':
                               (
                                       "dvbt2_70_performance_in_frequency_outside: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          str(PARAMETER[0]), str(PARAMETER[3]), "锁台失败") + "\n"))
+                                          str(PARAMETER[0]), str(PARAMETER[3]), "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
 
         for DELAY in PARAMETER[9]:

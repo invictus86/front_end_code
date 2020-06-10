@@ -126,10 +126,10 @@ if __name__ == '__main__':
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]),
                                           str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
         for PARAMETER in LOCK_PARAMETER[2]:
             if PARAMETER[1] == None:
@@ -144,12 +144,12 @@ if __name__ == '__main__':
 
             start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))), "-50")
             print (
-                "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
                     FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                              "dvbs2_phase_distortion_test: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
                                   FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]),
                                   str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),

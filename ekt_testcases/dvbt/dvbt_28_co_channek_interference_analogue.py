@@ -161,9 +161,9 @@ if __name__ == '__main__':
                               (
                                       "dvbt_28_co_channek_interference_analogue: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s， {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          str(FREQUENCY[0]), str(8), "锁台失败") + "\n"))
+                                          str(FREQUENCY[0]), str(8), "Lock fail") + "\n"))
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
 
         for PARAMETER in FREQUENCY[3]:
             if PARAMETER[5] == None:

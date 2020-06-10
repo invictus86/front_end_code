@@ -124,19 +124,19 @@ if __name__ == '__main__':
                               (
                                       "dvbs2_19_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
-                                          FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_65, "锁台失败") + "\n"))
+                                          FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_65, "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
 
         start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, LEVEL_65, "-50")
         print (
-        "dvbs2_19_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+        "dvbs2_19_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
             FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_65, start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfu.txt",
-                          "dvbs2_19_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                          "dvbs2_19_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                               FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_65,
                               start_data_result.get("detect_mosic_result")) + "\n")

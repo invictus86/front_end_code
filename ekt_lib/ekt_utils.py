@@ -149,7 +149,6 @@ def dvbs_dynamic_max_json_to_csv(json_path, csv_path):
 def dvbc_1_dynamic_range_awng_max_level_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -166,7 +165,6 @@ def dvbc_1_dynamic_range_awng_max_level_json_to_csv(json_path, csv_path):
 def dvbc_1_dynamic_range_awng_min_level_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -183,7 +181,6 @@ def dvbc_1_dynamic_range_awng_min_level_json_to_csv(json_path, csv_path):
 def dvbc_2_channel_bandwidth_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         list_required_data.append([i[0], i[3], i[4][1], i[5]])
@@ -194,7 +191,6 @@ def dvbc_2_channel_bandwidth_json_to_csv(json_path, csv_path):
 def dvbc_3_cn_test_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -211,7 +207,6 @@ def dvbc_3_cn_test_json_to_csv(json_path, csv_path):
 def dvbc_4_symbol_rate_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -229,7 +224,6 @@ def dvbc_4_symbol_rate_json_to_csv(json_path, csv_path):
 def dvbc_5_IQ_inverted_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -247,7 +241,6 @@ def dvbc_5_IQ_inverted_json_to_csv(json_path, csv_path):
 def dvbc_7_analogue_adjacent_carrier_interference_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -265,7 +258,6 @@ def dvbc_7_analogue_adjacent_carrier_interference_json_to_csv(json_path, csv_pat
 def dvbc_7_analogue_adjacent_carrier_interference_N_1_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -283,7 +275,6 @@ def dvbc_7_analogue_adjacent_carrier_interference_N_1_json_to_csv(json_path, csv
 def dvbc_8_symbol_error_rate_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -301,7 +292,6 @@ def dvbc_8_symbol_error_rate_json_to_csv(json_path, csv_path):
 def dvbc_9_frequency_error_rate_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -319,7 +309,6 @@ def dvbc_9_frequency_error_rate_json_to_csv(json_path, csv_path):
 def dvbc_10_frequency_capture_range_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -337,7 +326,6 @@ def dvbc_10_frequency_capture_range_json_to_csv(json_path, csv_path):
 def j83_1_dynamic_range_awng_max_level_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -354,7 +342,6 @@ def j83_1_dynamic_range_awng_max_level_json_to_csv(json_path, csv_path):
 def j83_1_dynamic_range_awng_min_level_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -371,7 +358,6 @@ def j83_1_dynamic_range_awng_min_level_json_to_csv(json_path, csv_path):
 def j83_2_channel_bandwidth_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         list_required_data.append([i[0], i[3], i[4][1], i[5]])
@@ -382,7 +368,6 @@ def j83_2_channel_bandwidth_json_to_csv(json_path, csv_path):
 def j83_3_cn_test_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -399,7 +384,6 @@ def j83_3_cn_test_json_to_csv(json_path, csv_path):
 def j83_5_IQ_inverted_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -417,7 +401,6 @@ def j83_5_IQ_inverted_json_to_csv(json_path, csv_path):
 def j83_7_analogue_adjacent_carrier_interference_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -435,7 +418,6 @@ def j83_7_analogue_adjacent_carrier_interference_json_to_csv(json_path, csv_path
 def j83_7_analogue_adjacent_carrier_interference_N_1_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -453,7 +435,6 @@ def j83_7_analogue_adjacent_carrier_interference_N_1_json_to_csv(json_path, csv_
 def j83_8_symbol_error_rate_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -471,7 +452,6 @@ def j83_8_symbol_error_rate_json_to_csv(json_path, csv_path):
 def j83_9_frequency_error_rate_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -485,10 +465,10 @@ def j83_9_frequency_error_rate_json_to_csv(json_path, csv_path):
                            columns=['symbol_rate', 'stb_frequency', 'sfu_frequency', 'modulation', 'mosic_result'])
     pd_data.to_csv(csv_path, index=None)
 
+
 def j83_10_frequency_capture_range_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -506,7 +486,6 @@ def j83_10_frequency_capture_range_json_to_csv(json_path, csv_path):
 def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -678,7 +657,7 @@ def dvbs2_25_signal_acquisition_frequency_range_json_to_csv(json_path, csv_path)
             if count == 0:
                 list_required_data.append([i[1], i[2][0], i[2][1], j[0][0], j[1]])
             else:
-                list_required_data.append(["", "", "", j[0], j[1]])
+                list_required_data.append(["", "", "", j[0][0], j[1]])
             count = count + 1
     pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'sfu_frequency', 'code_rate', 'level'])
     pd_data.to_csv(csv_path, index=None)
@@ -743,7 +722,6 @@ def dvbt_7_modes_json_to_csv(json_path, csv_path):
 def dvbt_13_verification_strength_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -761,7 +739,6 @@ def dvbt_13_verification_strength_json_to_csv(json_path, csv_path):
 def dvbt_14_verification_quality_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -779,7 +756,6 @@ def dvbt_14_verification_quality_json_to_csv(json_path, csv_path):
 def dvbt_15_changes_modulation_parameters_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         list_required_data.append([i[0], i[1], i[2], i[3], i[4]])
@@ -791,7 +767,6 @@ def dvbt_15_changes_modulation_parameters_to_csv(json_path, csv_path):
 def dvbt_19_gaussian_channel_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -808,7 +783,6 @@ def dvbt_19_gaussian_channel_json_to_csv(json_path, csv_path):
 def dvbt_20_performance_0db_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -848,7 +822,6 @@ def dvbt_22_minimun_level_0db_to_csv(json_path, csv_path):
         for j in i[4]:
             count_j = 0
             for k in j[5]:
-                # print k
                 if count_j == 0:
                     list_required_data.append([i[0], i[3], j[0], j[1], j[2], j[3], j[4], k[0], k[1]])
                 else:
@@ -875,7 +848,6 @@ def dvbt_24_receiver_maximum_level_to_csv(json_path, csv_path):
 def dvbt_25_analogue_signal_other_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -893,7 +865,6 @@ def dvbt_25_analogue_signal_other_json_to_csv(json_path, csv_path):
 def dvbt_28_analogue_signal_other_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -1063,7 +1034,6 @@ def dvbt2_44_normal_mode_json_to_csv(json_path, csv_path):
 def dvbt2_51_verification_strength_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -1082,7 +1052,6 @@ def dvbt2_51_verification_strength_json_to_csv(json_path, csv_path):
 def dvbt2_52_verification_quality_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -1134,7 +1103,6 @@ def dvbt2_54_time_interleaving_to_csv(json_path, csv_path):
 def dvbt2_57_gaussian_channel_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -1151,7 +1119,6 @@ def dvbt2_57_gaussian_channel_json_to_csv(json_path, csv_path):
 def dvbt2_58_performance_0db_echo_channel_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -1168,7 +1135,6 @@ def dvbt2_58_performance_0db_echo_channel_json_to_csv(json_path, csv_path):
 def dvbt2_60_minuimun_level_0db_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     i = list_data
 
@@ -1199,7 +1165,6 @@ def dvbt2_62_maximum_level_to_csv(json_path, csv_path):
 def dvbt2_65_co_channel_interference_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -1218,7 +1183,6 @@ def dvbt2_65_co_channel_interference_json_to_csv(json_path, csv_path):
 def dvbt2_67_synchronisation_varying_echo_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -1238,7 +1202,6 @@ def dvbt2_67_synchronisation_varying_echo_json_to_csv(json_path, csv_path):
 def dvbt2_68_performance_in_SFN_echo_json_to_csv(json_path, csv_path):
     load_dict = read_json_file(json_path)
     list_data = load_dict.get("test_parame_result")
-    # print list_data
     list_required_data = []
     for i in list_data:
         count = 0
@@ -1295,6 +1258,5 @@ def dvbt2_70_performance_in_frequency_outside_json_to_csv(json_path, csv_path):
 
 if __name__ == '__main__':
     # result = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 1310)
-    # print(result)
     SYMBOL_TATE_LIST = generate_symbol_rate_list()
-    print SYMBOL_TATE_LIST
+    print (SYMBOL_TATE_LIST)

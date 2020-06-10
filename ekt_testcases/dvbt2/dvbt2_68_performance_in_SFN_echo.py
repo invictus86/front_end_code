@@ -242,10 +242,10 @@ if __name__ == '__main__':
                                       "dvbt2_68_performance_in_SFN_echo: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(PARAMETER_FIXED[0]), str(PARAMETER_FIXED[3]),
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
 
         for FADING in PARAMETER_FIXED[10]:

@@ -144,10 +144,10 @@ if __name__ == '__main__':
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                           str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
         for PARAMETER in LOCK_PARAMETER[2]:
             if PARAMETER[2] == None:

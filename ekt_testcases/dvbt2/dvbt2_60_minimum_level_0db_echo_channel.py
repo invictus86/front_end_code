@@ -174,10 +174,10 @@ if __name__ == '__main__':
                                       "dvbt2_60_minimum_level_0db_echo_channel: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(PARAMETER_FIXED[0]), str(PARAMETER[5]),
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
 
         res, test_result = iterate_to_find_threshold_step_by_step(sfu_ip,

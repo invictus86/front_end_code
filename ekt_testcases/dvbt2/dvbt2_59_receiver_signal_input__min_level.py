@@ -204,10 +204,10 @@ if __name__ == '__main__':
                                       "dvbt2_59_receiver_signal_input__min_level: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH),
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
         for MODULATION_CODERATE_SPEC in FREQUENCY_LEVEL_OFFSET[1]:
             if MODULATION_CODERATE_SPEC[3] == None:

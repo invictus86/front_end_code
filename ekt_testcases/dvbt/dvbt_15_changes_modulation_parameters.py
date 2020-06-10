@@ -125,7 +125,7 @@ if __name__ == '__main__':
                           (
                                   "dvbt_5_frequency_offset: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                      str(FREQUENCY_666), str(8), "锁台失败") + "\n"))
+                                      str(FREQUENCY_666), str(8), "Lock fail") + "\n"))
 
     for PARAMETER in load_dict.get("test_parame_result"):
         specan = Ektsfu(sfu_ip)

@@ -209,7 +209,7 @@ if __name__ == '__main__':
                           (
                                   "dvbt_31_performance_SFN_more_than_one: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                      str(FREQUENCY_666), str(8), "锁台失败") + "\n"))
+                                      str(FREQUENCY_666), str(8), "Lock fail") + "\n"))
 
     for PARAMETER in load_dict.get("test_parame_result"):
         loop_lock_mark = False

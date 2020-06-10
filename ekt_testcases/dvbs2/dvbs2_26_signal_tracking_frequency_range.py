@@ -143,10 +143,10 @@ if __name__ == '__main__':
                                       "dvbs2_signal_tracking_frequency_range: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
         for PARAMETER in LOCK_PARAMETER[3]:
             if PARAMETER[1] == None:
@@ -164,12 +164,12 @@ if __name__ == '__main__':
             time.sleep(3)
             start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, FREQUENCY_OFFSET[2], "-50")
             print (
-                "dvbs2_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                "dvbs2_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                     FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbs2_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                              "dvbs2_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                   FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
                                   start_data_result.get("detect_mosic_result")) + "\n")

@@ -24,7 +24,7 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
 
 class Ektsfe(object):
     """
-        SFE接口
+        SFE interface
     """
 
     def __init__(self, sfe_ip):
@@ -36,8 +36,8 @@ class Ektsfe(object):
                 del self.specan.timeout
                 break
             except:
-                print("SFE连接出错")
-                logging.info('SFE连接出错')
+                print("SFE connection error")
+                logging.info('SFE connection error')
                 time.sleep(60)
 
     def set_frequency_frequency_frequency(self, frequency):

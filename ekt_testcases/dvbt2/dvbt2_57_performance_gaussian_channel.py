@@ -175,10 +175,10 @@ if __name__ == '__main__':
                                       "dvbt2_57_performance_gaussian_channel: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH),
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
         # for MODULATION_CODERATE_SPEC in MODULATION__CODERATE_SPEC_LIST:
         for MODULATION_CODERATE_SPEC in FREQUENCY_LEVEL_OFFSET[1]:

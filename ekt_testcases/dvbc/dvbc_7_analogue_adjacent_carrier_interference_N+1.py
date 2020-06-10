@@ -157,7 +157,7 @@ if __name__ == '__main__':
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-25) - FREQUENCY_LEVEL_OFFSET[1])),
-                                              "锁台失败") + "\n"))
+                                              "Lock fail") + "\n"))
                 continue
             elif lock_state == "2":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
@@ -166,14 +166,14 @@ if __name__ == '__main__':
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-25) - FREQUENCY_LEVEL_OFFSET[1])),
-                                              "频点不支持") + "\n"))
+                                              "Frequency points are not supported") + "\n"))
                 PARAMETER[1] = "Frequency points are not supported"
                 write_json_file("../../ekt_json/dvbc_7_analogue_adjacent_carrier_interference_N_1.json", load_dict)
                 dvbc_7_analogue_adjacent_carrier_interference_N_1_json_to_csv("../../ekt_json/dvbc_7_analogue_adjacent_carrier_interference_N_1.json",
                                                                          "../../ekt_test_report/dvbc_7_analogue_adjacent_carrier_interference_N_1.csv")
                 continue
             else:
-                write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+                write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
                 continue
 
             res, test_result = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, (-25 - FREQUENCY_LEVEL_OFFSET[1]),

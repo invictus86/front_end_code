@@ -35,8 +35,8 @@ def capture_image(num, ip):
                 break
             except:
                 time.sleep(60)
-                print("ekt_image_capture 请求出错")
-                logging.info("ekt_image_capture 请求出错")
+                print("ekt_image_capture  Request error")
+                logging.info("ekt_image_capture  Request error")
         image = cv2.imdecode(numpy.frombuffer(result.content, dtype='uint8'), 1)
         list_image.append(image)
     return list_image

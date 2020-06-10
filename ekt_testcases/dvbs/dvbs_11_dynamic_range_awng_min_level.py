@@ -113,10 +113,10 @@ if __name__ == '__main__':
                                       "dvbs_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfe.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfe.txt", ("Lock state err" + "\n"))
             continue
         for code_rate_cn in PARAMETER[2]:
             if code_rate_cn[1] == None:

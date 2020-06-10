@@ -169,7 +169,7 @@ if __name__ == '__main__':
                               (
                                       "dvbt_20_performance_0db_echo_channel: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          str(PARAMETER_FIXED[0]), str(8), "锁台失败") + "\n"))
+                                          str(PARAMETER_FIXED[0]), str(8), "Lock fail") + "\n"))
 
         for PARAMETER in PARAMETER_FIXED[4]:
             if PARAMETER[5] == None:

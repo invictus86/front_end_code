@@ -144,10 +144,10 @@ if __name__ == '__main__':
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                           str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
         for PARAMETER in LOCK_PARAMETER[2]:
             if PARAMETER[2] == None:
@@ -170,13 +170,13 @@ if __name__ == '__main__':
 
             start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])), "-10")
             print (
-                "dvbs2_dynamic_range_awng_max_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                "dvbs2_dynamic_range_awng_max_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                     str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbs2_dynamic_range_awng_max_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                              "dvbs2_dynamic_range_awng_max_level: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                   str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),

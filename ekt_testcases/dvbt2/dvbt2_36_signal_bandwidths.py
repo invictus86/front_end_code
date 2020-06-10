@@ -154,10 +154,10 @@ if __name__ == '__main__':
                                       "dvbt2_36_signal_bandwidths: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(PARAMETER[0]), str(PARAMETER[3]),
-                                          "锁台失败") + "\n"))
+                                          "Lock fail") + "\n"))
             continue
         else:
-            write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+            write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
 
         start_data_result, test_result = mosaic_algorithm(sfu_ip, PARAMETER[2], PARAMETER[2])

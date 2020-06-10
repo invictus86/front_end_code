@@ -164,7 +164,7 @@ if __name__ == '__main__':
                                           "j83_10_frequency_capture_range: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[1]), str(SYMBOL_RATE[1]), str(-50),
-                                              "锁台失败") + "\n"))
+                                              "Lock fail") + "\n"))
                 continue
             elif lock_state == "2":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
@@ -172,10 +172,10 @@ if __name__ == '__main__':
                                           "j83_10_frequency_capture_range: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[1]), str(SYMBOL_RATE[1]), str(-50),
-                                              "频点不支持") + "\n"))
+                                              "Frequency points are not supported") + "\n"))
                 continue
             else:
-                write_test_result("../../ekt_log/test_result_sfu.txt", ("出错了" + "\n"))
+                write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
                 continue
 
             _, _ = mosaic_algorithm(sfu_ip, -50, -50)
@@ -185,12 +185,12 @@ if __name__ == '__main__':
             start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, -50, -50)
 
             print (
-                "j83_10_frequency_capture_range: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                "j83_10_frequency_capture_range: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic result：{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), str(-50),
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "j83_10_frequency_capture_range: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, 马赛克检测结果：{}".format(
+                              "j83_10_frequency_capture_range: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic result：{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), str(-50),
                                   start_data_result.get("detect_mosic_result")) + "\n")

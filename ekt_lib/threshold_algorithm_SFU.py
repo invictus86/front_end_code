@@ -20,10 +20,17 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
 
 
 def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
+    """
+    judge if test level contains mosaics
+    :param sfu_ip: sfu ip
+    :param test_level_data: test level
+    :param can_play_data:   can play level
+    :return:mosaic_algorithm_result, mosaic_result
+    """
     specan = Ektsfu(sfu_ip)
     specan.set_level_level_level("dBm", str(test_level_data))
-    print ("设置set_level_level_level:{}".format(str(test_level_data) + " dBm"))
-    logging.info("设置set_level_level_level:{}".format(str(test_level_data) + " dBm"))
+    print ("set_level_level_level:{}".format(str(test_level_data) + " dBm"))
+    logging.info("set_level_level_level:{}".format(str(test_level_data) + " dBm"))
     time.sleep(5)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],
@@ -32,13 +39,13 @@ def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
     if res == False:
         mosaic_algorithm_result = {
             "detect_motion_result": False,
-            "detect_mosic_result": True,
+            "detect_mosic_result": "Fail",
             "msg": "picture not move"
         }
-        logging.info("level:{}, 马赛克结果:true".format(test_level_data))
+        logging.info("level:{}, Mosaic results:true".format(test_level_data))
         specan = Ektsfu(sfu_ip)
         specan.set_level_level_level("dBm", str(can_play_data))
-        return mosaic_algorithm_result, True
+        return mosaic_algorithm_result, "Fail"
     elif res == True:
         list_image = capture_image(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
         specan = Ektsfu(sfu_ip)
@@ -50,15 +57,22 @@ def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
             "detect_mosic_result": mosaic_result,
             "msg": dict_result
         }
-        logging.info("level:{}, 马赛克结果:{}".format(test_level_data, mosaic_result))
+        logging.info("level:{}, Mosaic results:{}".format(test_level_data, mosaic_result))
         return mosaic_algorithm_result, mosaic_result
 
 
 def mosaic_algorithm_noise_cn(sfu_ip, test_cn_data, can_play_data):
+    """
+    judge if test CN contains mosaics
+    :param sfu_ip: sfu ip
+    :param test_cn_data:  test CN
+    :param can_play_data: can play CN
+    :return:mosaic_algorithm_result
+    """
     specan = Ektsfu(sfu_ip)
     specan.set_noise_awgn_cn(str(test_cn_data))
-    print ("设置set_noise_awgn_cn:{}".format(str(test_cn_data)))
-    logging.info("设置set_noise_awgn_cn:{}".format(str(test_cn_data)))
+    print ("set_noise_awgn_cn:{}".format(str(test_cn_data)))
+    logging.info("set_noise_awgn_cn:{}".format(str(test_cn_data)))
     time.sleep(5)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],
@@ -67,10 +81,10 @@ def mosaic_algorithm_noise_cn(sfu_ip, test_cn_data, can_play_data):
     if res == False:
         mosaic_algorithm_result = {
             "detect_motion_result": False,
-            "detect_mosic_result": True,
+            "detect_mosic_result": "Fail",
             "msg": "picture not move"
         }
-        logging.info("noise_cn:{}, 马赛克结果:true".format(test_cn_data))
+        logging.info("noise_cn:{}, Mosaic results:true".format(test_cn_data))
         specan = Ektsfu(sfu_ip)
         specan.set_noise_awgn_cn(str(can_play_data))
         return mosaic_algorithm_result
@@ -85,15 +99,22 @@ def mosaic_algorithm_noise_cn(sfu_ip, test_cn_data, can_play_data):
             "detect_mosic_result": mosaic_result,
             "msg": dict_result
         }
-        logging.info("noise_cn:{}, 马赛克结果:{}".format(test_cn_data, mosaic_result))
+        logging.info("noise_cn:{}, Mosaic results:{}".format(test_cn_data, mosaic_result))
         return mosaic_algorithm_result
 
 
 def mosaic_algorithm_fading_att(sfu_ip, test_att_data, can_play_data):
+    """
+    judge if test att contains mosaics
+    :param sfu_ip: sfu ip
+    :param test_att_data: test
+    :param can_play_data:
+    :return:mosaic_algorithm_result
+    """
     specan = Ektsfu(sfu_ip)
     specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(test_att_data)))
-    print ("设置set_fading_att:{}".format(str(test_att_data)))
-    logging.info("设置set_fading_att:{}".format(str(test_att_data)))
+    print ("set_fading_att:{}".format(str(test_att_data)))
+    logging.info("set_fading_att:{}".format(str(test_att_data)))
     time.sleep(5)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],
@@ -102,10 +123,10 @@ def mosaic_algorithm_fading_att(sfu_ip, test_att_data, can_play_data):
     if res == False:
         mosaic_algorithm_result = {
             "detect_motion_result": False,
-            "detect_mosic_result": True,
+            "detect_mosic_result": "Fail",
             "msg": "picture not move"
         }
-        logging.info("noise_cn:{}, 马赛克结果:true".format(test_att_data))
+        logging.info("noise_cn:{}, Mosaic results:true".format(test_att_data))
         specan = Ektsfu(sfu_ip)
         specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(can_play_data)))
         return mosaic_algorithm_result
@@ -120,15 +141,22 @@ def mosaic_algorithm_fading_att(sfu_ip, test_att_data, can_play_data):
             "detect_mosic_result": mosaic_result,
             "msg": dict_result
         }
-        logging.info("noise_cn:{}, 马赛克结果:{}".format(test_att_data, mosaic_result))
+        logging.info("noise_cn:{}, Mosaic results:{}".format(test_att_data, mosaic_result))
         return mosaic_algorithm_result
 
 
 def mosaic_algorithm_interferer_attenuation(sfu_ip, test_attenuation_data, can_play_data):
+    """
+    judge if test attenuation contains mosaics
+    :param sfu_ip:
+    :param test_attenuation_data:
+    :param can_play_data:
+    :return: mosaic_algorithm_result
+    """
     specan = Ektsfu(sfu_ip)
     specan.set_interferer_attenuation(str(test_attenuation_data))
-    print ("设置set_noise_awgn_cn:{}".format(str(test_attenuation_data)))
-    logging.info("设置set_noise_awgn_cn:{}".format(str(test_attenuation_data)))
+    print ("set_noise_awgn_cn:{}".format(str(test_attenuation_data)))
+    logging.info("set_noise_awgn_cn:{}".format(str(test_attenuation_data)))
     time.sleep(5)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],
@@ -137,10 +165,10 @@ def mosaic_algorithm_interferer_attenuation(sfu_ip, test_attenuation_data, can_p
     if res == False:
         mosaic_algorithm_result = {
             "detect_motion_result": False,
-            "detect_mosic_result": True,
+            "detect_mosic_result": "Fail",
             "msg": "picture not move"
         }
-        logging.info("noise_cn:{}, 马赛克结果:true".format(test_attenuation_data))
+        logging.info("noise_cn:{}, Mosaic results:true".format(test_attenuation_data))
         specan = Ektsfu(sfu_ip)
         specan.set_noise_awgn_cn(str(can_play_data))
         return mosaic_algorithm_result
@@ -155,150 +183,125 @@ def mosaic_algorithm_interferer_attenuation(sfu_ip, test_attenuation_data, can_p
             "detect_mosic_result": mosaic_result,
             "msg": dict_result
         }
-        logging.info("noise_cn:{}, 马赛克结果:{}".format(test_attenuation_data, mosaic_result))
+        logging.info("noise_cn:{}, Mosaic results:{}".format(test_attenuation_data, mosaic_result))
         return mosaic_algorithm_result
 
 
-def threshold_algorithm(sfu_ip, start_data, end_data):
-    """
-    算法步骤：
-    ①判断起始数据start_data 对应画面无马赛克
-    ②判断终止数据end_data   对应画面有马赛克
-    ③根据步进值对起始与终止数据进行调整并判断画面是否含有马赛克
-    ④返回马赛克与非马赛克的区间
-    Find the critical value
-    :param start_data:
-    :param end_data:
-    :param step_data:
-    :return:
-    """
-    step_data = round((start_data + end_data) / 2, 1)
-    step_data_result, test_result = mosaic_algorithm(sfu_ip, step_data, start_data)
-    if step_data_result.get("detect_mosic_result") is False:
-        return {"threshold_algorithm_result": False,
-                "step_range": [step_data, end_data]}
-    elif step_data_result.get("detect_mosic_result") is True:
-        return {"threshold_algorithm_result": True,
-                "step_range": [start_data, step_data]}
-
-
-def iterate_to_find_threshold(sfu_ip, start_num, end_num, level_offset="0"):
-    start_data_result, _ = mosaic_algorithm(sfu_ip, start_num, start_num)
-    end_data_result, _ = mosaic_algorithm(sfu_ip, end_num, start_num)
-    if start_data_result.get("detect_mosic_result") is False and end_data_result.get("detect_mosic_result") is True:
-        pass
-    else:
-        print (json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外"}, ensure_ascii=False))
-        return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外"}, ensure_ascii=False)
-    while True:
-        # ekt_cfg.TEST_LEVLE_PRECISION 测试level 精度
-        if start_num - end_num >= ekt_cfg.TEST_LEVLE_PRECISION:
-            print ("start_num:{},  end_num:{}".format(start_num, end_num))
-            dict_threshold_algorithm_result = threshold_algorithm(sfu_ip, start_num, end_num)
-            [start_num, end_num] = dict_threshold_algorithm_result.get("step_range")
-        elif start_num - end_num - ekt_cfg.TEST_LEVLE_PRECISION < 0.000001:
-            print ("阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))))
-            return "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset))))
-        else:
-            print (" start_num - end_num 小于 0.1")
-            return start_num, end_num
-
-
 def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset="0"):
+    """
+    iterate level to find threshold,it used for dvbs2
+    :param sfu_ip: sfu ip
+    :param start_num: start test level
+    :param level_offset: level offset
+    :return: test_message , threshold level value
+    """
     start_data_result, _ = mosaic_algorithm(sfu_ip, start_num, start_num)
-    if start_data_result.get("detect_mosic_result") is False:
+    if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外:{}".format(start_num)},
+        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
                           ensure_ascii=False), None
     while True:
         step = 10
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print ("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print ("{} appear Mosaic".format(step_num))
             break
     while True:
         # step = 1
         step = 2
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print ("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print ("{} appear Mosaic".format(step_num))
             break
     while True:
         # step = 0.3
         step = 0.5
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print ("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print ("{} appear Mosaic".format(step_num))
             break
-    print ("阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))))
-    return "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))), str(
+    print ("The threshold: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))))
+    return "The threshold: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))), str(
         "%.2f" % (float(start_num) + float(level_offset)))
 
 
 def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
+    """
+    iterate level to find threshold,it used for dvbt/dvbt2
+    :param sfu_ip: sfu ip
+    :param start_num: start test level
+    :param level_offset: level offset
+    :return: test_message , threshold level value
+    """
     start_data_result, _ = mosaic_algorithm(sfu_ip, start_num, start_num)
-    if start_data_result.get("detect_mosic_result") is False:
+    if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外:{}".format(start_num)},
+        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
                           ensure_ascii=False), None
     while True:
         step = 3
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print ("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print ("{} appear Mosaic".format(step_num))
             break
     while True:
         step = 1
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print ("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print ("{} appear Mosaic".format(step_num))
             break
     while True:
         step = 0.1
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print ("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print ("{} appear Mosaic".format(step_num))
             break
-    print ("阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))))
-    return "阈值为: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))), str(
+    print ("The threshold: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))))
+    return "The threshold: {}".format(str("%.2f" % (float(start_num) + float(level_offset)))), str(
         "%.2f" % (float(start_num) + float(level_offset)))
 
 
 def iterate_to_find_threshold_interferer_attenuation_step_by_step(sfu_ip, start_num):
+    """
+    iterate attenuation to find threshold,it used for dvbt/dvbt2
+    :param sfu_ip: sfu ip
+    :param start_num: start test attenuation
+    :return: test_message , threshold attenuation value
+    """
     start_data_result = mosaic_algorithm_interferer_attenuation(sfu_ip, start_num, start_num)
-    if start_data_result.get("detect_mosic_result") is False:
+    if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外:{}".format(start_num)},
+        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
                           ensure_ascii=False), None
     while True:
         step = 1
         step_num = start_num - step
         step_num_data_result = mosaic_algorithm_interferer_attenuation(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print ("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print ("{} appear Mosaic".format(step_num))
             break
     # while True:
     #     step = 0.1
@@ -307,56 +310,68 @@ def iterate_to_find_threshold_interferer_attenuation_step_by_step(sfu_ip, start_
     #     if step_num_data_result.get("detect_mosic_result") is False:
     #         start_num = step_num
     #     elif step_num_data_result.get("detect_mosic_result") is True:
-    #         print("{} 出现马赛克".format(step_num))
+    #         print("{} appear Mosaic".format(step_num))
     #         break
-    print ("阈值为: {}".format(str("%.2f" % float(start_num))))
-    return "阈值为: {}".format(str("%.2f" % float(start_num))), str("%.2f" % float(start_num))
+    print ("The threshold: {}".format(str("%.2f" % float(start_num))))
+    return "The threshold: {}".format(str("%.2f" % float(start_num))), str("%.2f" % float(start_num))
 
 
 def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
+    """
+    iterate CN to find threshold
+    :param sfu_ip:sfu ip
+    :param start_num:start test CN
+    :return:test_message , threshold CN value
+    """
     start_data_result = mosaic_algorithm_noise_cn(sfu_ip, start_num, start_num)
-    if start_data_result.get("detect_mosic_result") is False:
+    if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外:{}".format(start_num)},
+        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
                           ensure_ascii=False), None
     while True:
         step = 1
         step_num = start_num - step
         step_num_data_result = mosaic_algorithm_noise_cn(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print ("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print ("{} appear Mosaic".format(step_num))
             break
     while True:
         step = 0.1
         step_num = start_num - step
         step_num_data_result = mosaic_algorithm_noise_cn(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print("{} appear Mosaic".format(step_num))
             break
-    print ("阈值为: {}".format(str("%.2f" % float(start_num))))
-    return "阈值为: {}".format(str("%.2f" % float(start_num))), str("%.2f" % float(start_num))
+    print ("The threshold: {}".format(str("%.2f" % float(start_num))))
+    return "The threshold: {}".format(str("%.2f" % float(start_num))), str("%.2f" % float(start_num))
 
 
 def iterate_to_find_threshold_fading_att_step_by_step(sfu_ip, start_num):
+    """
+    iterate att to find threshold
+    :param sfu_ip: sfu ip
+    :param start_num: start test att
+    :return: test_message , threshold att value
+    """
     start_data_result = mosaic_algorithm_fading_att(sfu_ip, start_num, start_num)
-    if start_data_result.get("detect_mosic_result") is False:
+    if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "初始值处于马赛克阈值外:{}".format(start_num)},
+        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
                           ensure_ascii=False), None
     while True:
         step = 1
         step_num = start_num - step
         step_num_data_result = mosaic_algorithm_fading_att(sfu_ip, step_num, start_num)
-        if step_num_data_result.get("detect_mosic_result") is False:
+        if step_num_data_result.get("detect_mosic_result") == "Pass":
             start_num = step_num
-        elif step_num_data_result.get("detect_mosic_result") is True:
-            print ("{} 出现马赛克".format(step_num))
+        elif step_num_data_result.get("detect_mosic_result") == "Fail":
+            print ("{} appear Mosaic".format(step_num))
             break
         if start_num == 0:
             break
@@ -367,10 +382,10 @@ def iterate_to_find_threshold_fading_att_step_by_step(sfu_ip, start_num):
     #     if step_num_data_result.get("detect_mosic_result") is False:
     #         start_num = step_num
     #     elif step_num_data_result.get("detect_mosic_result") is True:
-    #         print("{} 出现马赛克".format(step_num))
+    #         print("{} appear Mosaic".format(step_num))
     #         break
-    print ("阈值为: {}".format(str("%.2f" % float(start_num))))
-    return "阈值为: {}".format(str("%.2f" % float(start_num))), str("%.2f" % float(start_num))
+    print ("The threshold: {}".format(str("%.2f" % float(start_num))))
+    return "The threshold: {}".format(str("%.2f" % float(start_num))), str("%.2f" % float(start_num))
 
 
 if __name__ == '__main__':
