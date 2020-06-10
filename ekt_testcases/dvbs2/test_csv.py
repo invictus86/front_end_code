@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 读取CSV文件
-# 常用编码为UTF-8、UTF-16、GBK、GB 2312、GB 18030，
-# 文件编码解码格式应对应，不然会出现乱码
+# 常用编码为UTF-8、UTF-16、GBK、GB 2312、GB 18030,
+# 文件编码解码格式应对应,不然会出现乱码
 import pandas as pd
 from ekt_lib.ekt_utils import read_json_file
 

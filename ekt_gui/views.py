@@ -17,7 +17,7 @@ def dvbs_11_dynamic_range_awng_min_level(window, monty):
     # global window, monty
     monty.destroy()
     # 创建一个容器,
-    monty = ttk.LabelFrame(window, text="dvbs_11_dynamic_range_awng_min_level     Parameter setting item ")  # 创建一个容器，其父容器为window
+    monty = ttk.LabelFrame(window, text="dvbs_11_dynamic_range_awng_min_level     Parameter setting item ")  # 创建一个容器,其父容器为window
     monty.grid(column=0, row=0, padx=4, pady=4)  # padx  pady   该容器外围需要留出的空余空间
     # aLabel = ttk.Label(monty, text="A Label")
 
@@ -266,7 +266,7 @@ def dvbs_11_dynamic_range_awng_min_level(window, monty):
 
     symbol_rate_1 = StringVar(value='50000')
     name_entered = Entry(monty, width=8, textvariable=symbol_rate_1)
-    name_entered.grid(row=7, column=7,sticky=W)
+    name_entered.grid(row=7, column=7, sticky=W)
 
     symbol_rate_1 = StringVar(value='10000')
     name_entered = Entry(monty, width=8, textvariable=symbol_rate_1)
@@ -279,7 +279,6 @@ def dvbs_11_dynamic_range_awng_min_level(window, monty):
     symbol_rate_1 = StringVar(value='45000')
     name_entered = Entry(monty, width=8, textvariable=symbol_rate_1)
     name_entered.grid(row=10, column=7, sticky=W)
-
 
     # chVarDis_QPSK = IntVar()
     # check1 = Checkbutton(monty, text="Code Rate", variable=chVarDis_QPSK)
@@ -402,12 +401,13 @@ def dvbs_11_dynamic_range_awng_min_level(window, monty):
     # buttons_frame = ttk.LabelFrame(monty, text=' Labels in a Frame ')
     # buttons_frame.grid(column=0, row=7)
 
-    def dvbs_11_dynamic_range_awng_max_level(window, monty):
-        # global window, monty
-        monty.destroy()
-        # 创建一个容器,
-        monty = ttk.LabelFrame(window, text=" Monty Python ")  # 创建一个容器，其父容器为win
-        monty.grid(column=0, row=0, padx=10, pady=10)  # padx  pady   该容器外围需要留出的空余空间
-        # aLabel = ttk.Label(monty, text="A Label")
 
-        ttk.Label(monty, text="222").grid(column=1, row=0)  # 添加一个标签，并将其列设置为1，行设置为0
+def dvbs_11_dynamic_range_awng_max_level(window, monty):
+    # global window, monty
+    monty.destroy()
+    # 创建一个容器,
+    monty = ttk.LabelFrame(window, text=" Monty Python ")  # 创建一个容器,其父容器为win
+    monty.grid(column=0, row=0, padx=10, pady=10)  # padx  pady   该容器外围需要留出的空余空间
+    # aLabel = ttk.Label(monty, text="A Label")
+
+    ttk.Label(monty, text="222").grid(column=1, row=0)  # 添加一个标签,并将其列设置为1,行设置为0

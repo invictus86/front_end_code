@@ -45,14 +45,14 @@ else:
     
 if __name__ == '__main__':
     """
-    测试流程;
+    测试流程:
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
-    ④设置code_rate，modulation，symbol_rate，frequency，input_signal_level
-    ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase，由于每款机顶盒界面、锁台操作不同，
+    ④设置code_rate,modulation,symbol_rate,frequency,input_signal_level
+    ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase,由于每款机顶盒界面、锁台操作不同,
     是否需要对testcase与PC端做参数交互？）
-    ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
+    ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
     load_dict = read_json_file("../../ekt_json/dvbt_5_frequency_offset.json")
     sfu_ip = "192.168.1.50"
@@ -122,7 +122,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbt_5_frequency_offset: current_time:{}, frequency;{} MHz，stb_frequency;{} MHz，bandwidth;{} Ksym/s, {}".format(
+                                      "dvbt_5_frequency_offset: current_time:{}, frequency:{} MHz,stb_frequency:{} MHz,bandwidth:{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_BW[0]), str(int(FREQUENCY_BW[0] + FREQUENCY_BW[2])),
                                           str(FREQUENCY_BW[1]),
@@ -133,12 +133,12 @@ if __name__ == '__main__':
             continue
 
         start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, "-60", "-60")
-        print ("dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate;{}, frequency;{} MHz，stb_frequency;{} MHz，bandwidth;{} MHZ，{}".format(
+        print ("dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate:{}, frequency:{} MHz,stb_frequency:{} MHz,bandwidth:{} MHZ,{}".format(
             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_64QAM,
             CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]), str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
             start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfu.txt",
-                          "dvbt_5_frequency_offset: current_time:{}, modulation: {}, coderate;{}, frequency;{} MHz，stb_frequency;{} MHz，bandwidth;{} MHZ，{}".format(
+                          "dvbt_5_frequency_offset: current_time:{}, modulation: {}, coderate:{}, frequency:{} MHz,stb_frequency:{} MHz,bandwidth:{} MHZ,{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                               MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]),
                               str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),

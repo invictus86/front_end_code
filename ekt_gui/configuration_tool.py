@@ -14,10 +14,10 @@ window.title("front_end_test")
 window.resizable(width=False, height=False)  # 窗口大小不可改变
 window.geometry("800x600+650+100")
 
-# 顶级菜单，显示在窗口最上方
+# 顶级菜单,显示在窗口最上方
 menubar = Menu(window)
 
-# fmenu可理解为菜单容器，用于add菜单项
+# fmenu可理解为菜单容器,用于add菜单项
 
 fmenu1 = Menu(window, tearoff=False)  # tearoff=True 表示这个菜单可以被拖拽出来
 fmenu1.add_separator()  # 分割线
@@ -60,7 +60,7 @@ fmenu3.add_command(label='菜单3-1')
 fmenu3.add_separator()
 fmenu3.add_command(label='菜单3-2')
 
-fmenu4 = Menu(window)  # 创建了第四个菜单容器，add四个菜单容器，实现多级子菜单
+fmenu4 = Menu(window)  # 创建了第四个菜单容器,add四个菜单容器,实现多级子菜单
 fmenu4_1 = Menu(window)
 fmenu4_1.add_command(label='菜单4-子菜单1-1')
 fmenu4_1.add_command(label='菜单4-子菜单1-2')
@@ -81,7 +81,7 @@ fmenu4.add_cascade(label='菜单4-子菜单2', menu=fmenu4_2)
 fmenu4.add_cascade(label='菜单4-子菜单3', menu=fmenu4_3)
 fmenu4.add_cascade(label='菜单4-子菜单4', menu=fmenu4_4)
 
-# 将“fmenu1、fmenu2、fmenu3、fmenu4”四个菜单容器加入顶级菜单中，并设置该菜单容器的label
+# 将“fmenu1、fmenu2、fmenu3、fmenu4”四个菜单容器加入顶级菜单中,并设置该菜单容器的label
 
 menubar.add_cascade(label='DVB-S', menu=fmenu1)
 menubar.add_cascade(label='DVB-S2', menu=fmenu2)

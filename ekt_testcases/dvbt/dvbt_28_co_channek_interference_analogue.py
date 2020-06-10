@@ -71,14 +71,14 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程;
+    测试流程:
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
-    ④设置code_rate，modulation，symbol_rate，frequency，input_signal_level
-    ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase，由于每款机顶盒界面、锁台操作不同，
+    ④设置code_rate,modulation,symbol_rate,frequency,input_signal_level
+    ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase,由于每款机顶盒界面、锁台操作不同,
     是否需要对testcase与PC端做参数交互？）
-    ⑤依次修改可变参数，判断机顶盒画面是否含有马赛克并记录结果
+    ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
     load_dict = read_json_file("../../ekt_json/dvbt_28_co_channek_interference_analogue.json")
     sfu_ip = "192.168.1.50"
@@ -159,7 +159,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbt_28_co_channek_interference_analogue: current_time:{}, frequency;{} MHz，bandwidth;{} Ksym/s， {}".format(
+                                      "dvbt_28_co_channek_interference_analogue: current_time:{}, frequency:{} MHz,bandwidth:{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY[0]), str(8), "Lock fail") + "\n"))
         else:
@@ -182,11 +182,11 @@ if __name__ == '__main__':
             res, test_result = iterate_to_find_threshold_interferer_attenuation_step_by_step(sfu_ip,
                                                                                              float(PARAMETER[4]))
             print(
-                "dvbt_28_co_channek_interference_analogue: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
+                "dvbt_28_co_channek_interference_analogue: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                     PARAMETER[2], str(FREQUENCY[0]), str(8), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbt_28_co_channek_interference_analogue: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
+                              "dvbt_28_co_channek_interference_analogue: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                                   PARAMETER[2], str(FREQUENCY[0]), str(8), res) + "\n")
 
