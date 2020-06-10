@@ -37,7 +37,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -100,7 +100,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfe.txt",
                               (
-                                      "dvbs_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                      "dvbs_symbol_rate_step: current_time:{}, coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                                           str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70, "Lock fail") + "\n"))
             continue
@@ -110,11 +110,11 @@ if __name__ == '__main__':
 
         start_data_result, mosaic_result = mosaic_algorithm(sfe_ip, LEVEL_70, "-50")
         print (
-            "dvbs_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
+            "dvbs_symbol_rate_step: current_time:{}, coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, Mosaic results;{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                 str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70, start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfe.txt",
-                          "dvbs_symbol_rate_step: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
+                          "dvbs_symbol_rate_step: current_time:{}, coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, Mosaic results;{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                               str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70,
                               start_data_result.get("detect_mosic_result")) + "\n")

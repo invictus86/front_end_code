@@ -107,7 +107,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -195,7 +195,7 @@ if __name__ == '__main__':
             elif lock_state == "0":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "dvbt_22_minimun_signal_level_0db: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
+                                          "dvbt_22_minimun_signal_level_0db: current_time:{}, frequency;{} MHz，bandwidth;{} Ksym/s, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(PARAMETER_FIXED[0]), str(8), "Lock fail") + "\n"))
 
@@ -223,11 +223,11 @@ if __name__ == '__main__':
                                                                                   1] + 5)),
                                                                           level_offset=str(PARAMETER_FIXED[1]))
                 print(
-                    "dvbt_22_minimun_signal_level_0db: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                    "dvbt_22_minimun_signal_level_0db: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                         PARAMETER[2], str(PARAMETER_FIXED[0]), str(PARAMETER_FIXED[3]), res))
                 write_test_result("../../ekt_log/test_result_sfu.txt",
-                                  "dvbt_22_minimun_signal_level_0db: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                                  "dvbt_22_minimun_signal_level_0db: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                                       PARAMETER[2], str(PARAMETER_FIXED[0]), str(PARAMETER_FIXED[3]), res) + "\n")
 

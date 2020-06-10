@@ -59,7 +59,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -122,7 +122,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfe.txt",
                               (
-                                      "dvbs_signal_tracking_frequency_range: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                      "dvbs_signal_tracking_frequency_range: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1],
                                           FREQUENCY_OFFSET[2], "Lock fail") + "\n"))
@@ -145,12 +145,12 @@ if __name__ == '__main__':
             specan = Ektsfe(sfe_ip)
             specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
             start_data_result,mosaic_result  = mosaic_algorithm(sfe_ip, FREQUENCY_OFFSET[2], "-50")
-            print ("dvbs_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
+            print ("dvbs_signal_tracking_frequency_range: current_time:{}, coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, Mosaic results;{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                 FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
                 start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfe.txt",
-                              "dvbs_signal_tracking_frequency_range: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
+                              "dvbs_signal_tracking_frequency_range: current_time:{}, coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, Mosaic results;{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                   FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
                                   start_data_result.get("detect_mosic_result")) + "\n")

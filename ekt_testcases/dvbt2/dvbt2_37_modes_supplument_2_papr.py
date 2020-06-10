@@ -53,7 +53,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -127,7 +127,7 @@ if __name__ == '__main__':
     elif lock_state == "0":
         write_test_result("../../ekt_log/test_result_sfu.txt",
                           (
-                                  "dvbt2_37_modes_supplument_2_papr: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
+                                  "dvbt2_37_modes_supplument_2_papr: current_time:{}, frequency;{} MHz，bandwidth;{} Ksym/s, {}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                       str(FREQUENCY_666), str(8), "Lock fail") + "\n"))
     else:
@@ -145,11 +145,11 @@ if __name__ == '__main__':
 
         start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
         print (
-            "dvbt2_37_modes_supplument_2_papr: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+            "dvbt2_37_modes_supplument_2_papr: current_time:{}, fft_size: {}, modulation: {},coderate;{}, PIL:{}, guard:{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), "M32E", MODULATION_256QAM,
                 CODE_RATE_3_4, "PP2", GUARD_G1_8, FREQUENCY_666, str("8"), start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfu.txt",
-                          "dvbt2_37_modes_supplument_2_papr: current_time:{}, fft_size: {}, modulation: {},coderate：{}, PIL:{}, guard:{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                          "dvbt2_37_modes_supplument_2_papr: current_time:{}, fft_size: {}, modulation: {},coderate;{}, PIL:{}, guard:{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), "M32E", MODULATION_256QAM,
                               CODE_RATE_3_4, "PP2", GUARD_G1_8, FREQUENCY_666, str("8"),
                               start_data_result.get("detect_mosic_result")) + "\n")

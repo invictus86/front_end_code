@@ -212,7 +212,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -311,7 +311,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbt2_69_performance_in_SFN_inside_guard: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
+                                      "dvbt2_69_performance_in_SFN_inside_guard: current_time:{}, frequency;{} MHz，bandwidth;{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(PARAMETER[0]), str(PARAMETER[3]), "Lock fail") + "\n"))
             continue
@@ -352,11 +352,11 @@ if __name__ == '__main__':
 
                 res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[9])
                 print(
-                    "dvbt2_69_performance_in_SFN_inside_guard: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                    "dvbt2_69_performance_in_SFN_inside_guard: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[5],
                         PARAMETER[7], str(PARAMETER[0]), str(PARAMETER[3]), res))
                 write_test_result("../../ekt_log/test_result_sfu.txt",
-                                  "dvbt2_69_performance_in_SFN_inside_guard: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                                  "dvbt2_69_performance_in_SFN_inside_guard: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[5],
                                       PARAMETER[7], str(PARAMETER[0]), str(PARAMETER[3]), res) + "\n")
 

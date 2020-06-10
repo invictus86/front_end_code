@@ -60,7 +60,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -140,7 +140,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbs2_18_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level: {}, {}".format(
+                                      "dvbs2_18_dynamic_range_awng_min_level: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level: {}, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                           str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
@@ -174,11 +174,11 @@ if __name__ == '__main__':
             res, test_result = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, (-65 - FREQUENCY_LEVEL_OFFSET[1]),
                                                                             level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
             print (
-                "dvbs2_18_dynamic_range_awng_min_level: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                "dvbs2_18_dynamic_range_awng_min_level: current_time:{}, modulation: {},coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbs2_18_dynamic_range_awng_min_level: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                              "dvbs2_18_dynamic_range_awng_min_level: current_time:{}, modulation: {},coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
             PARAMETER[2] = test_result

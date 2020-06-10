@@ -54,7 +54,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -140,7 +140,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbs2_symbol_err_rate: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                      "dvbs2_symbol_err_rate: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_50, "Lock fail") + "\n"))
             continue
@@ -161,11 +161,11 @@ if __name__ == '__main__':
 
             start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, LEVEL_50, "-50")
             print (
-            "dvbs2_symbol_err_rate: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
+            "dvbs2_symbol_err_rate: current_time:{}, coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, Mosaic results;{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                 FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_50, start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbs2_symbol_err_rate: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic results：{}".format(
+                              "dvbs2_symbol_err_rate: current_time:{}, coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, Mosaic results;{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                   FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_50,
                                   start_data_result.get("detect_mosic_result")) + "\n")

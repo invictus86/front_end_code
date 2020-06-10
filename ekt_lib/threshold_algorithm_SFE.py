@@ -22,8 +22,8 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
 def mosaic_algorithm(sfe_ip, test_level_data, can_play_data):
     specan = Ektsfe(sfe_ip)
     specan.set_level_level_level(str(test_level_data) + " dBm")
-    print ("设置set_level_level_level:{}".format(str(test_level_data) + " dBm"))
-    logging.info("设置set_level_level_level:{}".format(str(test_level_data) + " dBm"))
+    print ("set_level_level_level:{}".format(str(test_level_data) + " dBm"))
+    logging.info("set_level_level_level:{}".format(str(test_level_data) + " dBm"))
     time.sleep(5)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],
@@ -56,7 +56,7 @@ def mosaic_algorithm(sfe_ip, test_level_data, can_play_data):
 
 # def threshold_algorithm(sfe_ip, start_data, end_data):
 #     """
-#     算法步骤：
+#     算法步骤;
 #     ①判断起始数据start_data 对应画面无马赛克
 #     ②判断终止数据end_data   对应画面有马赛克
 #     ③根据步进值对起始与终止数据进行调整并判断画面是否含有马赛克

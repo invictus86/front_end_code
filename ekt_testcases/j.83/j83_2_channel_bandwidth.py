@@ -39,7 +39,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -130,7 +130,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "j83_2_channel_bandwidth: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                      "j83_2_channel_bandwidth: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                           str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
@@ -139,7 +139,7 @@ if __name__ == '__main__':
         elif lock_state == "2":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "j83_2_channel_bandwidth: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                      "j83_2_channel_bandwidth: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                           str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
@@ -156,13 +156,13 @@ if __name__ == '__main__':
         start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
                                                             str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])))
         print (
-            "j83_2_channel_bandwidth: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic result：{}".format(
+            "j83_2_channel_bandwidth: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, Mosaic result;{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                 str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                 str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
                 start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfu.txt",
-                          "j83_2_channel_bandwidth: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, Mosaic result：{}".format(
+                          "j83_2_channel_bandwidth: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, Mosaic result;{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                               str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),

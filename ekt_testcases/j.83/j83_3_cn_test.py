@@ -47,7 +47,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -151,7 +151,7 @@ if __name__ == '__main__':
             elif lock_state == "0":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "j83_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "j83_3_cn_test: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
@@ -160,7 +160,7 @@ if __name__ == '__main__':
             elif lock_state == "2":
                 write_test_result("../../ekt_log/test_result_sfu.txt",
                                   (
-                                          "j83_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，level：{} dbm, {}".format(
+                                          "j83_3_cn_test: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，level;{} dbm, {}".format(
                                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                               str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                               str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[1])),
@@ -176,11 +176,11 @@ if __name__ == '__main__':
 
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, LOCK_PARAMETER[2])
             print (
-                "j83_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                "j83_3_cn_test: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "j83_3_cn_test: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s， {}".format(
+                              "j83_3_cn_test: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s， {}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
 

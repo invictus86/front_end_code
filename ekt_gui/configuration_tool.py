@@ -6,7 +6,7 @@ from tkinter import ttk
 from tkinter import scrolledtext
 from views import *
 
-# 主窗口：
+# 主窗口;
 
 window = Tk()
 monty = ttk.LabelFrame(window)

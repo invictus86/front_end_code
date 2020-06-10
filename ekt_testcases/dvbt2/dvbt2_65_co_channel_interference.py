@@ -80,7 +80,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -165,7 +165,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbt2_62_maximum_signal_levels: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
+                                      "dvbt2_62_maximum_signal_levels: current_time:{}, frequency;{} MHz，bandwidth;{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY[0]), str(8), "Lock fail") + "\n"))
         else:
@@ -190,11 +190,11 @@ if __name__ == '__main__':
             res, test_result = iterate_to_find_threshold_interferer_attenuation_step_by_step(sfu_ip,
                                                                                              float(PARAMETER[5]))
             print(
-                "dvbt2_65_co_channel_interference: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                "dvbt2_65_co_channel_interference: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                     PARAMETER[2], str(FREQUENCY[0]), str(8), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbt2_65_co_channel_interference: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                              "dvbt2_65_co_channel_interference: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                                   PARAMETER[2], str(FREQUENCY[0]), str(8), res) + "\n")
 

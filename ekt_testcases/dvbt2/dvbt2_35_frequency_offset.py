@@ -45,7 +45,7 @@ else:
     
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -124,7 +124,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbt2_35_frequency_offset: current_time:{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
+                                      "dvbt2_35_frequency_offset: current_time:{}, frequency;{} MHz，stb_frequency;{} MHz，bandwidth;{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_BW[0]), str(int(FREQUENCY_BW[0] + FREQUENCY_BW[2])),
                                           str(FREQUENCY_BW[1]),
@@ -136,12 +136,12 @@ if __name__ == '__main__':
 
         start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, "-60", "-60")
         print (
-            "dvbt2_35_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+            "dvbt2_35_frequency_offset: current_time:{}, modulation: {},coderate;{}, frequency;{} MHz，stb_frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_64QAM,
                 CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]), str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),
                 start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfu.txt",
-                          "dvbt2_35_frequency_offset: current_time:{}, modulation: {}, coderate：{}, frequency：{} MHz，stb_frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                          "dvbt2_35_frequency_offset: current_time:{}, modulation: {}, coderate;{}, frequency;{} MHz，stb_frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                               MODULATION_64QAM, CODE_RATE_2_3, str(FREQUENCY_BW[0] + FREQUENCY_BW[2]),
                               str(int(FREQUENCY_BW[0])), str(FREQUENCY_BW[1]),

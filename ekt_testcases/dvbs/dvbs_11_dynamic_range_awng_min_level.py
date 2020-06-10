@@ -47,7 +47,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -110,7 +110,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfe.txt",
                               (
-                                      "dvbs_dynamic_range_awng_min_level: current_time:{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                                      "dvbs_dynamic_range_awng_min_level: current_time:{}, frequency;{} MHz，symbol_rate;{} Ksym/s，{}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                           "Lock fail") + "\n"))
@@ -133,11 +133,11 @@ if __name__ == '__main__':
             res, test_result = iterate_to_find_threshold_step_by_step(sfe_ip,
                                                                       float((-70) - FREQUENCY_LEVEL_OFFSET[1]),
                                                                       level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
-            print ("dvbs_dynamic_range_awng_min_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+            print ("dvbs_dynamic_range_awng_min_level: current_time:{}, coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
                 str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res))
             write_test_result("../../ekt_log/test_result_sfe.txt",
-                "dvbs_dynamic_range_awng_min_level: current_time:{}, coderate：{}, frequency：{} MHz，symbol_rate：{} Ksym/s，{}".format(
+                "dvbs_dynamic_range_awng_min_level: current_time:{}, coderate;{}, frequency;{} MHz，symbol_rate;{} Ksym/s，{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
             code_rate_cn[1] = test_result

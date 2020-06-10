@@ -50,7 +50,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -113,7 +113,7 @@ if __name__ == '__main__':
     elif lock_state == "0":
         write_test_result("../../ekt_log/test_result_sfu.txt",
                           (
-                                  "dvbt_21_receiver_signal_input__min_level: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s， {}".format(
+                                  "dvbt_21_receiver_signal_input__min_level: current_time:{}, frequency;{} MHz，bandwidth;{} Ksym/s， {}".format(
                                       datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                       str(FREQUENCY_666),
                                       str(8), "Lock fail") + "\n"))
@@ -132,11 +132,11 @@ if __name__ == '__main__':
 
         start_data_result = mosaic_algorithm(sfu_ip, LEVEL_30_666, LEVEL_30_666)
         print (
-            "dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+            "dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                 PARAMETER[2], str(FREQUENCY_666), str(8), start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfu.txt",
-                          "dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                          "dvbt_5_frequency_offset: current_time:{}, modulation: {},coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                               PARAMETER[2], str(FREQUENCY_666), str(8),
                               start_data_result.get("detect_mosic_result")) + "\n")

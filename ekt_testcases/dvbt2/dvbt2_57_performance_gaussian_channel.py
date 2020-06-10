@@ -77,7 +77,7 @@ else:
 
 if __name__ == '__main__':
     """
-    测试流程：
+    测试流程;
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
@@ -172,7 +172,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbt2_57_performance_gaussian_channel: current_time:{}, frequency：{} MHz，bandwidth：{} Ksym/s, {}".format(
+                                      "dvbt2_57_performance_gaussian_channel: current_time:{}, frequency;{} MHz，bandwidth;{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH),
                                           "Lock fail") + "\n"))
@@ -198,11 +198,11 @@ if __name__ == '__main__':
                 specan.set_digitaltv_system_modulation_dvbt2("T64")
 
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, MODULATION_CODERATE_SPEC[2] + 3)
-            print ("dvbt2_57_performance_gaussian_channel: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+            print ("dvbt2_57_performance_gaussian_channel: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_CODERATE_SPEC[0],
                 MODULATION_CODERATE_SPEC[1], str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbt2_57_performance_gaussian_channel: current_time:{}, modulation: {} coderate：{}, frequency：{} MHz，bandwidth：{} MHZ，{}".format(
+                              "dvbt2_57_performance_gaussian_channel: current_time:{}, modulation: {} coderate;{}, frequency;{} MHz，bandwidth;{} MHZ，{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                   MODULATION_CODERATE_SPEC[0], MODULATION_CODERATE_SPEC[1],
                                   str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res) + "\n")
