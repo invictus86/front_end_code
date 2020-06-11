@@ -166,7 +166,7 @@ def dvbs_dynamic_max_json_to_csv(json_path, csv_path):
             else:
                 list_required_data.append(["", "", j[0][0], j[1]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'code_rate', 'level'])
+    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'code_rate', 'mosic_result'])
     pd_data.to_csv(csv_path, index=None)
 
 

@@ -23639,3 +23639,1064 @@
 2020-06-11 16:16:42,618 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
 2020-06-11 16:16:43,947 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.20 dBm
 2020-06-11 16:16:43,957 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.20 dBm
+2020-06-11 16:16:58,947 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:17:02,289 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.20, Mosaic results:Pass
+2020-06-11 16:17:02,477 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:17:03,683 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.20 dBm
+2020-06-11 16:17:03,690 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.20 dBm
+2020-06-11 16:17:18,619 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:17:21,694 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.20, Mosaic results:Pass
+2020-06-11 16:17:21,947 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:17:23,135 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.20 dBm
+2020-06-11 16:17:23,145 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.20 dBm
+2020-06-11 16:17:37,903 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:17:41,016 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.20, Mosaic results:Pass
+2020-06-11 16:17:41,230 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:17:42,387 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.20 dBm
+2020-06-11 16:17:42,394 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.20 dBm
+2020-06-11 16:17:57,323 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:18:00,178 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.20, Mosaic results:Pass
+2020-06-11 16:18:00,371 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:18:01,559 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1850MHz
+2020-06-11 16:18:02,917 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.40 dBm
+2020-06-11 16:18:51,621 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:18:52,779 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.40 dBm
+2020-06-11 16:18:52,786 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.40 dBm
+2020-06-11 16:19:07,621 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:19:10,414 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.40, Mosaic results:Pass
+2020-06-11 16:19:10,654 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:19:12,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.40 dBm
+2020-06-11 16:19:12,022 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.40 dBm
+2020-06-11 16:19:26,545 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:19:29,322 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.40, Mosaic results:Pass
+2020-06-11 16:19:29,576 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:19:30,779 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.40 dBm
+2020-06-11 16:19:30,788 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.40 dBm
+2020-06-11 16:19:45,811 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:19:48,864 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.40, Mosaic results:Pass
+2020-06-11 16:19:49,075 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:19:50,437 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.40 dBm
+2020-06-11 16:19:50,444 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.40 dBm
+2020-06-11 16:20:05,326 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:20:08,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.40, Mosaic results:Pass
+2020-06-11 16:20:08,328 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:20:09,530 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.40 dBm
+2020-06-11 16:20:09,539 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.40 dBm
+2020-06-11 16:20:24,421 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:20:27,289 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.40, Mosaic results:Pass
+2020-06-11 16:20:27,545 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:20:28,687 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1870MHz
+2020-06-11 16:20:29,875 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:21:17,108 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:21:18,313 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:21:18,319 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:21:33,234 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:21:36,243 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:21:36,500 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:21:37,703 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:21:37,711 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:21:52,549 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:21:55,608 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:21:55,796 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:21:57,157 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:21:57,165 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:22:12,049 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:22:15,065 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:22:15,266 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:22:16,424 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:22:16,433 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:22:31,362 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:22:34,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:22:34,503 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:22:35,878 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:22:35,887 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:22:50,940 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:22:53,763 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:22:54,002 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:22:55,190 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1890MHz
+2020-06-11 16:22:56,378 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.80 dBm
+2020-06-11 16:23:43,082 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:23:44,269 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.80 dBm
+2020-06-11 16:23:44,276 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.80 dBm
+2020-06-11 16:23:59,332 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:24:02,171 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.80, Mosaic results:Pass
+2020-06-11 16:24:02,426 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:24:03,630 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.80 dBm
+2020-06-11 16:24:03,638 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.80 dBm
+2020-06-11 16:24:18,457 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:24:21,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.80, Mosaic results:Pass
+2020-06-11 16:24:21,457 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:24:22,802 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.80 dBm
+2020-06-11 16:24:22,809 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.80 dBm
+2020-06-11 16:24:37,630 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:24:40,434 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.80, Mosaic results:Pass
+2020-06-11 16:24:40,631 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:24:41,818 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.80 dBm
+2020-06-11 16:24:41,826 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.80 dBm
+2020-06-11 16:24:56,631 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:24:59,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.80, Mosaic results:Pass
+2020-06-11 16:24:59,631 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:25:00,772 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.80 dBm
+2020-06-11 16:25:00,780 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.80 dBm
+2020-06-11 16:25:15,631 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:25:18,865 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.80, Mosaic results:Pass
+2020-06-11 16:25:19,115 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:25:20,303 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1910MHz
+2020-06-11 16:25:21,664 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:26:10,871 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:26:12,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:26:12,187 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:26:26,476 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:26:29,420 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:26:29,680 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:26:30,836 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:26:30,845 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:26:45,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:26:48,822 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:26:49,071 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:26:50,275 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:26:50,289 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:27:05,336 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:27:08,226 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:27:08,446 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:27:09,650 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:27:09,658 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:27:24,588 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:27:27,615 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:27:27,867 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:27:29,227 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:27:29,236 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:27:44,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:27:47,114 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:27:47,368 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:27:48,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1930MHz
+2020-06-11 16:27:49,854 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 16:28:34,979 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:28:36,183 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 16:28:36,190 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 16:28:51,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:28:54,230 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 16:28:54,433 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:28:55,619 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 16:28:55,631 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 16:29:10,417 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:29:13,256 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 16:29:13,463 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:29:14,653 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 16:29:14,661 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 16:29:29,450 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:29:32,252 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 16:29:32,448 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:29:33,809 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 16:29:33,818 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 16:29:48,825 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:29:51,694 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 16:29:51,887 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:29:53,091 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 16:29:53,099 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 16:30:08,138 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:30:11,072 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 16:30:11,311 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:30:12,496 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1950MHz
+2020-06-11 16:30:13,684 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:31:00,858 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:31:02,171 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:31:02,178 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:31:17,171 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:31:20,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:31:20,388 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:31:21,530 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:31:21,539 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:31:36,515 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:31:39,423 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:31:39,671 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:31:40,858 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:31:40,868 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:31:55,734 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:31:58,891 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:31:59,140 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:32:00,328 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:32:00,336 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:32:15,312 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:32:18,181 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:32:18,407 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:32:19,766 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.00 dBm
+2020-06-11 16:32:19,775 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.00 dBm
+2020-06-11 16:32:34,609 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:32:37,700 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.00, Mosaic results:Pass
+2020-06-11 16:32:37,907 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:32:39,095 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1970MHz
+2020-06-11 16:32:40,407 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:33:27,000 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:33:28,144 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:33:28,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:33:43,096 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:33:45,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:33:46,111 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:33:47,315 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:33:47,323 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:34:02,362 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:34:05,180 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:34:05,424 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:34:06,628 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:34:06,637 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:34:21,769 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:34:24,644 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:34:24,832 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:34:26,035 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:34:26,043 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:34:41,052 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:34:43,828 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:34:44,019 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:34:45,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:34:45,232 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:35:00,193 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:35:03,296 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:35:03,489 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:35:04,676 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1990MHz
+2020-06-11 16:35:06,019 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -3.70 dBm
+2020-06-11 16:35:53,161 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:35:54,520 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -3.70 dBm
+2020-06-11 16:35:54,529 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-3.70 dBm
+2020-06-11 16:36:09,506 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:36:12,302 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-3.70, Mosaic results:Pass
+2020-06-11 16:36:12,490 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:36:13,647 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -3.70 dBm
+2020-06-11 16:36:13,655 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-3.70 dBm
+2020-06-11 16:36:28,523 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:36:31,394 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-3.70, Mosaic results:Pass
+2020-06-11 16:36:31,585 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:36:32,788 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -3.70 dBm
+2020-06-11 16:36:32,796 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-3.70 dBm
+2020-06-11 16:36:47,663 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:36:50,470 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-3.70, Mosaic results:Pass
+2020-06-11 16:36:50,663 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:36:51,867 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -3.70 dBm
+2020-06-11 16:36:51,882 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-3.70 dBm
+2020-06-11 16:37:06,881 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:37:10,038 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-3.70, Mosaic results:Pass
+2020-06-11 16:37:10,288 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:37:11,428 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -3.70 dBm
+2020-06-11 16:37:11,437 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-3.70 dBm
+2020-06-11 16:37:26,648 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:37:29,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-3.70, Mosaic results:Pass
+2020-06-11 16:37:29,914 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:37:31,101 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 2010MHz
+2020-06-11 16:37:32,289 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:38:18,477 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:38:19,838 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:38:19,845 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:38:34,915 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:38:37,914 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:38:38,104 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:38:39,290 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:38:39,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:38:54,243 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:38:57,315 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:38:57,571 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:38:58,776 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:38:58,785 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:39:13,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:39:16,951 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:39:17,213 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:39:18,417 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:39:18,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:39:33,385 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:39:36,415 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:39:36,665 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:39:38,026 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:39:38,036 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:39:52,823 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:39:55,826 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:39:56,072 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:39:57,260 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 2030MHz
+2020-06-11 16:39:58,450 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:40:44,996 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:40:46,200 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:40:46,207 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:41:00,920 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:41:03,884 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:41:04,121 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:41:05,341 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:41:05,349 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:41:20,326 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:41:23,480 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:41:23,668 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:41:24,871 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:41:24,881 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:41:39,826 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:41:42,795 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:41:43,059 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:41:44,420 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:41:44,430 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:41:59,233 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:42:02,154 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:42:02,404 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:42:03,546 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:42:03,553 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:42:18,437 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:42:21,411 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:42:21,608 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:42:22,796 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 2050MHz
+2020-06-11 16:42:23,983 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.90 dBm
+2020-06-11 16:43:10,625 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:43:11,782 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.90 dBm
+2020-06-11 16:43:11,789 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.90 dBm
+2020-06-11 16:43:26,703 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:43:29,917 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.90, Mosaic results:Pass
+2020-06-11 16:43:30,171 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:43:31,532 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.90 dBm
+2020-06-11 16:43:31,540 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.90 dBm
+2020-06-11 16:43:46,157 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:43:49,109 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.90, Mosaic results:Pass
+2020-06-11 16:43:49,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:43:50,704 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.90 dBm
+2020-06-11 16:43:50,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.90 dBm
+2020-06-11 16:44:05,548 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:44:08,543 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.90, Mosaic results:Pass
+2020-06-11 16:44:08,766 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:44:09,971 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.90 dBm
+2020-06-11 16:44:09,993 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.90 dBm
+2020-06-11 16:44:24,799 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:44:27,683 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.90, Mosaic results:Pass
+2020-06-11 16:44:27,938 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:44:29,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.90 dBm
+2020-06-11 16:44:29,315 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.90 dBm
+2020-06-11 16:44:44,361 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:44:47,364 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.90, Mosaic results:Pass
+2020-06-11 16:44:47,611 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:44:48,752 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 2070MHz
+2020-06-11 16:44:49,940 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 16:45:36,555 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:45:37,753 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 16:45:37,760 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 16:45:52,723 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:45:55,611 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 16:45:55,862 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:45:57,160 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 16:45:57,167 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 16:46:12,019 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:46:14,971 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 16:46:15,176 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:46:16,316 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 16:46:16,325 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 16:46:31,193 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:46:34,148 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 16:46:34,411 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:46:35,566 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 16:46:35,576 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 16:46:50,288 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:46:53,108 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 16:46:53,348 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:46:54,707 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 16:46:54,717 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 16:47:09,585 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:47:12,520 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 16:47:12,770 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:47:13,911 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 2090MHz
+2020-06-11 16:47:15,052 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:48:02,617 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:48:03,976 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:48:03,984 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:48:18,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:48:21,740 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:48:21,976 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:48:23,335 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:48:23,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:48:38,351 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:48:41,335 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:48:41,569 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:48:42,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:48:42,782 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:48:57,835 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:49:00,819 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:49:01,026 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:49:02,382 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:49:02,398 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:49:17,211 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:49:20,115 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:49:20,305 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:49:21,618 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.70 dBm
+2020-06-11 16:49:21,627 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.70 dBm
+2020-06-11 16:49:36,525 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:49:39,382 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.70, Mosaic results:Pass
+2020-06-11 16:49:39,634 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:49:40,822 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 2110MHz
+2020-06-11 16:49:41,963 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:50:28,479 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:50:29,855 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:50:29,861 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:50:44,869 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:50:48,424 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:50:48,667 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:50:49,871 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:50:49,880 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:51:04,542 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:51:07,414 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:51:07,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:51:09,012 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:51:09,019 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:51:23,887 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:51:26,875 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:51:27,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:51:28,325 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:51:28,334 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:51:42,778 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:51:45,752 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:51:45,948 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:51:47,105 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.10 dBm
+2020-06-11 16:51:47,117 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.10 dBm
+2020-06-11 16:52:02,138 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:52:05,148 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.10, Mosaic results:Pass
+2020-06-11 16:52:05,417 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:52:06,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 2130MHz
+2020-06-11 16:52:07,795 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.00 dBm
+2020-06-11 16:52:54,341 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:52:55,700 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.00 dBm
+2020-06-11 16:52:55,707 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.00 dBm
+2020-06-11 16:53:10,640 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:53:13,604 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.00, Mosaic results:Pass
+2020-06-11 16:53:13,842 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:53:15,045 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.00 dBm
+2020-06-11 16:53:15,055 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.00 dBm
+2020-06-11 16:53:29,890 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:53:32,694 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.00, Mosaic results:Pass
+2020-06-11 16:53:32,888 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:53:34,092 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.00 dBm
+2020-06-11 16:53:34,101 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.00 dBm
+2020-06-11 16:53:48,984 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:53:52,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.00, Mosaic results:Pass
+2020-06-11 16:53:52,217 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:53:53,404 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.00 dBm
+2020-06-11 16:53:53,414 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.00 dBm
+2020-06-11 16:54:08,312 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:54:11,990 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.00, Mosaic results:Pass
+2020-06-11 16:54:12,265 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:54:13,484 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.00 dBm
+2020-06-11 16:54:13,494 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.00 dBm
+2020-06-11 16:54:28,344 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:54:33,019 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.00, Mosaic results:Pass
+2020-06-11 16:54:33,296 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 16:54:34,483 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 2150MHz
+2020-06-11 16:54:35,625 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:55:20,313 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:55:21,533 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:55:21,546 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:55:36,408 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:55:39,286 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:55:39,486 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:55:40,642 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:55:40,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:55:55,595 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:55:59,177 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:55:59,424 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:56:00,628 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:56:00,635 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:56:15,674 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:56:18,641 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:56:18,861 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:56:20,049 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:56:20,058 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:56:35,003 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:56:37,964 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:56:38,144 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:56:39,286 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -4.60 dBm
+2020-06-11 16:56:39,293 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-4.60 dBm
+2020-06-11 16:56:54,362 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:56:57,779 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-4.60, Mosaic results:Pass
+2020-06-11 16:56:58,017 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 16:56:59,566 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 950MHz
+2020-06-11 16:57:00,753 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 16:57:46,426 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 16:57:47,582 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 16:57:47,589 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 16:58:02,520 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:58:05,578 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 16:58:05,755 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 16:58:06,957 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 16:58:06,966 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 16:58:21,818 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:58:24,677 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 16:58:24,864 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 16:58:26,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 16:58:26,233 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 16:58:41,147 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:58:44,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 16:58:44,552 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 16:58:45,911 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 16:58:45,921 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 16:59:00,789 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:59:03,829 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 16:59:04,036 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 16:59:05,240 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 16:59:05,250 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 16:59:20,288 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 16:59:23,206 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 16:59:23,460 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 16:59:24,647 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 970MHz
+2020-06-11 16:59:25,990 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 17:00:12,039 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:00:13,382 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 17:00:13,390 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 17:00:28,461 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:00:31,459 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 17:00:31,634 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:00:32,789 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 17:00:32,799 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 17:00:47,680 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:00:50,736 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 17:00:50,930 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:00:52,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 17:00:52,142 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 17:01:07,072 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:01:10,042 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 17:01:10,227 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:01:11,431 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 17:01:11,440 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 17:01:26,150 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:01:28,947 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 17:01:29,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:01:30,494 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.40 dBm
+2020-06-11 17:01:30,510 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.40 dBm
+2020-06-11 17:01:45,354 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:01:48,201 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.40, Mosaic results:Pass
+2020-06-11 17:01:48,431 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:01:49,572 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 990MHz
+2020-06-11 17:01:50,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:02:39,823 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:02:41,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:02:41,190 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:02:55,526 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:02:58,536 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:02:58,730 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:02:59,918 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:02:59,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:03:14,839 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:03:17,796 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:03:18,042 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:03:19,200 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:03:19,209 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:03:33,903 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:03:36,924 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:03:37,137 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:03:38,295 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:03:38,302 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:03:53,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:03:56,112 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:03:56,292 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:03:57,496 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:03:57,506 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:04:12,513 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:04:15,398 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:04:15,591 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:04:16,779 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1010MHz
+2020-06-11 17:04:17,967 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:05:03,967 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:05:05,280 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:05:05,290 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:05:20,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:05:22,959 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:05:23,201 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:05:24,515 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:05:24,523 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:05:39,296 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:05:42,355 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:05:42,625 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:05:43,984 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:05:43,994 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:05:58,891 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:06:01,737 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:06:01,984 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:06:03,298 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:06:03,306 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:06:18,266 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:06:21,094 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:06:21,282 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:06:22,641 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:06:22,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:06:37,875 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:06:40,734 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:06:40,970 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:06:42,266 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1030MHz
+2020-06-11 17:06:43,454 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:07:29,956 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:07:31,174 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:07:31,181 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:07:46,190 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:07:49,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:07:49,471 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:07:50,628 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:07:50,637 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:08:05,503 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:08:08,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:08:08,783 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:08:10,144 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:08:10,153 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:08:25,051 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:08:28,368 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:08:28,566 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:08:29,755 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:08:29,763 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:08:44,536 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:08:47,332 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:08:47,535 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:08:48,723 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:08:48,733 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:09:03,614 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:09:06,760 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:09:07,003 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:09:08,191 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1050MHz
+2020-06-11 17:09:09,536 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:09:56,145 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:09:57,506 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:09:57,513 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:10:12,209 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:10:15,187 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:10:15,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:10:16,615 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:10:16,625 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:10:31,585 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:10:34,575 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:10:34,772 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:10:35,960 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:10:35,969 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:10:50,882 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:10:53,898 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:10:54,085 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:10:55,444 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:10:55,453 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:11:10,305 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:11:13,431 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:11:13,632 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:11:14,819 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:11:14,829 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:11:29,680 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:11:32,864 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:11:33,134 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:11:34,319 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1070MHz
+2020-06-11 17:11:35,507 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.10 dBm
+2020-06-11 17:12:21,664 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:12:23,025 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.10 dBm
+2020-06-11 17:12:23,032 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.10 dBm
+2020-06-11 17:12:37,977 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:12:40,818 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.10, Mosaic results:Pass
+2020-06-11 17:12:41,072 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:12:42,213 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.10 dBm
+2020-06-11 17:12:42,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.10 dBm
+2020-06-11 17:12:57,026 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:12:59,871 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.10, Mosaic results:Pass
+2020-06-11 17:13:00,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:13:01,509 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.10 dBm
+2020-06-11 17:13:01,519 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.10 dBm
+2020-06-11 17:13:16,322 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:13:19,161 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.10, Mosaic results:Pass
+2020-06-11 17:13:19,401 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:13:20,588 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.10 dBm
+2020-06-11 17:13:20,598 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.10 dBm
+2020-06-11 17:13:35,621 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:13:38,533 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.10, Mosaic results:Pass
+2020-06-11 17:13:38,808 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:13:40,012 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.10 dBm
+2020-06-11 17:13:40,020 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.10 dBm
+2020-06-11 17:13:55,026 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:13:58,256 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.10, Mosaic results:Pass
+2020-06-11 17:13:58,448 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:13:59,637 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1090MHz
+2020-06-11 17:14:00,825 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 17:14:47,355 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:14:48,717 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 17:14:48,723 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 17:15:03,747 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:15:06,763 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 17:15:06,996 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:15:08,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 17:15:08,193 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 17:15:22,999 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:15:25,890 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 17:15:26,154 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:15:27,357 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 17:15:27,365 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 17:15:42,326 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:15:45,367 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 17:15:45,622 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:15:46,811 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 17:15:46,819 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 17:16:01,546 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:16:04,348 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 17:16:04,608 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:16:05,967 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.20 dBm
+2020-06-11 17:16:05,976 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.20 dBm
+2020-06-11 17:16:20,874 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:16:23,832 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.20, Mosaic results:Pass
+2020-06-11 17:16:24,029 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:16:25,326 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1110MHz
+2020-06-11 17:16:26,467 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:17:13,578 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:17:14,937 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:17:14,944 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:17:29,813 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:17:32,890 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:17:33,125 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:17:34,328 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:17:34,338 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:17:49,377 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:17:52,601 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:17:52,845 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:17:54,002 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:17:54,010 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:18:09,111 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:18:12,069 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:18:12,313 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:18:13,454 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:18:13,463 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:18:28,267 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:18:31,125 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:18:31,315 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:18:32,503 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:18:32,510 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:18:47,471 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:18:50,391 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:18:50,581 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:18:51,767 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1130MHz
+2020-06-11 17:18:52,956 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:19:39,628 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:19:40,989 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:19:40,996 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:19:55,941 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:19:58,812 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:19:59,066 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:20:00,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:20:00,434 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:20:15,332 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:20:18,187 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:20:18,457 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:20:19,818 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:20:19,825 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:20:34,582 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:20:37,540 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:20:37,801 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:20:39,006 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:20:39,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:20:53,973 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:20:56,910 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:20:57,098 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:20:58,288 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.90 dBm
+2020-06-11 17:20:58,296 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.90 dBm
+2020-06-11 17:21:13,349 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:21:16,165 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.90, Mosaic results:Pass
+2020-06-11 17:21:16,411 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:21:17,599 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1150MHz
+2020-06-11 17:21:18,803 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:22:05,538 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:22:06,740 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:22:06,749 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:22:21,867 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:22:24,756 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:22:24,944 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:22:26,303 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:22:26,312 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:22:41,132 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:22:44,131 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:22:44,319 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:22:45,507 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:22:45,516 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:23:00,430 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:23:03,342 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:23:03,569 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:23:04,775 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:23:04,782 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:23:19,602 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:23:22,443 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:23:22,632 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:23:23,789 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:23:23,799 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:23:38,681 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:23:41,493 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:23:41,697 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:23:42,884 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1170MHz
+2020-06-11 17:23:44,227 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:24:31,322 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:24:32,526 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:24:32,535 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:24:47,276 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:24:50,161 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:24:50,355 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:24:51,558 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:24:51,566 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:25:06,683 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:25:09,739 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:25:09,933 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:25:11,137 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:25:11,144 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:25:26,184 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:25:29,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:25:29,323 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:25:30,512 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:25:30,520 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:25:45,325 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:25:48,207 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:25:48,403 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:25:49,591 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.80 dBm
+2020-06-11 17:25:49,599 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.80 dBm
+2020-06-11 17:26:04,496 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:26:07,407 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.80, Mosaic results:Pass
+2020-06-11 17:26:07,605 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:26:08,746 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1190MHz
+2020-06-11 17:26:09,934 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:26:57,466 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:26:58,671 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:26:58,678 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:27:13,546 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:27:16,582 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:27:16,858 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:27:18,170 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:27:18,186 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:27:32,842 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:27:35,654 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:27:35,842 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:27:36,983 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:27:36,997 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:27:51,750 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:27:54,612 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:27:54,796 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:27:55,999 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:27:56,012 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:28:11,016 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:28:13,822 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:28:14,062 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:28:15,375 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.60 dBm
+2020-06-11 17:28:15,384 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.60 dBm
+2020-06-11 17:28:30,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:28:33,188 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.60, Mosaic results:Pass
+2020-06-11 17:28:33,421 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:28:34,608 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1210MHz
+2020-06-11 17:28:35,812 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:29:24,891 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:29:26,266 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:29:26,275 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:29:40,783 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:29:43,618 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:29:43,861 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:29:45,065 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:29:45,075 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:29:59,908 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:30:02,693 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:30:02,877 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:30:04,017 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:30:04,026 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:30:18,910 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:30:21,760 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:30:21,956 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:30:23,096 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:30:23,105 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:30:37,986 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:30:40,826 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:30:41,065 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:30:42,206 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -5.70 dBm
+2020-06-11 17:30:42,216 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-5.70 dBm
+2020-06-11 17:30:56,971 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:30:59,868 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-5.70, Mosaic results:Pass
+2020-06-11 17:31:00,049 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:31:01,237 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1230MHz
+2020-06-11 17:31:02,426 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:31:49,066 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:31:50,427 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:31:50,434 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:32:05,052 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:32:07,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:32:08,112 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:32:09,270 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:32:09,279 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:32:23,786 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:32:26,671 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:32:26,880 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:32:28,068 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:32:28,078 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:32:43,038 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:32:45,825 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:32:46,020 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:32:47,209 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:32:47,217 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:33:02,194 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:33:05,030 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:33:05,224 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R7_8
+2020-06-11 17:33:06,538 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.00 dBm
+2020-06-11 17:33:06,546 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.00 dBm
+2020-06-11 17:33:21,398 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:33:24,243 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.00, Mosaic results:Pass
+2020-06-11 17:33:24,474 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:33:25,663 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1250MHz
+2020-06-11 17:33:26,851 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.30 dBm
+2020-06-11 17:34:15,414 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R1_2
+2020-06-11 17:34:16,601 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.30 dBm
+2020-06-11 17:34:16,609 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.30 dBm
+2020-06-11 17:34:31,525 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:34:34,341 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.30, Mosaic results:Pass
+2020-06-11 17:34:34,523 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R2_3
+2020-06-11 17:34:35,711 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.30 dBm
+2020-06-11 17:34:35,720 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.30 dBm
+2020-06-11 17:34:50,602 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:34:53,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.30, Mosaic results:Pass
+2020-06-11 17:34:53,993 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:34:55,197 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.30 dBm
+2020-06-11 17:34:55,209 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.30 dBm
+2020-06-11 17:35:10,102 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:35:13,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.30, Mosaic results:Pass
+2020-06-11 17:35:13,414 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R5_6
+2020-06-11 17:35:14,775 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -6.30 dBm
+2020-06-11 17:35:14,783 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-6.30 dBm
+2020-06-11 17:35:29,759 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -10 dBm
+2020-06-11 17:35:32,750 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-6.30, Mosaic results:Pass
+2020-06-11 17:38:28,543 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:417] - INFO: SYST:PRES
+2020-06-11 17:38:30,437 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:275] - INFO: DVBS:SOUR TSPL
+2020-06-11 17:38:31,789 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:288] - INFO: TSGEN:CONF:PLAY "D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS"
+2020-06-11 17:38:33,296 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:327] - INFO: DVBS:CONS S4
+2020-06-11 17:38:34,670 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:359] - INFO: DVBS:RATE R3_4
+2020-06-11 17:38:35,967 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:54] - INFO: FREQ:CW 1550MHz
+2020-06-11 17:38:37,154 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:38:38,342 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 5.000000e6
+2020-06-11 17:39:20,453 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:39:20,460 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:39:35,375 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:39:38,339 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:39:38,641 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 6.000000e6
+2020-06-11 17:40:28,438 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:40:28,448 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:40:43,299 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:40:46,125 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:40:46,345 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 7.000000e6
+2020-06-11 17:41:33,532 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:41:33,542 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:41:48,707 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:41:52,249 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:41:52,440 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 8.000000e6
+2020-06-11 17:42:42,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:42:42,233 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:42:57,128 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:43:00,861 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:43:01,115 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 9.000000e6
+2020-06-11 17:43:51,661 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:43:51,671 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:44:06,631 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:44:09,868 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:44:10,020 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 10.000000e6
+2020-06-11 17:45:00,789 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:45:00,798 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:45:15,726 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:45:18,698 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:45:18,867 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 11.000000e6
+2020-06-11 17:46:10,102 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:46:10,111 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:46:25,009 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:46:27,813 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:46:27,976 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 12.000000e6
+2020-06-11 17:47:19,338 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:47:19,348 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:47:34,259 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:47:37,102 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:47:37,259 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 13.000000e6
+2020-06-11 17:48:28,105 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:48:28,115 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:48:42,948 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:48:45,770 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:48:45,934 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 14.000000e6
+2020-06-11 17:49:37,013 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:49:37,023 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:49:52,045 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:49:54,934 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:49:55,154 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 15.000000e6
+2020-06-11 17:50:46,390 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:50:46,404 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:51:01,328 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:51:04,325 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:51:04,483 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 16.000000e6
+2020-06-11 17:51:55,641 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:51:55,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:52:10,549 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:52:13,585 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:52:13,813 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 17.000000e6
+2020-06-11 17:53:04,549 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:53:04,569 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:53:19,533 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:53:22,401 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:53:22,611 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 18.000000e6
+2020-06-11 17:54:14,036 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:54:14,046 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:54:28,832 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:54:32,224 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:54:32,394 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 19.000000e6
+2020-06-11 17:55:22,880 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:55:22,890 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:55:37,709 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:55:40,595 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:55:40,802 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 20.000000e6
+2020-06-11 17:56:31,930 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:56:31,938 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:56:46,819 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:56:49,622 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:56:49,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 21.000000e6
+2020-06-11 17:57:40,836 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:57:40,848 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:57:55,650 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:57:58,503 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:57:58,711 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 22.000000e6
+2020-06-11 17:58:43,213 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:58:43,223 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 17:58:58,042 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 17:59:00,927 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 17:59:01,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 23.000000e6
+2020-06-11 17:59:51,700 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 17:59:51,709 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:00:06,496 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:00:09,253 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:00:09,434 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 24.000000e6
+2020-06-11 18:01:01,061 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:01:01,069 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:01:15,904 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:01:18,651 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:01:18,825 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 25.000000e6
+2020-06-11 18:02:10,092 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:02:10,102 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:02:25,078 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:02:28,030 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:02:28,263 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 26.000000e6
+2020-06-11 18:03:19,141 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:03:19,151 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:03:34,032 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:03:36,888 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:03:37,109 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 27.000000e6
+2020-06-11 18:04:28,267 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:04:28,276 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:04:43,206 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:04:46,168 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:04:46,377 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 28.000000e6
+2020-06-11 18:05:37,549 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:05:37,559 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:05:52,394 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:05:55,289 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:05:55,503 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 29.000000e6
+2020-06-11 18:06:46,568 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:06:46,576 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:07:01,459 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:07:04,581 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:07:04,802 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 30.000000e6
+2020-06-11 18:07:55,960 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:07:55,974 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:08:10,867 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:08:13,918 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:08:14,085 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 31.000000e6
+2020-06-11 18:09:04,726 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:09:04,740 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:09:19,680 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:09:22,552 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:09:22,773 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 32.000000e6
+2020-06-11 18:10:13,854 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:10:13,864 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:10:28,698 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:10:31,503 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:10:31,713 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 33.000000e6
+2020-06-11 18:11:22,887 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -65.90 dBm
+2020-06-11 18:11:22,897 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:33] - INFO: set_level_level_level:-65.90 dBm
+2020-06-11 18:11:37,887 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:126] - INFO: POW:LEV -50 dBm
+2020-06-11 18:11:40,882 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\threshold_algorithm_SFE.py[line:60] - INFO: level:-65.90, Mosaic results:Pass
+2020-06-11 18:11:41,059 - C:\Users\ivan.zhao\PycharmProjects\code\front_end_code\ekt_lib\ekt_sfe.py[line:314] - INFO: DVBS:SYMB 34.000000e6
