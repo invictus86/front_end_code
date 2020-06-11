@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
 
 class Ektsfu(object):
     """
-
+        SFE interface
     """
 
     def __init__(self, sfu_ip):

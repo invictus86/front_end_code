@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
 
 def stb_tester_execute_testcase(ip, banch_id, test_cases, category, remote):
     """
-    detect motion using stb_tester
+    detect motion or lock frequency using stb_tester
     :param ip:stb_tester_ip
     :param banch_id:test case banck id
     :param test_cases:test case item

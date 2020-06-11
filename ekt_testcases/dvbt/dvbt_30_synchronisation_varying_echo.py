@@ -68,9 +68,8 @@ if __name__ == '__main__':
     ①重置设备
     ②选择 TSPLAYER
     ③播放流文件
-    ④设置code_rate,modulation,symbol_rate,frequency,input_signal_level
-    ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase,由于每款机顶盒界面、锁台操作不同,
-    是否需要对testcase与PC端做参数交互？）
+    ④设置code_rate,modulation,bandwidth,guard, frequency,input_signal_level
+    ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase）
     ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
     load_dict = read_json_file("../../ekt_json/dvbt_30_synchronisation_varying_echo.json")

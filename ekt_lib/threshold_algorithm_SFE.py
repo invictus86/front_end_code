@@ -20,6 +20,13 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
 
 
 def mosaic_algorithm(sfe_ip, test_level_data, can_play_data):
+    """
+    Determine whether test level contains Mosaic or not
+    :param sfe_ip:sfe ip
+    :param test_level_data:test level
+    :param can_play_data:can play level
+    :return:mosaic_result
+    """
     specan = Ektsfe(sfe_ip)
     specan.set_level_level_level(str(test_level_data) + " dBm")
     print ("set_level_level_level:{}".format(str(test_level_data) + " dBm"))
@@ -98,6 +105,13 @@ def mosaic_algorithm(sfe_ip, test_level_data, can_play_data):
 
 
 def iterate_to_find_threshold_step_by_step(sfe_ip, start_num, level_offset="0"):
+    """
+    iterate to find threshold
+    :param sfe_ip:sfe ip
+    :param start_num: test level
+    :param level_offset: level offset
+    :return:threshild level
+    """
     start_data_result, _ = mosaic_algorithm(sfe_ip, start_num, start_num)
     if start_data_result.get("detect_mosic_result") == "Pass":
         pass

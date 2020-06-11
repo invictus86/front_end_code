@@ -24,16 +24,11 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     )
 
 
-class RVTserver():
+class FrontEndServer():
     # image_file, cfg_file = find_image_or_cfg_file()
 
     def __init__(self):
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.img_json = None
-        self.app_image = "../image_file/application.png"
-        self.lock_success_image = "../image_file/lock_success.png"
-        self.lock_fail_image = "../image_file/lock_fail.png"
-        self.front_end_cfg_file = "../image_file/front_end_cfg.json"
 
     def read_image_file(self, image_name):
         img = cv2.imread(image_name, 1)
@@ -150,9 +145,9 @@ class RVTserver():
 
 
 if __name__ == '__main__':
-    rvt = RVTserver()
+    fes = FrontEndServer()
     # rvt.read_cfg_file()
-    t = threading.Thread(target=rvt.response)
+    t = threading.Thread(target=fes.response)
     t.setDaemon(True)
     t.start()
     try:
