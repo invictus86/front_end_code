@@ -35,7 +35,7 @@ def mosaic_algorithm(sfe_ip, test_level_data, can_play_data):
             "detect_mosic_result": "Fail",
             "msg": "picture not move"
         }
-        logging.info("level:{}, Mosaic results:true".format(test_level_data))
+        logging.info("level:{}, Mosaic results:fail".format(test_level_data))
         specan = Ektsfe(sfe_ip)
         specan.set_level_level_level(str(can_play_data) + " dBm")
         return mosaic_algorithm_result, "Fail"

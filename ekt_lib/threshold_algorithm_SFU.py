@@ -42,7 +42,7 @@ def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
             "detect_mosic_result": "Fail",
             "msg": "picture not move"
         }
-        logging.info("level:{}, Mosaic results:true".format(test_level_data))
+        logging.info("level:{}, Mosaic results:fail".format(test_level_data))
         specan = Ektsfu(sfu_ip)
         specan.set_level_level_level("dBm", str(can_play_data))
         return mosaic_algorithm_result, "Fail"
@@ -84,7 +84,7 @@ def mosaic_algorithm_noise_cn(sfu_ip, test_cn_data, can_play_data):
             "detect_mosic_result": "Fail",
             "msg": "picture not move"
         }
-        logging.info("noise_cn:{}, Mosaic results:true".format(test_cn_data))
+        logging.info("noise_cn:{}, Mosaic results:fail".format(test_cn_data))
         specan = Ektsfu(sfu_ip)
         specan.set_noise_awgn_cn(str(can_play_data))
         return mosaic_algorithm_result
@@ -126,7 +126,7 @@ def mosaic_algorithm_fading_att(sfu_ip, test_att_data, can_play_data):
             "detect_mosic_result": "Fail",
             "msg": "picture not move"
         }
-        logging.info("noise_cn:{}, Mosaic results:true".format(test_att_data))
+        logging.info("noise_cn:{}, Mosaic results:fail".format(test_att_data))
         specan = Ektsfu(sfu_ip)
         specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(can_play_data)))
         return mosaic_algorithm_result
@@ -168,7 +168,7 @@ def mosaic_algorithm_interferer_attenuation(sfu_ip, test_attenuation_data, can_p
             "detect_mosic_result": "Fail",
             "msg": "picture not move"
         }
-        logging.info("noise_cn:{}, Mosaic results:true".format(test_attenuation_data))
+        logging.info("noise_cn:{}, Mosaic results:fail".format(test_attenuation_data))
         specan = Ektsfu(sfu_ip)
         specan.set_noise_awgn_cn(str(can_play_data))
         return mosaic_algorithm_result
