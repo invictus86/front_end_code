@@ -13,7 +13,7 @@ from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, dvbc_9_frequency_error_rate_json_to_csv
+from ekt_lib.ekt_utils import write_test_result, write_json_file, read_json_file, dvbc_9_frequency_error_rate_json_to_csv
 
 MODULATION_64QAM = "C64"
 MODULATION_128QAM = "C128"
@@ -131,15 +131,10 @@ if __name__ == '__main__':
         """
         触发stb-tester进行频率和符号率设置
         """
-        try:
-            stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
-                                        "dcn7514i")
-        except:
-            time.sleep(60)
-            stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
-                                        "dcn7514i")
+        stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+                                    ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
+                                    "dcn7514i")
+
         net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
 
         lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
