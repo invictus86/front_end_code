@@ -164,7 +164,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbt2_62_maximum_signal_levels: current_time:{}, frequency:{} MHz,bandwidth:{} Ksym/s, {}".format(
+                                      "dvbt2_65_co_channel_interference: current_time:{}, frequency:{} MHz,bandwidth:{} Ksym/s, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY[0]), str(8), "Lock fail") + "\n"))
         else:
