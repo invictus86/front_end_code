@@ -14039,3 +14039,31 @@ dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 09:41:53, modulat
 dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 09:44:50, modulation: S4,coderate:R8_9, frequency:2090 MHz,symbol_rate:05000 Ksym/s,The threshold: -82.00
 dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 09:50:06, modulation: S8,coderate:R5_6, frequency:2090 MHz,symbol_rate:05000 Ksym/s,The threshold: -79.00
 dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 09:52:08, modulation: S8,coderate:R8_9, frequency:2090 MHz,symbol_rate:05000 Ksym/s,The threshold: -77.50
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 09:53:52, modulation: S8,coderate:R9_10, frequency:2090 MHz,symbol_rate:05000 Ksym/s,The threshold: -77.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 09:58:05, modulation: S4,coderate:R3_4, frequency:2110 MHz,symbol_rate:05000 Ksym/s,The threshold: -84.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:01:58, modulation: S4,coderate:R4_5, frequency:2110 MHz,symbol_rate:05000 Ksym/s,The threshold: -83.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:04:54, modulation: S4,coderate:R5_6, frequency:2110 MHz,symbol_rate:05000 Ksym/s,The threshold: -83.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:07:49, modulation: S4,coderate:R8_9, frequency:2110 MHz,symbol_rate:05000 Ksym/s,The threshold: -82.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:10:43, modulation: S4,coderate:R9_10, frequency:2110 MHz,symbol_rate:05000 Ksym/s,The threshold: -82.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:13:57, modulation: S8,coderate:R3_5, frequency:2110 MHz,symbol_rate:05000 Ksym/s,The threshold: -82.50
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:14:18, modulation: S8,coderate:R2_3, frequency:2110 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-59.1", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:14:39, modulation: S8,coderate:R3_4, frequency:2110 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-59.1", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:15:00, modulation: S8,coderate:R5_6, frequency:2110 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-59.1", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:15:21, modulation: S8,coderate:R8_9, frequency:2110 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-59.1", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:15:41, modulation: S8,coderate:R9_10, frequency:2110 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-59.1", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:19:22, modulation: S4,coderate:R3_4, frequency:2130 MHz,symbol_rate:05000 Ksym/s,The threshold: -83.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:21:51, modulation: S4,coderate:R5_6, frequency:2130 MHz,symbol_rate:05000 Ksym/s,The threshold: -81.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:24:10, modulation: S4,coderate:R8_9, frequency:2130 MHz,symbol_rate:05000 Ksym/s,The threshold: -81.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:26:48, modulation: S4,coderate:R9_10, frequency:2130 MHz,symbol_rate:05000 Ksym/s,The threshold: -81.50
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:29:45, modulation: S8,coderate:R3_5, frequency:2130 MHz,symbol_rate:05000 Ksym/s,The threshold: -82.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:32:48, modulation: S8,coderate:R2_3, frequency:2130 MHz,symbol_rate:05000 Ksym/s,The threshold: -80.50
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:36:07, modulation: S8,coderate:R3_4, frequency:2130 MHz,symbol_rate:05000 Ksym/s,The threshold: -79.50
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:38:43, modulation: S8,coderate:R5_6, frequency:2130 MHz,symbol_rate:05000 Ksym/s,The threshold: -78.50
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:39:04, modulation: S8,coderate:R8_9, frequency:2130 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-59.0", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:40:52, modulation: S8,coderate:R9_10, frequency:2130 MHz,symbol_rate:05000 Ksym/s,The threshold: -75.50
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:55:16, modulation: S4,coderate:R9_10, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:57:52, modulation: S4,coderate:R8_9, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 10:59:35, modulation: S4,coderate:R9_10, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 11:01:19, modulation: S8,coderate:R3_5, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.00
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 11:01:40, modulation: S8,coderate:R2_3, frequency:990 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-60.8", "threshold_algorithm_result": false}
+dvbs2_18_dynamic_range_awng_min_level: current_time:2020-06-11 11:02:00, modulation: S8,coderate:R3_4, frequency:990 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-60.8", "threshold_algorithm_result": false}

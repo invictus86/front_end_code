@@ -99,12 +99,12 @@ if __name__ == '__main__':
         specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[0] + "MHz")
         specan = Ektsfe(sfe_ip)
         specan.set_level_level_level(FREQUENCY_OFFSET[2] + " dBm")
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
+        net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
 
         net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": FREQUENCY_OFFSET[0]}))
         time.sleep(1)
         del net
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
+        net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         net.send_data(json.dumps({"cmd": "set_symbol_rate_data", "symbol_rate": str(SYMBOL_RATE_FREQUENCY[1])}))
         time.sleep(1)
         del net
@@ -115,7 +115,7 @@ if __name__ == '__main__':
         stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                     ["tests/front_end_test/testcases.py::test_continuous_button"],
                                     "auto_front_end_test", "DSD4614iALM")
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
+        net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
         if lock_state == "1":
             pass

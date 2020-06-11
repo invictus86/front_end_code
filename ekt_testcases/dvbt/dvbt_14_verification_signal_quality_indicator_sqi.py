@@ -128,11 +128,11 @@ if __name__ == '__main__':
         specan.set_digitaltv_coding_fftmode_dvbt(PARAMETER[3])
 
 
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
+        net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(int(FREQUENCY_666))}))
         time.sleep(1)
         del net
-        net = ekt_net.EktNetClient('192.168.1.24', 9999)
+        net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         net.send_data(json.dumps({"cmd": "set_bandwidth_data", "bandwidth": str(8)}))
         time.sleep(1)
         del net
@@ -158,7 +158,7 @@ if __name__ == '__main__':
                                             "tests/front_end_test/testcases.py::test_ocr_strength_quality"],
                                         "auto_front_end_test", "DSD4614iALM")
 
-            net = ekt_net.EktNetClient('192.168.1.24', 9999)
+            net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
             strength_quality_data = net.send_rec(json.dumps({"cmd": "get_strength_quality"}))
             time.sleep(0.5)
 

@@ -11,6 +11,7 @@ import numpy as np
 import threading
 import datetime
 import os
+import ekt_cfg
 
 current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
@@ -21,15 +22,6 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
                     # 日志格式
                     )
-
-# get local ip
-addrs = socket.getaddrinfo(socket.gethostname(), None)
-for item in addrs:
-    if str(item[-1][0])[0:3] == "192":
-        ip = str(item[-1][0])
-        print ("current ip is : {}".format(ip))
-
-port = 9999
 
 
 class RVTserver():
@@ -56,20 +48,10 @@ class RVTserver():
         # print len(self.img_json)
         return image_json
 
-    def read_cfg_file(self):
-        with open(self.front_end_cfg_file, 'r') as f:
-            dict_data = json.load(f, "utf-8")
-            json_data = json.dumps(dict_data)
-            self.json_data = json_data
-            print (json_data)
-
     def response(self):
         server = self.server
-        server.bind((ip, port))
+        server.bind((ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT))
         server.listen(5)
-        image_app = self.read_image_file(self.app_image)
-        image_lock_success = self.read_image_file(self.lock_success_image)
-        image_lock_fail = self.read_image_file(self.lock_fail_image)
         frequency = None
         bandwidth = None
         symbol_rate = None
@@ -89,18 +71,6 @@ class RVTserver():
                     if not data:
                         # print "%s disconnected"%conn
                         break
-                    elif dict_data.get("cmd") == "app_image":
-                        result = conn.send(image_app)
-                        print ("result:", result, "send image app ok!")
-                    elif dict_data.get("cmd") == "lock_success_image":
-                        result = conn.send(image_lock_success)
-                        print ("result:", result, "send image lock success ok!")
-                    elif dict_data.get("cmd") == "lock_fail_image":
-                        result = conn.send(image_lock_fail)
-                        print ("result:", result, "send image lock fail ok!")
-                    elif dict_data.get("cmd") == "read_json_data":
-                        result = conn.send(str(self.json_data))
-                        print ("result:", result, "send read json data ok!")
                     elif dict_data.get("cmd") == "set_frequency_data":
                         frequency = dict_data.get("frequency")
                         result = conn.send("set frequency data : {} ok ".format(frequency))
@@ -181,7 +151,7 @@ class RVTserver():
 
 if __name__ == '__main__':
     rvt = RVTserver()
-    rvt.read_cfg_file()
+    # rvt.read_cfg_file()
     t = threading.Thread(target=rvt.response)
     t.setDaemon(True)
     t.start()
