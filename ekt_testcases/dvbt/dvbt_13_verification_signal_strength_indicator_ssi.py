@@ -95,8 +95,7 @@ if __name__ == '__main__':
     specan.set_digitaltv_coding_fftmode_dvbt(FFT_SIZE_8K)
 
     stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                ["tests/front_end_test/testcases.py::test_continuous_button_7414g_set_search"],
-                                "auto_front_end_test", "DSD4614iALM")
+                                ekt_cfg.DVB_T_SET_SEARCH_FUNCTION, ekt_cfg.DVB_T_SET_SEARCH_CATEGORY, ekt_cfg.DVB_T_SET_SEARCH_REMOTE)
 
     for PARAMETER in load_dict.get("test_parame_result"):
         loop_lock_mark = False
@@ -134,9 +133,8 @@ if __name__ == '__main__':
         触发stb-tester进行频率和符号率设置
         """
         stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                    [
-                                        "tests/front_end_test/testcases.py::test_continuous_button_7414g_set_frequency_bandwidth"],
-                                    "auto_front_end_test", "DSD4614iALM")
+                                    ekt_cfg.DVB_T_SET_FREQUENCY_BANDWIDTH_FUNCTION, ekt_cfg.DVB_T_SET_FREQUENCY_BANDWIDTH_CATEGORY,
+                                    ekt_cfg.DVB_T_SET_FREQUENCY_BANDWIDTH_REMOTE)
 
         for LEVEL in PARAMETER[1]:
             if LEVEL[1] == None:
@@ -147,9 +145,7 @@ if __name__ == '__main__':
             specan.set_level_level_level("dBm", str(LEVEL[0] - float(PARAMETER[0][5])))
             time.sleep(5)
             stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        [
-                                            "tests/front_end_test/testcases.py::test_ocr_strength_quality"],
-                                        "auto_front_end_test", "DSD4614iALM")
+                                        ekt_cfg.DVB_T_OCR_FUNCTION, ekt_cfg.DVB_T_OCR_CATEGORY, ekt_cfg.DVB_T_OCR_REMOTE)
 
             net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
             strength_quality_data = net.send_rec(json.dumps({"cmd": "get_strength_quality"}))

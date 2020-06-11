@@ -24,7 +24,7 @@ SYMBOL_RATE_45M = ["45.000000e6", "45000"]
 dict_config_data = {
     "SYMBOL_RATE": [SYMBOL_RATE_5M, SYMBOL_RATE_10M, SYMBOL_RATE_27_5M, SYMBOL_RATE_45M]}
 
-my_file = Path("../../ekt_json/dvbs_dynamic_range_awng_max_level.json")
+my_file = Path("../../ekt_json/dvbs_11_dynamic_range_awng_max_level.json")
 if my_file.exists():
     pass
 else:
@@ -43,7 +43,7 @@ else:
             list_test_parame_result.append([SYMBOL_RATE, FREQUENCY_LEVEL_OFFSET, list_test_result])
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
 
-    write_json_file("../../ekt_json/dvbs_dynamic_range_awng_max_level.json", dict_test_parame_result)
+    write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_max_level.json", dict_test_parame_result)
 
 if __name__ == '__main__':
     """
@@ -56,7 +56,7 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
-    load_dict = read_json_file("../../ekt_json/dvbs_dynamic_range_awng_max_level.json")
+    load_dict = read_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_max_level.json")
     sfe_ip = "192.168.1.47"
     specan = Ektsfe(sfe_ip)
     specan.clean_reset()
@@ -102,7 +102,7 @@ if __name__ == '__main__':
         触发stb-tester进行频率和符号率设置
         """
         stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                    ["tests/front_end_test/testcases.py::test_continuous_button"], "auto_front_end_test", "DSD4614iALM")
+                                    ekt_cfg.DVB_S_LOCK_FUNCTION, ekt_cfg.DVB_S_CATEGORY, ekt_cfg.DVB_S_REMOTE)
         net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
         if lock_state == "1":
@@ -110,7 +110,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfe.txt",
                               (
-                                      "dvbs_dynamic_range_awng_max_level: current_time:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, {}".format(
+                                      "dvbs_11_dynamic_range_awng_max_level: current_time:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                           str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])), "Lock fail") + "\n"))
@@ -129,19 +129,19 @@ if __name__ == '__main__':
             start_data_result, mosaic_result = mosaic_algorithm(sfe_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                                                 "-10")
             print (
-                "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
+                "dvbs_11_dynamic_range_awng_max_level: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
                     str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                     str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfe.txt",
-                              "dvbs_dynamic_range_awng_max_level: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
+                              "dvbs_11_dynamic_range_awng_max_level: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                   str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                   start_data_result.get("detect_mosic_result")) + "\n")
 
             code_rate_cn[1] = mosaic_result
-            write_json_file("../../ekt_json/dvbs_dynamic_range_awng_max_level.json", load_dict)
-            dvbs_dynamic_max_json_to_csv("../../ekt_json/dvbs_dynamic_range_awng_max_level.json",
-                                         "../../ekt_test_report/dvbs_dynamic_range_awng_max_level.csv")
+            write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_max_level.json", load_dict)
+            dvbs_dynamic_max_json_to_csv("../../ekt_json/dvbs_11_dynamic_range_awng_max_level.json",
+                                         "../../ekt_test_report/dvbs_11_dynamic_range_awng_max_level.csv")

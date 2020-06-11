@@ -113,8 +113,7 @@ if __name__ == '__main__':
         触发stb-tester进行频率和符号率设置
         """
         stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                    ["tests/front_end_test/testcases.py::test_continuous_button"],
-                                    "auto_front_end_test", "DSD4614iALM")
+                                    ekt_cfg.DVB_S2_LOCK_FUNCTION, ekt_cfg.DVB_S2_CATEGORY, ekt_cfg.DVB_S2_REMOTE)
         net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
         if lock_state == "1":
@@ -122,7 +121,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               (
-                                      "dvbs2_phase_distortion_test: current_time:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, {}".format(
+                                      "dvbs2_22_phase_distortion_test: current_time:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]),
                                           str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
@@ -144,12 +143,12 @@ if __name__ == '__main__':
 
             start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))), "-50")
             print (
-                "dvbs2_phase_distortion_test: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
+                "dvbs2_22_phase_distortion_test: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
                     datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
                     FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]), str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),
                     start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfu.txt",
-                              "dvbs2_phase_distortion_test: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
+                              "dvbs2_22_phase_distortion_test: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate,
                                   FREQUENCY_LEVEL_OFFSET[0], str(SYMBOL_RATE[1]),
                                   str((-45 - float(FREQUENCY_LEVEL_OFFSET[1]))),

@@ -175,8 +175,7 @@ if __name__ == '__main__':
         触发stb-tester进行频率和符号率设置
         """
         stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                    ["tests/front_end_test/testcases.py::test_continuous_button_7414g"],
-                                    "auto_front_end_test", "DSD4614iALM")
+                                    ekt_cfg.DVB_T2_LOCK_FUNCTION, ekt_cfg.DVB_T2_CATEGORY, ekt_cfg.DVB_T2_REMOTE)
         net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
         if lock_state == "1":

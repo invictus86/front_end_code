@@ -133,8 +133,7 @@ if __name__ == '__main__':
             触发stb-tester进行频率和符号率设置
             """
             stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                        ["tests/front_end_test/testcases.py::test_continuous_button_7514i"], "auto_front_end_test",
-                                        "dcn7514i")
+                                        ekt_cfg.DVB_C_LOCK_FUNCTION, ekt_cfg.DVB_C_CATEGORY, ekt_cfg.DVB_C_REMOTE)
 
             net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
 

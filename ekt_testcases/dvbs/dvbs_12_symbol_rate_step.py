@@ -24,7 +24,7 @@ LEVEL_70 = str("%.2f" % ((-70) - LEVEL_OFFSET))
 
 SYMBOL_RATE_LIST = generate_symbol_rate_list()
 
-my_file = Path("../../ekt_json/dvbs_symbol_rate_step.json")
+my_file = Path("../../ekt_json/dvbs_12_symbol_rate_step.json")
 if my_file.exists():
     pass
 else:
@@ -33,7 +33,7 @@ else:
     for SYMBOL_RATE in SYMBOL_RATE_LIST:
         list_test_parame_result.append([SYMBOL_RATE, None])
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
-    write_json_file("../../ekt_json/dvbs_symbol_rate_step.json", dict_test_parame_result)
+    write_json_file("../../ekt_json/dvbs_12_symbol_rate_step.json", dict_test_parame_result)
 
 if __name__ == '__main__':
     """
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     是否需要对testcase与PC端做参数交互？）
     ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
-    load_dict = read_json_file("../../ekt_json/dvbs_symbol_rate_step.json")
+    load_dict = read_json_file("../../ekt_json/dvbs_12_symbol_rate_step.json")
     sfe_ip = "192.168.1.47"
     specan = Ektsfe(sfe_ip)
     specan.clean_reset()
@@ -91,8 +91,7 @@ if __name__ == '__main__':
         触发stb-tester进行频率和符号率设置
         """
         stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                    ["tests/front_end_test/testcases.py::test_continuous_button"],
-                                    "auto_front_end_test", "DSD4614iALM")
+                                    ekt_cfg.DVB_S_LOCK_FUNCTION, ekt_cfg.DVB_S_CATEGORY, ekt_cfg.DVB_S_REMOTE)
         net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))
         if lock_state == "1":
@@ -100,7 +99,7 @@ if __name__ == '__main__':
         elif lock_state == "0":
             write_test_result("../../ekt_log/test_result_sfe.txt",
                               (
-                                      "dvbs_symbol_rate_step: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, {}".format(
+                                      "dvbs_12_symbol_rate_step: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, {}".format(
                                           datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                                           str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70, "Lock fail") + "\n"))
             continue
@@ -110,16 +109,16 @@ if __name__ == '__main__':
 
         start_data_result, mosaic_result = mosaic_algorithm(sfe_ip, LEVEL_70, "-50")
         print (
-            "dvbs_symbol_rate_step: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
+            "dvbs_12_symbol_rate_step: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                 str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70, start_data_result.get("detect_mosic_result")))
         write_test_result("../../ekt_log/test_result_sfe.txt",
-                          "dvbs_symbol_rate_step: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
+                          "dvbs_12_symbol_rate_step: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                               str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70,
                               start_data_result.get("detect_mosic_result")) + "\n")
 
         PARAMETER[1] = mosaic_result
-        write_json_file("../../ekt_json/dvbs_symbol_rate_step.json", load_dict)
-        dvbs_symbol_rate_step_json_to_csv("../../ekt_json/dvbs_symbol_rate_step.json",
-                                          "../../ekt_test_report/dvbs_symbol_rate_step.csv")
+        write_json_file("../../ekt_json/dvbs_12_symbol_rate_step.json", load_dict)
+        dvbs_symbol_rate_step_json_to_csv("../../ekt_json/dvbs_12_symbol_rate_step.json",
+                                          "../../ekt_test_report/dvbs_12_symbol_rate_step.csv")
