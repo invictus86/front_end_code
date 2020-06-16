@@ -1557,3 +1557,239 @@ dvbs_12_symbol_rate_step: current_time:2020-06-11 18:08:13, coderate:R3_4, frequ
 dvbs_12_symbol_rate_step: current_time:2020-06-11 18:09:22, coderate:R3_4, frequency:1550 MHz,symbol_rate:31000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
 dvbs_12_symbol_rate_step: current_time:2020-06-11 18:10:31, coderate:R3_4, frequency:1550 MHz,symbol_rate:32000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
 dvbs_12_symbol_rate_step: current_time:2020-06-11 18:11:40, coderate:R3_4, frequency:1550 MHz,symbol_rate:33000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:12:49, coderate:R3_4, frequency:1550 MHz,symbol_rate:34000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:13:58, coderate:R3_4, frequency:1550 MHz,symbol_rate:35000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:15:08, coderate:R3_4, frequency:1550 MHz,symbol_rate:36000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:16:17, coderate:R3_4, frequency:1550 MHz,symbol_rate:37000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:17:26, coderate:R3_4, frequency:1550 MHz,symbol_rate:38000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:18:35, coderate:R3_4, frequency:1550 MHz,symbol_rate:39000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:19:44, coderate:R3_4, frequency:1550 MHz,symbol_rate:40000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:20:54, coderate:R3_4, frequency:1550 MHz,symbol_rate:41000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:22:02, coderate:R3_4, frequency:1550 MHz,symbol_rate:42000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:23:05, coderate:R3_4, frequency:1550 MHz,symbol_rate:43000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:24:13, coderate:R3_4, frequency:1550 MHz,symbol_rate:44000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_12_symbol_rate_step: current_time:2020-06-11 18:25:15, coderate:R3_4, frequency:1550 MHz,symbol_rate:45000 Ksym/s,level:-65.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:26:32, coderate:R1_2, frequency:1550 MHz,symbol_rate:05002 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:26:51, coderate:R2_3, frequency:1550 MHz,symbol_rate:05002 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:27:10, coderate:R3_4, frequency:1550 MHz,symbol_rate:05002 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:27:29, coderate:R5_6, frequency:1550 MHz,symbol_rate:05002 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:27:48, coderate:R7_8, frequency:1550 MHz,symbol_rate:05002 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:28:53, coderate:R1_2, frequency:1550 MHz,symbol_rate:04998 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:29:13, coderate:R2_3, frequency:1550 MHz,symbol_rate:04998 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:29:33, coderate:R3_4, frequency:1550 MHz,symbol_rate:04998 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:29:53, coderate:R5_6, frequency:1550 MHz,symbol_rate:04998 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:30:13, coderate:R7_8, frequency:1550 MHz,symbol_rate:04998 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:31:18, coderate:R1_2, frequency:1550 MHz,symbol_rate:27503 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:31:37, coderate:R2_3, frequency:1550 MHz,symbol_rate:27503 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:31:56, coderate:R3_4, frequency:1550 MHz,symbol_rate:27503 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:32:15, coderate:R5_6, frequency:1550 MHz,symbol_rate:27503 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:32:34, coderate:R7_8, frequency:1550 MHz,symbol_rate:27503 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:33:44, coderate:R1_2, frequency:1550 MHz,symbol_rate:27497 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:34:03, coderate:R2_3, frequency:1550 MHz,symbol_rate:27497 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:34:22, coderate:R3_4, frequency:1550 MHz,symbol_rate:27497 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:34:41, coderate:R5_6, frequency:1550 MHz,symbol_rate:27497 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:35:00, coderate:R7_8, frequency:1550 MHz,symbol_rate:27497 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:36:09, coderate:R1_2, frequency:1550 MHz,symbol_rate:44995 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:36:28, coderate:R2_3, frequency:1550 MHz,symbol_rate:44995 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:36:47, coderate:R3_4, frequency:1550 MHz,symbol_rate:44995 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:37:07, coderate:R5_6, frequency:1550 MHz,symbol_rate:44995 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:37:26, coderate:R7_8, frequency:1550 MHz,symbol_rate:44995 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:38:35, coderate:R1_2, frequency:1550 MHz,symbol_rate:45005 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:38:54, coderate:R2_3, frequency:1550 MHz,symbol_rate:45005 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:39:13, coderate:R3_4, frequency:1550 MHz,symbol_rate:45005 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:39:32, coderate:R5_6, frequency:1550 MHz,symbol_rate:45005 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_15_symbol_err_rate: current_time:2020-06-11 18:39:51, coderate:R7_8, frequency:1550 MHz,symbol_rate:45005 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:41:06, coderate:R1_2, frequency:951 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:41:25, coderate:R2_3, frequency:951 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:41:44, coderate:R3_4, frequency:951 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:42:03, coderate:R5_6, frequency:951 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:42:22, coderate:R7_8, frequency:951 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:43:34, coderate:R1_2, frequency:1551 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:43:53, coderate:R2_3, frequency:1551 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:44:12, coderate:R3_4, frequency:1551 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:44:31, coderate:R5_6, frequency:1551 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:44:50, coderate:R7_8, frequency:1551 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:46:00, coderate:R1_2, frequency:2149 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:46:19, coderate:R2_3, frequency:2149 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:46:38, coderate:R3_4, frequency:2149 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:46:57, coderate:R5_6, frequency:2149 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:47:17, coderate:R7_8, frequency:2149 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:48:26, coderate:R1_2, frequency:952.75 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:48:45, coderate:R2_3, frequency:952.75 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:49:04, coderate:R3_4, frequency:952.75 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:49:23, coderate:R5_6, frequency:952.75 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:49:42, coderate:R7_8, frequency:952.75 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:50:51, coderate:R1_2, frequency:1552.75 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:51:11, coderate:R2_3, frequency:1552.75 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:51:30, coderate:R3_4, frequency:1552.75 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:51:49, coderate:R5_6, frequency:1552.75 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:52:08, coderate:R7_8, frequency:1552.75 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:53:18, coderate:R1_2, frequency:2147.25 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:53:37, coderate:R2_3, frequency:2147.25 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:53:56, coderate:R3_4, frequency:2147.25 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:54:15, coderate:R5_6, frequency:2147.25 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:54:34, coderate:R7_8, frequency:2147.25 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:55:43, coderate:R1_2, frequency:954.5 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:56:02, coderate:R2_3, frequency:954.5 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-11 18:56:21, coderate:R3_4, frequency:954.5 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:49:04, coderate:R5_6, frequency:954.5 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:49:19, coderate:R7_8, frequency:954.5 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Fail
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:50:24, coderate:R1_2, frequency:1554.5 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:50:43, coderate:R2_3, frequency:1554.5 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:51:02, coderate:R3_4, frequency:1554.5 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:51:21, coderate:R5_6, frequency:1554.5 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:51:40, coderate:R7_8, frequency:1554.5 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:52:52, coderate:R1_2, frequency:2145.5 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:53:11, coderate:R2_3, frequency:2145.5 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:53:31, coderate:R3_4, frequency:2145.5 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:53:50, coderate:R5_6, frequency:2145.5 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_16_signal_acquisition_frequency_range: current_time:2020-06-12 09:54:09, coderate:R7_8, frequency:2145.5 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 09:55:44, coderate:R1_2, frequency:952 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 09:56:22, coderate:R2_3, frequency:952 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 09:57:00, coderate:R3_4, frequency:952 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 09:57:38, coderate:R5_6, frequency:952 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 09:58:17, coderate:R7_8, frequency:952 MHz,symbol_rate:05000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 09:59:45, coderate:R1_2, frequency:1552 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:00:23, coderate:R2_3, frequency:1552 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:01:02, coderate:R3_4, frequency:1552 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:01:40, coderate:R5_6, frequency:1552 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:02:19, coderate:R7_8, frequency:1552 MHz,symbol_rate:05000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:03:50, coderate:R1_2, frequency:2148 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:04:28, coderate:R2_3, frequency:2148 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:05:07, coderate:R3_4, frequency:2148 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:05:45, coderate:R5_6, frequency:2148 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:06:23, coderate:R7_8, frequency:2148 MHz,symbol_rate:05000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:07:55, coderate:R1_2, frequency:952 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:08:33, coderate:R2_3, frequency:952 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:09:12, coderate:R3_4, frequency:952 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:09:49, coderate:R5_6, frequency:952 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:10:28, coderate:R7_8, frequency:952 MHz,symbol_rate:27500 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:11:54, coderate:R1_2, frequency:1552 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:12:32, coderate:R2_3, frequency:1552 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:13:10, coderate:R3_4, frequency:1552 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:13:49, coderate:R5_6, frequency:1552 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:14:27, coderate:R7_8, frequency:1552 MHz,symbol_rate:27500 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:15:57, coderate:R1_2, frequency:2148 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:16:35, coderate:R2_3, frequency:2148 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:17:13, coderate:R3_4, frequency:2148 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:17:52, coderate:R5_6, frequency:2148 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:18:30, coderate:R7_8, frequency:2148 MHz,symbol_rate:27500 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:19:57, coderate:R1_2, frequency:952 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:20:36, coderate:R2_3, frequency:952 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:21:14, coderate:R3_4, frequency:952 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:21:52, coderate:R5_6, frequency:952 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:22:31, coderate:R7_8, frequency:952 MHz,symbol_rate:45000 Ksym/s,level:-45.40 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:23:56, coderate:R1_2, frequency:1552 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:24:34, coderate:R2_3, frequency:1552 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:25:13, coderate:R3_4, frequency:1552 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:25:51, coderate:R5_6, frequency:1552 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:26:30, coderate:R7_8, frequency:1552 MHz,symbol_rate:45000 Ksym/s,level:-45.90 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:28:02, coderate:R1_2, frequency:2148 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:28:40, coderate:R2_3, frequency:2148 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:29:18, coderate:R3_4, frequency:2148 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:29:57, coderate:R5_6, frequency:2148 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_17_signal_tracking_frequency_range: current_time:2020-06-12 10:30:36, coderate:R7_8, frequency:2148 MHz,symbol_rate:45000 Ksym/s,level:-44.60 dbm, Mosaic results:Pass
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 10:36:05, coderate:R1_2, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.90
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 10:40:02, coderate:R2_3, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.90
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 10:43:21, coderate:R3_4, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -84.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 10:45:48, coderate:R5_6, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -83.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 10:47:56, coderate:R7_8, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -82.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 10:53:08, coderate:R1_2, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 10:57:34, coderate:R2_3, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 11:01:25, coderate:R3_4, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.30
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 11:04:52, coderate:R5_6, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.30
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 11:08:02, coderate:R7_8, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 11:11:13, coderate:R1_2, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 11:15:41, coderate:R2_3, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:05:41, coderate:R3_4, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -70.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:06:02, coderate:R5_6, frequency:990 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:06:22, coderate:R7_8, frequency:990 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:11:31, coderate:R1_2, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:11:51, coderate:R2_3, frequency:1010 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-66.0", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:12:11, coderate:R3_4, frequency:1010 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-66.0", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:12:31, coderate:R5_6, frequency:1010 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-66.0", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:12:52, coderate:R7_8, frequency:1010 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-66.0", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:15:31, coderate:R1_2, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:19:52, coderate:R2_3, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:23:56, coderate:R3_4, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:27:43, coderate:R5_6, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:31:33, coderate:R7_8, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.90
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:37:03, coderate:R1_2, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -89.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-12 14:41:13, coderate:R2_3, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 11:54:08, coderate:R5_6, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 11:57:36, coderate:R7_8, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.30
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 12:03:09, coderate:R2_3, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.90
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 12:07:17, coderate:R3_4, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 12:11:00, coderate:R5_6, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 12:14:11, coderate:R7_8, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 12:18:47, coderate:R3_4, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 12:22:26, coderate:R5_6, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.60
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 12:23:51, coderate:R7_8, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -80.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 12:26:30, coderate:R1_2, frequency:1070 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 12:30:37, coderate:R2_3, frequency:1070 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.30
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 14:22:50, coderate:R1_2, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 14:23:24, coderate:R2_3, frequency:950 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.4", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 14:30:17, coderate:R2_3, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 15:54:16, coderate:R3_4, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 15:56:59, coderate:R5_6, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -84.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 15:59:42, coderate:R7_8, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -84.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:03:38, coderate:R1_2, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:07:07, coderate:R2_3, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -89.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:10:00, coderate:R3_4, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:10:35, coderate:R5_6, frequency:970 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.4", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:13:12, coderate:R7_8, frequency:970 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:16:36, coderate:R1_2, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -91.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:18:18, coderate:R2_3, frequency:990 MHz,symbol_rate:05000 Ksym/s,The threshold: -80.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:18:53, coderate:R3_4, frequency:990 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:19:28, coderate:R5_6, frequency:990 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:20:03, coderate:R7_8, frequency:990 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:23:01, coderate:R1_2, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:26:01, coderate:R2_3, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:29:37, coderate:R3_4, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:32:29, coderate:R5_6, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:35:02, coderate:R7_8, frequency:1010 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:39:23, coderate:R1_2, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:42:37, coderate:R2_3, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:46:08, coderate:R3_4, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:49:03, coderate:R5_6, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:51:41, coderate:R7_8, frequency:1030 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:55:27, coderate:R1_2, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 16:58:49, coderate:R2_3, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:01:43, coderate:R3_4, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:04:56, coderate:R5_6, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:07:39, coderate:R7_8, frequency:1050 MHz,symbol_rate:05000 Ksym/s,The threshold: -84.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:10:24, coderate:R1_2, frequency:1070 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:10:59, coderate:R2_3, frequency:1070 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.1", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:11:33, coderate:R3_4, frequency:1070 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.1", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:12:08, coderate:R5_6, frequency:1070 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.1", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:12:43, coderate:R7_8, frequency:1070 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.1", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:16:59, coderate:R1_2, frequency:1090 MHz,symbol_rate:05000 Ksym/s,The threshold: -90.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:18:41, coderate:R2_3, frequency:1090 MHz,symbol_rate:05000 Ksym/s,The threshold: -80.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:19:16, coderate:R3_4, frequency:1090 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.2", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:19:50, coderate:R5_6, frequency:1090 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.2", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:20:25, coderate:R7_8, frequency:1090 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.2", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:25:12, coderate:R1_2, frequency:1110 MHz,symbol_rate:05000 Ksym/s,The threshold: -89.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:26:54, coderate:R2_3, frequency:1110 MHz,symbol_rate:05000 Ksym/s,The threshold: -80.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:27:29, coderate:R3_4, frequency:1110 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.7", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:29:06, coderate:R5_6, frequency:1110 MHz,symbol_rate:05000 Ksym/s,The threshold: -80.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:29:41, coderate:R7_8, frequency:1110 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.7", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:33:52, coderate:R1_2, frequency:1130 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:37:02, coderate:R2_3, frequency:1130 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:39:40, coderate:R3_4, frequency:1130 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:42:34, coderate:R5_6, frequency:1130 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:48:36, coderate:R7_8, frequency:1130 MHz,symbol_rate:05000 Ksym/s,The threshold: -84.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:52:01, coderate:R1_2, frequency:1150 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:52:36, coderate:R2_3, frequency:1150 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:53:11, coderate:R3_4, frequency:1150 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:53:47, coderate:R5_6, frequency:1150 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:54:22, coderate:R7_8, frequency:1150 MHz,symbol_rate:05000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 17:58:31, coderate:R1_2, frequency:1170 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 18:01:31, coderate:R2_3, frequency:1170 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 18:03:54, coderate:R3_4, frequency:1170 MHz,symbol_rate:05000 Ksym/s,The threshold: -84.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 18:06:48, coderate:R5_6, frequency:1170 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 18:09:44, coderate:R7_8, frequency:1170 MHz,symbol_rate:05000 Ksym/s,The threshold: -83.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 18:14:21, coderate:R1_2, frequency:1190 MHz,symbol_rate:05000 Ksym/s,The threshold: -89.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 18:17:53, coderate:R2_3, frequency:1190 MHz,symbol_rate:05000 Ksym/s,The threshold: -87.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 18:20:48, coderate:R3_4, frequency:1190 MHz,symbol_rate:05000 Ksym/s,The threshold: -86.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 18:24:00, coderate:R5_6, frequency:1190 MHz,symbol_rate:05000 Ksym/s,The threshold: -85.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-15 18:26:37, coderate:R7_8, frequency:1190 MHz,symbol_rate:05000 Ksym/s,The threshold: -84.50

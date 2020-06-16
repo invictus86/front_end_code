@@ -12,7 +12,7 @@ from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfe import Ektsfe
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
-from ekt_lib.threshold_algorithm_SFE import iterate_to_find_threshold_step_by_step
+from ekt_lib.threshold_algorithm_SFE import iterate_to_find_threshold_step_by_step, mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
     dvbs_dynamic_min_json_to_csv
 
@@ -39,7 +39,7 @@ else:
         for FREQUENCY_LEVEL_OFFSET in DVBS_S2_FREQUENCY_LEVEL_OFFSET:
             list_test_result = []
             for code_rate_cn in DVBS_QPSK_CODE_RATE_CN:
-                list_test_result.append([code_rate_cn, None])
+                list_test_result.append([code_rate_cn, None, None])
             list_test_parame_result.append([SYMBOL_RATE, FREQUENCY_LEVEL_OFFSET, list_test_result])
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
 
@@ -86,7 +86,7 @@ if __name__ == '__main__':
         specan = Ektsfe(sfe_ip)
         specan.set_frequency_frequency_frequency(str(FREQUENCY_LEVEL_OFFSET[0]) + "MHz")
         specan = Ektsfe(sfe_ip)
-        specan.set_level_level_level("-50 dBm")
+        specan.set_level_level_level("-10 dBm")
 
         net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(FREQUENCY_LEVEL_OFFSET[0])}))
@@ -122,12 +122,20 @@ if __name__ == '__main__':
                 pass
             else:
                 continue
-            specan = Ektsfe(sfe_ip)
-            specan.set_level_level_level("-50 dBm")
-            time.sleep(5)
 
             specan = Ektsfe(sfe_ip)
             specan.set_digitaltv_coding_coderate(code_rate_cn[0][0])
+            specan = Ektsfe(sfe_ip)
+            specan.set_level_level_level(str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])) + " dBm")
+            time.sleep(5)
+
+            _, mosaic_result = mosaic_algorithm(sfe_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                                str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])))
+            if mosaic_result == "Fail":
+                mosaic_result = None
+
+            specan = Ektsfe(sfe_ip)
+            specan.set_level_level_level("-50 dBm")
 
             res, test_result = iterate_to_find_threshold_step_by_step(sfe_ip,
                                                                       float((-70) - FREQUENCY_LEVEL_OFFSET[1]),
@@ -136,10 +144,11 @@ if __name__ == '__main__':
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
                 str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res))
             write_test_result("../../ekt_log/test_result_sfe.txt",
-                "dvbs_11_dynamic_range_awng_min_level: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,{}".format(
-                    datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
-                    str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
+                              "dvbs_11_dynamic_range_awng_min_level: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,{}".format(
+                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
+                                  str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
             code_rate_cn[1] = test_result
+            code_rate_cn[2] = mosaic_result
             write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json",
                             load_dict)
             dvbs_dynamic_min_json_to_csv("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json",

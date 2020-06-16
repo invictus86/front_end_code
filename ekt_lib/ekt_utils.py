@@ -647,11 +647,11 @@ def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
         count = 0
         for j in i[2]:
             if count == 0:
-                list_required_data.append([i[0][1], i[1][0], j[0][0], j[1]])
+                list_required_data.append([i[0][1], i[1][0], j[0][0], j[1], j[2]])
             else:
-                list_required_data.append(["", "", j[0][0], j[1]])
+                list_required_data.append(["", "", j[0][0], j[1], j[2]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'code_rate', 'level'])
+    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'code_rate', 'level', "max_mosic_result"])
     pd_data.to_csv(csv_path, index=None)
 
 

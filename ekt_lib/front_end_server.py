@@ -13,8 +13,7 @@ import datetime
 import os
 import ekt_cfg
 
-current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-
+current_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     filename='{}/ekt_log/front_end_server.log'.format(current_path),
                     filemode='a',  ##模式,有w和a,w就是写模式,每次都会重新写日志,覆盖之前的日志
