@@ -14,7 +14,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFE import iterate_to_find_threshold_step_by_step, mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
-    dvbs_dynamic_min_json_to_csv
+    dvbs_dynamic_min_json_to_csv, dvbs_dynamic_min_json_class_test
 
 SYMBOL_RATE_5M = ["5.000000e6", "05000"]
 SYMBOL_RATE_10M = ["10.000000e6", "10000"]
@@ -55,6 +55,9 @@ if __name__ == '__main__':
     ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase）
     ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
+    # 将部分无需测试的点的json文件内容, 测试结果置为 NO NEED TEST
+    dvbs_dynamic_min_json_class_test("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json")
+
     load_dict = read_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json")
     sfe_ip = "192.168.1.47"
     specan = Ektsfe(sfe_ip)
@@ -134,6 +137,9 @@ if __name__ == '__main__':
             if mosaic_result == "Fail":
                 mosaic_result = None
 
+            code_rate_cn[2] = mosaic_result
+            write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json", load_dict)
+
             specan = Ektsfe(sfe_ip)
             specan.set_level_level_level("-50 dBm")
 
@@ -148,8 +154,6 @@ if __name__ == '__main__':
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
             code_rate_cn[1] = test_result
-            code_rate_cn[2] = mosaic_result
-            write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json",
-                            load_dict)
+            write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json", load_dict)
             dvbs_dynamic_min_json_to_csv("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json",
                                          "../../ekt_test_report/dvbs_11_dynamic_range_awng_min_level.csv")

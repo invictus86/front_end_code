@@ -92,3 +92,6 @@
 2020-06-14 16:41:18,115 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_lib/front_end_server.py[line:123] - INFO: set stb crash state:ok
 2020-06-14 16:42:26,977 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_lib/front_end_server.py[line:123] - INFO: set stb crash state:ok
 2020-06-14 16:43:35,558 - C:/Users/ivan.zhao/PycharmProjects/code/front_end_code/ekt_lib/front_end_server.py[line:123] - INFO: set stb crash state:ok
+2020-06-16 14:07:21,102 - ./front_end_server.py[line:122] - INFO: set stb crash state:ok
+2020-06-16 18:31:39,049 - ./front_end_server.py[line:122] - INFO: set stb crash state:ok
+2020-06-17 09:01:35,469 - ./front_end_server.py[line:122] - INFO: set stb crash state:ok

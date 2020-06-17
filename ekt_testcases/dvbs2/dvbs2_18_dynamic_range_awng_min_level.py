@@ -12,9 +12,9 @@ from ekt_lib import ekt_net, ekt_cfg
 from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
-from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_step_by_step_dvbs2
+from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_step_by_step_dvbs2, mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
-    dvbs2_18_dynamic_min_json_to_csv
+    dvbs2_18_dynamic_min_json_to_csv, dvbs2_18_dynamic_min_json_class_test
 
 MODULATION_QPSK = "S4"
 MODULATION_8PSK = "S8"
@@ -52,7 +52,7 @@ else:
                     CURRENT_DVBS2_CODE_RATE_CN = DVBS2_8PSK_CODE_RATE_CN
 
                 for code_rate_cn in CURRENT_DVBS2_CODE_RATE_CN:
-                    list_test_result.append([MODULATION, code_rate_cn, None])
+                    list_test_result.append([MODULATION, code_rate_cn, None, None])
             list_test_parame_result.append([SYMBOL_RATE, FREQUENCY_LEVEL_OFFSET, list_test_result])
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
 
@@ -68,6 +68,9 @@ if __name__ == '__main__':
     ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase）
     ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
+    # 将部分无需测试的点的json文件内容, 测试结果置为 NO NEED TEST
+    dvbs2_18_dynamic_min_json_class_test("../../ekt_json/dvbs2_18_dynamic_range_awng_min_level.json")
+
     load_dict = read_json_file("../../ekt_json/dvbs2_18_dynamic_range_awng_min_level.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
@@ -155,10 +158,6 @@ if __name__ == '__main__':
                 continue
             MODULATION = PARAMETER[0]
             code_rate_cn = PARAMETER[1]
-
-            specan = Ektsfu(sfu_ip)
-            specan.set_level_level_level("dBm", "-50")
-            time.sleep(3)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_constellation_dvbs2(MODULATION)
             time.sleep(1)
@@ -169,6 +168,20 @@ if __name__ == '__main__':
             specan = Ektsfu(sfu_ip)
             specan.set_noise_awgn_cn(str(code_rate_cn[1]))
             time.sleep(1)
+
+            specan = Ektsfu(sfu_ip)
+            specan.set_level_level_level("dBm", str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])))
+            time.sleep(5)
+            _, mosaic_result = mosaic_algorithm(sfu_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                                str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])))
+            if mosaic_result == "Fail":
+                mosaic_result = None
+
+            PARAMETER[3] = mosaic_result
+            write_json_file("../../ekt_json/dvbs2_18_dynamic_range_awng_min_level.json", load_dict)
+
+            specan = Ektsfu(sfu_ip)
+            specan.set_level_level_level("dBm", "-50")
 
             res, test_result = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, (-65 - FREQUENCY_LEVEL_OFFSET[1]),
                                                                             level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))

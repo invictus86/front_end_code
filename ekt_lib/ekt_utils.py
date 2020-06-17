@@ -646,6 +646,8 @@ def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
     for i in list_data:
         count = 0
         for j in i[2]:
+            if j[1] == "NO NEED TEST":
+                continue
             if count == 0:
                 list_required_data.append([i[0][1], i[1][0], j[0][0], j[1], j[2]])
             else:
@@ -653,6 +655,23 @@ def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
             count = count + 1
     pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'code_rate', 'level', "max_mosic_result"])
     pd_data.to_csv(csv_path, index=None)
+
+
+def dvbs_dynamic_min_json_class_test(json_path):
+    """
+    json to csv
+    :param json_path:
+    :param csv_path:
+    :return:
+    """
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    for i in list_data:
+        for j in i[2]:
+            if i[1][0] not in [950, 1550, 2150] and (j[0][0] != "R7_8" or i[0][1] != "45000"):
+                j[1] = "NO NEED TEST"
+                j[2] = "NO NEED TEST"
+    write_json_file(json_path, load_dict)
 
 
 def dvbs_signal_acquisition_frequency_range_json_to_csv(json_path, csv_path):
@@ -772,13 +791,31 @@ def dvbs2_18_dynamic_min_json_to_csv(json_path, csv_path):
     for i in list_data:
         count = 0
         for j in i[2]:
+            if j[2] == "NO NEED TEST":
+                continue
             if count == 0:
-                list_required_data.append([i[0][1], i[1][0], j[0], j[1][0], j[2]])
+                list_required_data.append([i[0][1], i[1][0], j[0], j[1][0], j[2], j[3]])
             else:
-                list_required_data.append(["", "", j[0], j[1][0], j[2]])
+                list_required_data.append(["", "", j[0], j[1][0], j[2], j[3]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'modulation', 'code_rate', 'level'])
+    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'modulation', 'code_rate', 'level', "max_mosic_result"])
     pd_data.to_csv(csv_path, index=None)
+
+
+def dvbs2_18_dynamic_min_json_class_test(json_path):
+    """
+    json to csv
+    :param json_path:
+    :return:
+    """
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    for i in list_data:
+        for j in i[2]:
+            if i[1][0] not in [950, 1550, 2150] and (j[1][0] != "R9_10" or i[0][1] != "45000" or j[0] != "S8"):
+                j[2] = "NO NEED TEST"
+                j[3] = "NO NEED TEST"
+    write_json_file(json_path, load_dict)
 
 
 def dvbs2_19_symbol_rate_step_json_to_csv(json_path, csv_path):
