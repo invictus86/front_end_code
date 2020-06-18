@@ -1084,6 +1084,8 @@ def dvbt_19_gaussian_channel_json_to_csv(json_path, csv_path):
     for i in list_data:
         count = 0
         for j in i[1]:
+            if j[4] == "NO NEED TEST":
+                continue
             if count == 0:
                 list_required_data.append([i[0][0], j[0], j[1], j[2], j[3], j[4]])
             else:
@@ -1091,6 +1093,23 @@ def dvbt_19_gaussian_channel_json_to_csv(json_path, csv_path):
             count = count + 1
     pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'guard', 'spec', 'noise'])
     pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt_19_gaussian_channel_json_class_test(json_path):
+    """
+    json to csv
+    :param json_path:
+    :param csv_path:
+    :return:
+    """
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    for i in list_data:
+        for j in i[1]:
+            if i[0][0] not in [177.5, 198.5, 226.5, 474.0, 522.0, 570.0, 618.0, 666.0, 714.0, 762.0, 810.0, 858.0] and (
+                    j[0] != "T64" or j[1] != "R7_8" or j[2] != "G1_4"):
+                j[4] = "NO NEED TEST"
+    write_json_file(json_path, load_dict)
 
 
 def dvbt_20_performance_0db_to_csv(json_path, csv_path):
@@ -1130,6 +1149,8 @@ def dvbt_21_receiver_signal_input__min_level_json_to_csv(json_path, csv_path):
     for i in list_data:
         count = 0
         for j in i[1]:
+            if j[4] == "NO NEED TEST":
+                continue
             if count == 0:
                 list_required_data.append([i[0][0], j[0], j[1], j[2], j[3], j[4]])
             else:
@@ -1137,6 +1158,23 @@ def dvbt_21_receiver_signal_input__min_level_json_to_csv(json_path, csv_path):
             count = count + 1
     pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'guard', 'spec', 'noise'])
     pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt_21_receiver_signal_input__min_level_json_class_test(json_path):
+    """
+    json to csv
+    :param json_path:
+    :param csv_path:
+    :return:
+    """
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    for i in list_data:
+        for j in i[1]:
+            if i[0][0] not in [177.5, 198.5, 226.5, 474.0, 522.0, 570.0, 618.0, 666.0, 714.0, 762.0, 810.0, 858.0] and (
+                    j[0] != "T64" or j[1] != "R7_8" or j[2] != "G1_4"):
+                j[4] = "NO NEED TEST"
+    write_json_file(json_path, load_dict)
 
 
 def dvbt_22_minimun_level_0db_to_csv(json_path, csv_path):
@@ -1302,6 +1340,8 @@ def dvbt_32_performance_SFN_inside_guard_json_to_csv(json_path, csv_path):
         for j in i[9]:
             count_j = 0
             for k in j[3]:
+                if k[1] == "NO NEED TEST":
+                    continue
                 if count_j == 0:
                     list_required_data.append([i[0], i[3], i[4], i[5], i[6], i[7], i[8], j[0], j[1], j[2], k[0], k[1]])
                 else:
@@ -1312,6 +1352,30 @@ def dvbt_32_performance_SFN_inside_guard_json_to_csv(json_path, csv_path):
                                     'mian_att', 'mian_delay',
                                     'pre_delay', 'pre_att', 'noise_cn'])
     pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt_32_performance_SFN_inside_guard_json_class_test(json_path):
+    """
+    json to csv
+    :param json_path:
+    :param csv_path:
+    :return:
+    """
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    for i in list_data:
+        for j in i[9]:
+            for k in j[3]:
+                if k[0] in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] and j[2] in [28, -28] and \
+                        i[5] == "T64" and i[6] == "R2_3" and i[7] == "G1_8" and i[3] == 8:
+                    continue
+
+                if k[0] in [1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 20] and j[2] in [1.95, 28, 90, 150, 190.0, 220.0,
+                                                                                           -1.95, -28, -90, -150, -190.0, -220.0,
+                                                                                           20, 70, 110.0, -20, -70, -90, -110.0,
+                                                                                           252, -252, 126, -126]:
+                    k[1] = "NO NEED TEST"
+    write_json_file(json_path, load_dict)
 
 
 def dvbt_33_performance_SFN_outside_guard_json_to_csv(json_path, csv_path):
@@ -1564,6 +1628,8 @@ def dvbt2_57_gaussian_channel_json_to_csv(json_path, csv_path):
     for i in list_data:
         count = 0
         for j in i[1]:
+            if j[3] == "NO NEED TEST":
+                continue
             if count == 0:
                 list_required_data.append([i[0][0], j[0], j[1], j[2], j[3]])
             else:
@@ -1571,6 +1637,23 @@ def dvbt2_57_gaussian_channel_json_to_csv(json_path, csv_path):
             count = count + 1
     pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'spec', 'noise'])
     pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt2_57_gaussian_channel_json_class_test(json_path):
+    """
+    json to csv
+    :param json_path:
+    :param csv_path:
+    :return:
+    """
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    for i in list_data:
+        for j in i[1]:
+            if i[0][0] not in [177.5, 198.5, 226.5, 474.0, 522.0, 570.0, 618.0, 666.0, 714.0, 762.0, 810.0, 858.0] and (
+                    j[0] != "T256" or j[1] != "R5_6"):
+                j[3] = "NO NEED TEST"
+    write_json_file(json_path, load_dict)
 
 
 def dvbt2_58_performance_0db_echo_channel_json_to_csv(json_path, csv_path):
@@ -1726,6 +1809,8 @@ def dvbt2_69_performance_in_SFN_inside_guard_json_to_csv(json_path, csv_path):
         for j in i[10]:
             count_j = 0
             for k in j[3]:
+                if k[1] == "NO NEED TEST":
+                    continue
                 if count_j == 0:
                     list_required_data.append([i[0], i[3], i[4], i[5], i[6], i[7], i[8], i[9], j[0], j[1], j[2], k[0], k[1]])
                 else:
@@ -1735,6 +1820,32 @@ def dvbt2_69_performance_in_SFN_inside_guard_json_to_csv(json_path, csv_path):
                            columns=['frequency', 'bandwidth', 'fft_size', 'modulation', "pilot", 'code_rate', 'guard', 'spec',
                                     'mian_att', 'mian_delay', 'pre_delay', 'pre_att', 'noise_cn'])
     pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt2_69_performance_in_SFN_inside_guard_json_class_test(json_path):
+    """
+    json to csv
+    :param json_path:
+    :param csv_path:
+    :return:
+    """
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    for i in list_data:
+        for j in i[10]:
+            for k in j[3]:
+                if k[0] in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] and j[2] in [256, -256] and \
+                        i[5] == "T256" and i[6] == "PP2" and i[7] == "R3_4" and i[8] == "G1_8" and i[3] == 7:
+                    continue
+
+                if k[0] in [1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 20] and j[2] in [1.95, 28, 90, 150, 190.0, 220.0,
+                                                                                           -1.95, -28, -90, -150, -190.0, -220.0,
+                                                                                           25, 50, 266.0, -25, -50, -266.0,
+                                                                                           70, 320, 400.0, 448.0, -70, -320, -400.0, -448.0,
+                                                                                           128, 256, 304, -128, -256, -304,
+                                                                                           320, 416.0, 500, -320, -416.0, -500]:
+                    k[1] = "NO NEED TEST"
+    write_json_file(json_path, load_dict)
 
 
 def dvbt2_70_performance_in_frequency_outside_json_to_csv(json_path, csv_path):

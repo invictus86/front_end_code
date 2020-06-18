@@ -1837,3 +1837,122 @@ dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 12:25:40, coderate
 dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 12:26:15, coderate:R3_4, frequency:1550 MHz,symbol_rate:27500 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.9", "threshold_algorithm_result": false}
 dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 12:26:49, coderate:R5_6, frequency:1550 MHz,symbol_rate:27500 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.9", "threshold_algorithm_result": false}
 dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 12:27:24, coderate:R7_8, frequency:1550 MHz,symbol_rate:27500 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.9", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:03:54, coderate:R1_2, frequency:2150 MHz,symbol_rate:27500 Ksym/s,The threshold: -76.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:09:35, coderate:R2_3, frequency:950 MHz,symbol_rate:27500 Ksym/s,The threshold: -75.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:11:47, coderate:R3_4, frequency:950 MHz,symbol_rate:27500 Ksym/s,The threshold: -72.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:13:35, coderate:R5_6, frequency:950 MHz,symbol_rate:27500 Ksym/s,The threshold: -72.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:15:10, coderate:R7_8, frequency:950 MHz,symbol_rate:27500 Ksym/s,The threshold: -70.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:17:42, coderate:R2_3, frequency:1550 MHz,symbol_rate:27500 Ksym/s,The threshold: -80.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:20:51, coderate:R3_4, frequency:1550 MHz,symbol_rate:27500 Ksym/s,The threshold: -79.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:23:25, coderate:R5_6, frequency:1550 MHz,symbol_rate:27500 Ksym/s,The threshold: -78.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:26:37, coderate:R7_8, frequency:1550 MHz,symbol_rate:27500 Ksym/s,The threshold: -77.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:30:00, coderate:R2_3, frequency:2150 MHz,symbol_rate:27500 Ksym/s,The threshold: -76.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:32:18, coderate:R3_4, frequency:2150 MHz,symbol_rate:27500 Ksym/s,The threshold: -76.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:34:24, coderate:R5_6, frequency:2150 MHz,symbol_rate:27500 Ksym/s,The threshold: -74.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:36:40, coderate:R7_8, frequency:2150 MHz,symbol_rate:27500 Ksym/s,The threshold: -73.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:40:07, coderate:R1_2, frequency:950 MHz,symbol_rate:45000 Ksym/s,The threshold: -76.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:40:41, coderate:R2_3, frequency:950 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.4", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:41:16, coderate:R3_4, frequency:950 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.4", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:41:51, coderate:R5_6, frequency:950 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.4", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:42:26, coderate:R7_8, frequency:950 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.4", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:45:21, coderate:R7_8, frequency:970 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:48:30, coderate:R7_8, frequency:990 MHz,symbol_rate:45000 Ksym/s,The threshold: -76.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:51:35, coderate:R7_8, frequency:1010 MHz,symbol_rate:45000 Ksym/s,The threshold: -76.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:54:57, coderate:R7_8, frequency:1030 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 14:58:24, coderate:R7_8, frequency:1050 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:02:09, coderate:R7_8, frequency:1070 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:05:54, coderate:R7_8, frequency:1090 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:09:18, coderate:R7_8, frequency:1110 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:12:44, coderate:R7_8, frequency:1130 MHz,symbol_rate:45000 Ksym/s,The threshold: -73.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:16:14, coderate:R7_8, frequency:1150 MHz,symbol_rate:45000 Ksym/s,The threshold: -73.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:18:46, coderate:R7_8, frequency:1170 MHz,symbol_rate:45000 Ksym/s,The threshold: -72.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:22:13, coderate:R7_8, frequency:1190 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:25:59, coderate:R7_8, frequency:1210 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:29:23, coderate:R7_8, frequency:1230 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:32:33, coderate:R7_8, frequency:1250 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:35:38, coderate:R7_8, frequency:1270 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:38:40, coderate:R7_8, frequency:1290 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:41:29, coderate:R7_8, frequency:1310 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:44:34, coderate:R7_8, frequency:1330 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:47:45, coderate:R7_8, frequency:1350 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:51:11, coderate:R7_8, frequency:1370 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:54:41, coderate:R7_8, frequency:1390 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 15:58:05, coderate:R7_8, frequency:1410 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:01:31, coderate:R7_8, frequency:1430 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:05:26, coderate:R7_8, frequency:1450 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:08:33, coderate:R7_8, frequency:1470 MHz,symbol_rate:45000 Ksym/s,The threshold: -76.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:12:22, coderate:R7_8, frequency:1490 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:15:46, coderate:R7_8, frequency:1510 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:19:27, coderate:R7_8, frequency:1530 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:23:45, coderate:R1_2, frequency:1550 MHz,symbol_rate:45000 Ksym/s,The threshold: -79.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:26:20, coderate:R2_3, frequency:1550 MHz,symbol_rate:45000 Ksym/s,The threshold: -78.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:29:12, coderate:R3_4, frequency:1550 MHz,symbol_rate:45000 Ksym/s,The threshold: -77.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:31:30, coderate:R5_6, frequency:1550 MHz,symbol_rate:45000 Ksym/s,The threshold: -76.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:34:05, coderate:R7_8, frequency:1550 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:37:34, coderate:R7_8, frequency:1570 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:40:56, coderate:R7_8, frequency:1590 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:44:15, coderate:R7_8, frequency:1610 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:47:42, coderate:R7_8, frequency:1630 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:50:43, coderate:R7_8, frequency:1650 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:53:47, coderate:R7_8, frequency:1670 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 16:56:53, coderate:R7_8, frequency:1690 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:00:58, coderate:R7_8, frequency:1710 MHz,symbol_rate:45000 Ksym/s,The threshold: -76.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:04:03, coderate:R7_8, frequency:1730 MHz,symbol_rate:45000 Ksym/s,The threshold: -76.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:07:15, coderate:R7_8, frequency:1750 MHz,symbol_rate:45000 Ksym/s,The threshold: -76.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:10:58, coderate:R7_8, frequency:1770 MHz,symbol_rate:45000 Ksym/s,The threshold: -75.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:12:25, coderate:R7_8, frequency:1790 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.7", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:13:57, coderate:R7_8, frequency:1810 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:15:28, coderate:R7_8, frequency:1830 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.2", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:18:24, coderate:R7_8, frequency:1850 MHz,symbol_rate:45000 Ksym/s,The threshold: -71.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:20:55, coderate:R7_8, frequency:1870 MHz,symbol_rate:45000 Ksym/s,The threshold: -72.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:22:24, coderate:R7_8, frequency:1890 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:23:55, coderate:R7_8, frequency:1910 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.0", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:25:25, coderate:R7_8, frequency:1930 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:28:48, coderate:R7_8, frequency:1950 MHz,symbol_rate:45000 Ksym/s,The threshold: -73.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:35:28, coderate:R7_8, frequency:1970 MHz,symbol_rate:45000 Ksym/s,The threshold: -70.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:37:54, coderate:R7_8, frequency:1990 MHz,symbol_rate:45000 Ksym/s,The threshold: -70.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:39:21, coderate:R7_8, frequency:2010 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.1", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:40:53, coderate:R7_8, frequency:2030 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:43:28, coderate:R7_8, frequency:2050 MHz,symbol_rate:45000 Ksym/s,The threshold: -72.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:46:04, coderate:R7_8, frequency:2070 MHz,symbol_rate:45000 Ksym/s,The threshold: -72.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:48:44, coderate:R7_8, frequency:2090 MHz,symbol_rate:45000 Ksym/s,The threshold: -72.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:51:21, coderate:R7_8, frequency:2110 MHz,symbol_rate:45000 Ksym/s,The threshold: -72.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:53:56, coderate:R7_8, frequency:2130 MHz,symbol_rate:45000 Ksym/s,The threshold: -72.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:57:05, coderate:R1_2, frequency:2150 MHz,symbol_rate:45000 Ksym/s,The threshold: -76.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 17:59:10, coderate:R2_3, frequency:2150 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:01:45, coderate:R3_4, frequency:2150 MHz,symbol_rate:45000 Ksym/s,The threshold: -73.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:03:45, coderate:R5_6, frequency:2150 MHz,symbol_rate:45000 Ksym/s,The threshold: -72.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:06:02, coderate:R7_8, frequency:2150 MHz,symbol_rate:45000 Ksym/s,The threshold: -71.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:09:06, coderate:R2_3, frequency:950 MHz,symbol_rate:45000 Ksym/s,The threshold: -74.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:11:34, coderate:R3_4, frequency:950 MHz,symbol_rate:45000 Ksym/s,The threshold: -73.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:13:22, coderate:R5_6, frequency:950 MHz,symbol_rate:45000 Ksym/s,The threshold: -72.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:14:58, coderate:R7_8, frequency:950 MHz,symbol_rate:45000 Ksym/s,The threshold: -70.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:16:27, coderate:R7_8, frequency:1790 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.7", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:17:52, coderate:R7_8, frequency:1810 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:19:24, coderate:R7_8, frequency:1830 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.2", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:20:56, coderate:R7_8, frequency:1890 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:22:29, coderate:R7_8, frequency:1910 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.0", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:24:06, coderate:R7_8, frequency:1930 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:25:33, coderate:R7_8, frequency:2010 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.1", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:27:05, coderate:R7_8, frequency:2030 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:28:40, coderate:R7_8, frequency:1790 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.7", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:30:06, coderate:R7_8, frequency:1810 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:31:38, coderate:R7_8, frequency:1830 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.2", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:33:10, coderate:R7_8, frequency:1890 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:34:43, coderate:R7_8, frequency:1910 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.0", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:36:20, coderate:R7_8, frequency:1930 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:37:47, coderate:R7_8, frequency:2010 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.1", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:39:19, coderate:R7_8, frequency:2030 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:40:53, coderate:R7_8, frequency:1790 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.7", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:42:19, coderate:R7_8, frequency:1810 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:43:52, coderate:R7_8, frequency:1830 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.2", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:45:24, coderate:R7_8, frequency:1890 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:46:56, coderate:R7_8, frequency:1910 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.0", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:48:33, coderate:R7_8, frequency:1930 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-65.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:50:00, coderate:R7_8, frequency:2010 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.1", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-17 18:51:33, coderate:R7_8, frequency:2030 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 11:07:50, coderate:R7_8, frequency:1790 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.7", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 11:09:16, coderate:R7_8, frequency:1810 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.6", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 11:10:49, coderate:R7_8, frequency:1830 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.2", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 11:12:21, coderate:R7_8, frequency:1890 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.8", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 11:15:46, coderate:R7_8, frequency:1790 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.7", "threshold_algorithm_result": false}

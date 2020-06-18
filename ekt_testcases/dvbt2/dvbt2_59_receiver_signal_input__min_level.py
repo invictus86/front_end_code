@@ -14,7 +14,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_step_by_step
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
-    dvbt2_57_gaussian_channel_json_to_csv
+    dvbt2_57_gaussian_channel_json_to_csv, dvbt2_57_gaussian_channel_json_class_test
 
 MODULATION_QPSK = "T4"
 MODULATION_16QAM = "T16"
@@ -115,6 +115,9 @@ if __name__ == '__main__':
     ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase）
     ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
+    # 将部分无需测试的点的json文件内容, 测试结果置为 NO NEED TEST
+    dvbt2_57_gaussian_channel_json_class_test("../../ekt_json/dvbt2_59_receiver_signal_input__min_level.json")
+
     load_dict = read_json_file("../../ekt_json/dvbt2_59_receiver_signal_input__min_level.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)

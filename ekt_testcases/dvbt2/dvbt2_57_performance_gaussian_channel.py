@@ -14,7 +14,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_noise_cn_step_by_step
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
-    dvbt2_57_gaussian_channel_json_to_csv
+    dvbt2_57_gaussian_channel_json_to_csv, dvbt2_57_gaussian_channel_json_class_test
 
 MODULATION_QPSK = "T4"
 MODULATION_16QAM = "T16"
@@ -54,7 +54,7 @@ MODULATION__CODERATE_SPEC_LIST = [
     [MODULATION_256QAM, CODE_RATE_4_5, 23.2],
     [MODULATION_256QAM, CODE_RATE_5_6, 23.9]]
 
-my_file = Path("../../ekt_json/dvbt2_57_performance_gaussian_channelt.json")
+my_file = Path("../../ekt_json/dvbt2_57_performance_gaussian_channel.json")
 if my_file.exists():
     pass
 else:
@@ -72,7 +72,7 @@ else:
         list_test_parame_result.append([FREQUENCY_LEVEL_OFFSET, list_test_result])
 
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
-    write_json_file("../../ekt_json/dvbt2_57_performance_gaussian_channelt.json",
+    write_json_file("../../ekt_json/dvbt2_57_performance_gaussian_channel.json",
                     dict_test_parame_result)
 
 if __name__ == '__main__':
@@ -85,7 +85,10 @@ if __name__ == '__main__':
     ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase）
     ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
-    load_dict = read_json_file("../../ekt_json/dvbt2_57_performance_gaussian_channelt.json")
+    # 将部分无需测试的点的json文件内容, 测试结果置为 NO NEED TEST
+    dvbt2_57_gaussian_channel_json_class_test("../../ekt_json/dvbt2_57_performance_gaussian_channel.json")
+
+    load_dict = read_json_file("../../ekt_json/dvbt2_57_performance_gaussian_channel.json")
     sfu_ip = "192.168.1.50"
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
@@ -115,11 +118,6 @@ if __name__ == '__main__':
     specan.set_digitaltv_framing_guard_dvbt2("G1128")
     specan = Ektsfu(sfu_ip)
     specan.set_digitaltv_framing_pilot_dvbt2("PP7")
-
-    # dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-    # DVBT_T2_FREQUENCY_LEVEL_OFFSET = dict_data.get("DVBT_T2_FREQUENCY_LEVEL_OFFSET")
-    # DVBS2_QPSK_CODE_RATE_CN = dict_data.get("DVBS2_QPSK_CODE_RATE_CN")
-    # DVBS2_8PSK_CODE_RATE_CN = dict_data.get("DVBS2_8PSK_CODE_RATE_CN")
 
     for FREQUENCY_LEVEL_OFFSET in load_dict.get("test_parame_result"):
         loop_lock_mark = False
@@ -196,9 +194,10 @@ if __name__ == '__main__':
                 specan.set_digitaltv_system_modulation_dvbt2("T64")
 
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, MODULATION_CODERATE_SPEC[2] + 3)
-            print ("dvbt2_57_performance_gaussian_channel: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
-                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_CODERATE_SPEC[0],
-                MODULATION_CODERATE_SPEC[1], str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res))
+            print (
+                "dvbt2_57_performance_gaussian_channel: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
+                    datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_CODERATE_SPEC[0],
+                    MODULATION_CODERATE_SPEC[1], str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               "dvbt2_57_performance_gaussian_channel: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
