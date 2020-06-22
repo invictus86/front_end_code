@@ -16,6 +16,9 @@ from ekt_lib.threshold_algorithm_SFU import iterate_to_find_threshold_step_by_st
 from ekt_lib.ekt_utils import write_test_result, read_ekt_config_data, write_json_file, read_json_file, \
     dvbs2_18_dynamic_min_json_to_csv, dvbs2_18_dynamic_min_json_class_test
 
+test_start_level = -65
+# test_start_level = -50
+
 MODULATION_QPSK = "S4"
 MODULATION_8PSK = "S8"
 
@@ -179,11 +182,17 @@ if __name__ == '__main__':
 
             PARAMETER[3] = mosaic_result
             write_json_file("../../ekt_json/dvbs2_18_dynamic_range_awng_min_level.json", load_dict)
+            write_test_result("../../ekt_log/test_result_sfu.txt",
+                              "dvbs2_18_dynamic_range_awng_min_level: current_time:{}, modulation: {}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
+                                  datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION, code_rate_cn[0],
+                                  str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
+                                  str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
+                                  mosaic_result) + "\n")
 
             specan = Ektsfu(sfu_ip)
             specan.set_level_level_level("dBm", "-50")
 
-            res, test_result = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, (-65 - FREQUENCY_LEVEL_OFFSET[1]),
+            res, test_result = iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, (test_start_level - FREQUENCY_LEVEL_OFFSET[1]),
                                                                             level_offset=str(FREQUENCY_LEVEL_OFFSET[1]))
             print (
                 "dvbs2_18_dynamic_range_awng_min_level: current_time:{}, modulation: {},coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,{}".format(

@@ -12,7 +12,6 @@ python ./dvbt_22_minimun_signal_level_0db.py
 python ./dvbt_24_receiver_signal_maximum_level.py
 python ./dvbt_25_analogue_singnal_other_channel.py
 python ./dvbt_28_co_channek_interference_analogue.py
-python ./dvbt_29_performance_time_varying_channel.py
 python ./dvbt_30_synchronisation_varying_echo.py
 python ./dvbt_31_performance_SFN_more_than_one.py
 python ./dvbt_32_performance_SFN_inside_guard.py

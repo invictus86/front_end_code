@@ -17,7 +17,6 @@ python ./dvbt2_59_receiver_signal_input__min_level.py
 python ./dvbt2_60_minimum_level_0db_echo_channel.py
 python ./dvbt2_62_maximum_signal_levels.py
 python ./dvbt2_65_co_channel_interference.py
-python ./dvbt2_66_performance_time_varying_channels.py
 python ./dvbt2_67_synchronisation_varying_echo.py
 python ./dvbt2_68_performance_in_SFN_echo.py
 python ./dvbt2_69_performance_in_SFN_inside_guard.py

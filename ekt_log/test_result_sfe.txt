@@ -1956,3 +1956,11 @@ dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 11:09:16, coderate
 dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 11:10:49, coderate:R7_8, frequency:1830 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.2", "threshold_algorithm_result": false}
 dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 11:12:21, coderate:R7_8, frequency:1890 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.8", "threshold_algorithm_result": false}
 dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 11:15:46, coderate:R7_8, frequency:1790 MHz,symbol_rate:45000 Ksym/s,{"msg": "The initial value is outside the Mosaic threshold:-64.7", "threshold_algorithm_result": false}
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 17:25:03, coderate:R7_8, frequency:1790 MHz,symbol_rate:45000 Ksym/s,The threshold: -62.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 17:30:13, coderate:R7_8, frequency:1810 MHz,symbol_rate:45000 Ksym/s,The threshold: -59.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 17:34:06, coderate:R7_8, frequency:1830 MHz,symbol_rate:45000 Ksym/s,The threshold: -58.50
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 17:37:41, coderate:R7_8, frequency:1890 MHz,symbol_rate:45000 Ksym/s,The threshold: -66.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 17:41:15, coderate:R7_8, frequency:1910 MHz,symbol_rate:45000 Ksym/s,The threshold: -66.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-18 17:45:32, coderate:R7_8, frequency:1930 MHz,symbol_rate:45000 Ksym/s,The threshold: -70.00
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-19 11:48:51, coderate:R1_2, frequency:950 MHz,symbol_rate:05000 Ksym/s,level:-5.40 dbm, Mosaic results:Pass
+dvbs_11_dynamic_range_awng_min_level: current_time:2020-06-19 11:52:04, coderate:R1_2, frequency:950 MHz,symbol_rate:05000 Ksym/s,The threshold: -88.00

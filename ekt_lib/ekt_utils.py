@@ -1262,7 +1262,7 @@ def dvbt_28_analogue_signal_other_json_to_csv(json_path, csv_path):
                 list_required_data.append(["", j[0], j[1], j[2], j[3], j[4], j[5]])
             count = count + 1
     pd_data = pd.DataFrame(list_required_data,
-                           columns=['frequency', 'fft_mode', 'modulation', 'code_rate', 'guard', 'spec', 'level'])
+                           columns=['frequency', 'fft_mode', 'modulation', 'code_rate', 'guard', 'spec', 'noise_cn'])
     pd_data.to_csv(csv_path, index=None)
 
 
