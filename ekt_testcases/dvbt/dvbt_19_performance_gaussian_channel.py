@@ -136,7 +136,9 @@ if __name__ == '__main__':
         specan = Ektsfu(sfu_ip)
         specan.set_level_level_offset(str(FREQUENCY_LEVEL_OFFSET[0][1]))
         specan = Ektsfu(sfu_ip)
-        specan.set_level_level_level("dBm", "-60")
+        specan.set_level_level_level("dBm", str("%.2f" % ((-50) - FREQUENCY_LEVEL_OFFSET[0][1])))
+        specan = Ektsfu(sfu_ip)
+        specan.set_noise_awgn_cn("25")
         net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         net.send_data(
             json.dumps({"cmd": "set_frequency_data", "frequency": str(int(FREQUENCY_LEVEL_OFFSET[0][0]))}))
@@ -173,13 +175,15 @@ if __name__ == '__main__':
                 continue
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_constellation_dvbt(MODULATION_CODERATE_SPEC[0])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_coderate_dvbt(MODULATION_CODERATE_SPEC[1])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_guard_dvbt(MODULATION_CODERATE_SPEC[2])
+            time.sleep(3)
 
-
-            res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, MODULATION_CODERATE_SPEC[3] + 3)
+            res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, MODULATION_CODERATE_SPEC[3] + 5)
             print ("dvbt_19_performance_gaussian_channel: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
                 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_CODERATE_SPEC[0],
                 MODULATION_CODERATE_SPEC[1], str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res))

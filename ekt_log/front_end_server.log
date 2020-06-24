@@ -96,3 +96,9 @@
 2020-06-16 18:31:39,049 - ./front_end_server.py[line:122] - INFO: set stb crash state:ok
 2020-06-17 09:01:35,469 - ./front_end_server.py[line:122] - INFO: set stb crash state:ok
 2020-06-20 03:00:18,483 - ./front_end_server.py[line:117] - INFO: set stb crash state:ok
+2020-06-22 20:48:40,509 - ./front_end_server.py[line:117] - INFO: set stb crash state:ok
+2020-06-22 21:44:03,312 - ./front_end_server.py[line:117] - INFO: set stb crash state:ok
+2020-06-22 21:51:59,566 - ./front_end_server.py[line:117] - INFO: set stb crash state:ok
+2020-06-23 20:04:09,565 - ./front_end_server.py[line:117] - INFO: set stb crash state:ok
+2020-06-24 03:53:37,141 - ./front_end_server.py[line:117] - INFO: set stb crash state:ok
+2020-06-24 04:01:33,734 - ./front_end_server.py[line:117] - INFO: set stb crash state:ok

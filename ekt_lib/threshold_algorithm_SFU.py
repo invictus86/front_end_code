@@ -330,7 +330,8 @@ def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
         return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
                           ensure_ascii=False), None
     while True:
-        step = 1
+        # step = 1
+        step = 2
         step_num = start_num - step
         step_num_data_result = mosaic_algorithm_noise_cn(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") == "Pass":
@@ -339,7 +340,8 @@ def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
             print ("{} appear Mosaic".format(step_num))
             break
     while True:
-        step = 0.1
+        # step = 0.1
+        step = 0.5
         step_num = start_num - step
         step_num_data_result = mosaic_algorithm_noise_cn(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") == "Pass":

@@ -1,6 +1,6 @@
 fft_size,modulation,code_rate,guard,mosic_result
-M2K,T4,R1_2,G1_4,
-M2K,T4,R1_2,G1_8,
+M2K,T4,R1_2,G1_4,Pass
+M2K,T4,R1_2,G1_8,Pass
 M2K,T4,R1_2,G1_16,Pass
 M2K,T4,R1_2,G1_32,Pass
 M2K,T4,R2_3,G1_4,Fail

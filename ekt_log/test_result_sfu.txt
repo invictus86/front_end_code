@@ -17631,3 +17631,685 @@ dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 07:46:03, modulati
 dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 07:52:06, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.70
 dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 07:55:47, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
 dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 07:59:45, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.50
+dvbt_4_centre_frequencies: current_time:2020-06-22 19:09:44, modulation: T64, coderate:R2_3, frequency:177.5 MHz,bandwidth:7 MHZ,Pass
+dvbt_4_centre_frequencies: current_time:2020-06-22 19:11:10, modulation: T64, coderate:R2_3, frequency:184.5 MHz,bandwidth:7 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:13:04, modulation: T64, coderate:R2_3, frequency:176.95 MHz,stb_frequency:177 MHz,bandwidth:7 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:14:30, modulation: T64, coderate:R2_3, frequency:177 MHz,stb_frequency:177 MHz,bandwidth:7 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:15:55, modulation: T64, coderate:R2_3, frequency:177.05 MHz,stb_frequency:177 MHz,bandwidth:7 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:17:20, modulation: T64, coderate:R2_3, frequency:225.95 MHz,stb_frequency:226 MHz,bandwidth:7 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:18:44, modulation: T64, coderate:R2_3, frequency:226 MHz,stb_frequency:226 MHz,bandwidth:7 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:20:09, modulation: T64, coderate:R2_3, frequency:226.05 MHz,stb_frequency:226 MHz,bandwidth:7 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:21:33, modulation: T64, coderate:R2_3, frequency:473.95 MHz,stb_frequency:474 MHz,bandwidth:8 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:22:57, modulation: T64, coderate:R2_3, frequency:474 MHz,stb_frequency:474 MHz,bandwidth:8 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:24:22, modulation: T64, coderate:R2_3, frequency:474.05 MHz,stb_frequency:474 MHz,bandwidth:8 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:25:46, modulation: T64, coderate:R2_3, frequency:857.95 MHz,stb_frequency:858 MHz,bandwidth:8 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:27:11, modulation: T64, coderate:R2_3, frequency:858 MHz,stb_frequency:858 MHz,bandwidth:8 MHZ,Pass
+dvbt_5_frequency_offset: current_time:2020-06-22 19:28:35, modulation: T64, coderate:R2_3, frequency:858.05 MHz,stb_frequency:858 MHz,bandwidth:8 MHZ,Pass
+dvbt_7_modes: current_time:2020-06-22 19:31:02, fft_size: M2K, modulation: T4, coderate:R1_2,guard:G1_4, frequency:666.0 MHz,bandwidth:8 MHZ,Pass
+dvbt_7_modes: current_time:2020-06-22 19:31:24, fft_size: M2K, modulation: T4, coderate:R1_2,guard:G1_8, frequency:666.0 MHz,bandwidth:8 MHZ,Pass
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:36:36, modulation: T4 coderate:R1_2, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:36:53, modulation: T16 coderate:R3_4, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:37:11, modulation: T16 coderate:R5_6, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:37:28, modulation: T16 coderate:R7_8, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:37:46, modulation: T64 coderate:R1_2, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:38:03, modulation: T64 coderate:R2_3, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:38:21, modulation: T64 coderate:R2_3, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:38:38, modulation: T64 coderate:R3_4, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:38:55, modulation: T64 coderate:R5_6, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:39:13, modulation: T64 coderate:R7_8, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:40:22, frequency:184.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:41:29, frequency:191.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:42:37, frequency:198.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:43:45, frequency:205.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:44:53, frequency:212.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:46:01, frequency:219.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:47:09, frequency:226.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:48:18, frequency:474.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:49:26, frequency:482.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:50:34, frequency:490.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:51:43, frequency:498.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:52:51, frequency:506.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:53:59, frequency:514.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:55:08, frequency:522.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:56:16, frequency:530.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:57:24, frequency:538.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:58:32, frequency:546.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 19:59:40, frequency:554.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:00:48, frequency:562.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:01:56, frequency:570.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:03:04, frequency:578.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:04:12, frequency:586.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:05:21, frequency:594.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:06:29, frequency:602.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:07:37, frequency:610.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:08:44, frequency:618.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:09:52, frequency:626.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:11:00, frequency:634.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:12:08, frequency:642.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:13:17, frequency:650.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:14:24, frequency:658.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:15:32, frequency:666.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:16:40, frequency:674.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:17:48, frequency:682.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:18:56, frequency:690.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:20:04, frequency:698.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:21:12, frequency:706.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:22:20, frequency:714.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:23:29, frequency:722.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:24:37, frequency:730.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:25:45, frequency:738.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:26:53, frequency:746.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:28:00, frequency:754.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:29:09, frequency:762.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:30:17, frequency:770.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:31:25, frequency:778.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:32:34, frequency:786.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:33:41, frequency:794.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:34:49, frequency:802.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:35:57, frequency:810.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:37:05, frequency:818.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:38:13, frequency:826.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:39:21, frequency:834.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:40:29, frequency:842.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:41:37, frequency:850.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-22 20:42:46, frequency:858.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:44:33, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:44:51, modulation: T4 coderate:R1_2, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:11.8", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:45:10, modulation: T4 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16.7", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:45:28, modulation: T4 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:20.4", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:45:47, modulation: T16 coderate:R1_2, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16.3", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:46:06, modulation: T16 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:20.9", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:46:24, modulation: T16 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:25.1", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:46:43, modulation: T64 coderate:R1_2, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:22.0", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:47:02, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:26.2", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:47:20, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:26.2", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:47:39, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:30.6", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:49:13, frequency:199 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:49:31, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:11.8", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:49:49, modulation: T4 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16.7", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:50:08, modulation: T4 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:20.4", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:50:27, modulation: T16 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16.3", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:50:45, modulation: T16 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:20.9", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:51:04, modulation: T16 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:25.1", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:51:23, modulation: T64 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:22.0", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:51:41, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:26.2", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:52:00, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:26.2", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-22 20:52:19, modulation: T64 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:30.6", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-22 20:54:13, modulation: T4, coderate:R1_2, guard:G1_4,frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-86.7", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-22 20:58:51, modulation: T64, coderate:R2_3, guard:G1_4,frequency:177.5 MHz,bandwidth:7 MHZ,The threshold: -84.90
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-22 21:00:15, modulation: T4, coderate:R1_2, guard:G1_4,frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-86.4", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-22 21:01:24, frequency:226.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-22 21:06:20, modulation: T64, coderate:R1_2, guard:G1_4,frequency:762.0 MHz,bandwidth:8 MHZ,The threshold: -85.20
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-22 21:08:36, modulation: T64, coderate:R5_6, guard:G1_4,frequency:762.0 MHz,bandwidth:8 MHZ,The threshold: -78.70
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-22 21:13:29, modulation: T64, coderate:R2_3, guard:G1_4,frequency:858.0 MHz,bandwidth:8 MHZ,The threshold: -82.10
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:15:24, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:15:39, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:15:54, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:16:09, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:16:24, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:16:39, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:16:54, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:17:09, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:17:24, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-22 21:17:39, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_25_analogue_singnal_other_channel: current_time:2020-06-22 21:21:27, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-59.6", "threshold_algorithm_result": false}
+dvbt_28_co_channek_interference_analogue: current_time:2020-06-22 21:25:43, modulation: T64 coderate:R2_3, frequency:474 MHz,bandwidth:8 MHZ,The threshold: -4.00
+dvbt_31_performance_SFN_more_than_one: current_time:2020-06-22 21:32:15, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:38:38, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:40:22, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:41:40, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:42:58, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:44:37, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:45:52, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:47:06, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:48:19, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:49:37, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:50:54, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:52:32, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:57:09, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 21:59:57, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 22:05:43, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 22:09:56, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 22:14:48, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 22:19:07, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 22:24:50, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 22:30:35, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 22:33:06, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 22:51:36, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 22:55:52, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:01:20, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:05:02, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:08:08, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:13:19, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.40
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:16:26, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:19:48, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:23:28, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:27:42, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:32:17, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:36:47, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:41:37, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:46:32, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:51:27, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-22 23:56:40, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:01:48, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:07:01, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:12:29, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.40
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:17:40, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:23:27, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:33:31, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 18.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:38:41, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:43:53, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.40
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:46:55, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 00:51:27, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:14:14, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:19:23, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:24:36, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:29:15, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.40
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:34:10, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:37:35, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:41:51, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:47:19, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:50:43, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:54:58, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 01:59:49, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:20:40, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:23:46, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:27:11, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:30:52, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:34:52, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:39:08, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:43:07, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:47:22, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:51:37, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 02:56:12, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:00:25, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:04:41, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:09:17, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:13:52, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:17:24, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:20:48, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:24:13, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:29:06, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:34:50, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:38:13, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:41:55, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:45:35, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:48:45, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:52:44, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:57:03, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 03:59:52, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:03:50, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:08:44, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.40
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:11:50, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:15:13, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:19:08, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:23:24, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:28:21, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:33:32, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.40
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:38:58, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:44:26, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:47:33, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:50:39, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:53:47, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 04:57:11, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:00:17, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:21:42, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:24:48, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:27:54, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:32:16, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 18.40
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:36:37, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:41:09, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:44:15, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:47:55, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:52:10, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 05:56:44, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:16:42, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:21:22, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 18.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:23:56, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 18.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:27:03, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:31:24, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:34:15, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:37:39, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:41:54, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:46:30, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:51:39, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:54:45, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 06:58:09, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:01:33, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:05:31, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:09:27, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:13:24, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:17:39, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:21:37, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:25:50, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:30:23, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:34:37, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:38:53, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:43:26, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:47:49, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 18.40
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:51:55, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:55:53, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 07:58:44, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:02:25, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:06:22, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:10:37, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:14:52, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:18:44, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 18.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:23:22, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 18.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:26:12, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 18.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:29:55, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:34:32, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.40
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:37:40, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:41:21, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:45:02, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:49:38, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.50
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:54:48, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 08:57:38, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:00:43, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:04:08, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:07:32, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:10:54, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.00
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:14:36, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:18:35, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:22:39, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:26:21, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:30:19, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:34:18, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:38:17, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:41:52, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 18.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:45:32, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:48:57, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:54:09, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.30
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 09:56:54, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 10:00:36, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 10:04:18, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.90
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 10:08:17, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 15.80
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:14:46, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:19:44, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:22:56, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 7.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:27:47, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:29:52, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 11.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:34:46, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:35:03, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:40:03, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:45:00, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:51:09, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 10:56:04, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:01:04, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:06:01, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:10:58, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:11:19, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:17:35, modulation: T64 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:22:35, modulation: T64 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:26:42, modulation: T64 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 4.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:31:42, modulation: T64 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:33:13, modulation: T64 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 13.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:38:08, modulation: T64 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:44:05, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 2.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:48:43, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 2.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:53:26, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 2.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 11:58:29, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 12:03:28, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 12:08:24, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 12:13:18, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 12:18:15, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 12:23:13, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 12:28:13, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 14:04:37, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 14.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 14:04:55, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 14:05:12, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 14:05:30, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16", "threshold_algorithm_result": false}
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 14:11:49, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 14:16:44, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 14:18:16, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 13.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-23 14:23:24, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 0.00
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:52:04, modulation: T4 coderate:R1_2, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:52:21, modulation: T16 coderate:R3_4, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:52:39, modulation: T16 coderate:R5_6, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:52:56, modulation: T16 coderate:R7_8, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:53:14, modulation: T64 coderate:R1_2, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:53:31, modulation: T64 coderate:R2_3, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:53:48, modulation: T64 coderate:R2_3, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:54:06, modulation: T64 coderate:R3_4, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:54:23, modulation: T64 coderate:R5_6, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:54:41, modulation: T64 coderate:R7_8, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:55:50, frequency:184.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:56:58, frequency:191.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:58:06, frequency:198.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 18:59:13, frequency:205.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:00:21, frequency:212.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:01:29, frequency:219.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:02:37, frequency:226.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:03:46, frequency:474.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:04:55, frequency:482.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:06:03, frequency:490.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:07:11, frequency:498.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:08:19, frequency:506.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:09:27, frequency:514.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:10:36, frequency:522.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:11:44, frequency:530.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:12:52, frequency:538.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:14:00, frequency:546.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:15:08, frequency:554.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:16:17, frequency:562.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:17:24, frequency:570.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:18:32, frequency:578.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:19:41, frequency:586.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:20:49, frequency:594.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:21:57, frequency:602.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:23:04, frequency:610.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:24:12, frequency:618.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:25:21, frequency:626.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:26:29, frequency:634.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:27:37, frequency:642.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:28:45, frequency:650.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:29:52, frequency:658.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:31:01, frequency:666.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:32:09, frequency:674.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:33:16, frequency:682.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:34:24, frequency:690.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:35:32, frequency:698.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:36:40, frequency:706.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:37:49, frequency:714.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:38:57, frequency:722.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:40:04, frequency:730.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:41:13, frequency:738.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:42:21, frequency:746.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:43:28, frequency:754.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:44:37, frequency:762.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:45:45, frequency:770.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:46:53, frequency:778.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:48:02, frequency:786.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:49:10, frequency:794.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:50:17, frequency:802.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:51:25, frequency:810.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:52:34, frequency:818.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:53:42, frequency:826.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:54:50, frequency:834.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:55:59, frequency:842.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:57:07, frequency:850.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-23 19:58:15, frequency:858.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:00:02, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:00:20, modulation: T4 coderate:R1_2, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:11.8", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:00:38, modulation: T4 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16.7", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:00:57, modulation: T4 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:20.4", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:01:16, modulation: T16 coderate:R1_2, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16.3", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:01:34, modulation: T16 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:20.9", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:01:53, modulation: T16 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:25.1", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:02:12, modulation: T64 coderate:R1_2, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:22.0", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:02:30, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:26.2", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:02:49, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:26.2", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:03:08, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:30.6", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:04:42, frequency:199 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:05:00, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:11.8", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:05:19, modulation: T4 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16.7", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:05:37, modulation: T4 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:20.4", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:05:56, modulation: T16 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:16.3", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:06:15, modulation: T16 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:20.9", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:06:33, modulation: T16 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:25.1", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:06:52, modulation: T64 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:22.0", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:07:11, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:26.2", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:07:30, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:26.2", "threshold_algorithm_result": false}
+dvbt_20_performance_0db_echo_channel: current_time:2020-06-23 20:07:48, modulation: T64 coderate:R3_4, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:30.6", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-23 20:09:42, modulation: T4, coderate:R1_2, guard:G1_4,frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-86.7", "threshold_algorithm_result": false}
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-23 20:10:51, frequency:198.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_21_receiver_signal_input__min_level: current_time:2020-06-23 20:11:59, frequency:226.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:13:54, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:14:09, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:14:25, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:14:40, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:14:55, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:15:10, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:15:25, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:15:41, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:15:56, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_22_minimun_signal_level_0db: current_time:2020-06-23 20:16:11, modulation: T4 coderate:R1_2, frequency:199 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-82.7", "threshold_algorithm_result": false}
+dvbt_25_analogue_singnal_other_channel: current_time:2020-06-23 20:20:00, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:-59.6", "threshold_algorithm_result": false}
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:27:20, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:29:36, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:31:54, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:34:10, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:36:25, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:38:40, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:40:55, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:43:09, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:45:13, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 21.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:47:49, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 20.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:50:17, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:53:05, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:55:16, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:57:36, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 20:59:52, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:02:07, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:04:11, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 21.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:06:10, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 21.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:08:25, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 20.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:11:02, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 20.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:13:01, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:15:13, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:17:29, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:20:03, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:22:35, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:25:21, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:28:20, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:31:14, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:34:22, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:36:33, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:38:44, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:40:58, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:43:10, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:46:23, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:48:40, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:50:56, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:53:13, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:55:29, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 21:57:34, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 21.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:00:11, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 20.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:02:25, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:05:10, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:08:03, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.10
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:10:13, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:12:31, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:14:48, modulation: T64 coderate:R3_4, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.60
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:17:47, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:19:46, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:22:20, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:24:14, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:26:14, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:28:25, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:30:19, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:32:30, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:34:12, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:36:45, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:38:28, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:40:28, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:42:39, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:44:58, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:47:27, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:50:09, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:52:46, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:54:40, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 22:59:12, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:01:08, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:03:09, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:05:08, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:07:07, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:09:19, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:11:18, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:13:15, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:15:26, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:17:25, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:19:24, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:21:34, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 14.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:24:00, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:25:59, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:28:27, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:31:04, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:33:04, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:35:03, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:36:56, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:38:56, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:41:12, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:43:36, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:45:20, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:47:02, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:49:03, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:51:13, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:53:30, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:55:59, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-23 23:58:41, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:01:20, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:03:56, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:05:49, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:07:44, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:09:44, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:11:39, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:11:58, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,{"msg": "The initial value is outside the Mosaic threshold:23.2", "threshold_algorithm_result": false}
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:13:58, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:15:58, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:17:58, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:19:59, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:21:59, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:23:56, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:26:18, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:28:42, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:31:01, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:32:43, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:34:43, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:36:42, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:38:59, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:41:14, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:43:42, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:46:19, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:48:51, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:51:29, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:54:19, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:56:13, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 00:58:08, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:00:57, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:02:53, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:04:54, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:06:54, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:08:48, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:10:41, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:12:43, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:14:10, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:15:47, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:17:46, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:20:15, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:22:56, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:25:31, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:27:24, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:29:18, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:31:23, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:33:22, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:35:43, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:37:26, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:39:06, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:41:07, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:43:18, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:45:30, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:47:12, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:49:27, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:51:56, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:54:26, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:57:08, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 01:59:47, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:02:27, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:05:06, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:07:43, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:12:53, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:15:30, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:18:06, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:20:43, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:23:19, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:25:23, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:27:05, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:28:41, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:30:56, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:33:37, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:36:16, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:38:53, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:41:27, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:43:31, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:45:11, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:47:35, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:49:13, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:50:55, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:52:48, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:54:48, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:56:58, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 02:59:15, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:01:31, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:03:59, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:06:28, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:09:05, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:11:46, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:14:26, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:17:06, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:19:47, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:22:25, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:25:03, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:27:40, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:30:17, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:32:54, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:34:58, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 18.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:36:35, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 17.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:38:36, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:40:51, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 16.20
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:43:19, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:45:59, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:48:37, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:51:14, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 15.70
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:52:32, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:54:11, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:55:25, frequency:666 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:56:40, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:57:53, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 03:59:11, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 04:00:28, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_32_performance_SFN_inside_guard: current_time:2020-06-24 04:02:07, frequency:199 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-24 04:08:48, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-24 04:15:02, modulation: T64 coderate:R2_3, frequency:199 MHz,bandwidth:7 MHZ,The threshold: 1.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-24 04:21:16, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-24 04:26:12, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 0.00
+dvbt_33_performance_SFN_outside_guard: current_time:2020-06-24 04:31:08, modulation: T64 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 0.00
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:19:42, modulation: T4 coderate:R1_2, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:20:00, modulation: T16 coderate:R3_4, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:20:17, modulation: T16 coderate:R5_6, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:20:34, modulation: T16 coderate:R7_8, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:20:52, modulation: T64 coderate:R1_2, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:21:09, modulation: T64 coderate:R2_3, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:21:26, modulation: T64 coderate:R2_3, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:21:44, modulation: T64 coderate:R3_4, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:22:01, modulation: T64 coderate:R5_6, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:22:18, modulation: T64 coderate:R7_8, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:23:28, frequency:184.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:24:35, frequency:191.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:25:44, frequency:198.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:26:51, frequency:205.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:27:59, frequency:212.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:29:07, frequency:219.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:30:15, frequency:226.5 MHz,bandwidth:7 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:31:24, frequency:474.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:32:32, frequency:482.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:33:40, frequency:490.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:34:48, frequency:498.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:35:56, frequency:506.0 MHz,bandwidth:8 Ksym/s, Lock fail
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:47:03, modulation: T4 coderate:R1_2, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:47:21, modulation: T16 coderate:R3_4, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:47:39, modulation: T16 coderate:R5_6, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:10.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:49:25, modulation: T4 coderate:R1_2, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:51:06, modulation: T16 coderate:R3_4, frequency:177.5 MHz,bandwidth:7 MHZ,The threshold: 10.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:52:02, modulation: T16 coderate:R5_6, frequency:177.5 MHz,bandwidth:7 MHZ,The threshold: 12.00
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:52:19, modulation: T16 coderate:R7_8, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:53:31, modulation: T64 coderate:R1_2, frequency:177.5 MHz,bandwidth:7 MHZ,The threshold: 11.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:53:47, modulation: T64 coderate:R2_3, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:54:05, modulation: T64 coderate:R2_3, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:54:22, modulation: T64 coderate:R3_4, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:54:40, modulation: T64 coderate:R5_6, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:54:58, modulation: T64 coderate:R7_8, frequency:177.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:56:27, modulation: T64 coderate:R7_8, frequency:184.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:57:52, modulation: T64 coderate:R7_8, frequency:191.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:59:16, modulation: T4 coderate:R1_2, frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:01:36, modulation: T4 coderate:R2_3, frequency:198.5 MHz,bandwidth:7 MHZ,The threshold: 3.50
