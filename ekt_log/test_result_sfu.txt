@@ -18313,3 +18313,34 @@ dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:56:27, modulati
 dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:57:52, modulation: T64 coderate:R7_8, frequency:191.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
 dvbt_19_performance_gaussian_channel: current_time:2020-06-24 09:59:16, modulation: T4 coderate:R1_2, frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
 dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:01:36, modulation: T4 coderate:R2_3, frequency:198.5 MHz,bandwidth:7 MHZ,The threshold: 3.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:04:14, modulation: T4 coderate:R3_4, frequency:198.5 MHz,bandwidth:7 MHZ,The threshold: 4.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:06:12, modulation: T4 coderate:R5_6, frequency:198.5 MHz,bandwidth:7 MHZ,The threshold: 5.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:07:56, modulation: T4 coderate:R7_8, frequency:198.5 MHz,bandwidth:7 MHZ,The threshold: 6.00
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:09:38, modulation: T16 coderate:R1_2, frequency:198.5 MHz,bandwidth:7 MHZ,The threshold: 6.00
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:09:55, modulation: T16 coderate:R2_3, frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:11:39, modulation: T16 coderate:R3_4, frequency:198.5 MHz,bandwidth:7 MHZ,The threshold: 10.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:12:35, modulation: T16 coderate:R5_6, frequency:198.5 MHz,bandwidth:7 MHZ,The threshold: 12.00
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:12:52, modulation: T16 coderate:R7_8, frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:14:05, modulation: T64 coderate:R1_2, frequency:198.5 MHz,bandwidth:7 MHZ,The threshold: 11.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:14:22, modulation: T64 coderate:R2_3, frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:14:39, modulation: T64 coderate:R2_3, frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:14:56, modulation: T64 coderate:R3_4, frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:15:14, modulation: T64 coderate:R5_6, frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:15:31, modulation: T64 coderate:R7_8, frequency:198.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:16:56, modulation: T64 coderate:R7_8, frequency:205.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:18:20, modulation: T64 coderate:R7_8, frequency:212.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:19:45, modulation: T64 coderate:R7_8, frequency:219.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:21:10, modulation: T4 coderate:R1_2, frequency:226.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:23:28, modulation: T4 coderate:R2_3, frequency:226.5 MHz,bandwidth:7 MHZ,The threshold: 3.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:26:07, modulation: T4 coderate:R3_4, frequency:226.5 MHz,bandwidth:7 MHZ,The threshold: 4.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:28:07, modulation: T4 coderate:R5_6, frequency:226.5 MHz,bandwidth:7 MHZ,The threshold: 5.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:29:49, modulation: T4 coderate:R7_8, frequency:226.5 MHz,bandwidth:7 MHZ,The threshold: 6.00
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:31:57, modulation: T16 coderate:R1_2, frequency:226.5 MHz,bandwidth:7 MHZ,The threshold: 7.00
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:33:27, modulation: T16 coderate:R2_3, frequency:226.5 MHz,bandwidth:7 MHZ,The threshold: 9.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:35:09, modulation: T16 coderate:R3_4, frequency:226.5 MHz,bandwidth:7 MHZ,The threshold: 10.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:36:06, modulation: T16 coderate:R5_6, frequency:226.5 MHz,bandwidth:7 MHZ,The threshold: 12.00
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:36:22, modulation: T16 coderate:R7_8, frequency:226.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:37:34, modulation: T64 coderate:R1_2, frequency:226.5 MHz,bandwidth:7 MHZ,The threshold: 11.50
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:37:51, modulation: T64 coderate:R2_3, frequency:226.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:38:09, modulation: T64 coderate:R2_3, frequency:226.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
+dvbt_19_performance_gaussian_channel: current_time:2020-06-24 10:38:26, modulation: T64 coderate:R3_4, frequency:226.5 MHz,bandwidth:7 MHZ,{"msg": "The initial value is outside the Mosaic threshold:12.0", "threshold_algorithm_result": false}
