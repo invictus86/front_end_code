@@ -165,3 +165,7 @@ if __name__ == '__main__':
             dvbt_14_verification_quality_json_to_csv(
                 "../../ekt_json/dvbt_14_verification_signal_quality_indicator_sqi.json",
                 "../../ekt_test_report/dvbt_14_verification_signal_quality_indicator_sqi.csv")
+    # 测试完成之后复原主界面，方便下个测试项
+    stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
+                                ["tests/front_end_test/testcases.py::test_exit"], ekt_cfg.DVB_T2_SET_SEARCH_CATEGORY,
+                                ekt_cfg.DVB_T2_SET_SEARCH_REMOTE)

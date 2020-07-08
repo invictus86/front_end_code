@@ -20696,3 +20696,11 @@ dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:05:36, modu
 dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:07:02, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 20.60
 dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:10:11, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 20.60
 dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:11:51, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 20.10
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:13:35, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 20.10
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:15:15, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 20.10
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:17:11, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.60
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:19:06, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.60
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:21:02, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.60
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:23:05, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.60
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:25:05, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.60
+dvbt2_69_performance_in_SFN_inside_guard: current_time:2020-07-08 10:27:03, modulation: T256 coderate:R2_3, frequency:666 MHz,bandwidth:8 MHZ,The threshold: 19.60
