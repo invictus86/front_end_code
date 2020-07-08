@@ -176,14 +176,19 @@ if __name__ == '__main__':
                 continue
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_framing_fftsize_dvbt2(PARAMETER[0])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_constellation_dvbt2(PARAMETER[1])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_framing_pilot_dvbt2(PARAMETER[2])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_coderate_dvbt2(PARAMETER[3])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_framing_guard_dvbt2(PARAMETER[4])
+            time.sleep(1)
 
             res, test_result = iterate_to_find_threshold_interferer_attenuation_step_by_step(sfu_ip,
                                                                                              float(PARAMETER[5]))

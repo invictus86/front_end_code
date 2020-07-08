@@ -114,14 +114,19 @@ if __name__ == '__main__':
     for PARAMETER in load_dict.get("test_parame_result"):
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_fftsize_dvbt2(PARAMETER[0])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_bicm_constellation_dvbt2(PARAMETER[1])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_pilot_dvbt2(PARAMETER[2])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_bicm_coderate_dvbt2(PARAMETER[3])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_guard_dvbt2(PARAMETER[4])
+        time.sleep(1)
 
         start_data_result, test_result = mosaic_algorithm(sfu_ip, LEVEL_30, LEVEL_30)
         print (

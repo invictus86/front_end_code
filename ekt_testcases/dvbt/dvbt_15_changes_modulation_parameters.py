@@ -128,12 +128,16 @@ if __name__ == '__main__':
     for PARAMETER in load_dict.get("test_parame_result"):
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_fftmode_dvbt(PARAMETER[0])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_constellation_dvbt(PARAMETER[1])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_coderate_dvbt(PARAMETER[2])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_guard_dvbt(PARAMETER[3])
+        time.sleep(1)
 
         start_data_result = mosaic_algorithm(sfu_ip, LEVEL_50, LEVEL_50)
         print ("dvbt_15_changes_modulation_parameters: current_time:{}, modulation: {},coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(

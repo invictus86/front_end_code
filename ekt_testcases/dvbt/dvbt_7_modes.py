@@ -135,12 +135,17 @@ if __name__ == '__main__':
             continue
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_fftmode_dvbt(PARAME[0])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_constellation_dvbt(PARAME[1])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_coderate_dvbt(PARAME[2])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_guard_dvbt(PARAME[3])
+        time.sleep(1)
+
         start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, float("%.2f" % (LEVEL_60 - LEVEL_OFFSET_666)), "-60")
         print (
             "dvbt_7_modes: current_time:{}, fft_size: {}, modulation: {}, coderate:{},guard:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(

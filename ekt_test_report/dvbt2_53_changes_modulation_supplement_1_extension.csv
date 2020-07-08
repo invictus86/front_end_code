@@ -1,0 +1,3 @@
+fft_size,modulation,pilot,code_rate,guard,rp_level,level
+M32K,T256,PP2,R2_3,G1_16,62,Pass
+M32E,T256,PP2,R2_3,G1_16,62,Pass

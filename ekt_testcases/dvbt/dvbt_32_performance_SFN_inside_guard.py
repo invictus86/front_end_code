@@ -367,6 +367,7 @@ if __name__ == '__main__':
                     continue
                 specan = Ektsfu(sfu_ip)
                 specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(LOSS[0])))
+                time.sleep(1)
 
                 res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[8])
                 print(

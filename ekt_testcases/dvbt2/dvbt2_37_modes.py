@@ -13,7 +13,8 @@ from ekt_lib.ekt_sfu import Ektsfu
 from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
-from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency, write_json_file, read_json_file, dvbt2_37_modes_json_to_csv
+from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency, write_json_file, read_json_file, \
+    dvbt2_37_modes_json_to_csv, get_ldata_from_lf_fftsize
 
 FREQUENCY_666 = 666.0
 
@@ -152,16 +153,23 @@ if __name__ == '__main__':
 
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_bicm_constellation_dvbt2(PARAME[0])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_bicm_coderate_dvbt2(PARAME[1])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_fftsize_dvbt2(PARAME[2])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_pilot_dvbt2(PARAME[3])
+        time.sleep(1)
+        ldata = get_ldata_from_lf_fftsize(PARAME[4], PARAME[2])
         specan = Ektsfu(sfu_ip)
-        specan.set_digitaltv_framing_ldata_dvbt2(PARAME[4])
+        specan.set_digitaltv_framing_ldata_dvbt2(str(ldata))
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_guard_dvbt2(PARAME[5])
+        time.sleep(1)
 
         start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
         print (

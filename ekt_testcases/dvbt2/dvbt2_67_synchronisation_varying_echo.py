@@ -230,16 +230,22 @@ if __name__ == '__main__':
 
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_framing_fftsize_dvbt2(PARAMETER[0])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_constellation_dvbt2(PARAMETER[1])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_framing_pilot_dvbt2(PARAMETER[2])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_coderate_dvbt2(PARAMETER[3])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_framing_guard_dvbt2(PARAMETER[4])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_basicdelay("2", "{}E-6".format(str(PARAMETER[7])))
+            time.sleep(1)
 
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[6])
             print(

@@ -158,14 +158,19 @@ if __name__ == '__main__':
             continue
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_fftmode_dvbt(PARAMETER[0])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_constellation_dvbt(PARAMETER[1])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_coderate_dvbt(PARAMETER[2])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_coding_guard_dvbt(PARAMETER[3])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_fading_profile_pathloss("1", "2", "{} dB".format(str(PARAMETER[6])))
+        time.sleep(1)
 
         res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[4])
         print(

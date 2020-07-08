@@ -42,7 +42,7 @@ class Ektsfe(object):
 
     def set_frequency_frequency_frequency(self, frequency):
         """
-         Setting the channel.
+         Setting the frequency of current channel
          example : Remote control command:
             FREQ 100 MHz
             FREQ:CW 100 MHz
@@ -355,8 +355,10 @@ class Ektsfe(object):
             DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
         :return:
         """
+        self.specan.write('OUTP {}'.format("OFF"))
         self.specan.write('DVBS:RATE {}'.format(code_rate))
         logging.info('DVBS:RATE {}'.format(code_rate))
+        self.specan.write('OUTP {}'.format("ON"))
         # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan

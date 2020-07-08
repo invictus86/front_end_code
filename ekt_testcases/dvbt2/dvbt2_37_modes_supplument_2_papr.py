@@ -138,8 +138,10 @@ if __name__ == '__main__':
             continue
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_system_papr_dvbt2(PARAME[0])
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_ldata_dvbt2("59")
+        time.sleep(1)
 
         start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
         print (

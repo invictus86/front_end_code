@@ -236,16 +236,22 @@ if __name__ == '__main__':
                 continue
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_pathloss("2", "1", "{} dB".format(str(FADING[0])))
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_basicdelay("2", "{}E-6".format(FADING[1]))
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(FADING[2])))
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_basicdelay("3", "{}E-6".format(FADING[3]))
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_pathloss("4", "1", "{} dB".format(str(FADING[4])))
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_basicdelay("4", "{}E-6".format(FADING[5]))
+            time.sleep(1)
 
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, PARAMETER[4])
             print(

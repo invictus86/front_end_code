@@ -190,12 +190,16 @@ if __name__ == '__main__':
                 continue
             specan = Ektsfu(sfu_ip)
             specan.set_level_level_level("dBm", "-60")
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_constellation_dvbt(MODULATION_CODERATE_SPEC[0])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_coderate_dvbt(MODULATION_CODERATE_SPEC[1])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_guard_dvbt(MODULATION_CODERATE_SPEC[2])
+            time.sleep(1)
 
             res, test_result = iterate_to_find_threshold_step_by_step(sfu_ip,
                                                          float("%.2f" % ((MODULATION_CODERATE_SPEC[3]) -

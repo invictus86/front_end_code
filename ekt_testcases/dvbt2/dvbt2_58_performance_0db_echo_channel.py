@@ -40,8 +40,8 @@ KE32 = "M32E"
 KN32 = "M32K"
 
 MODULATION__CODERATE_SPEC_LIST = [
-    [MODULATION_256QAM, "PP7", CODE_RATE_3_4, GUARD_G1_8, 27.9, None],
-    [MODULATION_256QAM, "PP7", CODE_RATE_3_4, GUARD_G1_16, 27.9, None],
+    [MODULATION_256QAM, "PP2", CODE_RATE_3_4, GUARD_G1_8, 27.9, None],
+    [MODULATION_256QAM, "PP2", CODE_RATE_3_4, GUARD_G1_16, 27.9, None],
 
     [MODULATION_256QAM, "PP4", CODE_RATE_3_4, GUARD_G1_16, 27.4, None],
     [MODULATION_256QAM, "PP4", CODE_RATE_3_4, GUARD_G1_32, 27.4, None],
@@ -197,13 +197,16 @@ if __name__ == '__main__':
                 continue
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_constellation_dvbt2(MODULATION_CODERATE_SPEC[0])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_framing_pilot_dvbt2(MODULATION_CODERATE_SPEC[1])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_coderate_dvbt2(MODULATION_CODERATE_SPEC[2])
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_framing_guard_dvbt2(MODULATION_CODERATE_SPEC[3])
-            time.sleep(5)
+            time.sleep(1)
 
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, MODULATION_CODERATE_SPEC[4] + 3)
             print (

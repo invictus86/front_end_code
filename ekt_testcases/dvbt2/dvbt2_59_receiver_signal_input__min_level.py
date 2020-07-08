@@ -217,20 +217,20 @@ if __name__ == '__main__':
                 continue
             specan = Ektsfu(sfu_ip)
             specan.set_level_level_level("dBm", "-60")
-            time.sleep(2)
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_constellation_dvbt2(MODULATION_CODERATE_SPEC[0])
-            time.sleep(2)
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_bicm_coderate_dvbt2(MODULATION_CODERATE_SPEC[1])
-            time.sleep(2)
+            time.sleep(1)
             if MODULATION_CODERATE_SPEC[0] == MODULATION_QPSK:
                 specan = Ektsfu(sfu_ip)
                 specan.set_digitaltv_system_modulation_dvbt2("T2")
             else:
                 specan = Ektsfu(sfu_ip)
                 specan.set_digitaltv_system_modulation_dvbt2("T64")
-
+            time.sleep(1)
             res, test_result = iterate_to_find_threshold_step_by_step(sfu_ip,
                                                                       float("%.2f" % ((MODULATION_CODERATE_SPEC[2]) -FREQUENCY_LEVEL_OFFSET[0][1] + 5)),
                                                                       level_offset=str(FREQUENCY_LEVEL_OFFSET[0][1]))

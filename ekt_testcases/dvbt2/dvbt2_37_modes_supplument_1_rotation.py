@@ -142,6 +142,7 @@ if __name__ == '__main__':
             continue
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_bicm_constelrotation_dvbt2(PARAME[0])
+        time.sleep(1)
 
         start_data_result, mosaic_result = mosaic_algorithm(sfu_ip, float(LEVEL_50), float(LEVEL_50))
         print (

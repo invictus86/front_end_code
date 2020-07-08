@@ -181,7 +181,7 @@ if __name__ == '__main__':
             time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_digitaltv_coding_guard_dvbt(MODULATION_CODERATE_SPEC[2])
-            time.sleep(3)
+            time.sleep(1)
 
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, MODULATION_CODERATE_SPEC[3] + 5)
             print ("dvbt_19_performance_gaussian_channel: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(

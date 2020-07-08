@@ -107,7 +107,7 @@ def mosaic_algorithm_fading_att(sfu_ip, test_att_data, can_play_data):
     """
     judge if test att contains mosaics
     :param sfu_ip: sfu ip
-    :param test_att_data: test
+    :param test_att_data: test att
     :param can_play_data:
     :return:mosaic_algorithm_result
     """

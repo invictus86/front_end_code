@@ -131,9 +131,10 @@ if __name__ == '__main__':
 
             specan = Ektsfe(sfe_ip)
             specan.set_digitaltv_coding_coderate(code_rate_cn[0][0])
+            time.sleep(1)
             specan = Ektsfe(sfe_ip)
             specan.set_level_level_level(str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])) + " dBm")
-            time.sleep(5)
+            time.sleep(1)
 
             _, mosaic_result = mosaic_algorithm(sfe_ip, str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                                 str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])))

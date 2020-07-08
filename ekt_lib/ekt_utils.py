@@ -139,9 +139,33 @@ def read_json_file(file_path):
     return load_dict
 
 
+def get_ldata_from_lf_fftsize(lf, fftsize):
+    """
+    get ldata from lf and fftsize
+    :param lf:l_f data
+    :param fftsize:fftsize_tyoe
+    :return:ldata
+    """
+    dict_fftsize_diffence = {
+        "M1K": 16,
+        "M2K": 8,
+        "M4K": 4,
+        "M8K": 2,
+        "M8E": 2,
+        "M16K": 1,
+        "M16E": 1,
+        "M32K": 1,
+        "M32E": 1
+    }
+    ldata = lf - dict_fftsize_diffence.get(fftsize)
+    return ldata
+
+
 def write_json_file(file_path, load_dict):
     """
     write json file from file path
+    :param file_path:the path of file
+    :param load_dict:dict data you want to write
     :return:
     """
     with open(file_path, "w") as dump_f:
@@ -1496,6 +1520,22 @@ def dvbt2_37_modes_supplument_2_papr_json_to_csv(json_path, csv_path):
     for i in list_data:
         list_required_data.append([i[0], i[1]])
     pd_data = pd.DataFrame(list_required_data, columns=['PAPR', 'mosic_result'])
+    pd_data.to_csv(csv_path, index=None)
+
+
+def dvbt2_37_modes_supplument_3_fft_pilot_json_to_csv(json_path, csv_path):
+    """
+    json to csv
+    :param json_path:
+    :param csv_path:
+    :return:
+    """
+    load_dict = read_json_file(json_path)
+    list_data = load_dict.get("test_parame_result")
+    list_required_data = []
+    for i in list_data:
+        list_required_data.append([i[0], i[1], i[2], i[3], i[5], i[6]])
+    pd_data = pd.DataFrame(list_required_data, columns=['modulation', 'code_rate', 'fft_size', 'pilot', 'guard', 'mosic_result'])
     pd_data.to_csv(csv_path, index=None)
 
 

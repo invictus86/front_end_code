@@ -14,7 +14,7 @@ from pathlib2 import Path
 from ekt_lib.ekt_stb_tester import stb_tester_execute_testcase
 from ekt_lib.threshold_algorithm_SFU import mosaic_algorithm
 from ekt_lib.ekt_utils import write_test_result, find_level_offset_by_frequency, write_json_file, read_json_file, \
-    dvbt2_54_time_interleaving_to_csv
+    dvbt2_54_time_interleaving_to_csv, get_ldata_from_lf_fftsize
 
 MODULATION_QPSK = "T4"
 MODULATION_16QAM = "T16"
@@ -51,11 +51,11 @@ FREQUENCY_666 = 666
 LEVEL_OFFSET_666 = find_level_offset_by_frequency("DVBT_T2_FREQUENCY_LEVEL_OFFSET", 666.0)
 LEVEL_50_666 = str("%.2f" % (-50 - LEVEL_OFFSET_666))
 
-# 与tony讨论,设置项需确认, SFU会报错
+# 与tony讨论,Lf由11改为10，否则仪器报错
 
 PARAMETER_LIST = [
     [0, 3, 200, 60, None],
-    [1, 2, 68, 11, None]
+    [1, 2, 68, 10, None]
 ]
 
 my_file = Path("../../ekt_json/dvbt2_54_time_interleaving.json")
@@ -157,11 +157,14 @@ if __name__ == '__main__':
             continue
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_bicm_timeinterl_type_dvbt2(str(PARAMETER[0]))
+        time.sleep(1)
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_bicm_timeinterllength_dvbt2(str(PARAMETER[1]))
+        time.sleep(1)
+        # "M32K" 差值为1
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_ldata_dvbt2(str((PARAMETER[3] - 1)))
-        time.sleep(5)
+        time.sleep(1)
 
         start_data_result, test_result = mosaic_algorithm(sfu_ip, LEVEL_50_666, LEVEL_50_666)
         print (

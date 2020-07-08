@@ -2524,8 +2524,10 @@ class Ektsfu(object):
             T2DV:PLP1:RATE R3_5
         :return:
         """
+        self.specan.write('OUTP {}'.format("OFF"))
         self.specan.write('T2DV:PLP1:RATE {}'.format(code_rate))
         logging.info('T2DV:PLP1:RATE {}'.format(code_rate))
+        self.specan.write('OUTP {}'.format("ON"))
         # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
@@ -2541,8 +2543,10 @@ class Ektsfu(object):
             T2DV:PLP1:CONS T256
         :return:
         """
+        self.specan.write('OUTP {}'.format("OFF"))
         self.specan.write('T2DV:PLP1:CONS {}'.format(constellation_type))
         logging.info('T2DV:PLP1:CONS {}'.format(constellation_type))
+        self.specan.write('OUTP {}'.format("ON"))
         # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
@@ -2618,8 +2622,10 @@ class Ektsfu(object):
             T2DV:L:CONS T64
         :return:
         """
+        self.specan.write('OUTP {}'.format("OFF"))
         self.specan.write('T2DV:L:CONS {}'.format(modulation_type))
         logging.info('T2DV:L:CONS {}'.format(modulation_type))
+        self.specan.write('OUTP {}'.format("ON"))
         # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
@@ -3022,7 +3028,7 @@ def _test_code():
     # specan.set_noise_impulsive_ci("45")
     # specan.set_noise_impulsive_frameduration("0.1")
     # specan.set_noise_settings_bandwith("ON")
-    specan.set_noise_settings_receiver("24e6")
+    # specan.set_noise_settings_receiver("24e6")
     # specan.set_fading_fading_state("ON")
     # specan.set_fading_profile_parameterset("TU12")
     # specan.set_fading_profile_configuration("D30Fine")
@@ -3062,7 +3068,7 @@ def _test_code():
     # specan.set_digitaltv_framing_channelbandwidth_dvbt2("BW_7")
     # specan.set_digitaltv_framing_guard_dvbt2("G1128")
     # specan.set_digitaltv_bicm_coderate_dvbt2("R3_4")
-    # specan.set_digitaltv_bicm_constellation_dvbt2("T64")
+    specan.set_digitaltv_bicm_constellation_dvbt2("T64")
     # specan.set_digitaltv_bicm_constelrotation_dvbt2("ON")
     # specan.set_digitaltv_settings_pidtest_dvbt2("NULL")
     # specan.set_digitaltv_input_source_j83b("TSPLayer")

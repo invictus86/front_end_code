@@ -25,7 +25,7 @@ def stb_tester_execute_testcase(ip, banch_id, test_cases, category, remote):
     :param test_cases:test case item
     :param category:job category
     :param remote:RCU
-    :return:
+    :return:test cases result
     """
     while True:
         try:

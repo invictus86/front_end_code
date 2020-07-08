@@ -367,11 +367,14 @@ if __name__ == '__main__':
 
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_basicdelay("2", "{}E-6".format(str(main_delay)))
+            time.sleep(1)
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_basicdelay("3", "{}E-6".format(str(per_delay)))
+            time.sleep(1)
 
             specan = Ektsfu(sfu_ip)
             specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(DELAY[0])))
+            time.sleep(1)
 
             res, test_result = iterate_to_find_threshold_fading_att_step_by_step(sfu_ip, 24)
             print(
