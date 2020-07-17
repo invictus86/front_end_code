@@ -191,8 +191,10 @@ if __name__ == '__main__':
                               "dvbt_28_co_channek_interference_analogue: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), PARAMETER[1],
                                   PARAMETER[2], str(FREQUENCY[0]), str(8), res) + "\n")
-
-            PARAMETER[5] = str("%.2f" % (float(test_result)))
+            if test_result == None:
+                PARAMETER[5] = None
+            else:
+                PARAMETER[5] = str("%.2f" % (float(test_result)))
             write_json_file("../../ekt_json/dvbt_28_co_channek_interference_analogue.json", load_dict)
             dvbt_28_analogue_signal_other_json_to_csv(
                 "../../ekt_json/dvbt_28_co_channek_interference_analogue.json",

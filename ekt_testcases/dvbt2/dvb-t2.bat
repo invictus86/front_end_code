@@ -4,6 +4,7 @@ python ./dvbt2_36_signal_bandwidths.py
 python ./dvbt2_37_modes.py
 python ./dvbt2_37_modes_supplument_1_rotation.py
 python ./dvbt2_37_modes_supplument_2_papr.py
+python ./dvbt2_37_modes_supplument_3_fft_pilot.py
 python ./dvbt2_44_normal_mode.py
 python ./dvbt2_51_verification_signal_strength_indicator_ssi.py
 python ./dvbt2_52_verification_signal_quality_indicator_sqi.py

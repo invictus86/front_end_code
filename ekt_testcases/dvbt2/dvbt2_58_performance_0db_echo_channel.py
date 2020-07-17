@@ -51,7 +51,7 @@ MODULATION__CODERATE_SPEC_LIST = [
     [MODULATION_256QAM, "PP7", CODE_RATE_3_4, GUARD_G1_128, 26.6, None],
 ]
 
-FREQUENCY_LIST = [177.5, 198.5, 226.5, 474.0, 522.0, 570.0, 628.0, 666.0, 714.0, 762.0, 810.0, 858.0]
+FREQUENCY_LIST = [177.5, 198.5, 226.5, 474.0, 522.0, 570.0, 618.0, 666.0, 714.0, 762.0, 810.0, 858.0]
 
 my_file = Path("../../ekt_json/dvbt2_58_performance_0db_echo_channel.json")
 if my_file.exists():

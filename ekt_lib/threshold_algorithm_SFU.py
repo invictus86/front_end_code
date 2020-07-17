@@ -155,8 +155,8 @@ def mosaic_algorithm_interferer_attenuation(sfu_ip, test_attenuation_data, can_p
     """
     specan = Ektsfu(sfu_ip)
     specan.set_interferer_attenuation(str(test_attenuation_data))
-    print ("set_noise_awgn_cn:{}".format(str(test_attenuation_data)))
-    logging.info("set_noise_awgn_cn:{}".format(str(test_attenuation_data)))
+    print ("set_attenuation_data:{}".format(str(test_attenuation_data)))
+    logging.info("set_attenuation_data:{}".format(str(test_attenuation_data)))
     time.sleep(5)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],

@@ -26,7 +26,7 @@ frequency,modulation,pilot,code_rate,guard,bandwidth,level,strength
 199,T256,PP4,R2_3,G19256,7,-40,100
 ,,,,,,-50,96
 ,,,,,,-60,82
-,,,,,,-70,46
+,,,,,,-70,42
 ,,,,,,-80,58
 ,,,,,,-95,
 227,T256,PP4,R2_3,G19256,7,-40,100
@@ -39,7 +39,7 @@ frequency,modulation,pilot,code_rate,guard,bandwidth,level,strength
 ,,,,,,-50,98
 ,,,,,,-60,91
 ,,,,,,-70,62
-,,,,,,-80,22
+,,,,,,-80,18
 ,,,,,,-95,
 666,T256,PP4,R3_5,G19256,7,-40,100
 ,,,,,,-50,98
@@ -51,7 +51,7 @@ frequency,modulation,pilot,code_rate,guard,bandwidth,level,strength
 ,,,,,,-50,97
 ,,,,,,-60,90
 ,,,,,,-70,54
-,,,,,,-80,58
+,,,,,,-80,
 ,,,,,,-95,
 474,T256,PP4,R3_4,G1_16,7,-40,100
 ,,,,,,-50,96
@@ -69,5 +69,5 @@ frequency,modulation,pilot,code_rate,guard,bandwidth,level,strength
 ,,,,,,-50,94
 ,,,,,,-60,78
 ,,,,,,-70,38
-,,,,,,-80,
+,,,,,,-80,58
 ,,,,,,-95,

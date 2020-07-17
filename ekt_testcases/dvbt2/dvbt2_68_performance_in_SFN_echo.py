@@ -166,6 +166,10 @@ if __name__ == '__main__':
     specan.set_impairments_modulator("OFF")
     specan = Ektsfu(sfu_ip)
     specan.set_impairments_baseband("OFF")
+    specan = Ektsfu(sfu_ip)
+    specan.set_digitaltv_system_papr_dvbt2("TR")
+    specan = Ektsfu(sfu_ip)
+    specan.set_digitaltv_framing_ldata_dvbt2("61")
 
     specan = Ektsfu(sfu_ip)
     specan.set_fading_profile_state("2", "1", "ON")
@@ -192,7 +196,9 @@ if __name__ == '__main__':
             pass
         else:
             continue
-
+        if PARAMETER_FIXED[0] == 199:
+            specan = Ektsfu(sfu_ip)
+            specan.set_digitaltv_framing_ldata_dvbt2("45")
         specan = Ektsfu(sfu_ip)
         specan.set_frequency_frequency_frequency(str(int(PARAMETER_FIXED[0])) + "MHz")
         specan = Ektsfu(sfu_ip)
@@ -212,6 +218,11 @@ if __name__ == '__main__':
         specan.set_digitaltv_bicm_coderate_dvbt2(PARAMETER_FIXED[7])
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_guard_dvbt2(PARAMETER_FIXED[8])
+        if PARAMETER_FIXED[0] == 199:
+            specan = Ektsfu(sfu_ip)
+            specan.set_digitaltv_system_papr_dvbt2("TR")
+            specan = Ektsfu(sfu_ip)
+            specan.set_digitaltv_framing_ldata_dvbt2("45")
 
         # specan = Ektsfu(sfu_ip)
         # specan.set_fading_profile_additdelay("1", "2", "1.95E-6")

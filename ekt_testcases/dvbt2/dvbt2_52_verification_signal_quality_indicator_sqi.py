@@ -124,7 +124,9 @@ if __name__ == '__main__':
             pass
         else:
             continue
-
+        if PARAMETER[1] == "PP2":
+            specan = Ektsfu(sfu_ip)
+            specan.set_digitaltv_framing_ldata_dvbt2("45")
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_bicm_constellation_dvbt2(PARAMETER[0])
         specan = Ektsfu(sfu_ip)
@@ -159,6 +161,7 @@ if __name__ == '__main__':
             time.sleep(5)
             specan = Ektsfu(sfu_ip)
             specan.set_noise_awgn_cn(str(CN[0]))
+            time.sleep(5)
 
             stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                         ekt_cfg.DVB_T2_OCR_FUNCTION, ekt_cfg.DVB_T2_OCR_CATEGORY, ekt_cfg.DVB_T2_OCR_REMOTE)

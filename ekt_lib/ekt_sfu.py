@@ -2407,8 +2407,10 @@ class Ektsfu(object):
             T2DV:FFT:MODE M32E
         :return:
         """
+        self.specan.write('OUTP {}'.format("OFF"))
         self.specan.write('T2DV:FFT:MODE {}'.format(fft_type))
         logging.info('T2DV:FFT:MODE {}'.format(fft_type))
+        self.specan.write('OUTP {}'.format("ON"))
         # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
@@ -2427,8 +2429,10 @@ class Ektsfu(object):
             T2DV:GUAR:INT G1128
         :return:
         """
+        self.specan.write('OUTP {}'.format("OFF"))
         self.specan.write('T2DV:GUAR:INT {}'.format(guard_type))
         logging.info('T2DV:GUAR:INT {}'.format(guard_type))
+        self.specan.write('OUTP {}'.format("ON"))
         # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
@@ -2448,8 +2452,10 @@ class Ektsfu(object):
             T2DV:PIL PP7
         :return:
         """
+        self.specan.write('OUTP {}'.format("OFF"))
         self.specan.write('T2DV:PIL {}'.format(piloy_type))
         logging.info('T2DV:PIL {}'.format(piloy_type))
+        self.specan.write('OUTP {}'.format("ON"))
         # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan

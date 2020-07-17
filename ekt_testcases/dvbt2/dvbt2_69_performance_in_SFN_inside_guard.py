@@ -271,6 +271,8 @@ if __name__ == '__main__':
             pass
         else:
             continue
+        specan = Ektsfu(sfu_ip)
+        specan.set_noise_awgn_cn("30")
 
         specan = Ektsfu(sfu_ip)
         specan.set_frequency_frequency_frequency(str(PARAMETER[0]) + "MHz")
@@ -291,6 +293,11 @@ if __name__ == '__main__':
         specan.set_digitaltv_bicm_coderate_dvbt2(PARAMETER[7])
         specan = Ektsfu(sfu_ip)
         specan.set_digitaltv_framing_guard_dvbt2(PARAMETER[8])
+        if PARAMETER[0] == 199:
+            specan = Ektsfu(sfu_ip)
+            specan.set_digitaltv_system_papr_dvbt2("TR")
+            specan = Ektsfu(sfu_ip)
+            specan.set_digitaltv_framing_ldata_dvbt2("45")
 
         net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
         net.send_data(json.dumps({"cmd": "set_frequency_data", "frequency": str(int(PARAMETER[0]))}))

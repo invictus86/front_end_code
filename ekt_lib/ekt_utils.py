@@ -822,7 +822,7 @@ def dvbs2_18_dynamic_min_json_to_csv(json_path, csv_path):
             else:
                 list_required_data.append(["", "", j[0], j[1][0], j[2], j[3]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'modulation', 'code_rate', 'level', "max_mosic_result"])
+    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'modulation', 'code_rate', 'Minimum_RF_level', "Maximum _mosic_result"])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -1617,7 +1617,7 @@ def dvbt2_53_changes_modulation_parameters_to_csv(json_path, csv_path):
     for i in list_data:
         list_required_data.append([i[0], i[1], i[2], i[3], i[4], i[6], i[7]])
     pd_data = pd.DataFrame(list_required_data,
-                           columns=['fft_size', 'modulation', 'pilot', 'code_rate', 'guard', 'rp_level', 'level'])
+                           columns=['fft_size', 'modulation', 'pilot', 'code_rate', 'guard', 'rp_level', 'mosic_result'])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -1634,7 +1634,7 @@ def dvbt2_53_changes_modulation_supplement_2_PARP_json_to_csv(json_path, csv_pat
     for i in list_data:
         list_required_data.append([i[0], i[1], i[2], i[3], i[4], i[5], i[6], i[7]])
     pd_data = pd.DataFrame(list_required_data,
-                           columns=['fft_size', 'modulation', 'pilot', 'code_rate', 'guard', 'PAPR', 'rp_level', 'level'])
+                           columns=['fft_size', 'modulation', 'pilot', 'code_rate', 'guard', 'PAPR', 'rp_level', 'mosic_result'])
     pd_data.to_csv(csv_path, index=None)
 
 
