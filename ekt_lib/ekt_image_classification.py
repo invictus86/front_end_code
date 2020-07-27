@@ -32,7 +32,7 @@ def image_classification(list_image):
         # params 为GET参数 data 为POST Body
         while True:
             try:
-                result = requests.post('http://127.0.0.1:24401/', params={'threshold': 0.1}, data=img_str).json()
+                result = requests.post('http://192.168.1.24:24401/', params={'threshold': 0.1}, data=img_str).json()
                 break
             except:
                 time.sleep(60)
