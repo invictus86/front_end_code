@@ -151,7 +151,7 @@ def iterate_to_find_threshold_step_by_step(sfe_ip, start_num, level_offset="0"):
 
 
 if __name__ == '__main__':
-    sfe_ip = "192.168.1.47"
+    sfe_ip = ekt_cfg.SFE_IP
     # specan = Ektsfe(net)
     # mosaic_algorithm(specan, "-77 dBm")
     # iterate_to_find_threshold_step_by_step(sfe_ip, -60)

@@ -46,7 +46,7 @@ if __name__ == '__main__':
     ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
     """
     load_dict = read_json_file("../../ekt_json/dvbs_12_symbol_rate_step.json")
-    sfe_ip = "192.168.1.47"
+    sfe_ip = ekt_cfg.SFE_IP
     specan = Ektsfe(sfe_ip)
     specan.clean_reset()
     specan = Ektsfe(sfe_ip)

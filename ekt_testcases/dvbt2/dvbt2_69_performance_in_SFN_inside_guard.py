@@ -224,7 +224,7 @@ if __name__ == '__main__':
     dvbt2_69_performance_in_SFN_inside_guard_json_class_test("../../ekt_json/dvbt2_69_performance_in_SFN_inside_guard.json")
 
     load_dict = read_json_file("../../ekt_json/dvbt2_69_performance_in_SFN_inside_guard.json")
-    sfu_ip = "192.168.1.50"
+    sfu_ip = ekt_cfg.SFU_IP
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
     specan = Ektsfu(sfu_ip)

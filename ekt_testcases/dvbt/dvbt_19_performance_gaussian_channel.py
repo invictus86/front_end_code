@@ -83,7 +83,7 @@ if __name__ == '__main__':
     dvbt_19_gaussian_channel_json_class_test("../../ekt_json/dvbt_19_performance_gaussian_channel.json")
 
     load_dict = read_json_file("../../ekt_json/dvbt_19_performance_gaussian_channel.json")
-    sfu_ip = "192.168.1.50"
+    sfu_ip = ekt_cfg.SFU_IP
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
     specan = Ektsfu(sfu_ip)

@@ -104,7 +104,7 @@ if __name__ == '__main__':
     dvbt_21_receiver_signal_input__min_level_json_class_test("../../ekt_json/dvbt_21_receiver_signal_input__min_level.json")
 
     load_dict = read_json_file("../../ekt_json/dvbt_21_receiver_signal_input__min_level.json")
-    sfu_ip = "192.168.1.50"
+    sfu_ip = ekt_cfg.SFU_IP
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
     specan = Ektsfu(sfu_ip)

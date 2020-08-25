@@ -5,6 +5,8 @@ import pyvisa
 import logging
 import time
 import os
+from ekt_lib import ekt_relay
+import ekt_cfg
 
 # import VISAresourceExtentions
 
@@ -28,6 +30,7 @@ class Ektsfe(object):
     """
 
     def __init__(self, sfe_ip):
+        count_num = 0
         while True:
             try:
                 rm = pyvisa.ResourceManager()
@@ -36,9 +39,22 @@ class Ektsfe(object):
                 del self.specan.timeout
                 break
             except:
+                count_num = count_num + 1
                 print("SFE connection error")
                 logging.info('SFE connection error')
-                time.sleep(60)
+                time.sleep(10)
+            print count_num
+            if count_num >= 3:
+                en = ekt_relay.EktRelay()
+                en.relay_off_sfe()
+                time.sleep(5)
+                en.relay_on_sfe()
+                time.sleep(180)
+                del en
+                sfe_ip = ekt_cfg.SFE_IP
+                specan = Ektsfe(sfe_ip)
+                specan.set_modulation_modulation_source("DTV")
+
 
     def set_frequency_frequency_frequency(self, frequency):
         """
@@ -461,8 +477,8 @@ class Ektsfe(object):
 
 
 def _test_code():
-    sfe_ip = "192.168.1.47"
-    # sfe_ip = "192.168.1.50"
+    sfe_ip = ekt_cfg.SFE_IP
+    # sfe_ip = ekt_cfg.SFU_IP
     # host = '127.0.0.1'
     # port = 8900
     specan = Ektsfe(sfe_ip)

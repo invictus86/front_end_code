@@ -692,7 +692,7 @@ def dvbs_dynamic_min_json_class_test(json_path):
     list_data = load_dict.get("test_parame_result")
     for i in list_data:
         for j in i[2]:
-            if i[1][0] not in [950, 1550, 2150] and (j[0][0] != "R7_8" or i[0][1] != "45000"):
+            if i[1][0] not in [950, 1550, 2150] and (j[0][0] != "R7_8" or i[0][1] != "27500"):
                 j[1] = "NO NEED TEST"
                 j[2] = "NO NEED TEST"
     write_json_file(json_path, load_dict)

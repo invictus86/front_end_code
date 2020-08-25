@@ -1,11 +1,19 @@
 # stb_tester config
-BANCH_ID = "ba709db"
-STB_TESTER_URL = "http://192.168.1.154"
-STB_TESTER_IP = "192.168.1.154"
+BANCH_ID = "d95b545"
+STB_TESTER_URL = "http://192.168.1.155"
+STB_TESTER_IP = "192.168.1.155"
+
+# EasyEdge IP
+EASYEDGE_IP = "192.168.1.24"
+# EASYEDGE_IP = "192.168.2.212"
 
 # front_end server config
 FRONT_END_SERVER_IP = "192.168.1.24"
 FRONT_END_SERVER_PORT = 9999
+
+# SFU IP AND SFE IP
+SFU_IP = "192.168.2.141"
+SFE_IP = "192.168.2.145"
 
 # DVBS lock function config
 DVB_S_LOCK_FUNCTION = ["tests/front_end_test/testcases.py::test_continuous_button_dsn5414a"]

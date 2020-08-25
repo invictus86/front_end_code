@@ -391,7 +391,7 @@ def iterate_to_find_threshold_fading_att_step_by_step(sfu_ip, start_num):
 
 
 if __name__ == '__main__':
-    sfu_ip = "192.168.1.50"
+    sfu_ip = ekt_cfg.SFU_IP
     # specan = Ektsfu(net)
     # mosaic_algorithm(specan, "-77 dBm")
     iterate_to_find_threshold_step_by_step(sfu_ip, -85)

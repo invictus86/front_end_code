@@ -5,6 +5,7 @@ import pyvisa
 import logging
 import time
 import os
+import ekt_cfg
 
 # import VISAresourceExtentions
 
@@ -2981,8 +2982,8 @@ def __del__(self):
 
 
 def _test_code():
-    # net = "192.168.1.47"
-    sfu_ip = "192.168.1.50"
+    # net = ekt_cfg.SFE_IP
+    sfu_ip = ekt_cfg.SFU_IP
     # host = '127.0.0.1'
     # port = 8900
     specan = Ektsfu(sfu_ip)
@@ -3164,7 +3165,7 @@ def _test_code():
 
     # specan.set_cmd()
 
-    # sfu_ip = "192.168.1.50"
+    # sfu_ip = ekt_cfg.SFU_IP
 
     # specan = Ektsfu(sfu_ip)
     # specan.set_level_level_offset(str(4.6))

@@ -62,7 +62,7 @@ if __name__ == '__main__':
     dvbs_dynamic_min_json_class_test("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json")
 
     load_dict = read_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json")
-    sfe_ip = "192.168.1.47"
+    sfe_ip = ekt_cfg.SFE_IP
     specan = Ektsfe(sfe_ip)
     specan.clean_reset()
     specan = Ektsfe(sfe_ip)
@@ -124,7 +124,7 @@ if __name__ == '__main__':
             write_test_result("../../ekt_log/test_result_sfe.txt", ("Lock state err" + "\n"))
             continue
         for code_rate_cn in PARAMETER[2]:
-            if code_rate_cn[1] == None:
+            if code_rate_cn[1] == None or code_rate_cn[2] == None :
                 pass
             else:
                 continue

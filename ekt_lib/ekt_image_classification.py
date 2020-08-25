@@ -32,10 +32,10 @@ def image_classification(list_image):
         # params 为GET参数 data 为POST Body
         while True:
             try:
-                result = requests.post('http://192.168.1.24:24401/', params={'threshold': 0.1}, data=img_str).json()
+                result = requests.post('http://{}:24401/'.format(ekt_cfg.EASYEDGE_IP), params={'threshold': 0.1}, data=img_str).json()
                 break
             except:
-                time.sleep(60)
+                time.sleep(5)
                 print("ekt_image_classification  connection error")
                 logging.info('ekt_image_classification  connection error')
 
@@ -59,8 +59,8 @@ def image_classification(list_image):
 
 if __name__ == '__main__':
     # start_time = time.time()
-    num = 50
-    list_image = ekt_image_capture.capture_image(num, "192.168.1.154")
+    num = 10
+    list_image = ekt_image_capture.capture_image(num, "192.168.1.155")
     print (list_image)
     dict_result, mosaic_result = image_classification(list_image)
     # end_time = time.time()

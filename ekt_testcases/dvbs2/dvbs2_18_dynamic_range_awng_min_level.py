@@ -75,7 +75,7 @@ if __name__ == '__main__':
     dvbs2_18_dynamic_min_json_class_test("../../ekt_json/dvbs2_18_dynamic_range_awng_min_level.json")
 
     load_dict = read_json_file("../../ekt_json/dvbs2_18_dynamic_range_awng_min_level.json")
-    sfu_ip = "192.168.1.50"
+    sfu_ip = ekt_cfg.SFU_IP
     specan = Ektsfu(sfu_ip)
     specan.preset_instrument()
     specan = Ektsfu(sfu_ip)
@@ -155,7 +155,7 @@ if __name__ == '__main__':
             write_test_result("../../ekt_log/test_result_sfu.txt", ("Lock state err" + "\n"))
             continue
         for PARAMETER in LOCK_PARAMETER[2]:
-            if PARAMETER[2] == None:
+            if PARAMETER[2] == None or PARAMETER[3] == None:
                 pass
             else:
                 continue

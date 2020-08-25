@@ -1,3 +1,0 @@
-fft_size,modulation,pilot,code_rate,guard,PAPR,rp_level,level
-M32K,T256,PP2,R2_3,G1_16,TR,62,Pass
-M32E,T256,PP2,R2_3,G1_16,OFF,62,Pass
