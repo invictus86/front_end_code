@@ -6,6 +6,7 @@ import numpy
 import time
 import os
 import logging
+import datetime
 
 current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
@@ -13,11 +14,7 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     filename='{}/ekt_log/ekt_image_capture.log'.format(current_path),
                     filemode='a',  ##模式,有w和a,w就是写模式,每次都会重新写日志,覆盖之前的日志
                     # a是追加模式,默认如果不写的话,就是追加模式
-                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
-                    # 日志格式
-                    )
-
-start_time = time.time()
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # 日志格式
 
 
 def capture_image(num, ip):
@@ -32,6 +29,8 @@ def capture_image(num, ip):
         while True:
             try:
                 result = requests.get("http://{}/api/v1/device/screenshot.png".format(ip))
+                # dt_ms = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
+                # print dt_ms
                 break
             except:
                 time.sleep(60)
@@ -43,9 +42,10 @@ def capture_image(num, ip):
 
 
 if __name__ == '__main__':
-    list_image = capture_image(50, "192.168.1.155")
+    start_time = time.time()
+    list_image = capture_image(20, "192.168.1.155")
     print(list_image)
-# end_time = time.time()
-# print start_time
-# print end_time
-# print end_time-start_time
+    end_time = time.time()
+    print start_time
+    print end_time
+    print end_time - start_time

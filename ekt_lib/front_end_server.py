@@ -18,14 +18,10 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     filename='{}/ekt_log/front_end_server.log'.format(current_path),
                     filemode='a',  ##模式,有w和a,w就是写模式,每次都会重新写日志,覆盖之前的日志
                     # a是追加模式,默认如果不写的话,就是追加模式
-                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
-                    # 日志格式
-                    )
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # 日志格式
 
 
 class FrontEndServer():
-    # image_file, cfg_file = find_image_or_cfg_file()
-
     def __init__(self):
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -37,9 +33,7 @@ class FrontEndServer():
         img = base64.b64encode(img)
 
         data = {"img": img, "shape": shape}
-        # print len(data), "lenth"
         image_json = json.dumps(data, encoding='utf-8')
-        # print len(self.img_json)
         return image_json
 
     def response(self):
@@ -51,6 +45,7 @@ class FrontEndServer():
         symbol_rate = None
         modulation = None
         lock_state = None
+        sfe_state = "noral"
         strength_num = None
         quality_num = None
         stb_tester_run_state = "2"
@@ -136,6 +131,15 @@ class FrontEndServer():
                         result = conn.send(str(modulation))
                         print ("result:", result, "current_time:{}, get modulation data : {} ok ".format(
                             datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), modulation))
+                    elif dict_data.get("cmd") == "set_sfe_state":
+                        sfe_state = dict_data.get("sfe_state")
+                        result = conn.send("set sfe_state data : {} ok ".format(sfe_state))
+                        print ("result:", result, "current_time:{}, set sfe_state data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), sfe_state))
+                    elif dict_data.get("cmd") == "get_sfe_state":
+                        result = conn.send(sfe_state)
+                        print ("result:", result, "current_time:{}, get sfe_state data : {} ok ".format(
+                            datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), sfe_state))
                     else:
                         print (data)
                         print ("unknown message")

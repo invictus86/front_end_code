@@ -25,16 +25,20 @@ LEVEL_50_1550 = str("%.2f" % ((-50) - LEVEL_OFFSET_1550))
 LEVEL_OFFSET_2150 = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 2150)
 LEVEL_50_2150 = str("%.2f" % ((-50) - LEVEL_OFFSET_2150))
 
-SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000", [["950", "951", LEVEL_50_950, LEVEL_OFFSET_950],
-                                                    ["1550", "1551", LEVEL_50_1550, LEVEL_OFFSET_1550],
-                                                    ["2150", "2149", LEVEL_50_2150, LEVEL_OFFSET_2150]]]
+SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000",
+                            [["950", "951", LEVEL_50_950, LEVEL_OFFSET_950], ["950", "949", LEVEL_50_950, LEVEL_OFFSET_950],
+                             ["1550", "1551", LEVEL_50_1550, LEVEL_OFFSET_1550], ["1550", "1549", LEVEL_50_1550, LEVEL_OFFSET_1550],
+                             ["2150", "2151", LEVEL_50_2150, LEVEL_OFFSET_2150], ["2150", "2149", LEVEL_50_2150, LEVEL_OFFSET_2150]]]
 SYMBOL_RATE_FREQUENCY_27_5M = ["27.500000e6", "27500",
-                               [["950", "952.75", LEVEL_50_950, LEVEL_OFFSET_950],
+                               [["950", "952.75", LEVEL_50_950, LEVEL_OFFSET_950], ["950", "947.25", LEVEL_50_950, LEVEL_OFFSET_950],
                                 ["1550", "1552.75", LEVEL_50_1550, LEVEL_OFFSET_1550],
+                                ["1550", "1547.25", LEVEL_50_1550, LEVEL_OFFSET_1550],
+                                ["2150", "2152.75", LEVEL_50_2150, LEVEL_OFFSET_2150],
                                 ["2150", "2147.25", LEVEL_50_2150, LEVEL_OFFSET_2150]]]
-SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000", [["950", "954.5", LEVEL_50_950, LEVEL_OFFSET_950],
-                                                      ["1550", "1554.5", LEVEL_50_1550, LEVEL_OFFSET_1550],
-                                                      ["2150", "2145.5", LEVEL_50_2150, LEVEL_OFFSET_2150]]]
+SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000",
+                             [["950", "954.5", LEVEL_50_950, LEVEL_OFFSET_950], ["950", "945.5", LEVEL_50_950, LEVEL_OFFSET_950],
+                              ["1550", "1554.5", LEVEL_50_1550, LEVEL_OFFSET_1550], ["1550", "1545.5", LEVEL_50_1550, LEVEL_OFFSET_1550],
+                              ["2150", "2154.5", LEVEL_50_2150, LEVEL_OFFSET_2150], ["2150", "2145.5", LEVEL_50_2150, LEVEL_OFFSET_2150]]]
 
 dict_config_data = {
     "SYMBOL_RATE_FREQUENCY": [SYMBOL_RATE_FREQUENCY_5M, SYMBOL_RATE_FREQUENCY_27_5M, SYMBOL_RATE_FREQUENCY_45M]}

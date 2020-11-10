@@ -26,12 +26,15 @@ LEVEL_50_1550 = str("%.2f" % ((-50) - LEVEL_OFFSET_1550))
 LEVEL_OFFSET_2150 = find_level_offset_by_frequency("DVBS_S2_FREQUENCY_LEVEL_OFFSET", 2150)
 LEVEL_50_2150 = str("%.2f" % ((-50) - LEVEL_OFFSET_2150))
 
-SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000", [["950", "952", LEVEL_50_950], ["1550", "1552", LEVEL_50_1550],
-                                                    ["2150", "2148", LEVEL_50_2150]]]
-SYMBOL_RATE_FREQUENCY_27_5M = ["27.500000e6", "27500", [["950", "952", LEVEL_50_950], ["1550", "1552", LEVEL_50_1550],
-                                                        ["2150", "2148", LEVEL_50_2150]]]
-SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000", [["950", "952", LEVEL_50_950], ["1550", "1552", LEVEL_50_1550],
-                                                      ["2150", "2148", LEVEL_50_2150]]]
+SYMBOL_RATE_FREQUENCY_5M = ["5.000000e6", "05000", [["950", "952", LEVEL_50_950], ["950", "948", LEVEL_50_950],
+                                                    ["1550", "1552", LEVEL_50_1550], ["1550", "1548", LEVEL_50_1550],
+                                                    ["2150", "2152", LEVEL_50_2150], ["2150", "2148", LEVEL_50_2150]]]
+SYMBOL_RATE_FREQUENCY_27_5M = ["27.500000e6", "27500", [["950", "952", LEVEL_50_950], ["950", "948", LEVEL_50_950],
+                                                        ["1550", "1552", LEVEL_50_1550], ["1550", "1548", LEVEL_50_1550],
+                                                        ["2150", "2152", LEVEL_50_2150], ["2150", "2148", LEVEL_50_2150]]]
+SYMBOL_RATE_FREQUENCY_45M = ["45.000000e6", "45000", [["950", "952", LEVEL_50_950], ["950", "948", LEVEL_50_950],
+                                                      ["1550", "1552", LEVEL_50_1550], ["1550", "1548", LEVEL_50_1550],
+                                                      ["2150", "2152", LEVEL_50_2150], ["2150", "2148", LEVEL_50_2150]]]
 
 dict_config_data = {
     "SYMBOL_RATE_FREQUENCY": [SYMBOL_RATE_FREQUENCY_5M, SYMBOL_RATE_FREQUENCY_27_5M, SYMBOL_RATE_FREQUENCY_45M]}
@@ -57,6 +60,23 @@ else:
 
     write_json_file("../../ekt_json/dvbs_17_signal_tracking_frequency_range.json", dict_test_parame_result)
 
+
+def sfe_init_setting():
+    """
+    sfe init setting
+    :return:
+    """
+    sfe_ip = ekt_cfg.SFE_IP
+    specan = Ektsfe(sfe_ip)
+    specan.clean_reset()
+    specan = Ektsfe(sfe_ip)
+    specan.preset_instrument()
+    specan = Ektsfe(sfe_ip)
+    specan.set_digitaltv_input_source("TSPL")
+    specan = Ektsfe(sfe_ip)
+    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+
+
 if __name__ == '__main__':
     """
     测试流程:
@@ -69,14 +89,7 @@ if __name__ == '__main__':
     """
     load_dict = read_json_file("../../ekt_json/dvbs_17_signal_tracking_frequency_range.json")
     sfe_ip = ekt_cfg.SFE_IP
-    specan = Ektsfe(sfe_ip)
-    specan.clean_reset()
-    specan = Ektsfe(sfe_ip)
-    specan.preset_instrument()
-    specan = Ektsfe(sfe_ip)
-    specan.set_digitaltv_input_source("TSPL")
-    specan = Ektsfe(sfe_ip)
-    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+    sfe_init_setting()
 
     for PARAMETER in load_dict.get("test_parame_result"):
         loop_lock_mark = False
@@ -144,15 +157,25 @@ if __name__ == '__main__':
             specan.set_frequency_frequency_frequency(FREQUENCY_OFFSET[1] + "MHz")
             start_data_result, mosaic_result = mosaic_algorithm(sfe_ip, FREQUENCY_OFFSET[2], "-50")
             print (
-            "dvbs_17_signal_tracking_frequency_range: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
-                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
-                FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
-                start_data_result.get("detect_mosic_result")))
+                "dvbs_17_signal_tracking_frequency_range: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
+                    datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
+                    FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
+                    start_data_result.get("detect_mosic_result")))
             write_test_result("../../ekt_log/test_result_sfe.txt",
                               "dvbs_17_signal_tracking_frequency_range: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,level:{} dbm, Mosaic results:{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                   FREQUENCY_OFFSET[1], SYMBOL_RATE_FREQUENCY[1], FREQUENCY_OFFSET[2],
                                   start_data_result.get("detect_mosic_result")) + "\n")
+
+            # 判断sfe是否在测试过程中重启，否则设置测试结果为none
+            net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
+            sfe_state = net.send_rec(json.dumps({"cmd": "get_sfe_state"}))
+            if sfe_state == "crash":
+                mosaic_result = None
+                net.send_data(json.dumps({"cmd": "set_sfe_state", "sfe_state": "noral"}))
+                time.sleep(0.5)
+                del net
+                sfe_init_setting()
 
             code_rate_cn[1] = mosaic_result
             write_json_file("../../ekt_json/dvbs_17_signal_tracking_frequency_range.json", load_dict)

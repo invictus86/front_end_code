@@ -2,21 +2,21 @@
 # -*- coding: utf-8 -*-
 from __future__ import division
 from ekt_stb_tester import stb_tester_execute_testcase
-from ekt_image_capture import capture_image
-from ekt_image_classification import image_classification
+from ekt_image_classification import gevent_image_classification
 from ekt_sfu import Ektsfu
+from ekt_utils import write_test_result
 import time
 import logging
 import ekt_cfg
 import json
+import os
 
+current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     filename='../ekt_log/sfu.log',
                     filemode='a',  ##模式,有w和a,w就是写模式,每次都会重新写日志,覆盖之前的日志
                     # a是追加模式,默认如果不写的话,就是追加模式
-                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
-                    # 日志格式
-                    )
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # 日志格式
 
 
 def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
@@ -31,11 +31,13 @@ def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
     specan.set_level_level_level("dBm", str(test_level_data))
     print ("set_level_level_level:{}".format(str(test_level_data) + " dBm"))
     logging.info("set_level_level_level:{}".format(str(test_level_data) + " dBm"))
-    time.sleep(5)
+    time.sleep(ekt_cfg.WAIT_FOR_INSTRUMENT_TIME)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],
                                       "auto_front_end_test", "DSD4614iALM")
     print (res)
+    write_test_result("{}/ekt_log/mosic_result.txt".format(current_path),
+                      (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))) + ": " + str(res) + "\r\n")
     if res == False:
         mosaic_algorithm_result = {
             "detect_motion_result": False,
@@ -47,11 +49,13 @@ def mosaic_algorithm(sfu_ip, test_level_data, can_play_data):
         specan.set_level_level_level("dBm", str(can_play_data))
         return mosaic_algorithm_result, "Fail"
     elif res == True:
-        list_image = capture_image(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
-        specan = Ektsfu(sfu_ip)
-        specan.set_level_level_level("dBm", str(can_play_data))
-        dict_result, mosaic_result = image_classification(list_image)
+        dict_result, mosaic_result = gevent_image_classification(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
+        # specan = Ektsfu(sfu_ip)
+        # specan.set_level_level_level("dBm", str(can_play_data))
         print (dict_result, mosaic_result)
+        write_test_result("{}/ekt_log/mosic_result.txt".format(current_path),
+                          (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))) + ": " + json.dumps(
+                              dict_result) + "   " + mosaic_result + "\r\n")
         mosaic_algorithm_result = {
             "detect_motion_result": True,
             "detect_mosic_result": mosaic_result,
@@ -73,7 +77,7 @@ def mosaic_algorithm_noise_cn(sfu_ip, test_cn_data, can_play_data):
     specan.set_noise_awgn_cn(str(test_cn_data))
     print ("set_noise_awgn_cn:{}".format(str(test_cn_data)))
     logging.info("set_noise_awgn_cn:{}".format(str(test_cn_data)))
-    time.sleep(5)
+    time.sleep(ekt_cfg.WAIT_FOR_INSTRUMENT_TIME)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],
                                       "auto_front_end_test", "DSD4614iALM")
@@ -89,10 +93,9 @@ def mosaic_algorithm_noise_cn(sfu_ip, test_cn_data, can_play_data):
         specan.set_noise_awgn_cn(str(can_play_data))
         return mosaic_algorithm_result
     elif res == True:
-        list_image = capture_image(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
-        specan = Ektsfu(sfu_ip)
-        specan.set_noise_awgn_cn(str(can_play_data))
-        dict_result, mosaic_result = image_classification(list_image)
+        dict_result, mosaic_result = gevent_image_classification(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
+        # specan = Ektsfu(sfu_ip)
+        # specan.set_noise_awgn_cn(str(can_play_data))
         print (dict_result, mosaic_result)
         mosaic_algorithm_result = {
             "detect_motion_result": True,
@@ -115,7 +118,7 @@ def mosaic_algorithm_fading_att(sfu_ip, test_att_data, can_play_data):
     specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(test_att_data)))
     print ("set_fading_att:{}".format(str(test_att_data)))
     logging.info("set_fading_att:{}".format(str(test_att_data)))
-    time.sleep(5)
+    time.sleep(ekt_cfg.WAIT_FOR_INSTRUMENT_TIME)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],
                                       "auto_front_end_test", "DSD4614iALM")
@@ -131,10 +134,9 @@ def mosaic_algorithm_fading_att(sfu_ip, test_att_data, can_play_data):
         specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(can_play_data)))
         return mosaic_algorithm_result
     elif res == True:
-        list_image = capture_image(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
-        specan = Ektsfu(sfu_ip)
-        specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(can_play_data)))
-        dict_result, mosaic_result = image_classification(list_image)
+        dict_result, mosaic_result = gevent_image_classification(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
+        # specan = Ektsfu(sfu_ip)
+        # specan.set_fading_profile_pathloss("3", "1", "{} dB".format(str(can_play_data)))
         print (dict_result, mosaic_result)
         mosaic_algorithm_result = {
             "detect_motion_result": True,
@@ -157,7 +159,7 @@ def mosaic_algorithm_interferer_attenuation(sfu_ip, test_attenuation_data, can_p
     specan.set_interferer_attenuation(str(test_attenuation_data))
     print ("set_attenuation_data:{}".format(str(test_attenuation_data)))
     logging.info("set_attenuation_data:{}".format(str(test_attenuation_data)))
-    time.sleep(5)
+    time.sleep(ekt_cfg.WAIT_FOR_INSTRUMENT_TIME)
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                       ["tests/front_end_test/testcases.py::test_recored"],
                                       "auto_front_end_test", "DSD4614iALM")
@@ -173,10 +175,9 @@ def mosaic_algorithm_interferer_attenuation(sfu_ip, test_attenuation_data, can_p
         specan.set_noise_awgn_cn(str(can_play_data))
         return mosaic_algorithm_result
     elif res == True:
-        list_image = capture_image(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
-        specan = Ektsfu(sfu_ip)
-        specan.set_noise_awgn_cn(str(can_play_data))
-        dict_result, mosaic_result = image_classification(list_image)
+        dict_result, mosaic_result = gevent_image_classification(ekt_cfg.CAPTURE_NUM, ekt_cfg.STB_TESTER_IP)
+        # specan = Ektsfu(sfu_ip)
+        # specan.set_noise_awgn_cn(str(can_play_data))
         print (dict_result, mosaic_result)
         mosaic_algorithm_result = {
             "detect_motion_result": True,
@@ -199,10 +200,12 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
     if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
-                          ensure_ascii=False), None
+        return json.dumps(
+            {"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
+            ensure_ascii=False), None
     while True:
-        step = 10
+        # step = 10
+        step = 4.5
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") == "Pass":
@@ -212,7 +215,7 @@ def iterate_to_find_threshold_step_by_step_dvbs2(sfu_ip, start_num, level_offset
             break
     while True:
         # step = 1
-        step = 2
+        step = 1.5
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") == "Pass":
@@ -247,10 +250,12 @@ def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
     if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
-                          ensure_ascii=False), None
+        return json.dumps(
+            {"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
+            ensure_ascii=False), None
     while True:
-        step = 3
+        # step = 3
+        step = 1
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") == "Pass":
@@ -259,7 +264,8 @@ def iterate_to_find_threshold_step_by_step(sfu_ip, start_num, level_offset="0"):
             print ("{} appear Mosaic".format(step_num))
             break
     while True:
-        step = 1
+        # step = 1
+        step = 0.3
         step_num = start_num - step
         step_num_data_result, _ = mosaic_algorithm(sfu_ip, step_num, start_num)
         if step_num_data_result.get("detect_mosic_result") == "Pass":
@@ -292,8 +298,9 @@ def iterate_to_find_threshold_interferer_attenuation_step_by_step(sfu_ip, start_
     if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
-                          ensure_ascii=False), None
+        return json.dumps(
+            {"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
+            ensure_ascii=False), None
     while True:
         step = 1
         step_num = start_num - step
@@ -327,8 +334,9 @@ def iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, start_num):
     if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
-                          ensure_ascii=False), None
+        return json.dumps(
+            {"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
+            ensure_ascii=False), None
     while True:
         # step = 1
         step = 2
@@ -364,8 +372,9 @@ def iterate_to_find_threshold_fading_att_step_by_step(sfu_ip, start_num):
     if start_data_result.get("detect_mosic_result") == "Pass":
         pass
     else:
-        return json.dumps({"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
-                          ensure_ascii=False), None
+        return json.dumps(
+            {"threshold_algorithm_result": False, "msg": "The initial value is outside the Mosaic threshold:{}".format(start_num)},
+            ensure_ascii=False), None
     while True:
         step = 1
         step_num = start_num - step

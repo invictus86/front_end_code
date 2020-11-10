@@ -692,7 +692,7 @@ def dvbs_dynamic_min_json_class_test(json_path):
     list_data = load_dict.get("test_parame_result")
     for i in list_data:
         for j in i[2]:
-            if i[1][0] not in [950, 1550, 2150] and (j[0][0] != "R7_8" or i[0][1] != "27500"):
+            if i[1][0] not in [950, 1550, 2150] and (j[0][0] != "R7_8" or i[0][1] != "45000"):
                 j[1] = "NO NEED TEST"
                 j[2] = "NO NEED TEST"
     write_json_file(json_path, load_dict)
@@ -822,7 +822,8 @@ def dvbs2_18_dynamic_min_json_to_csv(json_path, csv_path):
             else:
                 list_required_data.append(["", "", j[0], j[1][0], j[2], j[3]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'modulation', 'code_rate', 'Minimum_RF_level', "Maximum _mosic_result"])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['symbol_rate', 'frequency', 'modulation', 'code_rate', 'Minimum_RF_level', "Maximum _mosic_result"])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -1180,7 +1181,7 @@ def dvbt_21_receiver_signal_input__min_level_json_to_csv(json_path, csv_path):
             else:
                 list_required_data.append(["", j[0], j[1], j[2], j[3], j[4]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'guard', 'spec', 'noise'])
+    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'guard', 'spec', 'Minimum_RF_level'])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -1675,13 +1676,13 @@ def dvbt2_57_gaussian_channel_json_to_csv(json_path, csv_path):
             else:
                 list_required_data.append(["", j[0], j[1], j[2], j[3]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'spec', 'noise'])
+    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'spec', 'Minimum_RF_level'])
     pd_data.to_csv(csv_path, index=None)
 
 
 def dvbt2_57_gaussian_channel_json_class_test(json_path):
     """
-    json to csv
+    json class
     :param json_path:
     :param csv_path:
     :return:

@@ -13,9 +13,8 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     filename='{}/ekt_log/ekt_stb_tester.log'.format(current_path),
                     filemode='a',  ##模式,有w和a,w就是写模式,每次都会重新写日志,覆盖之前的日志
                     # a是追加模式,默认如果不写的话,就是追加模式
-                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
-                    # 日志格式
-                    )
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # 日志格式
+
 
 def stb_tester_execute_testcase(ip, banch_id, test_cases, category, remote):
     """
@@ -70,6 +69,6 @@ def stb_tester_execute_testcase(ip, banch_id, test_cases, category, remote):
 
 if __name__ == '__main__':
     res = stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
-                                   ["tests/front_end_test/testcases.py::test_recored"],
-                                   "auto_front_end_test", "DSD4614iALM")
+                                      ["tests/front_end_test/testcases.py::test_continuous_button_dtn7414g_set_search"],
+                                      "auto_front_end_test", "dcn7514i")
     print (res)

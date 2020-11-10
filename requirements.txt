@@ -1,7 +1,7 @@
-visa==1.0.0
 numpy==1.15.4
 PyVISA==1.10.1
 pandas==0.24.2
 requests==2.21.0
 pathlib2==2.3.3
+gevent==20.6.2
 opencv_python==3.4.8.29

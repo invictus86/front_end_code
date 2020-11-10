@@ -55,6 +55,28 @@ else:
 
     write_json_file("../../ekt_json/dvbs_15_symbol_err_rate.json", dict_test_parame_result)
 
+
+def sfe_init_setting():
+    """
+    sfe init setting
+    :return:
+    """
+    sfe_ip = ekt_cfg.SFE_IP
+    specan = Ektsfe(sfe_ip)
+    specan.clean_reset()
+    specan = Ektsfe(sfe_ip)
+    specan.preset_instrument()
+    specan = Ektsfe(sfe_ip)
+    specan.set_digitaltv_input_source("TSPL")
+    specan = Ektsfe(sfe_ip)
+    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+
+    specan = Ektsfe(sfe_ip)
+    specan.set_frequency_frequency_frequency(FREQUENCY_1550 + "MHz")
+    specan = Ektsfe(sfe_ip)
+    specan.set_level_level_level(LEVEL_50 + " dBm")
+
+
 if __name__ == '__main__':
     """
     测试流程:
@@ -67,21 +89,7 @@ if __name__ == '__main__':
     """
     load_dict = read_json_file("../../ekt_json/dvbs_15_symbol_err_rate.json")
     sfe_ip = ekt_cfg.SFE_IP
-    specan = Ektsfe(sfe_ip)
-    specan.clean_reset()
-    specan = Ektsfe(sfe_ip)
-    specan.preset_instrument()
-    specan = Ektsfe(sfe_ip)
-    specan.set_digitaltv_input_source("TSPL")
-    specan = Ektsfe(sfe_ip)
-    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
-
-    # dict_data = read_ekt_config_data("../../ekt_lib/ekt_config.json")
-
-    specan = Ektsfe(sfe_ip)
-    specan.set_frequency_frequency_frequency(FREQUENCY_1550 + "MHz")
-    specan = Ektsfe(sfe_ip)
-    specan.set_level_level_level(LEVEL_50 + " dBm")
+    sfe_init_setting()
     # for SYMBOL_RATE in dict_config_data.get("SYMBOL_RATE"):
     for PARAMETER in load_dict.get("test_parame_result"):
         loop_lock_mark = False
@@ -146,6 +154,16 @@ if __name__ == '__main__':
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0],
                                   FREQUENCY_1550, str(SYMBOL_RATE[1]), LEVEL_50,
                                   start_data_result.get("detect_mosic_result")) + "\n")
+
+            # 判断sfe是否在测试过程中重启，否则设置测试结果为none
+            net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
+            sfe_state = net.send_rec(json.dumps({"cmd": "get_sfe_state"}))
+            if sfe_state == "crash":
+                mosaic_result = None
+                net.send_data(json.dumps({"cmd": "set_sfe_state", "sfe_state": "noral"}))
+                time.sleep(0.5)
+                del net
+                sfe_init_setting()
 
             code_rate_cn[1] = mosaic_result
             write_json_file("../../ekt_json/dvbs_15_symbol_err_rate.json", load_dict)

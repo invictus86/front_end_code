@@ -1,13 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import visa
 import pyvisa
 import logging
 import time
 import os
 import ekt_cfg
-
-# import VISAresourceExtentions
 
 current_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
@@ -15,9 +12,7 @@ logging.basicConfig(level=logging.INFO,  # 控制台打印的日志级别
                     filename='{}/ekt_log/sfu.log'.format(current_path),
                     filemode='a',  ##模式,有w和a,w就是写模式,每次都会重新写日志,覆盖之前的日志
                     # a是追加模式,默认如果不写的话,就是追加模式
-                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
-                    # 日志格式
-                    )
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')  # 日志格式
 
 
 class Ektsfu(object):
@@ -51,10 +46,8 @@ class Ektsfu(object):
             FREQ:ACT 100 MHz
         :return:
         """
-        # self.specan.write('FREQ {}'.format(frequency))
         self.specan.write('FREQ:CW {}'.format(frequency))
         logging.info('FREQ:CW {}'.format(frequency))
-        # time.sleep(2)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -71,7 +64,6 @@ class Ektsfu(object):
         """
         self.specan.write('FREQ:OFFS {}'.format(frequency))
         logging.info('FREQ:OFFS {}'.format(frequency))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -84,7 +76,6 @@ class Ektsfu(object):
         """
         self.specan.write('FREQ:CHAN {}'.format(channel))
         logging.info('FREQ:CHAN {}'.format(channel))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -101,7 +92,6 @@ class Ektsfu(object):
         """
         self.specan.write('SWE:STARt {}'.format(frequency))
         logging.info('SWE:STARt {}'.format(frequency))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -117,7 +107,6 @@ class Ektsfu(object):
         """
         self.specan.write('SWE:STOP {}'.format(frequency))
         logging.info('SWE:STOP {}'.format(frequency))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -134,7 +123,6 @@ class Ektsfu(object):
         """
         self.specan.write('SWE:CENT {}'.format(frequency))
         logging.info('SWE:CENT {}'.format(frequency))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -151,7 +139,6 @@ class Ektsfu(object):
         """
         self.specan.write('SWE:SPAN {}'.format(frequency))
         logging.info('SWE:SPAN {}'.format(frequency))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -166,7 +153,6 @@ class Ektsfu(object):
         """
         self.specan.write('SWE:SPAC {}'.format(span_type))
         logging.info('SWE:SPAC {}'.format(span_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -182,7 +168,6 @@ class Ektsfu(object):
         """
         self.specan.write('SWE:STEP {}'.format(step_frequency))
         logging.info('SWE:STEP {}'.format(step_frequency))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -199,7 +184,6 @@ class Ektsfu(object):
         """
         self.specan.write('SWE:DWEL {}'.format(dewll_time))
         logging.info('SWE:DWEL {}'.format(dewll_time))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -217,10 +201,8 @@ class Ektsfu(object):
         """
         self.specan.write('SWE:MODE AUTO'.format(mode_type))
         logging.info('SWE:MODE AUTO'.format(mode_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
-        # self.specan.write('SWE:MODE STEP')
 
     def set_frequency_sweep_state(self, state_type):
         """
@@ -233,7 +215,6 @@ class Ektsfu(object):
         """
         self.specan.write('FREQ:MODE {}'.format(state_type))
         logging.info('FREQ:MODE {}'.format(state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -245,7 +226,6 @@ class Ektsfu(object):
         """
         self.specan.write(':SWE:RES')
         logging.info(':SWE:RES')
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -261,7 +241,6 @@ class Ektsfu(object):
         """
         self.specan.write('FREQ:STEP:MODE {}'.format(state_type))
         logging.info('FREQ:STEP:MODE {}'.format(state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -275,10 +254,8 @@ class Ektsfu(object):
          example : FREQ:STEP 50 kHz
         :return:
         """
-        # self.specan.write('FREQ:STEP {}'.format(frequency))
         self.specan.write('FREQ:STEP 50 kHz')
         logging.info('FREQ:STEP 50 kHz')
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -296,7 +273,6 @@ class Ektsfu(object):
         """
         self.specan.write('FREQ:CHAN:TABL:FREQ {}, {}'.format(channel_name, channel_frequency))
         logging.info('FREQ:CHAN:TABL:FREQ {}, {}'.format(channel_name, channel_frequency))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -314,7 +290,6 @@ class Ektsfu(object):
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
         time.sleep(0.1)
         self.specan.write('POW {}'.format(level_num))
-        # time.sleep(0.1)
         self.specan.query('*OPC?')
         del self.specan
         logging.info('UNIT:VOLT {}'.format(level_unit))
@@ -332,7 +307,7 @@ class Ektsfu(object):
         """
         self.specan.write('OUTP {}'.format(rf_type))
         logging.info('OUTP {}'.format(rf_type))
-        # time.sleep(1)
+
         self.specan.query('*OPC?')
         del self.specan
 
@@ -348,7 +323,6 @@ class Ektsfu(object):
         """
         self.specan.write('POW:OFFS {}'.format(offset))
         logging.info('POW:OFFS {}'.format(offset))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -364,7 +338,6 @@ class Ektsfu(object):
         """
         self.specan.write('POW:LIM {}'.format(limit_level))
         logging.info('POW:LIM {}'.format(limit_level))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -382,7 +355,6 @@ class Ektsfu(object):
         """
         self.specan.write('OUTP:AMOD {}'.format(level_mode))
         logging.info('OUTP:AMOD {}'.format(level_mode))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -398,7 +370,6 @@ class Ektsfu(object):
         """
         self.specan.write('POW:ALC {}'.format(state_type))
         logging.info('POW:ALC {}'.format(state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -416,7 +387,6 @@ class Ektsfu(object):
         """
         self.specan.write('UNIT:VOLT {}'.format(level_unit))
         logging.info('UNIT:VOLT {}'.format(level_unit))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -431,7 +401,6 @@ class Ektsfu(object):
         """
         self.specan.write('MOD {}'.format(modulation_type))
         logging.info('MOD {}'.format(modulation_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -452,7 +421,6 @@ class Ektsfu(object):
         """
         self.specan.write('DM:SOUR {}'.format(source_type))
         logging.info('DM:SOUR {}'.format(source_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -480,7 +448,6 @@ class Ektsfu(object):
         """
         self.specan.write('DM:ATV {}'.format(standard_type))
         logging.info('DM:ATV {}'.format(standard_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -511,7 +478,6 @@ class Ektsfu(object):
         """
         self.specan.write('DM:TRAN {}'.format(standard_type))
         logging.info('DM:TRAN {}'.format(standard_type))
-        # time.sleep(3)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -527,7 +493,6 @@ class Ektsfu(object):
         """
         self.specan.write('DM:POL {}'.format(spectrum_type))
         logging.info('DM:POL {}'.format(spectrum_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -545,7 +510,6 @@ class Ektsfu(object):
         """
         self.specan.write('IQ:GAIN {}'.format(level_type))
         logging.info('IQ:GAIN {}'.format(level_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -562,7 +526,6 @@ class Ektsfu(object):
         """
         self.specan.write('IQ:CRES {}'.format(factor_type))
         logging.info('IQ:CRES {}'.format(factor_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -577,7 +540,6 @@ class Ektsfu(object):
         """
         self.specan.write('IQ:WBST {}'.format(filtering_type))
         logging.info('IQ:WBST {}'.format(filtering_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -596,7 +558,6 @@ class Ektsfu(object):
         """
         self.specan.write('IQ:DINM {}'.format(mode_type))
         logging.info('IQ:DINM {}'.format(mode_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -619,7 +580,6 @@ class Ektsfu(object):
         """
         self.specan.write('IQ:DOUTput {}'.format(output_type))
         logging.info('IQ:DOUTput {}'.format(output_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -635,7 +595,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:SOUR {}'.format(source_type))
         logging.info('DVBS2:SOUR {}'.format(source_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -650,7 +609,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:SYMB {}'.format(symbol_rate))
         logging.info('DVBS2:SYMB {}'.format(symbol_rate))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -667,7 +625,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:CONS {}'.format(constellation_type))
         logging.info('DVBS2:CONS {}'.format(constellation_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -682,7 +639,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:FECF {}'.format(fecframe_type))
         logging.info('DVBS2:FECF {}'.format(fecframe_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -697,7 +653,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:PIL {}'.format(fecframe_type))
         logging.info('DVBS2:PIL {}'.format(fecframe_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -714,7 +669,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:ROLL {}'.format(rolloff_num))
         logging.info('DVBS2:ROLL {}'.format(rolloff_num))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -740,7 +694,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:RATE {}'.format(code_rate))
         logging.info('DVBS2:RATE {}'.format(code_rate))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -755,7 +708,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:SETT {}'.format(setting_type))
         logging.info('DVBS2:SETT {}'.format(setting_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -770,7 +722,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:PHAS {}'.format(phasenoise_type))
         logging.info('DVBS2:PHAS {}'.format(phasenoise_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -786,7 +737,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:PHAS:SHAP {}'.format(shape_type))
         logging.info('DVBS2:PHAS:SHAP {}'.format(shape_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -802,7 +752,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:PHAS:MAGN {}'.format(magnitude))
         logging.info('DVBS2:PHAS:MAGN {}'.format(magnitude))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -819,7 +768,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:TSP {}'.format(tspacket_type))
         logging.info('DVBS2:TSP {}'.format(tspacket_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -834,7 +782,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:PIDT {}'.format(pidpacket_type))
         logging.info('DVBS2:PIDT {}'.format(pidpacket_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -849,7 +796,6 @@ class Ektsfu(object):
         """
         self.specan.write('#H{}'.format(pid))
         logging.info('#H{}'.format(pid))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -867,7 +813,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:PAYL {}'.format(payloadtest_type))
         logging.info('DVBS2:PAYL {}'.format(payloadtest_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -882,7 +827,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBS2:PRBS {}'.format(prbs_type))
         logging.info('DVBS2:PRBS {}'.format(prbs_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -900,7 +844,6 @@ class Ektsfu(object):
         """
         self.specan.write('DM:ISRC {}'.format(interferer_type))
         logging.info('DM:ISRC {}'.format(interferer_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -916,7 +859,6 @@ class Ektsfu(object):
         """
         self.specan.write('DM:IADD {}'.format(addition_type))
         logging.info('DM:IADD {}'.format(addition_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1009,7 +951,6 @@ class Ektsfu(object):
         """
         self.specan.write('IQ:IMP {}'.format(modulator_type))
         logging.info('IQ:IMP {}'.format(modulator_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1026,7 +967,6 @@ class Ektsfu(object):
         """
         self.specan.write('IQ:IMP:QUAD:ANGL {}DEG'.format(quadrature_num))
         logging.info('IQ:IMP:QUAD:ANGL {}DEG'.format(quadrature_num))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1043,7 +983,6 @@ class Ektsfu(object):
         """
         self.specan.write('IQ:IMP:IQR {} PCT'.format(amplitude_num))
         logging.info('IQ:IMP:IQR {} PCT'.format(amplitude_num))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1058,7 +997,6 @@ class Ektsfu(object):
         """
         self.specan.write('BB:IMP {}'.format(baseband_type))
         logging.info('BB:IMP {}'.format(baseband_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1075,7 +1013,6 @@ class Ektsfu(object):
         """
         self.specan.write('BB:IMP:QUAD:ANGL {}DEG'.format(quadrature_num))
         logging.info('BB:IMP:QUAD:ANGL {}DEG'.format(quadrature_num))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1092,7 +1029,6 @@ class Ektsfu(object):
         """
         self.specan.write('BB:IMP:IQR {} PCT'.format(amplitude_num))
         logging.info('BB:IMP:IQR {} PCT'.format(amplitude_num))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1107,7 +1043,6 @@ class Ektsfu(object):
         """
         self.specan.write('BB:IMP:OPT:STAT {}'.format(optimize_type))
         logging.info('BB:IMP:OPT:STAT {}'.format(optimize_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1123,7 +1058,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS {}'.format(noise_type))
         logging.info('NOIS {}'.format(noise_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1141,7 +1075,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:AWGN {}'.format(awgn_type))
         logging.info('NOIS:AWGN {}'.format(awgn_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1156,7 +1089,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:IMP {}'.format(awgn_type))
         logging.info('NOIS:IMP {}'.format(awgn_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1171,7 +1103,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:PHAS {}'.format(phase_type))
         logging.info('NOIS:PHAS {}'.format(phase_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1188,7 +1119,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:CN {}'.format(cn))
         logging.info('NOIS:CN {}'.format(cn))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1201,7 +1131,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:EN {}'.format(ebno))
         logging.info('NOIS:EN {}'.format(ebno))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1218,7 +1147,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:IMP:CI {}'.format(ci_noise))
         logging.info('NOIS:IMP:CI {}'.format(ci_noise))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1237,7 +1165,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:IMP:FRAM {}'.format(frameduration_type))
         logging.info('NOIS:IMP:FRAM {}'.format(frameduration_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1254,7 +1181,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:COUP {}'.format(switch_type))
         logging.info('NOIS:COUP {}'.format(switch_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1272,7 +1198,6 @@ class Ektsfu(object):
         """
         self.specan.write('NOIS:BAND {}'.format(bandwidth))
         logging.info('NOIS:BAND {}'.format(bandwidth))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1289,7 +1214,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM {}'.format(state_type))
         logging.info('FSIM {}'.format(state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1371,7 +1295,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:STAN {}'.format(parameterset_type))
         logging.info('FSIM:STAN {}'.format(parameterset_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1392,7 +1315,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:CONF {}'.format(configuration_type))
         logging.info('FSIM:CONF {}'.format(configuration_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1411,7 +1333,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:STAT {}'.format(group, path, state_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:STAT {}'.format(group, path, state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1439,7 +1360,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:PROF {}'.format(group, path, state_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:PROF {}'.format(group, path, state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1458,7 +1378,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOSS {}'.format(group, path, pathloss))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOSS {}'.format(group, path, pathloss))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1479,7 +1398,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:BDEL {}'.format(group, basicdelay))
         logging.info('FSIM:DEL:GRO{}:BDEL {}'.format(group, basicdelay))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1498,7 +1416,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:ADEL {}'.format(group, path, additdelay))
         logging.info('FSIM:DEL:GRO{}:PATH{}:ADEL {}'.format(group, path, additdelay))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1512,7 +1429,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:RDEL {}'.format(group, path, resuldelay))
         logging.info('FSIM:DEL:GRO{}:PATH{}:RDEL {}'.format(group, path, resuldelay))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1530,7 +1446,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:PRAT {}'.format(group, path, power))
         logging.info('FSIM:DEL:GRO{}:PATH{}:PRAT {}'.format(group, path, power))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1549,7 +1464,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CPH {}'.format(group, path, constphase))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CPH {}'.format(group, path, constphase))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1566,7 +1480,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:SPE {}'.format(group, path, speed))
         logging.info('FSIM:DEL:GRO{}:PATH{}:SPE {}'.format(group, path, speed))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1583,7 +1496,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:FRAT {}'.format(group, path, freq))
         logging.info('FSIM:DEL:GRO{}:PATH{}:FRAT {}'.format(group, path, freq))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1599,7 +1511,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:FDOP {}'.format(group, path, doppler))
         logging.info('FSIM:DEL:GRO{}:PATH{}:FDOP {}'.format(group, path, doppler))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1615,7 +1526,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:STAT {}'.format(group, path, correlation_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:STAT {}'.format(group, path, correlation_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1633,7 +1543,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:COEF {}'.format(group, path, coefficient))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:COEF {}'.format(group, path, coefficient))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1651,7 +1560,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:CORR:PHAS {}'.format(group, path, phase))
         logging.info('FSIM:DEL:GRO{}:PATH{}:CORR:PHAS {}'.format(group, path, phase))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1666,7 +1574,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:STAT {}'.format(group, path, state_type))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:STAT {}'.format(group, path, state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1684,7 +1591,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:LCON {}'.format(group, path, local_constant))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:LCON {}'.format(group, path, local_constant))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1701,7 +1607,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:DEL:GRO{}:PATH{}:LOGN:CSTD {}'.format(group, path, standard))
         logging.info('FSIM:DEL:GRO{}:PATH{}:LOGN:CSTD {}'.format(group, path, standard))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1717,7 +1622,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:SPE:UNIT {}'.format(speed_unit))
         logging.info('FSIM:SPE:UNIT {}'.format(speed_unit))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1733,7 +1637,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:REF:{}'.format(reference_type))
         logging.info('FSIM:REF:{}'.format(reference_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1749,7 +1652,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:CSP:{}'.format(doppler_type))
         logging.info('FSIM:CSP:{}'.format(doppler_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1764,7 +1666,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:IGN:RFCH {}'.format(ignore_type))
         logging.info('FSIM:IGN:RFCH {}'.format(ignore_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1782,7 +1683,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:SDES {}'.format(signal_type))
         logging.info('FSIM:SDES {}'.format(signal_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1798,7 +1698,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:ILOS:MODE {}'.format(mode_type))
         logging.info('FSIM:ILOS:MODE {}'.format(mode_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1815,7 +1714,6 @@ class Ektsfu(object):
         """
         self.specan.write('FSIM:ILOS {}'.format(insertion_loss))
         logging.info('FSIM:ILOS {}'.format(insertion_loss))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1831,7 +1729,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBC:SOUR {}'.format(source_type))
         logging.info('DVBC:SOUR {}'.format(source_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1847,7 +1744,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBC:SYMB {}'.format(symbol_rate))
         logging.info('DVBC:SYMB {}'.format(symbol_rate))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1865,7 +1761,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBC:CONS {}'.format(symbol_rate))
         logging.info('DVBC:CONS {}'.format(symbol_rate))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1883,7 +1778,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBC:ROLL {}'.format(roll_type))
         logging.info('DVBC:ROLL {}'.format(roll_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1898,7 +1792,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBC:SETT {}'.format(special_type))
         logging.info('DVBC:SETT {}'.format(special_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1913,7 +1806,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBC:TSP {}'.format(packet_type))
         logging.info('DVBC:TSP {}'.format(packet_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1928,7 +1820,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBC:PIDT {}'.format(packet_type))
         logging.info('DVBC:PIDT {}'.format(packet_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1944,7 +1835,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBC:PAYL {}'.format(stuff_type))
         logging.info('DVBC:PAYL {}'.format(stuff_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1959,7 +1849,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBC:PRBS {}'.format(prbs_type))
         logging.info('DVBC:PRBS {}'.format(prbs_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1975,7 +1864,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:SOUR {}'.format(source_type))
         logging.info('DVBT:SOUR {}'.format(source_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -1991,7 +1879,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:STUF {}'.format(source_type))
         logging.info('DVBT:STUF {}'.format(source_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2008,7 +1895,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:CHAN {}'.format(bandwidth_type))
         logging.info('DVBT:CHAN {}'.format(bandwidth_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2024,7 +1910,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:FFT:MODE {}'.format(mode_type))
         logging.info('DVBT:FFT:MODE {}'.format(mode_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2041,7 +1926,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:GUAR:INT {}'.format(guard_type))
         logging.info('DVBT:GUAR:INT {}'.format(guard_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2056,7 +1940,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:DVHS {}'.format(state_type))
         logging.info('DVBT:DVHS {}'.format(state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2073,7 +1956,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:HIER {}'.format(state_type))
         logging.info('DVBT:HIER {}'.format(state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2089,7 +1971,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:CONS {}'.format(constellation_type))
         logging.info('DVBT:CONS {}'.format(constellation_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2107,7 +1988,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:RATE {}'.format(code_rate))
         logging.info('DVBT:RATE {}'.format(code_rate))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2122,7 +2002,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:SETT {}'.format(special_rate))
         logging.info('DVBT:SETT {}'.format(special_rate))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2137,7 +2016,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:TSP {}'.format(packet_type))
         logging.info('DVBT:TSP {}'.format(packet_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2152,7 +2030,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:PIDT {}'.format(packet_type))
         logging.info('DVBT:PIDT {}'.format(packet_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2168,7 +2045,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:PAYL {}'.format(stuff_type))
         logging.info('DVBT:PAYL {}'.format(stuff_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2183,7 +2059,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:PRBS {}'.format(prbs_type))
         logging.info('DVBT:PRBS {}'.format(prbs_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2199,7 +2074,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:CELL:ID {}'.format(hex_num))
         logging.info('DVBT:CELL:ID {}'.format(hex_num))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2214,7 +2088,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:TPSR:STAT {}'.format(state_type))
         logging.info('DVBT:TPSR:STAT {}'.format(state_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2229,7 +2102,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:TPSR:VAL {}'.format(bits))
         logging.info('DVBT:TPSR:VAL {}'.format(bits))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2244,7 +2116,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:TIM {}'.format(slicing_type))
         logging.info('DVBT:TIM {}'.format(slicing_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2259,7 +2130,6 @@ class Ektsfu(object):
         """
         self.specan.write('DVBT:MPEF {}'.format(fec_type))
         logging.info('DVBT:MPEF {}'.format(fec_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2274,7 +2144,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:INP:T2MI:INT {}'.format(interface_type))
         logging.info('T2DV:INP:T2MI:INT {}'.format(interface_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2289,7 +2158,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:INP:T2MI {}'.format(source_type))
         logging.info('T2DV:INP:T2MI {}'.format(source_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2304,7 +2172,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:INP:NPLP {}'.format(number))
         logging.info('T2DV:INP:NPLP {}'.format(number))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2321,7 +2188,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PLP1:INP:FORM {}'.format(format_type))
         logging.info('T2DV:PLP1:INP:FORM {}'.format(format_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2337,7 +2203,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PLP1:INP:SOUR {}'.format(source_type))
         logging.info('T2DV:PLP1:INP:SOUR {}'.format(source_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2352,7 +2217,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
         logging.info('T2DV:PLP1:INP:STUF {}'.format(stuffing_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2371,7 +2235,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:CHAN {}'.format(bandwidth_type))
         logging.info('T2DV:CHAN {}'.format(bandwidth_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2388,7 +2251,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:BAND:VAR {}'.format(bandwidth))
         logging.info('T2DV:BAND:VAR {}'.format(bandwidth))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2412,7 +2274,6 @@ class Ektsfu(object):
         self.specan.write('T2DV:FFT:MODE {}'.format(fft_type))
         logging.info('T2DV:FFT:MODE {}'.format(fft_type))
         self.specan.write('OUTP {}'.format("ON"))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2434,7 +2295,6 @@ class Ektsfu(object):
         self.specan.write('T2DV:GUAR:INT {}'.format(guard_type))
         logging.info('T2DV:GUAR:INT {}'.format(guard_type))
         self.specan.write('OUTP {}'.format("ON"))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2457,7 +2317,6 @@ class Ektsfu(object):
         self.specan.write('T2DV:PIL {}'.format(piloy_type))
         logging.info('T2DV:PIL {}'.format(piloy_type))
         self.specan.write('OUTP {}'.format("ON"))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2470,7 +2329,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:NT2F {}'.format(n_t2))
         logging.info('T2DV:NT2F {}'.format(n_t2))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2483,7 +2341,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:LDAT {}'.format(l_data))
         logging.info('T2DV:LDAT {}'.format(l_data))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2497,7 +2354,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:NSUB {}'.format(n_sub))
         logging.info('T2DV:NSUB {}'.format(n_sub))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2512,7 +2368,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PLP1:FECF {}'.format(frame_type))
         logging.info('T2DV:PLP1:FECF {}'.format(frame_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2535,7 +2390,6 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:RATE {}'.format(code_rate))
         logging.info('T2DV:PLP1:RATE {}'.format(code_rate))
         self.specan.write('OUTP {}'.format("ON"))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2554,7 +2408,6 @@ class Ektsfu(object):
         self.specan.write('T2DV:PLP1:CONS {}'.format(constellation_type))
         logging.info('T2DV:PLP1:CONS {}'.format(constellation_type))
         self.specan.write('OUTP {}'.format("ON"))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2569,7 +2422,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PLP1:CROT {}'.format(constellation_type))
         logging.info('T2DV:PLP1:CROT {}'.format(constellation_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2584,7 +2436,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PLP1:TIL:TYPE {}'.format(timeintel))
         logging.info('T2DV:PLP1:TIL:TYPE {}'.format(timeintel))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2599,7 +2450,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PLP1:TIL:FINT {}'.format(frameint))
         logging.info('T2DV:PLP1:TIL:FINT {}'.format(frameint))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2614,7 +2464,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PLP1:TIL:LENG {}'.format(frameint))
         logging.info('T2DV:PLP1:TIL:LENG {}'.format(frameint))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2633,7 +2482,6 @@ class Ektsfu(object):
         self.specan.write('T2DV:L:CONS {}'.format(modulation_type))
         logging.info('T2DV:L:CONS {}'.format(modulation_type))
         self.specan.write('OUTP {}'.format("ON"))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2648,7 +2496,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PAPR {}'.format(papr_type))
         logging.info('T2DV:PAPR {}'.format(papr_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2663,7 +2510,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:TSP {}'.format(packet_type))
         logging.info('T2DV:TSP {}'.format(packet_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2678,7 +2524,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PIDT {}'.format(packet_type))
         logging.info('T2DV:PIDT {}'.format(packet_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2694,7 +2539,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PAYL {}'.format(packet_type))
         logging.info('T2DV:PAYL {}'.format(packet_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2709,7 +2553,6 @@ class Ektsfu(object):
         """
         self.specan.write('T2DV:PRBS {}'.format(prbs_type))
         logging.info('T2DV:PRBS {}'.format(prbs_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2725,7 +2568,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:SOUR {}'.format(source_type))
         logging.info('J83B:SOUR {}'.format(source_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2747,7 +2589,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:SYMB {}'.format(symbol_rate))
         logging.info('J83B:SYMB {}'.format(symbol_rate))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2763,7 +2604,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:CONS {}'.format(constellation_type))
         logging.info('J83B:CONS {}'.format(constellation_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2789,7 +2629,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:INT:MODE {}'.format(mode_type))
         logging.info('J83B:INT:MODE {}'.format(mode_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2804,7 +2643,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:SETT {}'.format(settings_type))
         logging.info('J83B:SETT {}'.format(settings_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2819,7 +2657,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:CHEC {}'.format(checksumgen_type))
         logging.info('J83B:CHEC {}'.format(checksumgen_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2834,7 +2671,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:REED {}'.format(read_type))
         logging.info('J83B:REED {}'.format(read_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2850,7 +2686,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:INT {}'.format(interleaver_type))
         logging.info('J83B:INT {}'.format(interleaver_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2865,7 +2700,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:RAND {}'.format(randomizer_type))
         logging.info('J83B:RAND {}'.format(randomizer_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2880,7 +2714,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:TSP {}'.format(packet_type))
         logging.info('J83B:TSP {}'.format(packet_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2895,7 +2728,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:PIDT {}'.format(packet_type))
         logging.info('J83B:PIDT {}'.format(packet_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2911,7 +2743,6 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:PAYL {}'.format(payload_type))
         logging.info('J83B:PAYL {}'.format(payload_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2926,29 +2757,8 @@ class Ektsfu(object):
         """
         self.specan.write('J83B:PRBS {}'.format(prbs_type))
         logging.info('J83B:PRBS {}'.format(prbs_type))
-        # time.sleep(1)
         self.specan.query('*OPC?')
         del self.specan
-
-    def set_cmd(self):
-        """
-        The constellation type determines the available code rates.
-
-        Constellation     Available code rate
-        QPSK              1/2, 2/3, 3/4, 5/6, 7/8
-        8 PSK             2/3, 5/6, 8/9
-        16 QAM            3/4, 7/8
-
-        example :
-            DVBS:RATE R1_2|R2_3|R3_4|R5_6|R7_8|R8_9
-        :return:
-        """
-        # self.specan.write('NOIS:AWGN OFF')
-        # self.specan.ext_clear_status()
-        # print self.specan.query('*IDN?')
-        # self.specan.query('*OPC?')
-        self.specan.write('FSIM:REF:SPE')
-        # self.specan.write('111')
 
     def set_player_timing_openfile(self, file_path):
         """
@@ -2959,7 +2769,6 @@ class Ektsfu(object):
         """
         self.specan.write(r'TSG:CONF:PLAY "{}"'.format(file_path))
         logging.info(r'TSG:CONF:PLAY "{}"'.format(file_path))
-        # time.sleep(3)
         self.specan.query('*OPC?')
         del self.specan
 
@@ -2973,7 +2782,6 @@ class Ektsfu(object):
         self.specan.write('SYST:PRES')
         logging.info(r'SYST:PRES')
         self.specan.query('*OPC?')
-        # time.sleep(17)
         del self.specan
 
 

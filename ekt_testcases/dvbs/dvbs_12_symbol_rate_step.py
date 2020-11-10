@@ -35,17 +35,12 @@ else:
     dict_test_parame_result["test_parame_result"] = list_test_parame_result
     write_json_file("../../ekt_json/dvbs_12_symbol_rate_step.json", dict_test_parame_result)
 
-if __name__ == '__main__':
+
+def sfe_init_setting():
     """
-    测试流程:
-    ①重置设备
-    ②选择 TSPLAYER
-    ③播放流文件
-    ④设置modulation,symbol_rate,code_rate,frequency,input_signal_level
-    ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase）
-    ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
+    sfe init setting
+    :return:
     """
-    load_dict = read_json_file("../../ekt_json/dvbs_12_symbol_rate_step.json")
     sfe_ip = ekt_cfg.SFE_IP
     specan = Ektsfe(sfe_ip)
     specan.clean_reset()
@@ -63,9 +58,23 @@ if __name__ == '__main__':
     time.sleep(1)
     specan = Ektsfe(sfe_ip)
     specan.set_frequency_frequency_frequency(str(FREQUENCY_1550) + "MHz")
-    # specan.set_frequency_frequency_frequency(FREQUENCY_1550)
     specan = Ektsfe(sfe_ip)
     specan.set_level_level_level(LEVEL_70 + " dBm")
+
+
+if __name__ == '__main__':
+    """
+    测试流程:
+    ①重置设备
+    ②选择 TSPLAYER
+    ③播放流文件
+    ④设置modulation,symbol_rate,code_rate,frequency,input_signal_level
+    ⑤机顶盒应用中进行锁台并确认锁台成功  （针对stb-tester发送post请求运行testcase）
+    ⑤依次修改可变参数,判断机顶盒画面是否含有马赛克并记录结果
+    """
+    load_dict = read_json_file("../../ekt_json/dvbs_12_symbol_rate_step.json")
+    sfe_ip = ekt_cfg.SFE_IP
+    sfe_init_setting()
     # for SYMBOL_RATE in SYMBOL_RATE_LIST:
     for PARAMETER in load_dict.get("test_parame_result"):
         if PARAMETER[1] == None:
@@ -116,6 +125,16 @@ if __name__ == '__main__':
                               datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), CODE_RATE_3_4,
                               str(FREQUENCY_1550), str(SYMBOL_RATE[1]), LEVEL_70,
                               start_data_result.get("detect_mosic_result")) + "\n")
+
+        # 判断sfe是否在测试过程中重启，否则设置测试结果为none
+        net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
+        sfe_state = net.send_rec(json.dumps({"cmd": "get_sfe_state"}))
+        if sfe_state == "crash":
+            mosaic_result = None
+            net.send_data(json.dumps({"cmd": "set_sfe_state", "sfe_state": "noral"}))
+            time.sleep(0.5)
+            del net
+            sfe_init_setting()
 
         PARAMETER[1] = mosaic_result
         write_json_file("../../ekt_json/dvbs_12_symbol_rate_step.json", load_dict)

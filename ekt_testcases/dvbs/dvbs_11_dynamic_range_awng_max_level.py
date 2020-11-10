@@ -45,6 +45,23 @@ else:
 
     write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_max_level.json", dict_test_parame_result)
 
+
+def sfe_init_setting():
+    """
+    sfe init setting
+    :return:
+    """
+    sfe_ip = ekt_cfg.SFE_IP
+    specan = Ektsfe(sfe_ip)
+    specan.clean_reset()
+    specan = Ektsfe(sfe_ip)
+    specan.preset_instrument()
+    specan = Ektsfe(sfe_ip)
+    specan.set_digitaltv_input_source("TSPL")
+    specan = Ektsfe(sfe_ip)
+    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+
+
 if __name__ == '__main__':
     """
     测试流程:
@@ -57,14 +74,7 @@ if __name__ == '__main__':
     """
     load_dict = read_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_max_level.json")
     sfe_ip = ekt_cfg.SFE_IP
-    specan = Ektsfe(sfe_ip)
-    specan.clean_reset()
-    specan = Ektsfe(sfe_ip)
-    specan.preset_instrument()
-    specan = Ektsfe(sfe_ip)
-    specan.set_digitaltv_input_source("TSPL")
-    specan = Ektsfe(sfe_ip)
-    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+    sfe_init_setting()
 
     for PARAMETER in load_dict.get("test_parame_result"):
         loop_lock_mark = False
@@ -139,6 +149,16 @@ if __name__ == '__main__':
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]),
                                   str("%.2f" % ((-10) - FREQUENCY_LEVEL_OFFSET[1])),
                                   start_data_result.get("detect_mosic_result")) + "\n")
+
+            # 判断sfe是否在测试过程中重启，否则设置测试结果为none
+            net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
+            sfe_state = net.send_rec(json.dumps({"cmd": "get_sfe_state"}))
+            if sfe_state == "crash":
+                test_result = None
+                net.send_data(json.dumps({"cmd": "set_sfe_state", "sfe_state": "noral"}))
+                time.sleep(0.5)
+                del net
+                sfe_init_setting()
 
             code_rate_cn[1] = mosaic_result
             write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_max_level.json", load_dict)

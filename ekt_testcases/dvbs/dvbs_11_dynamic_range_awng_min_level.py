@@ -48,6 +48,23 @@ else:
 
     write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json", dict_test_parame_result)
 
+
+def sfe_init_setting():
+    """
+    sfe init setting
+    :return:
+    """
+    sfe_ip = ekt_cfg.SFE_IP
+    specan = Ektsfe(sfe_ip)
+    specan.clean_reset()
+    specan = Ektsfe(sfe_ip)
+    specan.preset_instrument()
+    specan = Ektsfe(sfe_ip)
+    specan.set_digitaltv_input_source("TSPL")
+    specan = Ektsfe(sfe_ip)
+    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+
+
 if __name__ == '__main__':
     """
     测试流程:
@@ -60,17 +77,9 @@ if __name__ == '__main__':
     """
     # 将部分无需测试的点的json文件内容, 测试结果置为 NO NEED TEST
     dvbs_dynamic_min_json_class_test("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json")
-
     load_dict = read_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json")
     sfe_ip = ekt_cfg.SFE_IP
-    specan = Ektsfe(sfe_ip)
-    specan.clean_reset()
-    specan = Ektsfe(sfe_ip)
-    specan.preset_instrument()
-    specan = Ektsfe(sfe_ip)
-    specan.set_digitaltv_input_source("TSPL")
-    specan = Ektsfe(sfe_ip)
-    specan.set_digitaltv_input_load(r"D:\TSGEN\SDTV\DVB_25Hz\720_576i\LIVE\DIVER.GTS")
+    sfe_init_setting()
 
     for PARAMETER in load_dict.get("test_parame_result"):
         loop_lock_mark = False
@@ -124,7 +133,7 @@ if __name__ == '__main__':
             write_test_result("../../ekt_log/test_result_sfe.txt", ("Lock state err" + "\n"))
             continue
         for code_rate_cn in PARAMETER[2]:
-            if code_rate_cn[1] == None or code_rate_cn[2] == None :
+            if code_rate_cn[1] == None or code_rate_cn[2] == None:
                 pass
             else:
                 continue
@@ -163,6 +172,17 @@ if __name__ == '__main__':
                               "dvbs_11_dynamic_range_awng_min_level: current_time:{}, coderate:{}, frequency:{} MHz,symbol_rate:{} Ksym/s,{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), code_rate_cn[0][0],
                                   str(FREQUENCY_LEVEL_OFFSET[0]), str(SYMBOL_RATE[1]), res) + "\n")
+
+            # 判断sfe是否在测试过程中重启，否则设置测试结果为none
+            net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
+            sfe_state = net.send_rec(json.dumps({"cmd": "get_sfe_state"}))
+            if sfe_state == "crash":
+                test_result = None
+                net.send_data(json.dumps({"cmd": "set_sfe_state", "sfe_state": "noral"}))
+                time.sleep(0.5)
+                del net
+                sfe_init_setting()
+
             code_rate_cn[1] = test_result
             write_json_file("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json", load_dict)
             dvbs_dynamic_min_json_to_csv("../../ekt_json/dvbs_11_dynamic_range_awng_min_level.json",

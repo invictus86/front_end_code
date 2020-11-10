@@ -8,3 +8,13 @@ python ./j83_9_frequency_error_rate.py
 python ./j83_10_frequency_capture_range.py
 python ./j83_1_dynamic_range_awng_max_level.py
 python ./j83_1_dynamic_range_awng_min_level.py
+python ./j83_2_channel_bandwidth.py
+python ./j83_3_cn_test.py
+python ./j83_5_IQ_inverted.py
+python ./j83_7_analogue_adjacent_carrier_interference_N+1.py
+python ./j83_7_analogue_adjacent_carrier_interference_N-1.py
+python ./j83_8_symbol_error_rate.py
+python ./j83_9_frequency_error_rate.py
+python ./j83_10_frequency_capture_range.py
+python ./j83_1_dynamic_range_awng_max_level.py
+python ./j83_1_dynamic_range_awng_min_level.py
