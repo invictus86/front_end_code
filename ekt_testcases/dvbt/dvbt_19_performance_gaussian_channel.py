@@ -47,7 +47,6 @@ MODULATION__CODERATE_SPEC_LIST = [
     [MODULATION_64QAM, CODE_RATE_5_6, GUARD_G1_4, 7.0],
     [MODULATION_64QAM, CODE_RATE_7_8, GUARD_G1_4, 7.0]]
 
-
 my_file = Path("../../ekt_json/dvbt_19_performance_gaussian_channel.json")
 if my_file.exists():
     pass
@@ -61,7 +60,8 @@ else:
         list_test_result = []
         for MODULATION_CODERATE_SPEC in MODULATION__CODERATE_SPEC_LIST:
             list_test_result.append(
-                [MODULATION_CODERATE_SPEC[0], MODULATION_CODERATE_SPEC[1], MODULATION_CODERATE_SPEC[2], MODULATION_CODERATE_SPEC[3], None])
+                [MODULATION_CODERATE_SPEC[0], MODULATION_CODERATE_SPEC[1], MODULATION_CODERATE_SPEC[2], MODULATION_CODERATE_SPEC[3], None,
+                 None])
 
         list_test_parame_result.append([FREQUENCY_LEVEL_OFFSET, list_test_result])
 
@@ -184,9 +184,10 @@ if __name__ == '__main__':
             time.sleep(1)
 
             res, test_result = iterate_to_find_threshold_noise_cn_step_by_step(sfu_ip, MODULATION_CODERATE_SPEC[3] + 5)
-            print ("dvbt_19_performance_gaussian_channel: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
-                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_CODERATE_SPEC[0],
-                MODULATION_CODERATE_SPEC[1], str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res))
+            print (
+                "dvbt_19_performance_gaussian_channel: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
+                    datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), MODULATION_CODERATE_SPEC[0],
+                    MODULATION_CODERATE_SPEC[1], str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res))
             write_test_result("../../ekt_log/test_result_sfu.txt",
                               "dvbt_19_performance_gaussian_channel: current_time:{}, modulation: {} coderate:{}, frequency:{} MHz,bandwidth:{} MHZ,{}".format(
                                   datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
@@ -194,8 +195,17 @@ if __name__ == '__main__':
                                   str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res) + "\n")
 
             MODULATION_CODERATE_SPEC[4] = test_result
-            write_json_file("../../ekt_json/dvbt_19_performance_gaussian_channel.json",
-                            load_dict)
+
+            if test_result is None:
+                pass
+            elif float(test_result) <= MODULATION_CODERATE_SPEC[3]:
+                MODULATION_CODERATE_SPEC[5] = "Pass"
+            elif float(test_result) > MODULATION_CODERATE_SPEC[3]:
+                MODULATION_CODERATE_SPEC[5] = "Fail"
+            else:
+                MODULATION_CODERATE_SPEC[5] = "test result err"
+
+            write_json_file("../../ekt_json/dvbt_19_performance_gaussian_channel.json", load_dict)
             dvbt_19_gaussian_channel_json_to_csv(
                 "../../ekt_json/dvbt_19_performance_gaussian_channel.json",
                 "../../ekt_test_report/dvbt_19_performance_gaussian_channel.csv")

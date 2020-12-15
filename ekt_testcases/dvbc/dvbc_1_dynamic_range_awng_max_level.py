@@ -131,6 +131,7 @@ if __name__ == '__main__':
             """
             stb_tester_execute_testcase(ekt_cfg.STB_TESTER_URL, ekt_cfg.BANCH_ID,
                                         ekt_cfg.DVB_C_LOCK_FUNCTION, ekt_cfg.DVB_C_CATEGORY, ekt_cfg.DVB_C_REMOTE)
+
             net = ekt_net.EktNetClient(ekt_cfg.FRONT_END_SERVER_IP, ekt_cfg.FRONT_END_SERVER_PORT)
 
             lock_state = net.send_rec(json.dumps({"cmd": "get_lock_state"}))

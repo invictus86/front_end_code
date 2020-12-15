@@ -230,11 +230,13 @@ def dvbc_1_dynamic_range_awng_min_level_json_to_csv(json_path, csv_path):
         count = 0
         for j in i[3]:
             if count == 0:
-                list_required_data.append([i[0], i[1][1], i[2], j[0][0], j[1]])
+                list_required_data.append([i[0], i[1][1], i[2], j[0][0], j[1], j[2], j[3]])
             else:
-                list_required_data.append(['', '', '', j[0][0], j[1]])
+                list_required_data.append(['', '', '', j[0][0], j[1], j[2], j[3]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['modulation', 'symbol_rate', 'CN', 'frequency', 'level'])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['modulation', 'symbol_rate', 'CN', 'frequency', 'min_RF_level', "max_RF_result(-10db)",
+                                    "sensitivity_outcome"])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -673,11 +675,12 @@ def dvbs_dynamic_min_json_to_csv(json_path, csv_path):
             if j[1] == "NO NEED TEST":
                 continue
             if count == 0:
-                list_required_data.append([i[0][1], i[1][0], j[0][0], j[1], j[2]])
+                list_required_data.append([i[0][1], i[1][0], j[0][0], j[1], j[2], j[3]])
             else:
-                list_required_data.append(["", "", j[0][0], j[1], j[2]])
+                list_required_data.append(["", "", j[0][0], j[1], j[2], j[3]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['symbol_rate', 'frequency', 'code_rate', 'level', "max_mosic_result"])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['symbol_rate', 'frequency', 'code_rate', 'min_RF_level', "max_RF_result(-10db)", "sensitivity_outcome"])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -695,6 +698,7 @@ def dvbs_dynamic_min_json_class_test(json_path):
             if i[1][0] not in [950, 1550, 2150] and (j[0][0] != "R7_8" or i[0][1] != "45000"):
                 j[1] = "NO NEED TEST"
                 j[2] = "NO NEED TEST"
+                j[3] = "NO NEED TEST"
     write_json_file(json_path, load_dict)
 
 
@@ -818,12 +822,13 @@ def dvbs2_18_dynamic_min_json_to_csv(json_path, csv_path):
             if j[2] == "NO NEED TEST":
                 continue
             if count == 0:
-                list_required_data.append([i[0][1], i[1][0], j[0], j[1][0], j[2], j[3]])
+                list_required_data.append([i[0][1], i[1][0], j[0], j[1][0], j[2], j[3], j[4]])
             else:
-                list_required_data.append(["", "", j[0], j[1][0], j[2], j[3]])
+                list_required_data.append(["", "", j[0], j[1][0], j[2], j[3], j[4]])
             count = count + 1
     pd_data = pd.DataFrame(list_required_data,
-                           columns=['symbol_rate', 'frequency', 'modulation', 'code_rate', 'Minimum_RF_level', "Maximum _mosic_result"])
+                           columns=['symbol_rate', 'frequency', 'modulation', 'code_rate', 'min_RF_level', "max_RF_result(-10db)",
+                                    "sensitivity_outcome"])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -1112,11 +1117,12 @@ def dvbt_19_gaussian_channel_json_to_csv(json_path, csv_path):
             if j[4] == "NO NEED TEST":
                 continue
             if count == 0:
-                list_required_data.append([i[0][0], j[0], j[1], j[2], j[3], j[4]])
+                list_required_data.append([i[0][0], j[0], j[1], j[2], j[3], j[4], j[5]])
             else:
-                list_required_data.append(["", j[0], j[1], j[2], j[3], j[4]])
+                list_required_data.append(["", j[0], j[1], j[2], j[3], j[4], j[5]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'guard', 'spec', 'noise'])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'modulation', 'code_rate', 'guard', 'spec', 'min_noise_level', 'sensitivity_outcome'])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -1177,11 +1183,12 @@ def dvbt_21_receiver_signal_input__min_level_json_to_csv(json_path, csv_path):
             if j[4] == "NO NEED TEST":
                 continue
             if count == 0:
-                list_required_data.append([i[0][0], j[0], j[1], j[2], j[3], j[4]])
+                list_required_data.append([i[0][0], j[0], j[1], j[2], j[3], j[4], j[5]])
             else:
-                list_required_data.append(["", j[0], j[1], j[2], j[3], j[4]])
+                list_required_data.append(["", j[0], j[1], j[2], j[3], j[4], j[5]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'guard', 'spec', 'Minimum_RF_level'])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'modulation', 'code_rate', 'guard', 'spec', 'min_RF_level', 'sensitivity_outcome'])
     pd_data.to_csv(csv_path, index=None)
 
 
@@ -1672,11 +1679,12 @@ def dvbt2_57_gaussian_channel_json_to_csv(json_path, csv_path):
             if j[3] == "NO NEED TEST":
                 continue
             if count == 0:
-                list_required_data.append([i[0][0], j[0], j[1], j[2], j[3]])
+                list_required_data.append([i[0][0], j[0], j[1], j[2], j[3], j[4]])
             else:
-                list_required_data.append(["", j[0], j[1], j[2], j[3]])
+                list_required_data.append(["", j[0], j[1], j[2], j[3], j[4]])
             count = count + 1
-    pd_data = pd.DataFrame(list_required_data, columns=['frequency', 'modulation', 'code_rate', 'spec', 'Minimum_RF_level'])
+    pd_data = pd.DataFrame(list_required_data,
+                           columns=['frequency', 'modulation', 'code_rate', 'spec', 'min_test_value', 'sensitivity_outcome'])
     pd_data.to_csv(csv_path, index=None)
 
 

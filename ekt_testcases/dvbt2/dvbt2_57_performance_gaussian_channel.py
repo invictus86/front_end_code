@@ -67,7 +67,7 @@ else:
         list_test_result = []
         for MODULATION_CODERATE_SPEC in MODULATION__CODERATE_SPEC_LIST:
             list_test_result.append(
-                [MODULATION_CODERATE_SPEC[0], MODULATION_CODERATE_SPEC[1], MODULATION_CODERATE_SPEC[2], None])
+                [MODULATION_CODERATE_SPEC[0], MODULATION_CODERATE_SPEC[1], MODULATION_CODERATE_SPEC[2], None, None])
 
         list_test_parame_result.append([FREQUENCY_LEVEL_OFFSET, list_test_result])
 
@@ -208,6 +208,17 @@ if __name__ == '__main__':
                                   str(FREQUENCY_LEVEL_OFFSET[0][0]), str(CURRENT_BANDWIDTH), res) + "\n")
 
             MODULATION_CODERATE_SPEC[3] = test_result
+
+            if test_result is None:
+                pass
+            elif float(test_result) <= MODULATION_CODERATE_SPEC[2]:
+                MODULATION_CODERATE_SPEC[4] = "Pass"
+            elif float(test_result) > MODULATION_CODERATE_SPEC[2]:
+                MODULATION_CODERATE_SPEC[4] = "Fail"
+            else:
+                MODULATION_CODERATE_SPEC[4] = "test result err"
+
+
             write_json_file("../../ekt_json/dvbt2_57_performance_gaussian_channel.json",
                             load_dict)
             dvbt2_57_gaussian_channel_json_to_csv(

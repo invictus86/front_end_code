@@ -1,7 +1,7 @@
 # stb_tester config
-BANCH_ID = "a063886"
-STB_TESTER_URL = "http://192.168.1.155"
-STB_TESTER_IP = "192.168.1.155"
+BANCH_ID = "3a695c8"
+STB_TESTER_URL = "http://192.168.1.154"
+STB_TESTER_IP = "192.168.1.154"
 
 # EasyEdge IP
 EASYEDGE_IP = "192.168.1.24"
@@ -38,9 +38,11 @@ DVB_T2_CATEGORY = "auto_front_end_test"
 DVB_T2_REMOTE = "dcn7514i"
 
 # DVBC lock function config
-DVB_C_LOCK_FUNCTION = ["tests/front_end_test/testcases.py::test_continuous_button_dcn7514i"]
+# DVB_C_LOCK_FUNCTION = ["tests/front_end_test/testcases.py::test_continuous_button_dcn7514i"]
+DVB_C_LOCK_FUNCTION = ["tests/front_end_test/testcases.py::test_continuous_button_dcn7414g"]
 DVB_C_CATEGORY = "auto_front_end_test"
-DVB_C_REMOTE = "dcn7514i"
+# DVB_C_REMOTE = "dcn7514i"
+DVB_C_REMOTE = "DSD4614iALM"
 
 # DVBJ83 lock function config
 DVB_J83_LOCK_FUNCTION = ["tests/front_end_test/testcases.py::test_continuous_button_dcn7514i"]
@@ -94,3 +96,13 @@ ERR_MOSIC_NUM = 6
 
 # wait for SFU/SFE stable time
 WAIT_FOR_INSTRUMENT_TIME = 7
+
+# DVBS 11 test result spec
+DVBS_11_SPEC = -70
+
+# DVBS2 18 test result spec
+DVBS2_18_SPEC = -70
+
+# DVBC 1 test result spec
+DVBC_1_C64_SPEC = -64
+DVBC_1_C256_SPEC = -60
