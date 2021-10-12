@@ -4,4 +4,4 @@ pandas==0.24.2
 requests==2.21.0
 pathlib2==2.3.3
 gevent==20.6.2
-opencv_python==3.4.8.29
+opencv_python==4.2.0.32
