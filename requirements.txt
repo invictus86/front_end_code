@@ -1,4 +1,4 @@
-numpy==1.15.4
+numpy==1.22.0
 PyVISA==1.10.1
 pandas==0.24.2
 requests==2.21.0
